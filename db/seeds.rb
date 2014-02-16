@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Timetable.delete_all
+Route.delete_all
+Stop.delete_all
+RouteStop.delete_all

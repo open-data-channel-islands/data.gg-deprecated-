@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  effective_date: 2014-02-15 15:47:02
+  name: MyString
+
+two:
+  effective_date: 2014-02-15 15:47:02
+  name: MyString
