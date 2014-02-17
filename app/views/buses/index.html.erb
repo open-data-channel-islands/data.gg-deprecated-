@@ -1,5 +1,19 @@
+<br /><br /><br /><br />
 
-
-Blah
-
-<h1>TEST</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Effective Date</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @timetables.each do |timetable| %>
+    <tr>
+      <td><%= link_to timetable.name, buses_timetable_path(year: timetable.effective_date.year.to_s,
+                month: timetable.effective_date.month.to_s, day: timetable.effective_date.day.to_s) %></td>
+      <td><%= timetable.effective_date %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

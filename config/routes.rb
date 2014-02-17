@@ -1,5 +1,5 @@
 DataGg::Application.routes.draw do
-  get "home/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,17 +39,29 @@ DataGg::Application.routes.draw do
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
   get 'buses/' => 'buses#index'
+  
 
   namespace :buses do
     
+    get 'new' => 'timetables#new'
+    post 'create' => 'timetables#create'
+    
     scope ':year:month:day' do
-      get 'new' => 'routes#new', as: :new_route
-      post 'create' => 'routes#create', as: :create_route
-      delete ':id' => 'routes#destroy', as: :delete_route
-      get ':id' => 'routes#show', as: :route
+      # Timetables
+      get '' => 'timetables#show', as: :timetable
+      delete '' => 'timetables#destroy', as: :delete_timetable
       
+      # Routes
+      get ':id' => 'timetables/routes#show', as: :route
+      delete ':id' => 'timetables/routes#destroy', as: :delete_route
+      get 'new' => 'timetables/routes#new', as: :new_route
+      post 'create' => 'timetables/routes#create', as: :create_route
+      get 'edit' => 'timetables/routes#edit', as: :edit_route
+      put 'update' => 'timetables/routes#update', as: :update_route
+      
+      # Route stops
       scope ':route_name' do
-      
+        get '/' => 'route_stop#show'
       end
 
     end

@@ -10,3 +10,5 @@ Timetable.delete_all
 Route.delete_all
 Stop.delete_all
 RouteStop.delete_all
+
+Timetable.create(:name => 'Summer 2013', :effective_date => '2013-01-01')
