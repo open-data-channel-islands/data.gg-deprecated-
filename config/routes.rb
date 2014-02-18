@@ -46,8 +46,16 @@ DataGg::Application.routes.draw do
     get 'new' => 'timetables#new'
     post 'create' => 'timetables#create'
     
-    scope ':year:month:day' do
+    # Because these are distinct
+    resources :stops
+    
+    # In yyyymmdd format
+    scope ':date' do
+      
+      
+      
       # Timetables
+      
       get '' => 'timetables#show', as: :timetable
       delete '' => 'timetables#destroy', as: :delete_timetable
       
@@ -63,12 +71,9 @@ DataGg::Application.routes.draw do
       scope ':route_name' do
         get '/' => 'route_stop#show'
       end
-
     end
     
-    
-    # Because these are distinct
-    resources :stops
+   
   end
 
   # Example resource route with more complex sub-resources:

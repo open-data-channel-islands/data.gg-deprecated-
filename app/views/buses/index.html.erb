@@ -1,18 +1,23 @@
-<br /><br /><br /><br />
-
 <table>
   <thead>
     <tr>
-      <th>Effective Date</th>
       <th>Name</th>
+      <th>Effective Date</th>
+      <th>XML</th>
+      <th>HTML</th>
+      <th>JSON</th>
+      <th>Object</th>
     </tr>
   </thead>
   <tbody>
   <% @timetables.each do |timetable| %>
     <tr>
-      <td><%= link_to timetable.name, buses_timetable_path(year: timetable.effective_date.year.to_s,
-                month: timetable.effective_date.month.to_s, day: timetable.effective_date.day.to_s) %></td>
+      <td><%= link_to timetable.name, buses_timetable_path(date: timetable.effective_date) %></td>
       <td><%= timetable.effective_date %></td>
+      <td><%= link_to image_tag("xml_download.png"), {:action => "xml_download", :controller => "timetables"}%></td>
+      <td><%= link_to image_tag("html_download.png"), {:action => "html_download", :controller => "timetables"}%></td>
+      <td><%= link_to image_tag("json_download.png"), {:action => "json_download", :controller => "timetables"}%></td>
+      <td><%= link_to image_tag("object_download.png"), {:action => "object_download", :controller => "timetables"}%></td>
     </tr>
   <% end %>
   </tbody>

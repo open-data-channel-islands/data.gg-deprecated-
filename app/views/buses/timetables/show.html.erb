@@ -1,0 +1,20 @@
+<h1><%= @timetable.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Route</th>
+      <th>Start Day</th>
+      <th>End Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @timetable.routes.each do |route| %>
+    <tr>
+      <td><%= route.name %></td>
+      <td><%= day_name_from_number(route.start_day) %></td>
+      <td><%= day_name_from_number(route.end_day) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
