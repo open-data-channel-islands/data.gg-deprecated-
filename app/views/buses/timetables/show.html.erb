@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Route</th>
+      <th>Description</th>
       <th>Start Day</th>
       <th>End Day</th>
     </tr>
@@ -11,10 +12,23 @@
   <tbody>
     <% @timetable.routes.each do |route| %>
     <tr>
-      <td><%= route.name %></td>
+      <td><%= link_to route.name, buses_timetable_route_path  (:date => route.timetable.effective_date, :id => route.id) %></td>
+      <td><%= route.description %></td>
       <td><%= day_name_from_number(route.start_day) %></td>
       <td><%= day_name_from_number(route.end_day) %></td>
+      <td><%= button_to "Delete", buses_delete_route_path(:date => route.timetable.effective_date, :id => route.id), :method => :delete %></td>
     </tr>
     <% end %>
+    
+    <%= form_for @route, url: buses_create_route_path do |f| %>
+    <tr>
+      <td><%= f.text_field :name %></td>
+      <td><%= f.text_field :description %></td>
+      <td><%= f.text_field :start_day %></td>
+      <td><%= f.text_field :end_day %></td>
+      <td><%= f.submit "Create" %></td>
+    </tr>
+    <% end %>
+    
   </tbody>
 </table>

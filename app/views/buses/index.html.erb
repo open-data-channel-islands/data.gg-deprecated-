@@ -14,10 +14,10 @@
     <tr>
       <td><%= link_to timetable.name, buses_timetable_path(date: timetable.effective_date) %></td>
       <td><%= timetable.effective_date %></td>
-      <td><%= link_to image_tag("xml_download.png"), {:action => "xml_download", :controller => "timetables"}%></td>
-      <td><%= link_to image_tag("html_download.png"), {:action => "html_download", :controller => "timetables"}%></td>
-      <td><%= link_to image_tag("json_download.png"), {:action => "json_download", :controller => "timetables"}%></td>
-      <td><%= link_to image_tag("object_download.png"), {:action => "object_download", :controller => "timetables"}%></td>
+      <td><%= link_to image_tag("xml_download.png"), buses_timetable_download_path(:type => "xml", :date => timetable.effective_date) %></td>
+      <td><%= link_to image_tag("html_download.png"), buses_timetable_download_path(:type => "html", :date => timetable.effective_date) %></td>
+      <td><%= link_to image_tag("json_download.png"), buses_timetable_download_path(:type => "json", :date => timetable.effective_date) %></td>
+      <td><%= link_to image_tag("object_download.png"), buses_timetable_download_path(:type => "object", :date => timetable.effective_date) %></td>
     </tr>
   <% end %>
   </tbody>

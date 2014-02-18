@@ -59,8 +59,11 @@ DataGg::Application.routes.draw do
       get '' => 'timetables#show', as: :timetable
       delete '' => 'timetables#destroy', as: :delete_timetable
       
+      # Can download XML/Object/JSON/HTML
+      get 'download/:type' => 'timetables#download', as: :timetable_download
+
       # Routes
-      get ':id' => 'timetables/routes#show', as: :route
+      get ':id' => 'timetables/routes#show', as: :timetable_route
       delete ':id' => 'timetables/routes#destroy', as: :delete_route
       get 'new' => 'timetables/routes#new', as: :new_route
       post 'create' => 'timetables/routes#create', as: :create_route
