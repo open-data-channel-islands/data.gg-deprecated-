@@ -12,7 +12,7 @@
   <tbody>
     <% @timetable.routes.each do |route| %>
     <tr>
-      <td><%= link_to route.name, buses_timetable_route_path  (:date => route.timetable.effective_date, :id => route.id) %></td>
+      <td><%= link_to route.name, buses_timetable_route_path(:date => route.timetable.effective_date, :id => route.id) %></td>
       <td><%= route.description %></td>
       <td><%= day_name_from_number(route.start_day) %></td>
       <td><%= day_name_from_number(route.end_day) %></td>
