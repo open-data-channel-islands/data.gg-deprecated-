@@ -1,34 +1,40 @@
-<h1><%= @timetable.name %></h1>
+<h1><%= @timetable.name %> <small>Route information</small></h1>
 
-<table>
+<p class="lead">Showing all bus routes</p>
+
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Route</th>
       <th>Description</th>
       <th>Start Day</th>
       <th>End Day</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <% @timetable.routes.each do |route| %>
     <tr>
-      <td><%= link_to route.name, buses_timetable_route_path(:date => route.timetable.effective_date, :id => route.id) %></td>
+      <td><%= link_to route.name, buses_timetable_route_path(:timetable_date => route.timetable.effective_date, :id => route.id) %></td>
       <td><%= route.description %></td>
       <td><%= day_name_from_number(route.start_day) %></td>
       <td><%= day_name_from_number(route.end_day) %></td>
-      <td><%= button_to "Delete", buses_delete_route_path(:date => route.timetable.effective_date, :id => route.id), :method => :delete %></td>
+      <td>Delete</td>
     </tr>
     <% end %>
     
-    <%= form_for @route, url: buses_create_route_path do |f| %>
+  <tfoot>
+    <%= form_for [:buses, @timetable, @route] do |f| %>
     <tr>
-      <td><%= f.text_field :name %></td>
-      <td><%= f.text_field :description %></td>
-      <td><%= f.text_field :start_day %></td>
-      <td><%= f.text_field :end_day %></td>
-      <td><%= f.submit "Create" %></td>
+      <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Route name"} %></td>
+      <td><%= f.text_field :description, {:tabindex => 2, :class => "form-control", :placeholder => "Description" } %></td>
+      <td><%= f.text_field :start_day, {:tabindex => 3, :class => "form-control" } %></td>
+      <td><%= f.text_field :end_day, {:tabindex => 4, :class => "form-control" } %></td>
+      <td><%= f.hidden_field :timetable_id, { :value => @timetable.id } %>
+        <%= f.submit "Create", { :class => "btn btn-default"} %></td>
     </tr>
     <% end %>
+  </tfoot>
     
   </tbody>
 </table>

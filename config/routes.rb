@@ -42,40 +42,24 @@ DataGg::Application.routes.draw do
   
 
   namespace :buses do
-    
-    get 'new' => 'timetables#new'
-    post 'create' => 'timetables#create'
-    
+
     # Because these are distinct
     resources :stops
     
-    # In yyyymmdd format
-    scope ':date' do
-      
-      
-      
-      # Timetables
-      
-      get '' => 'timetables#show', as: :timetable
-      delete '' => 'timetables#destroy', as: :delete_timetable
-      
-      # Can download XML/Object/JSON/HTML
-      get 'download/:type' => 'timetables#download', as: :timetable_download
-
-      # Routes
-      get ':id' => 'timetables/routes#show', as: :timetable_route
-      delete ':id' => 'timetables/routes#destroy', as: :delete_route
-      get 'new' => 'timetables/routes#new', as: :new_route
-      post 'create' => 'timetables/routes#create', as: :create_route
-      get 'edit' => 'timetables/routes#edit', as: :edit_route
-      put 'update' => 'timetables/routes#update', as: :update_route
-      
-      # Route stops
-      scope ':route_name' do
-        get '/' => 'route_stop#show'
-      end
-    end
+    # Can download XML/Object/JSON/HTML
+    get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
     
+    resources :timetables, param: :date do
+      
+      resources :routes do
+        
+        resources :stops do
+        end
+      end
+      
+    end
+
+  
    
   end
 

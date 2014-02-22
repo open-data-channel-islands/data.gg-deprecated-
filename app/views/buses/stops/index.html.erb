@@ -15,6 +15,15 @@
       <td><%= stop.name %></td>
       <td><%= stop.latitude %></td>
       <td><%= stop.longitude %></td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+    <% end %>
+    <%= form_for @stop %>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <% end %>
   </tbody>

@@ -1,0 +1,37 @@
+
+<p class="lead">Showing all stops on this route</p>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Stop name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @route.stop_links.each do |stop_link| %>
+    
+    <tr>
+      <td><%= stop.name %></td>
+      
+      
+      
+      <td><%= stop.latitude %></td>
+      <td><%= stop.longitude %></td>
+    </tr>
+    
+    <% end %>
+  </tbody>
+  <tfoot>
+    THIS IS WRONG. YOU NEED TO CHOOSE A STOP
+    <%= form_for [:buses, @timetable, @route, @stop] do |f| %>
+    <tr>
+      <td><%= f.text_field :name %></td>
+      <td><%= f.text_field :latitude %></td>
+      <td><%= f.text_field :longitude %></td>
+      <td><%= f.submit %>
+    </tr>
+    <% end %>
+  </tfoot>
+</table>

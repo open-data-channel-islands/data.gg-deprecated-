@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218080258) do
+ActiveRecord::Schema.define(version: 20140222160801) do
 
   create_table "route_stops", force: true do |t|
-    t.integer  "time"
-    t.integer  "route_id"
-    t.integer  "stop_id"
-    t.boolean  "display"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "route_id"
+    t.integer "stop_id"
+    t.integer "index"
   end
+
+  add_index "route_stops", ["route_id"], name: "index_route_stops_on_route_id"
+  add_index "route_stops", ["stop_id"], name: "index_route_stops_on_stop_id"
 
   create_table "routes", force: true do |t|
     t.string   "name"
@@ -30,6 +30,22 @@ ActiveRecord::Schema.define(version: 20140218080258) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "timetable_id"
+  end
+
+  create_table "stop_links", force: true do |t|
+    t.integer  "time"
+    t.integer  "route_id"
+    t.integer  "stop_id"
+    t.boolean  "display"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "next_time_stop_link_id"
+    t.integer  "next_place_stop_link_id"
+    t.boolean  "skip"
+    t.boolean  "arrive"
+    t.boolean  "depart"
+    t.integer  "prev_time_stop_link_id"
+    t.integer  "prev_place_stop_link_id"
   end
 
   create_table "stops", force: true do |t|
