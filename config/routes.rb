@@ -43,6 +43,8 @@ DataGg::Application.routes.draw do
 
   namespace :buses do
 
+    get 'api/latest.:format' => 'api#latest'
+
     # Because these are distinct
     resources :stops
     
@@ -52,6 +54,8 @@ DataGg::Application.routes.draw do
     resources :timetables, param: :date do
       
       resources :routes do
+        
+        resources :route_stops
         
         resources :stops do
         end

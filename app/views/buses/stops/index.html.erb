@@ -19,11 +19,12 @@
       <td>Delete</td>
     </tr>
     <% end %>
-    <%= form_for @stop %>
+    <%= form_for [:buses, @stop] do |f| %>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><%= f.text_field :name %></td>
+      <td><%= f.text_field :latitude %></td>
+      <td><%= f.text_field :longitude %></td>
+      <td><%= f.submit "Submit" %>
     </tr>
     <% end %>
   </tbody>

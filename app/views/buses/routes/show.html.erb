@@ -1,36 +1,60 @@
-
 <p class="lead">Showing all stops on this route</p>
+
+
+
+
+
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Stop name</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
+      <th>Stop</th>
     </tr>
   </thead>
   <tbody>
-    <% @route.stop_links.each do |stop_link| %>
     
+    Put a link from stop_link to route_stop so stop_link has "route_stop_id" on it.
+    Then use the 'index' field on route_stop_id for ordering as well as origin_stop+time
+    
+    SELECT * FROM stop_link WHERE(origin_id) JOIN route_stop ON stop_link.route_stop_id = route_stop.id ORDER BY route_stop.index  SKIP [5] 
+    
+    
+    SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER BY origin_stop_time, 
+    
+    <% @route.route_stops.each do |stop| %>
     <tr>
       <td><%= stop.name %></td>
-      
-      
-      
-      <td><%= stop.latitude %></td>
-      <td><%= stop.longitude %></td>
+      <% @links[stop.id].each do |link| %>
+      <td><%= link.time %></td>
+      <% end %>
     </tr>
-    
     <% end %>
   </tbody>
   <tfoot>
-    THIS IS WRONG. YOU NEED TO CHOOSE A STOP
-    <%= form_for [:buses, @timetable, @route, @stop] do |f| %>
+    
+  </tfoot>
+</table>
+
+
+
+<h3>Stops</h3>
+<table class="table table-striped">
+  <thead>
     <tr>
-      <td><%= f.text_field :name %></td>
-      <td><%= f.text_field :latitude %></td>
-      <td><%= f.text_field :longitude %></td>
-      <td><%= f.submit %>
+      <th>Stop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @route.route_stops.each do |route_stop| %>
+    <tr>
+      <td><%= route_stop.stop.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <%= form_for @route_stop, url: { action: "create_route_stop" } do |f| %>
+    <tr>
+      <td><%= select_tag(:route_stop, options_for_select(Stop.all.map { |stop| [stop.name, stop.id] }))%></td>
     </tr>
     <% end %>
   </tfoot>

@@ -35,7 +35,7 @@ class Buses::RoutesController < ApplicationController
   def show
     @route = Route.find_by_id(params[:id])
     @timetable = @route.timetable
-    @stop = Stop.new
+    @route_stop = RouteStop.new
 
     respond_to do |format|
       format.html
@@ -51,17 +51,7 @@ class Buses::RoutesController < ApplicationController
   end
   
   def add_stop
-    @route_stop = RouteStop.new(stop_params)
-    if @route_stop.save
-      flash[:error] = "Couldn't save"
-      
-      respond_to do |format|
-        format.html
-      end
-    end
     
-    flash[:success] = "Success"
-    redirect_to "stops"
   end
   
   private

@@ -19,7 +19,7 @@ class Buses::TimetablesController < ApplicationController
     
     flash[:success] = "Timetable #{@timetable.name} successfully saved."
     
-    redirect_to @timetable
+    redirect_to buses_timetable_path(:date => @timetable.effective_date)
   end
   
   def download

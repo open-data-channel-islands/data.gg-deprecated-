@@ -1,3 +1,5 @@
+<h2>Create Timetable</h2>
+
 <%= form_for [:buses, @timetable] do |f| %>
 <tr>
   <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Timetable name"} %></td>
