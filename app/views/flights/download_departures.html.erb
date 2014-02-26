@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Flight Number</th>
+      <th>Time</th>
+      <th>Dest</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @flights.each do |f| %>
+    <tr>
+    <td><%= f['FlightNumber'] %></td>
+    <td><%= f['Time'] %></td>
+    <td><%= f['Dest'] %></td>
+    <td><%= f['Status'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

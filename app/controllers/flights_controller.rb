@@ -23,7 +23,7 @@ class FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights } # TODO: Needs actual view
+      format.html { render html: @flights }
     end
   end
 
@@ -42,13 +42,16 @@ class FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights } # TODO: Needs actual view
+      format.html { render html: @flights }
     end
 
   end
 
   private
 
+  # TODO: This should return a combined array and the time
+  # column should be replaced with a valid Ruby DateTime,
+  # instead of the string
   def table_to_flight_array(table, column_names)
 
     today_status = ""
