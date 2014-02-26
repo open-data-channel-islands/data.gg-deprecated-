@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag    "bootstrap-theme.min", media: "all", "data-turbolinks-track" => true %>
     <%= stylesheet_link_tag    "home", media: "all", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-  
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +35,7 @@
           </button>
           <%= link_to("data.gg", "/", class: "navbar-brand") %>
         </div>
+        </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
@@ -48,9 +49,9 @@
         </div>
       </div>
     </div>
-  
+
     <%= yield %>
-  
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

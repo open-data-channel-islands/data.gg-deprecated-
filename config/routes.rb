@@ -1,5 +1,7 @@
 DataGg::Application.routes.draw do
 
+  get "flights/index"
+  get "flight/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -32,14 +34,14 @@ DataGg::Application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
-  
-  
+
+
   # Note that the rails docs say this:
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
   get 'buses/' => 'buses#index'
-  
+
 
   namespace :buses do
 
@@ -47,25 +49,32 @@ DataGg::Application.routes.draw do
 
     # Because these are distinct
     resources :stops
-    
+
     # Can download XML/Object/JSON/HTML
     get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
-    
+
     resources :timetables, param: :date do
-      
+
       resources :routes do
-        
+
         resources :route_stops
-        
+
         resources :stops do
         end
       end
-      
+
     end
 
-  
-   
+
+
   end
+
+  resources :flights do
+   collection do
+    get 'download_arrivals'
+    get 'download_departures'
+  end
+end
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
