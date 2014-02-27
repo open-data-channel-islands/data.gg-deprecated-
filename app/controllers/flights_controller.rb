@@ -49,47 +49,45 @@ class FlightsController < ApplicationController
 
   private
 
-  # TODO: This should return a combined array and the time
-  # column should be replaced with a valid Ruby DateTime,
-  # instead of the string
   def table_to_flight_array(table, column_names)
 
     today_status = ""
-    today_date = Date.new
-    today_flights = []
     tomorrow_status = ""
-    tomorrow_date = Date.new
-    tomorrow_flights = []
-    #flights = []
+    flights = []
+    active_date = DateTime.new
 
     table.each_with_index do |row, row_index|
+      next if row_index == 1
+
       if row.count == 1 then
         if today_status.empty? then
           today_status = row[0]
           today_status_date = today_status.split(':').last.strip
-          today_date = Date.parse(today_status_date)
+          active_date = Date.parse(today_status_date)
         else
           tomorrow_status = row[0]
           tomorrow_status_date = tomorrow_status.split(':').last.strip
-          tomorrow_date = Date.parse(tomorrow_status_date)
+          active_date = Date.parse(tomorrow_status_date)
         end
       else
-        next if row_index == 1
-
         flight_info_hash = { }
-        row.each_with_index do |cell, cell_index|
-          flight_info_hash[column_names[cell_index]] = cell
-        end
 
-        if tomorrow_status.empty? then
-          today_flights << flight_info_hash
-        else
-          tomorrow_flights << flight_info_hash
-        end
+        flight_info_hash[column_names[0]] = row[0]
+
+        time = Time.parse(row[1])
+
+        flight_info_hash[column_names[1]] = DateTime.new(
+          active_date.year, active_date.month, active_date.day,
+          time.hour, time.min)
+
+        flight_info_hash[column_names[2]] = row[2]
+        flight_info_hash[column_names[3]] = row[3]
+
+        flights << flight_info_hash
       end
     end
 
-    return today_flights
+    return flights
   end
 
   def url_to_table(url)
@@ -101,12 +99,6 @@ class FlightsController < ApplicationController
     current_row = []
     row_counter = 0
     doc.css('td').each_with_index do |cell|
-      if row_counter >= 4 then
-        table << current_row
-        current_row = []
-        row_counter = 0
-      end
-
       current_row << cell.text.strip
 
       row_increment = 1
@@ -114,6 +106,12 @@ class FlightsController < ApplicationController
         row_increment = cell.attr('colspan').to_i
       end
       row_counter += row_increment
+
+      if row_counter >= 4 then
+        table << current_row
+        current_row = []
+        row_counter = 0
+      end
     end
     return table
   end
