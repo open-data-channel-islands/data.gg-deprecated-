@@ -36,6 +36,13 @@ class Buses::RoutesController < ApplicationController
     @route = Route.find_by_id(params[:id])
     @timetable = @route.timetable
     @route_stop = RouteStop.new
+    
+    
+    # order = the ORIGIN time (start of each one) and THEN by route stop INDEX
+    #       = so spits it out just like the actual PDF timetable. Some 
+    #       = post-processing required to put it into an array
+    @stop_links = StopLink.joins(:route_stop).joins(:origin_stop_link).where("route_stop.route_id = ?", @route.id).order("origin_stop_link.time ASC").all
+    
 
     respond_to do |format|
       format.html
@@ -48,10 +55,6 @@ class Buses::RoutesController < ApplicationController
     respond_to do |format|
       format.html
     end
-  end
-  
-  def add_stop
-    
   end
   
   private

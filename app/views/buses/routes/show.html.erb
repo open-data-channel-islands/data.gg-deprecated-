@@ -3,38 +3,23 @@
 
 
 
+Put a link from stop_link to route_stop so stop_link has "route_stop_id" on it.
+Then use the 'index' field on route_stop_id for ordering as well as origin_stop+time
+
+SELECT * FROM stop_link WHERE(origin_id) JOIN route_stop ON stop_link.route_stop_id = route_stop.id ORDER BY route_stop.index  SKIP [5] 
+
+
+SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER BY origin_stop_time, 
 
 
 <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Stop</th>
-    </tr>
-  </thead>
   <tbody>
     
-    Put a link from stop_link to route_stop so stop_link has "route_stop_id" on it.
-    Then use the 'index' field on route_stop_id for ordering as well as origin_stop+time
-    
-    SELECT * FROM stop_link WHERE(origin_id) JOIN route_stop ON stop_link.route_stop_id = route_stop.id ORDER BY route_stop.index  SKIP [5] 
     
     
-    SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER BY origin_stop_time, 
-    
-    <% @route.route_stops.each do |stop| %>
-    <tr>
-      <td><%= stop.name %></td>
-      <% @links[stop.id].each do |link| %>
-      <td><%= link.time %></td>
-      <% end %>
-    </tr>
-    <% end %>
   </tbody>
-  <tfoot>
-    
-  </tfoot>
+  
 </table>
-
 
 
 <h3>Stops</h3>
@@ -52,9 +37,11 @@
     <% end %>
   </tbody>
   <tfoot>
-    <%= form_for @route_stop, url: { action: "create_route_stop" } do |f| %>
+    <%= form_for [:buses, @timetable, @route, @route_stop] do |f| %>
     <tr>
-      <td><%= select_tag(:route_stop, options_for_select(Stop.all.map { |stop| [stop.name, stop.id] }))%></td>
+      <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| [stop.name, stop.id] }))%></td>
+      <td><%= f.hidden_field(:route_id, { :value => @route.id })%>
+        <%= f.submit "Add" %></td>
     </tr>
     <% end %>
   </tfoot>
