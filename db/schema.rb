@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224194646) do
+ActiveRecord::Schema.define(version: 20140228075108) do
 
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
     t.integer "stop_id"
-    t.integer "index"
+    t.integer "idx"
   end
 
   add_index "route_stops", ["route_id"], name: "index_route_stops_on_route_id"

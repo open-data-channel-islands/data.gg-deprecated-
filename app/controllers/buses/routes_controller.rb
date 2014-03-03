@@ -37,11 +37,18 @@ class Buses::RoutesController < ApplicationController
     @timetable = @route.timetable
     @route_stop = RouteStop.new
     
-    
-    # order = the ORIGIN time (start of each one) and THEN by route stop INDEX
-    #       = so spits it out just like the actual PDF timetable. Some 
-    #       = post-processing required to put it into an array
-    @stop_links = StopLink.joins(:route_stop).joins(:origin_stop_link).where("route_stop.route_id = ?", @route.id).order("origin_stop_link.time ASC").all
+    @route.route_stops.each do |rs|
+      
+    end
+
+    @stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
+                          .joins("INNER JOIN stop_links origin ON origin.id = stop_links.origin_stop_link_id")
+                          .where("rs.route_id = ?", @route.id)
+                          .order("origin.time ASC, rs.idx DESC")
+                          .all
+                          
+    # Now we loop through until we find the origin time has changed, then add it to a collection. This will
+    # organise each stop_link entry in a two-dimensional array instead
     
 
     respond_to do |format|
@@ -55,6 +62,10 @@ class Buses::RoutesController < ApplicationController
     respond_to do |format|
       format.html
     end
+  end
+  
+  def create_stop_link_chain
+    
   end
   
   private
