@@ -36,6 +36,20 @@ class Buses::RoutesController < ApplicationController
     @route = Route.find_by_id(params[:id])
     @timetable = @route.timetable
     @route_stop = RouteStop.new
+    
+    @route.route_stops.each do |rs|
+      
+    end
+
+    @stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
+                          .joins("INNER JOIN stop_links origin ON origin.id = stop_links.origin_stop_link_id")
+                          .where("rs.route_id = ?", @route.id)
+                          .order("origin.time ASC, rs.idx DESC")
+                          .all
+                          
+    # Now we loop through until we find the origin time has changed, then add it to a collection. This will
+    # organise each stop_link entry in a two-dimensional array instead
+    
 
     respond_to do |format|
       format.html
@@ -50,7 +64,7 @@ class Buses::RoutesController < ApplicationController
     end
   end
   
-  def add_stop
+  def create_stop_link_chain
     
   end
   

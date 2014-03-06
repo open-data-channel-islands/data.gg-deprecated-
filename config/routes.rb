@@ -53,19 +53,11 @@ DataGg::Application.routes.draw do
     get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
 
     resources :timetables, param: :date do
-
       resources :routes do
-
         resources :route_stops
-
-        resources :stops do
-        end
+        resources :stops
       end
-
     end
-
-
-
   end
 
   resources :flights do
