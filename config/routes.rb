@@ -44,7 +44,6 @@ DataGg::Application.routes.draw do
 
 
   namespace :buses do
-
     get 'api/latest.:format' => 'api#latest'
 
     # Because these are distinct
