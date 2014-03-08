@@ -41,6 +41,10 @@ group :development do
   gem 'capistrano-rails'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
