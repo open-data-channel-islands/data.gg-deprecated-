@@ -39,7 +39,8 @@ group :development do
   gem "binding_of_caller"
   gem 'capistrano'
   gem 'capistrano-rails'
-  gem 'rvm-capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 group :production do
