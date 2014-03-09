@@ -7,12 +7,12 @@ set -e
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/var/www/data.gg/current
 PID=$APP_ROOT/tmp/pids/data.gg_unicorn.pid
-CMD="/usr/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb"
-INIT_CONF=$APP_ROOT/config/init.conf
+CMD="/home/admin/.rvm/gems/ruby-2.1.1/bin/unicorn_rails -c $APP_ROOT/config/unicorn.rb -D -E production"
+#INIT_CONF=$APP_ROOT/config/init.conf
 action="$1"
 set -u
 
-test -f "$INIT_CONF" && . $INIT_CONF
+#test -f "$INIT_CONF" && . $INIT_CONF
 
 old_pid="$PID.oldbin"
 
