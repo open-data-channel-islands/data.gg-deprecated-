@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228075108) do
+ActiveRecord::Schema.define(version: 20140312204115) do
+
+  create_table "route_overview", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "timetable_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "route_period", force: true do |t|
+    t.string   "name"
+    t.integer  "start_day"
+    t.integer  "end_day"
+    t.text     "description"
+    t.integer  "route_overview_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
@@ -29,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140228075108) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "timetable_id"
+    t.integer  "route_period_id"
   end
 
   create_table "stop_links", force: true do |t|

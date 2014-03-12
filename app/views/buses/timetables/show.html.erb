@@ -1,4 +1,4 @@
-<h1><%= @timetable.name %> <small>Route information</small></h1>
+<h1><%= @timetable.name %> <small>Routes</small></h1>
 
 <p class="lead">Showing all bus routes</p>
 
@@ -6,35 +6,54 @@
   <thead>
     <tr>
       <th>Route</th>
-      <th>Description</th>
-      <th>Start Day</th>
-      <th>End Day</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    <% @timetable.routes.each do |route| %>
+    <%= @timetable.route_overviews.each do |overview| %>
     <tr>
-      <td><%= link_to route.name, buses_timetable_route_path(:timetable_date => route.timetable.effective_date, :id => route.id) %></td>
-      <td><%= route.description %></td>
-      <td><%= day_name_from_number(route.start_day) %></td>
-      <td><%= day_name_from_number(route.end_day) %></td>
+      <td><%= overview.name %></td>
       <td>Delete</td>
     </tr>
     <% end %>
-    
-  <tfoot>
-    <%= form_for [:buses, @timetable, @route] do |f| %>
     <tr>
-      <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Route name"} %></td>
-      <td><%= f.text_field :description, {:tabindex => 2, :class => "form-control", :placeholder => "Description" } %></td>
-      <td><%= f.text_field :start_day, {:tabindex => 3, :class => "form-control" } %></td>
-      <td><%= f.text_field :end_day, {:tabindex => 4, :class => "form-control" } %></td>
-      <td><%= f.hidden_field :timetable_id, { :value => @timetable.id } %>
-        <%= f.submit "Create", { :class => "btn btn-default"} %></td>
+      <td colspan="2">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Start Day</th>
+              <th>End Day</th>
+            </tr>
+          </thead>
+          <tbody>
+          <%= overview.route_periods.each do |period| %>
+          <tr>
+            <td><%= period.name%></td>
+            <td><%= period.start_day %></td>
+            <td><%= period.end_day %></td>
+          </tr>
+          <% end %>
+          </tbody>
+          <tfoot>
+            <tr>
+              <%= form_for [:buses, @route_period] do |f| %>
+              <td><%= f.text_field :name %></td>
+              <td><%= f.text_field :start_day %></td>
+              <td><%= f.text_field :end_day %></td>
+              <% end %>
+            </tr>
+          </tfoot>
+        </table>
+      </td>
     </tr>
-    <% end %>
-  </tfoot>
-    
   </tbody>
+  <tfoot>
+    <tr>
+      <%= form_for [:buses, @route_overview] do |f| %>
+      <td><%= f.text_field :name %></td>
+      <td><%= f.submit "Create", { :class => "btn btn-default"} %>
+      <% end %>
+    </tr>
+  </tfoot>  
 </table>

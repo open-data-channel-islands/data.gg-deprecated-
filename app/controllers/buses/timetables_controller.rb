@@ -1,8 +1,8 @@
 class Buses::TimetablesController < ApplicationController
   
   def show
-    @timetable = Timetable.where('effective_date = ?', params[:date]).first
-    @route = Route.new
+    @timetable = Timetable.first #where('effective_date = ?', params[:timetable_date]).first
+
 
     respond_to do |format|
       format.html
@@ -16,20 +16,20 @@ class Buses::TimetablesController < ApplicationController
   def create
     @timetable = Timetable.new(timetable_params)
     @timetable.save
-    
+  #  
     flash[:success] = "Timetable #{@timetable.name} successfully saved."
-    
+  #  
     redirect_to buses_timetable_path(:date => @timetable.effective_date)
   end
   
-  def download
+  #def download
     
-    date = params[:date]
-    type = params[:type]
+  #  date = params[:date]
+  #  type = params[:type]
     
     # Based on the type get the data
     
-  end
+    #end
   
   private
   
