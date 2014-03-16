@@ -10,12 +10,12 @@
     </tr>
   </thead>
   <tbody>
-    <%= @timetable.route_overviews.each do |overview| %>
+    <% @timetable.route_overviews.each do |overview| %>
     <tr>
       <td><%= overview.name %></td>
       <td>Delete</td>
     </tr>
-    <% end %>
+    
     <tr>
       <td colspan="2">
         <table>
@@ -27,7 +27,7 @@
             </tr>
           </thead>
           <tbody>
-          <%= overview.route_periods.each do |period| %>
+          <% overview.route_periods.each do |period| %>
           <tr>
             <td><%= period.name%></td>
             <td><%= period.start_day %></td>
@@ -37,20 +37,27 @@
           </tbody>
           <tfoot>
             <tr>
-              <%= form_for [:buses, @route_period] do |f| %>
+              <td colspan="3">Route Period</td>
+            </tr>
+            <tr>
+              <%= form_for [:buses, @timetable, @route_period] do |f| %>
+              <%= f.hidden_field :route_overview_id, :value => overview.id %>
               <td><%= f.text_field :name %></td>
               <td><%= f.text_field :start_day %></td>
               <td><%= f.text_field :end_day %></td>
+              <td><%= f.submit "Create", { :class => "btn btn-default" } %>
               <% end %>
             </tr>
           </tfoot>
         </table>
       </td>
     </tr>
+    <% end %>
   </tbody>
   <tfoot>
     <tr>
-      <%= form_for [:buses, @route_overview] do |f| %>
+      <%= form_for [:buses, @timetable, @route_overview] do |f| %>
+      <%= f.hidden_field :timetable_id, :value => @timetable.id %>
       <td><%= f.text_field :name %></td>
       <td><%= f.submit "Create", { :class => "btn btn-default"} %>
       <% end %>

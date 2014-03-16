@@ -2,7 +2,8 @@ class Buses::TimetablesController < ApplicationController
   
   def show
     @timetable = Timetable.first #where('effective_date = ?', params[:timetable_date]).first
-
+    @route_overview = RouteOverview.new
+    @route_period = RoutePeriod.new
 
     respond_to do |format|
       format.html

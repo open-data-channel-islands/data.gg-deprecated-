@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140312204115) do
+ActiveRecord::Schema.define(version: 20140316123540) do
 
-  create_table "route_overview", force: true do |t|
+  create_table "route_overviews", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "timetable_id"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140312204115) do
     t.datetime "updated_at"
   end
 
-  create_table "route_period", force: true do |t|
+  create_table "route_periods", force: true do |t|
     t.string   "name"
     t.integer  "start_day"
     t.integer  "end_day"
