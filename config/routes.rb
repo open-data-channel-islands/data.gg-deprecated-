@@ -52,9 +52,8 @@ DataGg::Application.routes.draw do
     # Can download XML/Object/JSON/HTML
     get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
 
-    resources :timetables, param: :date do
-      resources :route_overviews
-      resources :route_periods
+    resources :timetables, param: :start_date do
+      resources :routes, param: :route_name
     end
   end
 

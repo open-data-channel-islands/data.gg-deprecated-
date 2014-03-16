@@ -1,7 +1,7 @@
 class BusesController < ApplicationController
   
   def index
-    @timetables = Timetable.order(:effective_date).all
+    @timetables = Timetable.order(:start).all
     @latest = @timetables[0]
     
     respond_to do |format|

@@ -11,25 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316123540) do
-
-  create_table "route_overviews", force: true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "timetable_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "route_periods", force: true do |t|
-    t.string   "name"
-    t.integer  "start_day"
-    t.integer  "end_day"
-    t.text     "description"
-    t.integer  "route_overview_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140316144743) do
 
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
@@ -47,7 +29,7 @@ ActiveRecord::Schema.define(version: 20140316123540) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "route_period_id"
+    t.integer  "timetable_id"
   end
 
   create_table "stop_links", force: true do |t|
@@ -60,6 +42,7 @@ ActiveRecord::Schema.define(version: 20140316123540) do
     t.boolean  "depart"
     t.integer  "route_stop_id"
     t.integer  "origin_stop_link_id"
+    t.boolean  "night"
   end
 
   create_table "stops", force: true do |t|
@@ -71,10 +54,11 @@ ActiveRecord::Schema.define(version: 20140316123540) do
   end
 
   create_table "timetables", force: true do |t|
-    t.integer  "effective_date"
+    t.date     "start"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "end"
   end
 
 end

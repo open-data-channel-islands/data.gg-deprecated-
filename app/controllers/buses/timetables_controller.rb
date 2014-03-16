@@ -1,9 +1,10 @@
+require 'date'
+
 class Buses::TimetablesController < ApplicationController
   
   def show
-    @timetable = Timetable.first #where('effective_date = ?', params[:timetable_date]).first
-    @route_overview = RouteOverview.new
-    @route_period = RoutePeriod.new
+    @timetable = Timetable.where(:start => params[:start_date]).first
+    @route = Route.new
 
     respond_to do |format|
       format.html
@@ -20,7 +21,7 @@ class Buses::TimetablesController < ApplicationController
   #  
     flash[:success] = "Timetable #{@timetable.name} successfully saved."
   #  
-    redirect_to buses_timetable_path(:date => @timetable.effective_date)
+    redirect_to buses_timetable_path(:date => @timetable.start)
   end
   
   #def download
@@ -35,6 +36,6 @@ class Buses::TimetablesController < ApplicationController
   private
   
   def timetable_params
-    params.require(:timetable).permit(:name, :effective_date)
+    params.require(:timetable).permit(:name, :start)
   end
 end

@@ -10,57 +10,23 @@
     </tr>
   </thead>
   <tbody>
-    <% @timetable.route_overviews.each do |overview| %>
-    <tr>
-      <td><%= overview.name %></td>
-      <td>Delete</td>
-    </tr>
-    
-    <tr>
-      <td colspan="2">
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Start Day</th>
-              <th>End Day</th>
-            </tr>
-          </thead>
-          <tbody>
-          <% overview.route_periods.each do |period| %>
-          <tr>
-            <td><%= period.name%></td>
-            <td><%= period.start_day %></td>
-            <td><%= period.end_day %></td>
-          </tr>
-          <% end %>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">Route Period</td>
-            </tr>
-            <tr>
-              <%= form_for [:buses, @timetable, @route_period] do |f| %>
-              <%= f.hidden_field :route_overview_id, :value => overview.id %>
-              <td><%= f.text_field :name %></td>
-              <td><%= f.text_field :start_day %></td>
-              <td><%= f.text_field :end_day %></td>
-              <td><%= f.submit "Create", { :class => "btn btn-default" } %>
-              <% end %>
-            </tr>
-          </tfoot>
-        </table>
-      </td>
-    </tr>
+    <% curr_route = '' %>
+    <% @timetable.routes.order('name').each do |route| %>
+      <% if curr_route != route.name %>
+        <tr><th><%= route.name %></th></tr>
+      <% end %>
+      <tr>
+        <td><%= route.start %></td>
+      </tr>
     <% end %>
   </tbody>
   <tfoot>
     <tr>
-      <%= form_for [:buses, @timetable, @route_overview] do |f| %>
-      <%= f.hidden_field :timetable_id, :value => @timetable.id %>
-      <td><%= f.text_field :name %></td>
-      <td><%= f.submit "Create", { :class => "btn btn-default"} %>
+      <%= form_for [:buses, @timetable, @route] do |f| %>
+      <td><%= f.text_field :start_day %></td>
+      <td><%= f.text_field :end_day %></td>
+      <td><%= f.submit 'Submit' %>
       <% end %>
     </tr>
-  </tfoot>  
+  </tfoot>
 </table>

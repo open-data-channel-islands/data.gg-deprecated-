@@ -22,7 +22,7 @@ class Buses::RoutesController < ApplicationController
     
     flash[:success] = "Route created"
     
-    redirect_to buses_timetable_path(:date => @route.timetable.effective_date)
+    redirect_to buses_timetable_path(:start_date => @route.timetable.start)
   end
   
   def destroy
