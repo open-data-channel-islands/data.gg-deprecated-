@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Offence</th>
+      <th>Year</th>
+      <th>Reported</th>
+      <th>Detected</th>
+      <th>No Crime</th>
+      <th>Outstanding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @crimes.each do |f| %>
+    <tr>
+    <td><%= f['Offence'] %></td>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Reported'] %></td>
+    <td><%= f['Detected'] %></td>
+    <td><%= f['No Crime'] %></td>
+    <td><%= f['Outstanding'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

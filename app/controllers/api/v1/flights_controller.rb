@@ -1,14 +1,14 @@
 require 'nokogiri'
 require 'open-uri'
 
-class FlightsController < ApplicationController
+class Api::V1::FlightsController < ApplicationController
   def index
     respond_to do |format|
       format.html { render :index }
     end
   end
 
-  def download_departures
+  def departures
     column_names = {
       0 => 'FlightNumber',
       1 => 'Time',
@@ -17,8 +17,7 @@ class FlightsController < ApplicationController
     }
 
     url = 'http://www.guernsey-airport.gov.gg/webdepartures.html'
-    table = url_to_table(url)
-    @flights = table_to_flight_array(table, column_names)
+    @flights = table_to_flight_array(url, column_names)
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -27,7 +26,7 @@ class FlightsController < ApplicationController
     end
   end
 
-  def download_arrivals
+  def arrivals
     column_names = {
       0 => 'FlightNumber',
       1 => 'Time',
@@ -36,8 +35,7 @@ class FlightsController < ApplicationController
     }
 
     url = 'http://www.guernsey-airport.gov.gg/webarrivals.html'
-    table = url_to_table(url)
-    @flights = table_to_flight_array(table, column_names)
+    @flights = table_to_flight_array(url, column_names)
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -49,7 +47,8 @@ class FlightsController < ApplicationController
 
   private
 
-  def table_to_flight_array(table, column_names)
+  def table_to_flight_array(url, column_names)
+    table = url_to_table(url)
 
     today_status = ""
     tomorrow_status = ""
