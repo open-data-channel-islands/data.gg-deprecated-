@@ -38,6 +38,7 @@
 <div class="clearfix"></div>
 <% end %>
 
+<div class="col-md-4">
 <% if @timetables.count > 0 %>
 <table class="table table-striped" style="margin-top:50px;">
   <thead>
@@ -59,5 +60,9 @@
 No timetables to display
 <% end %>
 
-
 <%= link_to 'Create Timetable', new_buses_timetable_path %>
+</div>
+<div class="col-md-4">
+  <%= link_to 'Stops', buses_stops_path %>
+</div>
+

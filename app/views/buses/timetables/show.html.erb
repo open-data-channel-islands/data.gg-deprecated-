@@ -3,30 +3,39 @@
 <p class="lead">Showing all bus routes</p>
 
 <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Route</th>
-      <th></th>
-    </tr>
-  </thead>
   <tbody>
     <% curr_route = '' %>
     <% @timetable.routes.order('name').each do |route| %>
-      <% if curr_route != route.name %>
-        <tr><th><%= route.name %></th></tr>
-      <% end %>
+      <% if curr_route != route.name 
+            curr_route = route.name %>
+            <tr>
+              <th colspan="3"><h4>Route <%= route.name %></h4></th>
+            </tr>
+      <% end  %>
       <tr>
-        <td><%= route.start %></td>
+        <td><%= link_to route.description, buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id) %>
+        <td><%= Date::DAYNAMES[route.start_day] %></td>
+        <td><%= Date::DAYNAMES[route.end_day] %>
       </tr>
     <% end %>
   </tbody>
   <tfoot>
     <tr>
-      <%= form_for [:buses, @timetable, @route] do |f| %>
-      <td><%= f.text_field :start_day %></td>
-      <td><%= f.text_field :end_day %></td>
-      <td><%= f.submit 'Submit' %>
-      <% end %>
+      <td colspan="3">
+        <%= form_for [:buses, @timetable, @route], html: { class: 'form-inline'} do |f| %>
+          <%= f.hidden_field :timetable_id, :value => @timetable.id %>
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+          <%= f.label :description %>
+          <%= f.text_field :description %>
+          <%= f.label :start_day %>
+          <%= f.select(:start_day, [['Monday', 1], ['Tuesday', 2], ['Wednesday', 3], ['Thursday', 4], ['Friday', 5], ['Saturday', 6], ['Sunday', 0]], class: 'form-control' ) %>
+          <%= f.label :end_day %>
+          <%= f.select(:end_day, [['Monday', 1], ['Tuesday', 2], ['Wednesday', 3], ['Thursday', 4], ['Friday', 5], ['Saturday', 6], ['Sunday', 0]], class: 'form-control' ) %>
+          <%= f.submit 'Submit', { :class =>  "btn btn-default"} %>
+        <% end %>
+      </td>
+      
     </tr>
   </tfoot>
 </table>

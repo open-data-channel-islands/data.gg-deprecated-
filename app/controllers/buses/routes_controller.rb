@@ -13,8 +13,6 @@ class Buses::RoutesController < ApplicationController
   def create
     @route = Route.new(route_params)
     
-    @route.timetable = Timetable.find_by_id(route_params[:timetable_id])
-    
     if !@route.timetable
       # error
     end
@@ -26,20 +24,25 @@ class Buses::RoutesController < ApplicationController
   end
   
   def destroy
-    @route = Route.find(params[:id])
-    @route.destroy
-    flash[:success] = "Route destroyed"
-    redirect_to buses_timetable_path(:date => params[:date])
+    @route = Route.find_by_id(params[:id])
+    
+    respond_to do |f|
+      if @route.destroy
+        flash[:success] = "Route destroyed"
+        redirect_to buses_timetable_path(:start_date => params[:start])
+      else
+        redirect_to buses_timetable_route(:start_date => params[:start], :id => params[:id])
+      end
+    end
   end
   
   def show
     @route = Route.find_by_id(params[:id])
-    @timetable = @route.timetable
     @route_stop = RouteStop.new
+    @route_stop.route = @route
+    @timetable = @route.timetable
     
-    @route.route_stops.each do |rs|
-      
-    end
+    @ordered_route_stops = @route.route_stops.order(:idx).all
 
     @stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.id = stop_links.origin_stop_link_id")

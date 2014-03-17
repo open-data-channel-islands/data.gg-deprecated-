@@ -3,24 +3,27 @@ class Buses::RouteStopsController < ApplicationController
   def create
     @route_stop = RouteStop.new(route_stop_params)
 
-    rs = RouteStop.where(route_id: @route_stop.route.id).order(:index).first()
+    # This gets the very first route_stop instance
+    rs = RouteStop.where(route_id: @route_stop.route.id).order(:idx).first()
     idx = 0
     print idx
     if rs
-      idx = rs.index
+      idx = rs.idx
     end
     
     print idx
     
-    @route_stop.index = idx + 1
+    @route_stop.idx = idx + 1
 
-    if @route_stop.save
-      flash[:success] = "Success"
-      redirect_to buses_timetable_route_route_stops_path(@route_stop.route)
-    else
-      flash[:error] = "Fail"
-      print @route_stop.errors.full_messages
-      redirect_to "/"
+    respond_to do |f|
+      if @route_stop.save
+        flash[:success] = "Success"
+        redirect_to buses_timetable_route(@route_stop.route.start, @route_stop.id)
+      else
+        flash[:error] = "Fail"
+        print @route_stop.errors.full_messages
+        redirect_to "/"
+      end
     end
   end
   
