@@ -59,12 +59,21 @@ DataGg::Application.routes.draw do
     end
   end
 
-  resources :flights do
-   collection do
-    get 'download_arrivals'
-    get 'download_departures'
+  namespace :api do
+    namespace :v1 do
+      resources :flights do
+        collection do
+          get 'arrivals'
+          get 'departures'
+        end
+      end
+      resources :police do
+        collection do
+          get 'crimes'
+        end
+      end
+    end
   end
-end
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
