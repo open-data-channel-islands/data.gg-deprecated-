@@ -1,4 +1,4 @@
-class Buses::RouteStopsController < ApplicationController
+class Api::V1::Buses::RouteStopsController < ApplicationController
   
   def create
     @route_stop = RouteStop.new(route_stop_params)
@@ -18,7 +18,7 @@ class Buses::RouteStopsController < ApplicationController
     respond_to do |f|
       if @route_stop.save
         flash[:success] = "Success"
-        redirect_to buses_timetable_route(@route_stop.route.start, @route_stop.id)
+        redirect_to api_v1_buses_timetable_route(@route_stop.route.start, @route_stop.id)
       else
         flash[:error] = "Fail"
         print @route_stop.errors.full_messages

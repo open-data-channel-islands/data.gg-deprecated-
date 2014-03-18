@@ -1,6 +1,6 @@
 require 'date'
 
-class Buses::TimetablesController < ApplicationController
+class Api::V1::Buses::TimetablesController < ApplicationController
   
   def show
     @timetable = Timetable.where(:start => params[:start_date]).first

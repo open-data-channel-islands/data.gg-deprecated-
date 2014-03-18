@@ -3,6 +3,6 @@ class RouteStop < ActiveRecord::Base
   belongs_to :route
   
   validates :idx, presence: true
-  validates :stop, presence: true
-  validates :route, presence: true
+  validates :stop_id, presence: true
+  validates :route_id, presence: true
 end

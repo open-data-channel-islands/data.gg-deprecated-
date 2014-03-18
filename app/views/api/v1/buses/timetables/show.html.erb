@@ -13,7 +13,7 @@
             </tr>
       <% end  %>
       <tr>
-        <td><%= link_to route.description, buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id) %>
+        <td><%= link_to route.description, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id) %>
         <td><%= Date::DAYNAMES[route.start_day] %></td>
         <td><%= Date::DAYNAMES[route.end_day] %>
       </tr>
@@ -22,7 +22,7 @@
   <tfoot>
     <tr>
       <td colspan="3">
-        <%= form_for [:buses, @timetable, @route], html: { class: 'form-inline'} do |f| %>
+        <%= form_for [:api, :v1, :buses, @timetable, @route], html: { class: 'form-inline'} do |f| %>
           <%= f.hidden_field :timetable_id, :value => @timetable.id %>
           <%= f.label :name %>
           <%= f.text_field :name %>

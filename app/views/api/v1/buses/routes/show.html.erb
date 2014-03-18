@@ -1,3 +1,5 @@
+<h1>Route Stops</h1>
+
 <p class="lead">Showing all stops on this route</p>
 
 
@@ -23,12 +25,30 @@ SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER B
   
   <tbody>
     
-    <% curr_stop_link_origin_time = nil %>
+    <%
+    curr_stop_link_origin_time = nil
+    new_row = false
+    %>
     <%= @stop_links.each do |stop_link| %>
     <% 
       if stop_link.origin.time != curr_stop_link_origin_time
         curr_stop_link_origin_time = stop_link.origin.time
+        new_row = true
       end
+      
+      if new_row %>
+         <tr>
+      <% end
+      
+      %>
+      
+      <td>test</td>
+      
+      <% if new_row %>
+        <tr>
+      <% end
+      
+      new_row = false
     %>
     
     <tr>
@@ -63,7 +83,7 @@ SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER B
     <% end %>
   </tbody>
   <tfoot>
-    <%= form_for [:buses, @timetable, @route, @route_stop] do |f| %>
+    <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop] do |f| %>
     <tr>
       <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| [stop.name, stop.id] }))%></td>
       <td><%= f.hidden_field(:route_id, { :value => @route.id })%>

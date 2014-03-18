@@ -1,4 +1,4 @@
-class Buses::RoutesController < ApplicationController
+class Api::V1::Buses::RoutesController < ApplicationController
   
   # Not used yet
   def index

@@ -1,4 +1,4 @@
-class BusesController < ApplicationController
+class Api::V1::BusesController < ApplicationController
   
   def index
     @timetables = Timetable.order(:start).all

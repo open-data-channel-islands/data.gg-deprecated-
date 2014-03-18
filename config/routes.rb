@@ -40,27 +40,46 @@ DataGg::Application.routes.draw do
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
-  get 'buses/' => 'buses#index'
+  #get 'buses/' => 'buses#index'
 
 
-  namespace :buses do
-    get 'api/latest.:format' => 'api#latest'
+  #namespace :buses do
+  #  get 'api/latest.:format' => 'api#latest'
 
     # Because these are distinct
-    resources :stops
+  #  resources :stops
 
     # Can download XML/Object/JSON/HTML
-    get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
+  #  get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
 
-    resources :timetables, param: :start_date do
-      resources :routes do
-        resources :route_stops
-      end
-    end
-  end
+  #  resources :timetables, param: :start_date do
+  #    resources :routes do
+  #      resources :route_stops
+  #    end
+  #  end
+  #end
 
   namespace :api do
     namespace :v1 do
+      
+      get 'buses/' => 'buses#index'
+      
+      namespace :buses do
+        
+        resources :stops
+        
+        resources :timetables, param: :start_date do
+          collection do
+            get 'data'
+          end
+          
+          resources :routes do
+            resources :route_stops
+          end
+        end
+        
+      end
+      
       resources :flights do
         collection do
           get 'arrivals'

@@ -15,3 +15,7 @@
 .padded-cell {
   padding: 10px;
 }
+
+body {
+  font-family:'Robot', sans-serif;
+}

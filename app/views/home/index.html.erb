@@ -1,19 +1,23 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>One API, All The Data.</h1>
+    <h2><strong>One API, All The Data.</strong></h2>
     <h3>Get the data you need for your apps and websites, any place, any time.</h3>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-      <div class="col-md-4">
-        <h2><%= link_to 'Flights', api_v1_flights_path %></h2>
-        <p>Flight details refreshed on the fly from the Guernsey Airport</p>
+    <div class="col-md-4">
+      <h3><%= link_to 'Buses', api_v1_buses_path %></h3>
+      <p>Bus routes, stops and GPS points</p>
     </div>
-          <div class="col-md-4">
-        <h2><%= link_to 'Police', api_v1_police_index_path %></h2>
-        <p>Police and crime</p>
+    <div class="col-md-4">
+      <h3><%= link_to 'Flights', api_v1_flights_path %></h3>
+      <p>Guernsey flight details refreshed on the fly</p>
+    </div>
+    <div class="col-md-4">
+      <h3><%= link_to 'Police', api_v1_police_index_path %></h3>
+      <p>Police and crime data</p>
     </div>
   </div>
 </div>

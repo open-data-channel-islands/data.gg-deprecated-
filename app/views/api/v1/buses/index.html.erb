@@ -18,21 +18,21 @@
 
 <% if @latest %>
 <div class="col-md-3">
-  <%= link_to buses_timetables_download_path(:type => "xml", :date => @latest.start), :style => "text-align:center" do %>
+  <%= link_to data_api_v1_buses_timetables_path(:type => "xml", :date => @latest.start), :style => "text-align:center" do %>
     <%= image_tag("note-64x64.png") %>
     <h3>XML</h3>
   <% end %>
 </div>
 <div class="col-md-3">
-  <%= link_to image_tag("note-64x64.png"), buses_timetables_download_path(:type => "json", :date => @latest.start)  %>
+  <%= link_to image_tag("note-64x64.png"), data_api_v1_buses_timetables_path(:type => "json", :date => @latest.start)  %>
   JSON
 </div>
 <div class="col-md-3" style="border-left:2px solid black; padding:10px 0; text-align:center">
-  <%= link_to image_tag("note-64x64.png"), buses_timetables_download_path(:type => "object", :date => @latest.start)  %>
+  <%= link_to image_tag("note-64x64.png"), data_api_v1_buses_timetables_path(:type => "object", :date => @latest.start)  %>
   Object
 </div>
 <div class="col-md-3">
-  <%= link_to image_tag("note-64x64.png"), buses_timetables_download_path(:type => "html", :date => @latest.start)  %>
+  <%= link_to image_tag("note-64x64.png"), data_api_v1_buses_timetables_path(:type => "html", :date => @latest.start)  %>
   HTML
 </div>
 <div class="clearfix"></div>
@@ -50,7 +50,7 @@
   <tbody>
   <% @timetables.each do |timetable| %>
     <tr>
-      <td><%= link_to timetable.name, buses_timetable_path(start_date: timetable.start) %></td>
+      <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
       <td><%= timetable.start %></td>
     </tr>
   <% end %>
@@ -60,9 +60,9 @@
 No timetables to display
 <% end %>
 
-<%= link_to 'Create Timetable', new_buses_timetable_path %>
+<%= link_to 'Create Timetable', new_api_v1_buses_timetable_path %>
 </div>
 <div class="col-md-4">
-  <%= link_to 'Stops', buses_stops_path %>
+  <%= link_to 'Stops', api_v1_buses_stops_path %>
 </div>
 

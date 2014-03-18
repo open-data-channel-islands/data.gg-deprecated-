@@ -1,4 +1,4 @@
-class Buses::StopsController < ApplicationController
+class Api::V1::Buses::StopsController < ApplicationController
   
   def index
     @stops = Stop.all
