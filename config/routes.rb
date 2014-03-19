@@ -73,6 +73,11 @@ DataGg::Application.routes.draw do
           get 'crimes'
         end
       end
+      resources :population do
+        collection do
+          get 'population'
+        end
+      end
     end
   end
 
