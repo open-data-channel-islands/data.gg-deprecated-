@@ -1,0 +1,1872 @@
+[
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2005,
+    "Count":21
+  },
+  {
+    "Offence":"Brakes Offences M/v",
+    "Year":2005,
+    "Count":3
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle ",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2005,
+    "Count":18
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/property",
+    "Year":2005,
+    "Count":23
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2005,
+    "Count":56
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2005,
+    "Count":548
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone ",
+    "Year":2005,
+    "Count":107
+  },
+  {
+    "Offence":"Driving Licence Offences ",
+    "Year":2005,
+    "Count":125
+  },
+  {
+    "Offence":"Driving Licence Offences - Provisional",
+    "Year":2005,
+    "Count":166
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2005,
+    "Count":27
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2005,
+    "Count":33
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/consideration",
+    "Year":2005,
+    "Count":245
+  },
+  {
+    "Offence":"Dropping Effects ",
+    "Year":2005,
+    "Count":7
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta",
+    "Year":2005,
+    "Count":2
+  },
+  {
+    "Offence":"Fail To Give Way ",
+    "Year":2005,
+    "Count":39
+  },
+  {
+    "Offence":"Fail To Obey Order Of Police Officer Directing Traffic",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2005,
+    "Count":37
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2005,
+    "Count":55
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2005,
+    "Count":25
+  },
+  {
+    "Offence":"L Plates Offences",
+    "Year":2005,
+    "Count":4
+  },
+  {
+    "Offence":"Mascot - Motor Vehicle Fitted With Dangerous Mascot, Ornament, Device",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Mudguards - Use/permit Use Of Motor Vehicle Without Mudguard",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Number Plates Offences",
+    "Year":2005,
+    "Count":38
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2005,
+    "Count":16
+  },
+  {
+    "Offence":"Parking Offences",
+    "Year":2005,
+    "Count":27
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2005,
+    "Count":10
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2005,
+    "Count":2
+  },
+  {
+    "Offence":"Prohibited And One Way Streets ",
+    "Year":2005,
+    "Count":18
+  },
+  {
+    "Offence":"Public Service Vehicle - No Licence",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Public Service Vehicle Fail To Comply With Conditions Of Licence",
+    "Year":2005,
+    "Count":2
+  },
+  {
+    "Offence":"Reckless Driving",
+    "Year":2005,
+    "Count":3
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2005,
+    "Count":3
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2005,
+    "Count":13
+  },
+  {
+    "Offence":"Ride Pedal Cycle And Carry Passenger Over 5 Years Of Age",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Ride Pedal Cycle Whilst Holding On To Another Vehicle",
+    "Year":2005,
+    "Count":1
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2005,
+    "Count":95
+  },
+  {
+    "Offence":"Speeding Offences ",
+    "Year":2005,
+    "Count":439
+  },
+  {
+    "Offence":"Tampering With Vehicle ",
+    "Year":2005,
+    "Count":2
+  },
+  {
+    "Offence":"Tax Offences",
+    "Year":2005,
+    "Count":291
+  },
+  {
+    "Offence":"Third-party Insurance Offences",
+    "Year":2005,
+    "Count":180
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply ",
+    "Year":2005,
+    "Count":23
+  },
+  {
+    "Offence":"Traffic Offender - Fail To Give Name And Address",
+    "Year":2005,
+    "Count":0
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply ",
+    "Year":2005,
+    "Count":312
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2005,
+    "Count":33
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2005,
+    "Count":17
+  },
+  {
+    "Offence":"Vehicle Lighting Offences",
+    "Year":2005,
+    "Count":42
+  },
+  {
+    "Offence":"Vehicle Noise",
+    "Year":2005,
+    "Count":8
+  },
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2006,
+    "Count":8
+  },
+  {
+    "Offence":"Brakes Offences M/v",
+    "Year":2006,
+    "Count":4
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle ",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2006,
+    "Count":15
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/Property",
+    "Year":2006,
+    "Count":17
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2006,
+    "Count":51
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2006,
+    "Count":367
+  },
+  {
+    "Offence":"Drive Vehicle With Inadequate Visibility ",
+    "Year":2006,
+    "Count":0
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone ",
+    "Year":2006,
+    "Count":117
+  },
+  {
+    "Offence":"Driving Licence Offences ",
+    "Year":2006,
+    "Count":337
+  },
+  {
+    "Offence":"Driving Licence Offences - Provisional",
+    "Year":2006,
+    "Count":116
+  },
+  {
+    "Offence":"Drive On L’Ancresse Common ",
+    "Year":2006,
+    "Count":0
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2006,
+    "Count":39
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2006,
+    "Count":35
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/Consideration",
+    "Year":2006,
+    "Count":294
+  },
+  {
+    "Offence":"Dropping Effects ",
+    "Year":2006,
+    "Count":2
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta",
+    "Year":2006,
+    "Count":3
+  },
+  {
+    "Offence":"Fail To Give Way ",
+    "Year":2006,
+    "Count":62
+  },
+  {
+    "Offence":"Fail To Obey Order Of Police Officer Directing Traffic",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Fail To Remove Vehicle When Directed by Officer ",
+    "Year":2006,
+    "Count":0
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2006,
+    "Count":45
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2006,
+    "Count":69
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2006,
+    "Count":15
+  },
+  {
+    "Offence":"L Plates Offences",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Mascot - Motor Vehicle Fitted With Dangerous Mascot, Ornament, Device",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Mudguards - Use/permit Use Of Motor Vehicle Without Mudguard",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"M/V Impaired transparency of windscreen",
+    "Year":2006,
+    "Count":0
+  },
+  {
+    "Offence":"Number Plates Offences",
+    "Year":2006,
+    "Count":30
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2006,
+    "Count":17
+  },
+  {
+    "Offence":"Parking Offences",
+    "Year":2006,
+    "Count":25
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2006,
+    "Count":7
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2006,
+    "Count":4
+  },
+  {
+    "Offence":"Prohibited And One Way Streets ",
+    "Year":2006,
+    "Count":5
+  },
+  {
+    "Offence":"Public Service Vehicle - No Licence",
+    "Year":2006,
+    "Count":3
+  },
+  {
+    "Offence":"Public Service Vehicle Fail To Comply With Conditions Of Licence",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Reckless Driving",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2006,
+    "Count":33
+  },
+  {
+    "Offence":"Ride Pedal Cycle And Carry Passenger Over 5 Years Of Age",
+    "Year":2006,
+    "Count":2
+  },
+  {
+    "Offence":"Ride Pedal Cycle Whilst Holding On To Another Vehicle",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2006,
+    "Count":127
+  },
+  {
+    "Offence":"Speeding Offences ",
+    "Year":2006,
+    "Count":329
+  },
+  {
+    "Offence":"Tampering With Vehicle ",
+    "Year":2006,
+    "Count":1
+  },
+  {
+    "Offence":"Tax Offences",
+    "Year":2006,
+    "Count":338
+  },
+  {
+    "Offence":"Third-party Insurance Offences",
+    "Year":2006,
+    "Count":463
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply ",
+    "Year":2006,
+    "Count":33
+  },
+  {
+    "Offence":"Traffic Offender - Fail To Give Name And Address",
+    "Year":2006,
+    "Count":3
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply ",
+    "Year":2006,
+    "Count":218
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2006,
+    "Count":22
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2006,
+    "Count":2
+  },
+  {
+    "Offence":"Vehicle Lighting Offences ",
+    "Year":2006,
+    "Count":77
+  },
+  {
+    "Offence":"Vehicle Noise ",
+    "Year":2006,
+    "Count":7
+  },
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2007,
+    "Count":11
+  },
+  {
+    "Offence":"Brakes Offences M/V",
+    "Year":2007,
+    "Count":8
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle ",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2007,
+    "Count":20
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/Property",
+    "Year":2007,
+    "Count":11
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2007,
+    "Count":54
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2007,
+    "Count":827
+  },
+  {
+    "Offence":"Drive Vehicle With Inadequate Visibility ",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone ",
+    "Year":2007,
+    "Count":121
+  },
+  {
+    "Offence":"Driving Licence Offences ",
+    "Year":2007,
+    "Count":388
+  },
+  {
+    "Offence":"Driving Licence Offences - Provisional",
+    "Year":2007,
+    "Count":200
+  },
+  {
+    "Offence":"Drive On L’Ancresse Common ",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2007,
+    "Count":49
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2007,
+    "Count":44
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/Consideration",
+    "Year":2007,
+    "Count":282
+  },
+  {
+    "Offence":"Dropping Effects ",
+    "Year":2007,
+    "Count":3
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta",
+    "Year":2007,
+    "Count":5
+  },
+  {
+    "Offence":"Fail To Give Way ",
+    "Year":2007,
+    "Count":47
+  },
+  {
+    "Offence":"Fail To Remove Vehicle When Directed by Officer ",
+    "Year":2007,
+    "Count":2
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2007,
+    "Count":46
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2007,
+    "Count":80
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2007,
+    "Count":27
+  },
+  {
+    "Offence":"L Plates Offences",
+    "Year":2007,
+    "Count":3
+  },
+  {
+    "Offence":"Mudguards - Use/permit Use Of Motor Vehicle Without Mudguard",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"M/V Impaired transparency of windscreen",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Number Plates Offences",
+    "Year":2007,
+    "Count":42
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2007,
+    "Count":14
+  },
+  {
+    "Offence":"Parking Offences",
+    "Year":2007,
+    "Count":54
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2007,
+    "Count":4
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2007,
+    "Count":3
+  },
+  {
+    "Offence":"Prohibited And One Way Streets ",
+    "Year":2007,
+    "Count":17
+  },
+  {
+    "Offence":"Public Service Vehicle - No Licence",
+    "Year":2007,
+    "Count":0
+  },
+  {
+    "Offence":"Reckless Driving",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2007,
+    "Count":5
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2007,
+    "Count":23
+  },
+  {
+    "Offence":"Ride Pedal Cycle Whilst Holding On To Another Vehicle",
+    "Year":2007,
+    "Count":1
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2007,
+    "Count":151
+  },
+  {
+    "Offence":"Speeding Offences ",
+    "Year":2007,
+    "Count":316
+  },
+  {
+    "Offence":"Tampering With Vehicle ",
+    "Year":2007,
+    "Count":2
+  },
+  {
+    "Offence":"Tax Offences",
+    "Year":2007,
+    "Count":417
+  },
+  {
+    "Offence":"Third-Party Insurance Offences",
+    "Year":2007,
+    "Count":524
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply ",
+    "Year":2007,
+    "Count":29
+  },
+  {
+    "Offence":"Traffic Offender - Fail To Give Name And Address",
+    "Year":2007,
+    "Count":0
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply ",
+    "Year":2007,
+    "Count":357
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2007,
+    "Count":26
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2007,
+    "Count":2
+  },
+  {
+    "Offence":"Vehicle Lighting Offences ",
+    "Year":2007,
+    "Count":78
+  },
+  {
+    "Offence":"Vehicle Noise ",
+    "Year":2007,
+    "Count":20
+  },
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2008,
+    "Count":10
+  },
+  {
+    "Offence":"Brakes Offences M/V",
+    "Year":2008,
+    "Count":6
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle ",
+    "Year":2008,
+    "Count":2
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2008,
+    "Count":15
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/Property",
+    "Year":2008,
+    "Count":24
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2008,
+    "Count":47
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2008,
+    "Count":1228
+  },
+  {
+    "Offence":"Drive Vehicle With Inadequate Visibility ",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone ",
+    "Year":2008,
+    "Count":82
+  },
+  {
+    "Offence":"Driving Licence Offences ",
+    "Year":2008,
+    "Count":274
+  },
+  {
+    "Offence":"Driving Licence Offences - Provisional & No L Plates Displayed",
+    "Year":2008,
+    "Count":139
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2008,
+    "Count":49
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2008,
+    "Count":22
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2008,
+    "Count":3
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/Consideration",
+    "Year":2008,
+    "Count":282
+  },
+  {
+    "Offence":"Dropping Effects ",
+    "Year":2008,
+    "Count":1
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta",
+    "Year":2008,
+    "Count":7
+  },
+  {
+    "Offence":"Fail To Give Way ",
+    "Year":2008,
+    "Count":50
+  },
+  {
+    "Offence":"Fail To Obey Officer Giving Traffic Order ",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2008,
+    "Count":36
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2008,
+    "Count":57
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2008,
+    "Count":15
+  },
+  {
+    "Offence":"Mirror - Use Vehicle Without",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"M/V Impaired Transparency Of Windscreen",
+    "Year":2008,
+    "Count":1
+  },
+  {
+    "Offence":"Number Plates Offences",
+    "Year":2008,
+    "Count":36
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2008,
+    "Count":9
+  },
+  {
+    "Offence":"Overlength - Towing Vehicle And Trailer",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"Parking Offences",
+    "Year":2008,
+    "Count":42
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2008,
+    "Count":7
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"Prohibited And One Way Streets ",
+    "Year":2008,
+    "Count":3
+  },
+  {
+    "Offence":"Public Service Vehicle - Licence Offences",
+    "Year":2008,
+    "Count":1
+  },
+  {
+    "Offence":"Reckless Driving",
+    "Year":2008,
+    "Count":1
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2008,
+    "Count":4
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2008,
+    "Count":39
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2008,
+    "Count":122
+  },
+  {
+    "Offence":"Speeding Offences ",
+    "Year":2008,
+    "Count":207
+  },
+  {
+    "Offence":"Smoke - Excessive ",
+    "Year":2008,
+    "Count":0
+  },
+  {
+    "Offence":"Tampering With Vehicle ",
+    "Year":2008,
+    "Count":6
+  },
+  {
+    "Offence":"Tax Offences",
+    "Year":2008,
+    "Count":7
+  },
+  {
+    "Offence":"Third-Party Insurance Offences",
+    "Year":2008,
+    "Count":392
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply ",
+    "Year":2008,
+    "Count":21
+  },
+  {
+    "Offence":"Traffic Offender - Fail To Give Name And Address",
+    "Year":2008,
+    "Count":1
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply ",
+    "Year":2008,
+    "Count":386
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2008,
+    "Count":12
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2008,
+    "Count":2
+  },
+  {
+    "Offence":"Vehicle Lighting Offences ",
+    "Year":2008,
+    "Count":86
+  },
+  {
+    "Offence":"Vehicle Noise ",
+    "Year":2008,
+    "Count":9
+  },
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2009,
+    "Count":5
+  },
+  {
+    "Offence":"Brakes Offences M/v",
+    "Year":2009,
+    "Count":6
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2009,
+    "Count":11
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/property",
+    "Year":2009,
+    "Count":34
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2009,
+    "Count":53
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2009,
+    "Count":7
+  },
+  {
+    "Offence":"Drive Vehicle With Inadequate Visibility",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone",
+    "Year":2009,
+    "Count":83
+  },
+  {
+    "Offence":"Driving Licence Offences",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Driving Licence Offences – Provisional & No L Plates Displayed",
+    "Year":2009,
+    "Count":114
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2009,
+    "Count":36
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2009,
+    "Count":18
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/consideration",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Dropping Effects",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta",
+    "Year":2009,
+    "Count":5
+  },
+  {
+    "Offence":"Fail To Give Way",
+    "Year":2009,
+    "Count":35
+  },
+  {
+    "Offence":"Fail To Obey Officer Giving Traffic Order",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2009,
+    "Count":37
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2009,
+    "Count":57
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2009,
+    "Count":17
+  },
+  {
+    "Offence":"Mirror – Use Vehicle Without",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"M/v Impaired Transparancy Of Windscreen",
+    "Year":2009,
+    "Count":0
+  },
+  {
+    "Offence":"Number Plate Offences",
+    "Year":2009,
+    "Count":18
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2009,
+    "Count":6
+  },
+  {
+    "Offence":"Overlength – Towing Vehicle And Trailer",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Parking Offences",
+    "Year":2009,
+    "Count":16
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Prohibited And One Way Streets",
+    "Year":2009,
+    "Count":16
+  },
+  {
+    "Offence":"Public Service Vehicle – Licence Offences",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2009,
+    "Count":42
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Speeding Offences",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Smoke - Excessive",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Tampering With Vehicle",
+    "Year":2009,
+    "Count":3
+  },
+  {
+    "Offence":"Third-party Insurance Offences",
+    "Year":2009,
+    "Count":3
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply",
+    "Year":2009,
+    "Count":39
+  },
+  {
+    "Offence":"Traffic Offender - Fail To Give Name And Address",
+    "Year":2009,
+    "Count":1
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply",
+    "Year":2009,
+    "Count":2
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2009,
+    "Count":16
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2009,
+    "Count":3
+  },
+  {
+    "Offence":"Vehicle Lighting Offences",
+    "Year":2009,
+    "Count":59
+  },
+  {
+    "Offence":"Vehicle Noise",
+    "Year":2009,
+    "Count":10
+  },
+  {
+    "Offence":"Audible Warning Apparatus Motor Vehicle/cycle",
+    "Year":2010,
+    "Count":1
+  },
+  {
+    "Offence":"Brakes Offences M/v",
+    "Year":2010,
+    "Count":7
+  },
+  {
+    "Offence":"Brakes - Pedal Cycle",
+    "Year":2010,
+    "Count":1
+  },
+  {
+    "Offence":"Crash Helmet Offences",
+    "Year":2010,
+    "Count":5
+  },
+  {
+    "Offence":"Danger Or Damage To Persons/property",
+    "Year":2010,
+    "Count":20
+  },
+  {
+    "Offence":"Dangerous Driving",
+    "Year":2010,
+    "Count":34
+  },
+  {
+    "Offence":"Disc Parking Offences",
+    "Year":2010,
+    "Count":717
+  },
+  {
+    "Offence":"Drink /drug Drive Offences (arrests",
+    "Year":2010,
+    "Count":146
+  },
+  {
+    "Offence":"Driver Of Vehicle Using Mobile Telephone",
+    "Year":2010,
+    "Count":78
+  },
+  {
+    "Offence":"Driving Licence Offences",
+    "Year":2010,
+    "Count":299
+  },
+  {
+    "Offence":"Driving Licence Offences – Provisional & No L Plates Displayed",
+    "Year":2010,
+    "Count":83
+  },
+  {
+    "Offence":"Driving Vehicle On Footpath",
+    "Year":2010,
+    "Count":34
+  },
+  {
+    "Offence":"Driving Whilst Disqualified",
+    "Year":2010,
+    "Count":26
+  },
+  {
+    "Offence":"Driving With Uncorrected Defective Eyesight",
+    "Year":2010,
+    "Count":1
+  },
+  {
+    "Offence":"Driving Without Due Care And Attention/consideration",
+    "Year":2010,
+    "Count":229
+  },
+  {
+    "Offence":"Dropping Effects",
+    "Year":2010,
+    "Count":4
+  },
+  {
+    "Offence":"Fail To Give Particulars After Rta/offence",
+    "Year":2010,
+    "Count":5
+  },
+  {
+    "Offence":"Fail To Give Way",
+    "Year":2010,
+    "Count":47
+  },
+  {
+    "Offence":"Fail To Obey Officer Giving Traffic Order",
+    "Year":2010,
+    "Count":0
+  },
+  {
+    "Offence":"Fail To Report Accident",
+    "Year":2010,
+    "Count":36
+  },
+  {
+    "Offence":"Fail To Stop After Accident",
+    "Year":2010,
+    "Count":72
+  },
+  {
+    "Offence":"Fail To Stop When Ordered By Police Officer",
+    "Year":2010,
+    "Count":11
+  },
+  {
+    "Offence":"M/v Impaired Transparancy Of Windscreen",
+    "Year":2010,
+    "Count":1
+  },
+  {
+    "Offence":"Number Plate Offences",
+    "Year":2010,
+    "Count":27
+  },
+  {
+    "Offence":"Obstruction Offences",
+    "Year":2010,
+    "Count":6
+  },
+  {
+    "Offence":"Overlength – Towing Vehicle And Trailer",
+    "Year":2010,
+    "Count":0
+  },
+  {
+    "Offence":"Pedal Cycle Offences",
+    "Year":2010,
+    "Count":0
+  },
+  {
+    "Offence":"Pillion - Carry Under Age",
+    "Year":2010,
+    "Count":1
+  },
+  {
+    "Offence":"Places Of Recreation - Drive Ride Vehicle",
+    "Year":2010,
+    "Count":0
+  },
+  {
+    "Offence":"Prohibited And One Way Streets",
+    "Year":2010,
+    "Count":13
+  },
+  {
+    "Offence":"Refuse To Give Information To Identify Traffic Offender",
+    "Year":2010,
+    "Count":5
+  },
+  {
+    "Offence":"Registration Book Offences",
+    "Year":2010,
+    "Count":32
+  },
+  {
+    "Offence":"Seat Belts Offences",
+    "Year":2010,
+    "Count":143
+  },
+  {
+    "Offence":"Speeding Offences",
+    "Year":2010,
+    "Count":234
+  },
+  {
+    "Offence":"Smoke - Excessive",
+    "Year":2010,
+    "Count":2
+  },
+  {
+    "Offence":"Tampering With Vehicle",
+    "Year":2010,
+    "Count":0
+  },
+  {
+    "Offence":"Third-party Insurance Offences",
+    "Year":2010,
+    "Count":361
+  },
+  {
+    "Offence":"Traffic Lights - Fail To Comply",
+    "Year":2010,
+    "Count":27
+  },
+  {
+    "Offence":"Traffic Sign - Fail To Comply",
+    "Year":2010,
+    "Count":286
+  },
+  {
+    "Offence":"Tyre Offences",
+    "Year":2010,
+    "Count":18
+  },
+  {
+    "Offence":"Vehicle Carrying Load In Excess Of Plated Weight",
+    "Year":2010,
+    "Count":3
+  },
+  {
+    "Offence":"Vehicle Lighting Offences",
+    "Year":2010,
+    "Count":51
+  },
+  {
+    "Offence":"Vehicle Noise",
+    "Year":2010,
+    "Count":6
+  },
+  {
+    "Offence":"Audible warning apparatus motor vehicle/cycle",
+    "Year":2011,
+    "Count":5
+  },
+  {
+    "Offence":"Brakes offences m/v",
+    "Year":2011,
+    "Count":8
+  },
+  {
+    "Offence":"Brakes - pedal cycle",
+    "Year":2011,
+    "Count":0
+  },
+  {
+    "Offence":"Crash helmet offences",
+    "Year":2011,
+    "Count":13
+  },
+  {
+    "Offence":"Danger or damage to persons/property",
+    "Year":2011,
+    "Count":30
+  },
+  {
+    "Offence":"Dangerous driving",
+    "Year":2011,
+    "Count":33
+  },
+  {
+    "Offence":"Disc parking offences",
+    "Year":2011,
+    "Count":591
+  },
+  {
+    "Offence":"DRINK /DRUG DRIVE OFFENCES (arrests)",
+    "Year":2011,
+    "Count":136
+  },
+  {
+    "Offence":"Driver of vehicle using mobile telephone",
+    "Year":2011,
+    "Count":95
+  },
+  {
+    "Offence":"Driving licence offences",
+    "Year":2011,
+    "Count":266
+  },
+  {
+    "Offence":"Driving licence offences – provisional & no l plates displayed",
+    "Year":2011,
+    "Count":142
+  },
+  {
+    "Offence":"Driving vehicle on footpath",
+    "Year":2011,
+    "Count":25
+  },
+  {
+    "Offence":"Driving whilst disqualified",
+    "Year":2011,
+    "Count":16
+  },
+  {
+    "Offence":"Driving with uncorrected defective eyesight",
+    "Year":2011,
+    "Count":1
+  },
+  {
+    "Offence":"Driving without due care and attention/consideration",
+    "Year":2011,
+    "Count":149
+  },
+  {
+    "Offence":"Dropping effects",
+    "Year":2011,
+    "Count":0
+  },
+  {
+    "Offence":"Fail to give particulars after collision/offence",
+    "Year":2011,
+    "Count":3
+  },
+  {
+    "Offence":"Fail to give way",
+    "Year":2011,
+    "Count":33
+  },
+  {
+    "Offence":"Fail to obey officer giving traffic order",
+    "Year":2011,
+    "Count":2
+  },
+  {
+    "Offence":"Fail to report accident",
+    "Year":2011,
+    "Count":32
+  },
+  {
+    "Offence":"Fail to stop after accident",
+    "Year":2011,
+    "Count":45
+  },
+  {
+    "Offence":"Fail to stop when ordered by police officer",
+    "Year":2011,
+    "Count":14
+  },
+  {
+    "Offence":"M/v impaired transparency of windscreen",
+    "Year":2011,
+    "Count":0
+  },
+  {
+    "Offence":"Number plate offences",
+    "Year":2011,
+    "Count":27
+  },
+  {
+    "Offence":"Obstruction offences",
+    "Year":2011,
+    "Count":7
+  },
+  {
+    "Offence":"Over-length – towing vehicle and trailer",
+    "Year":2011,
+    "Count":3
+  },
+  {
+    "Offence":"Pedal cycle offences",
+    "Year":2011,
+    "Count":4
+  },
+  {
+    "Offence":"Pillion - carry under age",
+    "Year":2011,
+    "Count":2
+  },
+  {
+    "Offence":"Places of recreation - drive ride vehicle",
+    "Year":2011,
+    "Count":3
+  },
+  {
+    "Offence":"Prohibited and one way streets",
+    "Year":2011,
+    "Count":9
+  },
+  {
+    "Offence":"Refuse to give information to identify traffic offender",
+    "Year":2011,
+    "Count":2
+  },
+  {
+    "Offence":"Registration book offences",
+    "Year":2011,
+    "Count":34
+  },
+  {
+    "Offence":"Seat belts offences",
+    "Year":2011,
+    "Count":115
+  },
+  {
+    "Offence":"Speeding offences",
+    "Year":2011,
+    "Count":239
+  },
+  {
+    "Offence":"Smoke - excessive",
+    "Year":2011,
+    "Count":1
+  },
+  {
+    "Offence":"Tampering with vehicle",
+    "Year":2011,
+    "Count":1
+  },
+  {
+    "Offence":"Third-party insurance offences",
+    "Year":2011,
+    "Count":360
+  },
+  {
+    "Offence":"Traffic lights - fail to comply",
+    "Year":2011,
+    "Count":0
+  },
+  {
+    "Offence":"Traffic sign - fail to comply",
+    "Year":2011,
+    "Count":225
+  },
+  {
+    "Offence":"Tyre offences",
+    "Year":2011,
+    "Count":3
+  },
+  {
+    "Offence":"Vehicle carrying load in excess of plated weight",
+    "Year":2011,
+    "Count":2
+  },
+  {
+    "Offence":"Vehicle lighting offences",
+    "Year":2011,
+    "Count":92
+  },
+  {
+    "Offence":"Vehicle noise",
+    "Year":2011,
+    "Count":2
+  },
+  {
+    "Offence":"Audible warning apparatus motor vehicle/cycle",
+    "Year":2012,
+    "Count":4
+  },
+  {
+    "Offence":"Brakes offences m/v",
+    "Year":2012,
+    "Count":8
+  },
+  {
+    "Offence":"Brakes - pedal cycle",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Crash helmet offences",
+    "Year":2012,
+    "Count":6
+  },
+  {
+    "Offence":"Danger or damage to persons/property",
+    "Year":2012,
+    "Count":16
+  },
+  {
+    "Offence":"Dangerous driving",
+    "Year":2012,
+    "Count":20
+  },
+  {
+    "Offence":"Disc parking offences",
+    "Year":2012,
+    "Count":570
+  },
+  {
+    "Offence":"DRINK /DRUG DRIVE OFFENCES (arrests)",
+    "Year":2012,
+    "Count":101
+  },
+  {
+    "Offence":"Driver of vehicle using mobile telephone",
+    "Year":2012,
+    "Count":57
+  },
+  {
+    "Offence":"Driving licence offences",
+    "Year":2012,
+    "Count":199
+  },
+  {
+    "Offence":"Driving licence offences – provisional & no l plates displayed",
+    "Year":2012,
+    "Count":135
+  },
+  {
+    "Offence":"Driving vehicle on footpath",
+    "Year":2012,
+    "Count":17
+  },
+  {
+    "Offence":"Driving whilst disqualified",
+    "Year":2012,
+    "Count":13
+  },
+  {
+    "Offence":"Driving with uncorrected defective eyesight",
+    "Year":2012,
+    "Count":3
+  },
+  {
+    "Offence":"Driving without due care and attention/consideration",
+    "Year":2012,
+    "Count":150
+  },
+  {
+    "Offence":"Dropping effects",
+    "Year":2012,
+    "Count":2
+  },
+  {
+    "Offence":"Fail to give particulars after collision/offence",
+    "Year":2012,
+    "Count":8
+  },
+  {
+    "Offence":"Fail to give way",
+    "Year":2012,
+    "Count":34
+  },
+  {
+    "Offence":"Fail to obey officer giving traffic order",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Fail to report accident",
+    "Year":2012,
+    "Count":27
+  },
+  {
+    "Offence":"Fail to stop after accident",
+    "Year":2012,
+    "Count":53
+  },
+  {
+    "Offence":"Fail to stop when ordered by police officer",
+    "Year":2012,
+    "Count":9
+  },
+  {
+    "Offence":"M/v impaired transparency of windscreen",
+    "Year":2012,
+    "Count":2
+  },
+  {
+    "Offence":"Number plate offences",
+    "Year":2012,
+    "Count":22
+  },
+  {
+    "Offence":"Obstruction offences",
+    "Year":2012,
+    "Count":2
+  },
+  {
+    "Offence":"Over-length – towing vehicle and trailer",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Pedal cycle offences",
+    "Year":2012,
+    "Count":1
+  },
+  {
+    "Offence":"Pillion - carry under age",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Places of recreation - drive ride vehicle",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Prohibited and one way streets",
+    "Year":2012,
+    "Count":5
+  },
+  {
+    "Offence":"Refuse to give information to identify traffic offender",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Registration book offences",
+    "Year":2012,
+    "Count":56
+  },
+  {
+    "Offence":"Seat belts offences",
+    "Year":2012,
+    "Count":117
+  },
+  {
+    "Offence":"Speeding offences",
+    "Year":2012,
+    "Count":296
+  },
+  {
+    "Offence":"Smoke - excessive",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Tampering with vehicle",
+    "Year":2012,
+    "Count":1
+  },
+  {
+    "Offence":"Third-party insurance offences",
+    "Year":2012,
+    "Count":248
+  },
+  {
+    "Offence":"Traffic lights - fail to comply",
+    "Year":2012,
+    "Count":21
+  },
+  {
+    "Offence":"Traffic sign - fail to comply",
+    "Year":2012,
+    "Count":179
+  },
+  {
+    "Offence":"Tyre offences",
+    "Year":2012,
+    "Count":6
+  },
+  {
+    "Offence":"Vehicle carrying load in excess of plated weight",
+    "Year":2012,
+    "Count":0
+  },
+  {
+    "Offence":"Vehicle lighting offences",
+    "Year":2012,
+    "Count":41
+  },
+  {
+    "Offence":"Vehicle noise",
+    "Year":2012,
+    "Count":0
+  }
+]
