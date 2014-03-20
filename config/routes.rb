@@ -71,6 +71,7 @@ DataGg::Application.routes.draw do
       resources :police do
         collection do
           get 'crimes'
+          get 'traffic'
         end
       end
       resources :population do
