@@ -2,64 +2,29 @@
 
 <p class="lead">Showing all stops on this route</p>
 
-
-
-
-Put a link from stop_link to route_stop so stop_link has "route_stop_id" on it.
-Then use the 'index' field on route_stop_id for ordering as well as origin_stop+time
-
-SELECT * FROM stop_link WHERE(origin_id) JOIN route_stop ON stop_link.route_stop_id = route_stop.id ORDER BY route_stop.index  SKIP [5] 
-
-
-SELECT stop_link.* FROM stop_link WHERE (stop_link.route_stop.id = '12') ORDER BY origin_stop_time, 
-
-
 <table class="table table-striped">
   <thead>
     <tr>
-    <%= @ordered_route_stops.each do |stop| %>
+    <% @ordered_route_stops.each do |stop| %>
       <th><%= stop.stop.name %></th>
     <% end %>
     </tr>
   </thead>
   
   <tbody>
-    
-    <%
-    curr_stop_link_origin_time = nil
-    new_row = false
-    %>
-    <%= @stop_links.each do |stop_link| %>
-    <% 
-      if stop_link.origin.time != curr_stop_link_origin_time
-        curr_stop_link_origin_time = stop_link.origin.time
-        new_row = true
-      end
-      
-      if new_row %>
-         <tr>
-      <% end
-      
-      %>
-      
-      <td>test</td>
-      
-      <% if new_row %>
-        <tr>
-      <% end
-      
-      new_row = false
-    %>
-    
     <tr>
       
+      <%= form_tag @route.id.to_s + '/route_stops/create_stop_links' do %>
+        <% @new_stop_link_set.each do |sl| %>
+          <%= fields_for 'stop_links[]', sl do |sl_fields| %>
+            <td><%= sl_fields.text_field :time %></td>
+          <% end %>
+        <% end %>
+        
+        <td><%= submit_tag %>
+      <% end %>
     </tr>
-      
-    <% end %>
-    
-    
   </tbody>
-  
 </table>
 
 

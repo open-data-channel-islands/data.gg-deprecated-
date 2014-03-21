@@ -74,7 +74,11 @@ DataGg::Application.routes.draw do
           end
           
           resources :routes do
-            resources :route_stops
+            resources :route_stops do
+              collection do
+                post 'create_stop_links'
+              end
+            end
           end
         end
         

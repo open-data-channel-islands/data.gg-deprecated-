@@ -38,17 +38,54 @@ class Api::V1::Buses::RoutesController < ApplicationController
   
   def show
     @route = Route.find_by_id(params[:id])
+    @timetable = @route.timetable
+    
+    # Create route_stop which can be edited from this screen
     @route_stop = RouteStop.new
     @route_stop.route = @route
-    @timetable = @route.timetable
+    
+    
+    @new_stop_link_set = []
+    @route.route_stops.each do |route_stop|
+      sl = StopLink.new
+      sl.route_stop = route_stop
+      sl.display = true
+      sl.skip = route_stop = false
+      sl.arrive = false
+      sl.depart = true
+      @new_stop_link_set << sl
+    end
+    
+    
     
     @ordered_route_stops = @route.route_stops.order(:idx).all
 
-    @stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
+    tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
                           .order("origin.time ASC, rs.idx DESC")
                           .all
+                          
+    overall_set = [] # Contains ALL the stop links
+    curr_set = [] # Contains CURRENT set
+    curr_origin_time = nil
+    tmp_stop_links.each do |stop_link|
+      if curr_origin_time != stop_link.origin.time
+        overall_set << curr_set
+        curr_set = []
+      end
+      
+      curr_set << stop_link
+      
+    end
+    
+    overall_set.each do |stops|
+      stops.each do |stop|
+        
+      end
+    end
+    
+    @stop_links = tmp_stop_links
                           
     # Now we loop through until we find the origin time has changed, then add it to a collection. This will
     # organise each stop_link entry in a two-dimensional array instead

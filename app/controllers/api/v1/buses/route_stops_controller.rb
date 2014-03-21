@@ -18,12 +18,20 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     respond_to do |f|
       if @route_stop.save
         flash[:success] = "Success"
-        redirect_to api_v1_buses_timetable_route(@route_stop.route.start, @route_stop.id)
+        redirect_to api_v1_buses_timetable_route(@route_stop.route.timetable.start, @route_stop.id)
       else
         flash[:error] = "Fail"
         print @route_stop.errors.full_messages
         redirect_to "/"
       end
+    end
+  end
+  
+  def create_stop_links
+    
+    
+    respond_to do |f|
+      
     end
   end
   
