@@ -14,14 +14,23 @@
   <tbody>
     <tr>
       
-      <%= form_tag @route.id.to_s + '/route_stops/create_stop_links' do %>
-        <% @new_stop_link_set.each do |sl| %>
-          <%= fields_for 'stop_links[]', sl do |sl_fields| %>
-            <td><%= sl_fields.text_field :time %></td>
+      
+      
+      <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
+      
+      <% @new_stop_link_set.each.with_index do |stop_link,index| %>
+        <td>
+          <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
+            <%= sl.hidden_field :origin_stop_link_id, :value => stop_link.origin_stop_link.id %>
+            <%= sl.text_field :time %>
+            <%= sl.check_box :display %>
           <% end %>
-        <% end %>
-        
-        <td><%= submit_tag %>
+        </td>
+      <% end %>
+      
+
+
+        <%= submit_tag %>
       <% end %>
     </tr>
   </tbody>

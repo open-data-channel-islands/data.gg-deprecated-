@@ -53,10 +53,15 @@ class Api::V1::Buses::RoutesController < ApplicationController
       sl.skip = route_stop = false
       sl.arrive = false
       sl.depart = true
+      if @new_stop_link_set.count > 0
+        sl.origin_stop_link = @new_stop_link_set[0]
+      else
+        sl.origin_stop_link = sl
+      end
+      
       @new_stop_link_set << sl
+      
     end
-    
-    
     
     @ordered_route_stops = @route.route_stops.order(:idx).all
 

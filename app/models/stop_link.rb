@@ -1,6 +1,7 @@
 class StopLink < ActiveRecord::Base
   belongs_to :route_stop
-  has_one :origin_stop_link, class_name: "StopLink", foreign_key: "stop_link_id"
+  belongs_to :origin_stop_link, class_name: "StopLink"
+  has_many :stop_links, foreign_key: "origin_stop_link", class_name: "StopLink"
 
   validates :display, presence: true
   validates :skip, presence: true

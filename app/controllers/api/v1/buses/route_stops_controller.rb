@@ -28,7 +28,19 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
   end
   
   def create_stop_links
+    stop_links_array = params[:stop_links]
     
+    stop_links_array.each do |stop_link|
+      sl = StopLink.new(stop_link[1])
+      sl.time = stop_link[1].time.sub! ':', ''
+      if sl_arr.count > 0
+        sl.origin_stop_link = sl_arr[0]
+      else
+        sl.origin_stop_link = sl
+      end
+      
+      # sl.save // don't do this yet, need to test everything goes in OK
+    end
     
     respond_to do |f|
       
