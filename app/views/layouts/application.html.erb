@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>data.gg (beta)</title>
-    <%= stylesheet_link_tag "bootstrap.min", media: "all", "data-turbolinks-track" => true %>
-    <%= stylesheet_link_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+<head>
+  <title>data.gg (beta)</title>
+  <%= stylesheet_link_tag "bootstrap.min", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <!-- Bootstrap -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to("data.gg (beta)", "/", class: "navbar-brand") %>
-        </div>
+    ga('create', 'UA-3454450-14', 'data.gg');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to("data.gg (beta)", "/", class: "navbar-brand") %>
       </div>
     </div>
+  </div>
 
+  <% if current_page?('/') %>
+    <div class="<%= 'container' unless true %>">
+      <%= yield %>
+    </div>
+  <% else %>
     <div class="container">
       <%= yield %>
     </div>
+  <% end %>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <%= javascript_include_tag "bootstrap.min", "data-turbolinks-track" => true %>
-  </body>
+  <div class="footer">
+    <p>Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %> from <%= link_to 'Reformsoft', 'http://reformsoft.org' %></p>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <%= javascript_include_tag "bootstrap.min", "data-turbolinks-track" => true %>
+</body>
 </html>

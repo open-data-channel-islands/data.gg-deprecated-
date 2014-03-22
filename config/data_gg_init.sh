@@ -1,4 +1,13 @@
-#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          data_gg_init
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Short script description
+# Description:       Longer script description.
+### END INIT INFO
+
 set -e
 # Example init script, this can be used with nginx, too,
 # since nginx and unicorn accept the same signals
@@ -8,11 +17,11 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/var/www/data.gg/current
 PID=$APP_ROOT/tmp/pids/data.gg_unicorn.pid
 CMD="/home/admin/.rvm/gems/ruby-2.1.1/bin/unicorn_rails -c $APP_ROOT/config/unicorn.rb -D -E production"
-INIT_CONF=$APP_ROOT/config/unicorn.rb
+#INIT_CONF=$APP_ROOT/config/unicorn.rb
 action="$1"
 set -u
 
-test -f "$INIT_CONF" && . $INIT_CONF
+#test -f "$INIT_CONF" && . $INIT_CONF
 
 old_pid="$PID.oldbin"
 
@@ -29,7 +38,7 @@ oldsig () {
 case $action in
 start)
   sig 0 && echo >&2 "Already running" && exit 0
-  $CMD
+  su - admin -c "$CMD"
   ;;
 stop)
   sig QUIT && exit 0
@@ -42,7 +51,7 @@ force-stop)
 restart|reload)
   sig HUP && echo reloaded OK && exit 0
   echo >&2 "Couldn't reload, starting '$CMD' instead"
-  $CMD
+  su - admin -c "$CMD"
   ;;
 upgrade)
   if sig USR2 && sleep 2 && sig 0 && oldsig QUIT
@@ -62,7 +71,7 @@ upgrade)
     exit 0
   fi
   echo >&2 "Couldn't upgrade, starting '$CMD' instead"
-  $CMD
+  su - admin -c "$CMD"
   ;;
 reopen-logs)
   sig USR1
