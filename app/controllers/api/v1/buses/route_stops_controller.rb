@@ -59,7 +59,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     
     p sl_arr
     
-    redirect_to "/"
+    #redirect_to api_v1_buses_timetable_route_path()
   end
   
   private

@@ -22,6 +22,7 @@
         <td>
           <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
             <%= sl.hidden_field :origin_stop_link_id, :value => stop_link.origin_stop_link.id %>
+            <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
             <%= sl.text_field :time %>
             
             <%= sl.label :display %>

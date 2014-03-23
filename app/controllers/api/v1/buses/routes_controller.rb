@@ -66,22 +66,23 @@ class Api::V1::Buses::RoutesController < ApplicationController
     @ordered_route_stops = @route.route_stops.order(:idx).all
 
     tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
-                          .joins("INNER JOIN stop_links origin ON origin.id = stop_links.origin_stop_link_id")
+                          .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
                           .order("origin.time ASC, rs.idx DESC")
                           .all
                           
-    overall_set = [] # Contains ALL the stop links
-    curr_set = [] # Contains CURRENT set
+                          p tmp_stop_links
+                          
+    overall_set = Array.new # Contains ALL the stop links
+    curr_set = Array.new # Contains CURRENT set
     curr_origin_time = nil
     tmp_stop_links.each do |stop_link|
-      if curr_origin_time != stop_link.origin.time
+      if curr_origin_time != nil && curr_origin_time != stop_link.origin_stop_link.time
         overall_set << curr_set
-        curr_set = []
+        curr_set = Array.new
       end
       
       curr_set << stop_link
-      
     end
     
     overall_set.each do |stops|
@@ -90,7 +91,9 @@ class Api::V1::Buses::RoutesController < ApplicationController
       end
     end
     
-    @stop_links = tmp_stop_links
+    @stop_links = overall_set
+    p 'TEST'
+    p @stop_links
                           
     # Now we loop through until we find the origin time has changed, then add it to a collection. This will
     # organise each stop_link entry in a two-dimensional array instead
