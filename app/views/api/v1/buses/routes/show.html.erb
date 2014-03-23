@@ -23,7 +23,21 @@
           <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
             <%= sl.hidden_field :origin_stop_link_id, :value => stop_link.origin_stop_link.id %>
             <%= sl.text_field :time %>
+            
+            <%= sl.label :display %>
             <%= sl.check_box :display %>
+            
+            <%= sl.label :skip %>
+            <%= sl.check_box :skip %>
+            
+            <%= sl.label :arrive %>
+            <%= sl.check_box :arrive %>
+            
+            <%= sl.label :depart %>
+            <%= sl.check_box :depart %>
+            
+            <%= sl.label :night %>
+            <%= sl.check_box :night %>
           <% end %>
         </td>
       <% end %>

@@ -4,7 +4,6 @@ class StopLink < ActiveRecord::Base
   has_many :stop_links, foreign_key: "origin_stop_link", class_name: "StopLink"
 
   validates :display, presence: true
-  validates :skip, presence: true
-  validates :arrive, presence: true
+
   validates :depart, presence: true
 end

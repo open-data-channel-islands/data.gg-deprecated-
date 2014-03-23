@@ -30,21 +30,36 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
   def create_stop_links
     stop_links_array = params[:stop_links]
     
+    sl_arr = Array.new
+    
     stop_links_array.each do |stop_link|
       sl = StopLink.new(stop_link[1])
-      sl.time = stop_link[1].time.sub! ':', ''
+      # Gets rid of the colon
+      sl.time = stop_link[1]["time"].sub! ':', ''
       if sl_arr.count > 0
         sl.origin_stop_link = sl_arr[0]
-      else
-        sl.origin_stop_link = sl
       end
       
-      # sl.save // don't do this yet, need to test everything goes in OK
+      sl_arr << sl
+      
+      sl.save
+      if sl.errors.any?
+        sl.errors_full_messages.each do |err|
+          p err
+        end
+      end
+        
+      
+      # need to save again to reference oneself
+      if sl_arr.count == 0
+        sl.origin_stop_link = sl
+        sl.save
+      end
     end
     
-    respond_to do |f|
-      
-    end
+    p sl_arr
+    
+    redirect_to "/"
   end
   
   private
