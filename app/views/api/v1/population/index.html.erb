@@ -14,4 +14,91 @@
   </div>
 </div>
 
-<h3><%= link_to 'Source', 'http://www.gov.gg/population' %></h3>
+<h3>Source</h3>
+<%= link_to 'gov.gg Website', 'http://www.gov.gg/population' %>
+
+<h3>Chart Examples</h3>
+<h2>Age Group Pie 2012</h2>
+
+<% pie_age_group_colours = {
+    "0-4" => '#c7d0e1',
+    "5-9" => '#c0515b',
+    "10-14" => '#009999',
+    "15-19" => '#2e2e2e',
+    "20-24" => '#bb6d3e',
+    "25-29" => '#00ffff',
+    "30-34" => '#ff00ff',
+    "35-39" => '#0017ff',
+    "40-44" => '#0c3e47',
+    "45-49" => '#e9ae11',
+    "50-54" => '#2b579a',
+    "55-59" => '#80397b',
+    "60-64" => '#217346',
+    "65-69" => '#f26a21',
+    "70-74" => '#61d862',
+    "75-79" => '#36d88e',
+    "80-84" => '#00733e',
+    "85-89" => '#218457',
+    "90-94" => '#00b060',
+    "95+" => '#FF0000'}
+%>
+
+<% pie_age_group_colours.each do |k,v| %>
+<span style="background-color: <%= v %>;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <%= k %>
+<% end %>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Male</h3>
+    <canvas id="maleAgeGroupByYear" width="400" height="400"></canvas>
+    <% men_percents = age_group_percents(@population.select { |p| p['Sex'] == "Male" && p['Year'] == 2012 }.first) %>
+
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("maleAgeGroupByYear").getContext("2d");
+      var data = <%= age_groups_coloured(pie_age_group_colours, men_percents) %>;
+      var myNewChart = new Chart(ctx).Pie(data);
+    <% end %>
+  </div>
+
+  <div class="col-md-6">
+    <h3>Female</h3>
+    <canvas id="femaleAgeGroupByYear" width="400" height="400"></canvas>
+    <% female_percents = age_group_percents(@population.select { |p| p['Sex'] == "Female" && p['Year'] == 2012 }.first) %>
+
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("femaleAgeGroupByYear").getContext("2d");
+      var data = <%= age_groups_coloured(pie_age_group_colours, female_percents) %>;
+      var myNewChart = new Chart(ctx).Pie(data);
+    <% end %>
+  </div>
+</div>
+
+<h2>Male vs Female Population by Year <small>(can't find 2008 data)</small></h2>
+<span style="background-color: rgba(220,220,220,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Female
+<span style="background-color: rgba(151,187,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Male
+<canvas id="popByYear" width="800" height="400"></canvas>
+<%= javascript_tag do %>
+  var ctx = document.getElementById("popByYear").getContext("2d");
+
+  var data = {
+  labels : <%= @population.uniq { |p| p['Year'] }.collect { |p| p['Year'] } %>,
+  datasets : [
+      {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @population.select { |p| p['Sex'] == 'Female' }.collect{ |p| sum_population_row(p) } %>
+      },
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @population.select { |p| p['Sex'] == 'Male' }.collect{ |p| sum_population_row(p) } %>
+      }
+    ]
+  };
+
+  var myNewChart = new Chart(ctx).Line(data);
+<% end %>
