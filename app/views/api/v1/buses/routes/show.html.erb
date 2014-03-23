@@ -12,10 +12,19 @@
   </thead>
   
   <tbody>
+    <% @stop_links.each do |sl| %>
+      <tr>
+        <% sl.each do |dtls| %>
+          <td>
+            <%= dtls.time %>
+            <%= dtls.skip %>
+          </td>
+        <% end %>
+        
+      </tr>
+    <% end %>
+    
     <tr>
-      
-      
-      
       <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
       
       <% @new_stop_link_set.each.with_index do |stop_link,index| %>
@@ -23,7 +32,7 @@
           <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
             <%= sl.hidden_field :origin_stop_link_id, :value => stop_link.origin_stop_link.id %>
             <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
-            <%= sl.text_field :time %>
+            <%= sl.text_field :time, :size => 4 %>
             
             <%= sl.label :display %>
             <%= sl.check_box :display %>

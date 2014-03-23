@@ -33,11 +33,15 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     sl_arr = Array.new
     
     stop_links_array.each do |stop_link|
+      # replace a colon if one exists so it can be converted from string to int
+      stop_link[1]["time"] = stop_link[1]["time"].sub! ':', ''
       sl = StopLink.new(stop_link[1])
-      # Gets rid of the colon
-      sl.time = stop_link[1]["time"].sub! ':', ''
+      
+      # If it's the first link, then itself is the origin
       if sl_arr.count > 0
         sl.origin_stop_link = sl_arr[0]
+      else
+        sl.origin_stop_link = sl
       end
       
       sl_arr << sl
@@ -47,13 +51,6 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
         sl.errors_full_messages.each do |err|
           p err
         end
-      end
-        
-      
-      # need to save again to reference oneself
-      if sl_arr.count == 0
-        sl.origin_stop_link = sl
-        sl.save
       end
     end
     

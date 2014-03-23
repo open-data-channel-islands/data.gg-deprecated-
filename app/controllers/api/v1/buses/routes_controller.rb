@@ -68,8 +68,8 @@ class Api::V1::Buses::RoutesController < ApplicationController
     tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
-                          .order("origin.time ASC, rs.idx DESC")
-                          .all
+                          .order("origin.time ASC, rs.idx ASC")
+                          .distinct
                           
                           p tmp_stop_links
                           
@@ -85,20 +85,16 @@ class Api::V1::Buses::RoutesController < ApplicationController
       curr_set << stop_link
     end
     
-    overall_set.each do |stops|
-      stops.each do |stop|
-        
-      end
-    end
-    
+    # because the LAST set won't flip over, so need to push it on
+    overall_set << curr_set
+  
     @stop_links = overall_set
-    p 'TEST'
+    p 'TESTTESTESTEST'
     p @stop_links
                           
     # Now we loop through until we find the origin time has changed, then add it to a collection. This will
     # organise each stop_link entry in a two-dimensional array instead
     
-
     respond_to do |format|
       format.html
     end
