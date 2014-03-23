@@ -1,0 +1,51 @@
+<h2>Earnings</h2>
+<h3>By Age Group</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+    <%= link_to image_tag("note-64x64.png"), earnings_age_group_api_v1_earnings_path(:format => "xml") %>
+      XML
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_age_group_api_v1_earnings_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_age_group_api_v1_earnings_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>By Sex</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+    <%= link_to image_tag("note-64x64.png"), earnings_sex_api_v1_earnings_path(:format => "xml") %>
+      XML
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_sex_api_v1_earnings_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_sex_api_v1_earnings_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>By Sector</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+    <%= link_to image_tag("note-64x64.png"), earnings_sector_api_v1_earnings_path(:format => "xml") %>
+      XML
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_sector_api_v1_earnings_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), earnings_sector_api_v1_earnings_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Source</h3>
+<%= link_to 'gov.gg website', 'http://www.gov.gg/earnings' %>

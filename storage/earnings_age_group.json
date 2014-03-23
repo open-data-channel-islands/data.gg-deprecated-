@@ -1,0 +1,79 @@
+[
+  {
+    "Year":2012,
+    "Age Group":"15-19",
+    "Lower quartile earnings":11830,
+    "Median earnings":15470,
+    "Upper quartile earnings":18720
+  },
+  {
+    "Year":2012,
+    "Age Group":"20-24",
+    "Lower quartile earnings":19500,
+    "Median earnings":26000,
+    "Upper quartile earnings":32240
+  },
+  {
+    "Year":2012,
+    "Age Group":"25-29",
+    "Lower quartile earnings":20150,
+    "Median earnings":27300,
+    "Upper quartile earnings":35230
+  },
+  {
+    "Year":2012,
+    "Age Group":"30-34",
+    "Lower quartile earnings":23140,
+    "Median earnings":32890,
+    "Upper quartile earnings":45760
+  },
+  {
+    "Year":2012,
+    "Age Group":"35-39",
+    "Lower quartile earnings":23920,
+    "Median earnings":35100,
+    "Upper quartile earnings":49790
+  },
+  {
+    "Year":2012,
+    "Age Group":"40-44",
+    "Lower quartile earnings":24180,
+    "Median earnings":35490,
+    "Upper quartile earnings":51480
+  },
+  {
+    "Year":2012,
+    "Age Group":"45-49",
+    "Lower quartile earnings":23270,
+    "Median earnings":34450,
+    "Upper quartile earnings":51220
+  },
+  {
+    "Year":2012,
+    "Age Group":"50-54",
+    "Lower quartile earnings":21970,
+    "Median earnings":32500,
+    "Upper quartile earnings":47840
+  },
+  {
+    "Year":2012,
+    "Age Group":"55-59",
+    "Lower quartile earnings":21320,
+    "Median earnings":31200,
+    "Upper quartile earnings":46800
+  },
+  {
+    "Year":2012,
+    "Age Group":"60-64",
+    "Lower quartile earnings":17420,
+    "Median earnings":26000,
+    "Upper quartile earnings":36920
+  },
+  {
+    "Year":2012,
+    "Age Group":"65+",
+    "Lower quartile earnings":11960,
+    "Median earnings":18330,
+    "Upper quartile earnings":28470
+  }
+]

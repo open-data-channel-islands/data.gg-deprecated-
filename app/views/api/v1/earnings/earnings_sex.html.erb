@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Sex</th>
+      <th>Nominal Earnings</th>
+      <th>Real Earnings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @earnings.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Sex'] %></td>
+    <td><%= f['Nominal median earnings'] %></td>
+    <td><%= f['Real median earnings'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Age Group</th>
+      <th>Lower Quartile Earnings</th>
+      <th>Median Earnings</th>
+      <th>Upper Quartile Earnings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @earnings.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Age Group'] %></td>
+    <td><%= f['Lower quartile earnings'] %></td>
+    <td><%= f['Median earnings'] %></td>
+    <td><%= f['Upper quartile earnings'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
