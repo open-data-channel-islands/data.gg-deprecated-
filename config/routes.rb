@@ -79,6 +79,13 @@ DataGg::Application.routes.draw do
           get 'population'
         end
       end
+      resources :earnings do
+        collection do
+          get 'earnings_age_group'
+          get 'earnings_sector'
+          get 'earnings_sex'
+        end
+      end
     end
   end
 
