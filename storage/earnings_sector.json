@@ -1,135 +1,268 @@
 [
   {
-    "Year":2012,
     "Sector":"Agriculture, horticulture, fishing and quarrying",
+    "Year":2012,
     "Lower quartile earnings":16250,
     "Median earnings":21320,
     "Upper quartile earnings":27820
   },
   {
-    "Year":2012,
     "Sector":"Manufacturing",
+    "Year":2012,
     "Lower quartile earnings":17810,
     "Median earnings":25350,
     "Upper quartile earnings":32760
   },
   {
-    "Year":2012,
     "Sector":"Electricity, gas, steam and air conditioning supply",
+    "Year":2012,
     "Lower quartile earnings":27560,
     "Median earnings":34710,
     "Upper quartile earnings":45630
   },
   {
-    "Year":2012,
     "Sector":"Water supply, sewerage, waste management and remediation activities",
+    "Year":2012,
     "Lower quartile earnings":21710,
     "Median earnings":28990,
     "Upper quartile earnings":36920
   },
   {
-    "Year":2012,
     "Sector":"Construction",
+    "Year":2012,
     "Lower quartile earnings":27560,
     "Median earnings":34710,
     "Upper quartile earnings":45630
   },
   {
-    "Year":2012,
     "Sector":"Wholesale, retail and repairs",
+    "Year":2012,
     "Lower quartile earnings":16120,
     "Median earnings":22100,
     "Upper quartile earnings":30810
   },
   {
-    "Year":2012,
     "Sector":"Hostelry",
+    "Year":2012,
     "Lower quartile earnings":14300,
     "Median earnings":16770,
     "Upper quartile earnings":22100
   },
   {
-    "Year":2012,
     "Sector":"Transport and storage",
+    "Year":2012,
     "Lower quartile earnings":20540,
     "Median earnings":25870,
     "Upper quartile earnings":35620
   },
   {
-    "Year":2012,
     "Sector":"Information and communication",
+    "Year":2012,
     "Lower quartile earnings":26000,
     "Median earnings":33930,
     "Upper quartile earnings":47450
   },
   {
-    "Year":2012,
     "Sector":"Finance",
+    "Year":2012,
     "Lower quartile earnings":28600,
     "Median earnings":41340,
     "Upper quartile earnings":63830
   },
   {
-    "Year":2012,
     "Sector":"Real estate activities",
+    "Year":2012,
     "Lower quartile earnings":23530,
     "Median earnings":31850,
     "Upper quartile earnings":49270
   },
   {
-    "Year":2012,
     "Sector":"Professional, business, scientific and technical activities",
+    "Year":2012,
     "Lower quartile earnings":25870,
     "Median earnings":37180,
     "Upper quartile earnings":55380
   },
   {
-    "Year":2012,
     "Sector":"Administrative and support service activities",
+    "Year":2012,
     "Lower quartile earnings":19240,
     "Median earnings":26520,
     "Upper quartile earnings":36660
   },
   {
-    "Year":2012,
     "Sector":"Public administration",
+    "Year":2012,
     "Lower quartile earnings":21840,
     "Median earnings":32370,
     "Upper quartile earnings":44850
   },
   {
-    "Year":2012,
     "Sector":"Education",
+    "Year":2012,
     "Lower quartile earnings":16770,
     "Median earnings":25740,
     "Upper quartile earnings":43420
   },
   {
-    "Year":2012,
     "Sector":"Human health, social and charitable work activities",
+    "Year":2012,
     "Lower quartile earnings":15600,
     "Median earnings":22100,
     "Upper quartile earnings":30420
   },
   {
-    "Year":2012,
     "Sector":"Arts, entertainment and recreation",
+    "Year":2012,
     "Lower quartile earnings":18330,
     "Median earnings":26520,
     "Upper quartile earnings":38220
   },
   {
-    "Year":2012,
     "Sector":"Other service activities",
+    "Year":2012,
     "Lower quartile earnings":13000,
     "Median earnings":17550,
     "Upper quartile earnings":24570
   },
   {
-    "Year":2012,
     "Sector":"Activities of households as employers",
+    "Year":2012,
     "Lower quartile earnings":14560,
     "Median earnings":21190,
     "Upper quartile earnings":28210
+  },
+  {
+    "Sector":"Agriculture, horticulture, fishing and quarrying",
+    "Year":2013,
+    "Lower quartile earnings":17550,
+    "Median earnings":24570,
+    "Upper quartile earnings":33410
+  },
+  {
+    "Sector":"Manufacturing",
+    "Year":2013,
+    "Lower quartile earnings":18330,
+    "Median earnings":25740,
+    "Upper quartile earnings":33280
+  },
+  {
+    "Sector":"Electricity, gas, steam and air conditioning supply",
+    "Year":2013,
+    "Lower quartile earnings":28340,
+    "Median earnings":35490,
+    "Upper quartile earnings":47580
+  },
+  {
+    "Sector":"Water supply, sewerage, waste management and remediation activities",
+    "Year":2013,
+    "Lower quartile earnings":21710,
+    "Median earnings":28730,
+    "Upper quartile earnings":32539
+  },
+  {
+    "Sector":"Construction",
+    "Year":2013,
+    "Lower quartile earnings":23140,
+    "Median earnings":30680,
+    "Upper quartile earnings":38480
+  },
+  {
+    "Sector":"Wholesale, retail and repairs",
+    "Year":2013,
+    "Lower quartile earnings":16120,
+    "Median earnings":22230,
+    "Upper quartile earnings":30550
+  },
+  {
+    "Sector":"Hostelry",
+    "Year":2013,
+    "Lower quartile earnings":14690,
+    "Median earnings":17160,
+    "Upper quartile earnings":22360
+  },
+  {
+    "Sector":"Transport and storage",
+    "Year":2013,
+    "Lower quartile earnings":20930,
+    "Median earnings":26130,
+    "Upper quartile earnings":34970
+  },
+  {
+    "Sector":"Information and communication",
+    "Year":2013,
+    "Lower quartile earnings":26780,
+    "Median earnings":34840,
+    "Upper quartile earnings":47320
+  },
+  {
+    "Sector":"Finance",
+    "Year":2013,
+    "Lower quartile earnings":28860,
+    "Median earnings":41860,
+    "Upper quartile earnings":64090
+  },
+  {
+    "Sector":"Real estate activities",
+    "Year":2013,
+    "Lower quartile earnings":21580,
+    "Median earnings":31330,
+    "Upper quartile earnings":46670
+  },
+  {
+    "Sector":"Professional, business, scientific and technical activities",
+    "Year":2013,
+    "Lower quartile earnings":26260,
+    "Median earnings":38350,
+    "Upper quartile earnings":57850
+  },
+  {
+    "Sector":"Administrative and support service activities",
+    "Year":2013,
+    "Lower quartile earnings":19760,
+    "Median earnings":26390,
+    "Upper quartile earnings":36400
+  },
+  {
+    "Sector":"Public administration",
+    "Year":2013,
+    "Lower quartile earnings":22230,
+    "Median earnings":32630,
+    "Upper quartile earnings":45110
+  },
+  {
+    "Sector":"Education",
+    "Year":2013,
+    "Lower quartile earnings":17290,
+    "Median earnings":25350,
+    "Upper quartile earnings":43940
+  },
+  {
+    "Sector":"Human health, social and charitable work activities",
+    "Year":2013,
+    "Lower quartile earnings":15730,
+    "Median earnings":22100,
+    "Upper quartile earnings":30940
+  },
+  {
+    "Sector":"Arts, entertainment and recreation",
+    "Year":2013,
+    "Lower quartile earnings":18070,
+    "Median earnings":25610,
+    "Upper quartile earnings":34580
+  },
+  {
+    "Sector":"Other service activities",
+    "Year":2013,
+    "Lower quartile earnings":13780,
+    "Median earnings":18070,
+    "Upper quartile earnings":24700
+  },
+  {
+    "Sector":"Activities of households as employers",
+    "Year":2013,
+    "Lower quartile earnings":14040,
+    "Median earnings":21060,
+    "Upper quartile earnings":27040
   }
 ]

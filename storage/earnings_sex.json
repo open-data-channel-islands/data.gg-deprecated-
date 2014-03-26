@@ -48,6 +48,12 @@
     "Real median earnings":32500
   },
   {
+    "Year":2013,
+    "Sex":"Male",
+    "Nominal median earnings":32760,
+    "Real median earnings":32760
+  },
+  {
     "Year":2005,
     "Sex":"Female",
     "Nominal median earnings":19370,
@@ -94,5 +100,11 @@
     "Sex":"Female",
     "Nominal median earnings":25870,
     "Real median earnings":25870
+  },
+  {
+    "Year":2013,
+    "Sex":"Female",
+    "Nominal median earnings":26000,
+    "Real median earnings":26000
   }
 ]
