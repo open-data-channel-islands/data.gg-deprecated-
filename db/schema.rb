@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316144743) do
+ActiveRecord::Schema.define(version: 20140326081635) do
 
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
     t.integer "stop_id"
     t.integer "idx"
+    t.boolean "display"
   end
 
   add_index "route_stops", ["route_id"], name: "index_route_stops_on_route_id"
@@ -34,7 +35,6 @@ ActiveRecord::Schema.define(version: 20140316144743) do
 
   create_table "stop_links", force: true do |t|
     t.integer  "time"
-    t.boolean  "display"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "skip"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20140316144743) do
     t.decimal  "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "timetable_id"
   end
 
   create_table "timetables", force: true do |t|

@@ -66,12 +66,12 @@ DataGg::Application.routes.draw do
       
       namespace :buses do
         
-        resources :stops
-        
         resources :timetables, param: :start_date do
           collection do
             get 'data'
           end
+          
+          resources :stops
           
           resources :routes do
             resources :route_stops do

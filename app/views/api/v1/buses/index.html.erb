@@ -1,3 +1,8 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li class="active">Buses</li>
+</ol>
+
 <h2>Bus Data</h2>
 
 <table class="table table-striped" style="margin-bottom:50px">
@@ -40,7 +45,7 @@
 
 <div class="col-md-4">
 <% if @timetables.count > 0 %>
-<table class="table table-striped" style="margin-top:50px;">
+<table class="table table-striped" style="margin-top:50px; width:100%">
   <thead>
     <tr>
       <th>Name</th>
@@ -61,8 +66,5 @@ No timetables to display
 <% end %>
 
 <%= link_to 'Create Timetable', new_api_v1_buses_timetable_path %>
-</div>
-<div class="col-md-4">
-  <%= link_to 'Stops', api_v1_buses_stops_path %>
 </div>
 

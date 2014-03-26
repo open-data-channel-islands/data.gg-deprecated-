@@ -5,6 +5,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   def show
     @timetable = Timetable.where(:start => params[:start_date]).first
     @route = Route.new
+    @stop = Stop.new
 
     respond_to do |format|
       format.html

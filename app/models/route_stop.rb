@@ -5,4 +5,5 @@ class RouteStop < ActiveRecord::Base
   validates :idx, presence: true
   validates :stop_id, presence: true
   validates :route_id, presence: true
+  validates :display, presence: true
 end

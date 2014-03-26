@@ -15,15 +15,12 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     
     @route_stop.idx = idx + 1
 
-    respond_to do |f|
-      if @route_stop.save
-        flash[:success] = "Success"
-        redirect_to api_v1_buses_timetable_route(@route_stop.route.timetable.start, @route_stop.id)
-      else
-        flash[:error] = "Fail"
-        print @route_stop.errors.full_messages
-        redirect_to "/"
-      end
+    if @route_stop.save
+      flash[:success] = "Success"
+      redirect_to api_v1_buses_timetable_route_path(@route_stop.route.timetable.start, @route_stop.route.id)
+    else
+      flash[:error] = "Fail"
+      redirect_to api_v1_buses_timetable_route_path(@route_stop.route.timetable.start, @route_stop.route.id)
     end
   end
   
@@ -54,7 +51,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       end
     end
     
-    p sl_arr
+    redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
     
     #redirect_to api_v1_buses_timetable_route_path()
   end
@@ -62,7 +59,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
   private
   
   def route_stop_params
-    params.require(:route_stop).permit(:stop_id, :route_id)
+    params.require(:route_stop).permit(:idx, :display, :stop_id, :route_id)
   end
   
   def route_params

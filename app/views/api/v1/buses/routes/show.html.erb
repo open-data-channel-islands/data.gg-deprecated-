@@ -1,92 +1,140 @@
-<h1>Route Stops</h1>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Buses", api_v1_buses_path %></li>
+  <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+  <li class="active">Route <%= @route.name%></li>
+</ol>
 
-<p class="lead">Showing all stops on this route</p>
+<h1>Route Details</h1>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-    <% @ordered_route_stops.each do |stop| %>
-      <th><%= stop.stop.name %></th>
-    <% end %>
-    </tr>
-  </thead>
-  
-  <tbody>
-    <% @stop_links.each do |sl| %>
-      <tr>
-        <% sl.each do |dtls| %>
-          <td>
-            <%= dtls.time %>
-            <%= dtls.skip %>
-          </td>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#times" data-toggle="tab">Times</a></li>
+  <li><a href="#stops" data-toggle="tab">Stops</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="times">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+        <% @ordered_route_stops.each do |stop| %>
+          <th><%= stop.stop.name %></th>
         <% end %>
-        
-      </tr>
-    <% end %>
+        <th></th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <% @stop_links.each do |sl| %>
+          <tr>
+            <% sl.each do |dtls| %>
+              <td>
+                <%= dtls.time %>
+                <%= dtls.skip %>
+              </td>
+            <% end %>
+            <td></td>
+          </tr>
+        <% end %>
     
-    <tr>
-      <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
-      
-      <% @new_stop_link_set.each.with_index do |stop_link,index| %>
-        <td>
-          <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
-            <%= sl.hidden_field :origin_stop_link_id, :value => stop_link.origin_stop_link.id %>
-            <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
-            <%= sl.text_field :time, :size => 4 %>
-            
-            <%= sl.label :display %>
-            <%= sl.check_box :display %>
-            
-            <%= sl.label :skip %>
-            <%= sl.check_box :skip %>
-            
-            <%= sl.label :arrive %>
-            <%= sl.check_box :arrive %>
-            
-            <%= sl.label :depart %>
-            <%= sl.check_box :depart %>
-            
-            <%= sl.label :night %>
-            <%= sl.check_box :night %>
+        <tfoot>
+          <tr>
+          <% @ordered_route_stops.each do |stop| %>
+            <th><%= stop.stop.name %></th>
           <% end %>
-        </td>
-      <% end %>
+          <th></th>
+          </tr>
+    
+        <tr>
+          <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
+      
+          <% @new_stop_link_set.each.with_index do |stop_link,index| %>
+            <td style="padding:5px">
+              <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
+              <div style="width:130px">
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
+                      <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
+                      <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
+                      <li><%= sl.label :night %><%= sl.check_box :night %></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+
+                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
+                  </div>
+                </div>
+                <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
+              <% end %>
+          
+              <%= hidden_field :timetable_start_date, :value => @timetable.start %>
+              <%= hidden_field :route_id, :value => @route.id %>
+            </td>
+          <% end %>
       
 
+          <td>
+            <%= submit_tag "Add", class: "btn btn-primary btn-sm" %>
+          </td>
+        
+          <% end %>
+        </tr>
+        </tfoot>
+      </tbody>
+    </table>
+    
+  </div>
+  <div class="tab-pane"  id="stops">
+    <h3>Stops</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>Stop</th>
+          <th>Display?</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @route.route_stops.each do |route_stop| %>
+        <tr>
+          <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
+          <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
+          <td><%= route_stop.stop.name %></td>
+          <td><%= route_stop.display %></td>
+          <td><%= route_stop.stop.latitude %></td>
+          <td><%= route_stop.stop.longitude %></td>
+        </tr>
+        <% end %>
+    
+        <tr>
+          <td colspan="2"></td>
+          <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop] do |f| %>
+          <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
+          <td>
+              
+              <%= f.hidden_field(:route_id, { :value => @route.id })%>
+                        <%= f.check_box :display %>
+              </td>
+              <td colspan="2" style="text-align:right">
+              <%= f.submit "Add", class: "btn btn-primary btn-sm" %>
+              </td>
+          <% end %>
+        </tr>
+    
+      </tbody>
+      <tfoot>
+    
+      </tfoot>
+    </table>
+  </div>
+</div>
 
-        <%= submit_tag %>
-      <% end %>
-    </tr>
-  </tbody>
-</table>
 
 
-<h3>Stops</h3>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th>Stop</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @route.route_stops.each do |route_stop| %>
-    <tr>
-      <td>Move up button</td>
-      <td>Move down button</td>
-      <td><%= route_stop.stop.name %></td>
-    </tr>
-    <% end %>
-  </tbody>
-  <tfoot>
-    <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop] do |f| %>
-    <tr>
-      <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| [stop.name, stop.id] }))%></td>
-      <td><%= f.hidden_field(:route_id, { :value => @route.id })%>
-        <%= f.submit "Add" %></td>
-    </tr>
-    <% end %>
-  </tfoot>
-</table>

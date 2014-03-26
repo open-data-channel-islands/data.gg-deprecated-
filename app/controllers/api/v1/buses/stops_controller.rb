@@ -15,7 +15,7 @@ class Api::V1::Buses::StopsController < ApplicationController
       flash[:error] = "Couldn't save"
     end
     
-    redirect_to buses_stops_path
+    redirect_to api_v1_buses_timetable_path(:start_date => @stop.timetable.start) + '#stops'
   end
   
   def destroy
@@ -45,6 +45,6 @@ class Api::V1::Buses::StopsController < ApplicationController
   private
   
   def stop_params
-    params.require(:stop).permit(:name, :latitude, :longitude)
+    params.require(:stop).permit(:timetable_id, :name, :latitude, :longitude)
   end
 end
