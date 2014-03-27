@@ -60,25 +60,33 @@ DataGg::Application.routes.draw do
   #  end
   #end
 
+  # TODO: These are all wrong; they should not be resources
   namespace :api do
     namespace :v1 do
+
       resources :flights do
         collection do
           get 'arrivals'
           get 'departures'
         end
       end
+
       resources :police do
         collection do
           get 'crimes'
           get 'traffic'
+          get 'traffic_classifications'
+          get 'traffic_collisions'
+          get 'traffic_injuries'
         end
       end
+
       resources :population do
         collection do
           get 'population'
         end
       end
+
       resources :earnings do
         collection do
           get 'earnings_age_group'
@@ -86,6 +94,13 @@ DataGg::Application.routes.draw do
           get 'earnings_sex'
         end
       end
+
+      resources :sailings do
+        collection do
+          get 'herm_trident'
+        end
+      end
+
     end
   end
 

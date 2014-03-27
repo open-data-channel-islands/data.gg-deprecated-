@@ -1,0 +1,19 @@
+<h2>Sailings</h2>
+<h3>Herm Tridents</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+    <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "xml") %>
+    XML
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Source</h3>
+<%= link_to 'herm.com website', 'http://herm.com/getting-here/trident-ferry/default.aspx' %>

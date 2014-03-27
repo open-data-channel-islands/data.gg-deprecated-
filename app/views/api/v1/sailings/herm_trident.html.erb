@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Depart</th>
+      <th>Return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @herm_tridents.each do |f| %>
+    <tr>
+    <td><%= f['Date'] %></td>
+    <td><%= f['Depart'] %></td>
+    <td><%= f['Return'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

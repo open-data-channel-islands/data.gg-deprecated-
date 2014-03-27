@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Type</th>
+      <th>Fatal</th>
+      <th>Serious</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @traffic.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Type'] %></td>
+    <td><%= f['Fatal'] %></td>
+    <td><%= f['Serious'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
