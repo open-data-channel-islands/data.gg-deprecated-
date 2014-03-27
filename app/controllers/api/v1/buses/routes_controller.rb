@@ -67,7 +67,7 @@ class Api::V1::Buses::RoutesController < ApplicationController
     tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
-                          .order("origin.id ASC, origin.time ASC, rs.idx ASC")
+                          .order("origin.time DESC, origin.id ASC, rs.idx ASC")
                           .distinct
                           
                           p tmp_stop_links

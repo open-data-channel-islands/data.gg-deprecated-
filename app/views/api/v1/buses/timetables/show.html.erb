@@ -4,40 +4,22 @@
   <li class="active"><%= @timetable.name%> Timetable</li>
 </ol>
 
-<h1><%= @timetable.name %> <small>Routes</small></h1>
+<h1>
+  <%= @timetable.name %>
+  <small>Routes</small>
+  <small><%= link_to 'Destroy', api_v1_buses_timetable_path(@timetable),
+                      method: :delete, data: { confirm: 'Are you sure?' } %></small >
+
+</h1>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#api" data-toggle="tab">API</a></li>
-  <li><a href="#routes" data-toggle="tab">Routes</a></li>
+  <li class="active"><a href="#routes" data-toggle="tab">Routes</a></li>
   <li><a href="#stops" data-toggle="tab">Stops</a></li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="api">
-    <h3>API</h3>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Call</th>
-          <th>XML</th>
-          <th>JSON</th>
-          <th>HTML</th>
-          <th>Object</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="#">Test</a></td>
-          <td><a href="#">Test</a></td>
-          <td><a href="#">Test</a></td>
-          <td><a href="#">Test</a></td>
-          <td><a href="#">Test</a></td> 
-        </tr>
-      </tbody>
-    </table>
-  </div>
   <div class="tab-pane" id="routes">
     <h3>Routes</h3>
     <table class="table table-striped">

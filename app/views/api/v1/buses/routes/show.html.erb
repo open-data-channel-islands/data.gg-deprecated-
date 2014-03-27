@@ -16,123 +16,122 @@
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="times">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-        <% @ordered_route_stops.each do |stop| %>
-          <th><%= stop.stop.name %></th>
-        <% end %>
-        <th></th>
-        </tr>
-      </thead>
-  
-      <tbody>
-        <% @stop_links.each do |sl| %>
-          <tr>
-            <% sl.each do |dtls| %>
-              <td>
-                <%= dtls.time %>
-                <%= dtls.skip %>
-              </td>
-            <% end %>
-            <td></td>
-          </tr>
-        <% end %>
     
-        <tfoot>
+    <% if @route.route_stops.count == 0 %>
+      <h3 class="text-center">No stops available! To get started, hit the 'Stops' tab above.</h3>
+    <% else %>
+      <table class="table table-striped">
+        <thead>
           <tr>
           <% @ordered_route_stops.each do |stop| %>
             <th><%= stop.stop.name %></th>
           <% end %>
           <th></th>
           </tr>
-    
-        <tr>
-          <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
-      
-          <% @new_stop_link_set.each.with_index do |stop_link,index| %>
-            <td style="padding:5px">
-              <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
-              <div style="width:130px">
-                <div class="input-group">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
-                      <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
-                      <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
-                      <li><%= sl.label :night %><%= sl.check_box :night %></li>
-                    </ul>
-                  </div><!-- /btn-group -->
-
-                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
-                  </div>
-                </div>
-                <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
+        </thead>
+  
+        <tbody>
+          <% @stop_links.each do |sl| %>
+            <tr>
+              <% sl.each do |dtls| %>
+                <td>
+                  <%= dtls.time_string %>
+                  <%= dtls.skip %>
+                </td>
               <% end %>
-          
-              <%= hidden_field :timetable_start_date, :value => @timetable.start %>
-              <%= hidden_field :route_id, :value => @route.id %>
-            </td>
+              <td></td>
+            </tr>
           <% end %>
+        </tbody>
+    
+        <tfoot>
+          <tr>
+            <% @ordered_route_stops.each do |stop| %>
+              <th><%= stop.stop.name %></th>
+            <% end %>
+            <th></th>
+          </tr>
+    
+          <tr>
+            <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
       
+            <% @new_stop_link_set.each.with_index do |stop_link,index| %>
+              <td style="padding:5px">
+                <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
+                <div style="width:130px">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
+                        <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
+                        <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
+                        <li><%= sl.label :night %><%= sl.check_box :night %></li>
+                      </ul>
+                    </div><!-- /btn-group -->
 
-          <td>
-            <%= submit_tag "Add", class: "btn btn-primary btn-sm" %>
-          </td>
+                    <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
+                    </div>
+                  </div>
+                  <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
+                <% end %>
+          
+                <%= hidden_field :timetable_start_date, :value => @timetable.start %>
+                <%= hidden_field :route_id, :value => @route.id %>
+              </td>
+            <% end %>
+      
+            <td>
+              <%= submit_tag "Add", class: "btn btn-primary btn-sm" %>
+            </td>
         
-          <% end %>
-        </tr>
+            <% end %>
+          </tr>
         </tfoot>
-      </tbody>
-    </table>
+      </table>
+    <% end %>
     
   </div>
   <div class="tab-pane"  id="stops">
     <h3>Stops</h3>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th></th>
-          <th></th>
-          <th>Stop</th>
-          <th>Display?</th>
-          <th>Latitude</th>
-          <th>Longitude</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @route.route_stops.each do |route_stop| %>
-        <tr>
-          <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
-          <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
-          <td><%= route_stop.stop.name %></td>
-          <td><%= route_stop.display %></td>
-          <td><%= route_stop.stop.latitude %></td>
-          <td><%= route_stop.stop.longitude %></td>
-        </tr>
-        <% end %>
     
-        <tr>
-          <td colspan="2"></td>
-          <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop] do |f| %>
-          <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
-          <td>
-              
-              <%= f.hidden_field(:route_id, { :value => @route.id })%>
-                        <%= f.check_box :display %>
-              </td>
-              <td colspan="2" style="text-align:right">
-              <%= f.submit "Add", class: "btn btn-primary btn-sm" %>
-              </td>
+    <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
+      <%= f.label :stop %>
+      <%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%>
+      <%= f.hidden_field(:route_id, { :value => @route.id })%>
+      <%= f.label :display %>
+      <%= f.check_box :display %>
+      <%= f.submit "Add", class: "btn btn-primary btn-sm" %>
+    <% end %>
+    
+    <% if @route.route_stops.count == 0 %>
+      <h3 class="text-center">No stops have been added yet!</h3>
+    <% else %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Stop</th>
+            <th>Display?</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @route.route_stops.each do |route_stop| %>
+          <tr>
+            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
+            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
+            <td><%= route_stop.stop.name %></td>
+            <td><%= route_stop.display %></td>
+            <td><%= route_stop.stop.latitude %></td>
+            <td><%= route_stop.stop.longitude %></td>
+          </tr>
           <% end %>
-        </tr>
-    
-      </tbody>
-      <tfoot>
-    
-      </tfoot>
-    </table>
+        </tbody>
+      </table>
+    <% end %>
   </div>
 </div>
 

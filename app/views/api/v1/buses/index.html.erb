@@ -43,13 +43,13 @@
 <div class="clearfix"></div>
 <% end %>
 
-<div class="col-md-4">
 <% if @timetables.count > 0 %>
 <table class="table table-striped" style="margin-top:50px; width:100%">
   <thead>
     <tr>
       <th>Name</th>
-      <th>Effective Date</th>
+      <th>Start Date</th>
+      <th>End Date</th>
     </tr>
   </thead>
   <tbody>
@@ -57,14 +57,22 @@
     <tr>
       <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
       <td><%= timetable.start %></td>
+      <td><%= timetable.end %>
     </tr>
   <% end %>
   </tbody>
+  <tfoot>
+    <tr>
+      <%= form_for [:api, :v1, :buses, @timetable], { :class => 'form-inline'} do |f| %>
+        <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
+        <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
+        <td><%= f.submit "Create", { :class => "btn btn-primary"} %></td>
+      <% end %>
+    </tr>
+  </tfoot>
 </table>
 <% else %>
 No timetables to display
 <% end %>
 
-<%= link_to 'Create Timetable', new_api_v1_buses_timetable_path %>
-</div>
 

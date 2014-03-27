@@ -20,9 +20,26 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     @timetable = Timetable.new(timetable_params)
     @timetable.save
   #  
-    flash[:success] = "Timetable #{@timetable.name} successfully saved."
+    flash[:success] = "Timetable '#{@timetable.name}' successfully saved."
   #  
-    redirect_to buses_timetable_path(:date => @timetable.start)
+    redirect_to api_v1_buses_timetable_path(@timetable.start)
+  end
+  
+  def destroy
+    @timetable = Timetable.find_by_start(params[:start])
+    
+    if !@timetable
+      flash[:error] = "Couldn't find a timetable with start date of '#{params[:start]}' to delete!"
+      redirect_to api_v1_buses_path # redirect a level higher because it doesn't exist
+    end
+    
+    if !@timetable.destroy
+      flash[:error] = "Couldn't delete the timetable with a start date of '#{params[:start]}'"
+      redirect_to api_v1_buses_timetable_path(params[:start])
+    end
+    
+    flash[:success] = "Successfully deleted timetable with a start date of '#{params[:start]}"
+    redirect_to api_v1_buses_path
   end
   
   #def download
@@ -37,6 +54,6 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   private
   
   def timetable_params
-    params.require(:timetable).permit(:name, :start)
+    params.require(:timetable).permit(:name, :description, :start, :end)
   end
 end
