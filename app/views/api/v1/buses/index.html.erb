@@ -50,6 +50,7 @@
       <th>Name</th>
       <th>Start Date</th>
       <th>End Date</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -58,6 +59,8 @@
       <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
       <td><%= timetable.start %></td>
       <td><%= timetable.end %>
+      <td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
+                      method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
   </tbody>
@@ -66,6 +69,7 @@
       <%= form_for [:api, :v1, :buses, @timetable], { :class => 'form-inline'} do |f| %>
         <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
         <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
+        <td><%= f.text_field :end, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
         <td><%= f.submit "Create", { :class => "btn btn-primary"} %></td>
       <% end %>
     </tr>
