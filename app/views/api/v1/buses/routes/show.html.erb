@@ -82,7 +82,7 @@
             <% end %>
       
             <td>
-              <%= submit_tag "Add", class: "btn btn-primary btn-sm" %>
+              <%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %>
             </td>
         
             <% end %>
@@ -92,21 +92,9 @@
     <% end %>
     
   </div>
-  <div class="tab-pane"  id="stops">
+  <div class="tab-pane" id="stops">
     <h3>Stops</h3>
     
-    <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
-      <%= f.label :stop %>
-      <%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%>
-      <%= f.hidden_field(:route_id, { :value => @route.id })%>
-      <%= f.label :display %>
-      <%= f.check_box :display %>
-      <%= f.submit "Add", class: "btn btn-primary btn-sm" %>
-    <% end %>
-    
-    <% if @route.route_stops.count == 0 %>
-      <h3 class="text-center">No stops have been added yet!</h3>
-    <% else %>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -129,11 +117,24 @@
             <td><%= route_stop.stop.longitude %></td>
           </tr>
           <% end %>
+          <% if @route.route_stops.count == 0 %>
+            <tr>
+              <td colspan="6"><h3 class="text-center">No stops have been added yet!</h3></td>
+            </tr>
+          <% end %>
         </tbody>
+        <tfoot>
+          <tr>
+            <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
+              <td colspan="2"></td>
+              <td><%= f.select(:stop_id, options_for_select(Stop.all.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
+              <td><%= f.check_box :display %></td>
+              <td colspan="2">
+                <%= f.hidden_field :route_id %>
+                <%= f.submit "Add Stop", class: "btn btn-primary btn-sm" %></td>
+            <% end %>
+          </tr>
+        </tfoot>
       </table>
-    <% end %>
   </div>
 </div>
-
-
-

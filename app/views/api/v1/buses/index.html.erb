@@ -43,8 +43,8 @@
 <div class="clearfix"></div>
 <% end %>
 
-<% if @timetables.count > 0 %>
 <table class="table table-striped" style="margin-top:50px; width:100%">
+  <% if @timetables.count > 0 %>
   <thead>
     <tr>
       <th>Name</th>
@@ -53,16 +53,23 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
-  <% @timetables.each do |timetable| %>
-    <tr>
-      <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
-      <td><%= timetable.start %></td>
-      <td><%= timetable.end %>
-      <td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
-                      method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
   <% end %>
+  <tbody>
+    <% if @timetables.count > 0 %>
+      <% @timetables.each do |timetable| %>
+        <tr>
+          <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
+          <td><%= timetable.start %></td>
+          <td><%= timetable.end %>
+          <td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
+                          method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% else %>
+      <tr>
+        <td colspan="4"><h3 class="text-center">Uh-oh, no timetables available yet!</h3></td>
+      </tr>
+    <% end %>
   </tbody>
   <tfoot>
     <tr>
@@ -70,13 +77,10 @@
         <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
         <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
         <td><%= f.text_field :end, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
-        <td><%= f.submit "Create", { :class => "btn btn-primary"} %></td>
+        <td><%= f.submit 'Create', { :class => "btn btn-primary"} %></td>
       <% end %>
     </tr>
   </tfoot>
 </table>
-<% else %>
-No timetables to display
-<% end %>
 
 

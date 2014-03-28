@@ -1,36 +1,27 @@
 class Api::V1::Buses::RoutesController < ApplicationController
   
-  # Not used yet
-  def index
-    @routes = Route.all
-    
-    respond_to do |format|
-      format.html
-    end
-  end
-  
   # POSTed from the timetables 'show'
   def create
-    @route = Route.new(route_params)
+    route = Route.new(route_params)
     
-    if !@route.timetable
-      # error
+    if route.save
+      flash[:success] = "Route '#{route.name}' created"
+      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start)
+    else
+      flash[:error] = "Route '#{route.name}' could not be created"
+      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start)
     end
-    @route.save
-    
-    flash[:success] = "Route created"
-    
-    redirect_to api_v1_buses_timetable_path(:start_date => @route.timetable.start)
   end
   
   def destroy
-    @route = Route.find_by_id(params[:id])
+    route = Route.find_by_id(params[:id])
     
     respond_to do |f|
-      if @route.destroy
-        flash[:success] = "Route destroyed"
-        redirect_to api_v1_buses_timetable_path(:start_date => params[:start])
+      if route.destroy
+        flash[:success] = "Route #{route.name} destroyed"
+        redirect_to api_v1_buses_timetable_path(params[:start])
       else
+        flash[:error] = "Couldn't delete #{route.name}"
         redirect_to api_v1_buses_timetable_route_path(:start_date => params[:start], :id => params[:id])
       end
     end
@@ -105,10 +96,6 @@ class Api::V1::Buses::RoutesController < ApplicationController
     respond_to do |format|
       format.html
     end
-  end
-  
-  def create_stop_link_chain
-    
   end
   
   private

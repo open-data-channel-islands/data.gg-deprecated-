@@ -1,45 +1,29 @@
 class Api::V1::Buses::StopsController < ApplicationController
   
-  def index
-    @stops = Stop.all
-    @stop = Stop.new
-    
-    respond_to do |format|
-      format.html
-    end
-  end
-  
   def create
-    @stop = Stop.new(stop_params)
-    if !@stop.save
-      flash[:error] = "Couldn't save"
+    stop = Stop.new(stop_params)
+    if !stop.save
+      flash[:error] = "Couldn't create stop!"
+    else
+      flash[:success] = "Stop '#{stop.name} successfully created"
     end
     
-    redirect_to api_v1_buses_timetable_path(:start_date => @stop.timetable.start) + '#stops'
+    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start) + '#stops'
   end
   
   def destroy
-      @stop = Stop.find(params[:id])
-      @stop.destroy
-
-      respond_to do |format|
-        format.html { redirect_to buses_stops_path }
-        format.xml  { head :ok }
-      end
-    end
-  
-  def new
-    
-    @stop = Stop.new
+    stop = Stop.find(params[:id])
     
     respond_to do |format|
-      format.html
+      if stop.destroy
+        flash[:success] = "Stop #{stop.name} has been deleted"
+      else
+        flash[:error] = "Stop #{stop.name} couldn't be deleted"
+      end
+      
+      format.html { redirect_to api_v1_buses_stops_path }
+      format.xml  { head :ok }
     end
-    
-  end
-  
-  def show
-    
   end
   
   private

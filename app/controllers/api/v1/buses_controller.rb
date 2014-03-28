@@ -10,6 +10,4 @@ class Api::V1::BusesController < ApplicationController
     end
   end
   
-  
-  
 end

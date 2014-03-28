@@ -1,10 +1,10 @@
 class Api::V1::Buses::RouteStopsController < ApplicationController
   
   def create
-    @route_stop = RouteStop.new(route_stop_params)
+    route_stop = RouteStop.new(route_stop_params)
 
     # This gets the very first route_stop instance
-    rs = RouteStop.where(route_id: @route_stop.route.id).order(:idx).first()
+    rs = RouteStop.where(route_id: route_stop.route.id).order(:idx).first()
     idx = 0
     print idx
     if rs
@@ -13,14 +13,14 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     
     print idx
     
-    @route_stop.idx = idx + 1
+    route_stop.idx = idx + 1
 
-    if @route_stop.save
-      flash[:success] = "Success"
-      redirect_to api_v1_buses_timetable_route_path(@route_stop.route.timetable.start, @route_stop.route.id)
+    if route_stop.save
+      flash[:success] = "Successfully saved route stop"
+      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id)
     else
-      flash[:error] = "Fail"
-      redirect_to api_v1_buses_timetable_route_path(@route_stop.route.timetable.start, @route_stop.route.id)
+      flash[:error] = "Couldn't create route stop"
+      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id)
     end
   end
   
@@ -52,8 +52,19 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     end
     
     redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
+  end
+  
+  def destroy
+    route_stop = RouteStop.find(params[:route_stop_id])
     
-    #redirect_to api_v1_buses_timetable_route_path()
+    if route_stop
+      # Need to destroy the links, too
+      StopLink.destroy_all(route_stop_id: route_stop.id)
+      route_stop.destroy
+      flash[:success] = "Successfully deleted an occurrence of '#{route_stop.stop.name}' on route '#{route_stop.route.name}'"
+    else
+      flash[:error] = "Couldn't find the stop!"
+    end
   end
   
   private
