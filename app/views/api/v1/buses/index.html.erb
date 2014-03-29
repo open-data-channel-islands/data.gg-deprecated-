@@ -1,7 +1,9 @@
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li class="active">Buses</li>
-</ol>
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Buses</li>
+  </ol>
+<% end %>
 
 <h2>Bus Data</h2>
 

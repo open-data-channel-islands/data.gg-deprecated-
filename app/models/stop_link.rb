@@ -5,6 +5,7 @@ class StopLink < ActiveRecord::Base
   has_many :stop_links, foreign_key: "origin_stop_link", class_name: "StopLink"
   validates :depart, presence: true
   validates :time, presence: true
+  validates :route_id, presence: true
   
   def time_string
     time_s = time.to_s

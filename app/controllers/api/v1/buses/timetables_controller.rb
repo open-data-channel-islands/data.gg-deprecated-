@@ -23,6 +23,8 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   def create
     timetable = Timetable.new(timetable_params)
     
+    # TODO: Check for timetable overlaps!
+    
     if timetable.save
       flash[:success] = "Timetable '#{timetable.name}' successfully saved."
       redirect_to api_v1_buses_timetable_path(timetable.start)
@@ -33,19 +35,20 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   end
   
   def destroy
-    timetable = Timetable.find_by_start(params[:start])
+    start_date = params[:start_date]
+    timetable = Timetable.find_by_start(start_date)
     
     if !timetable
-      flash[:error] = "Couldn't find a timetable with start date of '#{params[:start]}' to delete!"
+      flash[:error] = "Couldn't find a timetable with start date of '#{start_date}' to delete!"
       redirect_to api_v1_buses_path # redirect a level higher because it doesn't exist
     end
     
     if !timetable.destroy
-      flash[:error] = "Couldn't delete the timetable with a start date of '#{params[:start]}'"
-      redirect_to api_v1_buses_timetable_path(params[:start])
+      flash[:error] = "Couldn't delete the timetable with a start date of '#{start_date}'"
+      redirect_to api_v1_buses_timetable_path(start_date)
     end
     
-    flash[:success] = "Successfully deleted timetable with a start date of '#{params[:start]}"
+    flash[:success] = "Successfully deleted timetable with a start date of '#{start_date}'"
     redirect_to api_v1_buses_path
   end
   

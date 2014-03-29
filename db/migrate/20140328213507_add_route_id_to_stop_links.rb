@@ -1,5 +1,5 @@
 class AddRouteIdToStopLinks < ActiveRecord::Migration
   def change
-    add_column :routes, :route_id, :integer
+    add_column :stop_links, :route_id, :integer
   end
 end
