@@ -2,6 +2,8 @@ require 'date'
 
 class Api::V1::Buses::TimetablesController < ApplicationController
   
+  before_action :authenticate_user!, :except => [:show]
+  
   def show
     @timetable = Timetable.where(:start => params[:start_date]).first
     @route = Route.new

@@ -1,5 +1,7 @@
 class Api::V1::Buses::RoutesController < ApplicationController
   
+  before_action :authenticate_user!, :except => [:show]
+  
   # POSTed from the timetables 'show'
   def create
     route = Route.new(route_params)

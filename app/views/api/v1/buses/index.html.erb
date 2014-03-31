@@ -52,7 +52,7 @@
       <th>Name</th>
       <th>Start Date</th>
       <th>End Date</th>
-      <th></th>
+      <% if user_signed_in? %><th></th><% end %>
     </tr>
   </thead>
   <% end %>
@@ -63,8 +63,8 @@
           <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
           <td><%= timetable.start %></td>
           <td><%= timetable.end %>
-          <td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
-                          method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% if user_signed_in? %><td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
+                          method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
         </tr>
       <% end %>
     <% else %>
@@ -73,6 +73,7 @@
       </tr>
     <% end %>
   </tbody>
+  <% if user_signed_in? %>
   <tfoot>
     <tr>
       <%= form_for [:api, :v1, :buses, @timetable], { :class => 'form-inline'} do |f| %>
@@ -83,6 +84,7 @@
       <% end %>
     </tr>
   </tfoot>
+  <% end %>
 </table>
 
 

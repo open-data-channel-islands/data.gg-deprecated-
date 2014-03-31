@@ -1,5 +1,7 @@
 class Api::V1::Buses::RouteStopsController < ApplicationController
   
+  before_action :authenticate_user!
+  
   def create
     route_stop = RouteStop.new(route_stop_params)
 

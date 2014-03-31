@@ -1,5 +1,7 @@
 DataGg::Application.routes.draw do
 
+  devise_for :users
+  
   get "flights/index"
   get "flight/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +9,9 @@ DataGg::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  
+  get 'about' => 'home#about', as: :about
+  get 'help' => 'home#help', as: :help
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

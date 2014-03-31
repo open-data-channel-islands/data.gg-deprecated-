@@ -28,7 +28,7 @@
           <% @ordered_route_stops.each do |stop| %>
             <th><%= stop.stop.name %></th>
           <% end %>
-          <th></th>
+          <% if user_signed_in? %><th></th><% end %>
           </tr>
         </thead>
   
@@ -41,11 +41,12 @@
                   <%= dtls.skip %>
                 </td>
               <% end %>
-              <td></td>
+              <% if user_signed_in? %><td></td><% end %>
             </tr>
           <% end %>
         </tbody>
     
+        <% if user_signed_in? %>
         <tfoot>
           <tr>
             <% @ordered_route_stops.each do |stop| %>
@@ -53,7 +54,7 @@
             <% end %>
             <th></th>
           </tr>
-    
+          
           <tr>
             <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
       
@@ -91,6 +92,7 @@
             <% end %>
           </tr>
         </tfoot>
+        <% end %>
       </table>
     <% end %>
     
@@ -101,26 +103,32 @@
       <table class="table table-striped">
         <thead>
           <tr>
+            <% if user_signed_in? %>
             <th></th>
             <th></th>
+            <% end %>
             <th>Stop</th>
             <th>Display?</th>
             <th>Latitude</th>
             <th>Longitude</th>
-            <th>
+            <% if user_signed_in? %><th></th><% end %>
           </tr>
         </thead>
         <tbody>
           <% @route.route_stops.each do |route_stop| %>
           <tr>
+            <% if user_signed_in? %>
             <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
             <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
+            <% end %>
             <td><%= route_stop.stop.name %></td>
             <td><%= route_stop.display %></td>
             <td><%= route_stop.stop.latitude %></td>
             <td><%= route_stop.stop.longitude %></td>
+            <% if user_signed_in? %>
             <td><%= link_to 'Destroy', api_v1_buses_timetable_route_route_stop_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => route_stop.id),
                       method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
           </tr>
           <% end %>
           <% if @route.route_stops.count == 0 %>
@@ -129,6 +137,7 @@
             </tr>
           <% end %>
         </tbody>
+        <% if user_signed_in? %>
         <tfoot>
           <tr>
             <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
@@ -141,6 +150,7 @@
             <% end %>
           </tr>
         </tfoot>
+        <% end %>
       </table>
   </div>
 </div>

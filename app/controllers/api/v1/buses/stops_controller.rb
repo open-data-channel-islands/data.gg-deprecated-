@@ -1,5 +1,7 @@
 class Api::V1::Buses::StopsController < ApplicationController
   
+  before_action :authenticate_user!
+  
   def create
     stop = Stop.new(stop_params)
     if !stop.save
