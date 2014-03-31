@@ -34,7 +34,7 @@ listen 8080, :tcp_nopush => true
 timeout 30
 
 # feel free to point this anywhere accessible on the filesystem
-pid APP_PATH + "/tmp/pids/data.gg_unicorn.pid"
+pid APP_PATH + "/var/www/shared/pids/data.gg_unicorn.pid"
 
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
