@@ -68,6 +68,7 @@ DataGg::Application.routes.draw do
     namespace :v1 do
       
       get 'buses/' => 'buses#index'
+      get 'buses/list' => 'buses#list'
       
       namespace :buses do
         

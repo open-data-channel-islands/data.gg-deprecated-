@@ -37,7 +37,6 @@ class Api::V1::Buses::RoutesController < ApplicationController
     @route_stop = RouteStop.new
     @route_stop.route = @route
     
-    
     @new_stop_link_set = []
     @route.route_stops.each do |route_stop|
       sl = StopLink.new
@@ -60,10 +59,8 @@ class Api::V1::Buses::RoutesController < ApplicationController
     tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
-                          .order("origin.time DESC, origin.id ASC, rs.idx ASC")
+                          .order("origin.time ASC, origin.id ASC, rs.idx ASC")
                           .distinct
-                          
-                          p tmp_stop_links
                           
     overall_set = Array.new # Contains ALL the stop links
     curr_set = Array.new # Contains CURRENT set
@@ -84,11 +81,15 @@ class Api::V1::Buses::RoutesController < ApplicationController
   
     @stop_links = overall_set
                           
-    # Now we loop through until we find the origin time has changed, then add it to a collection. This will
-    # organise each stop_link entry in a two-dimensional array instead
-    
+    if user_signed_in?
+      template = 'show_admin'
+    else
+      template = 'show'
+    end
+    p 'HUUROOOO' + template
     respond_to do |format|
-      format.html
+      format.xml
+      format.html { render template }
     end
   end
   

@@ -5,12 +5,24 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   before_action :authenticate_user!, :except => [:show]
   
   def show
+    if user_signed_in?
+      template = 'show_admin'
+    else
+      template = 'show'
+    end
+    
     @timetable = Timetable.where(:start => params[:start_date]).first
     @route = Route.new
     @stop = Stop.new
 
     respond_to do |format|
-      format.json { render json: @timetable }
+      format.json { render json: @timetable.to_json(:include => {
+        :routes => { :include => {
+          :route_stops => {},
+          :stop_links => {}
+        }},
+        :stops => {}
+      })}
       format.xml { render :xml => @timetable.to_xml(:include => {
         :routes => { :include => {
           :route_stops => {},
@@ -18,8 +30,12 @@ class Api::V1::Buses::TimetablesController < ApplicationController
         }},
         :stops => {}
       })}
-      format.html { render html: @timetable }
+      format.html { render template }
     end
+  end
+  
+  def publish
+    
   end
   
   def create
