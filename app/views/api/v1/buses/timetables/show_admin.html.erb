@@ -101,7 +101,8 @@
             <td><%= stop.name %></td>
             <td><%= stop.latitude %></td>
             <td><%= stop.longitude %></td>
-            <td><a href="#">Delete</a></td>
+            <td><%= link_to 'Destroy', api_v1_buses_timetable_stop_path(:timetable_start_date => @timetable.start, :id => stop.id),
+              method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>

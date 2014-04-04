@@ -7,6 +7,22 @@
   </ol>
 <% end %>
 
+<% content_for :scripts do %>
+  <script type="text/javascript">
+    $(function() {
+      var url = document.location.toString();
+      if (url.match('#')) {
+          $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+      } 
+
+      // Change hash for page-reload
+      $('.nav-tabs a').on('shown', function (e) {
+          window.location.hash = e.target.hash;
+      })
+    });
+  </script>
+<% end %>
+
 <h1>Route Details</h1>
 
 <!-- Nav tabs -->

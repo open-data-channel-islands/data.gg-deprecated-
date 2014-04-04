@@ -18,7 +18,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
 
     if route_stop.save
       flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}'"
-      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id)
+      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id) + '#stops'
     else
       flash[:error] = "Couldn't add stop on this route: #{route_stop.errors.full_messages}"
       redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, params[:route_id])
@@ -67,7 +67,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       flash[:error] = "Couldn't find the stop!"
     end
     
-    redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
+    redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id]) + '#stops'
   end
   
   private

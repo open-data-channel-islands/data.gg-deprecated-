@@ -66,10 +66,10 @@
           <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
           <td><%= timetable.start %></td>
           <td><%= timetable.end %></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><a href="#">XML</a></td>
+          <td><a href="#">JSON</a></td>
+          <td>N/A</td>
+          <td>TBC</td>
           <% if user_signed_in? %><td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
                           method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
         </tr>
@@ -87,11 +87,7 @@
         <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
         <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
         <td><%= f.text_field :end, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
-        <td><%= f.submit 'Create', { :class => "btn btn-primary"} %></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td colspan="5"><%= f.submit 'Create', { :class => "btn btn-primary"} %></td>
       <% end %>
     </tr>
   </tfoot>
