@@ -6,18 +6,19 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     route_stop = RouteStop.new(route_stop_params)
 
     # This gets the very first route_stop instance
-    rs = RouteStop.where(route_id: route_stop.route.id).order(:idx).first()
+    rs = RouteStop.where(route_id: route_stop.route.id).order(:idx).last()
     
     idx = 0
     print idx
     if rs
       idx = rs.idx
+      route_stop.idx = idx + 1
+    else
+      route_stop.idx = 0
     end
-    
-    route_stop.idx = idx + 1
 
     if route_stop.save
-      flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}'"
+      flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}' at index '#{route_stop.idx}'"
       redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id) + '#stops'
     else
       flash[:error] = "Couldn't add stop on this route: #{route_stop.errors.full_messages}"
@@ -57,30 +58,38 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
   
   # We have to do quite a bit of work here to make sure everything gets re-aligned
   def destroy
-    route_stop = RouteStop.find(params[:id])
+    route_stop_pending_destroy = RouteStop.find(params[:id])
     
-    if !route_stop
+    if !route_stop_pending_destroy
       flash[:error] = "Couldn't find a stop for '#{params[:id]}"
       redirect_to
     end
     
-    if route_stop.origin_route_stop = route_stop
-      next_idx = route_stop.idx + 1
-      # Not finished, this is saying that if it's the origin
-      # route_stop that we're deleting then we need to change
-      # the origin points to the 'next' one. So idx '1' will
-      # become '0' and then need to update RouteStop so
-      # origin_stop_link_id is that Route_Stop.
-      RouteStop.where("idx = #{next_idx}")
+    stop_links_to_remove = StopLink.where(route_stop: route_stop_pending_destroy)
+    
+    # We might not need this, but get it anyway
+    new_route_stop_origin = RouteStop.where("idx = #{route_stop_pending_destroy.idx + 1}")
+    
+    if new_route_stop_origin
+      stop_links_to_remove.each do |stop_link_to_remove|
+        # If the link we're deleting is the same as its origin
+        # then update all of the others to a new origin
+        if stop_link_to_remove.origin_stop_link = stop_link_to_remove
+          new_origin_stop_link = StopLink.where("origin_stop_link_id = #{stop_link_to_remove.id} and time != #{stop_link_to_remove.time}").order("time ASC").take
+          if new_origin_stop_link
+            StopLink.where("origin_stop_link_id = #{stop_link_to_remove.id}").update_all("origin_stop_link_id = #{new_origin_stop_link.id}")
+          end
+        end
+      end
     end
     
-    route_stop.destroy
+    route_stop_pending_destroy.destroy
     # Negate the indexes as they might be like 0,1,3,4
-    RouteStop.where("idx >= #{route_stop.idx}").update_all("idx = idx - 1")
+    RouteStop.where("route_id = #{route_stop_pending_destroy.route_id} and idx > #{route_stop_pending_destroy.idx}").update_all("idx = idx - 1")
     # Destroy all related stop links
-    StopLink.destroy_all(route_stop_id: route_stop.id)
+    StopLink.destroy_all(route_stop_id: route_stop_pending_destroy.id)
     
-    flash[:success] = "Successfully deleted an occurrence of '#{route_stop.stop.name}' on route '#{route_stop.route.name}'"
+    flash[:success] = "Successfully deleted an occurrence of '#{route_stop_pending_destroy.stop.name}' on route '#{route_stop_pending_destroy.route.name}' at index '#{route_stop_pending_destroy.idx}'"
 
     redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id]) + '#stops'
   end
