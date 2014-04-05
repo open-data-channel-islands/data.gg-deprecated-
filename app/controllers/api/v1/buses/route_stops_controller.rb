@@ -55,18 +55,33 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
   end
   
+  # We have to do quite a bit of work here to make sure everything gets re-aligned
   def destroy
     route_stop = RouteStop.find(params[:id])
     
-    if route_stop
-      # Need to destroy the links, too
-      StopLink.destroy_all(route_stop_id: route_stop.id)
-      route_stop.destroy
-      flash[:success] = "Successfully deleted an occurrence of '#{route_stop.stop.name}' on route '#{route_stop.route.name}'"
-    else
-      flash[:error] = "Couldn't find the stop!"
+    if !route_stop
+      flash[:error] = "Couldn't find a stop for '#{params[:id]}"
+      redirect_to
     end
     
+    if route_stop.origin_route_stop = route_stop
+      next_idx = route_stop.idx + 1
+      # Not finished, this is saying that if it's the origin
+      # route_stop that we're deleting then we need to change
+      # the origin points to the 'next' one. So idx '1' will
+      # become '0' and then need to update RouteStop so
+      # origin_stop_link_id is that Route_Stop.
+      RouteStop.where("idx = #{next_idx}")
+    end
+    
+    route_stop.destroy
+    # Negate the indexes as they might be like 0,1,3,4
+    RouteStop.where("idx >= #{route_stop.idx}").update_all("idx = idx - 1")
+    # Destroy all related stop links
+    StopLink.destroy_all(route_stop_id: route_stop.id)
+    
+    flash[:success] = "Successfully deleted an occurrence of '#{route_stop.stop.name}' on route '#{route_stop.route.name}'"
+
     redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id]) + '#stops'
   end
   

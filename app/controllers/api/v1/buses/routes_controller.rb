@@ -18,14 +18,12 @@ class Api::V1::Buses::RoutesController < ApplicationController
   def destroy
     route = Route.find_by_id(params[:id])
     
-    respond_to do |f|
-      if route.destroy
-        flash[:success] = "Route #{route.name} destroyed"
-        redirect_to api_v1_buses_timetable_path(params[:start])
-      else
-        flash[:error] = "Couldn't delete #{route.name}"
-        redirect_to api_v1_buses_timetable_route_path(:start_date => params[:start], :id => params[:id])
-      end
+    if route.destroy
+      flash[:success] = "Route #{route.name} destroyed"
+      redirect_to api_v1_buses_timetable_path(params[:timetable_start_date])
+    else
+      flash[:error] = "Couldn't delete #{route.name}"
+      redirect_to api_v1_buses_timetable_route_path(:timetable_start_date => params[:start], :id => params[:id])
     end
   end
   

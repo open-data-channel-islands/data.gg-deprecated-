@@ -15,6 +15,8 @@ class Api::V1::Buses::StopsController < ApplicationController
   
   def destroy
     stop = Stop.find(params[:id])
+    # Get rid of 'em?
+   # RouteStop.where(:stop_id => params[:id]).delete_all
     
     if stop.destroy
       flash[:success] = "Stop '#{stop.name}' has been deleted"
