@@ -16,6 +16,9 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     else
       route_stop.idx = 0
     end
+    
+    # TODO: When you add a route_stop here you need to fill in the missing stop_links like we
+    # do on the destroy method in here
 
     if route_stop.save
       flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}' at index '#{route_stop.idx}'"

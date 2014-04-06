@@ -23,7 +23,7 @@
   </script>
 <% end %>
 
-<h1>Route Details</h1>
+<h1>Route <%= @route.name %> Details</h1>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
@@ -38,69 +38,59 @@
     <% if @route.route_stops.count == 0 %>
       <h3 class="text-center">No stops available! To get started, hit the 'Stops' tab above.</h3>
     <% else %>
+      <h3>Route Times</h3>
       <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
       <table class="table table-striped">
         <thead>
           <tr>
-          <% @ordered_route_stops.each do |stop| %>
-            <th><%= stop.stop.name %></th>
-          <% end %>
-          <th></th>
+            <th>Stops</th>
+            <th colspan="<%= @ordered_route_stops.count + 1%>">Times</th>
+            <th></th>
           </tr>
         </thead>
-  
         <tbody>
-          <% @stop_links.each do |sl| %>
-            <tr>
-              <% sl.each do |dtls| %>
-                <td>
-                  <%= dtls.time_string %>
-                  <%= dtls.skip %>
-                </td>
-              <% end %>
-              <td></td>
-            </tr>
+          <% for i in 0...@ordered_route_stops.length %>
+          <tr>
+            <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
+            <% @stop_links.each do |sl| %>
+              <td>
+                <%= sl[i].time_string %>
+                <%= sl[i].skip %>
+              </td>
+            <% end %>
+            <td style="padding:5px">
+              <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
+              
+              <div style="width:130px">
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
+                      <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
+                      <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
+                      <li><%= sl.label :night %><%= sl.check_box :night %></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+
+                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
+                  </div>
+                </div>
+                <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
+                <%= sl.hidden_field :route_id, :value => @route.id %>
+                <% end %>
+        
+                <%= hidden_field :timetable_start_date, :value => @timetable.start %>
+                <%= hidden_field :route_id, :value => @route.id %>
+              </td>
+          </tr>
           <% end %>
         </tbody>
     
         <tfoot>
           <tr>
-            <% @ordered_route_stops.each do |stop| %>
-              <th><%= stop.stop.name %></th>
-            <% end %>
-            <th></th>
-          </tr>
-          <tr>
-            <% @new_stop_link_set.each.with_index do |stop_link,index| %>
-              <td style="padding:5px">
-                <%= fields_for "stop_links[#{index}]", stop_link do |sl| %>
-                <div style="width:130px">
-                  <div class="input-group">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
-                        <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
-                        <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
-                        <li><%= sl.label :night %><%= sl.check_box :night %></li>
-                      </ul>
-                    </div><!-- /btn-group -->
-
-                    <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
-                    </div>
-                  </div>
-                  <%= sl.hidden_field :route_stop_id, :value => stop_link.route_stop.id %>
-                  <%= sl.hidden_field :route_id, :value => @route.id %>
-                <% end %>
-          
-                <%= hidden_field :timetable_start_date, :value => @timetable.start %>
-                <%= hidden_field :route_id, :value => @route.id %>
-              </td>
-            <% end %>
-      
-            <td>
-              <%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %>
-            </td>
+            <td colspan="<%= @stop_links.count + 1 %>"></td>
+            <td><%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %></td>
           </tr>
         </tfoot>
       </table>

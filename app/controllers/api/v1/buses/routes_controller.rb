@@ -75,10 +75,13 @@ class Api::V1::Buses::RoutesController < ApplicationController
     end
     
     # because the LAST set won't flip over, so need to push it on
-    overall_set << curr_set
-  
-    @stop_links = overall_set
-                          
+    if curr_set.length > 0
+      overall_set << curr_set
+      @stop_links = overall_set
+    else
+      @stop_links = Array.new
+    end
+                        
     if user_signed_in?
       template = 'show_admin'
     else
