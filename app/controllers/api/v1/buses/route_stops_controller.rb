@@ -17,16 +17,44 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       route_stop.idx = 0
     end
     
-    # TODO: When you add a route_stop here you need to fill in the missing stop_links like we
-    # do on the destroy method in here
-
+    did_error = false
+    
     if route_stop.save
-      flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}' at index '#{route_stop.idx}'"
-      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id) + '#stops'
+      # If it's not the only route stop
+      if idx > 0
+        #prior_route_stop = RouteStop.where(route_id: route_stop.route.id, idx: (idx - 1))
+        stop_links = StopLink.where(route_stop: rs).all
+        p "COUNT COUNT COUNT: " + stop_links.count.to_s
+
+        stop_links.each do |sl|
+          p "CREATING"
+          new_sl = StopLink.new
+          new_sl.origin_stop_link = sl.origin_stop_link
+          new_sl.time = sl.time + 1
+          new_sl.route_stop = route_stop
+          new_sl.route = route_stop.route
+          new_sl.depart = true
+          new_sl.arrive = false
+          new_sl.skip = false
+          new_sl.night = false
+          
+          if !new_sl.save!
+            p new_sl.error.full_messages
+            did_error = true
+            flash[:error] = "Uh-oh. Couldn't create the new stop because we couldn't arrange the stop links."
+          end
+        end
+      end 
+      
+      if !did_error
+        flash[:success] = "Successfully added stop '#{route_stop.stop.name}' to route '#{route_stop.route.name}' at index '#{route_stop.idx}'"
+      end
+      
     else
       flash[:error] = "Couldn't add stop on this route: #{route_stop.errors.full_messages}"
-      redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, params[:route_id])
     end
+    
+    redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id) + '#stops'
   end
   
   def create_stop_links
