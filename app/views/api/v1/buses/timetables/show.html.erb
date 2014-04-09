@@ -1,0 +1,91 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li class="active"><%= @timetable.name%> Timetable</li>
+  </ol>
+<% end %>
+
+<% content_for :scripts do %>
+    <script type="text/javascript">
+      $(function () {
+        var url = document.location.toString();
+        if (url.match('#')) {
+          $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+        } 
+
+        // Change hash for page-reload
+        $('.nav-tabs a').on('shown', function (e) {
+          window.location.hash = e.target.hash;
+        })
+      });
+    </script>
+<% end %>
+
+<h1>
+  <%= @timetable.name %>
+  <small>Routes &amp; Stops</small>
+</h1>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#routes" data-toggle="tab">Routes</a></li>
+  <li><a href="#stops" data-toggle="tab">Stops</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="routes">
+    <h3>Routes</h3>
+    
+    <table class="table table-striped">
+      <tbody>
+        
+        <% if @timetable.routes.count == 0 %>
+          <td colspan="4"><h3 class="text-center">There doesn't seem to be anything here yet!</h1></td>
+        <% else %>        
+          <% curr_route = '' %>
+          <% @timetable.routes.order('name').each do |route| %>
+            <% if curr_route != route.name 
+                  curr_route = route.name %>
+                  <tr>
+                    <th><h4>Route <%= route.name %></h4></th>
+                    <th style="vertical-align:middle">Description</th>
+                    <th style="vertical-align:middle">Start</th>
+                    <th style="vertical-align:middle" >End</th>
+                  </tr>
+            <% end  %>
+            <tr>
+              <td><%= link_to route.name, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id) %>
+              <td><%= route.description %></td>
+              <td><%= Date::DAYNAMES[route.start_day] %></td>
+              <td><%= Date::DAYNAMES[route.end_day] %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane" id="stops">
+    <h3>Stops</h3>
+    <table class="table table-striped">
+      <thead>
+        <th>Stop</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </thead>
+      <tbody>
+        <% if @timetable.stops.count == 0 %>
+          <td colspan="3"><h3 class="text-center">There doesn't seem to be anything here yet!</h1></td>
+        <% end %>
+        <% @timetable.stops.each do |stop| %>
+          <tr>
+            <td><%= stop.name %></td>
+            <td><%= stop.latitude %></td>
+            <td><%= stop.longitude %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

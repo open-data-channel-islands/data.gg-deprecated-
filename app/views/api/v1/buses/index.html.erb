@@ -1,0 +1,97 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Buses</li>
+  </ol>
+<% end %>
+
+<h2>Bus Data</h2>
+
+<table class="table table-striped" style="margin-bottom:50px">
+  <thead>
+    <tr>
+      <th>URL Format</th>
+      <th>Description</th>
+      <th>XML</th>
+      <th>JSON</th>
+      <th>HTML</th>
+      <th>Object</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>http://www.data.gg/api/v1/buses/api/current_version.{format}</td>
+      <td>Outputs XML containing the current timetable date and version</td>
+      <td><a href="http://www.data.gg/api/v1/buses/api/current_version.xml">XML</a></td>
+      <td><a href="http://www.data.gg/api/v1/buses/api/current_version.json">JSON</a></td>
+      <td>N/A</td>
+      <td>TBC</td>
+    </tr>
+    <tr>
+      <td>http://www.data.gg/api/v1/buses/api/list.{format}</td>
+      <td>Outputs a list of timetables without timetable data</td>
+      <td><a href="http://www.data.gg/api/v1/buses/api/list.xml">XML</a></td>
+      <td><a href="http://www.data.gg/api/v1/buses/api/list.json">JSON</a></td>
+      <td>N/A</td>
+      <td>TBC</td>
+    </tr>
+    <tr>
+      <td>http://www.data.gg/api/v1/buses/timetables/{yyyy-mm-dd}.{format}</td>
+      <td>Outputs <em>all</em> timetable data for the specified timetable</td>
+      <td colspan="4" align="center"><em>(see below for direct links)</em></td>
+    </tr>                                                                       
+  </tbody>
+</table>
+
+<h3>Timetables</h3>
+<table class="table table-striped" style="width:100%">
+  <% if @timetables.count > 0 %>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>XML</th>
+      <th>JSON</th>
+      <th>HTML</th>
+      <th>Object</th>
+      <% if user_signed_in? %><th></th><% end %>
+    </tr>
+  </thead>
+  <% end %>
+  <tbody>
+    <% if @timetables.count > 0 %>
+      <% @timetables.each do |timetable| %>
+        <tr>
+          <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
+          <td><%= timetable.start %></td>
+          <td><%= timetable.end %></td>
+          <td><a href="#">XML</a></td>
+          <td><a href="#">JSON</a></td>
+          <td>N/A</td>
+          <td>TBC</td>
+          <% if user_signed_in? %><td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
+                          method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
+        </tr>
+      <% end %>
+    <% else %>
+      <tr>
+        <td colspan="4"><h3 class="text-center">Uh-oh, no timetables available yet!</h3></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <% if user_signed_in? %>
+  <tfoot>
+    <tr>
+      <%= form_for [:api, :v1, :buses, @timetable], { :class => 'form-inline'} do |f| %>
+        <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
+        <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
+        <td><%= f.text_field :end, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
+        <td colspan="5"><%= f.submit 'Create', { :class => "btn btn-primary"} %></td>
+      <% end %>
+    </tr>
+  </tfoot>
+  <% end %>
+</table>
+
+

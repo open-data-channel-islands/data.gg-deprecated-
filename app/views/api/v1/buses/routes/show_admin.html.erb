@@ -1,0 +1,149 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+    <li class="active">Route <%= @route.name%></li>
+  </ol>
+<% end %>
+
+<% content_for :scripts do %>
+  <script type="text/javascript">
+    $(function() {
+      var url = document.location.toString();
+      if (url.match('#')) {
+          $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+      } 
+
+      // Change hash for page-reload
+      $('.nav-tabs a').on('shown', function (e) {
+          window.location.hash = e.target.hash;
+      })
+    });
+  </script>
+<% end %>
+
+<h1>Route <%= @route.name %> Details</h1>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#times" data-toggle="tab">Times</a></li>
+  <li><a href="#stops" data-toggle="tab">Stops</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="times">
+    
+    <% if @route.route_stops.count == 0 %>
+      <h3 class="text-center">No stops available! To get started, hit the 'Stops' tab above.</h3>
+    <% else %>
+      <h3>Route Times</h3>
+      <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Stops</th>
+            <th colspan="<%= @ordered_route_stops.count + 1%>">Times</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for i in 0...@ordered_route_stops.length %>
+          <tr>
+            <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
+            <% @stop_links.each do |sl| %>
+              <td>
+                <%= sl[i].time_string %>
+                <%= sl[i].skip %>
+              </td>
+            <% end %>
+            <td style="padding:5px">
+              <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
+              
+              <div style="width:130px">
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
+                      <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
+                      <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
+                      <li><%= sl.label :night %><%= sl.check_box :night %></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+
+                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
+                  </div>
+                </div>
+                <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
+                <%= sl.hidden_field :route_id, :value => @route.id %>
+                <% end %>
+        
+                <%= hidden_field :timetable_start_date, :value => @timetable.start %>
+                <%= hidden_field :route_id, :value => @route.id %>
+              </td>
+          </tr>
+          <% end %>
+        </tbody>
+    
+        <tfoot>
+          <tr>
+            <td colspan="<%= @stop_links.count + 1 %>"></td>
+            <td><%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %></td>
+          </tr>
+        </tfoot>
+      </table>
+      <% end %>
+    <% end %>
+    
+  </div>
+  <div class="tab-pane" id="stops">
+    <h3>Stops</h3>
+    
+    <%= form_for [:api, :v1, :buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Stop</th>
+            <th>Display?</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @route.route_stops.each do |route_stop| %>
+          <tr>
+            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
+            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
+            <td><%= route_stop.stop.name %></td>
+            <td><%= route_stop.display %></td>
+            <td><%= route_stop.stop.latitude %></td>
+            <td><%= route_stop.stop.longitude %></td>
+            <td><%= link_to 'Destroy', api_v1_buses_timetable_route_route_stop_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => route_stop.id),
+                      method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+          <% end %>
+          <% if @route.route_stops.count == 0 %>
+            <tr>
+              <td colspan="7"><h3 class="text-center">No stops have been added yet!</h3></td>
+            </tr>
+          <% end %>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td><%= f.select(:stop_id, options_for_select(@timetable.stops.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
+            <td><%= f.check_box :display %></td>
+            <td colspan="3">
+              <%= f.hidden_field :route_id %>
+              <%= f.submit "Add Stop", class: "btn btn-primary btn-sm" %></td>
+          </tr>
+        </tfoot>
+      </table>
+      <% end %>
+  </div>
+</div>

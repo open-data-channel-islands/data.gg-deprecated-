@@ -1,0 +1,79 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+    <li class="active">Route <%= @route.name%></li>
+  </ol>
+<% end %>
+
+<h1>Route Details</h1>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#times" data-toggle="tab">Times</a></li>
+  <li><a href="#stops" data-toggle="tab">Stops</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="times">
+    
+    <% if @route.route_stops.count == 0 %>
+      <h3 class="text-center">No stops available! To get started, hit the 'Stops' tab above.</h3>
+    <% else %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+          <% @ordered_route_stops.each do |stop| %>
+            <th><%= stop.stop.name %></th>
+          <% end %>
+          <% if user_signed_in? %><th></th><% end %>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <% @stop_links.each do |sl| %>
+            <tr>
+              <% sl.each do |dtls| %>
+                <td>
+                  <%= dtls.time_string %>
+                  <%= dtls.skip %>
+                </td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+  <div class="tab-pane" id="stops">
+    <h3>Stops</h3>
+    
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Stop</th>
+            <th>Display?</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @route.route_stops.each do |route_stop| %>
+          <tr>
+            <td><%= route_stop.stop.name %></td>
+            <td><%= route_stop.display %></td>
+            <td><%= route_stop.stop.latitude %></td>
+            <td><%= route_stop.stop.longitude %></td>
+          </tr>
+          <% end %>
+          <% if @route.route_stops.count == 0 %>
+            <tr>
+              <td colspan="4"><h3 class="text-center">No stops have been added yet!</h3></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+  </div>
+</div>

@@ -1,5 +1,7 @@
 DataGg::Application.routes.draw do
 
+  devise_for :users
+  
   get "flights/index"
   get "flight/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +9,9 @@ DataGg::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  
+  get 'about' => 'home#about', as: :about
+  get 'help' => 'home#help', as: :help
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -52,10 +57,9 @@ DataGg::Application.routes.draw do
     # Can download XML/Object/JSON/HTML
   #  get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
 
-  #  resources :timetables, param: :date do
+  #  resources :timetables, param: :start_date do
   #    resources :routes do
   #      resources :route_stops
-  #      resources :stops
   #    end
   #  end
   #end
@@ -64,6 +68,30 @@ DataGg::Application.routes.draw do
   namespace :api do
     namespace :v1 do
 
+      
+      get 'buses/' => 'buses#index'
+      get 'buses/list' => 'buses#list'
+      
+      namespace :buses do
+        
+        resources :timetables, param: :start_date do
+          collection do
+            get 'data'
+          end
+          
+          resources :stops
+          
+          resources :routes do
+            resources :route_stops do
+              collection do
+                post 'create_stop_links'
+              end
+            end
+          end
+        end
+        
+      end
+      
       resources :flights do
         collection do
           get 'arrivals'

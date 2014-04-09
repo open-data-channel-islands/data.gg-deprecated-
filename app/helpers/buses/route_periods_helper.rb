@@ -1,0 +1,4 @@
+module Buses::RoutePeriodsHelper
+
+  
+end

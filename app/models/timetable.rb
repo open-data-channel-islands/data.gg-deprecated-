@@ -1,5 +1,6 @@
 class Timetable < ActiveRecord::Base
   has_many :routes
-  validates :effective_date, presence: true
+  has_many :stops
+  validates :start, presence: true
   validates :name, presence: true
 end

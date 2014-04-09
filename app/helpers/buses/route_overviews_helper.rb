@@ -1,0 +1,2 @@
+module Buses::RouteOverviewsHelper
+end
