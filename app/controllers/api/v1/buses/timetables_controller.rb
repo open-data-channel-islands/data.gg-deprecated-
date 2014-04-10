@@ -2,7 +2,7 @@ require 'date'
 
 class Api::V1::Buses::TimetablesController < ApplicationController
   
-  before_action :authenticate_user!, :except => [:show]
+  before_action :authenticate_user!, :except => [:show, :current_version]
   
   def show
     if user_signed_in?
@@ -34,8 +34,38 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     end
   end
   
+  def list
+    @timetables = Timetable.all.order_by("start")
+    
+    respond_to do |format|
+      format.xml { render xml: @timetables }
+      format.json { render json: @timetables }
+    end
+  end
+  
+  def current_version
+    now = Time.now
+    @current_timetable = Timetable.where("? > start and end > ?", now, now)
+    
+    respond_to do |format|
+      format.xml { render :xml => @current_timetable.to_xml(:only => [:start, :current_version]) }
+      format.json { render :json => @current_timetable.to_json(:only => [:start, :current_version]) }
+    end
+  end
+  
   def publish
     
+    #TODO: Increment current_version, if successful, write to file
+    
+    timetable = Timetable.where(:start => params[:start_date]).first
+    timetable.current_version = timetable.current_version + 1
+    if timetable.update!
+      flash[:success] = "Timetable '#{params[:start_date]}' published! Current version number is '#{@timetable.current_version}'"
+    else
+      flash[:error] = "Couldn't update timetable"
+    end
+    
+    redirect_to api_v1_buses_timetable_path(:start_date => params[:start_date])
   end
   
   def create

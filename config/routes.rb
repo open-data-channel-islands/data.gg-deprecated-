@@ -79,6 +79,11 @@ DataGg::Application.routes.draw do
             get 'data'
           end
           
+          # Used 
+          collection do
+            get 'current_version'
+          end
+          
           resources :stops
           
           resources :routes do

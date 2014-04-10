@@ -26,8 +26,10 @@
   <%= @timetable.name %>
   <small>Routes &amp; Stops</small>
   <small><%= link_to 'Destroy', api_v1_buses_timetable_path(@timetable),
-                      method: :delete, data: { confirm: 'Are you sure?' } %></small >
+                      method: :delete, data: { confirm: 'Are you sure?' } %></small>
 </h1>
+
+<%= link_to 'Publish', api_v1_buses_timetable_publish_path(:start_date => @timetable.start), method: :get, data: { confirm: 'Are you sure?' }%>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
