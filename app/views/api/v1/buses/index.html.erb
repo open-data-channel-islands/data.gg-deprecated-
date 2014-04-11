@@ -30,8 +30,8 @@
     <tr>
       <td>http://www.data.gg/api/v1/buses/api/list.{format}</td>
       <td>Outputs a list of timetables without timetable data</td>
-      <td><a href="http://www.data.gg/api/v1/buses/api/list.xml">XML</a></td>
-      <td><a href="http://www.data.gg/api/v1/buses/api/list.json">JSON</a></td>
+      <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :xml) %></td>
+      <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :json) %></td>
       <td>N/A</td>
       <td>TBC</td>
     </tr>

@@ -70,19 +70,16 @@ DataGg::Application.routes.draw do
 
       
       get 'buses/' => 'buses#index'
-      get 'buses/list' => 'buses#list'
-      
+
       namespace :buses do
         
         resources :timetables, param: :start_date do
           collection do
-            get 'data'
+            get 'current_version'
+            get 'list'
           end
           
-          # Used 
-          collection do
-            get 'current_version'
-          end
+          get ':version/data' => 'timetables#data'
           
           resources :stops
           

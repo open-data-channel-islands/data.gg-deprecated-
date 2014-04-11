@@ -2,7 +2,7 @@ require 'date'
 
 class Api::V1::Buses::TimetablesController < ApplicationController
   
-  before_action :authenticate_user!, :except => [:show, :current_version]
+  before_action :authenticate_user!, :except => [:show, :current_version, :list]
   
   def show
     if user_signed_in?
@@ -34,12 +34,16 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     end
   end
   
+  def data
+    # This should a) check if the file exists, b) if it doesn't then generate and c) download it
+  end
+  
   def list
-    @timetables = Timetable.all.order_by("start")
+    @timetables = Timetable.order("start").all
     
     respond_to do |format|
-      format.xml { render xml: @timetables }
-      format.json { render json: @timetables }
+      format.xml { render :xml => @timetables.to_xml(:only => [:id, :name, :start, :end, :current_version]) }
+      format.json { render :json => @timetables.to_json(:only => [:id, :name, :start, :end, :current_version])  }
     end
   end
   
