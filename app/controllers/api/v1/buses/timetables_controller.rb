@@ -1,4 +1,5 @@
 require 'date'
+require './lib/data_path_resolver'
 
 class Api::V1::Buses::TimetablesController < ApplicationController
   
@@ -11,7 +12,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       template = 'show'
     end
     
-    @timetable = Timetable.where(:start => params[:start_date]).first
+    @timetable = Timetable.where(start: params[:start_date]).first
     @route = Route.new
     @stop = Stop.new
 
@@ -57,13 +58,36 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     end
   end
   
+  
+  # Increments the current_version and then writes the data to file
   def publish
-    
-    #TODO: Increment current_version, if successful, write to file
-    
-    timetable = Timetable.where(:start => params[:start_date]).first
+
+    timetable = Timetable.where(start: params[:timetable_start_date]).take!
     timetable.current_version = timetable.current_version + 1
-    if timetable.update!
+    if timetable.save
+      
+      path = DataPathResolver.buses_path
+      
+      xml_file = timetable.filename('xml')
+      File.new(xml_file, 'w')
+      xml_file.write(@timetable.to_xml(:include => {
+        :routes => { :include => {
+          :route_stops => {},
+          :stop_links => {}
+        }},
+        :stops => {}
+      }))
+      
+      json_file = timetable.filename('json')
+      File.new(json_file, 'w')
+      json_file.write(@timetable.to_xml(:include => {
+        :routes => { :include => {
+          :route_stops => {},
+          :stop_links => {}
+        }},
+        :stops => {}
+      }))
+      
       flash[:success] = "Timetable '#{params[:start_date]}' published! Current version number is '#{@timetable.current_version}'"
     else
       flash[:error] = "Couldn't update timetable"

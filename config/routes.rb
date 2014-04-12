@@ -80,6 +80,7 @@ DataGg::Application.routes.draw do
           end
           
           get ':version/data' => 'timetables#data'
+          get 'publish' => 'timetables#publish'
           
           resources :stops
           
