@@ -29,7 +29,7 @@
                       method: :delete, data: { confirm: 'Are you sure?' } %></small>
 </h1>
 
-<%= link_to 'Publish', api_v1_buses_timetable_publish_path(:timetable_start_date => @timetable.start), method: :get, data: { confirm: 'Are you sure?' }%>
+<p class="text-center lead">Current version: <strong><%= @timetable.current_version %></strong> <%= button_to 'Publish', api_v1_buses_timetable_publish_path(:timetable_start_date => @timetable.start), method: :get, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-sm"%></p>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">

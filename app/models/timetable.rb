@@ -1,3 +1,5 @@
+require './lib/data_path_resolver'
+
 class Timetable < ActiveRecord::Base
   has_many :routes
   has_many :stops
@@ -6,10 +8,11 @@ class Timetable < ActiveRecord::Base
   
   
   def filename(type)
-    if !type.start_with('.')?
+    if !type.match("^/\./")
       type = '.' + type
     end
     
-    start + '_' + current_version + type
+    name = start.strftime('%Y-%m-%d') + '_' + current_version.to_s + type
+    return File.join(DataPathResolver.buses_path, name)
   end
 end

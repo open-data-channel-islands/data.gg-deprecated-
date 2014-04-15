@@ -36,6 +36,8 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   end
   
   def data
+    
+    
     # This should a) check if the file exists, b) if it doesn't then generate and c) download it
   end
   
@@ -62,38 +64,48 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   # Increments the current_version and then writes the data to file
   def publish
 
-    timetable = Timetable.where(start: params[:timetable_start_date]).take!
+    timetable = Timetable.where(:start => params[:timetable_start_date]).take!
     timetable.current_version = timetable.current_version + 1
     if timetable.save
       
       path = DataPathResolver.buses_path
       
-      xml_file = timetable.filename('xml')
-      File.new(xml_file, 'w')
-      xml_file.write(@timetable.to_xml(:include => {
+      # Write out JSON file
+      json_filename = timetable.filename('json')
+      json_file = File.new(json_filename, 'w')
+      json_file.write(timetable.to_json(:include => {
         :routes => { :include => {
           :route_stops => {},
           :stop_links => {}
         }},
         :stops => {}
       }))
+      json_file.flush
       
-      json_file = timetable.filename('json')
-      File.new(json_file, 'w')
-      json_file.write(@timetable.to_xml(:include => {
+      # Write out XML file
+      xml_filename = timetable.filename('xml')
+      xml_file = File.new(xml_filename, 'w')
+      xml_file.write(timetable.to_xml(:include => {
         :routes => { :include => {
           :route_stops => {},
           :stop_links => {}
         }},
         :stops => {}
       }))
+      xml_file.flush
       
-      flash[:success] = "Timetable '#{params[:start_date]}' published! Current version number is '#{@timetable.current_version}'"
+      
+      
+      json_name = Pathname.new(json_filename).basename
+      xml_name = Pathname.new(xml_filename).basename
+      system("cd #{path} && tar -czf #{json_name}.tar.gz #{json_name} && tar -czf #{xml_name}.tar.gz #{xml_name}")
+      
+      flash[:success] = "Timetable '#{params[:timetable_start_date]}' published into '#{path}. Current version number is '#{timetable.current_version}'"
     else
       flash[:error] = "Couldn't update timetable"
     end
     
-    redirect_to api_v1_buses_timetable_path(:start_date => params[:start_date])
+    redirect_to api_v1_buses_timetable_path(:start_date => params[:timetable_start_date])
   end
   
   def create

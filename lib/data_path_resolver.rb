@@ -1,5 +1,3 @@
-
-
 class DataPathResolver
   
   def self.root

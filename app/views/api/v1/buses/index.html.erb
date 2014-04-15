@@ -31,7 +31,7 @@
       <td>http://www.data.gg/api/v1/buses/api/list.{format}</td>
       <td>Outputs a list of timetables without timetable data</td>
       <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :xml) %></td>
-      <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :json) %></td>
+      <td><%= link_to 'JSON', list_api_v1_buses_timetables_path(:format => :json) %></td>
       <td>N/A</td>
       <td>TBC</td>
     </tr>
@@ -63,15 +63,15 @@
     <% if @timetables.count > 0 %>
       <% @timetables.each do |timetable| %>
         <tr>
-          <td><%= link_to timetable.name, api_v1_buses_timetable_path(start_date: timetable.start) %></td>
+          <td><%= link_to timetable.name, api_v1_buses_timetable_path(:start_date => timetable.start) %></td>
           <td><%= timetable.start %></td>
           <td><%= timetable.end %></td>
           <td><a href="#">XML</a></td>
           <td><a href="#">JSON</a></td>
           <td>N/A</td>
           <td>TBC</td>
-          <% if user_signed_in? %><td><%= link_to 'Destroy', api_v1_buses_timetable_path(start_date: timetable.start),
-                          method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
+          <% if user_signed_in? %><td><%= link_to 'Destroy', api_v1_buses_timetable_path(:start_date => timetable.start),
+                          :method => :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
         </tr>
       <% end %>
     <% else %>
@@ -93,5 +93,3 @@
   </tfoot>
   <% end %>
 </table>
-
-
