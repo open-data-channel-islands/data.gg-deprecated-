@@ -20,7 +20,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>http://www.data.gg/api/v1/buses/api/current_version.{format}</td>
+      <td>http://www.data.gg/api/v1/buses/timetables/current_version.{format}</td>
       <td>Outputs XML containing the current timetable date and version</td>
       <td><%= link_to 'XML', current_version_api_v1_buses_timetables_path(:format => :xml) %></td>
       <td><%= link_to 'JSON', current_version_api_v1_buses_timetables_path(:format => :json) %></td>
@@ -28,7 +28,7 @@
       <td>TBC</td>
     </tr>
     <tr>
-      <td>http://www.data.gg/api/v1/buses/api/list.{format}</td>
+      <td>http://www.data.gg/api/v1/buses/timetables/list.{format}</td>
       <td>Outputs a list of timetables without timetable data</td>
       <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :xml) %></td>
       <td><%= link_to 'JSON', list_api_v1_buses_timetables_path(:format => :json) %></td>

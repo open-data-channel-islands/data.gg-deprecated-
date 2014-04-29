@@ -24,12 +24,12 @@ class Api::V1::Buses::TimetablesController < ApplicationController
         }},
         :stops => {}
       })}
-      format.xml { render :xml => @timetable.to_xml(:include => {
-        :routes => { :include => {
+      format.xml { render :xml => @timetable.to_xml(:skip_types => true, :except => :created_at, :include => {
+        :routes => { :except => :created_at, :include => {
           :route_stops => {},
           :stop_links => {}
         }},
-        :stops => {}
+        :stops => { :except => [:created_at] }
       })}
       format.html { render template }
     end
@@ -37,7 +37,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   
   def data
     
-    
+    Timetable.filename(params[:timetable_start_date], params[:version], '.json')
     # This should a) check if the file exists, b) if it doesn't then generate and c) download it
   end
   
@@ -73,24 +73,34 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       # Write out JSON file
       json_filename = timetable.filename('json')
       json_file = File.new(json_filename, 'w')
-      json_file.write(timetable.to_json(:include => {
-        :routes => { :include => {
-          :route_stops => {},
-          :stop_links => {}
-        }},
-        :stops => {}
+      json_file.write(timetable.to_json(
+        :except => [:created_at, :updated_at],
+        :include => {
+        :routes => {
+          :except => [:created_at, :updated_at],
+          :include => {
+            :route_stops => { :except => [:created_at, :updated_at] },
+            :stop_links => { :except => [:created_at, :updated_at] }
+          }
+        },
+        :stops => { :except => [:created_at, :updated_at] }
       }))
       json_file.flush
       
       # Write out XML file
       xml_filename = timetable.filename('xml')
       xml_file = File.new(xml_filename, 'w')
-      xml_file.write(timetable.to_xml(:include => {
-        :routes => { :include => {
-          :route_stops => {},
-          :stop_links => {}
-        }},
-        :stops => {}
+      xml_file.write(timetable.to_xml(
+        :except => [:created_at, :updated_at],
+        :include => {
+        :routes => {
+          :except => [:created_at, :updated_at],
+          :include => {
+            :route_stops => { :except => [:created_at, :updated_at] },
+            :stop_links => { :except => [:created_at, :updated_at] }
+          }
+        },
+        :stops => { :except => [:created_at, :updated_at] }
       }))
       xml_file.flush
       
@@ -107,6 +117,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     
     redirect_to api_v1_buses_timetable_path(:start_date => params[:timetable_start_date])
   end
+  
   
   def create
     timetable = Timetable.new(timetable_params)

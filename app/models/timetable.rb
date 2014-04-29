@@ -6,6 +6,18 @@ class Timetable < ActiveRecord::Base
   validates :start, presence: true
   validates :name, presence: true
   
+  def self.filename(date, version, type, zipped)
+    if !type.match("^/\./")
+      type = '.' + type
+    end
+    
+    filename = date + '_' + version + type
+    if zipped
+      filename = filename + '.tar.gz'
+    end
+    
+    return File.join(DataPathResolver.buses_path, name)
+  end
   
   def filename(type)
     if !type.match("^/\./")
