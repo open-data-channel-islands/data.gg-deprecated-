@@ -50,8 +50,6 @@ class Api::V1::FlightsController < ApplicationController
   def table_to_flight_array(url, column_names)
     table = url_to_table(url)
 
-    today_status = ""
-    tomorrow_status = ""
     flights = []
     active_date = DateTime.new
 
@@ -59,15 +57,7 @@ class Api::V1::FlightsController < ApplicationController
       next if row_index == 1
 
       if row.count == 1 then
-        if today_status.empty? then
-          today_status = row[0]
-          today_status_date = today_status.split(':').last.strip
-          active_date = Date.parse(today_status_date)
-        else
-          tomorrow_status = row[0]
-          tomorrow_status_date = tomorrow_status.split(':').last.strip
-          active_date = Date.parse(tomorrow_status_date)
-        end
+        active_date = Date.parse(row[0].split(':').last.strip)
       else
         flight_info_hash = { }
 
