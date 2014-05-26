@@ -63,11 +63,11 @@ class Api::V1::FlightsController < ApplicationController
 
         flight_info_hash[column_names[0]] = row[0]
 
-        time = Time.parse(row[1])
+        time = Time.parse(active_date.strftime() + " " + row[1])
 
         flight_info_hash[column_names[1]] = DateTime.new(
           active_date.year, active_date.month, active_date.day,
-          time.hour, time.min)
+          time.hour, time.min, time.sec, time.strftime('%z'))
 
         flight_info_hash[column_names[2]] = row[2]
         flight_info_hash[column_names[3]] = row[3]
