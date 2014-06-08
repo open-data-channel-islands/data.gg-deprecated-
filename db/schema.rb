@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410192034) do
+ActiveRecord::Schema.define(version: 20140606180143) do
 
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
@@ -38,8 +38,6 @@ ActiveRecord::Schema.define(version: 20140410192034) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "skip"
-    t.boolean  "arrive"
-    t.boolean  "depart"
     t.integer  "route_stop_id"
     t.integer  "origin_stop_link_id"
     t.boolean  "night"

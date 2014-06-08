@@ -37,7 +37,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   
   def data
     
-    Timetable.filename(params[:timetable_start_date], params[:version], '.json')
+    Timetable.filename(params[:timetable_start_date], params[:version], '.json', true)
     # This should a) check if the file exists, b) if it doesn't then generate and c) download it
   end
   

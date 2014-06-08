@@ -33,8 +33,6 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
           new_sl.time = sl.time + 1
           new_sl.route_stop = route_stop
           new_sl.route = route_stop.route
-          new_sl.depart = true
-          new_sl.arrive = false
           new_sl.skip = false
           new_sl.night = false
           

@@ -40,8 +40,6 @@ class Api::V1::Buses::RoutesController < ApplicationController
       sl = StopLink.new
       sl.route_stop = route_stop
       sl.skip = route_stop = false
-      sl.arrive = false
-      sl.depart = true
       if @new_stop_link_set.count > 0
         sl.origin_stop_link = @new_stop_link_set[0]
       else

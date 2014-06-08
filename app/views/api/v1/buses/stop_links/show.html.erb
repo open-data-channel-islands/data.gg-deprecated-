@@ -1,0 +1,39 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+    <li class="active">Route <%= @route.name%></li>
+  </ol>
+<% end %>
+
+<h3>Stop Links for <%= @route.name %></h3>
+
+<%= form_tag(api_v1_buses_timetable_route_stop_link_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => @stop_links[0].origin_stop_link_id.to_s), method: :put) do -%>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Stop</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @stop_links.each_with_index do |stop_link, i| %>
+        <%= fields_for "stop_links[#{i}]", stop_link do |sl| %>
+          <tr>
+            <td><%= stop_link.route_stop.stop.name %></td>
+            <td><%= sl.text_field :time %>
+              <%= sl.hidden_field :id, :value => stop_link.id %>
+            </td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <%= hidden_field_tag :timetable_start_date, @timetable.start %>
+  <%= hidden_field_tag :route_id, @route.id %>
+  <%= hidden_field_tag :id, @stop_links[0].origin_stop_link_id %>
+  
+  <%= submit_tag %>
+<% end %>

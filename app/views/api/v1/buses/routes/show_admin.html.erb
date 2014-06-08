@@ -44,8 +44,7 @@
         <thead>
           <tr>
             <th>Stops</th>
-            <th colspan="<%= @ordered_route_stops.count + 1%>">Times</th>
-            <th></th>
+            <th colspan="<%= @ordered_route_stops.count %>">Times</th>
           </tr>
         </thead>
         <tbody>
@@ -55,26 +54,16 @@
             <% @stop_links.each do |sl| %>
               <td>
                 <%= sl[i].time_string %>
-                <%= sl[i].skip %>
+                <%= sl[i].skip ? "»" : "" %>
               </td>
             <% end %>
             <td style="padding:5px">
               <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
               
-              <div style="width:130px">
                 <div class="input-group">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Opts <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><%= sl.label :skip %><%= sl.check_box :skip %></li>
-                      <li><%= sl.label :arrive %><%= sl.check_box :arrive %></li>
-                      <li><%= sl.label :depart %><%= sl.check_box :depart %></li>
-                      <li><%= sl.label :night %><%= sl.check_box :night %></li>
-                    </ul>
-                  </div><!-- /btn-group -->
-
+                  <%= sl.label :skip %><%= sl.check_box :skip %>
+                  <%= sl.label :night %><%= sl.check_box :night %>
                   <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
-                  </div>
                 </div>
                 <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
                 <%= sl.hidden_field :route_id, :value => @route.id %>
@@ -82,9 +71,18 @@
         
                 <%= hidden_field :timetable_start_date, :value => @timetable.start %>
                 <%= hidden_field :route_id, :value => @route.id %>
-              </td>
+            </td>
           </tr>
           <% end %>
+          <tr>
+            <td></td>
+              <% @stop_links.each do |sl| %>
+                <td>
+                  <%= link_to 'Edit', api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id) %>
+                </td>
+              <% end %>
+              <td></td>
+          </tr>
         </tbody>
     
         <tfoot>
