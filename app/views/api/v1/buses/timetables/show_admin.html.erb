@@ -22,15 +22,12 @@
     </script>
 <% end %>
 
-<h1>
-  <%= @timetable.name %>
-  <small>Routes &amp; Stops</small>
-  <small><%= link_to 'Destroy', api_v1_buses_timetable_path(@timetable),
-                      method: :delete, data: { confirm: 'Are you sure?' } %></small>
-</h1>
+<h1 class="page-header"><%= @timetable.name %>&nbsp;<small>Routes &amp; Stops</small></h1>
 
-<p class="text-center lead">Current version: <strong><%= @timetable.current_version %></strong>
-  <%= button_to 'Publish', api_v1_buses_timetable_publish_path(:timetable_start_date => @timetable.start), method: :get, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-sm"%></p>
+<%= button_to 'Delete', api_v1_buses_timetable_path(:timetable_start_date => @timetable.start), method: :delete, data: { confirm: 'Are you sure you wish to delete this timetable?' }, :class => "btn btn-danger btn-sm pull-right", :style => "margin-left:10px" %>
+<%= button_to 'Publish', api_v1_buses_timetable_publish_path(:timetable_start_date => @timetable.start), method: :post, data: { confirm: 'Are you sure you want to publish the timetable? All clients will see this change.' }, :class => "btn btn-primary btn-sm pull-right"%>
+<p class="pull-right"  style="margin:7px;"><%= link_to 'Edit', edit_api_v1_buses_timetable_path(:start_date => @timetable.start)%></p>
+<p class="pull-right" style="margin:7px;">Current version: <strong><%= @timetable.current_version %></strong></p>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
@@ -58,7 +55,7 @@
                     <th style="vertical-align:middle">Description</th>
                     <th style="vertical-align:middle">Start</th>
                     <th style="vertical-align:middle" >End</th>
-                    <th></th>
+                    <th colspan="2"></th>
                   </tr>
             <% end  %>
             <tr>
@@ -66,6 +63,7 @@
               <td><%= route.description %></td>
               <td><%= Date::DAYNAMES[route.start_day] %></td>
               <td><%= Date::DAYNAMES[route.end_day] %></td>
+              <td><%= link_to 'Edit', edit_api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id) %></td>
               <td><%= link_to 'Destroy', api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => route.id),
                       method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
@@ -79,7 +77,7 @@
             <td><%= f.text_field :description, { class: 'form-control input-sm', :placeholder => "Description" } %></td>
             <td><%= f.select(:start_day, [['Monday', 1], ['Tuesday', 2], ['Wednesday', 3], ['Thursday', 4], ['Friday', 5], ['Saturday', 6], ['Sunday', 0]], {}, class: 'input-sm form-control' ) %></td>
             <td><%= f.select(:end_day, [['Monday', 1], ['Tuesday', 2], ['Wednesday', 3], ['Thursday', 4], ['Friday', 5], ['Saturday', 6], ['Sunday', 0]], { :selected => 5 }, class: 'input-sm form-control' ) %></td>
-            <td><%= f.submit 'Add Route', { :class =>  "btn btn-sm btn-primary"} %></td>
+            <td colspan="2"><%= f.submit 'Add Route', { :class =>  "btn btn-sm btn-primary"} %></td>
         </tr>
       </tfoot>
     </table>
@@ -93,7 +91,7 @@
         <th>Stop</th>
         <th>Latitude</th>
         <th>Longitude</th>
-        <th></th>
+        <th colspan="2"></th>
       </thead>
       <tbody>
         <% if @timetable.stops.count == 0 %>
@@ -104,6 +102,7 @@
             <td><%= stop.name %></td>
             <td><%= stop.latitude %></td>
             <td><%= stop.longitude %></td>
+            <td><%= link_to 'Edit', edit_api_v1_buses_timetable_stop_path(:timetable_start_date => @timetable.start, :id => stop.id) %></td>
             <td><%= link_to 'Destroy', api_v1_buses_timetable_stop_path(:timetable_start_date => @timetable.start, :id => stop.id),
               method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
@@ -115,7 +114,8 @@
               <%= f.text_field :name, { :class => "form-control input-sm", :placeholder => "Stop name"} %></td>
           <td><%= f.text_field :latitude, { :class => "form-control input-sm", :placeholder => "Latitude"} %></td>
           <td><%= f.text_field :longitude, { :class => "form-control input-sm", :placeholder => "Longitude"} %></td>
-          <td><%= f.submit 'Add Stop', { :class => "btn btn-sm btn-primary" } %>
+          <td><%= f.submit 'Add Stop', { :class => "btn btn-sm btn-primary" } %></td>
+          <td></td>
         </tr>
       </tfoot>
     </table>

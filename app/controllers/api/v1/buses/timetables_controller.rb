@@ -35,6 +35,28 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     end
   end
   
+  def edit
+    @timetable = Timetable.where(start: params[:start_date]).first
+    
+    if @timetable == nil
+      flash[:error] = "No timetable found with the start date '#{params[:start_date]}'"
+      redirect_to api_v1_buses_timetables_path
+    end
+  end
+  
+  def update
+    @timetable = Timetable.find params[:timetable][:id]
+    
+    if @timetable.update_attributes timetable_params
+      flash[:success] = "Successfully updated timetable"
+    else
+      flash[:error] = "Error updating stop: " + @timetable.errors.full_messages[0]
+    end
+    
+    
+    redirect_to api_v1_buses_timetable_path(@timetable.start)
+  end
+  
   def data
     
     Timetable.filename(params[:timetable_start_date], params[:version], '.json', true)

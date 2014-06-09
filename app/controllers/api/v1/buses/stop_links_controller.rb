@@ -57,17 +57,25 @@ class Api::V1::Buses::StopLinksController < ApplicationController
   def update
     @stop_links = params[:stop_links]
     
+    success = true
+    
     @stop_links.each do |sl|
       stoplink = StopLink.find(sl[1]["id"])
       
       if stoplink == nil
+        success = false
         flash[:error] = "Couldn't find  stop link"
       else
         stoplink.time = sl[1]["time"].gsub(':', '')
         if !stoplink.save
+          success = false
           flash[:error] = "Couldn't save a stop link - #{stoplink.errors.full_messages}"
         end
       end
+    end
+    
+    if success
+      flash[:success] = "Successfully saved links!"
     end
     
     redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])

@@ -23,7 +23,10 @@
   </script>
 <% end %>
 
-<h1>Route <%= @route.name %> Details</h1>
+<h1 class="page-header">Route <%= @route.name %> Details</h1>
+
+<%= button_to 'Delete', api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => @route.id), method: :delete, data: { confirm: 'Are you sure you wish to delete this route?' }, :class => "btn btn-danger btn-sm pull-right", :style => "margin-left:10px" %>
+<p class="pull-right"  style="margin:7px;"><%= link_to 'Edit', edit_api_v1_buses_timetable_route_path(:timetable_start_daye => @timetable.start, :id => @route.id)%></p>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
@@ -52,18 +55,26 @@
           <tr>
             <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
             <% @stop_links.each do |sl| %>
-              <td>
-                <%= sl[i].time_string %>
-                <%= sl[i].skip ? "»" : "" %>
-              </td>
+              <td><%= sl[i].time_string %><%= sl[i].skip ? "»" : "" %><%= sl[i].night ? "☽" : "" %></td>
             <% end %>
             <td style="padding:5px">
               <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
               
-                <div class="input-group">
-                  <%= sl.label :skip %><%= sl.check_box :skip %>
-                  <%= sl.label :night %><%= sl.check_box :night %>
-                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "5" } %>
+                <div class="form-inline">
+                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "6", :placeholder => "HH:mm" } %>
+                  
+                  <div class="checkbox">
+                    <label class="checkbox-inline">
+                      <%= sl.check_box :skip %> Skip
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox-inline">
+                       <%= sl.check_box :night %> Night
+                    </label>
+                  </div>
+                 
+                  
                 </div>
                 <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
                 <%= sl.hidden_field :route_id, :value => @route.id %>
@@ -74,20 +85,16 @@
             </td>
           </tr>
           <% end %>
-          <tr>
-            <td></td>
-              <% @stop_links.each do |sl| %>
-                <td>
-                  <%= link_to 'Edit', api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id) %>
-                </td>
-              <% end %>
-              <td></td>
-          </tr>
         </tbody>
     
         <tfoot>
           <tr>
-            <td colspan="<%= @stop_links.count + 1 %>"></td>
+            <td></td>
+            <% @stop_links.each do |sl| %>
+              <td>
+                <%= link_to 'Edit', api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id) %>
+              </td>
+            <% end %>
             <td><%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %></td>
           </tr>
         </tfoot>
@@ -118,7 +125,7 @@
             <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
             <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
             <td><%= route_stop.stop.name %></td>
-            <td><%= route_stop.display %></td>
+            <td><%= route_stop.display ? "Yes" : "No" %></td>
             <td><%= route_stop.stop.latitude %></td>
             <td><%= route_stop.stop.longitude %></td>
             <td><%= link_to 'Destroy', api_v1_buses_timetable_route_route_stop_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => route_stop.id),

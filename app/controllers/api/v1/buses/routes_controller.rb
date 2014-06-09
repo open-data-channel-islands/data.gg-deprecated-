@@ -15,6 +15,30 @@ class Api::V1::Buses::RoutesController < ApplicationController
     end
   end
   
+  def edit
+    @timetable = Timetable.where(:start => params[:timetable_start_date]).first
+    
+    @route = Route.where(:id => params[:id]).first
+    
+    if @route == nil
+      redirect_to api_v1_buses_path
+    end
+  end
+  
+  def update
+    @route = Route.find(params[:id])
+    if @route != nil
+      if @route.update_attributes route_params
+        flash[:success] = "Successfully updated route"
+      else
+        flash[:error] = "An error occurred updating route"
+      end
+    else
+      flash[:error] = "Couldn't find a route with id '#{params[:id]}'"
+    end
+    
+    redirect_to api_v1_buses_timetable_route_path(@route.timetable.start, @route.id)
+  end
   def destroy
     route = Route.find_by_id(params[:id])
     

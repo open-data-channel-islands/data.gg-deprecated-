@@ -39,6 +39,7 @@
                 <td>
                   <%= dtls.time_string %>
                   <%= dtls.skip %>
+                  <%= dtls.night ? "☽" : "" %>
                 </td>
               <% end %>
             </tr>
@@ -63,7 +64,7 @@
           <% @route.route_stops.each do |route_stop| %>
           <tr>
             <td><%= route_stop.stop.name %></td>
-            <td><%= route_stop.display %></td>
+            <td><%= route_stop.display ? "Yes" : "No" %></td>
             <td><%= route_stop.stop.latitude %></td>
             <td><%= route_stop.stop.longitude %></td>
           </tr>

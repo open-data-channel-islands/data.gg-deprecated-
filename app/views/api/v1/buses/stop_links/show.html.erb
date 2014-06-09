@@ -3,37 +3,43 @@
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", api_v1_buses_path %></li>
     <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
-    <li class="active">Route <%= @route.name%></li>
+    <li><%= link_to 'Route ' + @route.name, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => @route.id)%></li>
+    <li class="active">Stop Links</li>
   </ol>
 <% end %>
 
-<h3>Stop Links for <%= @route.name %></h3>
+<h1 class="page-header">Stop Links for 'Route <%= @route.name %>'</h1>
 
-<%= form_tag(api_v1_buses_timetable_route_stop_link_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => @stop_links[0].origin_stop_link_id.to_s), method: :put) do -%>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Stop</th>
-        <th>Time</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @stop_links.each_with_index do |stop_link, i| %>
-        <%= fields_for "stop_links[#{i}]", stop_link do |sl| %>
-          <tr>
-            <td><%= stop_link.route_stop.stop.name %></td>
-            <td><%= sl.text_field :time %>
-              <%= sl.hidden_field :id, :value => stop_link.id %>
-            </td>
-          </tr>
-        <% end %>
-      <% end %>
-    </tbody>
-  </table>
+
+<%= form_tag(api_v1_buses_timetable_route_stop_link_path(:timetable_start_date => @timetable.start, :route_id => @route.id, :id => @stop_links[0].origin_stop_link_id.to_s), method: :put, :class => "form-horizontal") do -%>
+  <% @stop_links.each_with_index do |stop_link, i| %>
+    <%= fields_for "stop_links[#{i}]", stop_link do |sl| %>
+    
+      <div class="form-group">
+        <%= sl.label stop_link.route_stop.stop.name, :class => "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= sl.text_field :time, :class => "form-control" %>
+          <%= sl.hidden_field :id, :value => stop_link.id %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   
   <%= hidden_field_tag :timetable_start_date, @timetable.start %>
   <%= hidden_field_tag :route_id, @route.id %>
   <%= hidden_field_tag :id, @stop_links[0].origin_stop_link_id %>
   
-  <%= submit_tag %>
+  <div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+      <%= link_to 'Cancel', api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => @route.id) %>
+      <%= submit_tag "Submit", :class => "btn btn-primary" %>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+  
 <% end %>

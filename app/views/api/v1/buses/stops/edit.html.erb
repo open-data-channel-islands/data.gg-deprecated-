@@ -1,0 +1,45 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+    <li class="active"><%= @stop.name %></li>
+  </ol>
+<% end %>
+
+<h2 class="page-header">Edit stop '<%= @stop.name %>'</h2>
+
+<%= form_for @stop, url: { action: "update" }, html: { class: "form-horizontal" } do |f| %>
+
+
+  <%= f.hidden_field :id %>
+  
+  <div class="form-group">
+    <%= f.label :name, :class => "col-sm-1 control-label" %>
+    <div class="col-sm-11">
+      <%= f.text_field :name, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :latitude, :class => "col-sm-1 control-label" %>
+    <div class="col-sm-11">
+      <%= f.text_field :latitude, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :longitude, :class => "col-sm-1 control-label" %>
+    <div class="col-sm-11">
+      <%= f.text_field :longitude, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-offset-1 col-sm-11">
+      <%= link_to "Cancel", api_v1_buses_timetable_path(:start_date => @timetable.start) %>
+      <%= f.submit "Submit", { :class => "btn btn-default btn-primary" } %>
+    </div>
+  </div>
+  
+<% end %>
