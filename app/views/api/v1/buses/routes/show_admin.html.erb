@@ -92,7 +92,12 @@
             <td></td>
             <% @stop_links.each do |sl| %>
               <td>
-                <%= link_to 'Edit', api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id) %>
+                <%= link_to api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Edit" do %>
+                  <span class="glyphicon glyphicon-edit"></span>
+                <% end %>
+                <%= link_to api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
+                  <span class="glyphicon glyphicon-trash"></span>
+                <% end %>
               </td>
             <% end %>
             <td><%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %></td>
