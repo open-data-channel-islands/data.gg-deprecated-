@@ -63,7 +63,7 @@ class Api::V1::FlightsController < ApplicationController
 
         flight_info_hash[column_names[0]] = row[0]
 
-        time = Time.parse(active_date.strftime('%F') + " " + row[1])
+        time = Time.parse(active_date.strftime('%F') + " " + row[1]).in_time_zone
 
         flight_info_hash[column_names[1]] = DateTime.new(
           active_date.year, active_date.month, active_date.day,
