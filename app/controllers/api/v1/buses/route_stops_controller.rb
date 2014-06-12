@@ -9,7 +9,6 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     rs = RouteStop.where(route_id: route_stop.route.id).order(:idx).last()
     
     idx = 0
-    print idx
     if rs
       idx = rs.idx
       route_stop.idx = idx + 1
@@ -24,10 +23,8 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       if idx > 0
         #prior_route_stop = RouteStop.where(route_id: route_stop.route.id, idx: (idx - 1))
         stop_links = StopLink.where(route_stop: rs).all
-        p "COUNT COUNT COUNT: " + stop_links.count.to_s
 
         stop_links.each do |sl|
-          p "CREATING"
           new_sl = StopLink.new
           new_sl.origin_stop_link = sl.origin_stop_link
           new_sl.time = sl.time + 1
@@ -37,7 +34,6 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
           new_sl.night = false
           
           if !new_sl.save!
-            p new_sl.error.full_messages
             did_error = true
             flash[:error] = "Uh-oh. Couldn't create the new stop because we couldn't arrange the stop links."
           end
