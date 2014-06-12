@@ -15,7 +15,7 @@
     <td><%= s['Time'] %></td>
     <td><%= s['Type'] %></td>
     <td><%= s.has_key?('Source') ? s['Source'] : s['Destination']  %></td>
-    <td><%= s['Status'] %></td>
+    <td><%= s.has_key?('Arrived') ? s['Arrived'] : s['Departed'] %></td>
     </tr>
     <% end %>
   </tbody>

@@ -32,31 +32,40 @@ class Api::V1::SailingsController < ApplicationController
     end
   end
 
-    private
+  private
 
   def table_to_sailings_array()
     arrivals, departures = get_arrivals_departures_tables()
-    return parse_table(arrivals, "Arrival", "Source") +
-    parse_table(departures, "Departure", "Destination")
+    return parse_table(arrivals, "Arrival", "Source", "Arrived") +
+    parse_table(departures, "Departure", "Destination", "Departed")
   end
 
-  def parse_table(table, type, place_name)
-        column_names = {
+  def parse_table(table, type, place_name, status_name)
+    column_names = {
       0 => 'Vessel',
       1 => 'Time',
       2 => 'Type',
       3 => place_name,
-      4 => 'Status'
+      4 => status_name
     }
 
-    active_date = DateTime.now.beginning_of_day
+    # If the table doesn't contain a one cell row then the
+    # table is for tomorrow.
+    active_date = DateTime.now.beginning_of_day + 1.days
+    table.each_with_index do |row, row_index|
+      next if row_index == 0
+      if row.count == 1 then
+        active_date = DateTime.now.beginning_of_day
+      end
+    end
+
     sailings = []
 
     table.each_with_index do |row, row_index|
       next if row_index == 0
 
       if row.count == 1 then
-        active_date = active_date + 1.days #Date.parse(row[0].split(':').last.strip)
+        active_date = active_date + 1.days
       else
         sailings_info_hash = { }
         sailings_info_hash[column_names[0]] = row[0]
