@@ -2,16 +2,16 @@ DataGg::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-  
+
   devise_for :users
-  
+
   get "flights/index"
   get "flight/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  
-  
+
+
   get 'about' => 'home#about', as: :about
   get 'help' => 'home#help', as: :help
 
@@ -70,40 +70,39 @@ DataGg::Application.routes.draw do
   namespace :api do
     namespace :v1 do
 
-      
+
       get 'buses/' => 'buses#index'
 
       namespace :buses do
-        
+
         resources :timetables, param: :start_date do
           collection do
             get 'current_version'
             get 'list'
           end
-          
+
           get ':version/data' => 'timetables#data'
           post 'publish' => 'timetables#publish'
-          
-          
-          
+
+
+
           resources :stops
-          
+
           resources :routes do
             # Make believe. Always work from the origin point.
             resources :stop_links
-            
+
             resources :route_stops do
               collection do
                 post 'create_stop_links'
               end
             end
-            
-            
+
+
           end
         end
-        
       end
-      
+
       resources :flights do
         collection do
           get 'arrivals'
@@ -138,6 +137,7 @@ DataGg::Application.routes.draw do
       resources :sailings do
         collection do
           get 'herm_trident'
+          get 'harbour'
         end
       end
 

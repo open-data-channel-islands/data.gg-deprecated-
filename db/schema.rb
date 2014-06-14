@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140606180143) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "route_stops", force: true do |t|
     t.integer "route_id"
     t.integer "stop_id"
@@ -20,8 +23,8 @@ ActiveRecord::Schema.define(version: 20140606180143) do
     t.boolean "display",  default: false
   end
 
-  add_index "route_stops", ["route_id"], name: "index_route_stops_on_route_id"
-  add_index "route_stops", ["stop_id"], name: "index_route_stops_on_stop_id"
+  add_index "route_stops", ["route_id"], name: "index_route_stops_on_route_id", using: :btree
+  add_index "route_stops", ["stop_id"], name: "index_route_stops_on_stop_id", using: :btree
 
   create_table "routes", force: true do |t|
     t.string   "name"
@@ -54,10 +57,10 @@ ActiveRecord::Schema.define(version: 20140606180143) do
   end
 
   create_table "timetables", force: true do |t|
-    t.date     "start"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "start"
     t.date     "end"
     t.integer  "current_version", default: 0
   end
@@ -77,7 +80,7 @@ ActiveRecord::Schema.define(version: 20140606180143) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

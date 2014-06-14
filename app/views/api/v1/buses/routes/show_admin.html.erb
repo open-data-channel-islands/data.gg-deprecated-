@@ -147,7 +147,7 @@
           <tr>
             <td colspan="2"></td>
             <td><%= f.select(:stop_id, options_for_select(@timetable.stops.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
-            <td><%= f.check_box :display %></td>
+            <td><%= f.check_box :display, :checked => 'checked' %></td>
             <td colspan="3">
               <%= f.hidden_field :route_id %>
               <%= f.submit "Add Stop", class: "btn btn-primary btn-sm" %></td>

@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Vessel</th>
+      <th>Time</th>
+      <th>Type</th>
+      <th>Place</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sailings.each do |s| %>
+    <tr>
+    <td><%= s['Vessel'] %></td>
+    <td><%= s['Time'] %></td>
+    <td><%= s['Type'] %></td>
+    <td><%= s.has_key?('Source') ? s['Source'] : s['Destination']  %></td>
+    <td><%= s.has_key?('Arrived') ? s['Arrived'] : s['Departed'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
