@@ -70,13 +70,14 @@ class Api::V1::SailingsController < ApplicationController
         sailings_info_hash = { }
         sailings_info_hash[column_names[0]] = row[0]
 
-        time_str = active_date.strftime(('%F') + " " + row[2])
-        time = Time.parse(time_str).in_time_zone('London')
+        time_parse_str = '%Y-%m-%d %H:%M'
+        time_str = active_date.strftime('%Y-%m-%d') + ' ' + row[2]
+        zone = 'London'
+        time = ActiveSupport::TimeZone[zone].parse(time_str)
 
 
-        sailings_info_hash[column_names[1]] = DateTime.new(
-          active_date.year, active_date.month, active_date.day,
-          time.hour, time.min, time.sec, time.strftime('%z')).in_time_zone('London')
+
+        sailings_info_hash[column_names[1]] = time
 
         sailings_info_hash[column_names[2]] = type
 
