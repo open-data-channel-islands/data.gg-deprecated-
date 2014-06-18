@@ -76,7 +76,7 @@ class Api::V1::SailingsController < ApplicationController
 
         sailings_info_hash[column_names[1]] = DateTime.new(
           active_date.year, active_date.month, active_date.day,
-          time.hour, time.min, time.sec, time.strftime('%z'))
+          time.hour, time.min, time.sec, time.strftime('%z')).in_time_zone('London')
 
         sailings_info_hash[column_names[2]] = type
 
