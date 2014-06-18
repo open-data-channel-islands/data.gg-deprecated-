@@ -71,7 +71,7 @@ class Api::V1::SailingsController < ApplicationController
         sailings_info_hash[column_names[0]] = row[0]
 
         time_str = active_date.strftime(('%F') + " " + row[2])
-        time = Time.parse(time_str).in_time_zone(Time.zone)
+        time = Time.parse(time_str).in_time_zone('London')
 
 
         sailings_info_hash[column_names[1]] = DateTime.new(
