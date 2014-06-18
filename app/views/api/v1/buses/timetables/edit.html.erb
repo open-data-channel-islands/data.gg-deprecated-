@@ -2,7 +2,7 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", api_v1_buses_path %></li>
-    <li class="active"><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
+    <li class="active"><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start_date) %></li>
   </ol>
 <% end %>
 
@@ -20,21 +20,22 @@
   </div>
   
   <div class="form-group">
-    <%= f.label :start, :class => "col-sm-1 control-label" %>
+    <%= f.label :start_date, :class => "col-sm-1 control-label" %>
     <div class="col-sm-11">
-      <%= f.text_field :start, :class => "form-control" %>
+      <%= f.text_field :start_date, :class => "form-control" %>
     </div>
   </div>
   
   <div class="form-group">
-    <%= f.label :end, :class => "col-sm-1 control-label" %>
+    <%= f.label :end_date, :class => "col-sm-1 control-label" %>
     <div class="col-sm-11">
-      <%= f.text_field :end, :class => "form-control" %>
+      <%= f.text_field :end_date, :class => "form-control" %>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
+      <%= link_to 'Cancel', api_v1_buses_timetable_path(:start_date => @timetable.start_date) %>  &nbsp;
       <%= f.submit "Submit", { :class => "btn btn-default" } %>
     </div>
   </div>

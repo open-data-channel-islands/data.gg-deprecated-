@@ -8,15 +8,15 @@ class Api::V1::Buses::RoutesController < ApplicationController
     
     if route.save
       flash[:success] = "Route '#{route.name}' created"
-      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start)
+      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start_date)
     else
       flash[:error] = "Route '#{route.name}' could not be created"
-      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start)
+      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start_date)
     end
   end
   
   def edit
-    @timetable = Timetable.where(:start => params[:timetable_start_date]).first
+    @timetable = Timetable.where(:start_date => params[:timetable_start_date]).first
     
     @route = Route.where(:id => params[:id]).first
     
@@ -37,7 +37,7 @@ class Api::V1::Buses::RoutesController < ApplicationController
       flash[:error] = "Couldn't find a route with id '#{params[:id]}'"
     end
     
-    redirect_to api_v1_buses_timetable_route_path(@route.timetable.start, @route.id)
+    redirect_to api_v1_buses_timetable_route_path(@route.timetable.start_date, @route.id)
   end
   def destroy
     route = Route.find_by_id(params[:id])

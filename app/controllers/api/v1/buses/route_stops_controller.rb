@@ -48,7 +48,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       flash[:error] = "Couldn't add stop on this route: #{route_stop.errors.full_messages}"
     end
     
-    redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start, route_stop.route.id) + '#stops'
+    redirect_to api_v1_buses_timetable_route_path(route_stop.route.timetable.start_date, route_stop.route.id) + '#stops'
   end
   
   def create_stop_links

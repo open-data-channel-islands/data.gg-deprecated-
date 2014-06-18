@@ -63,18 +63,24 @@
     <% if @timetables.count > 0 %>
       <% @timetables.each do |timetable| %>
         <tr>
-          <td style="vertical-align:middle"><%= link_to timetable.name, api_v1_buses_timetable_path(:start_date => timetable.start) %></td>
-          <td style="vertical-align:middle"><%= timetable.start %></td>
-          <td style="vertical-align:middle"><%= timetable.end %></td>
-          <td style="vertical-align:middle"><a href="#">XML</a></td>
-          <td style="vertical-align:middle"><a href="#">JSON</a></td>
+          <td style="vertical-align:middle"><%= link_to timetable.name, api_v1_buses_timetable_path(:start_date => timetable.start_date) %></td>
+          <td style="vertical-align:middle"><%= timetable.start_date %></td>
+          <td style="vertical-align:middle"><%= timetable.end_date %></td>
+          <td style="vertical-align:middle">
+              <%= link_to "XML", api_v1_buses_timetable_data_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :xml) %>
+              <%= link_to "[compressed]", api_v1_buses_timetable_data_compressed_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :xml) %>
+          </td>
+          <td style="vertical-align:middle">
+            <%= link_to "JSON", api_v1_buses_timetable_data_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :json) %>
+            <%= link_to "[compressed]", api_v1_buses_timetable_data_compressed_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :json) %>
+          </td>
           <td style="vertical-align:middle">N/A</td>
           <td style="vertical-align:middle">TBA</td>
           <% if user_signed_in? %>
             <td style="vertical-align:middle">
-              <%= link_to 'Edit', edit_api_v1_buses_timetable_path(:start_date => timetable.start), :style => "padding:7px" %>
+              <%= link_to 'Edit', edit_api_v1_buses_timetable_path(:start_date => timetable.start_date), :style => "padding:7px" %>
             </td>
-            <td><%= button_to 'Destroy', api_v1_buses_timetable_path(:start_date => timetable.start),
+            <td><%= button_to 'Destroy', api_v1_buses_timetable_path(:start_date => timetable.start_date),
                           :method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-sm btn-danger" %>
             </td>
           <% end %>
@@ -91,8 +97,8 @@
     <tr>
       <%= form_for [:api, :v1, :buses, @timetable], { :class => 'form-inline'} do |f| %>
         <td><%= f.text_field :name, {:tabindex => 1, :autofocus => true, :class => "form-control", :placeholder => "Name"} %></td>
-        <td><%= f.text_field :start, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
-        <td><%= f.text_field :end, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
+        <td><%= f.text_field :start_date, {:tabindex => 2, :class => "form-control", :placeholder => "Start date" } %></td>
+        <td><%= f.text_field :end_date, {:tabindex => 3, :class => "form-control", :placeholder => "End date" } %></td>
         <td colspan="6"><%= f.submit 'Create', { :class => "btn btn-primary"} %></td>
       <% end %>
     </tr>

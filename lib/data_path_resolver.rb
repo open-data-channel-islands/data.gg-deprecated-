@@ -1,30 +1,40 @@
 class DataPathResolver
   
-  def self.root
-    root = './public/data/'
-    if !File.directory?(root)
-      FileUtils::mkdir_p root
-    end
+  def self.root(writable_path)
+    if writable_path
+      root = './public/data/'
     
-    return root
+      if !File.directory?(root)
+        FileUtils::mkdir_p root
+      end
+      
+      return root
+    else
+      return '/public/data/'
+    end
   end
   
-  def self.transport_path
-    transport = File.join(self.root, "transport")
-    if !File.directory?(transport)
-      FileUtils::mkdir_p transport
+  def self.transport_path(writable_path)
+    transport = File.join(self.root(writable_path), "transport")
+    
+    if !public
+      if !File.directory?(writable_path)
+        FileUtils::mkdir_p transport
+      end
     end
     
     return transport
   end
   
-  def self.buses_path
-    buses = File.join(self.transport_path, "buses")
-    if !File.directory?(buses)
-      FileUtils::mkdir_p buses
+  def self.buses_path(writable_path)
+    buses = File.join(self.transport_path(writable_path), "buses")
+    
+    if writable_path
+      if !File.directory?(buses)
+        FileUtils::mkdir_p buses
+      end
     end
     
     return buses
   end
-  
 end

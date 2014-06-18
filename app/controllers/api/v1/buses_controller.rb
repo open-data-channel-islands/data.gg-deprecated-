@@ -1,7 +1,7 @@
 class Api::V1::BusesController < ApplicationController
   
   def index
-    @timetables = Timetable.order(:start).all
+    @timetables = Timetable.order(:start_date).all
     @latest = @timetables[0]
     @timetable = Timetable.new
     
@@ -11,7 +11,7 @@ class Api::V1::BusesController < ApplicationController
   end
   
   def current_version
-    Timetable.where(:start => params[:start]).select("current_version")
+    Timetable.where(:start_date => params[:start]).select("current_version")
     respond_to do |format|
       format.xml
       format.json
@@ -24,7 +24,7 @@ class Api::V1::BusesController < ApplicationController
   end
   
   def list
-    @timetables = Timetable.order(:start).select("name, start")
+    @timetables = Timetable.order(:start_date).select("name, start")
     
     respond_to do |format|
       format.xml

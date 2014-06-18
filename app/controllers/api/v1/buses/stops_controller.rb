@@ -10,7 +10,7 @@ class Api::V1::Buses::StopsController < ApplicationController
       flash[:success] = "Stop '#{stop.name}' successfully created"
     end
     
-    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start) + '#stops'
+    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start_date) + '#stops'
   end
   
   def edit
@@ -48,7 +48,7 @@ class Api::V1::Buses::StopsController < ApplicationController
       flash[:error] = "Stop '#{stop.name}' couldn't be deleted"
     end
     
-    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start) + '#stops'
+    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start_date) + '#stops'
   end
   
   private

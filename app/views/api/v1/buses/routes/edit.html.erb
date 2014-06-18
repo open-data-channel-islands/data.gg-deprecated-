@@ -2,8 +2,8 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", api_v1_buses_path %></li>
-    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start) %></li>
-    <li><%= link_to 'Route ' + @route.name, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => @route.id) %></li>
+    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start_date) %></li>
+    <li><%= link_to 'Route ' + @route.name, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start_date, :id => @route.id) %></li>
     <li class="active">Edit</a>
   </ol>
 <% end %>
@@ -44,7 +44,7 @@
   
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
-      <%= link_to 'Cancel', api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start, :id => @route.id) %>
+      <%= link_to 'Cancel', api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start_date, :id => @route.id) %>
       <%= f.submit "Submit", { :class => "btn btn-primary" } %>
     </div>
   </div>

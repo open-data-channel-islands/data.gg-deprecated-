@@ -81,7 +81,8 @@ DataGg::Application.routes.draw do
             get 'list'
           end
 
-          get ':version/data' => 'timetables#data'
+          get ':version/data' => 'timetables#data', as: :data
+          get ':version/data/compressed' => 'timetables#data_compressed', as: :data_compressed
           post 'publish' => 'timetables#publish'
 
 

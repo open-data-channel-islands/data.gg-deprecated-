@@ -12,7 +12,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       template = 'show'
     end
     
-    @timetable = Timetable.where(start: params[:start_date]).first
+    @timetable = Timetable.where(start_date: params[:start_date]).first
     @route = Route.new
     @stop = Stop.new
 
@@ -36,7 +36,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   end
   
   def edit
-    @timetable = Timetable.where(start: params[:start_date]).first
+    @timetable = Timetable.where(start_date: params[:start_date]).first
     
     if @timetable == nil
       flash[:error] = "No timetable found with the start date '#{params[:start_date]}'"
@@ -53,32 +53,44 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       flash[:error] = "Error updating stop: " + @timetable.errors.full_messages[0]
     end
     
-    
-    redirect_to api_v1_buses_timetable_path(@timetable.start)
+    redirect_to api_v1_buses_timetable_path(@timetable.start_date)
   end
   
   def data
-    
-    Timetable.filename(params[:timetable_start_date], params[:version], '.json', true)
+    respond_to do |format|
+      format.xml { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'xml', false),
+                      file_name: Timetable.name + '.xml.tar.gz', type: 'application/zip', :x_sendfile => true) }
+      format.json { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'json', false),
+                      file_name: Timetable.name + '.json.tar.gz', type: 'application/zip', :x_sendfile => true) }
+    end
     # This should a) check if the file exists, b) if it doesn't then generate and c) download it
   end
   
+  def data_compressed
+    respond_to do |format|
+      format.xml { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'xml', true),
+                      file_name: Timetable.name + '.xml.tar.gz', type: 'application/zip', :x_sendfile => true) }
+      format.json { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'json', true),
+                      file_name: Timetable.name + '.json.tar.gz', type: 'application/zip', :x_sendfile => true) }
+    end
+  end
+  
   def list
-    @timetables = Timetable.order("start").all
+    @timetables = Timetable.order(:start_date).all
     
     respond_to do |format|
-      format.xml { render :xml => @timetables.to_xml(:only => [:id, :name, :start, :end, :current_version]) }
-      format.json { render :json => @timetables.to_json(:only => [:id, :name, :start, :end, :current_version])  }
+      format.xml { render :xml => @timetables.to_xml(:only => [:id, :name, :start_date, :end, :current_version]) }
+      format.json { render :json => @timetables.to_json(:only => [:id, :name, :start_date, :end, :current_version])  }
     end
   end
   
   def current_version
     now = Time.now
-    @current_timetable = Timetable.where("? > start and end > ?", now, now)
+    @current_timetable = Timetable.where("(? > start_date) AND (end_date IS NULL OR (end_date > ?))", now, now).order(:start_date).first
     
     respond_to do |format|
-      format.xml { render :xml => @current_timetable.to_xml(:only => [:start, :current_version]) }
-      format.json { render :json => @current_timetable.to_json(:only => [:start, :current_version]) }
+      format.xml { render :xml => @current_timetable.to_xml(:only => [:start_date, :current_version]) }
+      format.json { render :json => @current_timetable.to_json(:only => [:start_date, :current_version]) }
     end
   end
   
@@ -86,11 +98,11 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   # Increments the current_version and then writes the data to file
   def publish
 
-    timetable = Timetable.where(:start => params[:timetable_start_date]).take!
+    timetable = Timetable.where(:start_date => params[:timetable_start_date]).take!
     timetable.current_version = timetable.current_version + 1
     if timetable.save
       
-      path = DataPathResolver.buses_path
+      path = DataPathResolver.buses_path(true) # is a writable path
       
       # Write out JSON file
       json_filename = timetable.filename('json')
@@ -148,7 +160,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
     
     if timetable.save
       flash[:success] = "Timetable '#{timetable.name}' successfully saved."
-      redirect_to api_v1_buses_timetable_path(timetable.start)
+      redirect_to api_v1_buses_timetable_path(timetable.start_date)
     else
       flash[:error] = "Error creating table: #{timetable.errors}"
       redirect_to api_v1_buses_path
@@ -176,6 +188,6 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   private
   
   def timetable_params
-    params.require(:timetable).permit(:name, :description, :start, :end)
+    params.require(:timetable).permit(:name, :description, :start_date, :end)
   end
 end
