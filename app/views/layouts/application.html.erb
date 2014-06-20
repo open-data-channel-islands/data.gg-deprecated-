@@ -85,5 +85,15 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <%= javascript_include_tag "bootstrap.min", "data-turbolinks-track" => true %>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+       var hash = window.location.hash;
+
+       if (hash != "")
+           $('.nav-tabs a[href="' + hash + '"]').tab('show');
+       else
+           $('.nav-tabs a:first').tab('show');
+    });
+  </script>
 </body>
 </html>

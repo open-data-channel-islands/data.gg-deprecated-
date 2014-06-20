@@ -79,10 +79,8 @@ class Api::V1::Buses::RoutesController < ApplicationController
     tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
                           .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
-                          .distinct
-                          .order("origin.time ASC, origin.id ASC, rs.idx ASC")
-                          .select("rs.route_id, origin.time, origin.id, rs.idx, stop_links.*")
-                          
+                          .select("DISTINCT ON (stop_links.origin_stop_link_id, origin.time, origin.id, rs.idx) stop_links.origin_stop_link_id, rs.route_id, origin.time, origin.id, rs.idx, stop_links.time, stop_links.skip, stop_links.night")
+                          .order("stop_links.origin_stop_link_id, origin.time ASC, origin.id ASC, rs.idx ASC")
     overall_set = Array.new # Contains ALL the stop links
     curr_set = Array.new # Contains CURRENT set
     curr_origin = nil
