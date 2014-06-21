@@ -138,11 +138,7 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       }))
       xml_file.flush
       
-      
-      
-      json_name = Pathname.new(json_filename).basename
-      xml_name = Pathname.new(xml_filename).basename
-      system("cd #{path} && tar -czf #{json_name}.tar.gz #{json_name} && tar -czf #{xml_name}.tar.gz #{xml_name}")
+      system("tar -czf #{json_filename}.tar.gz #{json_filename} && tar -czf #{xml_filename}.tar.gz #{xml_filename}")
       
       flash[:success] = "Timetable '#{params[:timetable_start_date]}' published into '#{path}. Current version number is '#{timetable.current_version}'"
     else
