@@ -2,7 +2,7 @@ class DataPathResolver
   
   def self.root(writable_path)
     if writable_path
-      root = './public/data/'
+      root = Rails.public_path.join('data')
     
       if !File.directory?(root)
         FileUtils::mkdir_p root
@@ -10,7 +10,7 @@ class DataPathResolver
       
       return root
     else
-      return '/public/data/'
+      return Rails.public_path.join('data')
     end
   end
   

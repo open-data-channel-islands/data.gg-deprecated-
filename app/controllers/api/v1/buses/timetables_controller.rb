@@ -138,9 +138,15 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       }))
       xml_file.flush
       
-      system("tar -czf #{json_filename}.tar.gz #{json_filename} && tar -czf #{xml_filename}.tar.gz #{xml_filename}")
+      # TODO: Use this for paths instead: http://stackoverflow.com/questions/3724487/rails-root-directory-path
+      json_name = Pathname.new(json_filename).basename
+      xml_name = Pathname.new(xml_filename).basename
       
-      flash[:success] = "Timetable '#{params[:timetable_start_date]}' published into '#{path}. Current version number is '#{timetable.current_version}'"
+      if system("cd #{path} && tar -czf #{json_name}.tar.gz #{json_name} && tar -czf #{xml_name}.tar.gz #{xml_name}")
+        flash[:success] = "Timetable '#{params[:timetable_start_date]}' published into '#{path}. Current version number is '#{timetable.current_version}'"
+      else
+        flash[:error] = "Couldn't fully publish timetable '#{params[:timetable_start_date]}' into '#{path}'"
+      end
     else
       flash[:error] = "Couldn't update timetable"
     end
