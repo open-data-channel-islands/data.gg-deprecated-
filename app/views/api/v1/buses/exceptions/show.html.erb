@@ -1,0 +1,11 @@
+
+
+<h2 class="page-heading">Stop Link Exception '<%= @stop_link_exception.name %>'</h2>
+
+<p>Colour: <%= @stop_link_exception.colour %><small>Note: this is the colour used on timetables to show what kind of exception this is.</small></p>
+
+<h3>Associated Stop Links</h3>
+
+Show list of stop links that use this stop link exception here..
+
+<%= link_to 'Back', api_v1_buses_exceptions_path %>

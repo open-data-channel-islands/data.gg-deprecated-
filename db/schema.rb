@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617183506) do
+ActiveRecord::Schema.define(version: 20140622194745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20140617183506) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "timetable_id"
+  end
+
+  create_table "stop_link_exceptions", force: true do |t|
+    t.string   "name"
+    t.string   "colour"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "stop_links", force: true do |t|

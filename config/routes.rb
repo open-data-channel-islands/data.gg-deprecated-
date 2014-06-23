@@ -74,6 +74,8 @@ DataGg::Application.routes.draw do
       get 'buses/' => 'buses#index'
 
       namespace :buses do
+        
+        resources :exceptions
 
         resources :timetables, param: :start_date do
           collection do
