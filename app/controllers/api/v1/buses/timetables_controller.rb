@@ -114,7 +114,12 @@ class Api::V1::Buses::TimetablesController < ApplicationController
           :except => [:created_at, :updated_at],
           :include => {
             :route_stops => { :except => [:created_at, :updated_at] },
-            :stop_links => { :except => [:created_at, :updated_at] }
+            :stop_times => {
+              :except => [:created_at, :updated_at],
+              :include => { 
+                :stop_time_exceptions => { :except => [:created_at, :updated_at] }
+              } 
+            }
           }
         },
         :stops => { :except => [:created_at, :updated_at] }
@@ -131,7 +136,12 @@ class Api::V1::Buses::TimetablesController < ApplicationController
           :except => [:created_at, :updated_at],
           :include => {
             :route_stops => { :except => [:created_at, :updated_at] },
-            :stop_links => { :except => [:created_at, :updated_at] }
+            :stop_times => {
+              :except => [:created_at, :updated_at],
+              :include => { 
+                :stop_time_exceptions => { :except => [:created_at, :updated_at] }
+              } 
+            }
           }
         },
         :stops => { :except => [:created_at, :updated_at] }

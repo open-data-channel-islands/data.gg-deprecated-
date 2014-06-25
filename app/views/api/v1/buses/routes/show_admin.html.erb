@@ -56,7 +56,7 @@
           <tr>
             <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
             <% @stop_links.each do |sl| %>
-              <td><%= link_to sl[i].time_string, api_v1_buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].id, id: sl[i].id, route_id: @route.id) %></td>
+              <td><%= link_to sl[i].time_string, api_v1_buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].origin_stop_link_id, id: sl[i].id, route_id: @route.id) %></td>
             <% end %>
             <td style="padding:5px; white-space:nowrap">
               <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>

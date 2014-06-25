@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140625094946) do
+ActiveRecord::Schema.define(version: 20140625192906) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,16 +36,16 @@ ActiveRecord::Schema.define(version: 20140625094946) do
     t.integer  "timetable_id"
   end
 
-  create_table "stop_link_exceptions_stop_links", id: false, force: true do |t|
-    t.integer "stop_link_id",           null: false
-    t.integer "stop_link_exception_id", null: false
-  end
-
   create_table "stop_time_exceptions", force: true do |t|
     t.string   "name"
     t.string   "colour"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "stop_time_exceptions_stop_times", id: false, force: true do |t|
+    t.integer "stop_time_id",           null: false
+    t.integer "stop_time_exception_id", null: false
   end
 
   create_table "stop_times", force: true do |t|
