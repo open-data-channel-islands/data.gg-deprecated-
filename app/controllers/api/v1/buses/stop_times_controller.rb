@@ -1,0 +1,105 @@
+class Api::V1::Buses::StopTimesController < ApplicationController
+
+  def destroy_stop_link_chain
+    stop_links = StopTime.where('origin_stop_link_id = ?', params[:origin_stop_link_id])
+    if stop_links.count == 0
+      flash[:error] = "No stop links in the specified chain"
+      redirect_to 'index'
+    end
+    
+    if StopTime.where('origin_stop_link_id = ?', params[:origin_stop_link_id]).destroy_all
+      flash[:success] = "Successfully deleted all stop links with origin of '#{param[:origin_stop_link_id]}"
+    else
+      flash[:error] = "Couldn't delete stop links"
+    end
+    redirect_to '/'
+  end
+  
+  def edit
+    # Fake it. In this case 'id' is equal to 'origin_stop_link_id'
+    @stop_times = StopTime.where('origin_stop_link_id = ?', params[:id]).order_by(:time)
+    if @stop_times = nil || @stop_times.count == 0
+      flash[:error] = "No stop links with the origin id of '#{params[:origin_stop_link_id]}' found"
+      redirect_to '/'
+    end
+    
+    respond_to do |format|
+      format.html
+      format.xml
+    end
+  end
+  
+  def show
+    
+    @stop_times = StopTime.where('origin_stop_link_id = ?', params[:id]).order(:time)
+    
+    if @stop_links.count == 0
+      flash[:error] = "Error"
+      redirect_to '/'
+    end
+    
+    @route = @stop_times[0].route_stop.route
+    @timetable = @route.timetable
+    
+    respond_to do |format|
+      format.html
+      format.xml
+    end
+    
+  end
+  
+  def atomic_stop_time
+    @stop_time = StopTime.find(params[:id])
+    @exceptions = StopTimeException.all
+  end
+  
+  def add_exception
+    
+    @stop_time = StopTime.find(params[:id])
+    @exception = StopTimeException.find(params[:stop_link_exception_id])
+    @stop_time.exceptions << @exception
+    
+    respond_to do |format|
+      if @stop_time.save
+        format.html { redirect_to @stop_time.route, notice: 'Exception added' }
+      else
+        
+      end
+    end
+    
+    
+  end
+  
+  def create
+    
+    
+    
+  end
+  
+  def update
+    @stop_times = params[:stop_links]
+    
+    success = true
+    
+    @stop_times.each do |sl|
+      stop_time = StopTime.find(sl[1]["id"])
+      
+      if stop_time == nil
+        success = false
+        flash[:error] = "Couldn't find stop time"
+      else
+        stop_time.time = sl[1]["time"].gsub(':', '')
+        if !stoplink.save
+          success = false
+          flash[:error] = "Couldn't save a stop time - #{stop_time.errors.full_messages}"
+        end
+      end
+    end
+    
+    if success
+      flash[:success] = "Successfully saved links!"
+    end
+    
+    redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
+  end
+end

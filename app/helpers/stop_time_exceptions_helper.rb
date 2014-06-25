@@ -1,0 +1,2 @@
+module StopTimeExceptionsHelper
+end

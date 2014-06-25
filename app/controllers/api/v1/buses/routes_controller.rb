@@ -61,9 +61,8 @@ class Api::V1::Buses::RoutesController < ApplicationController
     
     @new_stop_link_set = []
     @route.route_stops.each do |route_stop|
-      sl = StopLink.new
+      sl = StopTime.new
       sl.route_stop = route_stop
-      sl.skip = route_stop = false
       if @new_stop_link_set.count > 0
         sl.origin_stop_link = @new_stop_link_set[0]
       else
@@ -76,11 +75,11 @@ class Api::V1::Buses::RoutesController < ApplicationController
     
     @ordered_route_stops = @route.route_stops.order(:idx).all
 
-    tmp_stop_links = StopLink.joins("INNER JOIN route_stops rs ON rs.id = stop_links.route_stop_id")
-                          .joins("INNER JOIN stop_links origin ON origin.origin_stop_link_id = stop_links.origin_stop_link_id")
+    tmp_stop_links = StopTime.joins("INNER JOIN route_stops rs ON rs.id = stop_times.route_stop_id")
+                          .joins("INNER JOIN stop_times origin ON origin.origin_stop_link_id = stop_times.origin_stop_link_id")
                           .where("rs.route_id = ?", @route.id)
-                          .select("DISTINCT ON (stop_links.origin_stop_link_id, origin.time, origin.id, rs.idx) stop_links.origin_stop_link_id, rs.route_id, origin.time, origin.id, rs.idx, stop_links.time, stop_links.skip, stop_links.night")
-                          .order("stop_links.origin_stop_link_id, origin.time ASC, origin.id ASC, rs.idx ASC")
+                          .select("DISTINCT ON (stop_times.origin_stop_link_id, origin.time, origin.id, rs.idx) stop_times.origin_stop_link_id, rs.route_id, origin.time, origin.id, rs.idx, stop_times.time")
+                          .order("stop_times.origin_stop_link_id, origin.time ASC, origin.id ASC, rs.idx ASC")
     overall_set = Array.new # Contains ALL the stop links
     curr_set = Array.new # Contains CURRENT set
     curr_origin = nil

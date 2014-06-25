@@ -93,7 +93,10 @@ DataGg::Application.routes.draw do
 
           resources :routes do
             # Make believe. Always work from the origin point.
-            resources :stop_links
+            resources :stop_times do
+              get 'atomic_stop_time/:id' => 'stop_times#atomic_stop_time', as: :atomic_stop_time
+              post 'atomic_stop_time/:id' => 'stop_times#add_exception', as: :add_exception
+            end
 
             resources :route_stops do
               collection do

@@ -1,8 +1,9 @@
-class StopLink < ActiveRecord::Base
+class StopTime < ActiveRecord::Base
   belongs_to :route_stop
   belongs_to :route
-  belongs_to :origin_stop_link, class_name: "StopLink"
-  has_many :stop_links, foreign_key: "origin_stop_link", class_name: "StopLink"
+  belongs_to :origin_stop_link, class_name: "StopTime"
+  has_many :stop_times, foreign_key: "origin_stop_link", class_name: "StopTime"
+  has_and_belongs_to_many :stop_time_exceptions
   validates :time, presence: true
   validates :route_id, presence: true
   

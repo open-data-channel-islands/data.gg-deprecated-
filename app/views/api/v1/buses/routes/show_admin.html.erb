@@ -56,26 +56,13 @@
           <tr>
             <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
             <% @stop_links.each do |sl| %>
-              <td><%= sl[i].time_string %><%= sl[i].skip ? "»" : "" %><%= sl[i].night ? "☽" : "" %></td>
+              <td><%= link_to sl[i].time_string, api_v1_buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].id, id: sl[i].id, route_id: @route.id) %></td>
             <% end %>
             <td style="padding:5px; white-space:nowrap">
               <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
               
                 <div class="form-inline">
                   <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "6", :placeholder => "HH:mm" } %>
-                  
-                  <div class="checkbox">
-                    <label class="checkbox-inline">
-                      <%= sl.check_box :skip, { :tabindex => "-1" } %> Skip
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label class="checkbox-inline">
-                       <%= sl.check_box :night, { :tabindex => "-1" } %> Night
-                    </label>
-                  </div>
-                 
-                  
                 </div>
                 <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
                 <%= sl.hidden_field :route_id, :value => @route.id %>
@@ -93,10 +80,10 @@
             <td></td>
             <% @stop_links.each do |sl| %>
               <td>
-                <%= link_to api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Edit" do %>
+                <%= link_to api_v1_buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Edit" do %>
                   <span class="glyphicon glyphicon-edit"></span>
                 <% end %>
-                <%= link_to api_v1_buses_timetable_route_stop_link_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
+                <%= link_to api_v1_buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
                   <span class="glyphicon glyphicon-trash"></span>
                 <% end %>
               </td>

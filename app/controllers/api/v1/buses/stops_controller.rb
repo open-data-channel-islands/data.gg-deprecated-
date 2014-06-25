@@ -1,59 +1,65 @@
 class Api::V1::Buses::StopsController < ApplicationController
   
-  before_action :authenticate_user!
+  before_action :set_stop, :authenticate_user!
   
+  # POST /stops
+  # POST /stops.json
   def create
-    stop = Stop.new(stop_params)
-    if !stop.save
-      flash[:error] = "Couldn't create stop: " + stop.errors.full_messages[0]
-    else
-      flash[:success] = "Stop '#{stop.name}' successfully created"
-    end
+    @stop = Stop.new(stop_params)
     
-    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start_date) + '#stops'
+    respond_to do |format|
+      if @stop.save
+        format.html { redirect_to api_v1_buses_timetable_path(:start_date => @stop.timetable.start_date) + '#stops', notice: 'Stop was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @stop }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @stop.errors, status: :unprocessable_entity }
+      end
+    end
   end
   
+  # GET /stops/new
+  def new
+    @stop = Stop.new
+  end
+  
+  # GET /stops/1/edit
   def edit
-    
-    @stop = Stop.find(params[:id])
-    @timetable = @stop.timetable
-
-    if @stop == nil
-      # TODO: Do something...
-    end
-    
   end
   
+  # PATCH/PUT /stops/1
+  # PATCH/PUT /stops/1.json
   def update
-    @stop = Stop.find params[:id]
-    
-    if @stop.update_attributes stop_params
-      flash[:success] = "Successfully updated stop"
-    else
-      flash[:error] = "Error updating stop: " + @stop.errors.full_messages[0]
+    respond_to do |format|
+      if @stop.update(stop_link_exception_params)
+        format.html { redirect_to api_v1_buses_timetable_path(params[:timetable_start_date]), notice: 'Stop was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @stop.errors, status: :unprocessable_entity }
+      end
     end
-    
-    
-    redirect_to api_v1_buses_timetable_path(params[:timetable_start_date])
   end
   
+  # DELETE /stops/1
+  # DELETE /stops/1.json
   def destroy
-    stop = Stop.find(params[:id])
-    # Get rid of 'em?
-   # RouteStop.where(:stop_id => params[:id]).delete_all
-    
-    if stop.destroy
-      flash[:success] = "Stop '#{stop.name}' has been deleted"
-    else
-      flash[:error] = "Stop '#{stop.name}' couldn't be deleted"
-    end
-    
-    redirect_to api_v1_buses_timetable_path(:start_date => stop.timetable.start_date) + '#stops'
+   @stop.destroy
+   respond_to do |format|
+     format.html { api_v1_buses_timetable_url(:start_date => @stop.timetable.start_date) + '#stops' }
+     format.json { head :no_content }
+   end
   end
   
   private
   
-  def stop_params
-    params.require(:stop).permit(:timetable_id, :name, :latitude, :longitude)
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_stop
+      @stop = Stop.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def stop_params
+      params.require(:stop).permit(:timetable_id, :name, :latitude, :longitude)
+    end
 end

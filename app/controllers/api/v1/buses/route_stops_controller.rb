@@ -22,16 +22,14 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       # If it's not the only route stop
       if idx > 0
         #prior_route_stop = RouteStop.where(route_id: route_stop.route.id, idx: (idx - 1))
-        stop_links = StopLink.where(route_stop: rs).all
+        stop_times = StopTime.where(route_stop: rs).all
 
-        stop_links.each do |sl|
-          new_sl = StopLink.new
+        stop_times.each do |sl|
+          new_sl = StopTime.new
           new_sl.origin_stop_link = sl.origin_stop_link
           new_sl.time = sl.time + 1
           new_sl.route_stop = route_stop
           new_sl.route = route_stop.route
-          new_sl.skip = false
-          new_sl.night = false
           
           if !new_sl.save!
             did_error = true
@@ -59,7 +57,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     stop_links_array.each do |stop_link|
       # replace a colon if one exists so it can be converted from string to int
       stop_link[1]["time"] = stop_link[1]["time"].sub! ':', ''
-      sl = StopLink.new(stop_link[1])
+      sl = StopTime.new(stop_link[1])
       
       # If it's the first link, then itself is the origin
       if sl_arr.count > 0
@@ -90,7 +88,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
       redirect_to
     end
     
-    stop_links_to_remove = StopLink.where(route_stop: route_stop_pending_destroy)
+    stop_links_to_remove = StopTime.where(route_stop: route_stop_pending_destroy)
     
     # We might not need this, but get it anyway
     new_route_stop_origin = RouteStop.where("idx = #{route_stop_pending_destroy.idx + 1}")
@@ -100,9 +98,9 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
         # If the link we're deleting is the same as its origin
         # then update all of the others to a new origin
         if stop_link_to_remove.origin_stop_link = stop_link_to_remove
-          new_origin_stop_link = StopLink.where("origin_stop_link_id = #{stop_link_to_remove.id} and time != #{stop_link_to_remove.time}").order("time ASC").take
+          new_origin_stop_link = StopTime.where("origin_stop_link_id = #{stop_link_to_remove.id} and time != #{stop_link_to_remove.time}").order("time ASC").take
           if new_origin_stop_link
-            StopLink.where("origin_stop_link_id = #{stop_link_to_remove.id}").update_all("origin_stop_link_id = #{new_origin_stop_link.id}")
+            StopTime.where("origin_stop_link_id = #{stop_link_to_remove.id}").update_all("origin_stop_link_id = #{new_origin_stop_link.id}")
           end
         end
       end
@@ -112,7 +110,7 @@ class Api::V1::Buses::RouteStopsController < ApplicationController
     # Negate the indexes as they might be like 0,1,3,4
     RouteStop.where("route_id = #{route_stop_pending_destroy.route_id} and idx > #{route_stop_pending_destroy.idx}").update_all("idx = idx - 1")
     # Destroy all related stop links
-    StopLink.destroy_all(route_stop_id: route_stop_pending_destroy.id)
+    StopTime.destroy_all(route_stop_id: route_stop_pending_destroy.id)
     
     flash[:success] = "Successfully deleted an occurrence of '#{route_stop_pending_destroy.stop.name}' on route '#{route_stop_pending_destroy.route.name}' at index '#{route_stop_pending_destroy.idx}'"
 
