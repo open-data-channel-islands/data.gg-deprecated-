@@ -33,7 +33,7 @@ class Api::V1::Buses::StopTimesController < ApplicationController
     
     @stop_times = StopTime.where('origin_stop_link_id = ?', params[:id]).order(:time)
     
-    if @stop_links.count == 0
+    if @stop_times.count == 0
       flash[:error] = "Error"
       redirect_to '/'
     end
@@ -50,18 +50,19 @@ class Api::V1::Buses::StopTimesController < ApplicationController
   
   def atomic_stop_time
     @stop_time = StopTime.find(params[:id])
+    @stop_time_exception = StopTimeException.new
     @exceptions = StopTimeException.all
   end
   
   def add_exception
     
-    @stop_time = StopTime.find(params[:id])
-    @exception = StopTimeException.find(params[:stop_link_exception_id])
-    @stop_time.exceptions << @exception
+    @stop_time = StopTime.find(params[:stop_time_id])
+    @exception = StopTimeException.find(params[:stop_time_exception][:id])
+    @stop_time.stop_time_exceptions << @exception
     
     respond_to do |format|
       if @stop_time.save
-        format.html { redirect_to @stop_time.route, notice: 'Exception added' }
+        format.html { redirect_to api_v1_buses_timetable_route_path(@stop_time.route.timetable.start_date, @stop_time.route.id), notice: 'Exception added' }
       else
         
       end

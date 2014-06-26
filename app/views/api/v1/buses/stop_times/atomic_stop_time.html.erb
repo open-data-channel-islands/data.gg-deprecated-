@@ -8,39 +8,43 @@
   </ol>
 <% end %>
 
-<h1 class="page-header">Stop Link</h1>
+<h1 class="page-header">Stop Time</h1>
 
-<%= form_for @stop_time, as: :stop_link_exception, url: api_v1_buses_timetable_route_stop_time_add_exception_path  do |f| %>
-  <% if @stop_time.errors.any? %>
+<p>To edit the time, please edit the entire set from the main timetable screen at the bottom instead</p>
+<h3><%= @stop_time.time_string %></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Exception</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stop_time.stop_time_exceptions.each do |exception| %>
+      <tr>
+        <td></td>
+        <td><%= exception.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= form_for @stop_time_exception, url: api_v1_buses_timetable_route_stop_time_add_exception_path  do |f| %>
+  <% if @stop_time_exception.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@stop_time.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
+      <h2><%= pluralize(@stop_time_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
 
       <ul>
-      <% @stop_time.errors.full_messages.each do |msg| %>
+      <% @stop_time_exception.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
-  
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Exception</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @stop_time.stop_time_exceptions.each do |exception| %>
-        <tr>
-          <td></td>
-          <td><%= exception.name %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-
 <p>Add an exception</p>
+  <%= f.hidden_field :stop_time_id, value: @stop_time.id%>
   <%= f.collection_select :id, @exceptions, :id, :name %>
 
   <div class="actions">
