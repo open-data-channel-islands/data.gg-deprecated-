@@ -75,7 +75,7 @@ DataGg::Application.routes.draw do
 
       namespace :buses do
         
-        resources :exceptions
+        resources :stop_time_exceptions
 
         resources :timetables, param: :start_date do
           collection do

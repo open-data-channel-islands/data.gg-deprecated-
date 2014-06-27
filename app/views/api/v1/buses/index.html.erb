@@ -14,30 +14,24 @@
       <th>Description</th>
       <th>XML</th>
       <th>JSON</th>
-      <th>HTML</th>
-      <th>Object</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>http://www.data.gg/api/v1/buses/timetables/current_version.{format}</td>
+      <td style="white-space:nowrap">http://www.data.gg/api/v1/buses/timetables/current_version.{format}</td>
       <td>Outputs XML containing the current timetable date and version</td>
       <td><%= link_to 'XML', current_version_api_v1_buses_timetables_path(:format => :xml) %></td>
       <td><%= link_to 'JSON', current_version_api_v1_buses_timetables_path(:format => :json) %></td>
-      <td>N/A</td>
-      <td>TBC</td>
     </tr>
     <tr>
-      <td>http://www.data.gg/api/v1/buses/timetables/list.{format}</td>
+      <td style="white-space:nowrap">http://www.data.gg/api/v1/buses/timetables/list.{format}</td>
       <td>Outputs a list of timetables without timetable data</td>
       <td><%= link_to 'XML', list_api_v1_buses_timetables_path(:format => :xml) %></td>
       <td><%= link_to 'JSON', list_api_v1_buses_timetables_path(:format => :json) %></td>
-      <td>N/A</td>
-      <td>TBC</td>
     </tr>
     <tr>
-      <td>http://www.data.gg/api/v1/buses/timetables/{yyyy-mm-dd}.{format}</td>
-      <td>Outputs <em>all</em> timetable data for the specified timetable</td>
+      <td style="white-space:nowrap">http://www.data.gg/data/transport/buses/{yyyy-mm-dd}_{revision}.{format}</td>
+      <td>Outputs <em>all</em> timetable data for the specified timetable. Note, all URLs starting with 'data' are static dumps.</td>
       <td colspan="4" align="center"><em>(see below for direct links)</em></td>
     </tr>                                                                       
   </tbody>
@@ -53,8 +47,6 @@
       <th>End Date</th>
       <th>XML</th>
       <th>JSON</th>
-      <th>HTML</th>
-      <th>Object</th>
       <% if user_signed_in? %><th colspan="2"></th><% end %>
     </tr>
   </thead>
@@ -67,15 +59,13 @@
           <td style="vertical-align:middle"><%= timetable.start_date %></td>
           <td style="vertical-align:middle"><%= timetable.end_date %></td>
           <td style="vertical-align:middle">
-              <%= link_to "XML", api_v1_buses_timetable_data_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :xml) %>
-              <%= link_to "[compressed]", api_v1_buses_timetable_data_compressed_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :xml) %>
+              <%= link_to "XML", timetable.xml_download_url %>
+              <%= link_to "[compressed]", timetable.xml_download_url_compressed %>
           </td>
           <td style="vertical-align:middle">
-            <%= link_to "JSON", api_v1_buses_timetable_data_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :json) %>
-            <%= link_to "[compressed]", api_v1_buses_timetable_data_compressed_path(:timetable_start_date => timetable.start_date, :version => timetable.current_version, :format => :json) %>
+            <%= link_to "JSON", timetable.json_download_url %>
+            <%= link_to "[compressed]", timetable.json_download_url_compressed %>
           </td>
-          <td style="vertical-align:middle">N/A</td>
-          <td style="vertical-align:middle">TBA</td>
           <% if user_signed_in? %>
             <td style="vertical-align:middle">
               <%= link_to 'Edit', edit_api_v1_buses_timetable_path(:start_date => timetable.start_date), :style => "padding:7px" %>

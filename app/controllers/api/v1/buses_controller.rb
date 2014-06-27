@@ -2,6 +2,12 @@ class Api::V1::BusesController < ApplicationController
   
   def index
     @timetables = Timetable.order(:start_date).all
+    
+    root_url = "#{request.protocol}#{request.host_with_port}"
+    @timetables.each do |t|
+      t.root_url = root_url
+    end
+    
     @latest = @timetables[0]
     @timetable = Timetable.new
     

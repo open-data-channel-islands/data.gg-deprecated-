@@ -4,7 +4,7 @@ class Api::V1::Buses::StopTimeExceptionsController < ApplicationController
   # GET /exceptions
   # GET /exceptions.json
   def index
-    @stop_time_exception = StopTimeException.all
+    @stop_time_exceptions = StopTimeException.all
   end
 
   # GET /exceptions/1

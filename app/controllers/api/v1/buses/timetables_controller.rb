@@ -3,6 +3,7 @@ require './lib/data_path_resolver'
 
 class Api::V1::Buses::TimetablesController < ApplicationController
   
+  before_action :set_timetable, :except => [:list]
   before_action :authenticate_user!, :except => [:show, :current_version, :list]
   
   def show
@@ -12,7 +13,6 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       template = 'show'
     end
     
-    @timetable = Timetable.where(start_date: params[:start_date]).first
     @route = Route.new
     @stop = Stop.new
 
@@ -20,14 +20,14 @@ class Api::V1::Buses::TimetablesController < ApplicationController
       format.json { render json: @timetable.to_json(:include => {
         :routes => { :include => {
           :route_stops => {},
-          :stop_links => {}
+          :stop_times => {}
         }},
         :stops => {}
       })}
       format.xml { render :xml => @timetable.to_xml(:skip_types => true, :except => :created_at, :include => {
         :routes => { :except => :created_at, :include => {
           :route_stops => {},
-          :stop_links => {}
+          :stop_times => {}
         }},
         :stops => { :except => [:created_at] }
       })}
@@ -36,51 +36,33 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   end
   
   def edit
-    @timetable = Timetable.where(start_date: params[:start_date]).first
-    
-    if @timetable == nil
-      flash[:error] = "No timetable found with the start date '#{params[:start_date]}'"
-      redirect_to api_v1_buses_timetables_path
-    end
   end
   
   def update
-    @timetable = Timetable.find params[:timetable][:id]
-    
-    if @timetable.update_attributes timetable_params
-      flash[:success] = "Successfully updated timetable"
-    else
-      flash[:error] = "Error updating stop: " + @timetable.errors.full_messages[0]
-    end
-    
-    redirect_to api_v1_buses_timetable_path(@timetable.start_date)
-  end
-  
-  def data
     respond_to do |format|
-      format.xml { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'xml', false),
-                      file_name: Timetable.name + '.xml.tar.gz', type: 'application/zip', :x_sendfile => true) }
-      format.json { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'json', false),
-                      file_name: Timetable.name + '.json.tar.gz', type: 'application/zip', :x_sendfile => true) }
-    end
-    # This should a) check if the file exists, b) if it doesn't then generate and c) download it
-  end
-  
-  def data_compressed
-    respond_to do |format|
-      format.xml { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'xml', true),
-                      file_name: Timetable.name + '.xml.tar.gz', type: 'application/zip', :x_sendfile => true) }
-      format.json { send_file("#{Rails.root}" + Timetable.filename(params[:timetable_start_date], params[:version], 'json', true),
-                      file_name: Timetable.name + '.json.tar.gz', type: 'application/zip', :x_sendfile => true) }
+      if @timetable.update(timetable_params)
+        format.html { redirect_to api_v1_buses_timetable_path(@timetable.start_date), notice: 'Timetable was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @timetable.errors, status: :unprocessable_entity }
+      end
     end
   end
   
   def list
     @timetables = Timetable.order(:start_date).all
     
+    # Dirty hack, but the models have no idea about the HTTP context
+    # so we need to hand it over before rendering the output
+    root_url = "#{request.protocol}#{request.host_with_port}"
+    @timetables.each do |t|
+      t.root_url = root_url
+    end
+    
     respond_to do |format|
-      format.xml { render :xml => @timetables.to_xml(:only => [:id, :name, :start_date, :end, :current_version]) }
-      format.json { render :json => @timetables.to_json(:only => [:id, :name, :start_date, :end, :current_version])  }
+      format.xml { render :xml => @timetables.to_xml(methods: [:xml_download_url, :json_download_url, :xml_download_url_compressed, :json_download_url_compressed], except: [:created_at, :updated_at]) }
+      format.json { render :json => @timetables.to_json(methods: [:json_download_url, :json_download_url, :json_download_url_compressed], only: [:id, :name, :start_date, :end_date, :current_version]) }
     end
   end
   
@@ -98,7 +80,6 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   # Increments the current_version and then writes the data to file
   def publish
 
-    timetable = Timetable.where(:start_date => params[:timetable_start_date]).take!
     timetable.current_version = timetable.current_version + 1
     if timetable.save
       
@@ -166,16 +147,16 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   
   
   def create
-    timetable = Timetable.new(timetable_params)
+    @timetable = Timetable.new(timetable_params)
     
-    # TODO: Check for timetable overlaps!
-    
-    if timetable.save
-      flash[:success] = "Timetable '#{timetable.name}' successfully saved."
-      redirect_to api_v1_buses_timetable_path(timetable.start_date)
-    else
-      flash[:error] = "Error creating table: #{timetable.errors}"
-      redirect_to api_v1_buses_path
+    respond_to do |format|
+      if @timetable.save
+        format.html { redirect_to api_v1_buses_timetable_path(:start_date => @timetable.start_date) + '#stops', notice: "Timetable '#{@timetable.name}' was successfully created." }
+        format.json { render action: 'show', status: :created, location: @timetable }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @timetable.errors, status: :unprocessable_entity }
+      end
     end
   end
   
@@ -199,7 +180,12 @@ class Api::V1::Buses::TimetablesController < ApplicationController
   
   private
   
-  def timetable_params
-    params.require(:timetable).permit(:name, :description, :start_date, :end)
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_timetable
+      @timetable = Timetable.where(start_date: params[:start_date]).take!
+    end
+  
+    def timetable_params
+      params.require(:timetable).permit(:name, :description, :start_date, :end_date)
+    end
 end

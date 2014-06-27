@@ -22,16 +22,16 @@
   </thead>
 
   <tbody>
-    <% @stop_link_exceptions.each do |stop_link_exception| %>
+    <% @stop_time_exceptions.each do |stop_link_exception| %>
       <tr>
         <td style="width:40px" title="#<%= stop_link_exception.colour %>">
           <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_link_exception.colour %>"></div>
         </td>
-        <td><%= link_to stop_link_exception.name, api_v1_buses_exception_path(stop_link_exception) %></td>
+        <td><%= link_to stop_link_exception.name, api_v1_buses_stop_time_exception_path(stop_link_exception) %></td>
         <% if user_signed_in? %>
         <td align="right">
-          <%= link_to 'Edit', edit_api_v1_buses_exception_path(stop_link_exception) %> | 
-          <%= link_to 'Destroy', api_v1_buses_exception_path(stop_link_exception), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Edit', edit_api_v1_buses_stop_time_exception_path(stop_link_exception) %> | 
+          <%= link_to 'Destroy', api_v1_buses_stop_time_exception_path(stop_link_exception), method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
         <% end %>
       </tr>
@@ -40,5 +40,5 @@
 </table>
 
 <% if user_signed_in? %>
-<%= link_to 'New Stop link exception', new_api_v1_buses_exception_path %>
+<%= link_to 'New Stop link exception', new_api_v1_buses_stop_time_exception_path %>
 <% end %>

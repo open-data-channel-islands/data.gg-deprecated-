@@ -11,20 +11,32 @@
 <h1 class="page-header">Stop Time</h1>
 
 <p>To edit the time, please edit the entire set from the main timetable screen at the bottom instead</p>
-<h3><%= @stop_time.time_string %></h3>
+<h2 align="center"><%= @stop_time.time_string %></h2>
+<h2 align="center"><%= @stop_time.route_stop.stop.name %></h2>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th></th>
-      <th>Exception</th>
+      <th>Name</th>
+      <% if user_signed_in? %>
+        <th></th>
+      <% end %>
     </tr>
   </thead>
+
   <tbody>
-    <% @stop_time.stop_time_exceptions.each do |exception| %>
+    <% @stop_time.stop_time_exceptions.each do |stop_link_exception| %>
       <tr>
-        <td></td>
-        <td><%= exception.name %></td>
+        <td style="width:40px" title="#<%= stop_link_exception.colour %>">
+          <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_link_exception.colour %>"></div>
+        </td>
+        <td><%= link_to stop_link_exception.name, api_v1_buses_stop_time_exception_path(stop_link_exception) %></td>
+        <% if user_signed_in? %>
+        <td align="right">
+          <%= link_to 'Remove', api_v1_buses_stop_time_exception_path(stop_link_exception), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -48,7 +60,7 @@
   <%= f.collection_select :id, @exceptions, :id, :name %>
 
   <div class="actions">
-    <%= link_to 'Cancel', api_v1_buses_exceptions_path %>
+    <%= link_to 'Cancel', api_v1_buses_stop_time_exceptions_path %>
     
     <%= f.submit "Submit", { :class => "btn btn-primary" } %>
   </div>

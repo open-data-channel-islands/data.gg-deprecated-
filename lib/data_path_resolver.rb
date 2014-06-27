@@ -1,5 +1,11 @@
 class DataPathResolver
   
+  
+  def self.public_buses_path(root)
+    File.join(root, 'data', 'transport', 'buses').to_s
+  end
+  
+  
   def self.root(writable_path)
     if writable_path
       root = Rails.public_path.join('data')
