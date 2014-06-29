@@ -1,11 +1,18 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", buses_path %></li>
+    <li><%= link_to "Stop Time Exceptions", buses_stop_time_exceptions_path %>
+    <li class="active">Show Stop Time Exception</li>
+  </ol>
+<% end %>
 
+<h2 class="page-header">Stop Link Exception '<%= @stop_time_exception.name %>'</h2>
 
-<h2 class="page-heading">Stop Link Exception '<%= @stop_link_exception.name %>'</h2>
-
-<p>Colour: <%= @stop_link_exception.colour %><small>Note: this is the colour used on timetables to show what kind of exception this is.</small></p>
+<p>Colour: <%= @stop_time_exception.colour %><small>Note: this is the colour used on timetables to show what kind of exception this is.</small></p>
 
 <h3>Associated Stop Links</h3>
 
 Show list of stop links that use this stop link exception here..
 
-<%= link_to 'Back', buses_exceptions_path %>
+<%= link_to 'Back', buses_stop_time_exceptions_path %>
