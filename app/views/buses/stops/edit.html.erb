@@ -1,8 +1,8 @@
 <% content_for :breadcrumb do %>
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Buses", api_v1_buses_path %></li>
-    <li><%= link_to @timetable.name + ' Timetable', api_v1_buses_timetable_path(:start_date => @timetable.start_date) %></li>
+    <li><%= link_to "Buses", buses_path %></li>
+    <li><%= link_to @stop.timetable.name + ' Timetable', buses_timetable_path(:start_date => @stop.timetable.start_date) %></li>
     <li class="active"><%= @stop.name %></li>
   </ol>
 <% end %>
@@ -37,7 +37,7 @@
   
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
-      <%= link_to "Cancel", api_v1_buses_timetable_path(:start_date => @timetable.start_date) %>
+      <%= link_to "Cancel", buses_timetable_path(:start_date => @stop.timetable.start_date) %>
       <%= f.submit "Submit", { :class => "btn btn-default btn-primary" } %>
     </div>
   </div>

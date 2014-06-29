@@ -1,4 +1,4 @@
-class Api::V1::Buses::StopsController < ApplicationController
+class Buses::StopsController < ApplicationController
   
   before_action :set_stop, :authenticate_user!
   
@@ -9,7 +9,7 @@ class Api::V1::Buses::StopsController < ApplicationController
     
     respond_to do |format|
       if @stop.save
-        format.html { redirect_to api_v1_buses_timetable_path(:start_date => @stop.timetable.start_date) + '#stops', notice: 'Stop was successfully created.' }
+        format.html { redirect_to buses_timetable_path(:start_date => @stop.timetable.start_date) + '#stops', notice: 'Stop was successfully created.' }
         format.json { render action: 'show', status: :created, location: @stop }
       else
         format.html { render action: 'new' }
@@ -31,8 +31,8 @@ class Api::V1::Buses::StopsController < ApplicationController
   # PATCH/PUT /stops/1.json
   def update
     respond_to do |format|
-      if @stop.update(stop_link_exception_params)
-        format.html { redirect_to api_v1_buses_timetable_path(params[:timetable_start_date]), notice: 'Stop was successfully updated.' }
+      if @stop.update(stop_params)
+        format.html { redirect_to buses_timetable_path(params[:timetable_start_date]), notice: 'Stop was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -46,7 +46,7 @@ class Api::V1::Buses::StopsController < ApplicationController
   def destroy
    @stop.destroy
    respond_to do |format|
-     format.html { api_v1_buses_timetable_url(:start_date => @stop.timetable.start_date) + '#stops' }
+     format.html { buses_timetable_url(:start_date => @stop.timetable.start_date) + '#stops' }
      format.json { head :no_content }
    end
   end

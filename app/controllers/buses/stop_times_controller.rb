@@ -1,4 +1,4 @@
-class Api::V1::Buses::StopTimesController < ApplicationController
+class Buses::StopTimesController < ApplicationController
 
   def destroy_stop_link_chain
     stop_links = StopTime.where('origin_stop_link_id = ?', params[:origin_stop_link_id])
@@ -62,7 +62,7 @@ class Api::V1::Buses::StopTimesController < ApplicationController
     
     respond_to do |format|
       if @stop_time.save
-        format.html { redirect_to api_v1_buses_timetable_route_path(@stop_time.route.timetable.start_date, @stop_time.route.id), notice: 'Exception added' }
+        format.html { redirect_to buses_timetable_route_path(@stop_time.route.timetable.start_date, @stop_time.route.id), notice: 'Exception added' }
       else
         
       end
@@ -101,6 +101,6 @@ class Api::V1::Buses::StopTimesController < ApplicationController
       flash[:success] = "Successfully saved links!"
     end
     
-    redirect_to api_v1_buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
+    redirect_to buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
   end
 end

@@ -17,11 +17,11 @@
       <td><%= stop.latitude %></td>
       <td><%= stop.longitude %></td>
       <td>Edit</td>
-      <td><%= link_to 'Destroy', api_v1_buses_stop_path(stop.id),
+      <td><%= link_to 'Destroy', buses_stop_path(stop.id),
             :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
     <% end %>
-    <%= form_for [:api, :v1, :buses, @stop] do |f| %>
+    <%= form_for [:buses, @stop] do |f| %>
     <tr>
       <td><%= f.text_field :name, { :class => "form-control" } %></td>
       <td><%= f.text_field :latitude, { :class => "form-control" } %></td>

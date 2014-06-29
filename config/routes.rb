@@ -47,67 +47,50 @@ DataGg::Application.routes.draw do
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
-  #get 'buses/' => 'buses#index'
+  get 'buses/' => 'buses#index'
+  
+  namespace :buses do
+    resources :stop_time_exceptions
 
+    resources :timetables, param: :start_date do
+      
+      post 'publish' => 'timetables#publish'
 
-  #namespace :buses do
-  #  get 'api/latest.:format' => 'api#latest'
+      resources :stops
 
-    # Because these are distinct
-  #  resources :stops
+      resources :routes do
+        # Make believe. Always work from the origin point.
+        resources :stop_times do
+          get 'atomic_stop_time/:id' => 'stop_times#atomic_stop_time', as: :atomic_stop_time
+          post 'atomic_stop_time/:id' => 'stop_times#add_exception', as: :add_exception
+        end
 
-    # Can download XML/Object/JSON/HTML
-  #  get 'timetables/:date/download/:type' => 'timetables#download', as: :timetables_download
-
-  #  resources :timetables, param: :start_date do
-  #    resources :routes do
-  #      resources :route_stops
-  #    end
-  #  end
-  #end
-
-  # TODO: These are all wrong; they should not be resources
-  namespace :api do
-    namespace :v1 do
-
-
-      get 'buses/' => 'buses#index'
-
-      namespace :buses do
-        
-        resources :stop_time_exceptions
-
-        resources :timetables, param: :start_date do
+        resources :route_stops do
           collection do
-            get 'current_version'
-            get 'list'
-          end
-
-          get ':version/data' => 'timetables#data', as: :data
-          get ':version/data/compressed' => 'timetables#data_compressed', as: :data_compressed
-          post 'publish' => 'timetables#publish'
-
-
-
-          resources :stops
-
-          resources :routes do
-            # Make believe. Always work from the origin point.
-            resources :stop_times do
-              get 'atomic_stop_time/:id' => 'stop_times#atomic_stop_time', as: :atomic_stop_time
-              post 'atomic_stop_time/:id' => 'stop_times#add_exception', as: :add_exception
-            end
-
-            resources :route_stops do
-              collection do
-                post 'create_stop_links'
-              end
-            end
-
-
+            post 'create_stop_links'
           end
         end
       end
+    end
+  end
+
+  # TODO: These are all wrong; they should not be resources
+  namespace :api do
+    namespace "v10", path: "1.0", module: "v1_0" do
+      
+    #scope "1.0", module: "1_0" do
+      # Buses API calls
+      namespace :buses do
+        get 'timetables/list' => 'timetables#list'
+        get 'timetables/current_version' => 'timetables#current_version'
+      end
+      
+    end
+    
+
+
+
+    namespace :v1 do
 
       resources :flights do
         collection do

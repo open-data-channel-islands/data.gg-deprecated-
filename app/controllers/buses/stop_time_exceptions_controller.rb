@@ -1,4 +1,4 @@
-class Api::V1::Buses::StopTimeExceptionsController < ApplicationController
+class Buses::StopTimeExceptionsController < ApplicationController
   before_action :set_stop_time_exception, only: [:show, :edit, :update, :destroy]
 
   # GET /exceptions
@@ -28,7 +28,7 @@ class Api::V1::Buses::StopTimeExceptionsController < ApplicationController
 
     respond_to do |format|
       if @stop_time_exception.save
-        format.html { redirect_to api_v1_buses_exception_url(@stop_time_exception), notice: 'Exception was successfully created.' }
+        format.html { redirect_to buses_exception_url(@stop_time_exception), notice: 'Exception was successfully created.' }
         format.json { render action: 'show', status: :created, location: @stop_time_exception }
       else
         format.html { render action: 'new' }
@@ -42,7 +42,7 @@ class Api::V1::Buses::StopTimeExceptionsController < ApplicationController
   def update
     respond_to do |format|
       if @stop_time_exception.update(exception_params)
-        format.html { redirect_to api_v1_buses_exception_url(@stop_time_exception), notice: 'Exception was successfully updated.' }
+        format.html { redirect_to buses_exception_url(@stop_time_exception), notice: 'Exception was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -56,7 +56,7 @@ class Api::V1::Buses::StopTimeExceptionsController < ApplicationController
   def destroy
     @stop_time_exception.destroy
     respond_to do |format|
-      format.html { redirect_to api_v1_buses_stop_time_exceptions_url }
+      format.html { redirect_to buses_stop_time_exceptions_url }
       format.json { head :no_content }
     end
   end

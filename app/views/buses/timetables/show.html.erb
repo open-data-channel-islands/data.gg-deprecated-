@@ -1,7 +1,7 @@
 <% content_for :breadcrumb do %>
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Buses", api_v1_buses_path %></li>
+    <li><%= link_to "Buses", buses_path %></li>
     <li class="active"><%= @timetable.name%> Timetable</li>
   </ol>
 <% end %>
@@ -58,7 +58,7 @@
                   </tr>
             <% end  %>
             <tr>
-              <td><%= link_to route.name, api_v1_buses_timetable_route_path(:timetable_start_date => @timetable.start_date, :id => route.id) %>
+              <td><%= link_to route.name, buses_timetable_route_path(:timetable_start_date => @timetable.start_date, :id => route.id) %>
               <td><%= route.description %></td>
               <td><%= Date::DAYNAMES[route.start_day] %></td>
               <td><%= Date::DAYNAMES[route.end_day] %></td>

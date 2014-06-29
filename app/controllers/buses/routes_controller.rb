@@ -1,4 +1,4 @@
-class Api::V1::Buses::RoutesController < ApplicationController
+class Buses::RoutesController < ApplicationController
   
   before_action :authenticate_user!, :except => [:show]
   
@@ -8,10 +8,10 @@ class Api::V1::Buses::RoutesController < ApplicationController
     
     if route.save
       flash[:success] = "Route '#{route.name}' created"
-      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start_date)
+      redirect_to buses_timetable_path(:start_date => route.timetable.start_date)
     else
       flash[:error] = "Route '#{route.name}' could not be created"
-      redirect_to api_v1_buses_timetable_path(:start_date => route.timetable.start_date)
+      redirect_to buses_timetable_path(:start_date => route.timetable.start_date)
     end
   end
   
@@ -21,7 +21,7 @@ class Api::V1::Buses::RoutesController < ApplicationController
     @route = Route.where(:id => params[:id]).first
     
     if @route == nil
-      redirect_to api_v1_buses_path
+      redirect_to buses_path
     end
   end
   
@@ -37,17 +37,17 @@ class Api::V1::Buses::RoutesController < ApplicationController
       flash[:error] = "Couldn't find a route with id '#{params[:id]}'"
     end
     
-    redirect_to api_v1_buses_timetable_route_path(@route.timetable.start_date, @route.id)
+    redirect_to buses_timetable_route_path(@route.timetable.start_date, @route.id)
   end
   def destroy
     route = Route.find_by_id(params[:id])
     
     if route.destroy
       flash[:success] = "Route #{route.name} destroyed"
-      redirect_to api_v1_buses_timetable_path(params[:timetable_start_date])
+      redirect_to buses_timetable_path(params[:timetable_start_date])
     else
       flash[:error] = "Couldn't delete #{route.name}"
-      redirect_to api_v1_buses_timetable_route_path(:timetable_start_date => params[:start], :id => params[:id])
+      redirect_to buses_timetable_route_path(:timetable_start_date => params[:start], :id => params[:id])
     end
   end
   

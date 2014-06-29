@@ -1,4 +1,4 @@
-<%= form_for @stop_time_exception, as: :stop_link_exception, :url => @stop_time_exception.new_record? ? api_v1_buses_stop_time_exceptions_path : api_v1_buses_stop_time_exception_path(@stop_time_exception) do |f| %>
+<%= form_for @stop_time_exception, as: :stop_link_exception, :url => @stop_time_exception.new_record? ? buses_stop_time_exceptions_path : buses_stop_time_exception_path(@stop_time_exception) do |f| %>
   <% if @stop_time_exception.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@stop_link_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
@@ -21,7 +21,7 @@
     <%= f.text_field :colour, :class => "form-control" %>
   </div>
   <div class="actions">
-    <%= link_to 'Cancel', api_v1_buses_stop_time_exceptions_path %>
+    <%= link_to 'Cancel', buses_stop_time_exceptions_path %>
     
     <%= f.submit "Submit", { :class => "btn btn-primary" } %>
   </div>

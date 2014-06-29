@@ -1,4 +1,4 @@
-class Api::V1::BusesController < ApplicationController
+class BusesController < ApplicationController
   
   def index
     @timetables = Timetable.order(:start_date).all
@@ -14,19 +14,6 @@ class Api::V1::BusesController < ApplicationController
     respond_to do |format|
       format.html
     end
-  end
-  
-  def current_version
-    Timetable.where(:start_date => params[:start]).select("current_version")
-    respond_to do |format|
-      format.xml
-      format.json
-      format.html
-    end
-  end
-  
-  def next_version
-    
   end
   
   def list
