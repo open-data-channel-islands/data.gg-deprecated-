@@ -1,17 +1,24 @@
-<h2>Flight Data</h2>
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Flights</li>
+  </ol>
+<% end %>
+
+<h2>Flights</h2>
 <h3>Arrivals</h3>
 <div class="row">
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), arrivals_api_v1_flights_path(:format => "xml") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_arrivals_path(:format => "xml") %>
     XML
   </div>
 
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), arrivals_api_v1_flights_path(:format => "json") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_arrivals_path(:format => "json") %>
     JSON
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), arrivals_api_v1_flights_path(:format => "html") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_arrivals_path(:format => "html") %>
     HTML
   </div>
 </div>
@@ -19,16 +26,16 @@
 <h3>Departures</h3>
 <div class="row">
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), departures_api_v1_flights_path(:format => "xml") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_departures_path(:format => "xml") %>
     XML
   </div>
 
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), departures_api_v1_flights_path(:format => "json") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_departures_path(:format => "json") %>
     JSON
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), departures_api_v1_flights_path(:format => "html") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_flights_departures_path(:format => "html") %>
     HTML
   </div>
 </div>

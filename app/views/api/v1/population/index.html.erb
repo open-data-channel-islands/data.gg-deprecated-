@@ -1,3 +1,10 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Population</li>
+  </ol>
+<% end %>
+
 <h2>Population</h2>
 <h3>Population by Age Group</h3>
 <div class="row">
@@ -5,11 +12,11 @@
   XML Coming Soon
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), population_api_v1_population_index_path(:format => "json") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_population_population_path(:format => "json") %>
     JSON
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), population_api_v1_population_index_path(:format => "html") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_population_population_path(:format => "html") %>
     HTML
   </div>
 </div>

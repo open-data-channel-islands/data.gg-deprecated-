@@ -36,6 +36,11 @@ class Api::V1::SailingsController < ApplicationController
 
   def table_to_sailings_array()
     arrivals, departures = get_arrivals_departures_tables()
+
+    if arrivals == nil || departures == nil
+      return []
+    end
+
     return parse_table(arrivals, "Arrival", "Source", "Arrived") +
     parse_table(departures, "Departure", "Destination", "Departed")
   end
@@ -126,7 +131,30 @@ class Api::V1::SailingsController < ApplicationController
       tables << table
     end
 
-    return tables[0], tables[1]
+    arrivals =[]
+    departures =[]
+
+    p ''
+    p tables[0]
+    p tables[1]
+
+    if tables[0] != nil
+      if tables[0][0][3] == "Departed"
+        departures = tables[0]
+      else
+        arrivals = tables[0]
+      end
+    end
+
+    if tables[1] != nil
+      if tables[1][0][3] == "Departed"
+        departures = tables[1]
+      else
+        arrivals = tables[1]
+      end
+    end
+
+    return arrivals, departures
   end
 
 end

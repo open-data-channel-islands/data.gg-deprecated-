@@ -1,17 +1,23 @@
-<h2>Sailings</h2>
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Sailings</li>
+  </ol>
+<% end %>
 
+<h2>Sailings</h2>
 <h3>Harbour</h3>
 <div class="row">
   <div class="col-md-4 padded-cell">
-    <%= link_to image_tag("note-64x64.png"), harbour_api_v1_sailings_path(:format => "xml") %>
+    <%= link_to image_tag("note-64x64.png"), api_v1_sailings_harbour_path(:format => "xml") %>
     XML
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), harbour_api_v1_sailings_path(:format => "json") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_sailings_harbour_path(:format => "json") %>
     JSON
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), harbour_api_v1_sailings_path(:format => "html") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_sailings_harbour_path(:format => "html") %>
     HTML
   </div>
 </div>
@@ -19,15 +25,15 @@
 <h3>Herm Tridents</h3>
 <div class="row">
   <div class="col-md-4 padded-cell">
-    <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "xml") %>
+    <%= link_to image_tag("note-64x64.png"), api_v1_sailings_herm_trident_path(:format => "xml") %>
     XML
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "json") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_sailings_herm_trident_path(:format => "json") %>
     JSON
   </div>
   <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), herm_trident_api_v1_sailings_path(:format => "html") %>
+  <%= link_to image_tag("note-64x64.png"), api_v1_sailings_herm_trident_path(:format => "html") %>
     HTML
   </div>
 </div>

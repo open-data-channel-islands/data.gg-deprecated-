@@ -1,8 +1,8 @@
 <% content_for :breadcrumb do %>
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Police", api_v1_police_path %></li>
-    <li class="active">Traffic Injuries</a>
+    <li><%= link_to "Education", api_v1_education_path %></li>
+    <li class="active">Post 16 Results</a>
   </ol>
 <% end %>
 
@@ -11,17 +11,17 @@
     <tr>
       <th>Year</th>
       <th>Type</th>
-      <th>Fatal</th>
-      <th>Serious</th>
+      <th>Grade</th>
+      <th>Percent</th>
     </tr>
   </thead>
   <tbody>
-    <% @traffic.each do |f| %>
+    <% @post16results.each do |f| %>
     <tr>
     <td><%= f['Year'] %></td>
     <td><%= f['Type'] %></td>
-    <td><%= f['Fatal'] %></td>
-    <td><%= f['Serious'] %></td>
+    <td><%= f['Grade'] %></td>
+    <td><%= f['Percent'] %></td>
     </tr>
     <% end %>
   </tbody>

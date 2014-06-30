@@ -1,6 +1,13 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">About</li>
+  </ol>
+<% end %>
+
 <h3>What?</h3>
 
-<p>data.gg is the brain-child of <a href="http://www.jasemagee.com/">Jason Magee</a> and 
+<p>data.gg is the brain-child of <a href="http://www.jasemagee.com/">Jason Magee</a> and
   <a href="http://www.kieransenior.co.uk/">Kieran Senior</a> with the aim of providing all Bailiwick of Guernsey-related data
   to the public through an easily accessible API in many formats which suit those using it. Currently we support XML, JSON, HTML
   and soon we shall be supporting Object data formats along with gzipped formats of all.</p>

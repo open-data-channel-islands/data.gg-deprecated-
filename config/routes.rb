@@ -5,13 +5,6 @@ DataGg::Application.routes.draw do
 
   devise_for :users
 
-  get "flights/index"
-  get "flight/index"
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-
-
   get 'about' => 'home#about', as: :about
   get 'help' => 'home#help', as: :help
 
@@ -48,12 +41,12 @@ DataGg::Application.routes.draw do
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
   get 'buses/' => 'buses#index'
-  
+
   namespace :buses do
     resources :stop_time_exceptions
 
     resources :timetables, param: :start_date do
-      
+
       post 'publish' => 'timetables#publish'
 
       resources :stops
@@ -77,61 +70,42 @@ DataGg::Application.routes.draw do
   # TODO: These are all wrong; they should not be resources
   namespace :api do
     namespace "v10", path: "1.0", module: "v1_0" do
-      
+
     #scope "1.0", module: "1_0" do
       # Buses API calls
       namespace :buses do
         get 'timetables/list' => 'timetables#list'
         get 'timetables/current_version' => 'timetables#current_version'
       end
-      
-    end
-    
-
-
-
-    namespace :v1 do
-
-      resources :flights do
-        collection do
-          get 'arrivals'
-          get 'departures'
-        end
-      end
-
-      resources :police do
-        collection do
-          get 'crimes'
-          get 'traffic'
-          get 'traffic_classifications'
-          get 'traffic_collisions'
-          get 'traffic_injuries'
-        end
-      end
-
-      resources :population do
-        collection do
-          get 'population'
-        end
-      end
-
-      resources :earnings do
-        collection do
-          get 'earnings_age_group'
-          get 'earnings_sector'
-          get 'earnings_sex'
-        end
-      end
-
-      resources :sailings do
-        collection do
-          get 'herm_trident'
-          get 'harbour'
-        end
-      end
 
     end
   end
+
+  get 'api/v1/flights/', to: 'api/v1/flights#index'
+  get 'api/v1/flights/arrivals', to: 'api/v1/flights#arrivals'
+  get 'api/v1/flights/departures', to: 'api/v1/flights#departures'
+
+  get 'api/v1/education/', to: 'api/v1/education#index'
+  get 'api/v1/education/post16results', to: 'api/v1/education#post16results'
+
+  get 'api/v1/population/', to: 'api/v1/population#index'
+  get 'api/v1/population/population', to: 'api/v1/population#population'
+
+  get 'api/v1/police/', to: 'api/v1/police#index'
+  get 'api/v1/police/crimes', to: 'api/v1/police#crimes'
+  get 'api/v1/police/traffic', to: 'api/v1/police#traffic'
+  get 'api/v1/police/traffic_classifications', to: 'api/v1/police#traffic_classifications'
+  get 'api/v1/police/traffic_collisions', to: 'api/v1/police#traffic_collisions'
+  get 'api/v1/police/traffic_injuries', to: 'api/v1/police#traffic_injuries'
+
+  get 'api/v1/earnings/', to: 'api/v1/earnings#index'
+  get 'api/v1/earnings/earnings_age_group', to: 'api/v1/earnings#earnings_age_group'
+  get 'api/v1/earnings/earnings_sector', to: 'api/v1/earnings#earnings_sector'
+  get 'api/v1/earnings/earnings_sex', to: 'api/v1/earnings#earnings_sex'
+
+  get 'api/v1/sailings/', to: 'api/v1/sailings#index'
+  get 'api/v1/sailings/herm_trident', to: 'api/v1/sailings#herm_trident'
+  get 'api/v1/sailings/harbour', to: 'api/v1/sailings#harbour'
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
