@@ -2,13 +2,19 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", buses_path %></li>
-    <li class="active">Exceptions</a>
+    <li class="active">Stop Time Exceptions</a>
   </ol>
 <% end %>
 
-<h2 class="page-header">Exceptions</h2>
+<h2 class="page-header">Exceptions
+  <% if user_signed_in? %>
+<%= link_to 'New Stop link exception', new_buses_stop_time_exception_path, :class => "btn btn-primary pull-right" %>
+<% end %></h2>
 
-<p>List of exceptions to regular bus stop timing rules</p>
+<p>List of exceptions to regular bus stop timing rules
+
+
+</p>
 
 <table class="table table-striped">
   <thead>
@@ -39,6 +45,4 @@
   </tbody>
 </table>
 
-<% if user_signed_in? %>
-<%= link_to 'New Stop link exception', new_buses_stop_time_exception_path %>
-<% end %>
+

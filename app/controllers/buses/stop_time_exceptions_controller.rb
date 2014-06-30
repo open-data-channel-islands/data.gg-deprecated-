@@ -1,5 +1,6 @@
 class Buses::StopTimeExceptionsController < ApplicationController
   before_action :set_stop_time_exception, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:create, :edit, :update, :destroy]
 
   # GET /exceptions
   # GET /exceptions.json
