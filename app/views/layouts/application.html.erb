@@ -26,58 +26,64 @@
   </script>
 </head>
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%= link_to(raw("data.gg <sup style='font-size:0.6em'>BETA</sup>"), "/", class: "navbar-brand") %>
+  <div id="wrap">
+    <div class="navbar navbar-inverse navbar-fixed-top"  role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to(raw("data.gg <sup style='font-size:0.6em'>BETA</sup>"), "/", class: "navbar-brand") %>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- ><li>link_to 'Signup', new_user_registration_path </li>-->
+            <li><%= link_to 'About', about_path %></li>
+            <li><%= link_to 'Help', help_path %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+            <% end %>
+          </ul>
+          <!-- ><form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>-->
+        </div><!--/.navbar-collapse -->
       </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- ><li>link_to 'Signup', new_user_registration_path </li>-->
-          <li><%= link_to 'About', about_path %></li>
-          <li><%= link_to 'Help', help_path %></li>
-          <% if user_signed_in? %>
-            <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
-          <% end %>
-        </ul>
-        <!-- ><form class="navbar-form navbar-right" role="form">
-          <div class="form-group">
-            <input type="text" placeholder="Email" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Password" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-success">Sign in</button>
-        </form>-->
-      </div><!--/.navbar-collapse -->
     </div>
+
+    <% if current_page?('/') %>
+      <div class="<%= 'container' unless true %>">
+        <%= yield %>
+      </div>
+    <% else %>
+      <div class="container">
+      
+        <%= yield :breadcrumb %>
+      
+        <% flash.each do |key, value| %>
+          <%= content_tag :div, value, class: "alert alert-#{key}" %>
+        <% end %>
+      
+        <%= yield %>
+      </div>
+    <% end %>
+    
+    <div id="push"></div>
   </div>
 
-  <% if current_page?('/') %>
-    <div class="<%= 'container' unless true %>">
-      <%= yield %>
-    </div>
-  <% else %>
+  <div id="footer">
     <div class="container">
-      
-      <%= yield :breadcrumb %>
-      
-      <% flash.each do |key, value| %>
-        <%= content_tag :div, value, class: "alert alert-#{key}" %>
-      <% end %>
-      
-      <%= yield %>
+      <p class="muted credit">Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %> from <%= link_to 'Reformsoft', 'http://reformsoft.org' %></p>
     </div>
-  <% end %>
-
-  <div class="footer">
-    <p>Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %> from <%= link_to 'Reformsoft', 'http://reformsoft.org' %></p>
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -67,14 +67,19 @@ class Buses::StopTimesController < ApplicationController
         
       end
     end
-    
-    
   end
   
-  def create
+  def remove_exception
+    @stop_time_exception = StopTimeException.find(params[:stop_time_exception_id])
+    @stop_time = StopTime.find(params[:stop_time_id])
     
-    
-    
+    respond_to do |format|
+      if @stop_time.stop_time_exceptions.delete(@stop_time_exception)
+        format.html { redirect_to buses_timetable_route_path(@stop_time.route.timetable.start_date, @stop_time.route.id), success: 'Exception removed' }
+      else
+        
+      end
+    end
   end
   
   def update

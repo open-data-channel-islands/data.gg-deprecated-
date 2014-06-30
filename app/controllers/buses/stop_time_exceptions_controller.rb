@@ -29,7 +29,7 @@ class Buses::StopTimeExceptionsController < ApplicationController
 
     respond_to do |format|
       if @stop_time_exception.save
-        format.html { redirect_to buses_exception_url(@stop_time_exception), notice: 'Exception was successfully created.' }
+        format.html { redirect_to buses_stop_time_exception_url(@stop_time_exception), notice: 'Exception was successfully created.' }
         format.json { render action: 'show', status: :created, location: @stop_time_exception }
       else
         format.html { render action: 'new' }
@@ -43,7 +43,7 @@ class Buses::StopTimeExceptionsController < ApplicationController
   def update
     respond_to do |format|
       if @stop_time_exception.update(exception_params)
-        format.html { redirect_to buses_exception_url(@stop_time_exception), notice: 'Exception was successfully updated.' }
+        format.html { redirect_to buses_stop_time_exception_url(@stop_time_exception), notice: 'Exception was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

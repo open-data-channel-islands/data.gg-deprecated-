@@ -26,15 +26,15 @@
   </thead>
 
   <tbody>
-    <% @stop_time.stop_time_exceptions.each do |stop_link_exception| %>
+    <% @stop_time.stop_time_exceptions.each do |stop_time_exception| %>
       <tr>
-        <td style="width:40px" title="#<%= stop_link_exception.colour %>">
-          <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_link_exception.colour %>"></div>
+        <td style="width:40px" title="#<%= stop_time_exception.colour %>">
+          <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_time_exception.colour %>"></div>
         </td>
-        <td><%= link_to stop_link_exception.name, buses_stop_time_exception_path(stop_link_exception) %></td>
+        <td><%= link_to stop_time_exception.name, buses_stop_time_exception_path(stop_time_exception) %></td>
         <% if user_signed_in? %>
         <td align="right">
-          <%= link_to 'Remove', buses_stop_time_exception_path(stop_link_exception), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= button_to 'Remove', buses_timetable_route_stop_time_remove_exception_url(stop_time_id: @stop_time.id, stop_time_exception_id:stop_time_exception.id), method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
         <% end %>
       </tr>
