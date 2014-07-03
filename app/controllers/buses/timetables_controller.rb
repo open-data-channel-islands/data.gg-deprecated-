@@ -3,7 +3,7 @@ require './lib/data_path_resolver'
 
 class Buses::TimetablesController < ApplicationController
   
-  before_action :set_timetable, :except => [:list, :publish]
+  before_action :set_timetable, :except => [:create, :list, :publish]
   before_action :authenticate_user!, :except => [:show, :current_version, :list]
   
   def show
@@ -15,6 +15,8 @@ class Buses::TimetablesController < ApplicationController
     
     @route = Route.new
     @stop = Stop.new
+    @stop_time_exception = StopTimeException.new
+    @stop_time_exception.timetable_id = @timetable.id
 
     respond_to do |format|
       format.json { render json: @timetable.to_json(:include => {
@@ -22,16 +24,18 @@ class Buses::TimetablesController < ApplicationController
           :route_stops => {},
           :stop_times => {}
         }},
-        :stops => {}
+        :stops => {},
+        :stop_time_exceptions => { :except => [:created_at, :updated_at] }
       })}
       format.xml { render :xml => @timetable.to_xml(:skip_types => true, :except => :created_at, :include => {
-        :routes => { :except => :created_at, :include => {
+        :routes => { :except => [:created_at], :include => {
           :route_stops => {},
           :stop_times => {}
         }},
-        :stops => { :except => [:created_at] }
+        :stops => { :except => [:created_at] },
+        :stop_time_exceptions => { :except => [:created_at, :updated_at]}
       })}
-      format.html { render template }
+      format.html { render action: template }
     end
   end
   

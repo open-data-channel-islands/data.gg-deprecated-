@@ -33,6 +33,7 @@
 <ul class="nav nav-tabs">
   <li class="active"><a href="#routes" data-toggle="tab">Routes</a></li>
   <li><a href="#stops" data-toggle="tab">Stops</a></li>
+  <li><a href="#stop_time_exceptions" data-toggle="tab" title="Stop time exceptions">Exceptions</a>
 </ul>
 
 <!-- Tab panes -->
@@ -119,6 +120,43 @@
         </tr>
       </tfoot>
     </table>
+    <% end %>
+  </div>
+  <div class="tab-pane" id="stop_time_exceptions">
+    <h3>Exceptions</h3>
+    <p class="lead">List of exceptions to regular bus stop timing rules</p>
+    <%= form_for [:buses, @timetable, @stop_time_exception], html: { class: 'form-inline' } do |f| %>
+      <table class="table table-striped">
+        <thead>
+          <th width="30">Colour</th>
+          <th>Name</th>
+          <th colspan="2"></th>
+        </thead>
+        <tbody>
+          <% @timetable.stop_time_exceptions.each do |stop_time_exception| %>
+            <tr>
+              <td style="width:40px" title="#<%= stop_time_exception.colour %>">
+                <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_time_exception.colour %>"></div>
+              </td>
+              <td><%= link_to stop_time_exception.name, buses_timetable_stop_time_exception_path(timetable_start_date: stop_time_exception, id: stop_time_exception.id) %></td>
+              <% if user_signed_in? %>
+              <td align="right">
+                <%= link_to 'Edit', edit_buses_timetable_stop_time_exception_path(timetable_start_date: stop_time_exception, id: stop_time_exception.id) %> | 
+                <%= link_to 'Destroy', buses_timetable_stop_time_exception_path(timetable_start_date: stop_time_exception, id: stop_time_exception.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+              </td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><%= f.hidden_field :timetable_id, :value => @timetable.id %>
+                <%= f.text_field :colour, { :class => "form-control input-sm", :placeholder => "333333"} %></td>
+            <td><%= f.text_field :name, { :class => "form-control input-sm", :size => "120", :placeholder => "Friday's only"} %></td>
+            <td><%= f.submit 'Add exception', { :class => "btn btn-sm btn-primary" } %></td>
+          </tr>
+        </tfoot>
+      </table>
     <% end %>
   </div>
 </div>

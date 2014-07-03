@@ -2,8 +2,8 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", buses_path %></li>
-    <li><%= link_to "Stop Time Exceptions", buses_stop_time_exceptions_path %>
-    <li class="active">Show Stop Time Exception</li>
+    <li><%= link_to @stop_time_exception.timetable.name + ' Timetable', buses_timetable_path(start_date: @stop_time_exception.timetable.start_date) %>
+    <li class="active"><%= @stop_time_exception.name %></li>
   </ol>
 <% end %>
 
@@ -15,4 +15,4 @@
 
 Show list of stop links that use this stop link exception here..
 
-<%= link_to 'Back', buses_stop_time_exceptions_path %>
+<%= link_to 'Back', buses_timetable_stop_time_exceptions_path %>

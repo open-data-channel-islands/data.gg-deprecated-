@@ -2,12 +2,6 @@ class Buses::StopTimeExceptionsController < ApplicationController
   before_action :set_stop_time_exception, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:create, :edit, :update, :destroy]
 
-  # GET /exceptions
-  # GET /exceptions.json
-  def index
-    @stop_time_exceptions = StopTimeException.all
-  end
-
   # GET /exceptions/1
   # GET /exceptions/1.json
   def show
@@ -16,6 +10,7 @@ class Buses::StopTimeExceptionsController < ApplicationController
   # GET /exceptions/new
   def new
     @stop_time_exception = StopTimeException.new
+    @stop_time_exception.timetable_id = params[:timetable_id]
   end
 
   # GET /exceptions/1/edit
@@ -26,10 +21,10 @@ class Buses::StopTimeExceptionsController < ApplicationController
   # POST /exceptions.json
   def create
     @stop_time_exception = StopTimeException.new(exception_params)
-
+    
     respond_to do |format|
       if @stop_time_exception.save
-        format.html { redirect_to buses_stop_time_exception_url(@stop_time_exception), notice: 'Exception was successfully created.' }
+        format.html { redirect_to buses_timetable_stop_time_exception_url(timetable_start_date: @stop_time_exception.timetable.start_date, id: @stop_time_exception.id), notice: 'Exception was successfully created.' }
         format.json { render action: 'show', status: :created, location: @stop_time_exception }
       else
         format.html { render action: 'new' }
@@ -43,7 +38,7 @@ class Buses::StopTimeExceptionsController < ApplicationController
   def update
     respond_to do |format|
       if @stop_time_exception.update(exception_params)
-        format.html { redirect_to buses_stop_time_exception_url(@stop_time_exception), notice: 'Exception was successfully updated.' }
+        format.html { redirect_to buses_timetable_stop_time_exception_url(timetable_start_date: @stop_time_exception.timetable.start_date, id: @stop_time_exception.id), notice: 'Exception was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -57,7 +52,7 @@ class Buses::StopTimeExceptionsController < ApplicationController
   def destroy
     @stop_time_exception.destroy
     respond_to do |format|
-      format.html { redirect_to buses_stop_time_exceptions_url }
+      format.html { redirect_to buses_timetable_url(start_date: @stop_time_exception.timetable.start_date) + '#stop_time_exceptions'  }
       format.json { head :no_content }
     end
   end
@@ -70,6 +65,6 @@ class Buses::StopTimeExceptionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exception_params
-      params.require(:stop_time_exception).permit(:name, :colour)
+      params.require(:stop_time_exception).permit(:name, :colour, :timetable_id)
     end
 end

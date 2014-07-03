@@ -95,7 +95,9 @@ class Buses::StopTimesController < ApplicationController
         flash[:error] = "Couldn't find stop time"
       else
         stop_time.time = sl[1]["time"].gsub(':', '')
-        if !stoplink.save
+        stop_time.skip = sl[1]["skip"]
+        stop_time.night = sl[1]["night"]
+        if !stop_time.save
           success = false
           flash[:error] = "Couldn't save a stop time - #{stop_time.errors.full_messages}"
         end

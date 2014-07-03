@@ -3,6 +3,7 @@ require './lib/data_path_resolver'
 class Timetable < ActiveRecord::Base
   has_many :routes
   has_many :stops
+  has_many :stop_time_exceptions
   validates :start_date, presence: true
   validates :name, presence: true
   

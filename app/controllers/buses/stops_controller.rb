@@ -1,6 +1,7 @@
 class Buses::StopsController < ApplicationController
   
-  before_action :set_stop, :authenticate_user!
+  before_action :set_stop, :except => [:create]
+  before_action :authenticate_user! # We can stop them from everything in here safely
   
   # POST /stops
   # POST /stops.json
@@ -46,7 +47,7 @@ class Buses::StopsController < ApplicationController
   def destroy
    @stop.destroy
    respond_to do |format|
-     format.html { buses_timetable_url(:start_date => @stop.timetable.start_date) + '#stops' }
+     format.html { redirect_to buses_timetable_url(:start_date => @stop.timetable.start_date) + '#stops' }
      format.json { head :no_content }
    end
   end

@@ -43,13 +43,11 @@ DataGg::Application.routes.draw do
   get 'buses/' => 'buses#index'
 
   namespace :buses do
-    resources :stop_time_exceptions
-
     resources :timetables, param: :start_date do
-
       post 'publish' => 'timetables#publish'
 
       resources :stops
+      resources :stop_time_exceptions
 
       resources :routes do
         # Make believe. Always work from the origin point.

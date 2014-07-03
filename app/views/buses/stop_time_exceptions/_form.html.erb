@@ -1,16 +1,17 @@
-<%= form_for @stop_time_exception, as: :stop_time_exception, :url => @stop_time_exception.new_record? ? buses_stop_time_exceptions_path : buses_stop_time_exception_path(@stop_time_exception) do |f| %>
+<%= form_for @stop_time_exception, as: :stop_time_exception, :url => @stop_time_exception.new_record? ? buses_timetable_stop_time_exceptions_path : buses_timetable_stop_time_exception_path(timetable_start_date: @stop_time_exception.timetable.start_date, id: @stop_time_exception.id) do |f| %>
   <% if @stop_time_exception.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@stop_link_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
+      <h2><%= pluralize(@stop_time_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
 
       <ul>
-      <% @stop_link_exception.errors.full_messages.each do |msg| %>
+      <% @stop_time_exception.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
+  <%= f.hidden_field :timetable_id %>
 
   <div class="form-group">
     <%= f.label :name %><br>
@@ -21,7 +22,7 @@
     <%= f.text_field :colour, :class => "form-control" %>
   </div>
   <div class="actions">
-    <%= link_to 'Cancel', buses_stop_time_exceptions_path %>
+    <%= link_to 'Cancel', buses_timetable_stop_time_exception_path(timetable_start_date: @stop_time_exception.timetable.start_date, id: @stop_time_exception.id) %>
     
     <%= f.submit "Submit", { :class => "btn btn-primary" } %>
   </div>

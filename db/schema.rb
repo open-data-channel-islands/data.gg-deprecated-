@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140625192906) do
+ActiveRecord::Schema.define(version: 20140703195512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20140625192906) do
     t.string   "colour"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "timetable_id"
   end
 
   create_table "stop_time_exceptions_stop_times", id: false, force: true do |t|
@@ -55,6 +56,8 @@ ActiveRecord::Schema.define(version: 20140625192906) do
     t.integer  "route_stop_id"
     t.integer  "origin_stop_link_id"
     t.integer  "route_id"
+    t.boolean  "night"
+    t.boolean  "skip"
   end
 
   create_table "stops", force: true do |t|
