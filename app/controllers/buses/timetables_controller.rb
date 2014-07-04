@@ -83,6 +83,7 @@ class Buses::TimetablesController < ApplicationController
             }
           }
         },
+        :stop_time_exceptions => { :except => [:created_at, :updated_at] },
         :stops => { :except => [:created_at, :updated_at] }
       }))
       json_file.flush
@@ -105,6 +106,7 @@ class Buses::TimetablesController < ApplicationController
             }
           }
         },
+        :stop_time_exceptions => { :except => [:created_at, :updated_at] },
         :stops => { :except => [:created_at, :updated_at] }
       }))
       xml_file.flush
