@@ -86,6 +86,8 @@ DataGg::Application.routes.draw do
 
   get 'api/v1/education/', to: 'api/v1/education#index'
   get 'api/v1/education/post16results', to: 'api/v1/education#post16results'
+  get 'api/v1/education/gcse_overall', to: 'api/v1/education#gcse_overall'
+  get 'api/v1/education/gcse_school', to: 'api/v1/education#gcse_school'
 
   get 'api/v1/population/', to: 'api/v1/population#index'
   get 'api/v1/population/population', to: 'api/v1/population#population'
