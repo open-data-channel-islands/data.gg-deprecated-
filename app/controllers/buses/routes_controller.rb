@@ -64,9 +64,9 @@ class Buses::RoutesController < ApplicationController
       sl = StopTime.new
       sl.route_stop = route_stop
       if @new_stop_link_set.count > 0
-        sl.origin_stop_link = @new_stop_link_set[0]
+        sl.origin_stop_time = @new_stop_link_set[0]
       else
-        sl.origin_stop_link = sl
+        sl.origin_stop_time = sl
       end
       
       @new_stop_link_set << sl
@@ -76,21 +76,21 @@ class Buses::RoutesController < ApplicationController
     @ordered_route_stops = @route.route_stops.order(:idx).all
 
     tmp_stop_links = StopTime.joins("INNER JOIN route_stops rs ON rs.id = stop_times.route_stop_id")
-                          .joins("INNER JOIN stop_times origin ON origin.origin_stop_link_id = stop_times.origin_stop_link_id")
+                          .joins("INNER JOIN stop_times origin ON origin.origin_stop_time_id = stop_times.origin_stop_time_id")
                           .where("rs.route_id = ?", @route.id)
-                          .select("DISTINCT ON (stop_times.origin_stop_link_id, origin.time, origin.id, rs.idx) stop_times.origin_stop_link_id, rs.route_id, origin.time, stop_times.id, rs.idx, stop_times.time")
-                          .order("stop_times.origin_stop_link_id, origin.time ASC, origin.id ASC, rs.idx ASC")
+                          .select("DISTINCT ON (stop_times.origin_stop_time_id, origin.time, origin.id, rs.idx) stop_times.origin_stop_time_id, rs.route_id, origin.time, stop_times.id, rs.idx, stop_times.time")
+                          .order("stop_times.origin_stop_time_id, origin.time ASC, origin.id ASC, rs.idx ASC")
     overall_set = Array.new # Contains ALL the stop links
     curr_set = Array.new # Contains CURRENT set
     curr_origin = nil
     tmp_stop_links.each do |stop_link|
       
-      if curr_origin != nil && curr_origin != stop_link.origin_stop_link.id
+      if curr_origin != nil && curr_origin != stop_link.origin_stop_time.id
         overall_set << curr_set
         curr_set = Array.new
       end
       
-      curr_origin = stop_link.origin_stop_link.id
+      curr_origin = stop_link.origin_stop_time.id
       curr_set << stop_link
     end
     

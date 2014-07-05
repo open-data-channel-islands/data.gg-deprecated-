@@ -11,7 +11,7 @@
 <h1 class="page-header">Stop Times for 'Route <%= @route.name %>'</h1>
 
 
-<%= form_tag(buses_timetable_route_stop_time_path(:timetable_start_date => @timetable.start_date, :route_id => @route.id, :id => @stop_times[0].origin_stop_link_id.to_s), method: :put, :class => "form-horizontal") do -%>
+<%= form_tag(buses_timetable_route_stop_time_path(:timetable_start_date => @timetable.start_date, :route_id => @route.id, :id => @stop_times[0].origin_stop_time_id.to_s), method: :put, :class => "form-horizontal") do -%>
   <% @stop_times.each_with_index do |stop_link, i| %>
     <%= fields_for "stop_links[#{i}]", stop_link do |sl| %>
     
@@ -36,7 +36,7 @@
   
   <%= hidden_field_tag :timetable_start_date, @timetable.start_date %>
   <%= hidden_field_tag :route_id, @route.id %>
-  <%= hidden_field_tag :id, @stop_times[0].origin_stop_link_id %>
+  <%= hidden_field_tag :id, @stop_times[0].origin_stop_time_id %>
   
   <div class="form-group">
     <div class="col-sm-2"></div>

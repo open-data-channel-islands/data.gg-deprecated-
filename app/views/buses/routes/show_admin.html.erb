@@ -56,7 +56,7 @@
           <tr>
             <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
             <% @stop_links.each do |sl| %>
-              <td><%= link_to sl[i].time_string, buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].origin_stop_link_id, id: sl[i].id, route_id: @route.id) %></td>
+              <td><%= link_to sl[i].time_string, buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].origin_stop_time_id, id: sl[i].id, route_id: @route.id) %></td>
             <% end %>
             <td style="padding:5px; white-space:nowrap">
               <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
@@ -80,10 +80,10 @@
             <td></td>
             <% @stop_links.each do |sl| %>
               <td>
-                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Edit" do %>
+                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_time_id), :title => "Edit" do %>
                   <span class="glyphicon glyphicon-edit"></span>
                 <% end %>
-                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_link_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
+                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_time_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
                   <span class="glyphicon glyphicon-trash"></span>
                 <% end %>
               </td>
@@ -106,6 +106,7 @@
           <tr>
             <th></th>
             <th></th>
+            <th>Index</th>
             <th>Stop</th>
             <th>Display?</th>
             <th>Latitude</th>
@@ -116,8 +117,9 @@
         <tbody>
           <% @route.route_stops.each do |route_stop| %>
           <tr>
-            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
-            <td style="width:30px"><a href="#"><span class="glyphicon glyphicon-arrow-down"></span></a></td>
+            <td style="width:30px"><%= link_to '<span class="glyphicon glyphicon-arrow-up"></span>'.html_safe, buses_timetable_route_route_stop_move_up_path(route_stop_id: route_stop.id, route_id: route_stop.route.id), method: :post, data: { confirm: "Are you sure?" } %></td>
+            <td style="width:30px"><%= link_to '<span class="glyphicon glyphicon-arrow-down"></span>'.html_safe, buses_timetable_route_route_stop_move_down_path(route_stop_id: route_stop.id, route_id: route_stop.route.id), method: :post, data: { confirm: "Are you sure?" } %></a></td>
+            <td><%= route_stop.idx %></td>
             <td><%= route_stop.stop.name %></td>
             <td><%= route_stop.display ? "Yes" : "No" %></td>
             <td><%= route_stop.stop.latitude %></td>
@@ -128,16 +130,16 @@
           <% end %>
           <% if @route.route_stops.count == 0 %>
             <tr>
-              <td colspan="7"><h3 class="text-center">No stops have been added yet!</h3></td>
+              <td colspan="8"><h3 class="text-center">No stops have been added yet!</h3></td>
             </tr>
           <% end %>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="2"></td>
+            <td colspan="3"></td>
             <td><%= f.select(:stop_id, options_for_select(@timetable.stops.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
             <td><%= f.check_box :display, :checked => 'checked' %></td>
-            <td colspan="3">
+            <td colspan="4">
               <%= f.hidden_field :route_id %>
               <%= f.submit "Add Stop", class: "btn btn-primary btn-sm" %></td>
           </tr>

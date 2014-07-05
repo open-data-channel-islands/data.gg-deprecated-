@@ -61,6 +61,9 @@ DataGg::Application.routes.draw do
           collection do
             post 'create_stop_links'
           end
+          
+          post 'move_up'
+          post 'move_down'
         end
       end
     end

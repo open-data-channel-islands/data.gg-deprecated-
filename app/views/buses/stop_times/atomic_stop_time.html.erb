@@ -8,42 +8,10 @@
   </ol>
 <% end %>
 
-<h1 class="page-header">Stop Time</h1>
+<h2 class="page-header"><%= @stop_time.time_string %> - <%= @stop_time.route_stop.stop.name %></h2>
 
 <p>To edit the time, please edit the entire set from the main timetable screen at the bottom instead</p>
-<h2 align="center"><%= @stop_time.time_string %></h2>
-<h2 align="center"><%= @stop_time.route_stop.stop.name %></h2>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Name</th>
-      <% if user_signed_in? %>
-        <th></th>
-      <% end %>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @stop_time.stop_time_exceptions.each do |stop_time_exception| %>
-      <tr>
-        <td style="width:40px" title="#<%= stop_time_exception.colour %>">
-          <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_time_exception.colour %>"></div>
-        </td>
-        <td><%= link_to stop_time_exception.name, buses_stop_time_exception_path(stop_time_exception) %></td>
-        <% if user_signed_in? %>
-        <td align="right">
-          <%= button_to 'Remove', buses_timetable_route_stop_time_remove_exception_url(stop_time_id: @stop_time.id, stop_time_exception_id:stop_time_exception.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-        </td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-
-<%= form_for @stop_time_exception, url: buses_timetable_route_stop_time_add_exception_path  do |f| %>
   <% if @stop_time_exception.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@stop_time_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
@@ -55,13 +23,46 @@
       </ul>
     </div>
   <% end %>
-<p>Add an exception</p>
-  <%= f.hidden_field :stop_time_id, value: @stop_time.id%>
-  <%= f.collection_select :id, @exceptions, :id, :name %>
 
-  <div class="actions">
-    <%= link_to 'Cancel', buses_stop_time_exceptions_path %>
-    
-    <%= f.submit "Submit", { :class => "btn btn-primary" } %>
-  </div>
+<%= form_for @stop_time_exception, url: buses_timetable_route_stop_time_add_exception_path  do |f| %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <% if user_signed_in? %>
+          <th></th>
+        <% end %>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% if @stop_time.stop_time_exceptions.count == 0 %>
+        <tr>
+          <td colspan="4" align="center"><h3>No exceptions for this stop time</h3></td>
+        </tr>
+      <% else %>
+        <% @stop_time.stop_time_exceptions.each do |stop_time_exception| %>
+          <tr>
+            <td style="width:40px" title="#<%= stop_time_exception.colour %>">
+              <div style="width:20px;height:20px;border:1px solid #000;background-color:#<%= stop_time_exception.colour %>"></div>
+            </td>
+            <td><%= link_to stop_time_exception.name, buses_timetable_stop_time_exception_path(id: stop_time_exception.id) %></td>
+            <% if user_signed_in? %>
+            <td align="right">
+              <%= button_to 'Remove', buses_timetable_route_stop_time_remove_exception_url(stop_time_id: @stop_time.id, stop_time_exception_id: stop_time_exception.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+            </td>
+            <% end %>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><%= f.hidden_field :stop_time_id, value: @stop_time.id%></td>
+        <td><div class="form-group"><%= f.collection_select :id, @exceptions, :id, :name, {}, { :class => "form-control" } %></div></td>
+        <td width="30"><%= f.submit "Add Exception", { :class => "btn btn-primary" } %></td>
+      </tr>
+    </tfoot>
+  </table>
 <% end %>

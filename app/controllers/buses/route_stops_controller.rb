@@ -2,6 +2,46 @@ class Buses::RouteStopsController < ApplicationController
   
   before_action :authenticate_user!
   
+  def move_up
+    route_stop = RouteStop.find(params[:route_stop_id])
+    previous_rs = RouteStop.where(idx: (route_stop.idx - 1), route_id: route_stop.route_id).take
+    
+    if previous_rs != nil && previous_rs.idx >= 0
+      route_stop.idx = route_stop.idx - 1
+      previous_rs.idx = previous_rs.idx + 1
+    
+      if route_stop.save && previous_rs.save
+        flash[:success] = "Successfully moved route stop"
+      else
+        flash[:error] = "Couldn't move route stop"
+      end
+    else
+      flash[:error] = "Can't move the first route stop to be any earlier"
+    end
+    
+    redirect_to buses_timetable_route_path(route_stop.route.timetable.start_date, route_stop.route.id) + '#stops'
+  end
+  
+  def move_down
+    route_stop = RouteStop.find(params[:route_stop_id])
+    next_rs = RouteStop.where(idx: (route_stop.idx + 1), route_id: route_stop.route_id).take
+    
+    if next_rs != nil
+      route_stop.idx = route_stop.idx + 1
+      next_rs.idx = next_rs.idx - 1
+    
+      if route_stop.save && next_rs.save
+        flash[:success] = "Successfully moved route stop"
+      else
+        flash[:error] = "Couldn't move route stop"
+      end
+    else
+      flash[:error] = "Can't move the first route stop to be any earlier"
+    end
+    
+    redirect_to buses_timetable_route_path(route_stop.route.timetable.start_date, route_stop.route.id) + '#stops'
+  end
+  
   def create
     route_stop = RouteStop.new(route_stop_params)
 
@@ -26,7 +66,7 @@ class Buses::RouteStopsController < ApplicationController
 
         stop_times.each do |sl|
           new_sl = StopTime.new
-          new_sl.origin_stop_link = sl.origin_stop_link
+          new_sl.origin_stop_time = sl.origin_stop_time
           new_sl.time = sl.time + 1
           new_sl.route_stop = route_stop
           new_sl.route = route_stop.route
@@ -61,9 +101,9 @@ class Buses::RouteStopsController < ApplicationController
       
       # If it's the first link, then itself is the origin
       if sl_arr.count > 0
-        sl.origin_stop_link = sl_arr[0]
+        sl.origin_stop_time = sl_arr[0]
       else
-        sl.origin_stop_link = sl
+        sl.origin_stop_time = sl
       end
       
       sl_arr << sl
@@ -83,7 +123,7 @@ class Buses::RouteStopsController < ApplicationController
   def destroy
     route_stop_pending_destroy = RouteStop.find(params[:id])
     
-    if !route_stop_pending_destroy
+    if route_stop_pending_destroy == nil
       flash[:error] = "Couldn't find a stop for '#{params[:id]}"
       redirect_to
     end
@@ -97,10 +137,10 @@ class Buses::RouteStopsController < ApplicationController
       stop_links_to_remove.each do |stop_link_to_remove|
         # If the link we're deleting is the same as its origin
         # then update all of the others to a new origin
-        if stop_link_to_remove.origin_stop_link = stop_link_to_remove
-          new_origin_stop_link = StopTime.where("origin_stop_link_id = #{stop_link_to_remove.id} and time != #{stop_link_to_remove.time}").order("time ASC").take
+        if stop_link_to_remove.origin_stop_time = stop_link_to_remove
+          new_origin_stop_link = StopTime.where("origin_stop_time_id = #{stop_link_to_remove.id} and time != #{stop_link_to_remove.time}").order("time ASC").take
           if new_origin_stop_link
-            StopTime.where("origin_stop_link_id = #{stop_link_to_remove.id}").update_all("origin_stop_link_id = #{new_origin_stop_link.id}")
+            StopTime.where("origin_stop_time_id = #{stop_link_to_remove.id}").update_all("origin_stop_time_id = #{new_origin_stop_link.id}")
           end
         end
       end

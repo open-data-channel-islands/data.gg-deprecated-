@@ -1,14 +1,14 @@
 class Buses::StopTimesController < ApplicationController
 
   def destroy_stop_link_chain
-    stop_links = StopTime.where('origin_stop_link_id = ?', params[:origin_stop_link_id])
+    stop_links = StopTime.where('origin_stop_time_id = ?', params[:origin_stop_time_id])
     if stop_links.count == 0
       flash[:error] = "No stop links in the specified chain"
       redirect_to 'index'
     end
     
-    if StopTime.where('origin_stop_link_id = ?', params[:origin_stop_link_id]).destroy_all
-      flash[:success] = "Successfully deleted all stop links with origin of '#{param[:origin_stop_link_id]}"
+    if StopTime.where('origin_stop_time_id = ?', params[:origin_stop_time_id]).destroy_all
+      flash[:success] = "Successfully deleted all stop links with origin of '#{param[:origin_stop_time_id]}"
     else
       flash[:error] = "Couldn't delete stop links"
     end
@@ -16,10 +16,10 @@ class Buses::StopTimesController < ApplicationController
   end
   
   def edit
-    # Fake it. In this case 'id' is equal to 'origin_stop_link_id'
-    @stop_times = StopTime.where('origin_stop_link_id = ?', params[:id]).order_by(:time)
+    # Fake it. In this case 'id' is equal to 'origin_stop_time_id'
+    @stop_times = StopTime.where('origin_stop_time_id = ?', params[:id]).order_by(:time)
     if @stop_times = nil || @stop_times.count == 0
-      flash[:error] = "No stop links with the origin id of '#{params[:origin_stop_link_id]}' found"
+      flash[:error] = "No stop links with the origin id of '#{params[:origin_stop_time_id]}' found"
       redirect_to '/'
     end
     
@@ -31,7 +31,7 @@ class Buses::StopTimesController < ApplicationController
   
   def show
     
-    @stop_times = StopTime.where('origin_stop_link_id = ?', params[:id]).order(:time)
+    @stop_times = StopTime.where('origin_stop_time_id = ?', params[:id]).order(:time)
     
     if @stop_times.count == 0
       flash[:error] = "Error"
