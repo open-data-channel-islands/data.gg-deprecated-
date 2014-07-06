@@ -1,0 +1,28 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Education", api_v1_education_path %></li>
+    <li class="active">GCSEs by School</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>School</th>
+      <th>Result</th>
+      <th>Percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gcse_school.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['School'] %></td>
+    <td><%= f['Result'] %></td>
+    <td><%= f['Percent'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

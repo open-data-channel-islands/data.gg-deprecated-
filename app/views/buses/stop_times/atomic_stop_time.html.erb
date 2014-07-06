@@ -24,7 +24,6 @@
     </div>
   <% end %>
 
-<%= form_for @stop_time_exception, url: buses_timetable_route_stop_time_add_exception_path  do |f| %>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -59,10 +58,14 @@
     </tbody>
     <tfoot>
       <tr>
-        <td><%= f.hidden_field :stop_time_id, value: @stop_time.id%></td>
-        <td><div class="form-group"><%= f.collection_select :id, @exceptions, :id, :name, {}, { :class => "form-control" } %></div></td>
-        <td width="30"><%= f.submit "Add Exception", { :class => "btn btn-primary" } %></td>
+        <td colspan="3">
+          <%= form_for @stop_time_exception, url: buses_timetable_route_stop_time_add_exception_path  do |f| %>
+              <%= f.hidden_field :stop_time_id, value: @stop_time.id%></td>
+              <div class="form-group"><%= f.collection_select :id, @exceptions, :id, :name, {}, { :class => "form-control" } %></div>
+              <%= f.submit "Add Exception", { :class => "btn btn-primary" } %>
+          <% end %>
+        </td>
       </tr>
     </tfoot>
   </table>
-<% end %>
+
