@@ -50,13 +50,18 @@ class Buses::StopTimesController < ApplicationController
   
   def atomic_stop_time
     @stop_time = StopTime.find(params[:id])
-    @stop_time_exception = StopTimeException.new
-    @exceptions = StopTimeException.all
+    
+    if @stop_time.stop_time_exceptions.count > 0
+      @exceptions = StopTimeException.find(:all, :conditions => ['id not in (?)', @stop_time.stop_time_exceptions.map(&:id)])
+    else
+      @exceptions = StopTimeException.all
+    end
+    
   end
   
   def add_exception
     
-    @stop_time = StopTime.find(params[:stop_time_id])
+    @stop_time = StopTime.find(params[:id])
     @exception = StopTimeException.find(params[:stop_time_exception][:id])
     @stop_time.stop_time_exceptions << @exception
     

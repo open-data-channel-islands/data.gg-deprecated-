@@ -12,17 +12,7 @@
 
 <p>To edit the time, please edit the entire set from the main timetable screen at the bottom instead</p>
 
-  <% if @stop_time_exception.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@stop_time_exception.errors.count, "error") %> prohibited this stop_link_exception from being saved:</h2>
-
-      <ul>
-      <% @stop_time_exception.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  
 
   <table class="table table-striped">
     <thead>
@@ -56,16 +46,10 @@
         <% end %>
       <% end %>
     </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="3">
-          <%= form_for @stop_time_exception, url: buses_timetable_route_stop_time_add_exception_path  do |f| %>
-              <%= f.hidden_field :stop_time_id, value: @stop_time.id%></td>
-              <div class="form-group"><%= f.collection_select :id, @exceptions, :id, :name, {}, { :class => "form-control" } %></div>
-              <%= f.submit "Add Exception", { :class => "btn btn-primary" } %>
-          <% end %>
-        </td>
-      </tr>
-    </tfoot>
   </table>
 
+  <%= form_tag buses_timetable_route_stop_time_add_exception_path do %>
+      <%= hidden_field :stop_time_id, value: @stop_time.id%></td>
+      <div class="form-group"><%= collection_select :stop_time_exception, :id, @exceptions, :id, :name, {}, { :class => "form-control" } %></div>
+      <%= submit_tag "Add Exception", { :class => "btn btn-primary" } %>
+  <% end %>
