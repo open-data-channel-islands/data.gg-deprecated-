@@ -1,7 +1,7 @@
 class Buses::StopTimesController < ApplicationController
 
   before_action :authenticate_user!, :except => [:show]
-  before_action :set_stop_time, :except => [:remove_exception ]
+  before_action :set_stop_time, :except => [:remove_exception, :update]
   
   def edit
   end
@@ -64,33 +64,22 @@ class Buses::StopTimesController < ApplicationController
     end
   end
   
+  # This always updates a collection
   def update
-    @stop_times = params[:stop_links]
+    @stop_times = params[:stop_times]
     
-    success = true
-    
-    @stop_times.each do |sl|
-      stop_time = StopTime.find(sl[1]["id"])
+    updated_all = true
+    @stop_times.each do |stop_time|
+      db_stop_time = StopTime.find(stop_time[1]["id"])
       
-      if stop_time == nil
-        success = false
-        flash[:error] = "Couldn't find stop time"
+      unless db_stop_time.nil?
+        db_stop_time.update_attributes stop_time[1]
       else
-        stop_time.time = sl[1]["time"].gsub(':', '')
-        stop_time.skip = sl[1]["skip"]
-        stop_time.night = sl[1]["night"]
-        if !stop_time.save
-          success = false
-          flash[:error] = "Couldn't save a stop time - #{stop_time.errors.full_messages}"
-        end
+        updated_all = false
       end
     end
     
-    if success
-      flash[:success] = "Successfully saved links!"
-    end
-    
-    redirect_to buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
+    redirect_to buses_timetable_route_path(params[:timetable_start_date], params[:route_id])  
   end
   
   
