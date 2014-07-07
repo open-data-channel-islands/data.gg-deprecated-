@@ -2,7 +2,7 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Buses", buses_path %></li>
-    <li><%= link_to @timetable.name + ' Timetable', buses_timetable_path(:start_date => @timetable.start_date) %></li>
+    <li><%= link_to @route.timetable.name + ' Timetable', buses_timetable_path(:start_date => @route.timetable.start_date) %></li>
     <li class="active">Route <%= @route.name%></li>
   </ol>
 <% end %>
@@ -25,8 +25,8 @@
 
 <h1 class="page-header">Route <%= @route.name %> Details <small><%= Date::DAYNAMES[@route.start_day] %> - <%= Date::DAYNAMES[@route.end_day] %></small></h1>
 
-<%= button_to 'Delete', buses_timetable_route_path(:timetable_start_date => @timetable.start_date, :id => @route.id), method: :delete, data: { confirm: 'Are you sure you wish to delete this route?' }, :class => "btn btn-danger btn-sm pull-right", :style => "margin-left:10px" %>
-<p class="pull-right"  style="margin:7px;"><%= link_to 'Edit', edit_buses_timetable_route_path(:timetable_start_daye => @timetable.start_date, :id => @route.id)%></p>
+<%= button_to 'Delete', buses_timetable_route_path(:timetable_start_date => @route.timetable.start_date, :id => @route.id), method: :delete, data: { confirm: 'Are you sure you wish to delete this route?' }, :class => "btn btn-danger btn-sm pull-right", :style => "margin-left:10px" %>
+<p class="pull-right"  style="margin:7px;"><%= link_to 'Edit', edit_buses_timetable_route_path(:timetable_start_daye => @route.timetable.start_date, :id => @route.id)%></p>
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
@@ -42,65 +42,53 @@
       <h3 class="text-center">No stops available! To get started, hit the 'Stops' tab above.</h3>
     <% else %>
       <h3>Route Times</h3>
-      <%= form_tag(@route.id.to_s + '/route_stops/create_stop_links') do -%>
       <div style="overflow-y:scroll">
       <table class="table table-striped">
         <thead>
           <tr>
             <th>Stops</th>
-            <th colspan="<%= @ordered_route_stops.count %>">Times</th>
+            <th colspan="<%= @route.route_stops[0].stop_times.count %>">Times</th>
           </tr>
         </thead>
         <tbody>
-          <% for i in 0...@ordered_route_stops.length %>
-          <tr>
-            <td><strong><%= @ordered_route_stops[i].stop.name %></strong></td>
-            <% @stop_links.each do |sl| %>
-              <td><%= link_to sl[i].time_string, buses_timetable_route_stop_time_atomic_stop_time_path(stop_time_id: sl[i].origin_stop_time_id, id: sl[i].id, route_id: @route.id) %></td>
+          <% @route.route_stops.each do |route_stop| %>
+            <tr>
+              <td><strong><%= route_stop.stop.name %></strong></td>
+              <% for stop_time in route_stop.stop_times %>
+                <td><%= stop_time.time %></td>
+              <% end %>
+            </tr>
             <% end %>
-            <td style="padding:5px; white-space:nowrap">
-              <%= fields_for "stop_links[#{i}]", @new_stop_link_set[i], :child_index => i do |sl| %>
-              
-                <div class="form-inline">
-                  <%= sl.text_field :time, { :class => "form-control input-sm", :maxlength => "6", :placeholder => "HH:mm" } %>
-                </div>
-                <%= sl.hidden_field :route_stop_id, :value => @new_stop_link_set[i].route_stop.id %>
-                <%= sl.hidden_field :route_id, :value => @route.id %>
-                <% end %>
-        
-                <%= hidden_field :timetable_start_date, :value => @timetable.start_date %>
-                <%= hidden_field :route_id, :value => @route.id %>
-            </td>
-          </tr>
-          <% end %>
         </tbody>
     
         <tfoot>
           <tr>
             <td></td>
-            <% @stop_links.each do |sl| %>
+            <% @route.route_stops.each do |route_stop| %>
+              <% route_stop.stop_times.each do |stop_time| %>
               <td>
-                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_time_id), :title => "Edit" do %>
+                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => route_stop.stop_times[0].origin_stop_time_id), :title => "Edit" do %>
                   <span class="glyphicon glyphicon-edit"></span>
                 <% end %>
-                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => sl[0].origin_stop_time_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
+                <%= link_to buses_timetable_route_stop_time_path(:route_id => @route.id, :id => route_stop.stop_times[0].origin_stop_time_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
                   <span class="glyphicon glyphicon-trash"></span>
                 <% end %>
               </td>
+              <% end %>
+              
+              <% break %>
             <% end %>
-            <td><%= submit_tag "Add Link", class: "btn btn-primary btn-sm" %></td>
           </tr>
         </tfoot>
       </table>
     </div>
       <% end %>
-    <% end %>
     
   </div>
   <div class="tab-pane" id="stops">
     <h3>Stops</h3>
     
-    <%= form_for [:buses, @timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
+    <%= form_for [:buses, @route.timetable, @route, @route_stop], :html => { :class => 'form-inline' } do |f| %>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -124,7 +112,7 @@
             <td><%= route_stop.display ? "Yes" : "No" %></td>
             <td><%= route_stop.stop.latitude %></td>
             <td><%= route_stop.stop.longitude %></td>
-            <td><%= link_to 'Destroy', buses_timetable_route_route_stop_path(:timetable_start_date => @timetable.start_date, :route_id => @route.id, :id => route_stop.id),
+            <td><%= link_to 'Destroy', buses_timetable_route_route_stop_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id, :id => route_stop.id),
                       method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
           <% end %>
@@ -137,7 +125,7 @@
         <tfoot>
           <tr>
             <td colspan="3"></td>
-            <td><%= f.select(:stop_id, options_for_select(@timetable.stops.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
+            <td><%= f.select(:stop_id, options_for_select(@route.timetable.stops.map { |stop| ["#{stop.name} (Lat: #{stop.latitude} Lng: #{stop.longitude})", stop.id] }), {}, { :class => "form-control input-sm"})%></td>
             <td><%= f.check_box :display, :checked => 'checked' %></td>
             <td colspan="4">
               <%= f.hidden_field :route_id %>

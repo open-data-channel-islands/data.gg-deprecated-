@@ -7,6 +7,8 @@ class StopTime < ActiveRecord::Base
   validates :time, presence: true
   validates :route_id, presence: true
   
+  default_scope :order => 'origin_stop_time_id ASC, time ASC'
+  
   def time_string
     time_s = time.to_s
     

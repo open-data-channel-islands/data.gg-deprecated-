@@ -3,4 +3,5 @@ class StopTimeException < ActiveRecord::Base
   belongs_to :timetable
   
   validates :name, presence: true
+  validates :timetable, presence: true
 end

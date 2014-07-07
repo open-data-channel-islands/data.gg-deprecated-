@@ -72,19 +72,19 @@ class Buses::TimetablesController < ApplicationController
         :except => [:created_at, :updated_at],
         :include => {
         :routes => {
-          :except => [:created_at, :updated_at],
+          :except => [:created_at, :updated_at, :timetable_id],
           :include => {
             :route_stops => { :except => [:created_at, :updated_at] },
             :stop_times => {
               :except => [:created_at, :updated_at],
               :include => { 
-                :stop_time_exceptions => { :except => [:created_at, :updated_at] }
+                :stop_time_exceptions => { :except => [:created_at, :updated_at, :name, :colour, :timetable_id] }
               } 
             }
           }
         },
-        :stop_time_exceptions => { :except => [:created_at, :updated_at] },
-        :stops => { :except => [:created_at, :updated_at] }
+        :stop_time_exceptions => { :except => [:created_at, :updated_at, :timetable_id] },
+        :stops => { :except => [:created_at, :updated_at, :timetable_id] }
       }))
       json_file.flush
       
@@ -95,19 +95,19 @@ class Buses::TimetablesController < ApplicationController
         :except => [:created_at, :updated_at],
         :include => {
         :routes => {
-          :except => [:created_at, :updated_at],
+          :except => [:created_at, :updated_at, :timetable_id],
           :include => {
             :route_stops => { :except => [:created_at, :updated_at] },
             :stop_times => {
               :except => [:created_at, :updated_at],
               :include => { 
-                :stop_time_exceptions => { :except => [:created_at, :updated_at] }
+                :stop_time_exceptions => { :except => [:created_at, :updated_at, :name, :colour, :timetable_id] }
               } 
             }
           }
         },
-        :stop_time_exceptions => { :except => [:created_at, :updated_at] },
-        :stops => { :except => [:created_at, :updated_at] }
+        :stop_time_exceptions => { :except => [:created_at, :updated_at, :timetable_id] },
+        :stops => { :except => [:created_at, :updated_at, :timetable_id] }
       }))
       xml_file.flush
       
