@@ -1,5 +1,13 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", buses_path %></li>
+    <li><%= link_to @timetable.name + ' Timetable', buses_timetable_path(:start_date => @timetable.start_date) %></li>
+    <li class="active">Stops</li>
+  </ol>
+<% end %>
 
-<h2>Stops</h2>
+<h2 class="page-header">Stops</h2>
 
 <table class="table table-striped">
   <thead>

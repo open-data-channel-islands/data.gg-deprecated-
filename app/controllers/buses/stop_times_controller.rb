@@ -1,66 +1,43 @@
 class Buses::StopTimesController < ApplicationController
 
-  def destroy_stop_link_chain
-    stop_links = StopTime.where('origin_stop_time_id = ?', params[:origin_stop_time_id])
-    if stop_links.count == 0
-      flash[:error] = "No stop links in the specified chain"
-      redirect_to 'index'
-    end
-    
-    if StopTime.where('origin_stop_time_id = ?', params[:origin_stop_time_id]).destroy_all
-      flash[:success] = "Successfully deleted all stop links with origin of '#{param[:origin_stop_time_id]}"
-    else
-      flash[:error] = "Couldn't delete stop links"
-    end
-    redirect_to '/'
-  end
+  before_action :authenticate_user!, :except => [:show]
+  before_action :set_stop_time, :except => [:remove_exception ]
   
   def edit
-    # Fake it. In this case 'id' is equal to 'origin_stop_time_id'
-    @stop_times = StopTime.where('origin_stop_time_id = ?', params[:id]).order_by(:time)
-    if @stop_times = nil || @stop_times.count == 0
-      flash[:error] = "No stop links with the origin id of '#{params[:origin_stop_time_id]}' found"
-      redirect_to '/'
-    end
-    
-    respond_to do |format|
-      format.html
-      format.xml
-    end
   end
   
   def show
-    
-    @stop_times = StopTime.where('origin_stop_time_id = ?', params[:id]).order(:time)
-    
-    if @stop_times.count == 0
-      flash[:error] = "Error"
-      redirect_to '/'
+    if user_signed_in?
+      if @stop_time.stop_time_exceptions.count > 0
+        @exceptions = StopTimeException.find(:all, :conditions => ['id not in (?)', @stop_time.stop_time_exceptions.map(&:id)])
+      else
+        @exceptions = StopTimeException.all
+      end
+      
+      template = 'show_admin'
+    else
+      template = 'show'
     end
-    
-    @route = @stop_times[0].route_stop.route
-    @timetable = @route.timetable
     
     respond_to do |format|
-      format.html
+      format.html { render action: template }
       format.xml
     end
-    
   end
   
-  def atomic_stop_time
-    @stop_time = StopTime.find(params[:id])
-    
-    if @stop_time.stop_time_exceptions.count > 0
-      @exceptions = StopTimeException.find(:all, :conditions => ['id not in (?)', @stop_time.stop_time_exceptions.map(&:id)])
+  def destroy
+    if @stop_time.origin_stop_time != @stop_time
+      # TODO: Redirect, we shouldn't be allowed to destroy individual ones, only origins. The deletion cascades.
     else
-      @exceptions = StopTimeException.all
+      @stop_time.destroy
+      respond_to do |format|
+        format.html { redirect_to buses_timetable_route_path(timetable_start_date: @stop_time.route.timetable.start_date, route_id: @stop_time.route.id) }
+        format.json { head :no_content }
+      end
     end
-    
   end
   
   def add_exception
-    
     @stop_time = StopTime.find(params[:id])
     @exception = StopTimeException.find(params[:stop_time_exception][:id])
     @stop_time.stop_time_exceptions << @exception
@@ -115,4 +92,17 @@ class Buses::StopTimesController < ApplicationController
     
     redirect_to buses_timetable_route_path(params[:timetable_start_date], params[:route_id])
   end
+  
+  
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_stop_time
+      @stop_time = StopTime.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def exception_params
+      params.require(:stop_time_exception).permit(:time, :skip, :night)
+    end
+  
 end

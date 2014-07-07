@@ -17,8 +17,7 @@ class Buses::RoutesController < ApplicationController
   
   def edit
     @timetable = Timetable.where(:start_date => params[:timetable_start_date]).first
-    
-    @route = Route.where(:id => params[:id]).first
+    @route = Route.find(params[:id])
     
     if @route == nil
       redirect_to buses_path
@@ -39,8 +38,9 @@ class Buses::RoutesController < ApplicationController
     
     redirect_to buses_timetable_route_path(@route.timetable.start_date, @route.id)
   end
+  
   def destroy
-    route = Route.find_by_id(params[:id])
+    route = Route.find(params[:id])
     
     if route.destroy
       flash[:success] = "Route #{route.name} destroyed"
