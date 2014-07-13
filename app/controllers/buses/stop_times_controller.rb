@@ -1,7 +1,7 @@
 class Buses::StopTimesController < ApplicationController
 
   before_action :authenticate_user!, :except => [:show]
-  before_action :set_stop_time, :except => [:remove_exception, :update]
+  before_action :set_stop_time, :except => [:remove_exception, :update, :new, :create]
   
   def edit
   end
@@ -61,6 +61,52 @@ class Buses::StopTimesController < ApplicationController
       else
         
       end
+    end
+  end
+  
+  def new
+    @route = Route.find(params[:route_id])
+    @route_stops = RouteStop.where(route_id: params[:route_id])
+    @stop_times = Array.new
+    @route_stops.each do |route_stop|
+      stop_time = StopTime.new
+      stop_time.route_stop = route_stop
+      stop_time.night = false
+      stop_time.skip = false
+      stop_time.route = @route
+      @stop_times << stop_time
+    end
+  end
+  
+  # POSTed from the timetables 'show'
+  def create
+    @route = Route.find(params[:route_id])
+    
+    stop_times = Array.new
+    params[:stop_times].each do |stop_time|
+      st = StopTime.new
+      st.time = stop_time[1]["time"].gsub(':', '')
+      st.night = stop_time[1]["night"]
+      st.skip = stop_time[1]["skip"]
+      st.route = @route
+      st.route_stop_id = stop_time[1]["route_stop_id"]
+      stop_times << st
+    end
+    
+    # Transaction-based DB. This works a treat. A much simpler
+    # approach to it.
+    StopTime.transaction do
+      stop_times.each do |st|
+        st.save!
+        # We don't have the origin ID until now
+        st.origin_stop_time_id = stop_times[0].id
+        # Need to save it again to save the origin
+        st.save!
+      end
+    end
+    
+    respond_to do |format|
+      format.html { redirect_to buses_timetable_route_path(@route.timetable.start_date, @route.id), success: 'Exception removed' }
     end
   end
   

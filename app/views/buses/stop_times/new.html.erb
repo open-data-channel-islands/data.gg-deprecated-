@@ -1,0 +1,50 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Buses", buses_path %></li>
+    <li><%= link_to @route.timetable.name + ' Timetable', buses_timetable_path(:start_date => @route.timetable.start_date) %></li>
+    <li><%= link_to 'Route ' + @route.name, buses_timetable_route_path(:timetable_start_date => @route.timetable.start_date, :id => @route.id)%></li>
+    <li class="active">Stop Links</li>
+  </ol>
+<% end %>
+
+<h2 class="page-header">Create Stop Times for 'Route <%= @route.name %>'</h2>
+
+<%= form_tag(buses_timetable_route_stop_times_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id)) do -%>
+  <% @stop_times.each_with_index do |stop_time, i| %>
+    <%= fields_for "stop_times[#{i}]", stop_time do |sl| %>
+    
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= sl.label stop_time.route_stop.stop.name, :class => "control-label" %>
+        </div>
+        
+        <div class="col-md-8">
+          <%= sl.text_field :time, :class => "form-control" %>
+          <%= sl.hidden_field :route_stop_id, :value => stop_time.route_stop_id %>
+        </div>
+        <div class="col-md-1">
+          <%= sl.label :skip %>
+          <%= sl.check_box :skip %>
+        </div>
+        <div class="col-md-1">
+          <%= sl.label :night %>
+          <%= sl.check_box :night %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+  
+  <%= hidden_field_tag :timetable_start_date, @route.timetable.start_date %>
+  <%= hidden_field_tag :route_id, @route.id %>
+  
+  <div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+      <%= link_to 'Cancel', buses_timetable_route_path(:timetable_start_date => @route.timetable.start_date, :id => @route.id) %>
+      <%= submit_tag "Submit", :class => "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
