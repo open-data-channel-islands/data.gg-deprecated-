@@ -51,8 +51,10 @@ DataGg::Application.routes.draw do
 
       resources :routes do
         # Make believe. Always work from the origin point.
-        resources :stop_times do
-          post 'atomic_stop_time/:id' => 'stop_times#add_exception', as: :add_exception
+        resources :stop_times, param: :id do
+          get 'edit_individual' => 'stop_times#edit_individual', as: :edit_individual
+          
+          post 'atomic_stop_time' => 'stop_times#add_exception', as: :add_exception
           delete 'remove_exception' => 'stop_times#remove_exception', as: :remove_exception
         end
 

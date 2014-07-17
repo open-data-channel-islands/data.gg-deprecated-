@@ -57,7 +57,7 @@
             <tr>
               <td><strong><%= route_stop.stop.name %></strong></td>
               <% for stop_time in route_stop.stop_times %>
-                <td><%= stop_time.time_string %></td>
+                <td><%= link_to stop_time.time_string, buses_timetable_route_stop_time_edit_individual_path(timetable_start_date: @route.timetable.start_date, route_id: @route.id, stop_time_id: stop_time.id) %></td>
               <% end %>
             </tr>
             <% end %>
@@ -69,10 +69,10 @@
             <% @route.route_stops.each do |route_stop| %>
               <% route_stop.stop_times.each do |stop_time| %>
               <td>
-                <%= link_to edit_buses_timetable_route_stop_time_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id, :id => stop_time.origin_stop_time_id), :title => "Edit" do %>
+                <%= link_to edit_buses_timetable_route_stop_time_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id, :stop_time_id => stop_time.origin_stop_time_id), :title => "Edit" do %>
                   <span class="glyphicon glyphicon-edit"></span>
                 <% end %>
-                <%= link_to buses_timetable_route_stop_time_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id, :id => stop_time.origin_stop_time_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
+                <%= link_to buses_timetable_route_stop_time_path(:timetable_start_date => @route.timetable.start_date, :route_id => @route.id, :stop_time_id => stop_time.origin_stop_time_id), :title => "Delete",:class => "text-danger", :method => :delete, :confirm => "Are you sure you wish to delete this chain of stop times?" do %>
                   <span class="glyphicon glyphicon-trash"></span>
                 <% end %>
               </td>
