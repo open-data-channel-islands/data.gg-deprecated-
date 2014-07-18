@@ -11,7 +11,7 @@
 <h2 class="page-header">Stop Times for 'Route <%= @stop_time.route.name %>'</h2>
 
 <%= form_tag(buses_timetable_route_stop_time_path(:timetable_start_date => @stop_time.route.timetable.start_date, :route_id => @stop_time.route.id, :id => @stop_time.id), method: :put, :class => "form-horizontal") do -%>
-  <% @stop_time.stop_times.each_with_index do |stop_time, i| %>
+  <% @stop_time.stop_times.sort_by{|e| e.route_stop.idx }.each_with_index do |stop_time, i| %>
     <%= fields_for "stop_times[#{i}]", stop_time do |sl| %>
     
       <div class="form-group">
