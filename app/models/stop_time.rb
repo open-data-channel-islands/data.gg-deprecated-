@@ -7,7 +7,7 @@ class StopTime < ActiveRecord::Base
   validates :time, presence: true
   validates :route_id, presence: true
   
-  default_scope :order => 'origin_stop_time_id ASC, time ASC'
+  default_scope joins(:route_stop).order('idx ASC') # always order by the indexing of the route_stop entries
   
   def time_string
     time_s = time.to_s
