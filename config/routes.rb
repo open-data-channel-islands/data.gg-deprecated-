@@ -81,6 +81,8 @@ DataGg::Application.routes.draw do
         get 'timetables/current_version' => 'timetables#current_version'
       end
 
+      get 'housing/prices' => 'housing#prices'
+
     end
   end
 
