@@ -29,6 +29,11 @@ body {
   margin: 0 auto -60px;
 }
 
+.jumbotron {
+  padding-bottom:0;
+  margin-bottom:0;
+}
+
 /* Set the fixed height of the footer here */
 #push,
 #footer {
@@ -67,5 +72,26 @@ body {
 
 body {
   font-family:'Roboto', sans-serif;
+}
+
+
+.heading-strikethrough {
+  text-align:center;
+  border-bottom:1px solid #d5d5d5;
+  margin-bottom:20px;
+  margin-top:0;
+  
+}
+
+.heading-strikethrough h2 {
+  display:inline-block;
+  color:#CCC;
+  font-weight:100;
+  font-size:20px;
+  position:relative;
+  top:20px;
+  margin-top:0;
+  background:#fff;
+  padding:0 12px;
 }
 

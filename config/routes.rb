@@ -69,22 +69,61 @@ DataGg::Application.routes.draw do
       end
     end
   end
+  
 
-  # TODO: These are all wrong; they should not be resources
+  # House graphs
+  get 'housing/' => 'housing#index', as: 'housing_index'
+  #get 'housing/prices', to: 'housing#prices', as: 'house_prices'
+
+  # Police graphs
+  get 'police/' => 'police#index', as: 'police_index'
+
+  # Population graphs
+  get 'population/' => 'population#index', as: 'population_index'
+
+  # Education
+  get 'education/' => 'education#index', as: 'education_index'
+  
+  #Earnings
+  get 'earnings/' => 'earnings#index', as: 'earnings_index'
+
+
+
+  namespace :developers do
+  
+  
+  
+  end
+
+
+
+  # API calls
+
   namespace :api do
     namespace "v10", path: "1.0", module: "v1_0" do
 
-    #scope "1.0", module: "1_0" do
-      # Buses API calls
+      #Buses
       namespace :buses do
         get 'timetables/list' => 'timetables#list'
         get 'timetables/current_version' => 'timetables#current_version'
       end
-
+      
+      #Police
+      get 'police/crimes' => 'police#crimes'
+      get 'police/traffic' => 'police#traffic'
+      get 'police/traffic_collisions' => 'police#traffic_collisions'
+      get 'police/traffic_injuries' => 'police#traffic_injuries'
+      get 'police/traffic_classifications' => 'police#traffic_classifications'
+      
+      #Housing
       get 'housing/prices' => 'housing#prices'
 
     end
   end
+  
+  
+  
+  
 
   get 'api/v1/flights/', to: 'api/v1/flights#index'
   get 'api/v1/flights/arrivals', to: 'api/v1/flights#arrivals'

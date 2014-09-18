@@ -38,7 +38,7 @@ class Buses::StopTimesController < ApplicationController
   end
   
   def add_exception
-    @stop_time = StopTime.find(params[:stop_time_id])
+    @stop_time = StopTime.find(params[:id])
     @exception = StopTimeException.find(params[:stop_time_exception][:id])
     @stop_time.stop_time_exceptions << @exception
     
@@ -110,22 +110,18 @@ class Buses::StopTimesController < ApplicationController
     end
   end
   
-  def edit_individual
-    @exceptions = StopTimeException.all
-  end
-  
   # This always updates a collection
   def update
     @stop_times = params[:stop_times]
     
-    # TODO: Use a transaction for this, too
-    StopTime.transaction do
-      @stop_times.each do |stop_time|
-        db_stop_time = StopTime.find(stop_time[1]["id"])
+    updated_all = true
+    @stop_times.each do |stop_time|
+      db_stop_time = StopTime.find(stop_time[1]["id"])
       
-        unless db_stop_time.nil?
-          db_stop_time.update_attributes stop_time[1]
-        end
+      unless db_stop_time.nil?
+        db_stop_time.update_attributes stop_time[1]
+      else
+        updated_all = false
       end
     end
     
@@ -136,7 +132,7 @@ class Buses::StopTimesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_stop_time
-      @stop_time = StopTime.find(params[:stop_time_id])
+      @stop_time = StopTime.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

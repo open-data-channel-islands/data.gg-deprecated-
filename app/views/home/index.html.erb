@@ -1,12 +1,50 @@
-<div class="jumbotron">
-  <div class="container">
-    <h2><strong>One API, All The Data.</strong></h2>
-    <h3>Get the data you need for your apps and websites, any place, any time.</h3>
-    <p>data.gg is open source, get involved <%= link_to 'here!', 'https://bitbucket.org/reformsoft/data.gg' %></p>
+<div class="jumbotron" style="background-color:#FAFAFA; margin-bottom:0; border-bottom:2px solid #AAA; background-image: url('<%= asset_path('graph-bg.png') %>'); background-repeat:repeat-x; background-position: center 0px; background-size:800px">
+  <div class="container" style="color:#333">
+    <h2 style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;"><strong>One Source, All The Data.</strong></h2>
+    <h3 style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;">Get the latest Bailiwick of Guernsey data for your apps and websites, any place, any time.</h3>
+    <p  style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;">data.gg is open source, get involved <%= link_to 'here!', 'https://bitbucket.org/reformsoft/data.gg' %></p>
+  </div>
+</div>
+
+<div class="container" id="front-page-graphs-list">
+  <div class="heading-strikethrough">
+    <h2>Guernsey Data, Visualised</h2>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3">
+      <h3><%= link_to 'Police', police_index_path %></h3>
+      
+    </div>
+    
+    <div class="col-md-3">
+      <h3><%= link_to 'Population', population_index_path %></h3>
+      
+    </div>
+    
+    <div class="col-md-3">
+      <h3><%= link_to 'Earnings', earnings_index_path %></h3>
+      
+    </div>
+    
+    <div class="col-md-3">
+      <h3><%= link_to 'Education', education_index_path %></h3>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <h3><%= link_to 'House Prices', housing_index_path %></h3>
+      
+    </div>
   </div>
 </div>
 
 <div class="container">
+  <div class="heading-strikethrough">
+    <h2>Succulent API Calls - Developer Heaven</h2>
+  </div>
+  
   <div class="row">
     <div class="col-md-3">
       <h2><%= link_to 'Flights', api_v1_flights_path %></h2>
@@ -39,5 +77,7 @@
       <p>Guernsey education data from annual reports</p>
     </div>
     <div class="col-md-3">
+      <h2><%= link_to 'House Prices', housing_index_path %></h2>
+      <p>Detailed quarterly house prices since 1981 to today</p>
     </div>
   </div>
