@@ -12,12 +12,73 @@
  *= require_tree .
  */
 
-
 /* Sticky footer */
 html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
+}
+
+@font-face {  
+    font-family: 'catfont';  
+    src:url('/assets/catfont.eot');  
+    src:url('/assets/catfont.eot?#iefix') format('embedded-opentype'),  
+        url('/assets/catfont.svg#catfont') format('svg'),  
+        url('/assets/catfont.woff') format('woff'),  
+        url('/assets/catfont.ttf') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+.category-image:before {
+  font-family: 'catfont'; /* Reference your custom font */  
+  speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */  
+  -webkit-font-smoothing: antialiased; /* Force antialiasing */  
+  font-style: normal;  
+  font-weight: normal;
+  font-size:25px;
+  display:inline;
+  float:left;
+}
+
+.category-housing .category-image:before { content: "\e601"; }
+.category-housing:hover .category-image:before { content: "\e600";}
+.category-buses .category-image:before { content: "\e603"; }
+.category-buses:hover .category-image:before { content: "\e602"; }
+.category-finance .category-image:before { content: "\e605"; font-size:25px; }
+.category-finance:hover .category-image:before { content: "\e604"; }
+.category-police .category-image:before { content: "\e607"; }
+.category-police:hover .category-image:before { content: "\e606"; }
+.category-transport .category-image:before { content: "\e609"; }
+.category-transport:hover .category-image:before { content: "\e608"; }
+.category-population .category-image:before { content: "\e60b"; font-size:22px; }
+.category-population:hover .category-image:before { content: "\e60a"; }
+.category-education .category-image:before { content: "\e60d"; font-size:25px; }
+.category-education:hover .category-image:before { content: "\e60c"; }
+
+a.category:hover {
+  background-color:#428bca;
+  color:#FFF;
+  text-decoration:none;
+}
+
+.category {
+  padding:10px;
+  border-radius:3px;
+  border:1px solid #428bca;
+  display:block;
+}
+
+.category-detail {
+  margin:0;
+  margin-left:40px;
+}
+
+.category-detail p { margin:0; }
+
+.category-detail h3 {
+  margin-top:0px;
+  margin-bottom:5px;
 }
 
 /* Wrapper for page content to push down footer */
@@ -78,7 +139,7 @@ body {
 .heading-strikethrough {
   text-align:center;
   border-bottom:1px solid #d5d5d5;
-  margin-bottom:20px;
+  margin-bottom:30px;
   margin-top:0;
   
 }

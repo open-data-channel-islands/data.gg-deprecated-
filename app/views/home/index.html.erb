@@ -11,31 +11,46 @@
     <h2>Guernsey Data, Visualised</h2>
   </div>
   
+  
   <div class="row">
-    <div class="col-md-3">
-      <h3><%= link_to 'Police', police_index_path %></h3>
-      
+    <div class="col-sm-6 col-md-3">
+      <a href="<%= housing_index_path %>" class="category category-housing">
+        <div class="category-image"></div>
+        <div class="category-detail">
+          <h3>House Prices</h3>
+          <p>Costs of housing since the 1970s</p>
+        </div>
+      </a>
     </div>
     
-    <div class="col-md-3">
-      <h3><%= link_to 'Population', population_index_path %></h3>
-      
+    <div class="col-sm-6 col-md-3">
+      <a href="<%= population_index_path %>" class="category category-population">
+        <div class="category-image"></div>
+        <div class="category-detail">
+          <h3>Population</h3>
+          <p>Population by age ranges for the last 8 years</p>
+        </div>
+      </a>
     </div>
     
-    <div class="col-md-3">
-      <h3><%= link_to 'Earnings', earnings_index_path %></h3>
-      
+    <div class="col-sm-6 col-md-3">
+      <a href="<%= earnings_index_path %>" class="category category-finance">
+        <div class="category-image"></div>
+        <div class="category-detail">
+          <h3>Earnings</h3>
+          <p>Earnings by age group and sex for the last 9 years</p>
+        </div>
+      </a>
     </div>
     
-    <div class="col-md-3">
-      <h3><%= link_to 'Education', education_index_path %></h3>
-      
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <h3><%= link_to 'House Prices', housing_index_path %></h3>
-      
+    <div class="col-sm-6 col-md-3">
+      <a href="<%= education_index_path %>" class="category category-education">
+        <div class="category-image"></div>
+        <div class="category-detail">
+          <h3>Education</h3>
+          <p>Post-16 and GCSE results by school since 2009/10</p>
+        </div>
+      </a>
     </div>
   </div>
 </div>
