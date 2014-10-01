@@ -114,6 +114,8 @@ a.category:hover {
 div.jumbotron {
   padding-bottom:0;
   margin-bottom:0;
+  background-color:#3299BB;
+  border-bottom:1px solid #2A7F9C;
 }
 
 /* Set the fixed height of the footer here */
@@ -164,5 +166,16 @@ h2.faint-heading {
   font-weight:100;
   font-size:1.4em;
   padding:0 12px;
+}
+
+ol.breadcrumb {
+  margin:0;
+  padding:8px 0;
+  background:transparent;
+}
+#breadcrumb {
+  background-color:#E9E9E9;
+  padding:0px;
+  margin-bottom:10px;
 }
 

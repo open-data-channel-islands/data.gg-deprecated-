@@ -65,9 +65,12 @@
         <%= yield %>
       </div>
     <% else %>
+      <div id="breadcrumb">
+        <div class="container">
+          <%= yield :breadcrumb %>
+        </div>
+      </div>
       <div class="container">
-      
-        <%= yield :breadcrumb %>
       
         <% flash.each do |key, value| %>
           <%= content_tag :div, value, class: "alert alert-#{key}" %>

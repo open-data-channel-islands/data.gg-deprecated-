@@ -1,2 +1,24 @@
-<h1>Earnings#index</h1>
-<p>Find me in app/views/earnings/index.html.erb</p>
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Earnings</li>
+  </ol>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">By Age Group</td>
+      <td>blah</td>
+    </tr>
+    <tr>
+      <td>test</td>
+    </tr>
+  </tbody>
+</table>

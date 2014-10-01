@@ -1,0 +1,120 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Charts", root_path %></li>
+    <li class="active">Earnings</li>
+  </ol>
+<% end %>
+
+<h3>Chart Examples</h3>
+<h2>Nominal Earnings by Sex</h2>
+<span style="background-color: rgba(220,220,220,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Female
+<span style="background-color: rgba(151,187,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Male
+<div>
+<canvas id="earningsSex" width="800" height="400"></canvas>
+</div>
+<%= javascript_tag do %>
+  var ctx = document.getElementById("earningsSex").getContext("2d");
+
+  var data = {
+  labels : <%= @earnings_sex.uniq { |p| p['Year'] }.collect { |p| p['Year'] } %>,
+  datasets : [
+      {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_sex.select { |p| p['Sex'] == 'Female' }.collect{ |p| p['Nominal median earnings'] } %>
+      },
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_sex.select { |p| p['Sex'] == 'Male' }.collect{ |p| p['Nominal median earnings'] } %>
+      }
+    ]
+  };
+
+  var myNewChart = new Chart(ctx).Bar(data);
+<% end %>
+
+<h2>Earnings by Age Group (2012)</h2>
+<span style="background-color: rgba(220,220,220,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Lower Quartile
+<span style="background-color: rgba(151,187,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Median
+<span style="background-color: rgba(80,130,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Upper Quartile
+<div>
+<canvas id="earningsAge2012" width="800" height="400"></canvas>
+</div>
+<%= javascript_tag do %>
+  var ctx = document.getElementById("earningsAge2012").getContext("2d");
+
+  var data = {
+  labels : <%= @earnings_age_group.select { |p| p['Year'] == 2012 }.collect { |p| p['Age Group'] }.to_s.html_safe %>,
+  datasets : [
+      {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2012 }.collect{ |p| p['Lower quartile earnings'] } %>
+      },
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2012 }.collect{ |p| p['Median earnings'] } %>
+      },
+      {
+        fillColor : "rgba(80,130,205,0.5)",
+        strokeColor : "rgba(80,130,205,1)",
+        pointColor : "rgba(80,130,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2012 }.collect{ |p| p['Upper quartile earnings'] } %>
+      }
+    ]
+  };
+
+  var myNewChart = new Chart(ctx).Bar(data);
+<% end %>
+
+<h2>Earnings by Age Group (2013)</h2>
+<span style="background-color: rgba(220,220,220,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Lower Quartile
+<span style="background-color: rgba(151,187,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Median
+<span style="background-color: rgba(80,130,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Upper Quartile
+<div>
+<canvas id="earningsAge2013" width="800" height="400"></canvas>
+</div>
+<%= javascript_tag do %>
+  var ctx = document.getElementById("earningsAge2013").getContext("2d");
+
+  var data = {
+  labels : <%= @earnings_age_group.select { |p| p['Year'] == 2013 }.collect { |p| p['Age Group'] }.to_s.html_safe %>,
+  datasets : [
+      {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2013 }.collect{ |p| p['Lower quartile earnings'] } %>
+      },
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2013 }.collect{ |p| p['Median earnings'] } %>
+      },
+      {
+        fillColor : "rgba(80,130,205,0.5)",
+        strokeColor : "rgba(80,130,205,1)",
+        pointColor : "rgba(80,130,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @earnings_age_group.select { |p| p['Year'] == 2013 }.collect{ |p| p['Upper quartile earnings'] } %>
+      }
+    ]
+  };
+
+  var myNewChart = new Chart(ctx).Bar(data);
+<% end %>
