@@ -1,4 +1,4 @@
-class HousingController < ApplicationController
+class Charts::HousingController < ApplicationController
   
   def prices
     houses_json = File.read("storage/house_prices.json")

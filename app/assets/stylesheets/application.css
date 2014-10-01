@@ -30,6 +30,24 @@ body {
     font-style: normal;  
 }  
 
+.navbar.navbar-inverse {
+  background-color:#424242;
+}
+
+.navbar.navbar-inverse a, .navbar.navbar-inverse a:visited,
+.navbar.navbar-inverse a:active,
+.navbar.navbar-inverse a:link {
+  color:#E9E9E9;
+}
+
+.navbar.navbar-inverse a:hover,
+.navbar.navbar-inverse a:visited:hover,
+.navbar.navbar-inverse a:active:hover,
+.navbar.navbar-inverse a:link:hover {
+  color:#FFF;
+}
+
+
 .category-image:before {
   font-family: 'catfont'; /* Reference your custom font */  
   speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */  
@@ -67,6 +85,8 @@ a.category:hover {
   border-radius:3px;
   border:1px solid #428bca;
   display:block;
+  background-color:#F2F9FF;
+  margin-bottom:10px;
 }
 
 .category-detail {
@@ -79,6 +99,7 @@ a.category:hover {
 .category-detail h3 {
   margin-top:0px;
   margin-bottom:5px;
+  font-size:1.4em;
 }
 
 /* Wrapper for page content to push down footer */
@@ -90,7 +111,7 @@ a.category:hover {
   margin: 0 auto -60px;
 }
 
-.jumbotron {
+div.jumbotron {
   padding-bottom:0;
   margin-bottom:0;
 }
@@ -135,24 +156,13 @@ body {
   font-family:'Roboto', sans-serif;
 }
 
-
-.heading-strikethrough {
+h2.faint-heading {
   text-align:center;
-  border-bottom:1px solid #d5d5d5;
-  margin-bottom:30px;
-  margin-top:0;
-  
-}
-
-.heading-strikethrough h2 {
-  display:inline-block;
-  color:#CCC;
+  margin:30px 0;
+  text-transform:uppercase;
+  color:#AAA;
   font-weight:100;
-  font-size:20px;
-  position:relative;
-  top:20px;
-  margin-top:0;
-  background:#fff;
+  font-size:1.4em;
   padding:0 12px;
 }
 

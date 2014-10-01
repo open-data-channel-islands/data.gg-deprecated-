@@ -70,29 +70,32 @@ DataGg::Application.routes.draw do
     end
   end
   
-
-  # House graphs
-  get 'housing/' => 'housing#index', as: 'housing_index'
-  #get 'housing/prices', to: 'housing#prices', as: 'house_prices'
-
-  # Police graphs
-  get 'police/' => 'police#index', as: 'police_index'
-
-  # Population graphs
-  get 'population/' => 'population#index', as: 'population_index'
-
-  # Education
-  get 'education/' => 'education#index', as: 'education_index'
   
-  #Earnings
-  get 'earnings/' => 'earnings#index', as: 'earnings_index'
+  namespace :charts do
+    # House graphs
+    get 'housing/' => 'housing#index', as: 'housing_index'
+    #get 'housing/prices', to: 'housing#prices', as: 'house_prices'
 
+    # Police graphs
+    get 'police/' => 'police#index', as: 'police_index'
 
+    # Population graphs
+    get 'population/' => 'population#index', as: 'population_index'
 
+    # Education
+    get 'education/' => 'education#index', as: 'education_index'
+  
+    #Earnings
+    get 'earnings/' => 'earnings#index', as: 'earnings_index'
+  end
+
+  
   namespace :developers do
-  
-  
-  
+    get 'housing/' => 'housing#index', as: 'housing_index'
+    get 'police/' => 'police#index', as: 'police_index'
+    get 'population/' => 'population#index', as: 'population_index'
+    get 'education/' => 'education#index', as: 'education_index'
+    get 'earnings/' => 'earnings#index', as: 'earnings_index'
   end
 
 

@@ -1,98 +1,154 @@
-<div class="jumbotron" style="background-color:#FAFAFA; margin-bottom:0; border-bottom:2px solid #AAA; background-image: url('<%= asset_path('graph-bg.png') %>'); background-repeat:repeat-x; background-position: center 0px; background-size:800px">
+<div class="jumbotron" style="background-color:#3299BB; border-bottom:1px solid #2A7F9C; margin-bottom:0;">
   <div class="container" style="color:#333">
-    <h2 style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;"><strong>One Source, All The Data.</strong></h2>
-    <h3 style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;">Get the latest Bailiwick of Guernsey data for your apps and websites, any place, any time.</h3>
-    <p  style="background-color:rgba(255, 255, 255, 0.45); display:inline-block; padding:3px;">data.gg is open source, get involved <%= link_to 'here!', 'https://bitbucket.org/reformsoft/data.gg' %></p>
-  </div>
-</div>
-
-<div class="container" id="front-page-graphs-list">
-  <div class="heading-strikethrough">
-    <h2>Guernsey Data, Visualised</h2>
-  </div>
-  
-  
-  <div class="row">
-    <div class="col-sm-6 col-md-3">
-      <a href="<%= housing_index_path %>" class="category category-housing">
-        <div class="category-image"></div>
-        <div class="category-detail">
-          <h3>House Prices</h3>
-          <p>Costs of housing since the 1970s</p>
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-6 col-md-3">
-      <a href="<%= population_index_path %>" class="category category-population">
-        <div class="category-image"></div>
-        <div class="category-detail">
-          <h3>Population</h3>
-          <p>Population by age ranges for the last 8 years</p>
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-6 col-md-3">
-      <a href="<%= earnings_index_path %>" class="category category-finance">
-        <div class="category-image"></div>
-        <div class="category-detail">
-          <h3>Earnings</h3>
-          <p>Earnings by age group and sex for the last 9 years</p>
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-6 col-md-3">
-      <a href="<%= education_index_path %>" class="category category-education">
-        <div class="category-image"></div>
-        <div class="category-detail">
-          <h3>Education</h3>
-          <p>Post-16 and GCSE results by school since 2009/10</p>
-        </div>
-      </a>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 style="color:#FFF;text-shadow:1px 1px #555;padding:0;margin:0;"><strong>One Source, All The Data.</strong></h2>
+        <h3 style="color:#FFF;text-shadow:1px 1px #555;padding-bottom:0;margin-bottom:0;line-height:1.4em">Get the latest Bailiwick of Guernsey data for your apps and websites, any place, any time.</h3>
+      </div>
+      <div class="col-md-6" style="height:200px; background:transparent url(<%= image_url "datagg_screen.png" %>) no-repeat top center; background-size:100%">
+        
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="heading-strikethrough">
-    <h2>Succulent API Calls - Developer Heaven</h2>
+<div style="background-image:url(http://subtlepatterns.com/patterns/gplaypattern.png); padding-bottom:30px">
+  <div class="container">
+      
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="faint-heading">Guernsey Data, Visualised</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_housing_index_path %>" class="category category-housing">
+          <div class="category-image"></div>
+          <div class="category-detail">
+            <h3>House Prices</h3>
+            <p>Costs of housing since the 1970s</p>
+          </div>
+        </a>
+      </div>
+    
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_population_index_path %>" class="category category-population">
+          <div class="category-image"></div>
+          <div class="category-detail">
+            <h3>Population</h3>
+            <p>Population by age ranges for the last 8 years</p>
+          </div>
+        </a>
+      </div>
+    
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_earnings_index_path %>" class="category category-finance">
+          <div class="category-image"></div>
+          <div class="category-detail">
+            <h3>Earnings</h3>
+            <p>Earnings by age group and sex for the last 9 years</p>
+          </div>
+        </a>
+      </div>
+    
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_education_index_path %>" class="category category-education">
+          <div class="category-image"></div>
+          <div class="category-detail">
+            <h3>Education</h3>
+            <p>Post-16 and GCSE results by school since 2009/10</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+</div>
+
+
+<div style="background-color:#FF9900; padding-bottom:30px;">
+  <div class="container">
   
-  <div class="row">
-    <div class="col-md-3">
-      <h2><%= link_to 'Flights', api_v1_flights_path %></h2>
-      <p>Flight details refreshed on the fly from the Guernsey Airport</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="faint-heading" style="color:#FFF">Data.gg Apps</h2>
+      </div>
     </div>
-    <div class="col-md-3">
-      <h2><%= link_to 'Police', api_v1_police_path %></h2>
-      <p>Police and crime data from published reports</p>
-    </div>
-    <div class="col-md-3">
-      <h2><%= link_to 'Population', api_v1_population_path %></h2>
-      <p>Guernsey population data from published reports</p>
-    </div>
-    <div class="col-md-3">
-      <h2><%= link_to 'Earnings', api_v1_earnings_path %></h2>
-      <p>Earnings from published reports</p>
+  
+    <div class="row">  
+      <div class="col-md-3">
+        Flights TODO: show off flights app here
+      </div>
+      <div class="col-md-3">
+        Sailings TODO: show off sailings app here
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-3">
-      <h2><%= link_to 'Sailings', api_v1_sailings_path %></h2>
-      <p>Sailing details (more coming soon!)</p>
+</div>
+
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="faint-heading">Succulent API Calls - Developer Heaven</h2>
+      </div>
     </div>
-    <div class="col-md-3">
-      <h2><%= link_to 'Buses', buses_path %></h2>
-      <p>Bus timetable data in XML and JSON including gzipped versions</p>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover" width="100%">
+            <thead>
+              <tr>
+                <td>API</td>
+                <td>Output Formats</td>
+                <td>Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to 'Buses', buses_path %></td>
+                <td></td>
+                <td>Bus timetable data in XML and JSON including gzipped versions</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Earnings', api_v1_earnings_path %></td>
+                <td>Earnings from published reports</td>
+                <td>Bus statistics on usage</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Education', api_v1_education_path %></td>
+                <td></td>
+                <td>Guernsey education data from annual reports</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Flights', api_v1_flights_path %></td>
+                <td></td>
+                <td>Flight details refreshed on the fly from the Guernsey Airport</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'House Prices', developers_housing_index_path %></td>
+                <td></td>
+                <td>Detailed quarterly house prices since 1981 to today</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Police', api_v1_police_path %></td>
+                <td></td>
+                <td>Police and crime data from published reports</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Population', api_v1_population_path %></td>
+                <td></td>
+                <td>Guernsey population data from published reports</td>
+              </tr>
+              <tr>
+                <td><%= link_to 'Sailings', api_v1_sailings_path %></td>
+                <td></td>
+                <td>Sailing details (more coming soon!)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-          <h2><%= link_to 'Education', api_v1_education_path %></h2>
-      <p>Guernsey education data from annual reports</p>
-    </div>
-    <div class="col-md-3">
-      <h2><%= link_to 'House Prices', housing_index_path %></h2>
-      <p>Detailed quarterly house prices since 1981 to today</p>
-    </div>
-  </div>
+</div>
