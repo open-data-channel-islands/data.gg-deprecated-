@@ -102,15 +102,6 @@ a.category:hover {
   font-size:1.4em;
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
-}
-
 div.jumbotron {
   padding-bottom:0;
   margin-bottom:0;
@@ -118,27 +109,22 @@ div.jumbotron {
   border-bottom:1px solid #2A7F9C;
 }
 
-/* Set the fixed height of the footer here */
-#push,
+
 #footer {
-  height: 60px;
+  padding:30px 0;
+  margin-top:30px;
 }
+
 #footer {
   background-color: #f5f5f5;
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+#footer ul {
+  margin-top:20px;
 }
 
-.container .credit {
-  margin: 20px 0;
+#footer ul li  {
+  list-style-type:none;
 }
 
 
@@ -147,12 +133,7 @@ div.jumbotron {
   padding: 10px;
 }
 
-.footer {
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-}
+
 
 body {
   font-family:'Roboto', sans-serif;

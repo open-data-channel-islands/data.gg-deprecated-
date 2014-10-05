@@ -40,64 +40,60 @@ DataGg::Application.routes.draw do
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to
 
-  get 'buses/' => 'buses#index'
+#  get 'buses/' => 'buses#index'
 
-  namespace :buses do
-    resources :timetables, param: :start_date do
-      post 'publish' => 'timetables#publish'
+#  namespace :buses do
+ #   resources :timetables, param: :start_date do
+#      post 'publish' => 'timetables#publish'
 
-      resources :stops
-      resources :stop_time_exceptions
+ #     resources :stops
+#      resources :stop_time_exceptions
 
-      resources :routes do
+#      resources :routes do
         # Make believe. Always work from the origin point.
-        resources :stop_times, param: :id do
-          get 'edit_individual' => 'stop_times#edit_individual', as: :edit_individual
+#        resources :stop_times, param: :id do
+#          get 'edit_individual' => 'stop_times#edit_individual', as: :edit_individual
           
-          post 'atomic_stop_time' => 'stop_times#add_exception', as: :add_exception
-          delete 'remove_exception' => 'stop_times#remove_exception', as: :remove_exception
-        end
+#          post 'atomic_stop_time' => 'stop_times#add_exception', as: :add_exception
+ #         delete 'remove_exception' => 'stop_times#remove_exception', as: :remove_exception
+#        end
 
-        resources :route_stops do
-          collection do
-            post 'create_stop_links'
-          end
-          
-          post 'move_up'
-          post 'move_down'
-        end
-      end
-    end
-  end
+ #       resources :route_stops do
+  #        collection do
+   #         post 'create_stop_links'
+    #      end
+     #     
+      #    post 'move_up'
+       #   post 'move_down'
+#        end
+ #     end
+  #  end
+  #end
   
+  
+  get 'charts' => 'charts#index', as: 'charts_index'
   
   namespace :charts do
-    # House graphs
-    get 'housing/' => 'housing#index', as: 'housing_index'
-    #get 'housing/prices', to: 'housing#prices', as: 'house_prices'
-
-    # Police graphs
-    get 'police/' => 'police#index', as: 'police_index'
-
-    # Population graphs
-    get 'population/' => 'population#index', as: 'population_index'
-
-    # Education
-    get 'education/' => 'education#index', as: 'education_index'
-  
-    #Earnings
-    get 'earnings/' => 'earnings#index', as: 'earnings_index'
+    get 'buses' => 'buses#index', as: 'buses_index'
+    get 'housing' => 'housing#index', as: 'housing_index'
+    get 'police' => 'police#index', as: 'police_index'
+    get 'population' => 'population#index', as: 'population_index'
+    get 'education' => 'education#index', as: 'education_index'
+    get 'earnings' => 'earnings#index', as: 'earnings_index'
   end
 
+  get 'developers' => 'developers#index', as: 'developers_index'
   
   namespace :developers do
-    get 'housing/' => 'housing#index', as: 'housing_index'
-    get 'police/' => 'police#index', as: 'police_index'
-    get 'population/' => 'population#index', as: 'population_index'
-    get 'education/' => 'education#index', as: 'education_index'
-    get 'earnings/' => 'earnings#index', as: 'earnings_index'
+    get 'buses' => 'buses#index', as: 'buses_index'
+    get 'housing' => 'housing#index', as: 'housing_index'
+    get 'police' => 'police#index', as: 'police_index'
+    get 'population' => 'population#index', as: 'population_index'
+    get 'education' => 'education#index', as: 'education_index'
+    get 'earnings' => 'earnings#index', as: 'earnings_index'
+    get 'flights' => 'flights#index', as: 'flights_index'
+    get 'sailings' => 'sailings#index', as: 'sailings_index'
   end
-
 
 
   # API calls
