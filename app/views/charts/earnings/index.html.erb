@@ -78,6 +78,7 @@
         ]
       };
 
+      Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx).Bar(data);
     <% end %>
 
@@ -86,7 +87,7 @@
     <span style="background-color: rgba(151,187,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Median
     <span style="background-color: rgba(80,130,205,0.5);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Upper Quartile
     <div>
-    <canvas id="earningsAge2013"></canvas>
+    <canvas id="earningsAge2013" width="400"></canvas>
     </div>
     <%= javascript_tag do %>
       var ctx = document.getElementById("earningsAge2013").getContext("2d");
@@ -118,6 +119,7 @@
         ]
       };
 
+      Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx, { responsive: true }).Bar(data);
     <% end %>
     

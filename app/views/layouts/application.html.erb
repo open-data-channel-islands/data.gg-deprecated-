@@ -41,6 +41,8 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- ><li>link_to 'Signup', new_user_registration_path </li>-->
           <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Charts', charts_index_path %></li>
+          <li><%= link_to 'Developers', developers_index_path %></li>
           <!--<li><%= link_to 'Help', help_path %></li>-->
           <% if user_signed_in? %>
             <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
@@ -85,9 +87,17 @@
 <div id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-6">
         <p class="muted credit">Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and
           <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %> from <%= link_to 'Reformsoft', 'http://reformsoft.org' %></p>
+      </div>
+      
+      <div class="col-md-2">
+        <ul>
+          <li><strong><%= link_to 'Contact', charts_index_path %></strong></li>
+          <li><%= link_to 'Twitter', 'http://www.twitter.com/datagg' %></li>
+          <li><%= link_to 'Email', 'mailto:hey@data.gg' %></li>
+        </ul>
       </div>
       
       <div class="col-md-2">

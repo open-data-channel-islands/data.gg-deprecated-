@@ -109,6 +109,26 @@ div.jumbotron {
   border-bottom:1px solid #2A7F9C;
 }
 
+.jumbotron h2 {
+  color:#FFF;
+  text-shadow:1px 1px #555;
+  padding:0;
+  margin:0;
+}
+
+.jumbotron h3 {
+  color:#FFF;
+  text-shadow:1px 1px #555;
+  padding-bottom:0;
+  margin-bottom:20px;
+  line-height:1.4em;
+}
+
+#front-page-chart-list {
+  background-image:url(/assets/gplaypattern.png);
+  padding-bottom:30px
+}
+
 
 #footer {
   padding:30px 0;
@@ -120,7 +140,7 @@ div.jumbotron {
 }
 
 #footer ul {
-  margin-top:20px;
+  
 }
 
 #footer ul li  {
