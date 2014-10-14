@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<div id="front-page-chart-list" style="">
+<div class="front-page-feature-triangles">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -24,8 +24,8 @@
 
     <div class="row">
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_housing_index_path %>" class="category category-housing">
-          <div class="category-image"></div>
+        <a href="<%= charts_housing_index_path %>" class="category">
+          <div class="category-image category-housing"></div>
           <div class="category-detail">
             <h3><strong>House Prices</strong></h3>
             <p>Costs of housing since the 1970s</p>
@@ -34,8 +34,8 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_population_index_path %>" class="category category-population">
-          <div class="category-image"></div>
+        <a href="<%= charts_population_index_path %>" class="category">
+          <div class="category-image category-population"></div>
           <div class="category-detail">
             <h3><strong>Population</strong></h3>
             <p>Population by age ranges for the last 8 years</p>
@@ -44,8 +44,8 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_earnings_index_path %>" class="category category-finance">
-          <div class="category-image"></div>
+        <a href="<%= charts_earnings_index_path %>" class="category">
+          <div class="category-image category-finance"></div>
           <div class="category-detail">
             <h3><strong>Earnings</strong></h3>
             <p>Earnings by age group and sex for the last 9 years</p>
@@ -54,11 +54,31 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_education_index_path %>" class="category category-education">
-          <div class="category-image"></div>
+        <a href="<%= charts_education_index_path %>" class="category">
+          <div class="category-image category-education"></div>
           <div class="category-detail">
             <h3><strong>Education</strong></h3>
             <p>Post-16 and GCSE results by school since 2009/10</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_buses_index_path %>" class="category">
+          <div class="category-image category-buses"></div>
+          <div class="category-detail">
+            <h3><strong>Buses</strong></h3>
+            <p>Bus usage statistics over the last 4 years</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="<%= charts_police_index_path %>" class="category">
+          <div class="category-image category-police"></div>
+          <div class="category-detail">
+            <h3><strong>Police</strong></h3>
+            <p>Various categories of crime for the last few years</p>
           </div>
         </a>
       </div>
@@ -93,27 +113,29 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="faint-heading">Supply + Contribute</h2>
+<div class="front-page-feature-triangles">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="faint-heading">Supply <em>&amp;</em> Contribute</h2>
+      </div>
     </div>
-  </div>
   
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="text-center">Have some data you want to publish?</h3>
-      
-      <p></p>
-    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center extra-bottom-space" style="margin-top:0;">Have some data you want to publish?</h3>
+        <p class="large-text">If you've got interesting data related to the Bailiwick of Guernsey we'd love to get our hands on it. We're happy to
+          do all the hard work for you so it can be made available via the data.gg API allowing people to generate reports or so developers can build apps.
+          Send us an e-mail at <a href="mailto:hey@data.gg">hey@data.gg</a> and we'll talk more.</p>
+      </div>
     
-    <div class="col-md-6">
-      <h3 class="text-center">Want to help us build a better data.gg?</h3>
-      
-      <p>There's a lot of work involved with data.gg, from coming up with ideas, gathering data, standardising and producing data sets,
-          showing that data in a meaningful format and all the way to publishing the APIs for developers. Say hello at hey@data.gg</p>
+      <div class="col-md-6">
+        <h3 class="text-center extra-bottom-space" style="margin-top:0;">Want to help us build a better data.gg?</h3>
+        <p class="large-text">There's a lot of work involved with data.gg, from coming up with ideas, gathering data, standardising and producing data sets,
+            showing that data in a meaningful format and all the way to publishing the APIs for developers. Just fire us an e-mail at 
+            <a href="mailto:hey@data.gg">hey@data.gg</a> so we can talk more.</p>
+      </div>
     </div>
-  
   </div>
 </div>
 
@@ -124,10 +146,12 @@
     </div>
   </div>
   
+
   <div class="row">
+    
     <div class="col-md-12">
       <div class="table-responsive">
-        <table class="table table-striped table-hover" width="100%">
+        <table class="table table-striped table-hover vertical-align-middle" width="100%">
           <thead>
             <tr>
               <td>API</td>
@@ -137,42 +161,84 @@
           </thead>
           <tbody>
             <tr>
-              <td><%= link_to 'Buses', developers_buses_index_path %></td>
-              <td></td>
-              <td>Bus timetable data in XML and JSON including gzipped versions</td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_buses_index_path %>">
+                  <span class="category-small category-image category-buses"></span>
+                  Buses
+                </a>
+              <td><span class="label label-primary">XML</span>
+                  <span class="label label-info">JSON</span>
+                  <span class="label label-default">LIVE!</span>
+              </td>
+              <td>Bus usage statistics</td>
             </tr>
             <tr>
-              <td><%= link_to 'Earnings', api_v1_earnings_path %></td>
-              <td>Earnings from published reports</td>
+              <td valign="middle">
+                <a class="category-inline-link" href="<%= developers_earnings_index_path %>">
+                  <span class="category-small category-image category-finance"></span>
+                  Earnings
+                </a>
+              </td>
+              <td></td>
               <td>Bus statistics on usage</td>
             </tr>
             <tr>
-              <td><%= link_to 'Education', api_v1_education_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_education_index_path %>">
+                  <span class="category-small category-image category-education"></span>
+                  Education
+                </a>
+              </td>
               <td></td>
               <td>Guernsey education data from annual reports</td>
             </tr>
             <tr>
-              <td><%= link_to 'Flights', api_v1_flights_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_flights_index_path %>">
+                  <span class="category-small category-image category-flights"></span>
+                  Flights
+                </a>
+              </td>
               <td></td>
               <td>Flight details refreshed on the fly from the Guernsey Airport</td>
             </tr>
             <tr>
-              <td><%= link_to 'House Prices', developers_housing_index_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_housing_index_path %>">
+                  <span class="category-small category-image category-housing"></span>
+                  House Prices
+                </a>
+              </td>
               <td></td>
               <td>Detailed quarterly house prices since 1981 to today</td>
             </tr>
             <tr>
-              <td><%= link_to 'Police', api_v1_police_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_police_index_path %>">
+                  <span class="category-small category-image category-police"></span>
+                  Police
+                </a>
+              </td>
               <td></td>
               <td>Police and crime data from published reports</td>
             </tr>
             <tr>
-              <td><%= link_to 'Population', api_v1_population_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_population_index_path %>">
+                  <span class="category-small category-image category-population"></span>
+                  Population
+                </a>
+              </td>
               <td></td>
               <td>Guernsey population data from published reports</td>
             </tr>
             <tr>
-              <td><%= link_to 'Sailings', api_v1_sailings_path %></td>
+              <td>
+                <a class="category-inline-link" href="<%= developers_sailings_index_path %>">
+                  <span class="category-small category-image category-sailings"></span>
+                  Sailings
+                </a>
+              </td>
               <td></td>
               <td>Sailing details (more coming soon!)</td>
             </tr>

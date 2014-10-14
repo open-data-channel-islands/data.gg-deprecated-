@@ -70,6 +70,8 @@ DataGg::Application.routes.draw do
   #  end
   #end
   
+  get 'contribute' => 'home#contribute', as: 'contribute'
+  
   
   get 'charts' => 'charts#index', as: 'charts_index'
   

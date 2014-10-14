@@ -8,16 +8,11 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
  */
 
-/* Sticky footer */
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
+
+@import "bootstrap/bootstrap.scss";
 
 @font-face {  
     font-family: 'catfont';  
@@ -29,6 +24,10 @@ body {
     font-weight: normal;  
     font-style: normal;  
 }  
+
+body div.navbar, .navbar-fixed-top {
+  margin-bottom:0;
+}
 
 .navbar.navbar-inverse {
   background-color:#424242;
@@ -48,31 +47,62 @@ body {
 }
 
 
-.category-image:before {
+.category-image {
   font-family: 'catfont'; /* Reference your custom font */  
   speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */  
   -webkit-font-smoothing: antialiased; /* Force antialiasing */  
   font-style: normal;  
   font-weight: normal;
-  font-size:25px;
+  font-size:24px;
+  text-align:center;
+  width:30px;
   display:inline;
   float:left;
 }
 
-.category-housing .category-image:before { content: "\e601"; }
-.category-housing:hover .category-image:before { content: "\e600";}
-.category-buses .category-image:before { content: "\e603"; }
-.category-buses:hover .category-image:before { content: "\e602"; }
-.category-finance .category-image:before { content: "\e605"; font-size:25px; }
-.category-finance:hover .category-image:before { content: "\e604"; }
-.category-police .category-image:before { content: "\e607"; }
-.category-police:hover .category-image:before { content: "\e606"; }
-.category-transport .category-image:before { content: "\e609"; }
-.category-transport:hover .category-image:before { content: "\e608"; }
-.category-population .category-image:before { content: "\e60b"; font-size:22px; }
-.category-population:hover .category-image:before { content: "\e60a"; }
-.category-education .category-image:before { content: "\e60d"; font-size:25px; }
-.category-education:hover .category-image:before { content: "\e60c"; }
+.category-inline-link {
+  padding-left:8px;
+  font-size:114%;
+  vertical-align:middle;
+}
+
+
+.category-finance.category-small {
+  
+}
+
+.category-small {
+  font-size:20px;
+}
+
+table.vertical-align-middle tbody tr td {
+  vertical-align:middle;
+}
+
+
+.category-housing:before { content: "\e601"; }
+.category:hover .category-housing:before { content: "\e600";}
+
+.category-buses:before { content: "\e603"; }
+.category:hover .category-buses:before { content: "\e602";  }
+
+.category-finance:before { content: "\e605"; }
+.category:hover .category-finance:before { content: "\e604"; }
+
+.category-police:before { content: "\e607"; }
+.category:hover .category-police:before { content: "\e606"; }
+
+.category-flights:before { content: "\e609"; }
+.category:hover .category-flights:before { content: "\e608"; }
+
+.category-population:before { content: "\e60b";  }
+.category:hover .category-population:before { content: "\e60a"; }
+
+.category-education:before { content: "\e60d"; }
+.category:hover .category-education:before { content: "\e60c"; }
+
+.category-sailings:before { content: "\e610"; }
+.category:hover .category-sailings:before { content: "\e611"; }
 
 a.category:hover {
   background-color:#428bca;
@@ -102,7 +132,7 @@ a.category:hover {
   font-size:1.4em;
 }
 
-div.jumbotron {
+.jumbotron {
   padding-bottom:0;
   margin-bottom:0;
   background-color:#3299BB;
@@ -112,8 +142,7 @@ div.jumbotron {
 .jumbotron h2 {
   color:#FFF;
   text-shadow:1px 1px #555;
-  padding:0;
-  margin:0;
+  margin-top:30px;
 }
 
 .jumbotron h3 {
@@ -124,7 +153,7 @@ div.jumbotron {
   line-height:1.4em;
 }
 
-#front-page-chart-list {
+.front-page-feature-triangles {
   background-image:url(/assets/gplaypattern.png);
   padding-bottom:30px
 }
@@ -153,10 +182,17 @@ div.jumbotron {
   padding: 10px;
 }
 
+.extra-bottom-space {
+  margin-bottom:20px;
+}
 
+.large-text {
+  font-size:120%;
+}
 
 body {
   font-family:'Roboto', sans-serif;
+  padding-top:50px;
 }
 
 h2.faint-heading {
@@ -177,6 +213,5 @@ ol.breadcrumb {
 #breadcrumb {
   background-color:#E9E9E9;
   padding:0px;
-  margin-bottom:10px;
 }
 
