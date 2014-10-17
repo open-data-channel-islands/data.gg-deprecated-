@@ -24,7 +24,7 @@
 
     <div class="row">
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_housing_index_path %>" class="category">
+        <a href="<%= charts_housing_path %>" class="category">
           <div class="category-image category-housing"></div>
           <div class="category-detail">
             <h3><strong>House Prices</strong></h3>
@@ -34,7 +34,7 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_population_index_path %>" class="category">
+        <a href="<%= charts_population_path %>" class="category">
           <div class="category-image category-population"></div>
           <div class="category-detail">
             <h3><strong>Population</strong></h3>
@@ -44,7 +44,7 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_earnings_index_path %>" class="category">
+        <a href="<%= charts_earnings_path %>" class="category">
           <div class="category-image category-finance"></div>
           <div class="category-detail">
             <h3><strong>Earnings</strong></h3>
@@ -54,7 +54,7 @@
       </div>
     
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_education_index_path %>" class="category">
+        <a href="<%= charts_education_path %>" class="category">
           <div class="category-image category-education"></div>
           <div class="category-detail">
             <h3><strong>Education</strong></h3>
@@ -63,9 +63,11 @@
         </a>
       </div>
     </div>
+    
+    
     <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_buses_index_path %>" class="category">
+      <div class="col-sm-6 col-md-3 col-md-offset-3">
+        <a href="<%= charts_buses_path %>" class="category">
           <div class="category-image category-buses"></div>
           <div class="category-detail">
             <h3><strong>Buses</strong></h3>
@@ -74,7 +76,7 @@
         </a>
       </div>
       <div class="col-sm-6 col-md-3">
-        <a href="<%= charts_police_index_path %>" class="category">
+        <a href="<%= charts_police_path %>" class="category">
           <div class="category-image category-police"></div>
           <div class="category-detail">
             <h3><strong>Police</strong></h3>
@@ -123,14 +125,14 @@
   
     <div class="row">
       <div class="col-md-6">
-        <h3 class="text-center extra-bottom-space" style="margin-top:0;">Have some data you want to publish?</h3>
-        <p class="large-text">If you've got interesting data related to the Bailiwick of Guernsey we'd love to get our hands on it. We're happy to
+        <h3 class="text-center extra-bottom-space">Have some data you want to publish?</h3>
+        <p class="large-text extra-bottom-space">If you've got interesting data related to the Bailiwick of Guernsey we'd love to get our hands on it. We're happy to
           do all the hard work for you so it can be made available via the data.gg API allowing people to generate reports or so developers can build apps.
           Send us an e-mail at <a href="mailto:hey@data.gg">hey@data.gg</a> and we'll talk more.</p>
       </div>
     
       <div class="col-md-6">
-        <h3 class="text-center extra-bottom-space" style="margin-top:0;">Want to help us build a better data.gg?</h3>
+        <h3 class="text-center extra-bottom-space">Want to help us build a better data.gg?</h3>
         <p class="large-text">There's a lot of work involved with data.gg, from coming up with ideas, gathering data, standardising and producing data sets,
             showing that data in a meaningful format and all the way to publishing the APIs for developers. Just fire us an e-mail at 
             <a href="mailto:hey@data.gg">hey@data.gg</a> so we can talk more.</p>
@@ -162,7 +164,7 @@
           <tbody>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_buses_index_path %>">
+                <a class="category-inline-link" href="<%= developers_buses_path %>">
                   <span class="category-small category-image category-buses"></span>
                   Buses
                 </a>
@@ -174,7 +176,7 @@
             </tr>
             <tr>
               <td valign="middle">
-                <a class="category-inline-link" href="<%= developers_earnings_index_path %>">
+                <a class="category-inline-link" href="<%= developers_earnings_path %>">
                   <span class="category-small category-image category-finance"></span>
                   Earnings
                 </a>
@@ -184,7 +186,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_education_index_path %>">
+                <a class="category-inline-link" href="<%= developers_education_path %>">
                   <span class="category-small category-image category-education"></span>
                   Education
                 </a>
@@ -194,7 +196,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_flights_index_path %>">
+                <a class="category-inline-link" href="<%= developers_flights_path %>">
                   <span class="category-small category-image category-flights"></span>
                   Flights
                 </a>
@@ -204,7 +206,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_housing_index_path %>">
+                <a class="category-inline-link" href="<%= developers_housing_path %>">
                   <span class="category-small category-image category-housing"></span>
                   House Prices
                 </a>
@@ -214,7 +216,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_police_index_path %>">
+                <a class="category-inline-link" href="<%= developers_police_path %>">
                   <span class="category-small category-image category-police"></span>
                   Police
                 </a>
@@ -224,7 +226,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_population_index_path %>">
+                <a class="category-inline-link" href="<%= developers_population_path %>">
                   <span class="category-small category-image category-population"></span>
                   Population
                 </a>
@@ -234,7 +236,7 @@
             </tr>
             <tr>
               <td>
-                <a class="category-inline-link" href="<%= developers_sailings_index_path %>">
+                <a class="category-inline-link" href="<%= developers_sailings_path %>">
                   <span class="category-small category-image category-sailings"></span>
                   Sailings
                 </a>

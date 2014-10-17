@@ -42,8 +42,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to 'About', about_path %></li>
           <li><%= link_to 'Contribute', contribute_path %></li>
-          <li><%= link_to 'Charts', charts_index_path %></li>
-          <li><%= link_to 'Developers', developers_index_path %></li>
+          <li><%= link_to 'Charts', charts_path %></li>
+          <li><%= link_to 'Developers', developers_path %></li>
           <!--<li><%= link_to 'Help', help_path %></li>-->
           <% if user_signed_in? %>
             <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
@@ -89,7 +89,7 @@
       <div class="col-md-2">
         <ul>
           <li><strong><%= link_to 'Home', root_path %></strong></li>
-          <li><%= link_to 'Contact', charts_index_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
           <li><%= link_to 'Contribute', contribute_path %></li>
           <li><%= link_to 'Twitter', 'http://www.twitter.com/datagg' %></li>
           <li><%= link_to 'Email', 'mailto:hey@data.gg' %></li>
@@ -98,27 +98,27 @@
       
       <div class="col-md-2">
         <ul>
-          <li><strong><%= link_to 'Charts', charts_index_path %></strong></li>
-          <li><%= link_to 'Buses', charts_buses_index_path %></li>
-          <li><%= link_to 'Earnings', charts_earnings_index_path %></li>
-          <li><%= link_to 'Education', charts_education_index_path %></li>
-          <li><%= link_to 'Housing', charts_housing_index_path %></li>
-          <li><%= link_to 'Police', charts_police_index_path %></li>
-          <li><%= link_to 'Population', charts_population_index_path %></li>
+          <li><strong><%= link_to 'Charts', charts_path %></strong></li>
+          <li><%= link_to 'Buses', charts_buses_path %></li>
+          <li><%= link_to 'Earnings', charts_earnings_path %></li>
+          <li><%= link_to 'Education', charts_education_path %></li>
+          <li><%= link_to 'Housing', charts_housing_path %></li>
+          <li><%= link_to 'Police', charts_police_path %></li>
+          <li><%= link_to 'Population', charts_population_path %></li>
         </ul>
       </div>
       
       <div class="col-md-1">
         <ul>
-          <li><strong><%= link_to 'Developers', developers_index_path %></strong></li>
-          <li><%= link_to 'Buses', developers_buses_index_path %></li>
-          <li><%= link_to 'Earnings', developers_earnings_index_path %></li>
-          <li><%= link_to 'Education', developers_education_index_path %></li>
-          <li><%= link_to 'Flights', developers_flights_index_path %></li>
-          <li><%= link_to 'Housing', developers_housing_index_path %></li>
-          <li><%= link_to 'Police', developers_police_index_path %></li>
-          <li><%= link_to 'Population', developers_population_index_path %></li>
-          <li><%= link_to 'Sailings', developers_sailings_index_path %></li>
+          <li><strong><%= link_to 'Developers', developers_path %></strong></li>
+          <li><%= link_to 'Buses', developers_buses_path %></li>
+          <li><%= link_to 'Earnings', developers_earnings_path %></li>
+          <li><%= link_to 'Education', developers_education_path %></li>
+          <li><%= link_to 'Flights', developers_flights_path %></li>
+          <li><%= link_to 'Housing', developers_housing_path %></li>
+          <li><%= link_to 'Police', developers_police_path %></li>
+          <li><%= link_to 'Population', developers_population_path %></li>
+          <li><%= link_to 'Sailings', developers_sailings_path %></li>
         </ul>
       </div>
     </div>
