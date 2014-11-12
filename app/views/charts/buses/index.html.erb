@@ -7,5 +7,25 @@
 <% end %>
 
 <div class="page-header">
-<h1>Bus Charts</h1>
+<h1>Buses</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead">Total bus usage per month</p>
+    
+    <canvas id="bus_usage_chart" class="col-md-12"></canvas>
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("bus_usage_chart").getContext("2d");
+
+      var data = {
+        labels : <%= @labels.to_s.html_safe -%>,
+        datasets : <%= @bus_data.to_json.html_safe -%>
+      };
+      Chart.defaults.global.responsive = true;
+      var myNewChart = new Chart(ctx).Line(data, {
+
+      });
+    <% end %>
+  </div>
 </div>

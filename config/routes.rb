@@ -45,12 +45,9 @@ DataGg::Application.routes.draw do
   namespace :api do
     namespace "v10", path: "1.0", module: "v1_0" do
 
-      #Buses
-      #namespace :buses do
-      #  get 'timetables/list' => 'timetables#list'
-      #  get 'timetables/current_version' => 'timetables#current_version'
-      #end
+      # Buses
       
+
       #Police
       get 'police/crimes' => 'police#crimes'
       get 'police/traffic' => 'police#traffic'
@@ -153,6 +150,14 @@ DataGg::Application.routes.draw do
   #   end
 
 
+  #Buses
+  #namespace :buses do
+  #  get 'timetables/list' => 'timetables#list'
+  #  get 'timetables/current_version' => 'timetables#current_version'
+  #end
+  
+  
+  
   # Note that the rails docs say this:
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to

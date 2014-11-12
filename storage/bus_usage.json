@@ -1,0 +1,57 @@
+[
+  {
+    "Year": 2011,
+    "January": 90006,
+    "February": 92883,
+    "March": 111688,
+    "April": 123742,
+    "May": 145696,
+    "June": 160023,
+    "July": 173537,
+    "August": 186954,
+    "September": 156097,
+    "October": 121407,
+    "November": 102665,
+    "December": 99268
+  },
+  {
+    "Year": 2012,
+    "January": 90022,
+    "February": 91115,
+    "March": 109016,
+    "April": 109037,
+    "May": 145029,
+    "June": 148708,
+    "July": 163663,
+    "August": 176848,
+    "September": 152458,
+    "October": 111010,
+    "November": 97131,
+    "December": 92168
+  },
+  {
+    "Year": 2013,
+    "January": 86955,
+    "February": 85835,
+    "March": 89883,
+    "April": 112822,
+    "May": 136824,
+    "June": 120960,
+    "July": 151394,
+    "August": 159493,
+    "September": 130074,
+    "October": 105352,
+    "November": 90068,
+    "December": 85333
+  },
+  {
+    "Year": 2014,
+    "January": 83440,
+    "February": 78870,
+    "March": 97381,
+    "April": 104925,
+    "May": 136879,
+    "June": 150660,
+    "July": 172226
+  }
+]
