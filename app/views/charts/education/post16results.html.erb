@@ -1,0 +1,39 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Charts", charts_path %></li>
+    <li><%= link_to "Education", charts_education_path %></li>
+    <li class="active">Post-16 Results</li>
+  </ol>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    
+    <div class="page-header">
+      <h1>Post-16 Results</h1>
+    </div>
+    
+    
+    <h2>A-Level Results</h2>
+    
+    <canvas id="post_16_chart" class="col-md-12"></canvas>
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("post_16_chart").getContext("2d");
+
+      var data = {
+        labels : <%= @labels.to_s.html_safe -%>,
+        datasets : <%= @result_sets.to_json.html_safe -%>
+      };
+      Chart.defaults.global.responsive = true;
+      var myNewChart = new Chart(ctx).Bar(data, {
+
+      });
+    <% end %>
+    
+    <h2>BTEC Results</h2>
+    
+    
+    
+  </div>
+</div>

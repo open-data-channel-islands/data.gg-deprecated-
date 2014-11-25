@@ -19,7 +19,14 @@ DataGg::Application.routes.draw do
     get 'housing' => 'housing#index', as: :housing
     get 'police' => 'police#index', as: :police
     get 'population' => 'population#index', as: :population
+    
+    # Education
     get 'education' => 'education#index', as: :education
+    get 'education/post16results', as: :education_post16results
+    get 'education/gcses_overall', as: :education_gcses_overall
+    get 'education/gcses_by_school', as: :education_gcses_by_school
+    
+    
     get 'earnings' => 'earnings#index', as: :earnings
   end
 
