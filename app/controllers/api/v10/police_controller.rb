@@ -1,6 +1,7 @@
 require 'json'
 
-class Api::V1::PoliceController < ApplicationController
+class Api::V10::PoliceController < ApplicationController
+  
   def index
     respond_to do |format|
       format.html { render :index }
@@ -15,7 +16,7 @@ class Api::V1::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @crimes }
       format.xml { render xml: @crimes }
-      format.html { render html: @crimes }
+      format.html { render html: @crimes, layout: false }
     end
   end
 
@@ -27,7 +28,7 @@ class Api::V1::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic }
+      format.html { render html: @traffic, layout: false }
     end
   end
 
@@ -39,7 +40,7 @@ class Api::V1::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic }
+      format.html { render html: @traffic, layout: false }
     end
   end
 
@@ -51,7 +52,7 @@ class Api::V1::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic }
+      format.html { render html: @traffic, layout: false }
     end
   end
 
@@ -63,7 +64,7 @@ class Api::V1::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic }
+      format.html { render html: @traffic, layout: false }
     end
   end
 

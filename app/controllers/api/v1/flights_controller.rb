@@ -22,7 +22,7 @@ class Api::V1::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights }
+      format.html { render html: @flights, layout: false }
     end
   end
 
@@ -40,7 +40,7 @@ class Api::V1::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights }
+      format.html { render html: @flights, layout: false }
     end
 
   end

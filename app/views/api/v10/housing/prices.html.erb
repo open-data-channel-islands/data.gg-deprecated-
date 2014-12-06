@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Quarter</th>
+      <th>Mean Average - Topped And Tailed</th>
+      <th>Median Average - All Residential</th>
+      <th>Mean Average - HousesOnly</th>
+      <th>Median Average - ApartmentsOnly</th>
+      <th>Mix Adjusted</th>
+      <th>No Of Transactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @house_prices.each do |f| %>
+      <tr>
+        <td><%= f['Year'] %></td>
+        <td><%= f['Quarter'] %></td>
+        <td><%= f['MeanAverageToppedAndTailed'] %></td>
+        <td><%= f['MedianAverageAllResidential'] %></td>
+        <td><%= f['MeanAverageHousesOnly'] %></td>
+        <td><%= f['MedianAverageApartmentsOnly'] %></td>
+        <td><%= f['MixAdjusted'] %></td>
+        <td><%= f['NoOfTransactions'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

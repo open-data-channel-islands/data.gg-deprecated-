@@ -55,7 +55,7 @@ DataGg::Application.routes.draw do
       # Buses
       get 'buses/usage' => 'buses#usage'
 
-      #Police
+      # Police
       get 'police/crimes' => 'police#crimes'
       get 'police/traffic' => 'police#traffic'
       get 'police/traffic_collisions' => 'police#traffic_collisions'
