@@ -7,5 +7,50 @@
 <% end %>
 
 <div class="page-header">
-<h1>Earnings</h1>
+<h1>Earnings API</h1>
 </div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-hover vertical-align-middle" width="100%">
+    <thead>
+      <tr>
+        <th>API</th>
+        <th>Version</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Earnings by Age Group</td>
+        <td>1.0</td>
+        <td>Blah</td>
+        <td><%= link_to 'XML', api_v1_earnings_earnings_age_group_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_earnings_earnings_age_group_path(:format => "json")  %></td>
+        <td><%= link_to 'HTML', api_v1_earnings_earnings_age_group_path(:format => "html")  %></td>
+      </tr>
+      <tr>
+        <td>Earnings by Sector</td>
+        <td>1.0</td>
+        <td>Blah</td>
+        <td><%= link_to 'XML', api_v1_earnings_earnings_sector_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_earnings_earnings_sector_path(:format => "json")  %></td>
+        <td><%= link_to 'HTML', api_v1_earnings_earnings_sector_path(:format => "html")  %></td>
+      </tr>
+      <tr>
+        <td>Earnings by Sex</td>
+        <td>1.0</td>
+        <td>Blah</td>
+        <td><%= link_to 'XML', api_v1_earnings_earnings_sex_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_earnings_earnings_sex_path(:format => "json")  %></td>
+        <td><%= link_to 'HTML', api_v1_earnings_earnings_sex_path(:format => "html")  %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Examples</h2>
+
+Source: <a href="http://www.gov.gg/CHttpHandler.ashx?id=90675&p=0">gov.gg</a>

@@ -53,7 +53,7 @@ DataGg::Application.routes.draw do
     namespace "v10", path: "1.0", module: "v1_0" do
 
       # Buses
-      
+      get 'buses/usage' => 'buses#usage'
 
       #Police
       get 'police/crimes' => 'police#crimes'

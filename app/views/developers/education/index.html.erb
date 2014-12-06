@@ -10,44 +10,46 @@
   <h1>Education</h1>
 </div>
 
-<table class="table table-striped table-hover vertical-align-middle" width="100%">
-  <thead>
-    <tr>
-      <th>API</th>
-      <th>Version</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Post 16 Results</td>
-      <td>1.0</td>
-      <td>description</td>
-      <td><%= link_to 'XML', api_v1_education_post16results_path(:format => "xml")  %></td>
-      <td><%= link_to 'JSON', api_v1_education_post16results_path(:format => "json") %></td>
-      <td><%= link_to 'HTML', api_v1_education_post16results_path(:format => "html") %></td>
-    </tr>
-    <tr>
-      <td>GCSEs Overall</td>
-      <td>1.0</td>
-      <td>description</td>
-      <td><%= link_to 'XML', api_v1_education_gcse_overall_path(:format => "xml")  %></td>
-      <td><%= link_to 'JSON', api_v1_education_gcse_overall_path(:format => "json") %></td>
-      <td><%= link_to 'HTML', api_v1_education_gcse_overall_path(:format => "html") %></td>
-    </tr>
-    <tr>
-      <td>GCSEs By School</td>
-      <td>1.0</td>
-      <td>description</td>
-      <td><%= link_to 'XML', api_v1_education_gcse_school_path(:format => "xml")  %></td>
-      <td><%= link_to 'JSON', api_v1_education_gcse_school_path(:format => "json") %></td>
-      <td><%= link_to 'HTML', api_v1_education_gcse_school_path(:format => "html") %></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-striped table-hover vertical-align-middle" width="100%">
+    <thead>
+      <tr>
+        <th>API</th>
+        <th>Version</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Post 16 Results</td>
+        <td>1.0</td>
+        <td>description</td>
+        <td><%= link_to 'XML', api_v1_education_post16results_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_education_post16results_path(:format => "json") %></td>
+        <td><%= link_to 'HTML', api_v1_education_post16results_path(:format => "html") %></td>
+      </tr>
+      <tr>
+        <td>GCSEs Overall</td>
+        <td>1.0</td>
+        <td>description</td>
+        <td><%= link_to 'XML', api_v1_education_gcse_overall_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_education_gcse_overall_path(:format => "json") %></td>
+        <td><%= link_to 'HTML', api_v1_education_gcse_overall_path(:format => "html") %></td>
+      </tr>
+      <tr>
+        <td>GCSEs By School</td>
+        <td>1.0</td>
+        <td>description</td>
+        <td><%= link_to 'XML', api_v1_education_gcse_school_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v1_education_gcse_school_path(:format => "json") %></td>
+        <td><%= link_to 'HTML', api_v1_education_gcse_school_path(:format => "html") %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h3>Source</h3>
 <%= link_to 'education.gg website', 'http://www.education.gg' %>
