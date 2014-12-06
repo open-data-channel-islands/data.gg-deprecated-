@@ -16,6 +16,7 @@ DataGg::Application.routes.draw do
   
   namespace :charts do
     get 'buses' => 'buses#index', as: :buses
+    get 'buses/split' => 'buses#split', as: :buses_split
     get 'housing' => 'housing#index', as: :housing
     get 'police' => 'police#index', as: :police
     get 'population' => 'population#index', as: :population
