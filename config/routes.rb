@@ -7,39 +7,41 @@ DataGg::Application.routes.draw do
 
   get 'about' => 'home#about', as: :about
   get 'help' => 'home#help', as: :help
-  get 'contact' => 'home#contact', as: :contact  
+  get 'contact' => 'home#contact', as: :contact
   get 'contribute' => 'home#contribute', as: :contribute
-  
+
   # Charts section
-  
+
   get 'charts' => 'charts#index', as: :charts
-  
+
   namespace :charts do
     get 'buses' => 'buses#index', as: :buses
     get 'buses/split' => 'buses#split', as: :buses_split
     get 'housing' => 'housing#index', as: :housing
     get 'crime' => 'crime#index', as: :crime
+    get 'traffic' => 'traffic#index', as: :traffic
     get 'population' => 'population#index', as: :population
-    
+
     # Education
     get 'education' => 'education#index', as: :education
     get 'education/post16results', as: :education_post16results
     get 'education/gcses_overall', as: :education_gcses_overall
     get 'education/gcses_by_school', as: :education_gcses_by_school
-    
-    
+
+
     get 'earnings' => 'earnings#index', as: :earnings
   end
 
 
   # Developer guides section
-  
+
   get 'developers' => 'developers#index', as: :developers
-  
+
   namespace :developers do
     get 'buses' => 'buses#index', as: :buses
     get 'housing' => 'housing#index', as: :housing
     get 'crime' => 'crime#index', as: :crime
+    get 'traffic' => 'traffic#index', as: :traffic
     get 'population' => 'population#index', as: :population
     get 'education' => 'education#index', as: :education
     get 'earnings' => 'earnings#index', as: :earnings
@@ -56,21 +58,23 @@ DataGg::Application.routes.draw do
       # Buses
       get 'buses/usage' => 'buses#usage'
 
-      # Police
-      get 'police/crimes' => 'police#crimes'
-      get 'police/traffic' => 'police#traffic'
-      get 'police/traffic_collisions' => 'police#traffic_collisions'
-      get 'police/traffic_injuries' => 'police#traffic_injuries'
-      get 'police/traffic_classifications' => 'police#traffic_classifications'
-      
+      # Crime
+      get 'crime/crimes' => 'crime#crimes'
+
+      # Traffic
+      get 'traffic/traffic' => 'traffic#traffic'
+      get 'traffic/collisions' => 'traffic#collisions'
+      get 'traffic/injuries' => 'traffic#injuries'
+      get 'traffic/classifications' => 'traffic#classifications'
+
       #Housing
       get 'housing/prices' => 'housing#prices'
 
     end
   end
-  
-  
-  
+
+
+
   # LEGACY CALLS
 
   get 'api/v1/flights/', to: 'api/v1/flights#index'
@@ -126,10 +130,10 @@ DataGg::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
-  
-  
-  
+
+
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -163,9 +167,9 @@ DataGg::Application.routes.draw do
   #  get 'timetables/list' => 'timetables#list'
   #  get 'timetables/current_version' => 'timetables#current_version'
   #end
-  
-  
-  
+
+
+
   # Note that the rails docs say this:
   #   "Resources should never be nested more than 1 level deep." (Section 2.7.1 'Limits to nesting' - http://guides.rubyonrails.org/routing.html)
   # In this case I think because of the complexity, it's justified, and easier to navigate to
@@ -183,7 +187,7 @@ DataGg::Application.routes.draw do
         # Make believe. Always work from the origin point.
 #        resources :stop_times, param: :id do
 #          get 'edit_individual' => 'stop_times#edit_individual', as: :edit_individual
-          
+
 #          post 'atomic_stop_time' => 'stop_times#add_exception', as: :add_exception
  #         delete 'remove_exception' => 'stop_times#remove_exception', as: :remove_exception
 #        end
@@ -192,7 +196,7 @@ DataGg::Application.routes.draw do
   #        collection do
    #         post 'create_stop_links'
     #      end
-     #     
+     #
       #    post 'move_up'
        #   post 'move_down'
 #        end

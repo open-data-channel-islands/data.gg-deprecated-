@@ -1,22 +1,10 @@
 require 'json'
 
-class Api::V10::PoliceController < ApplicationController
-  
+class Api::V10::TrafficController < ApplicationController
+
   def index
     respond_to do |format|
       format.html { render :index }
-    end
-  end
-
-  def crimes
-    crime_json = File.read("storage/crime.json")
-    @crimes = JSON.parse(crime_json)
-    @crimes.sort_by! { |c| c['Year'] }
-
-    respond_to do |format|
-      format.json { render json: @crimes }
-      format.xml { render xml: @crimes }
-      format.html { render html: @crimes, layout: false }
     end
   end
 
@@ -28,11 +16,11 @@ class Api::V10::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: false }
+      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
-  def traffic_collisions
+  def collisions
     traffic_json = File.read("storage/traffic_collisions.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -40,11 +28,11 @@ class Api::V10::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: false }
+      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
-  def traffic_injuries
+  def injuries
     traffic_json = File.read("storage/traffic_injuries.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -52,11 +40,11 @@ class Api::V10::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: false }
+      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
-  def traffic_classifications
+  def classifications
     traffic_json = File.read("storage/traffic_classifications.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -64,7 +52,7 @@ class Api::V10::PoliceController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: false }
+      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

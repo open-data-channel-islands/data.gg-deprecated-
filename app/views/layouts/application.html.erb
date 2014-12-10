@@ -62,11 +62,11 @@
       </div>
     </div>
     <div class="container">
-    
+
       <% flash.each do |key, value| %>
         <%= content_tag :div, value, class: "alert alert-#{key}" %>
       <% end %>
-    
+
       <%= yield %>
     </div>
   <% end %>
@@ -77,10 +77,10 @@
         <div class="col-md-6">
           <p class="muted credit">Copyright &copy; 2014 - Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and
             <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %></p>
-          
+
             <p>Visit our friends at <%= link_to 'data.je', 'http://www.data.je' %></p>
         </div>
-      
+
         <div class="col-md-2">
           <ul>
             <li><strong><%= link_to 'Home', root_path %></strong></li>
@@ -90,7 +90,7 @@
             <li><%= link_to 'Email', 'mailto:hey@data.gg' %></li>
           </ul>
         </div>
-      
+
         <div class="col-md-2">
           <ul>
             <li><strong><%= link_to 'Charts', charts_path %></strong></li>
@@ -99,10 +99,11 @@
             <li><%= link_to 'Education', charts_education_path %></li>
             <li><%= link_to 'Housing', charts_housing_path %></li>
             <li><%= link_to 'Crime', charts_crime_path %></li>
+            <li><%= link_to 'Traffic', charts_traffic_path %></li>
             <li><%= link_to 'Population', charts_population_path %></li>
           </ul>
         </div>
-      
+
         <div class="col-md-1">
           <ul>
             <li><strong><%= link_to 'Developers', developers_path %></strong></li>
@@ -112,6 +113,7 @@
             <li><%= link_to 'Flights', developers_flights_path %></li>
             <li><%= link_to 'Housing', developers_housing_path %></li>
             <li><%= link_to 'Crime', developers_crime_path %></li>
+            <li><%= link_to 'Traffic', developers_traffic_path %></li>
             <li><%= link_to 'Population', developers_population_path %></li>
             <li><%= link_to 'Sailings', developers_sailings_path %></li>
           </ul>
