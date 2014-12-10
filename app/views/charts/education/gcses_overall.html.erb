@@ -2,7 +2,7 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Charts", charts_path %></li>
-    <li><%= link_to "Education", charts_education_path %></li>
+    <li><%= link_to "Education", charts_education_post16results_path %></li>
     <li class="active">Overall GCSEs</li>
   </ol>
 <% end %>
@@ -13,5 +13,12 @@
     <div class="page-header">
       <h1>Overall GCSEs</h1>
     </div>
+    
+    
+    <ul class="nav nav-tabs">
+      <li role="presentation"><%= link_to 'Post-16 Results', charts_education_post16results_path %></li>
+      <li role="presentation" class="active"><%= link_to 'Overall GCSEs', charts_education_gcses_overall_path %></li>
+      <li role="presentation"><%= link_to 'GCSEs by School', charts_education_gcses_by_school_path %></li>
+    </ul>
   </div>
 </div>

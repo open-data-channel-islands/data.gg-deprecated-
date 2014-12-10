@@ -18,7 +18,7 @@ DataGg::Application.routes.draw do
     get 'buses' => 'buses#index', as: :buses
     get 'buses/split' => 'buses#split', as: :buses_split
     get 'housing' => 'housing#index', as: :housing
-    get 'police' => 'police#index', as: :police
+    get 'crime' => 'crime#index', as: :crime
     get 'population' => 'population#index', as: :population
     
     # Education
@@ -39,7 +39,7 @@ DataGg::Application.routes.draw do
   namespace :developers do
     get 'buses' => 'buses#index', as: :buses
     get 'housing' => 'housing#index', as: :housing
-    get 'police' => 'police#index', as: :police
+    get 'crime' => 'crime#index', as: :crime
     get 'population' => 'population#index', as: :population
     get 'education' => 'education#index', as: :education
     get 'earnings' => 'earnings#index', as: :earnings

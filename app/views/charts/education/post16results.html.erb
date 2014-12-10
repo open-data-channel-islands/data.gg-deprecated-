@@ -2,19 +2,24 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Charts", charts_path %></li>
-    <li><%= link_to "Education", charts_education_path %></li>
+    <li><%= link_to "Education", charts_education_post16results_path %></li>
     <li class="active">Post-16 Results</li>
   </ol>
 <% end %>
 
+<div class="page-header">
+  <h1>Post-16 Results</h1>
+</div>
+    
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to 'Post-16 Results', charts_education_post16results_path %></li>
+  <li role="presentation"><%= link_to 'Overall GCSEs', charts_education_gcses_overall_path %></li>
+  <li role="presentation"><%= link_to 'GCSEs by School', charts_education_gcses_by_school_path %></li>
+</ul>
+
 <div class="row">
   <div class="col-md-12">
-    
-    <div class="page-header">
-      <h1>Post-16 Results</h1>
-    </div>
-    
-    
+
     <h2>A-Level Results</h2>
     
     <canvas id="post_16_chart" class="col-md-12"></canvas>
@@ -22,8 +27,8 @@
       var ctx = document.getElementById("post_16_chart").getContext("2d");
 
       var data = {
-        labels : <%= @labels.to_s.html_safe -%>,
-        datasets : <%= @result_sets.to_json.html_safe -%>
+        labels : <%= @alevel_labels.to_s.html_safe -%>,
+        datasets : <%= @alevels.to_json.html_safe -%>
       };
       Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx).Bar(data, {
@@ -33,7 +38,19 @@
     
     <h2>BTEC Results</h2>
     
-    
+    <canvas id="btec_chart" class="col-md-12"></canvas>
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("btec_chart").getContext("2d");
+
+      var data = {
+        labels : <%= @btec_labels.to_s.html_safe -%>,
+        datasets : <%= @btecs.to_json.html_safe -%>
+      };
+      Chart.defaults.global.responsive = true;
+      var myNewChart = new Chart(ctx).Bar(data, {
+
+      });
+    <% end %>
     
   </div>
 </div>
