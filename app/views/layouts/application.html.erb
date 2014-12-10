@@ -74,14 +74,7 @@
   <div id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p class="muted credit">Copyright &copy; 2014 - Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and
-            <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %></p>
-
-            <p>Visit our friends at <%= link_to 'data.je', 'http://www.data.je' %></p>
-        </div>
-
-        <div class="col-md-2">
+        <div class="col-md-1 col-sm-2 col-xs-4">
           <ul>
             <li><strong><%= link_to 'Home', root_path %></strong></li>
             <li><%= link_to 'Contact', contact_path %></li>
@@ -91,7 +84,8 @@
           </ul>
         </div>
 
-        <div class="col-md-2">
+
+        <div class="col-md-1 col-sm-2 col-xs-4">
           <ul>
             <li><strong><%= link_to 'Charts', charts_path %></strong></li>
             <li><%= link_to 'Buses', charts_buses_path %></li>
@@ -104,7 +98,7 @@
           </ul>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-2 col-xs-4">
           <ul>
             <li><strong><%= link_to 'Developers', developers_path %></strong></li>
             <li><%= link_to 'Buses', developers_buses_path %></li>
@@ -117,6 +111,13 @@
             <li><%= link_to 'Population', developers_population_path %></li>
             <li><%= link_to 'Sailings', developers_sailings_path %></li>
           </ul>
+        </div>
+
+        <div class="text-right col-md-9 col-sm-3 col-xs-12">
+          <p class="muted credit">Copyright &copy; 2014 - Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and
+            <%= link_to 'Kieran Senior', 'http://kieransenior.co.uk/' %></p>
+
+            <p>Visit our friends at <%= link_to 'data.je', 'http://www.data.je' %></p>
         </div>
       </div>
     </div>

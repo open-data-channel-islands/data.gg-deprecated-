@@ -9,7 +9,6 @@
 
 <div class="row">
   <div class="col-md-12">
-    
     <div class="page-header">
       <h1>GCSEs by School</h1>
     </div>
@@ -19,5 +18,35 @@
       <li role="presentation"><%= link_to 'Overall GCSEs', charts_education_gcses_overall_path %></li>
       <li role="presentation" class="active"><%= link_to 'GCSEs by School', charts_education_gcses_by_school_path %></li>
     </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    
+    <h2>GCSEs by School</h2>
+    <canvas id="post_16_chart" class="col-md-12"></canvas>
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("post_16_chart").getContext("2d");
+
+      var data = {
+        labels : <%= @gcse_labels.to_s.html_safe -%>,
+        datasets : <%= @results.to_json.html_safe -%>
+      };
+      Chart.defaults.global.responsive = true;
+      var myNewChart = new Chart(ctx).Bar(data, {
+
+      });
+    <% end %>
+    
+    <table style="margin-bottom:50px;font-size:0.9em">
+      <tr>
+        <% @gcse_colour_keys.each do |key,value| %>
+        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></td>
+          <td><%= value %></td>
+        <% end %>
+      </tr>
+    </table>
+    
   </div>
 </div>
