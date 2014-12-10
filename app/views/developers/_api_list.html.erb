@@ -4,9 +4,9 @@
     <table class="table table-striped table-hover vertical-align-middle" width="100%">
       <thead>
         <tr>
-          <td>API</td>
-          <td>Output Formats</td>
-          <td>Description</td>
+          <th>API</th>
+          <th>Output Formats</th>
+          <th>Description</th>
         </tr>
       </thead>
       <tbody>
@@ -18,8 +18,9 @@
             </a>
           <td><span class="label label-primary">XML</span>
               <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span>
           </td>
-          <td>Bus usage statistics</td>
+          <td>Monthly usage of buses since 2011</td>
         </tr>
         <tr>
           <td valign="middle">
@@ -29,8 +30,9 @@
             </a>
           </td>
           <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span></td>
-          <td>Bus statistics on usage</td>
+              <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span></td>
+          <td>Earnings by age group, sector, and sex</td>
         </tr>
         <tr>
           <td>
@@ -40,8 +42,9 @@
             </a>
           </td>
           <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span></td>
-          <td>Guernsey education data from annual reports</td>
+              <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span></td>
+          <td>Post-16 results, overall GCSE grades and GCSE grades by school</td>
         </tr>
         <tr>
           <td>
@@ -50,9 +53,12 @@
               Flights
             </a>
           </td>
-          <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span>
-              <span class="label label-default">LIVE!</span></td>
+          <td>
+            <span class="label label-primary">XML</span>
+            <span class="label label-info">JSON</span>
+            <span class="label label-warning">HTML</span>
+            <span class="label label-default">LIVE!</span>
+          </td>
           <td>Flight details refreshed on the fly from the Guernsey Airport</td>
         </tr>
         <tr>
@@ -62,20 +68,26 @@
               House Prices
             </a>
           </td>
-          <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span></td>
+          <td>
+              <span class="label label-primary">XML</span>
+              <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span>
+          </td>
           <td>Detailed quarterly house prices since 1981 to today</td>
         </tr>
         <tr>
           <td>
             <a class="category-inline-link" href="<%= developers_crime_path %>">
               <span class="category-small category-image category-police"></span>
-              Police
+              Crime
             </a>
           </td>
-          <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span></td>
-          <td>Police and crime data from published reports</td>
+          <td>
+            <span class="label label-primary">XML</span>
+            <span class="label label-info">JSON</span>
+            <span class="label label-warning">HTML</span>
+          </td>
+          <td>Detailed crime data from published reports</td>
         </tr>
         <tr>
           <td>
@@ -85,7 +97,9 @@
             </a>
           </td>
           <td><span class="label label-primary">XML</span>
-              <span class="label label-info">JSON</span></td>
+              <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span>
+          </td>
           <td>Guernsey population data from published reports</td>
         </tr>
         <tr>
@@ -97,6 +111,7 @@
           </td>
           <td><span class="label label-primary">XML</span>
               <span class="label label-info">JSON</span>
+              <span class="label label-warning">HTML</span>
               <span class="label label-default">LIVE!</span></td></td>
           <td>Sailing details (more coming soon!)</td>
         </tr>
