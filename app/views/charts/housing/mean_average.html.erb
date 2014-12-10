@@ -1,0 +1,42 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Charts", charts_path %></li>
+    <li class="active">Housing</li>
+  </ol>
+<% end %>
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>Housing Charts</h1>
+    </div>
+    
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
+      <li role="presentation"><%= link_to 'No. Of Transactions', charts_housing_transactions_path %></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    
+    <canvas id="mean_average"></canvas>
+    <%= javascript_tag do %>
+      var ctx = document.getElementById("mean_average").getContext("2d");
+
+      var data = {
+        labels : <%= @labels.to_json.html_safe %>,
+        datasets : <%= @data.to_json.html_safe -%>
+      };
+      Chart.defaults.global.responsive = true;
+      var myNewChart = new Chart(ctx).Line(data, {
+
+      });
+    <% end %>
+    
+  </div>
+</div>

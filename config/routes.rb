@@ -17,7 +17,11 @@ DataGg::Application.routes.draw do
   namespace :charts do
     get 'buses' => 'buses#index', as: :buses
     get 'buses/split' => 'buses#split', as: :buses_split
-    get 'housing' => 'housing#index', as: :housing
+    
+    # Housing
+    get 'housing/mean_average' => 'housing#mean_average', as: :housing_mean_average
+    get 'housing/transactions' => 'housing#transactions', as: :housing_transactions
+    
     get 'crime' => 'crime#index', as: :crime
     get 'traffic' => 'traffic#index', as: :traffic
     get 'population' => 'population#index', as: :population
