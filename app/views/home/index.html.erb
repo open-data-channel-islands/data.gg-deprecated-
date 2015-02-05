@@ -22,19 +22,29 @@
       </div>
     </div>
     
-     <h4 style="text-align:center;">Annual Bus Usage by Month</h4>
+    <div class="row">
+      <h4 class="text-center col-md-12">Annual Bus Usage by Month</h4>
       <%= render partial: "charts/buses/split" %>
-    <table style="margin-bottom:50px;font-size:0.9em">
-      <tr>
-        <% @labels.each do |label| %>
-        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></td>
-          <td><%= label[0] %></td>
-        <% end %>
-      </tr>
-    </table>
+      
+      <div class="col-md-12">
+        <table style="margin-bottom:50px;font-size:0.9em">
+          <tr>
+            <% @labels.each do |label| %>
+            <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></td>
+              <td><%= label[0] %></td>
+            <% end %>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+    
+    <div class="row">
+      <%= render partial: "charts/categories" %>
+    </div>
    
 
-    <%= render partial: "charts/categories" %>
+    
   </div>
 </div>
 
