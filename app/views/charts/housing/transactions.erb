@@ -22,9 +22,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12">
-    
-    <canvas id="transactions"></canvas>
+    <canvas id="transactions" class="col-md-12"></canvas>
     <%= javascript_tag do %>
       var ctx = document.getElementById("transactions").getContext("2d");
 
@@ -34,9 +32,7 @@
       };
       Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx).Line(data, {
-
+          pointHitDetectionRadius: 4
       });
     <% end %>
-    
-  </div>
 </div>

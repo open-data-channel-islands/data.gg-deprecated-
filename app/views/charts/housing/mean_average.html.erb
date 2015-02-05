@@ -22,9 +22,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12">
-    
-    <canvas id="mean_average"></canvas>
+    <canvas class="col-md-12" id="mean_average"></canvas>
     <%= javascript_tag do %>
       var ctx = document.getElementById("mean_average").getContext("2d");
 
@@ -34,9 +32,10 @@
       };
       Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx).Line(data, {
-
+        pointHitDetectionRadius: 2,
+        showScaleLabels:false,
+        scaleFontSize:10
       });
     <% end %>
     
-  </div>
 </div>
