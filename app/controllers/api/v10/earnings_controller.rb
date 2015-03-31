@@ -1,6 +1,6 @@
 require 'json'
 
-class Api::V1::EarningsController < ApplicationController
+class Api::V10::EarningsController < ApplicationController
   before_action :set_earnings_by_sex, only: [:earnings_sex, :index]
   before_action :set_earnings_by_age_group, only: [:earnings_age_group, :index]
 
@@ -16,7 +16,7 @@ class Api::V1::EarningsController < ApplicationController
     respond_to do |format|
       format.json { render json: @earnings_age_group }
       format.xml { render xml: @earnings_age_group }
-      format.html { render html: @earnings_age_group }
+      format.html { render html: @earnings_age_group, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -28,7 +28,7 @@ class Api::V1::EarningsController < ApplicationController
     respond_to do |format|
       format.json { render json: @earnings }
       format.xml { render xml: @earnings }
-      format.html { render html: @earnings }
+      format.html { render html: @earnings, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -38,7 +38,7 @@ class Api::V1::EarningsController < ApplicationController
     respond_to do |format|
       format.json { render json: @earnings_sex }
       format.xml { render xml: @earnings_sex }
-      format.html { render html: @earnings_sex }
+      format.html { render html: @earnings_sex, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

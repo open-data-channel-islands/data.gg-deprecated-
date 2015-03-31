@@ -20,24 +20,18 @@
         <th></th>
         <th></th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Herm Trident</td>
-        <td>1.0</td>
-        <td>description</td>
-        <td><%= link_to 'XML', api_v1_sailings_herm_trident_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v1_sailings_herm_trident_path(:format => "json") %></td>
-        <td><%= link_to 'HTML', api_v1_sailings_herm_trident_path(:format => "html") %></td>
-      </tr>
-      <tr>
         <td>Harbour</td>
         <td>1.0</td>
         <td>description</td>
-        <td><%= link_to 'XML', api_v1_sailings_harbour_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v1_sailings_harbour_path(:format => "json") %></td>
-        <td><%= link_to 'HTML', api_v1_sailings_harbour_path(:format => "html") %></td>
+        <td><%= link_to 'XML', api_v10_sailings_harbour_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_sailings_harbour_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_sailings_harbour_path(:format => "html", :layout => false) %></td>
+        <td><%= link_to 'HTML', api_v10_sailings_harbour_path(:format => "html") %></td>
       </tr>
     </tbody>
   </table>

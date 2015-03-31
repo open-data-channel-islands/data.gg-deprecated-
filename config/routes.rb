@@ -17,11 +17,11 @@ DataGg::Application.routes.draw do
   namespace :charts do
     get 'buses' => 'buses#index', as: :buses
     get 'buses/split' => 'buses#split', as: :buses_split
-    
+
     # Housing
     get 'housing/mean_average' => 'housing#mean_average', as: :housing_mean_average
     get 'housing/transactions' => 'housing#transactions', as: :housing_transactions
-    
+
     get 'crime' => 'crime#index', as: :crime
     get 'traffic' => 'traffic#index', as: :traffic
     get 'population' => 'population#index', as: :population
@@ -59,20 +59,34 @@ DataGg::Application.routes.draw do
   namespace :api do
     namespace "v10", path: "1.0", module: "v1_0" do
 
-      # Buses
       get 'buses/usage' => 'buses#usage'
 
-      # Crime
       get 'crime/crimes' => 'crime#crimes'
 
-      # Traffic
       get 'traffic/traffic' => 'traffic#traffic'
       get 'traffic/collisions' => 'traffic#collisions'
       get 'traffic/injuries' => 'traffic#injuries'
       get 'traffic/classifications' => 'traffic#classifications'
 
-      #Housing
       get 'housing/prices' => 'housing#prices'
+
+      get 'flights/arrivals' => 'flights#arrivals'
+      get 'flights/departures' => 'flights#departures'
+
+      get 'sailings/harbour' => 'sailings#harbour'
+
+      get 'education/post16results' => 'education#post16results'
+      get 'education/gcse_overall' => 'education#gcse_overall'
+      get 'education/gcse_school' => 'education#gcse_school'
+
+      get 'population/population' => 'population#population'
+
+
+
+      get 'earnings/earnings_age_group' => 'earnings#earnings_age_group'
+      get 'earnings/earnings_sector' => 'earnings#earnings_sector'
+      get 'earnings/earnings_sex' => 'earnings#earnings_sex'
+
 
     end
   end

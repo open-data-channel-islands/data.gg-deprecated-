@@ -1,0 +1,93 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li class="active">Police</li>
+  </ol>
+<% end %>
+
+<h2>Police</h2>
+<h3>Crime and Proceedings</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_crimes_path(:format => "xml") %>
+    XML
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_crimes_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_crimes_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Traffic</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_path(:format => "xml") %>
+    XML
+  </div>
+
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Traffic Collisions</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_collisions_path(:format => "xml") %>
+    XML
+  </div>
+
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_collisions_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_collisions_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Traffic Injuries</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_injuries_path(:format => "xml") %>
+    XML
+  </div>
+
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_injuries_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_injuries_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3>Traffic Classifications</h3>
+<div class="row">
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_classifications_path(:format => "xml") %>
+    XML
+  </div>
+
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_classifications_path(:format => "json") %>
+    JSON
+  </div>
+  <div class="col-md-4 padded-cell">
+  <%= link_to image_tag("note-64x64.png"), api_v1_police_traffic_classifications_path(:format => "html") %>
+    HTML
+  </div>
+</div>
+
+<h3><%= link_to 'Source', 'http://www.guernsey.police.uk/article/6078/Publications' %></h3>

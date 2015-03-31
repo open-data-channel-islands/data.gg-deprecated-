@@ -1,0 +1,24 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Police", api_v1_police_path %></li>
+    <li class="active">Traffic Collisions</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Collisions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @traffic.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Collisions'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

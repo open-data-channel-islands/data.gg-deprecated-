@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-class Api::V1::SailingsController < ApplicationController
+class Api::V10::SailingsController < ApplicationController
 
   def index
     respond_to do |format|
@@ -16,7 +16,7 @@ class Api::V1::SailingsController < ApplicationController
     respond_to do |format|
       format.json { render json: @sailings }
       format.xml { render xml: @sailings }
-      format.html { render html: @sailings }
+      format.html { render html: @sailings, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -28,7 +28,7 @@ class Api::V1::SailingsController < ApplicationController
     respond_to do |format|
       format.json { render json: @herm_tridents }
       format.xml { render xml: @herm_tridents }
-      format.html { render html: @herm_tridents }
+      format.html { render html: @herm_tridents, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

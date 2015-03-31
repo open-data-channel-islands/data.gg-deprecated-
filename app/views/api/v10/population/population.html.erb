@@ -1,0 +1,67 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Population", api_v1_population_path %></li>
+    <li class="active">Population</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date Taken</th>
+      <th>Year</th>
+      <th>Sex</th>
+      <th>0-4</th>
+      <th>5-9</th>
+      <th>10-14</th>
+      <th>15-19</th>
+      <th>20-24</th>
+      <th>25-29</th>
+      <th>30-34</th>
+      <th>35-39</th>
+      <th>40-44</th>
+      <th>45-49</th>
+      <th>50-54</th>
+      <th>55-59</th>
+      <th>60-64</th>
+      <th>65-69</th>
+      <th>70-74</th>
+      <th>75-79</th>
+      <th>80-84</th>
+      <th>85-89</th>
+      <th>90-94</th>
+      <th>95+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @population.each do |p| %>
+      <tr>
+        <td><%= p['Date Taken'] %></td>
+        <td><%= p['Year'] %></td>
+        <td><%= p['Sex'] %></td>
+        <td><%= p['0-4'] %></td>
+        <td><%= p['5-9'] %></td>
+        <td><%= p['10-14'] %></td>
+        <td><%= p['15-19'] %></td>
+        <td><%= p['20-24'] %></td>
+        <td><%= p['25-29'] %></td>
+        <td><%= p['30-34'] %></td>
+        <td><%= p['35-39'] %></td>
+        <td><%= p['40-44'] %></td>
+        <td><%= p['45-49'] %></td>
+        <td><%= p['50-54'] %></td>
+        <td><%= p['55-59'] %></td>
+        <td><%= p['60-64'] %></td>
+        <td><%= p['65-69'] %></td>
+        <td><%= p['70-74'] %></td>
+        <td><%= p['75-79'] %></td>
+        <td><%= p['80-84'] %></td>
+        <td><%= p['85-89'] %></td>
+        <td><%= p['90-94'] %></td>
+        <td><%= p['95+'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

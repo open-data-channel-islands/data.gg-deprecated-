@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'time'
-class Api::V1::FlightsController < ApplicationController
+class Api::V10::FlightsController < ApplicationController
   def index
     respond_to do |format|
       format.html { render :index }
@@ -22,7 +22,7 @@ class Api::V1::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights }
+      format.html { render html: @flights, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -40,7 +40,7 @@ class Api::V1::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights }
+      format.html { render html: @flights, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
 
   end

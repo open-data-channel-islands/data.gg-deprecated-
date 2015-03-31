@@ -20,6 +20,7 @@
         <th></th>
         <th></th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -27,25 +28,28 @@
         <td>Earnings by Age Group</td>
         <td>1.0</td>
         <td>Blah</td>
-        <td><%= link_to 'XML', api_v1_earnings_earnings_age_group_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v1_earnings_earnings_age_group_path(:format => "json")  %></td>
-        <td><%= link_to 'HTML', api_v1_earnings_earnings_age_group_path(:format => "html")  %></td>
+        <td><%= link_to 'XML', api_v10_earnings_earnings_age_group_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_earnings_earnings_age_group_path(:format => "json")  %></td>
+        <td><%= link_to 'RAW HTML', api_v10_earnings_earnings_age_group_path(:format => "html", layout: false)  %></td>
+        <td><%= link_to 'HTML', api_v10_earnings_earnings_age_group_path(:format => "html")  %></td>
       </tr>
       <tr>
         <td>Earnings by Sector</td>
         <td>1.0</td>
         <td>Blah</td>
-        <td><%= link_to 'XML', api_v1_earnings_earnings_sector_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v1_earnings_earnings_sector_path(:format => "json")  %></td>
-        <td><%= link_to 'HTML', api_v1_earnings_earnings_sector_path(:format => "html")  %></td>
+        <td><%= link_to 'XML', api_v10_earnings_earnings_sector_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_earnings_earnings_sector_path(:format => "json")  %></td>
+        <td><%= link_to 'RAW HTML', api_v10_earnings_earnings_sector_path(:format => "html", layout: false)  %></td>
+        <td><%= link_to 'HTML', api_v10_earnings_earnings_sector_path(:format => "html")  %></td>
       </tr>
       <tr>
         <td>Earnings by Sex</td>
         <td>1.0</td>
         <td>Blah</td>
-        <td><%= link_to 'XML', api_v1_earnings_earnings_sex_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v1_earnings_earnings_sex_path(:format => "json")  %></td>
-        <td><%= link_to 'HTML', api_v1_earnings_earnings_sex_path(:format => "html")  %></td>
+        <td><%= link_to 'XML', api_v10_earnings_earnings_sex_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_earnings_earnings_sex_path(:format => "json")  %></td>
+        <td><%= link_to 'RAW HTML', api_v10_earnings_earnings_sex_path(:format => "html", layout: false)  %></td>
+        <td><%= link_to 'HTML', api_v10_earnings_earnings_sex_path(:format => "html")  %></td>
       </tr>
     </tbody>
   </table>
