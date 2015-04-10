@@ -43,9 +43,6 @@
           <li><%= link_to 'Charts', charts_path %></li>
           <li><%= link_to 'Developers', developers_path %></li>
           <!--<li><%= link_to 'Help', help_path %></li>-->
-          <% if user_signed_in? %>
-            <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
-          <% end %>
         </ul>
       </div>
     </div>
