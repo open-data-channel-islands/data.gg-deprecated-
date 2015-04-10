@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.4.0'
 
 set :application, 'data.gg'
 set :repo_url, 'git@bitbucket.org:reformsoft/data.gg.git'
