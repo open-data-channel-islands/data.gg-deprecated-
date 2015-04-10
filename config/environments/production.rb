@@ -20,7 +20,7 @@ DataGg::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_files = false
+  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -60,7 +60,7 @@ DataGg::Application.configure do
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   #config.assets.precompile += %w( .scss bootstrap.css bootstrap.min.css bootstrap.js bootstrap.min.js Chart.js Chart.min.js )
-  config.assets.precompile += %w( *.css *.js )
+  #config.assets.precompile += %w( *.css *.js )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -72,6 +72,8 @@ DataGg::Application.configure do
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
+
+  config.log_formatter = ::Logger::Formatter.new
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
