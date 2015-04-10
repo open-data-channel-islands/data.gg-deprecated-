@@ -5,13 +5,6 @@
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
 
-role :app, %w{admin@apps.default.jmagee.uk0.bigv.io}
-role :web, %w{admin@apps.default.jmagee.uk0.bigv.io}
-role :db,  %w{admin@apps.default.jmagee.uk0.bigv.io}
-
-set :deploy_to, '/var/www/data.gg_staging'
-
-
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server
