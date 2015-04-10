@@ -7,7 +7,7 @@ set -e
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/srv/data/current
 PID=/srv/data/shared/pids/unicorn.pid
-CMD="/srv/data/shared/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+CMD="/srv/data/shared/bundle/ruby/2.2.0/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
 INIT_CONF=$APP_ROOT/config/init.conf
 action="$1"
 set -u
