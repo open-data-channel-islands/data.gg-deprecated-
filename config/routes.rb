@@ -3,8 +3,6 @@ DataGg::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  devise_for :users
-
   get 'about' => 'home#about', as: :about
   get 'help' => 'home#help', as: :help
   get 'contact' => 'home#contact', as: :contact

@@ -1,1 +1,1 @@
-server "data.zeus.jmagee.uk0.bigv.io", user: 'admin', roles: %w{web app db}
+server 'admin@data.guernsey.jmagee.uk0.bigv.io', user: 'admin', roles: %w{web app db}
