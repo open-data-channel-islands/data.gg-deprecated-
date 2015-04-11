@@ -14,16 +14,16 @@
 
 @import "bootstrap/bootstrap.scss";
 
-@font-face {  
-    font-family: 'catfont';  
-    src:url('/assets/catfont.eot');  
-    src:url('/assets/catfont.eot?#iefix') format('embedded-opentype'),  
-        url('/assets/catfont.svg#catfont') format('svg'),  
-        url('/assets/catfont.woff') format('woff'),  
-        url('/assets/catfont.ttf') format('truetype');  
-    font-weight: normal;  
-    font-style: normal;  
-}  
+@font-face {
+    font-family: 'catfont';
+    src:url('/assets/catfont.eot');
+    src:url('/assets/catfont.eot?#iefix') format('embedded-opentype'),
+        url('/assets/catfont.svg#catfont') format('svg'),
+        url('/assets/catfont.woff') format('woff'),
+        url('/assets/catfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body div.navbar, .navbar-fixed-top {
   margin-bottom:0;
@@ -48,10 +48,10 @@ body div.navbar, .navbar-fixed-top {
 
 
 .category-image {
-  font-family: 'catfont'; /* Reference your custom font */  
-  speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */  
-  -webkit-font-smoothing: antialiased; /* Force antialiasing */  
-  font-style: normal;  
+  font-family: 'catfont'; /* Reference your custom font */
+  speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */
+  -webkit-font-smoothing: antialiased; /* Force antialiasing */
+  font-style: normal;
   font-weight: normal;
   font-size:24px;
   text-align:center;
@@ -68,7 +68,7 @@ body div.navbar, .navbar-fixed-top {
 
 
 .category-finance.category-small {
-  
+
 }
 
 .category-small {
@@ -154,7 +154,7 @@ a.category:hover {
 }
 
 .front-page-feature-triangles {
-  background-image:url(/assets/gplaypattern.png);
+  background-image:image-url("gplaypattern.png");
   padding-bottom:30px
 }
 
