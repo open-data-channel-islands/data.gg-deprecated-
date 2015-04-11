@@ -49,9 +49,7 @@
   </div>
 
   <% if current_page?('/') %>
-    <div class="<%= 'container' unless true %>">
       <%= yield %>
-    </div>
   <% else %>
     <div id="breadcrumb">
       <div class="container">

@@ -1,4 +1,17 @@
-#!/admin/.rvm/rubies/ruby-2.2.0/bin
+#!/bin/sh
+
+# File: /etc/init.d/unicorn
+
+### BEGIN INIT INFO
+# Provides:          unicorn
+# Required-Start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the unicorn web server
+# Description:       starts unicorn
+### END INIT INFO
+
 set -e
 # Example init script, this can be used with nginx, too,
 # since nginx and unicorn accept the same signals
@@ -29,8 +42,8 @@ oldsig () {
 case $action in
 start)
   sig 0 && echo >&2 "Already running" && exit 0
-  $CMD
-  ;;
+  su - admin -c "/srv/data/shared/bundle/ruby/2.2.0/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+ ;;
 stop)
   sig QUIT && exit 0
   echo >&2 "Not running"
@@ -42,7 +55,7 @@ force-stop)
 restart|reload)
   sig HUP && echo reloaded OK && exit 0
   echo >&2 "Couldn't reload, starting '$CMD' instead"
-  $CMD
+  su - admin -c "/srv/data/shared/bundle/ruby/2.2.0/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
   ;;
 upgrade)
   if sig USR2 && sleep 2 && sig 0 && oldsig QUIT
@@ -62,7 +75,7 @@ upgrade)
     exit 0
   fi
   echo >&2 "Couldn't upgrade, starting '$CMD' instead"
-  $CMD
+  su - admin -c "/srv/data/shared/bundle/ruby/2.2.0/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
   ;;
 reopen-logs)
   sig USR1

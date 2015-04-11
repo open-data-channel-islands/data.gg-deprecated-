@@ -1,4 +1,5 @@
-<canvas id="bus_usage_chart" width="800" height="200" class="col-md-12"></canvas>
+<div>
+<canvas id="bus_usage_chart" width="800" height="200"></canvas>
 <%= javascript_tag do %>
   var ctx = document.getElementById("bus_usage_chart").getContext("2d");
 
@@ -8,6 +9,7 @@
   };
   Chart.defaults.global.responsive = true;
   var myNewChart = new Chart(ctx).Bar(data, {
-    
+
   });
 <% end %>
+</div>
