@@ -11,12 +11,10 @@ class Api::V10::EarningsController < ApplicationController
   end
 
   def earnings_age_group
-
-
     respond_to do |format|
       format.json { render json: @earnings_age_group }
       format.xml { render xml: @earnings_age_group }
-      format.html { render html: @earnings_age_group, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :earnings_age_group, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -28,17 +26,15 @@ class Api::V10::EarningsController < ApplicationController
     respond_to do |format|
       format.json { render json: @earnings }
       format.xml { render xml: @earnings }
-      format.html { render html: @earnings, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :earnings_sector, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
   def earnings_sex
-
-
     respond_to do |format|
       format.json { render json: @earnings_sex }
       format.xml { render xml: @earnings_sex }
-      format.html { render html: @earnings_sex, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :earnings_sex, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

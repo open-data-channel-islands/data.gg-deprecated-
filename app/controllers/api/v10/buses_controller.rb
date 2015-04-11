@@ -16,7 +16,7 @@ class Api::V10::BusesController < ApplicationController
     respond_to do |format|
       format.json { render json: @buses }
       format.xml { render xml: @buses }
-      format.html { render html: @buses, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :usage, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

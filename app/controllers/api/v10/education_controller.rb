@@ -16,7 +16,7 @@ class Api::V10::EducationController < ApplicationController
     respond_to do |format|
       format.json { render json: @post16results }
       format.xml { render xml: @post16results }
-      format.html { render html: @post16results, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :post16results, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -29,7 +29,7 @@ class Api::V10::EducationController < ApplicationController
     respond_to do |format|
       format.json { render json: @gcse_overall }
       format.xml { render xml: @gcse_overall }
-      format.html { render html: @gcse_overall, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :gcse_overall, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -42,7 +42,7 @@ class Api::V10::EducationController < ApplicationController
     respond_to do |format|
       format.json { render json: @gcse_school }
       format.xml { render xml: @gcse_school }
-      format.html { render html: @gcse_school, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :gcse_school, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

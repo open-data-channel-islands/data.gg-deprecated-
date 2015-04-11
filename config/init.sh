@@ -1,10 +1,9 @@
-#!/bin/sh
+#!/admin/.rvm/rubies/ruby-2.2.0/bin
 set -e
 # Example init script, this can be used with nginx, too,
 # since nginx and unicorn accept the same signals
 
 # Feel free to change any of the following variables for your app:
-PATH=/admin/.rvm/rubies/ruby-2.2.0/bin:$PATH
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/srv/data/current
 PID=/srv/data/shared/pids/unicorn.pid

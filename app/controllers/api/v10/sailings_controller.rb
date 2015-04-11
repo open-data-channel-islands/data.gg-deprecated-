@@ -10,25 +10,11 @@ class Api::V10::SailingsController < ApplicationController
   end
 
   def harbour
-
     @sailings = table_to_sailings_array()
-
     respond_to do |format|
       format.json { render json: @sailings }
       format.xml { render xml: @sailings }
-      format.html { render html: @sailings, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
-    end
-  end
-
-  def herm_trident
-    herm_trident_json = File.read("storage/herm_trident.json")
-    @herm_tridents = JSON.parse(herm_trident_json)
-    @herm_tridents.sort_by! { |c| c['Year'] }
-
-    respond_to do |format|
-      format.json { render json: @herm_tridents }
-      format.xml { render xml: @herm_tridents }
-      format.html { render html: @herm_tridents, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :harbour, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

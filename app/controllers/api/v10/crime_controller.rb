@@ -16,7 +16,7 @@ class Api::V10::CrimeController < ApplicationController
     respond_to do |format|
       format.json { render json: @crimes }
       format.xml { render xml: @crimes }
-      format.html { render html: @crimes, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :crimes, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

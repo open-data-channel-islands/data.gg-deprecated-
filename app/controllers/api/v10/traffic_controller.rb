@@ -16,7 +16,7 @@ class Api::V10::TrafficController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -28,7 +28,7 @@ class Api::V10::TrafficController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :collisions, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -40,7 +40,7 @@ class Api::V10::TrafficController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :injuries, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -52,7 +52,7 @@ class Api::V10::TrafficController < ApplicationController
     respond_to do |format|
       format.json { render json: @traffic }
       format.xml { render xml: @traffic }
-      format.html { render html: @traffic, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :classifications, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

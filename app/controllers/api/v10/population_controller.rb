@@ -11,7 +11,7 @@ class Api::V10::PopulationController < ApplicationController
     respond_to do |format|
       format.json { render json: @population }
       format.xml { render xml: @population }
-      format.html { render html: @population, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :population, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

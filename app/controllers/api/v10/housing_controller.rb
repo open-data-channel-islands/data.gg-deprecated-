@@ -16,7 +16,7 @@ module Api
       respond_to do |format|
         format.json { render json: @house_prices }
         format.xml { render xml: @house_prices }
-        format.html { render html: @house_prices, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+        format.html { render :prices, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
       end
     end
 

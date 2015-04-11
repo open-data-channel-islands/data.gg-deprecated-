@@ -22,7 +22,7 @@ class Api::V10::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :departures, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
@@ -40,7 +40,7 @@ class Api::V10::FlightsController < ApplicationController
     respond_to do |format|
       format.json { render json: @flights }
       format.xml { render xml: @flights }
-      format.html { render html: @flights, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.html { render :arrivals, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
 
   end
