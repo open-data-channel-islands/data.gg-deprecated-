@@ -28,7 +28,7 @@
         <td>Population</td>
         <td>1.0</td>
         <td>description</td>
-        <td>XML Coming Soon</td>
+        <td><%= link_to 'XML', api_v10_population_population_path(:format => "xml")  %></td>W
         <td><%= link_to 'JSON', api_v10_population_population_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_population_path(:format => "html", layout: false) %></td>
         <td><%= link_to 'HTML', api_v10_population_population_path(:format => "html") %></td>
@@ -37,4 +37,4 @@
   </table>
 </div>
 
-Source: <%= link_to 'gov.gg Website', 'http://www.gov.gg/population' %>
+<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>

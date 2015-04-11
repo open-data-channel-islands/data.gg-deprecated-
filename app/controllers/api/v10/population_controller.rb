@@ -10,7 +10,9 @@ class Api::V10::PopulationController < ApplicationController
   def population
     respond_to do |format|
       format.json { render json: @population }
-      format.xml { render xml: @population }
+      # We use a template builder for this one as the data column names have numbers in them
+      # and XML sucks.
+      format.xml { @population }
       format.html { render :population, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
