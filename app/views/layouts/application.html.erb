@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <title>data.gg (beta)</title>
-    <%= stylesheet_link_tag "application", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag :application %>
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
 
@@ -115,11 +115,6 @@
       </div>
     </div>
   </div>
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <%= javascript_include_tag "bootstrap.min", "data-turbolinks-track" => true %>
 
   <script type="text/javascript">
     $(document).ready(function() {
