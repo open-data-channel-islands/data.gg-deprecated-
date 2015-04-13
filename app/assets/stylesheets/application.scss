@@ -17,11 +17,11 @@
 
 @font-face {
     font-family: 'catfont';
-    src:url('/assets/catfont.eot');
-    src:url('/assets/catfont.eot?#iefix') format('embedded-opentype'),
-        url('/assets/catfont.svg#catfont') format('svg'),
-        url('/assets/catfont.woff') format('woff'),
-        url('/assets/catfont.ttf') format('truetype');
+    src:url('catfont.eot');
+    src:url('catfont.eot?#iefix') format('embedded-opentype'),
+        url('catfont.svg#catfont') format('svg'),
+        url('catfont.woff') format('woff'),
+        url('catfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
