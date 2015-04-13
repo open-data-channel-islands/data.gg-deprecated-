@@ -11,8 +11,9 @@
 
  */
 
-
-@import "bootstrap/bootstrap.scss";
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @font-face {
     font-family: 'catfont';
