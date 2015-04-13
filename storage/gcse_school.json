@@ -268,5 +268,95 @@
     "School":"St Anne’s School",
     "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
     "Percent":35.7
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Guernsey Grammar School",
+    "Result":"% 5+ A*– G GCSEs",
+    "Percent":100
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Guernsey Grammar School",
+    "Result":"% 5+ A*– C GCSEs or equivalent",
+    "Percent":98.1
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Guernsey Grammar School",
+    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
+    "Percent":98.1
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Les Beaucamps High School",
+    "Result":"% 5+ A*– G GCSEs",
+    "Percent":92.5
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Les Beaucamps High School",
+    "Result":"% 5+ A*– C GCSEs or equivalent",
+    "Percent":73.1
+  },
+  {
+    "Year":"2013-2014",
+    "School":"Les Beaucamps High School",
+    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
+    "Percent":53.8
+  },
+  {
+    "Year":"2013-2014",
+    "School":"La Mare de Carteret High School",
+    "Result":"% 5+ A*– G GCSEs",
+    "Percent":95.8
+  },
+  {
+    "Year":"2013-2014",
+    "School":"La Mare de Carteret High School",
+    "Result":"% 5+ A*– C GCSEs or equivalent",
+    "Percent":56.3
+  },
+  {
+    "Year":"2013-2014",
+    "School":"La Mare de Carteret High School",
+    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
+    "Percent":40.6
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Sampson’s High School",
+    "Result":"% 5+ A*– G GCSEs",
+    "Percent":91.7
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Sampson’s High School",
+    "Result":"% 5+ A*– C GCSEs or equivalent",
+    "Percent":65
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Sampson’s High School",
+    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
+    "Percent":52.2
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Anne’s School",
+    "Result":"% 5+ A*– G GCSEs",
+    "Percent":84.6
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Anne’s School",
+    "Result":"% 5+ A*– C GCSEs or equivalent",
+    "Percent":53.8
+  },
+  {
+    "Year":"2013-2014",
+    "School":"St Anne’s School",
+    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
+    "Percent":46.2
   }
 ]

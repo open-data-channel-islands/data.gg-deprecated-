@@ -5,7 +5,8 @@ class HomeController < ApplicationController
     colors = [["rgba(187, 255, 147, 0.5)", "rgba(87, 149, 50, 0.5)"],
               ["rgba(147, 255, 220, 0.5)", "rgba(38, 113, 88, 0.5)"],
               ["rgba(255, 183, 147, 0.5)", "rgba(170, 95, 57, 0.5)"],
-              ["rgba(255, 147, 172, 0.5)", "rgba(156, 52, 76, 0.5)"]]
+              ["rgba(255, 147, 172, 0.5)", "rgba(156, 52, 76, 0.5)"],
+              ["rgba(147, 187, 255, 0.5)", "rgba(38, 87, 149, 0.5)"]]
 
     bus_usage_json = File.read("storage/bus_usage.json")
     @bus_usage = JSON.parse(bus_usage_json)

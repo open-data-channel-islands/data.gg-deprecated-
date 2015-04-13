@@ -1868,5 +1868,225 @@
     "Offence":"Vehicle noise",
     "Year":2012,
     "Count":0
+  },
+  {
+    "Offence":"Audible warning apparatus motor vehicle/cycle",
+    "Year":2013,
+    "Count":1
+  },
+  {
+    "Offence":"Brakes offences m/v",
+    "Year":2013,
+    "Count":5
+  },
+  {
+    "Offence":"Brakes - pedal cycle",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Crash helmet offences",
+    "Year":2013,
+    "Count":3
+  },
+  {
+    "Offence":"Danger or damage to persons/property",
+    "Year":2013,
+    "Count":35
+  },
+  {
+    "Offence":"Dangerous driving",
+    "Year":2013,
+    "Count":23
+  },
+  {
+    "Offence":"Disc parking offences",
+    "Year":2013,
+    "Count":779
+  },
+  {
+    "Offence":"DRINK /DRUG DRIVE OFFENCES (arrests)",
+    "Year":2013,
+    "Count":120
+  },
+  {
+    "Offence":"Driver of vehicle using mobile telephone",
+    "Year":2013,
+    "Count":10
+  },
+  {
+    "Offence":"Driving licence offences",
+    "Year":2013,
+    "Count":179
+  },
+  {
+    "Offence":"Driving licence offences – provisional & no l plates displayed",
+    "Year":2013,
+    "Count":47
+  },
+  {
+    "Offence":"Driving vehicle on footpath",
+    "Year":2013,
+    "Count":18
+  },
+  {
+    "Offence":"Driving whilst disqualified",
+    "Year":2013,
+    "Count":11
+  },
+  {
+    "Offence":"Driving with uncorrected defective eyesight",
+    "Year":2013,
+    "Count":1
+  },
+  {
+    "Offence":"Driving without due care and attention/consideration",
+    "Year":2013,
+    "Count":141
+  },
+  {
+    "Offence":"Dropping effects",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Fail to give particulars after collision/offence",
+    "Year":2013,
+    "Count":7
+  },
+  {
+    "Offence":"Fail to give way",
+    "Year":2013,
+    "Count":34
+  },
+  {
+    "Offence":"Fail to obey officer giving traffic order",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Fail to report accident",
+    "Year":2013,
+    "Count":23
+  },
+  {
+    "Offence":"Fail to stop after accident",
+    "Year":2013,
+    "Count":43
+  },
+  {
+    "Offence":"Fail to stop when ordered by police officer",
+    "Year":2013,
+    "Count":11
+  },
+  {
+    "Offence":"Learner driver offences",
+    "Year":2013,
+    "Count":4
+  },
+  {
+    "Offence":"M/v impaired transparency of windscreen",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Number plate offences",
+    "Year":2013,
+    "Count":19
+  },
+  {
+    "Offence":"Obstruction offences",
+    "Year":2013,
+    "Count":3
+  },
+  {
+    "Offence":"Over-length – towing vehicle and trailer",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Pedal cycle offences",
+    "Year":2013,
+    "Count":5
+  },
+  {
+    "Offence":"Pillion - carry under age",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Places of recreation - drive ride vehicle",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Prohibited and one way streets",
+    "Year":2013,
+    "Count":2
+  },
+  {
+    "Offence":"Refuse to give information to identify traffic offender",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Registration book offences",
+    "Year":2013,
+    "Count":20
+  },
+  {
+    "Offence":"Seat belts offences",
+    "Year":2013,
+    "Count":12
+  },
+  {
+    "Offence":"Speeding offences",
+    "Year":2013,
+    "Count":358
+  },
+  {
+    "Offence":"Smoke - excessive",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Tampering with vehicle",
+    "Year":2013,
+    "Count":1
+  },
+  {
+    "Offence":"Third-party insurance offences",
+    "Year":2013,
+    "Count":226
+  },
+  {
+    "Offence":"Traffic lights - fail to comply",
+    "Year":2013,
+    "Count":18
+  },
+  {
+    "Offence":"Traffic sign - fail to comply",
+    "Year":2013,
+    "Count":226
+  },
+  {
+    "Offence":"Tyre offences",
+    "Year":2013,
+    "Count":12
+  },
+  {
+    "Offence":"Vehicle carrying load in excess of plated weight",
+    "Year":2013,
+    "Count":0
+  },
+  {
+    "Offence":"Vehicle lighting offences",
+    "Year":2013,
+    "Count":67
+  },
+  {
+    "Offence":"Vehicle noise",
+    "Year":2013,
+    "Count":2
   }
 ]

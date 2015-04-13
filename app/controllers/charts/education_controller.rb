@@ -15,18 +15,18 @@ class Charts::EducationController < ApplicationController
 
     colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
                ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"]]
+               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
+               ["rgba(222,51,111,0.5)", "rgba(196,2,70,0.5)"]]
 
     # Labels are the grades
     @alevel_labels = alevel_results.uniq{|p| p["Grade"]}.collect{|p| p["Grade"]}
-
     @alevels = []
     @alevel_colour_keys = {}
 
     # Sort by years, so 2011-2012,2012-2013 etc.
     # Then group by those very years giving us key-value
     # pairs of years to result sets for those years
-    alevel_results.sort_by{|p| p["Year"]}.group_by{ |p| p["Year"] }.each do |key,val|
+    alevel_results.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["Year"] }.each do |key,val|
 
        # Get leading colour, then delete it. Saves having to do random fetches
        # and avoids collision checks
@@ -58,13 +58,20 @@ class Charts::EducationController < ApplicationController
 
     colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
                ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"]]
+               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
+               ["rgba(222,51,111,0.5)", "rgba(196,2,70,0.5)"]]
 
     @btec_labels = btec_results.uniq{|p| p["Grade"]}.collect{|p| p["Grade"]}
+
+
     @btecs = []
     @btec_colour_keys = {}
 
-    btec_results.sort_by{|p| p["Year"]}.group_by{ |p| p["Year"] }.each do |key,val|
+    btec_results.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["Year"] }.each do |key,val|
+
+      p @btec_labels
+      p key
+      p val
 
       # Get leading colour, then delete it. Saves having to do random fetches
       # and avoids collision checks

@@ -220,5 +220,71 @@
     "Type":"BTEC",
     "Grade":"Ungraded",
     "Percent":1
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"A*",
+    "Percent":9.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"A",
+    "Percent":18.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"B",
+    "Percent":29.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"C",
+    "Percent":24.6
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"D",
+    "Percent":13.9
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"E",
+    "Percent":4.8
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"A Level",
+    "Grade":"U",
+    "Percent":0.8
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"BTEC",
+    "Grade":"Distinction",
+    "Percent":55.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"BTEC",
+    "Grade":"Merit",
+    "Percent":26.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"BTEC",
+    "Grade":"Pass",
+    "Percent":12.0
+  },
+  {
+    "Year":"2013-2014",
+    "Type":"BTEC",
+    "Grade":"Ungraded",
+    "Percent":6.0
   }
 ]

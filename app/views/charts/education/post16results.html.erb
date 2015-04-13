@@ -10,7 +10,7 @@
 <div class="page-header">
   <h1>Post-16 Results</h1>
 </div>
-    
+
 <ul class="nav nav-tabs">
   <li role="presentation" class="active"><%= link_to 'Post-16 Results', charts_education_post16results_path %></li>
   <li role="presentation"><%= link_to 'Overall GCSEs', charts_education_gcses_overall_path %></li>
@@ -21,16 +21,16 @@
   <div class="col-md-12">
 
     <h2>A-Level Results</h2>
-    
+
     <table style="margin:10px 0;float:right; font-size:0.9em">
       <tr>
         <% @alevel_colour_keys.each do |key,value| %>
-        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></td>
+        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></div></td>
           <td><%= value %></td>
         <% end %>
       </tr>
     </table>
-    
+
     <canvas id="post_16_chart"></canvas>
     <%= javascript_tag do %>
       var ctx = document.getElementById("post_16_chart").getContext("2d");
@@ -45,19 +45,21 @@
       });
     <% end %>
   </div>
-    
-  <div class="col-md-12">  
+
+  <div class="col-md-12">
     <h2>BTEC Results</h2>
-    
-    <table style="margin:10px 0;float:right; font-size:0.9em">
+
+    <p>Coming soon</p>
+
+<!--     <table style="margin:10px 0;float:right; font-size:0.9em">
       <tr>
         <% @btec_colour_keys.each do |key,value| %>
-        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></td>
+        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></div></td>
           <td><%= value %></td>
         <% end %>
       </tr>
     </table>
-    
+
     <canvas id="btec_chart"></canvas>
     <%= javascript_tag do %>
       var ctx = document.getElementById("btec_chart").getContext("2d");
@@ -70,7 +72,7 @@
       var myNewChart = new Chart(ctx).Bar(data, {
 
       });
-    <% end %>
-    
+    <% end %> -->
+
   </div>
 </div>

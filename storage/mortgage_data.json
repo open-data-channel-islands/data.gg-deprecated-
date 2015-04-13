@@ -1066,7 +1066,7 @@
     "Median average (all residential)": 399500,
     "Mean average (houses only)": 451375,
     "Median average (apartments only)": 266000,
-    "Mix adjusted": 447628,
+    "Mix adjusted": 448368,
     "Number of transactions": 142
   },
   {
@@ -1076,7 +1076,7 @@
     "Median average (all residential)": 411825,
     "Mean average (houses only)": 477375,
     "Median average (apartments only)": 255550,
-    "Mix adjusted": 455872,
+    "Mix adjusted": 455324,
     "Number of transactions": 192
   },
   {
@@ -1086,7 +1086,7 @@
     "Median average (all residential)": 417050,
     "Mean average (houses only)": 483500,
     "Median average (apartments only)": 271438,
-    "Mix adjusted": 465008,
+    "Mix adjusted": 464463,
     "Number of transactions": 196
   },
   {
@@ -1096,7 +1096,7 @@
     "Median average (all residential)": 405325,
     "Mean average (houses only)": 460750,
     "Median average (apartments only)": 271748,
-    "Mix adjusted": 447205,
+    "Mix adjusted": 446698,
     "Number of transactions": 176
   },
   {
@@ -1108,5 +1108,35 @@
     "Median average (apartments only)": 267188,
     "Mix adjusted": 453398,
     "Number of transactions": 131
+  },
+  {
+    "Year": 2014,
+    "Quarter": "Q2",
+    "Mean average (topped and tailed by 2.5%)":459033,
+    "Median average (all residential)":418000,
+    "Mean average (houses only)":460750,
+    "Median average (apartments only)":289750,
+    "Mix adjusted":468878,
+    "Number of transactions":156
+  },
+  {
+    "Year": 2014,
+    "Quarter": "Q3",
+    "Mean average (topped and tailed by 2.5%)":448102,
+    "Median average (all residential)":408000,
+    "Mean average (houses only)":484500,
+    "Median average (apartments only)":285000,
+    "Mix adjusted":466228,
+    "Number of transactions":161
+  },
+  {
+    "Year": 2014,
+    "Quarter": "Q4",
+    "Mean average (topped and tailed by 2.5%)":455519,
+    "Median average (all residential)":418000,
+    "Mean average (houses only)":464313,
+    "Median average (apartments only)":313500,
+    "Mix adjusted":462110,
+    "Number of transactions":146
   }
 ]
