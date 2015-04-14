@@ -1,0 +1,234 @@
+[
+  {
+    "Date Taken":"31/03/2007",
+    "Births":null,
+    "Deaths":null,
+    "Immigration":null,
+    "Emigration":null,
+    "Net administrative changes":null
+  },
+  {
+    "Date Taken":"30/06/2007",
+    "Births":155,
+    "Deaths":125,
+    "Immigration":1630,
+    "Emigration":1053,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2007",
+    "Births":138,
+    "Deaths":118,
+    "Immigration":1487,
+    "Emigration":1735,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2007",
+    "Births":167,
+    "Deaths":141,
+    "Immigration":907,
+    "Emigration":1537,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2008",
+    "Births":143,
+    "Deaths":111,
+    "Immigration":1598,
+    "Emigration":854,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2008",
+    "Births":179,
+    "Deaths":122,
+    "Immigration":1606,
+    "Emigration":1163,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2008",
+    "Births":147,
+    "Deaths":114,
+    "Immigration":1374,
+    "Emigration":1496,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2008",
+    "Births":162,
+    "Deaths":129,
+    "Immigration":953,
+    "Emigration":1381,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2009",
+    "Births":158,
+    "Deaths":170,
+    "Immigration":1364,
+    "Emigration":820,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2009",
+    "Births":165,
+    "Deaths":125,
+    "Immigration":1266,
+    "Emigration":1046,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2009",
+    "Births":180,
+    "Deaths":128,
+    "Immigration":1187,
+    "Emigration":1284,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2009",
+    "Births":172,
+    "Deaths":120,
+    "Immigration":860,
+    "Emigration":1302,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2010",
+    "Births":139,
+    "Deaths":140,
+    "Immigration":1169,
+    "Emigration":836,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2010",
+    "Births":129,
+    "Deaths":117,
+    "Immigration":1392,
+    "Emigration":981,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2010",
+    "Births":181,
+    "Deaths":124,
+    "Immigration":1102,
+    "Emigration":1150,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2010",
+    "Births":164,
+    "Deaths":116,
+    "Immigration":831,
+    "Emigration":1291,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2011",
+    "Births":131,
+    "Deaths":146,
+    "Immigration":1306,
+    "Emigration":827,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2011",
+    "Births":191,
+    "Deaths":120,
+    "Immigration":1362,
+    "Emigration":1037,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2011",
+    "Births":170,
+    "Deaths":123,
+    "Immigration":1042,
+    "Emigration":1202,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2011",
+    "Births":158,
+    "Deaths":146,
+    "Immigration":710,
+    "Emigration":1177,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2012",
+    "Births":155,
+    "Deaths":158,
+    "Immigration":1106,
+    "Emigration":761,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2012",
+    "Births":154,
+    "Deaths":138,
+    "Immigration":1147,
+    "Emigration":981,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2012",
+    "Births":179,
+    "Deaths":153,
+    "Immigration":959,
+    "Emigration":1184,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2012",
+    "Births":164,
+    "Deaths":141,
+    "Immigration":706,
+    "Emigration":1138,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2013",
+    "Births":170,
+    "Deaths":124,
+    "Immigration":1033,
+    "Emigration":1006,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/06/2013",
+    "Births":162,
+    "Deaths":158,
+    "Immigration":1175,
+    "Emigration":818,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"30/09/2013",
+    "Births":135,
+    "Deaths":121,
+    "Immigration":924,
+    "Emigration":1189,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/12/2013",
+    "Births":169,
+    "Deaths":119,
+    "Immigration":603,
+    "Emigration":1150,
+    "Net administrative changes":0
+  },
+  {
+    "Date Taken":"31/03/2014",
+    "Births":161,
+    "Deaths":128,
+    "Immigration":899,
+    "Emigration":641,
+    "Net administrative changes":75
+  }
+]

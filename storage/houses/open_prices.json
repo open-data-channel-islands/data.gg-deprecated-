@@ -1,0 +1,800 @@
+[
+  {
+    "Year":1981,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":28135,
+    "Transactions":null
+  },
+  {
+    "Year":1981,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":28368,
+    "Transactions":null
+  },
+  {
+    "Year":1982,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":28601,
+    "Transactions":null
+  },
+  {
+    "Year":1982,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":28501,
+    "Transactions":null
+  },
+  {
+    "Year":1983,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":28400,
+    "Transactions":null
+  },
+  {
+    "Year":1983,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":31263,
+    "Transactions":null
+  },
+  {
+    "Year":1984,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":34125,
+    "Transactions":null
+  },
+  {
+    "Year":1984,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":35368,
+    "Transactions":null
+  },
+  {
+    "Year":1985,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":36610,
+    "Transactions":null
+  },
+  {
+    "Year":1985,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":39997,
+    "Transactions":null
+  },
+  {
+    "Year":1986,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":43384,
+    "Transactions":null
+  },
+  {
+    "Year":1986,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":50357,
+    "Transactions":null
+  },
+  {
+    "Year":1987,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":57330,
+    "Transactions":null
+  },
+  {
+    "Year":1987,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":62710,
+    "Transactions":null
+  },
+  {
+    "Year":1988,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":68090,
+    "Transactions":null
+  },
+  {
+    "Year":1988,
+    "Valid": false,
+    "Quarter":"Q3",
+    "Median":82660,
+    "Transactions":null
+  },
+  {
+    "Year":1989,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":97229,
+    "Transactions":null
+  },
+  {
+    "Year":1989,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":105924,
+    "Transactions":null
+  },
+  {
+    "Year":1990,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":104128,
+    "Transactions":null
+  },
+  {
+    "Year":1990,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":95334,
+    "Transactions":null
+  },
+  {
+    "Year":1991,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":94841,
+    "Transactions":null
+  },
+  {
+    "Year":1991,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":104236,
+    "Transactions":null
+  },
+  {
+    "Year":1992,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":97000,
+    "Transactions":null
+  },
+  {
+    "Year":1992,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":89914,
+    "Transactions":null
+  },
+  {
+    "Year":1992,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":100187,
+    "Transactions":null
+  },
+  {
+    "Year":1992,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":97129,
+    "Transactions":null
+  },
+  {
+    "Year":1993,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":94951,
+    "Transactions":null
+  },
+  {
+    "Year":1993,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":99372,
+    "Transactions":null
+  },
+  {
+    "Year":1993,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":93910,
+    "Transactions":null
+  },
+  {
+    "Year":1993,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":94812,
+    "Transactions":null
+  },
+  {
+    "Year":1994,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":94006,
+    "Transactions":null
+  },
+  {
+    "Year":1994,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":99271,
+    "Transactions":null
+  },
+  {
+    "Year":1994,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":99142,
+    "Transactions":null
+  },
+  {
+    "Year":1994,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":97029,
+    "Transactions":null
+  },
+  {
+    "Year":1995,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":96680,
+    "Transactions":null
+  },
+  {
+    "Year":1995,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":107466,
+    "Transactions":null
+  },
+  {
+    "Year":1995,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":105458,
+    "Transactions":null
+  },
+  {
+    "Year":1995,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":101988,
+    "Transactions":null
+  },
+  {
+    "Year":1996,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":101977,
+    "Transactions":null
+  },
+  {
+    "Year":1996,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":110482,
+    "Transactions":null
+  },
+  {
+    "Year":1996,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":124674,
+    "Transactions":null
+  },
+  {
+    "Year":1996,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":125765,
+    "Transactions":null
+  },
+  {
+    "Year":1997,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":127560,
+    "Transactions":null
+  },
+  {
+    "Year":1997,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":137649,
+    "Transactions":null
+  },
+  {
+    "Year":1997,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":159444,
+    "Transactions":null
+  },
+  {
+    "Year":1997,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":139717,
+    "Transactions":null
+  },
+  {
+    "Year":1998,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":157802,
+    "Transactions":null
+  },
+  {
+    "Year":1998,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":146981,
+    "Transactions":null
+  },
+  {
+    "Year":1998,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":160836,
+    "Transactions":null
+  },
+  {
+    "Year":1998,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":145939,
+    "Transactions":null
+  },
+  {
+    "Year":1999,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":575000,
+    "Transactions":18
+  },
+  {
+    "Year":1999,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":420000,
+    "Transactions":19
+  },
+  {
+    "Year":1999,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":470000,
+    "Transactions":12
+  },
+  {
+    "Year":1999,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":500000,
+    "Transactions":29
+  },
+  {
+    "Year":2000,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":512500,
+    "Transactions":20
+  },
+  {
+    "Year":2000,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":495000,
+    "Transactions":34
+  },
+  {
+    "Year":2000,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":413000,
+    "Transactions":29
+  },
+  {
+    "Year":2000,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":490000,
+    "Transactions":23
+  },
+  {
+    "Year":2001,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":582500,
+    "Transactions":30
+  },
+  {
+    "Year":2001,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":470000,
+    "Transactions":23
+  },
+  {
+    "Year":2001,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":405500,
+    "Transactions":32
+  },
+  {
+    "Year":2001,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":450500,
+    "Transactions":12
+  },
+  {
+    "Year":2002,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":585000,
+    "Transactions":23
+  },
+  {
+    "Year":2002,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":475000,
+    "Transactions":29
+  },
+  {
+    "Year":2002,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":540000,
+    "Transactions":28
+  },
+  {
+    "Year":2002,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":515000,
+    "Transactions":27
+  },
+  {
+    "Year":2003,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":498750,
+    "Transactions":17
+  },
+  {
+    "Year":2003,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":525000,
+    "Transactions":26
+  },
+  {
+    "Year":2003,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":665000,
+    "Transactions":23
+  },
+  {
+    "Year":2003,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":755000,
+    "Transactions":20
+  },
+  {
+    "Year":2004,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":690000,
+    "Transactions":21
+  },
+  {
+    "Year":2004,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":675000,
+    "Transactions":19
+  },
+  {
+    "Year":2004,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":687500,
+    "Transactions":26
+  },
+  {
+    "Year":2004,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":620000,
+    "Transactions":27
+  },
+  {
+    "Year":2005,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":919375,
+    "Transactions":10
+  },
+  {
+    "Year":2005,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":694375,
+    "Transactions":24
+  },
+  {
+    "Year":2005,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":699750,
+    "Transactions":36
+  },
+  {
+    "Year":2005,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":674625,
+    "Transactions":18
+  },
+  {
+    "Year":2006,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":718750,
+    "Transactions":20
+  },
+  {
+    "Year":2006,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":755000,
+    "Transactions":23
+  },
+  {
+    "Year":2006,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":760000,
+    "Transactions":20
+  },
+  {
+    "Year":2006,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":772500,
+    "Transactions":30
+  },
+  {
+    "Year":2007,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":970000,
+    "Transactions":29
+  },
+  {
+    "Year":2007,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":765000,
+    "Transactions":27
+  },
+  {
+    "Year":2007,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":1290000,
+    "Transactions":23
+  },
+  {
+    "Year":2007,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":807500,
+    "Transactions":12
+  },
+  {
+    "Year":2008,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":1407500,
+    "Transactions":14
+  },
+  {
+    "Year":2008,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":946250,
+    "Transactions":12
+  },
+  {
+    "Year":2008,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":950000,
+    "Transactions":11
+  },
+  {
+    "Year":2008,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":950000,
+    "Transactions":13
+  },
+  {
+    "Year":2009,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":895875,
+    "Transactions":10
+  },
+  {
+    "Year":2009,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":839500,
+    "Transactions":12
+  },
+  {
+    "Year":2009,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":893000,
+    "Transactions":21
+  },
+  {
+    "Year":2009,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":1012500,
+    "Transactions":16
+  },
+  {
+    "Year":2010,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":863500,
+    "Transactions":16
+  },
+  {
+    "Year":2010,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":798000,
+    "Transactions":17
+  },
+  {
+    "Year":2010,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":1235000,
+    "Transactions":15
+  },
+  {
+    "Year":2010,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":940000,
+    "Transactions":18
+  },
+  {
+    "Year":2011,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":896800,
+    "Transactions":7
+  },
+  {
+    "Year":2011,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":1414375,
+    "Transactions":6
+  },
+  {
+    "Year":2011,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":1358500,
+    "Transactions":11
+  },
+  {
+    "Year":2011,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":855000,
+    "Transactions":9
+  },
+  {
+    "Year":2012,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":966775,
+    "Transactions":6
+  },
+  {
+    "Year":2012,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":1027500,
+    "Transactions":12
+  },
+  {
+    "Year":2012,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":1044125,
+    "Transactions":14
+  },
+  {
+    "Year":2012,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":1115000,
+    "Transactions":15
+  },
+  {
+    "Year":2013,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":990000,
+    "Transactions":10
+  },
+  {
+    "Year":2013,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":1496250,
+    "Transactions":6
+  },
+  {
+    "Year":2013,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":930000,
+    "Transactions":15
+  },
+  {
+    "Year":2013,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":807500,
+    "Transactions":17
+  },
+  {
+    "Year":2014,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":1092500,
+    "Transactions":10
+  },
+  {
+    "Year":2014,
+    "Valid": true,
+    "Quarter":"Q2",
+    "Median":1132875,
+    "Transactions":12
+  },
+  {
+    "Year":2014,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":1116250,
+    "Transactions":10
+  },
+  {
+    "Year":2014,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":1045000,
+    "Transactions":11
+  }
+]
