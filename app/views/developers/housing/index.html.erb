@@ -25,13 +25,22 @@
     </thead>
     <tbody>
       <tr>
-        <td>Prices</td>
+        <td>Local Prices</td>
         <td>1.0</td>
         <td>House prices by quarter since 1981 includes numerous stats</td>
-        <td><%= link_to 'XML', api_v10_housing_prices_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v10_housing_prices_path(:format => "json") %></td>
-        <td><%= link_to 'RAW HTML', api_v10_housing_prices_path(:format => "html", layout: false) %></td>
-        <td><%= link_to 'HTML', api_v10_housing_prices_path(:format => "html") %></td>
+        <td><%= link_to 'XML', api_v10_housing_local_prices_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_housing_local_prices_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_housing_local_prices_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_housing_local_prices_path(:format => "html") %></td>
+      </tr>
+            <tr>
+        <td>Open Prices</td>
+        <td>1.0</td>
+        <td>House prices by quarter since 1981 includes numerous stats</td>
+        <td><%= link_to 'XML', api_v10_housing_open_prices_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_housing_open_prices_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_housing_open_prices_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_housing_open_prices_path(:format => "html") %></td>
       </tr>
     </tbody>
   </table>

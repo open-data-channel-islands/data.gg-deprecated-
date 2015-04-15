@@ -18,7 +18,7 @@ class Charts::PopulationController < ApplicationController
   private
 
   def set_population
-    population_json = File.read("storage/population.json")
+    population_json = File.read("storage/population/population.json")
     @population = JSON.parse(population_json)
     @population.sort_by! { |c| c['Year'] }
   end

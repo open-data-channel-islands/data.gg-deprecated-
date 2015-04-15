@@ -1,0 +1,31 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to "Housing", developers_housing_path %></li>
+    <li class="active">Open Prices</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Valid</th>
+      <th>Quarter</th>
+      <th>Median</th>
+      <th>Transactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @house_prices.each do |f| %>
+      <tr>
+        <td><%= f['Year'] %></td>
+        <td><%= f['Valid'] %></td>
+        <td><%= f['Quarter'] %></td>
+        <td><%= f['Median'] %></td>
+        <td><%= f['Transactions'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

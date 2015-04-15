@@ -67,7 +67,8 @@ DataGg::Application.routes.draw do
       get 'traffic/injuries' => 'traffic#injuries'
       get 'traffic/classifications' => 'traffic#classifications'
 
-      get 'housing/prices' => 'housing#prices'
+      get 'housing/local_prices' => 'housing#local_prices'
+      get 'housing/open_prices' => 'housing#open_prices'
 
       get 'flights/arrivals' => 'flights#arrivals'
       get 'flights/departures' => 'flights#departures'
@@ -79,14 +80,17 @@ DataGg::Application.routes.draw do
       get 'education/gcse_school' => 'education#gcse_school'
 
       get 'population/population' => 'population#population'
-
-
+      get 'population/age' => 'population#age'
+      get 'population/age_male' => 'population#age_male'
+      get 'population/age_female' => 'population#age_female'
+      get 'population/birthplace' => 'population#birthplace'
+      get 'population/changes' => 'population#changes'
+      get 'population/district' => 'population#district'
+      get 'population/parish' => 'population#parish'
 
       get 'earnings/earnings_age_group' => 'earnings#earnings_age_group'
       get 'earnings/earnings_sector' => 'earnings#earnings_sector'
       get 'earnings/earnings_sex' => 'earnings#earnings_sex'
-
-
     end
   end
 

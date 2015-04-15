@@ -28,14 +28,85 @@
         <td>Population</td>
         <td>1.0</td>
         <td>Populate values by year and sex. Includes populate age ranges.</td>
-        <td><%= link_to 'XML', api_v10_population_population_path(:format => "xml")  %></td>W
+        <td><%= link_to 'XML', api_v10_population_population_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_population_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_population_path(:format => "html", layout: false) %></td>
         <td><%= link_to 'HTML', api_v10_population_population_path(:format => "html") %></td>
       </tr>
+
+      <tr>
+        <td>Age</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_age_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_age_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_age_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_age_path(:format => "html") %></td>
+      </tr>
+
+      <tr>
+        <td>Age Male</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_age_male_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_age_male_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_age_male_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_age_male_path(:format => "html") %></td>
+      </tr>
+
+      <tr>
+        <td>Age Female</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_age_female_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_age_female_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_age_female_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_age_female_path(:format => "html") %></td>
+      </tr>
+
+       <tr>
+        <td>Birthplace</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_birthplace_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_birthplace_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_birthplace_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_birthplace_path(:format => "html") %></td>
+      </tr>
+
+       <tr>
+        <td>Changes</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_changes_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_changes_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_changes_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_changes_path(:format => "html") %></td>
+      </tr>
+
+       <tr>
+        <td>District</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_district_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_district_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_district_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_district_path(:format => "html") %></td>
+      </tr>
+
+       <tr>
+        <td>Parish</td>
+        <td>1.0</td>
+        <td></td>
+        <td><%= link_to 'XML', api_v10_population_parish_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_population_parish_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_population_parish_path(:format => "html", layout: false) %></td>
+        <td><%= link_to 'HTML', api_v10_population_parish_path(:format => "html") %></td>
+      </tr>
+
     </tbody>
   </table>
 </div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
-<p><em>Updated 13/04/2015. 2013 data coming soon.</em></p>
+<p><em>Updated 13/04/2015</em></p>
