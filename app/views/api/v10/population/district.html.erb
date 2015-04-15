@@ -1,0 +1,40 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to "Population", developers_population_path %></li>
+    <li class="active">District</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+    <th>Year</th>
+    <th>Castel</th>
+    <th>South East</th>
+    <th>St. Peter Port North</th>
+    <th>St. Peter Port South</th>
+    <th>St. Sampson</th>
+    <th>Vale</th>
+    <th>West</th>
+    <th>Address unknown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @district.each do |p| %>
+      <tr>
+        <td><%= p['Year'] %></td>
+        <td><%= p['Castel'] %></td>
+        <td><%= p['South East'] %></td>
+        <td><%= p['St. Peter Port North'] %></td>
+        <td><%= p['St. Peter Port South'] %></td>
+        <td><%= p['St. Sampson'] %></td>
+        <td><%= p['Vale'] %></td>
+        <td><%= p['West'] %></td>
+        <td><%= p['Address unknown'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

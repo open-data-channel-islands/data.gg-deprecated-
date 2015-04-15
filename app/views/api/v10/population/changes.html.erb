@@ -1,0 +1,36 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Developers", developers_path %></li>
+  <li><%= link_to "Population", developers_population_path %></li>
+  <li class="active">Changes</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date Taken</th>
+      <th>Births</th>
+      <th>Deaths</th>
+      <th>Immigration</th>
+      <th>Emigration</th>
+      <th>Net administrative changes</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @changes.each do |p| %>
+    <tr>
+      <td><%= p['Date Taken'] %></td>
+      <td><%= p['Births'] %></td>
+      <td><%= p['Deaths'] %></td>
+      <td><%= p['Immigration'] %></td>
+      <td><%= p['Emigration'] %></td>
+      <td><%= p['Net administrative changes'] %></td>
+      <td><%= p['Total'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+

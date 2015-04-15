@@ -67,6 +67,7 @@ DataGg::Application.routes.draw do
       get 'traffic/injuries' => 'traffic#injuries'
       get 'traffic/classifications' => 'traffic#classifications'
 
+      get 'housing/prices' => 'housing#local_prices'
       get 'housing/local_prices' => 'housing#local_prices'
       get 'housing/open_prices' => 'housing#open_prices'
 

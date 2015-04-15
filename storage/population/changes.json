@@ -5,7 +5,8 @@
     "Deaths":null,
     "Immigration":null,
     "Emigration":null,
-    "Net administrative changes":null
+    "Net administrative changes":null,
+    "Total": 61175
   },
   {
     "Date Taken":"30/06/2007",
@@ -13,7 +14,8 @@
     "Deaths":125,
     "Immigration":1630,
     "Emigration":1053,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 61782
   },
   {
     "Date Taken":"30/09/2007",
@@ -21,7 +23,8 @@
     "Deaths":118,
     "Immigration":1487,
     "Emigration":1735,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 61554
   },
   {
     "Date Taken":"31/12/2007",
@@ -29,7 +32,8 @@
     "Deaths":141,
     "Immigration":907,
     "Emigration":1537,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 60950
   },
   {
     "Date Taken":"31/03/2008",
@@ -37,7 +41,8 @@
     "Deaths":111,
     "Immigration":1598,
     "Emigration":854,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 61726
   },
   {
     "Date Taken":"30/06/2008",
@@ -45,7 +50,8 @@
     "Deaths":122,
     "Immigration":1606,
     "Emigration":1163,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62226
   },
   {
     "Date Taken":"30/09/2008",
@@ -53,7 +59,8 @@
     "Deaths":114,
     "Immigration":1374,
     "Emigration":1496,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62137
   },
   {
     "Date Taken":"31/12/2008",
@@ -61,7 +68,8 @@
     "Deaths":129,
     "Immigration":953,
     "Emigration":1381,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 61742
   },
   {
     "Date Taken":"31/03/2009",
@@ -69,7 +77,8 @@
     "Deaths":170,
     "Immigration":1364,
     "Emigration":820,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62274
   },
   {
     "Date Taken":"30/06/2009",
@@ -77,7 +86,8 @@
     "Deaths":125,
     "Immigration":1266,
     "Emigration":1046,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62534
   },
   {
     "Date Taken":"30/09/2009",
@@ -85,7 +95,8 @@
     "Deaths":128,
     "Immigration":1187,
     "Emigration":1284,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62489
   },
   {
     "Date Taken":"31/12/2009",
@@ -93,7 +104,8 @@
     "Deaths":120,
     "Immigration":860,
     "Emigration":1302,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62099
   },
   {
     "Date Taken":"31/03/2010",
@@ -101,7 +113,8 @@
     "Deaths":140,
     "Immigration":1169,
     "Emigration":836,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62431
   },
   {
     "Date Taken":"30/06/2010",
@@ -109,7 +122,8 @@
     "Deaths":117,
     "Immigration":1392,
     "Emigration":981,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62854
   },
   {
     "Date Taken":"30/09/2010",
@@ -117,7 +131,8 @@
     "Deaths":124,
     "Immigration":1102,
     "Emigration":1150,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62863
   },
   {
     "Date Taken":"31/12/2010",
@@ -125,7 +140,8 @@
     "Deaths":116,
     "Immigration":831,
     "Emigration":1291,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62451
   },
   {
     "Date Taken":"31/03/2011",
@@ -133,7 +149,8 @@
     "Deaths":146,
     "Immigration":1306,
     "Emigration":827,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62915
   },
   {
     "Date Taken":"30/06/2011",
@@ -141,7 +158,8 @@
     "Deaths":120,
     "Immigration":1362,
     "Emigration":1037,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63311
   },
   {
     "Date Taken":"30/09/2011",
@@ -149,7 +167,8 @@
     "Deaths":123,
     "Immigration":1042,
     "Emigration":1202,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63198
   },
   {
     "Date Taken":"31/12/2011",
@@ -157,7 +176,8 @@
     "Deaths":146,
     "Immigration":710,
     "Emigration":1177,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62743
   },
   {
     "Date Taken":"31/03/2012",
@@ -165,7 +185,8 @@
     "Deaths":158,
     "Immigration":1106,
     "Emigration":761,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63085
   },
   {
     "Date Taken":"30/06/2012",
@@ -173,7 +194,8 @@
     "Deaths":138,
     "Immigration":1147,
     "Emigration":981,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63267
   },
   {
     "Date Taken":"30/09/2012",
@@ -181,7 +203,8 @@
     "Deaths":153,
     "Immigration":959,
     "Emigration":1184,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63068
   },
   {
     "Date Taken":"31/12/2012",
@@ -189,7 +212,8 @@
     "Deaths":141,
     "Immigration":706,
     "Emigration":1138,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62659
   },
   {
     "Date Taken":"31/03/2013",
@@ -197,7 +221,8 @@
     "Deaths":124,
     "Immigration":1033,
     "Emigration":1006,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62732
   },
   {
     "Date Taken":"30/06/2013",
@@ -205,7 +230,8 @@
     "Deaths":158,
     "Immigration":1175,
     "Emigration":818,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 63093
   },
   {
     "Date Taken":"30/09/2013",
@@ -213,7 +239,8 @@
     "Deaths":121,
     "Immigration":924,
     "Emigration":1189,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62842
   },
   {
     "Date Taken":"31/12/2013",
@@ -221,7 +248,8 @@
     "Deaths":119,
     "Immigration":603,
     "Emigration":1150,
-    "Net administrative changes":0
+    "Net administrative changes":0,
+    "Total": 62345
   },
   {
     "Date Taken":"31/03/2014",
@@ -229,6 +257,7 @@
     "Deaths":128,
     "Immigration":899,
     "Emigration":641,
-    "Net administrative changes":75
+    "Net administrative changes":75,
+    "Total": 62711
   }
 ]

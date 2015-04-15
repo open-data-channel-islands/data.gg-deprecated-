@@ -17,6 +17,7 @@ class Api::V10::PopulationController < ApplicationController
   def age
     json_data = File.read("storage/population/age.json")
     @age = JSON.parse(json_data)
+    @title = 'Age'
 
     respond_to do |format|
       format.json { render json: @age }
@@ -29,27 +30,29 @@ class Api::V10::PopulationController < ApplicationController
 
   def age_female
     json_data = File.read("storage/population/age_female.json")
-    @age_female = JSON.parse(json_data)
+    @age = JSON.parse(json_data)
+    @title = 'Age Female'
 
     respond_to do |format|
-      format.json { render json: @age_female }
+      format.json { render json: @age }
       # We use a template builder for this one as the data column names have numbers in them
       # and XML sucks.
-      format.xml { @age_female }
-      format.html { render :age_female, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.xml { render :age }
+      format.html { render :age, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 
   def age_male
     json_data = File.read("storage/population/age_male.json")
-    @age_male = JSON.parse(json_data)
+    @age = JSON.parse(json_data)
+    @title = 'Age Male'
 
     respond_to do |format|
-      format.json { render json: @age_male }
+      format.json { render json: @age }
       # We use a template builder for this one as the data column names have numbers in them
       # and XML sucks.
-      format.xml { @age_male }
-      format.html { render :age_male, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+      format.xml { render :age }
+      format.html { render :age, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
 

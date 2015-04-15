@@ -27,7 +27,7 @@
       <tr>
         <td>Population</td>
         <td>1.0</td>
-        <td>Populate values by year and sex. Includes populate age ranges.</td>
+        <td>Population values by year, sex and age. Ages are in ranges.</td>
         <td><%= link_to 'XML', api_v10_population_population_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_population_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_population_path(:format => "html", layout: false) %></td>
@@ -37,7 +37,7 @@
       <tr>
         <td>Age</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population values by year and age. Individual year ages. Mixed sex.</td>
         <td><%= link_to 'XML', api_v10_population_age_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_age_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_age_path(:format => "html", layout: false) %></td>
@@ -47,7 +47,7 @@
       <tr>
         <td>Age Male</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population values by year and age. Individual year ages. Male only.</td>
         <td><%= link_to 'XML', api_v10_population_age_male_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_age_male_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_age_male_path(:format => "html", layout: false) %></td>
@@ -57,7 +57,7 @@
       <tr>
         <td>Age Female</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population values by year and age. Individual year ages. Female only.</td>
         <td><%= link_to 'XML', api_v10_population_age_female_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_age_female_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_age_female_path(:format => "html", layout: false) %></td>
@@ -67,7 +67,7 @@
        <tr>
         <td>Birthplace</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population by birthplace.</td>
         <td><%= link_to 'XML', api_v10_population_birthplace_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_birthplace_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_birthplace_path(:format => "html", layout: false) %></td>
@@ -77,7 +77,7 @@
        <tr>
         <td>Changes</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population changes by quarter. Has births, deaths, immigration and emigration.</td>
         <td><%= link_to 'XML', api_v10_population_changes_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_changes_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_changes_path(:format => "html", layout: false) %></td>
@@ -87,7 +87,7 @@
        <tr>
         <td>District</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population by voting district.</td>
         <td><%= link_to 'XML', api_v10_population_district_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_district_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_district_path(:format => "html", layout: false) %></td>
@@ -97,7 +97,7 @@
        <tr>
         <td>Parish</td>
         <td>1.0</td>
-        <td></td>
+        <td>Population by parish.</td>
         <td><%= link_to 'XML', api_v10_population_parish_path(:format => "xml")  %></td>
         <td><%= link_to 'JSON', api_v10_population_parish_path(:format => "json") %></td>
         <td><%= link_to 'RAW HTML', api_v10_population_parish_path(:format => "html", layout: false) %></td>
