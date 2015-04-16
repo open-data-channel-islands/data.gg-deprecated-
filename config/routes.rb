@@ -4,6 +4,7 @@ DataGg::Application.routes.draw do
   root 'home#index'
 
   get 'about' => 'home#about', as: :about
+  get 'apps' => 'home#apps', as: :apps
   get 'help' => 'home#help', as: :help
   get 'contact' => 'home#contact', as: :contact
   get 'contribute' => 'home#contribute', as: :contribute
@@ -28,6 +29,7 @@ DataGg::Application.routes.draw do
     # Education
     get 'education' => 'education#post16results', as: :education
     get 'education/post16results', as: :education_post16results
+    get 'education/post16results_btec', as: :education_post16results_btec
     get 'education/gcses_overall', as: :education_gcses_overall
     get 'education/gcses_by_school', as: :education_gcses_by_school
 

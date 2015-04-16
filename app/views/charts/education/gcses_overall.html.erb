@@ -12,9 +12,10 @@
     <div class="page-header">
       <h1>Overall GCSEs</h1>
     </div>
-    
+
     <ul class="nav nav-tabs">
-      <li role="presentation"><%= link_to 'Post-16 Results', charts_education_post16results_path %></li>
+      <li role="presentation"><%= link_to 'A-Level Results', charts_education_post16results_path %></li>
+      <li role="presentation"><%= link_to 'BTEC Results', charts_education_post16results_btec_path %></li>
       <li role="presentation" class="active"><%= link_to 'Overall GCSEs', charts_education_gcses_overall_path %></li>
       <li role="presentation"><%= link_to 'GCSEs by School', charts_education_gcses_by_school_path %></li>
     </ul>
@@ -23,18 +24,15 @@
 
 <div class="row">
   <div class="col-md-12">
-    
-    <h2>Overall GCSE Results</h2>
-    
     <table style="margin:20px 0; float:right; font-size:0.9em">
       <tr>
-        <% @gcse_colour_keys.each do |key,value| %>
-        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw key[0] %>;border:2px solid <%= key[1] %>"></td>
-          <td><%= value %></td>
+        <% @gcse_year_colors.each do |year,colours| %>
+        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw colours[0] %>;border:2px solid <%= colours[1] %>"></div></td>
+          <td><%= year %></td>
         <% end %>
       </tr>
     </table>
-    
+
     <canvas id="post_16_chart"></canvas>
     <%= javascript_tag do %>
       var ctx = document.getElementById("post_16_chart").getContext("2d");
@@ -48,8 +46,8 @@
 
       });
     <% end %>
-    
-    
-    
+
+
+
   </div>
 </div>

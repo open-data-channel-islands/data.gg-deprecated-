@@ -1,3 +1,4 @@
+require 'chart_colours'
 class Charts::EducationController < ApplicationController
 
   def post16results
@@ -5,141 +6,130 @@ class Charts::EducationController < ApplicationController
     post16_json = File.read("storage/post16results.json")
     @post16_results = JSON.parse(post16_json)
 
-
-    #######################
-    ####### ALEVELS #######
-    #######################
-
     # Just get the A-level result for now....
     alevel_results = @post16_results.find_all{|item| item["Type"] == "A Level"}
 
-    colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
-               ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(222,51,111,0.5)", "rgba(196,2,70,0.5)"]]
-
     # Labels are the grades
-    @alevel_labels = alevel_results.uniq{|p| p["Grade"]}.collect{|p| p["Grade"]}
+    @labels = ['U','E','D','C','B','A','A*']
     @alevels = []
-    @alevel_colour_keys = {}
 
-    # Sort by years, so 2011-2012,2012-2013 etc.
-    # Then group by those very years giving us key-value
-    # pairs of years to result sets for those years
+    colour_keys = {
+      '2010-2011' => ChartColours::COLOURS[0],
+      '2011-2012' => ChartColours::COLOURS[1],
+      '2012-2013' => ChartColours::COLOURS[2],
+      '2013-2014' => ChartColours::COLOURS[3],
+    }
+    @year_colours = { }
+
     alevel_results.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["Year"] }.each do |key,val|
 
-       # Get leading colour, then delete it. Saves having to do random fetches
-       # and avoids collision checks
-       colour = colours[0]
+      result = []
+      @labels.each do |lbl|
+        value_for_lbl = val.find { |v| v['Grade'] == lbl }
+        result << (value_for_lbl != nil ? value_for_lbl['Percent'] : 0)
+      end
 
-       # Map the colour to the year. We can then loop through these in the view
-       # to generate a chart legend showing which colour means what
-       @alevel_colour_keys[colour] = key
+      fill = "rgba(#{colour_keys[key].join(',')})"
+      stroke ="rgba(#{ChartColours::darken_color(colour_keys[key]).join(',')})"
 
-       colours.delete_at(0)
+      @year_colours[key] = [fill,stroke]
 
        # For this specific year that we've grouped by
-       result = val.sort_by{|p| @alevel_labels.index p["Grade"]}.collect{|p| p["Percent"]}
+       #result = val.sort_by{|p| @alevel_labels.index p["Grade"]}.collect{|p| p["Percent"]}
 
-       hash = { :fillColor => colour[0], :strokeColor => colour[1],
+       hash = { :fillColor => fill, :strokeColor => stroke,
          :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
          :data => result }
 
-       @alevels << hash
-    end
+         @alevels << hash
+       end
 
+     end
 
+  def post16results_btec
 
+    post16_json = File.read("storage/post16results.json")
+    @post16_results = JSON.parse(post16_json)
 
-    ####################
-    ####### BTEC #######
-    ####################
-    btec_results = @post16_results.find_all{|item| item["Type"] == "BTEC"}
+    btec_results = @post16_results.find_all{|item| item["Type"] == "BTEC" && item['Year'] != '2010-2011' && item['Year'] != '2011-2012' }
 
-    colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
-               ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(222,51,111,0.5)", "rgba(196,2,70,0.5)"]]
-
-    @btec_labels = btec_results.uniq{|p| p["Grade"]}.collect{|p| p["Grade"]}
-
-
+    @labels = ['Ungraded', 'Pass', 'Merit', 'Distinction']
     @btecs = []
-    @btec_colour_keys = {}
+    colour_keys = {
+      '2010-2011' => ChartColours::COLOURS[0],
+      '2011-2012' => ChartColours::COLOURS[1],
+      '2012-2013' => ChartColours::COLOURS[2],
+      '2013-2014' => ChartColours::COLOURS[3],
+    }
+    @year_colours = { }
 
     btec_results.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["Year"] }.each do |key,val|
 
-      p @btec_labels
-      p key
-      p val
+      result = []
+      @labels.each do |lbl|
+        value_for_lbl = val.find { |v| v['Grade'] == lbl }
+        result << (value_for_lbl != nil ? value_for_lbl['Percent'] : 0)
+      end
 
-      # Get leading colour, then delete it. Saves having to do random fetches
-      # and avoids collision checks
-      colour = colours[0]
+      fill = "rgba(#{colour_keys[key].join(',')})"
+      stroke ="rgba(#{ChartColours::darken_color(colour_keys[key]).join(',')})"
 
-      # Map the colour to the year. We can then loop through these in the view
-      # to generate a chart legend showing which colour means what
-      @btec_colour_keys[colour] = key
+      @year_colours[key] = [fill,stroke]
 
-      colours.delete_at(0)
-
-      # For this specific year that we've grouped by
-      result = val.sort_by{|p| @btec_labels.index p["Grade"]}.collect{|p| p["Percent"]}
-
-      hash = { :fillColor => colour[0], :strokeColor => colour[1],
+      hash = { :fillColor => fill, :strokeColor => stroke,
         :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
         :data => result }
 
-      @btecs << hash
+        @btecs << hash
+
+      end
 
     end
 
-  end
 
-  def gcses_overall
 
-    gcses_json = File.read("storage/gcse_overall.json")
-    gcses_overall = JSON.parse(gcses_json)
+    def gcses_overall
 
-    colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
-               ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(240,245,142,0.5)", "rgba(193,199,86,0.5)"],
-               ["rgba(240,144,144,0.5)", "rgba(199,90,90,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"]]
+      gcses_json = File.read("storage/gcse_overall.json")
+      gcses_overall = JSON.parse(gcses_json)
 
-    # Labels are the grades
-    @gcse_labels = gcses_overall.uniq{|p| p["Result"]}.collect{|p| p["Result"]}
+      @gcse_labels = [ '5+ A*– C (including English and Maths)' ]
+      @gcse_year_colors = { }
 
-    @results = []
-    @gcse_colour_keys = {}
+      @results = []
+      gcse_colour_keys = {
+        2009 => ChartColours::COLOURS[0],
+        2010 => ChartColours::COLOURS[1],
+        2011 => ChartColours::COLOURS[2],
+        2012 => ChartColours::COLOURS[3],
+        2013 => ChartColours::COLOURS[4],
+        2014 => ChartColours::COLOURS[5]
+      }
+
 
     # Sort by years, so 2011-2012,2012-2013 etc.
     # Then group by those very years giving us key-value
     # pairs of years to result sets for those years
     gcses_overall.sort_by{|p| p["Year"]}.group_by{ |p| p["Year"] }.each do |key,val|
+      result = []
+      @gcse_labels.each do |lbl|
+        value_for_lbl = val.find { |v| v['Result'] == lbl }
+        result << (value_for_lbl != nil ? value_for_lbl['Percent'] : 0)
+      end
 
-       # Get leading colour, then delete it. Saves having to do random fetches
-       # and avoids collision checks
-       colour = colours[0]
+      fill = "rgba(#{gcse_colour_keys[key].join(',')})"
+      stroke ="rgba(#{ChartColours::darken_color(gcse_colour_keys[key]).join(',')})"
 
-       # Map the colour to the year. We can then loop through these in the view
-       # to generate a chart legend showing which colour means what
-       @gcse_colour_keys[colour] = key
+      @gcse_year_colors[key] = [fill,stroke]
 
-       colours.delete_at(0)
-
-       # For this specific year that we've grouped by
-       result = val.sort_by{|p| @gcse_labels.index p["Result"]}.collect{|p| p["Percent"]}
-
-       hash = { :fillColor => colour[0], :strokeColor => colour[1],
-         :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
-         :data => result }
-
-       @results << hash
+      hash = {
+        :fillColor => fill,
+        :strokeColor => stroke,
+        :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
+        :data => result
+      }
+      @results << hash
     end
-
 
 
   end
@@ -149,44 +139,48 @@ class Charts::EducationController < ApplicationController
     gcses_json = File.read("storage/gcse_school.json")
     gcses_by_school = JSON.parse(gcses_json)
 
-    colours = [["rgba(235,140,45,0.5)", "rgba(219,111,2,0.5)"],
-               ["rgba(51,184,224,0.5)", "rgba(9,162,222,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(240,245,142,0.5)", "rgba(193,199,86,0.5)"],
-               ["rgba(240,144,144,0.5)", "rgba(199,90,90,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"],
-               ["rgba(51,222,111,0.5)", "rgba(2,196,70,0.5)"]]
-
     # Labels are the grades
-    @gcse_labels = gcses_by_school.uniq{|p| p["Result"]}.collect{|p| p["Result"]}
+    @years = [
+      '2010-2011',
+      '2011-2012',
+      '2012-2013',
+      '2013-2014'
+    ]
+
+    @schools = gcses_by_school.collect { |s| s['School'] }.uniq!
+
+    @school_colours = { }
 
     @results = []
-    @gcse_colour_keys = {}
+    gcse_colour_keys = Hash[@schools.each_with_index.map { |s,i| [s, ChartColours::COLOURS[i]] }]
 
-    # Sort by years, so 2011-2012,2012-2013 etc.
-    # Then group by those very years giving us key-value
-    # pairs of years to result sets for those years
-    gcses_by_school.sort_by{|p| p["Year"]}.group_by{ |p| p["Year"] }.each do |key,val|
+    gcses_by_school.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["School"] }.each do |school, val|
 
-       # Get leading colour, then delete it. Saves having to do random fetches
-       # and avoids collision checks
-       colour = colours[0]
+      result = []
+      @years.each do |lbl|
+        value_for_lbl = val.find { |v| v['Year'] == lbl && v['Result'] == '% 5+ A*– C GCSEs including English and Maths or equivalent' }
+        result << (value_for_lbl != nil ? value_for_lbl['Percent'] : 0)
+      end
 
-       # Map the colour to the year. We can then loop through these in the view
-       # to generate a chart legend showing which colour means what
-       @gcse_colour_keys[colour] = key
+      p
+      p school
+      p val.find { |v| v['Year'] == '2010-2011' && v['Result'] = '% 5+ A*– C GCSEs including English and Maths or equivalent' }
+      p result
+      p
 
-       colours.delete_at(0)
+      fill = "rgba(#{gcse_colour_keys[school].join(',')})"
+      stroke ="rgba(#{ChartColours::darken_color(gcse_colour_keys[school]).join(',')})"
+      @school_colours[school] = [fill,stroke]
 
-       # For this specific year that we've grouped by
-       result = val.sort_by{|p| @gcse_labels.index p["Result"]}.collect{|p| p["Percent"]}
+      hash = {
+        :fillColor => 'rgba(255,255,255,0)',
+        :strokeColor => stroke,
+        :pointColor => "rgba(100,100,100,1)",
+        :pointStrokeColor => "#FFFFFF",
+        :data => result
+      }
 
-       hash = { :fillColor => colour[0], :strokeColor => colour[1],
-         :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
-         :data => result }
-
-       @results << hash
+      @results << hash
     end
-
   end
 end
