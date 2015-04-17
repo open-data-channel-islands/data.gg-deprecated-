@@ -14,17 +14,8 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "categories";
 
-@font-face {
-    font-family: 'catfont';
-    src:url(font-path('catfont.eot'));
-    src:url(font-path('catfont.eot?#iefix')) format('embedded-opentype'),
-        url(font-path('catfont.svg#catfont')) format('svg'),
-        url(font-path('catfont.woff')) format('woff'),
-        url(font-path('catfont.ttf')) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body div.navbar, .navbar-fixed-top {
   margin-bottom:0;
@@ -54,90 +45,8 @@ body div.navbar, .navbar-fixed-top {
    }
 }
 
-
-.category-image {
-  font-family: 'catfont'; /* Reference your custom font */
-  speak: none; /* Ensure screenreaders skip over what is essentially garbage to them. */
-  -webkit-font-smoothing: antialiased; /* Force antialiasing */
-  font-style: normal;
-  font-weight: normal;
-  font-size:24px;
-  text-align:center;
-  width:30px;
-  display:inline;
-  float:left;
-}
-
-.category-inline-link {
-  padding-left:8px;
-  font-size:114%;
-  vertical-align:middle;
-}
-
-
-.category-finance.category-small {
-
-}
-
-.category-small {
-  font-size:20px;
-}
-
 table.vertical-align-middle tbody tr td {
   vertical-align:middle;
-}
-
-
-.category-housing:before { content: "\e601"; }
-.category:hover .category-housing:before { content: "\e600";}
-
-.category-buses:before { content: "\e603"; }
-.category:hover .category-buses:before { content: "\e602";  }
-
-.category-finance:before { content: "\e605"; }
-.category:hover .category-finance:before { content: "\e604"; }
-
-.category-police:before { content: "\e607"; }
-.category:hover .category-police:before { content: "\e606"; }
-
-.category-flights:before { content: "\e609"; }
-.category:hover .category-flights:before { content: "\e608"; }
-
-.category-population:before { content: "\e60b";  }
-.category:hover .category-population:before { content: "\e60a"; }
-
-.category-education:before { content: "\e60d"; }
-.category:hover .category-education:before { content: "\e60c"; }
-
-.category-sailings:before { content: "\e610"; }
-.category:hover .category-sailings:before { content: "\e611"; }
-
-a.category:hover {
-  background-color:#428bca;
-  color:#FFF;
-  text-decoration:none;
-}
-
-.category {
-  padding:10px;
-  border-radius:3px;
-  border:1px solid #428bca;
-  display:block;
-  background-color:#F2F9FF;
-  margin-bottom:10px;
-}
-
-.category-detail {
-  margin:0;
-  margin-left:40px;
-}
-
-.category-detail p { margin:0; }
-
-.category-detail h3 {
-  margin-top:0px;
-  margin-bottom:5px;
-  font-size:1.4em;
 }
 
 .jumbotron {

@@ -36,9 +36,7 @@ class HomeController < ApplicationController
       colors.delete_at(colors.length - 1)
       @labels << [year, color[0], color[1]]
 
-      hash = { :fillColor => color[0], :strokeColor => color[1],
-        :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
-        :data => values }
+      hash = { label: year, :fillColor => color[0], :strokeColor => color[1], :data => values }
       @bus_data << hash
     end
 

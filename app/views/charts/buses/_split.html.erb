@@ -7,7 +7,7 @@
     labels : <%= @months.to_s.html_safe -%>,
     datasets : <%= @bus_data.to_json.html_safe -%>
   };
-  Chart.defaults.global.responsive = true;
+
   var myNewChart = new Chart(ctx).Bar(data, {
 
   });

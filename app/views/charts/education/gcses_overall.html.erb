@@ -41,7 +41,6 @@
         labels : <%= @gcse_labels.to_s.html_safe -%>,
         datasets : <%= @results.to_json.html_safe -%>
       };
-      Chart.defaults.global.responsive = true;
       var myNewChart = new Chart(ctx).Bar(data, {
 
       });

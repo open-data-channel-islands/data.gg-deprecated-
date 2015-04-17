@@ -34,12 +34,7 @@ class Charts::EducationController < ApplicationController
 
       @year_colours[key] = [fill,stroke]
 
-       # For this specific year that we've grouped by
-       #result = val.sort_by{|p| @alevel_labels.index p["Grade"]}.collect{|p| p["Percent"]}
-
-       hash = { :fillColor => fill, :strokeColor => stroke,
-         :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
-         :data => result }
+       hash = { :fillColor => fill, :strokeColor => stroke, :data => result }
 
          @alevels << hash
        end
@@ -76,9 +71,7 @@ class Charts::EducationController < ApplicationController
 
       @year_colours[key] = [fill,stroke]
 
-      hash = { :fillColor => fill, :strokeColor => stroke,
-        :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
-        :data => result }
+      hash = { :fillColor => fill, :strokeColor => stroke, :data => result }
 
         @btecs << hash
 
@@ -106,7 +99,6 @@ class Charts::EducationController < ApplicationController
         2014 => ChartColours::COLOURS[5]
       }
 
-
     # Sort by years, so 2011-2012,2012-2013 etc.
     # Then group by those very years giving us key-value
     # pairs of years to result sets for those years
@@ -125,7 +117,6 @@ class Charts::EducationController < ApplicationController
       hash = {
         :fillColor => fill,
         :strokeColor => stroke,
-        :pointColor => "rgba(100,100,100,1)", :pointStrokeColor => "#FFFFFF",
         :data => result
       }
       @results << hash
@@ -162,21 +153,22 @@ class Charts::EducationController < ApplicationController
         result << (value_for_lbl != nil ? value_for_lbl['Percent'] : 0)
       end
 
-      p
-      p school
-      p val.find { |v| v['Year'] == '2010-2011' && v['Result'] = '% 5+ A*– C GCSEs including English and Maths or equivalent' }
-      p result
-      p
-
       fill = "rgba(#{gcse_colour_keys[school].join(',')})"
       stroke ="rgba(#{ChartColours::darken_color(gcse_colour_keys[school]).join(',')})"
       @school_colours[school] = [fill,stroke]
 
+      transparent = []
+      transparent << gcse_colour_keys[school][0]
+      transparent << gcse_colour_keys[school][1]
+      transparent << gcse_colour_keys[school][2]
+      transparent << "0" #gcse_colour_keys[school][3]
+      transparent_fill = "rgba(#{transparent.join(',')})"
+
       hash = {
-        :fillColor => 'rgba(255,255,255,0)',
+        :fillColor => transparent_fill,
         :strokeColor => stroke,
-        :pointColor => "rgba(100,100,100,1)",
-        :pointStrokeColor => "#FFFFFF",
+        :pointColor => fill,
+        :pointStrokeColor => stroke,
         :data => result
       }
 

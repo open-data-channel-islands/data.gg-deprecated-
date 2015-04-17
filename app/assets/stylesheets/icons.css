@@ -1,0 +1,95 @@
+/*
+  Icon Font: icons
+*/
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/icons.woff") format("woff"),
+       url("../fonts/icons.ttf") format("truetype"),
+       url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "icons";
+    src: url("../fonts/icons.svg#icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.i-1094-sail-boat-2-2x:before,
+.i-1094-sail-boat-2-selected-2x:before,
+.i-750-home-2x:before,
+.i-750-home-selected-2x:before,
+.i-754-scale-2x:before,
+.i-754-scale-selected-2x:before,
+.i-776-recycle-2x:before,
+.i-776-recycle-selected-2x:before,
+.i-789-map-location-2x:before,
+.i-789-map-location-selected-2x:before,
+.i-814-bus-2x:before,
+.i-814-bus-selected-2x:before,
+.i-815-car-2x:before,
+.i-815-car-selected-2x:before,
+.i-826-money-1-2x:before,
+.i-826-money-1-selected-2x:before,
+.i-828-shield-2x:before,
+.i-828-shield-selected-2x:before,
+.i-892-bandaid-2x:before,
+.i-892-bandaid-selected-2x:before,
+.i-893-airplane-2x:before,
+.i-893-airplane-selected-2x:before,
+.i-895-user-group-2x:before,
+.i-895-user-group-selected-2x:before,
+.i-897-graduation-cap-2x:before,
+.i-897-graduation-cap-selected-2x:before,
+.i-958-life-preserver-2x:before,
+.i-958-life-preserver-selected-2x:before {
+  display: inline-block;
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.i-1094-sail-boat-2-2x:before { content: "\f100"; }
+.i-1094-sail-boat-2-selected-2x:before { content: "\f101"; }
+.i-750-home-2x:before { content: "\f102"; }
+.i-750-home-selected-2x:before { content: "\f103"; }
+.i-754-scale-2x:before { content: "\f104"; }
+.i-754-scale-selected-2x:before { content: "\f105"; }
+.i-776-recycle-2x:before { content: "\f118"; }
+.i-776-recycle-selected-2x:before { content: "\f119"; }
+.i-789-map-location-2x:before { content: "\f106"; }
+.i-789-map-location-selected-2x:before { content: "\f107"; }
+.i-814-bus-2x:before { content: "\f108"; }
+.i-814-bus-selected-2x:before { content: "\f109"; }
+.i-815-car-2x:before { content: "\f10a"; }
+.i-815-car-selected-2x:before { content: "\f10b"; }
+.i-826-money-1-2x:before { content: "\f10c"; }
+.i-826-money-1-selected-2x:before { content: "\f10d"; }
+.i-828-shield-2x:before { content: "\f10e"; }
+.i-828-shield-selected-2x:before { content: "\f10f"; }
+.i-892-bandaid-2x:before { content: "\f11a"; }
+.i-892-bandaid-selected-2x:before { content: "\f11b"; }
+.i-893-airplane-2x:before { content: "\f110"; }
+.i-893-airplane-selected-2x:before { content: "\f111"; }
+.i-895-user-group-2x:before { content: "\f112"; }
+.i-895-user-group-selected-2x:before { content: "\f113"; }
+.i-897-graduation-cap-2x:before { content: "\f114"; }
+.i-897-graduation-cap-selected-2x:before { content: "\f115"; }
+.i-958-life-preserver-2x:before { content: "\f116"; }
+.i-958-life-preserver-selected-2x:before { content: "\f117"; }
