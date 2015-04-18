@@ -1,5 +1,9 @@
 DataGg::Application.routes.draw do
 
+  namespace :developers do
+  get 'inflation/changes'
+  end
+
   # You can have the root of your site routed with "root"
   root 'home#index'
 
@@ -33,8 +37,9 @@ DataGg::Application.routes.draw do
     get 'education/gcses_overall', as: :education_gcses_overall
     get 'education/gcses_by_school', as: :education_gcses_by_school
 
-
     get 'earnings' => 'earnings#index', as: :earnings
+
+    get 'inflation' => 'inflation#changes', as: :inflation
   end
 
 
@@ -52,6 +57,7 @@ DataGg::Application.routes.draw do
     get 'earnings' => 'earnings#index', as: :earnings
     get 'flights' => 'flights#index', as: :flights
     get 'sailings' => 'sailings#index', as: :sailings
+    get 'inflation' => 'inflation#index', as: :inflation
   end
 
 
@@ -94,6 +100,8 @@ DataGg::Application.routes.draw do
       get 'earnings/earnings_age_group' => 'earnings#earnings_age_group'
       get 'earnings/earnings_sector' => 'earnings#earnings_sector'
       get 'earnings/earnings_sex' => 'earnings#earnings_sex'
+
+      get 'inflation/changes' => 'inflation#changes'
     end
   end
 

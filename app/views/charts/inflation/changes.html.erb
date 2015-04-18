@@ -1,0 +1,47 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Charts", charts_path %></li>
+    <li class="active">Inflation</li>
+  </ol>
+<% end %>
+
+<div class="page-header">
+<h1>Inflation Charts</h1>
+</div>
+<h3>RPI vs RPIX (31/03/1999 is 100)</h3>
+<span style="background-color: rgba(220,220,220,1);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RPI
+<span style="background-color: rgba(151,187,205,1);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RPIX
+<div>
+<canvas id="rpi_vs_rpix_chart" width="800" height="400"></canvas>
+</div>
+
+<%= javascript_tag do %>
+  var ctx = document.getElementById("rpi_vs_rpix_chart").getContext("2d");
+
+  var data = {
+  labels : <%= @changes.uniq { |p| p[:Quarter] }.collect { |p| p[:Quarter] }.to_s.html_safe %>,
+  datasets : [
+      {
+        fillColor : "rgba(220,220,220,0)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @changes.collect{ |p| p[:RPI].round(2) } %>
+      },
+      {
+        fillColor : "rgba(151,187,205,0)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : <%= @changes.collect{ |p| p[:RPIX].round(2) } %>
+      }
+    ]
+  };
+
+  var myNewChart = new Chart(ctx).Line(data, {
+    animation: false,
+    pointHitDetectionRadius: 4,
+    bezierCurve : false
+  });
+<% end %>

@@ -1,0 +1,1850 @@
+[
+  {
+    "Quarter":"30/06/1949",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":null,
+    "RPI Quarterly Change":null
+  },
+  {
+    "Quarter":"30/09/1949",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":null,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/12/1949",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":null,
+    "RPI Quarterly Change":-0.1
+  },
+  {
+    "Quarter":"31/03/1950",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":null,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"30/06/1950",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"30/09/1950",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.9,
+    "RPI Quarterly Change":-1
+  },
+  {
+    "Quarter":"31/12/1950",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.9,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"31/03/1951",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.8,
+    "RPI Quarterly Change":2.9
+  },
+  {
+    "Quarter":"30/06/1951",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.6,
+    "RPI Quarterly Change":6.5
+  },
+  {
+    "Quarter":"30/09/1951",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.9,
+    "RPI Quarterly Change":-0.7
+  },
+  {
+    "Quarter":"31/12/1951",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.7,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/03/1952",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.4,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"30/06/1952",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.7,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"30/09/1952",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.7,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"31/12/1952",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.4,
+    "RPI Quarterly Change":-1.4
+  },
+  {
+    "Quarter":"31/03/1953",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.2,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"30/06/1953",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.7,
+    "RPI Quarterly Change":2.4
+  },
+  {
+    "Quarter":"30/09/1953",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.1,
+    "RPI Quarterly Change":-0.3
+  },
+  {
+    "Quarter":"31/12/1953",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2,
+    "RPI Quarterly Change":-0.6
+  },
+  {
+    "Quarter":"31/03/1954",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":0.9,
+    "RPI Quarterly Change":-0.6
+  },
+  {
+    "Quarter":"30/06/1954",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.4,
+    "RPI Quarterly Change":2.9
+  },
+  {
+    "Quarter":"30/09/1954",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/12/1954",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":-0.3
+  },
+  {
+    "Quarter":"31/03/1955",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.8,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"30/06/1955",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.7,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/09/1955",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.6,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"31/12/1955",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.1,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"31/03/1956",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.2,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"30/06/1956",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/1956",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6,
+    "RPI Quarterly Change":-0.5
+  },
+  {
+    "Quarter":"31/12/1956",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.6,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/03/1957",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"30/06/1957",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.5,
+    "RPI Quarterly Change":2.1
+  },
+  {
+    "Quarter":"30/09/1957",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"31/12/1957",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.7,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"31/03/1958",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.7,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"30/06/1958",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"30/09/1958",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.8,
+    "RPI Quarterly Change":-0.4
+  },
+  {
+    "Quarter":"31/12/1958",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.4,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/03/1959",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.9,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/06/1959",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.7,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/09/1959",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.8,
+    "RPI Quarterly Change":-0.3
+  },
+  {
+    "Quarter":"31/12/1959",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.9,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/03/1960",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":0.9,
+    "RPI Quarterly Change":-0.4
+  },
+  {
+    "Quarter":"30/06/1960",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":0.7,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"30/09/1960",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":0.9,
+    "RPI Quarterly Change":-0.1
+  },
+  {
+    "Quarter":"31/12/1960",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":0.7,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/03/1961",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.1,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"30/06/1961",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.9,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"30/09/1961",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.2,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"31/12/1961",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.4,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"31/03/1962",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"30/06/1962",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"30/09/1962",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":-0.3
+  },
+  {
+    "Quarter":"31/12/1962",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.1,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"31/03/1963",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.1,
+    "RPI Quarterly Change":2.1
+  },
+  {
+    "Quarter":"30/06/1963",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"30/09/1963",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.3,
+    "RPI Quarterly Change":-1.2
+  },
+  {
+    "Quarter":"31/12/1963",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/03/1964",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.8,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/06/1964",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.3,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/09/1964",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.4,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"31/12/1964",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/03/1965",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/06/1965",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.6,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"30/09/1965",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.7,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/12/1965",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.7,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/1966",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.1,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"30/06/1966",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/09/1966",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/12/1966",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.6,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/03/1967",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"30/06/1967",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.7,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"30/09/1967",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.7,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"31/12/1967",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.5,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/1968",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.1,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/06/1968",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"30/09/1968",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.5,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"31/12/1968",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/03/1969",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.8,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"30/06/1969",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/1969",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.8,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/12/1969",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"31/03/1970",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.8,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"30/06/1970",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.8,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/09/1970",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.7,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"31/12/1970",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.9,
+    "RPI Quarterly Change":1.8
+  },
+  {
+    "Quarter":"31/03/1971",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.9,
+    "RPI Quarterly Change":2.8
+  },
+  {
+    "Quarter":"30/06/1971",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"30/09/1971",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.7,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"31/12/1971",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.9,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"31/03/1972",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.4,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"30/06/1972",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.6,
+    "RPI Quarterly Change":2.8
+  },
+  {
+    "Quarter":"30/09/1972",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.5,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"31/12/1972",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.9,
+    "RPI Quarterly Change":3.3
+  },
+  {
+    "Quarter":"31/03/1973",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":11.3,
+    "RPI Quarterly Change":2.7
+  },
+  {
+    "Quarter":"30/06/1973",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":12.5,
+    "RPI Quarterly Change":3.9
+  },
+  {
+    "Quarter":"30/09/1973",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":13,
+    "RPI Quarterly Change":2.5
+  },
+  {
+    "Quarter":"31/12/1973",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":13.3,
+    "RPI Quarterly Change":3.6
+  },
+  {
+    "Quarter":"31/03/1974",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":16.6,
+    "RPI Quarterly Change":5.7
+  },
+  {
+    "Quarter":"30/06/1974",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":20.1,
+    "RPI Quarterly Change":7
+  },
+  {
+    "Quarter":"30/09/1974",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":20.8,
+    "RPI Quarterly Change":3.1
+  },
+  {
+    "Quarter":"31/12/1974",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":21.9,
+    "RPI Quarterly Change":4.6
+  },
+  {
+    "Quarter":"31/03/1975",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":23.1,
+    "RPI Quarterly Change":6.7
+  },
+  {
+    "Quarter":"30/06/1975",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":23,
+    "RPI Quarterly Change":7
+  },
+  {
+    "Quarter":"30/09/1975",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":22.5,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"31/12/1975",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":20.5,
+    "RPI Quarterly Change":2.9
+  },
+  {
+    "Quarter":"31/03/1976",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":19.4,
+    "RPI Quarterly Change":5.8
+  },
+  {
+    "Quarter":"30/06/1976",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":14.7,
+    "RPI Quarterly Change":2.7
+  },
+  {
+    "Quarter":"30/09/1976",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":15.6,
+    "RPI Quarterly Change":3.4
+  },
+  {
+    "Quarter":"31/12/1976",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":18.5,
+    "RPI Quarterly Change":5.4
+  },
+  {
+    "Quarter":"31/03/1977",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":17.5,
+    "RPI Quarterly Change":4.9
+  },
+  {
+    "Quarter":"30/06/1977",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":20.5,
+    "RPI Quarterly Change":5.3
+  },
+  {
+    "Quarter":"30/09/1977",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":19.7,
+    "RPI Quarterly Change":2.8
+  },
+  {
+    "Quarter":"31/12/1977",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":15,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"31/03/1978",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":12.2,
+    "RPI Quarterly Change":2.4
+  },
+  {
+    "Quarter":"30/06/1978",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.9,
+    "RPI Quarterly Change":3.1
+  },
+  {
+    "Quarter":"30/09/1978",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.9,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"31/12/1978",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.1,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/03/1979",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.8,
+    "RPI Quarterly Change":3.1
+  },
+  {
+    "Quarter":"30/06/1979",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.8,
+    "RPI Quarterly Change":3
+  },
+  {
+    "Quarter":"30/09/1979",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":11.4,
+    "RPI Quarterly Change":3.5
+  },
+  {
+    "Quarter":"31/12/1979",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":13.5,
+    "RPI Quarterly Change":3.3
+  },
+  {
+    "Quarter":"31/03/1980",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":15.3,
+    "RPI Quarterly Change":4.6
+  },
+  {
+    "Quarter":"30/06/1980",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":16.7,
+    "RPI Quarterly Change":4.3
+  },
+  {
+    "Quarter":"30/09/1980",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":15.3,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"31/12/1980",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":14,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"31/03/1981",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":12.8,
+    "RPI Quarterly Change":3.5
+  },
+  {
+    "Quarter":"30/06/1981",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.7,
+    "RPI Quarterly Change":2.4
+  },
+  {
+    "Quarter":"30/09/1981",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.8,
+    "RPI Quarterly Change":2.3
+  },
+  {
+    "Quarter":"31/12/1981",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.5,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"31/03/1982",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.7,
+    "RPI Quarterly Change":2.7
+  },
+  {
+    "Quarter":"30/06/1982",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.8,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"30/09/1982",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.2,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/12/1982",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.2,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/03/1983",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/06/1983",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"30/09/1983",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.8,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"31/12/1983",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.5,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/03/1984",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.1,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"30/06/1984",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/09/1984",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.1,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/12/1984",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.9,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"31/03/1985",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.4,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"30/06/1985",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.5,
+    "RPI Quarterly Change":1.8
+  },
+  {
+    "Quarter":"30/09/1985",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.6,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"31/12/1985",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"31/03/1986",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.2,
+    "RPI Quarterly Change":1.8
+  },
+  {
+    "Quarter":"30/06/1986",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.7,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"30/09/1986",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.1,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/12/1986",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/03/1987",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.9,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/06/1987",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"30/09/1987",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.4,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"31/12/1987",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.8,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"31/03/1988",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.4,
+    "RPI Quarterly Change":1.3
+  },
+  {
+    "Quarter":"30/06/1988",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.5,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/1988",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6.3,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"31/12/1988",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":7.1,
+    "RPI Quarterly Change":2.1
+  },
+  {
+    "Quarter":"31/03/1989",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.5,
+    "RPI Quarterly Change":2.6
+  },
+  {
+    "Quarter":"30/06/1989",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"30/09/1989",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.8,
+    "RPI Quarterly Change":2.7
+  },
+  {
+    "Quarter":"31/12/1989",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.7,
+    "RPI Quarterly Change":2.1
+  },
+  {
+    "Quarter":"31/03/1990",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.2,
+    "RPI Quarterly Change":3
+  },
+  {
+    "Quarter":"30/06/1990",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.7,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/1990",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":10.4,
+    "RPI Quarterly Change":3.3
+  },
+  {
+    "Quarter":"31/12/1990",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":9.7,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/03/1991",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.6,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"30/06/1991",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":8.7,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/09/1991",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":6,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/12/1991",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":5.5,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/03/1992",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.5,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"30/06/1992",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.1,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"30/09/1992",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.6,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/12/1992",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/1993",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.3,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"30/06/1993",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.6,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"30/09/1993",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.7,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/12/1993",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":1.3,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"31/03/1994",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.9,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/06/1994",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.3,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"30/09/1994",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"31/12/1994",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.4,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/1995",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3,
+    "RPI Quarterly Change":2.3
+  },
+  {
+    "Quarter":"30/06/1995",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"30/09/1995",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/12/1995",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.6,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"31/03/1996",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.5,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"30/06/1996",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.1,
+    "RPI Quarterly Change":0.1
+  },
+  {
+    "Quarter":"30/09/1996",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/12/1996",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":2.8,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/03/1997",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.1,
+    "RPI Quarterly Change":1.5
+  },
+  {
+    "Quarter":"30/06/1997",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"30/09/1997",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/12/1997",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.7,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"31/03/1998",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4.1,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/06/1998",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/09/1998",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":4,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/12/1998",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":null,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/03/1999",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":0.9,
+    "RPI Annual Change":2.1,
+    "RPI Quarterly Change":-0.2
+  },
+  {
+    "Quarter":"30/06/1999",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":1.1,
+    "RPI Annual Change":2.2,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"30/09/1999",
+    "RPIX Annual Change":null,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":1.8,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/12/1999",
+    "RPIX Annual Change":2.8,
+    "RPIX Quarterly Change":0,
+    "RPI Annual Change":2.4,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"31/03/2000",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":3.8,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"30/06/2000",
+    "RPIX Annual Change":3.6,
+    "RPIX Quarterly Change":1.6,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/2000",
+    "RPIX Annual Change":3.5,
+    "RPIX Quarterly Change":0.6,
+    "RPI Annual Change":4.5,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/12/2000",
+    "RPIX Annual Change":3.8,
+    "RPIX Quarterly Change":0.3,
+    "RPI Annual Change":3.9,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/2001",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":0.3,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/06/2001",
+    "RPIX Annual Change":2.7,
+    "RPIX Quarterly Change":1.4,
+    "RPI Annual Change":2.4,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"30/09/2001",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":1,
+    "RPI Annual Change":2.6,
+    "RPI Quarterly Change":0.8
+  },
+  {
+    "Quarter":"31/12/2001",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":0.1,
+    "RPI Annual Change":1.9,
+    "RPI Quarterly Change":-0.2
+  },
+  {
+    "Quarter":"31/03/2002",
+    "RPIX Annual Change":3.8,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":2.9,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/06/2002",
+    "RPIX Annual Change":3.6,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"30/09/2002",
+    "RPIX Annual Change":3.8,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":3.9,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"31/12/2002",
+    "RPIX Annual Change":3.8,
+    "RPIX Quarterly Change":0.1,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/03/2003",
+    "RPIX Annual Change":4.3,
+    "RPIX Quarterly Change":1.7,
+    "RPI Annual Change":4.7,
+    "RPI Quarterly Change":1.9
+  },
+  {
+    "Quarter":"30/06/2003",
+    "RPIX Annual Change":3.8,
+    "RPIX Quarterly Change":0.8,
+    "RPI Annual Change":4.3,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/09/2003",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":0.5,
+    "RPI Annual Change":3.3,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/12/2003",
+    "RPIX Annual Change":3.4,
+    "RPIX Quarterly Change":0.4,
+    "RPI Annual Change":3.9,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/03/2004",
+    "RPIX Annual Change":3.2,
+    "RPIX Quarterly Change":1.5,
+    "RPI Annual Change":4.2,
+    "RPI Quarterly Change":2.2
+  },
+  {
+    "Quarter":"30/06/2004",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":4.5,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/09/2004",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":0.2,
+    "RPI Annual Change":5.2,
+    "RPI Quarterly Change":1
+  },
+  {
+    "Quarter":"31/12/2004",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":0.4,
+    "RPI Annual Change":4.9,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/03/2005",
+    "RPIX Annual Change":3.2,
+    "RPIX Quarterly Change":1.9,
+    "RPI Annual Change":4.6,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"30/06/2005",
+    "RPIX Annual Change":3.3,
+    "RPIX Quarterly Change":0.8,
+    "RPI Annual Change":4.6,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"30/09/2005",
+    "RPIX Annual Change":3.6,
+    "RPIX Quarterly Change":0.5,
+    "RPI Annual Change":3.8,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"31/12/2005",
+    "RPIX Annual Change":3,
+    "RPIX Quarterly Change":-0.1,
+    "RPI Annual Change":3.4,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"31/03/2006",
+    "RPIX Annual Change":2.8,
+    "RPIX Quarterly Change":1.7,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/06/2006",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":1,
+    "RPI Annual Change":3.4,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"30/09/2006",
+    "RPIX Annual Change":2.5,
+    "RPIX Quarterly Change":-0.1,
+    "RPI Annual Change":3.6,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/12/2006",
+    "RPIX Annual Change":2.8,
+    "RPIX Quarterly Change":0.2,
+    "RPI Annual Change":4.4,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"31/03/2007",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":2,
+    "RPI Annual Change":4.8,
+    "RPI Quarterly Change":2.1
+  },
+  {
+    "Quarter":"30/06/2007",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":1,
+    "RPI Annual Change":4.7,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"30/09/2007",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":-0.3,
+    "RPI Annual Change":4.9,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/12/2007",
+    "RPIX Annual Change":3.9,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":4.9,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"31/03/2008",
+    "RPIX Annual Change":4.3,
+    "RPIX Quarterly Change":2.3,
+    "RPI Annual Change":4.8,
+    "RPI Quarterly Change":2
+  },
+  {
+    "Quarter":"30/06/2008",
+    "RPIX Annual Change":5.4,
+    "RPIX Quarterly Change":2.1,
+    "RPI Annual Change":5.5,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/09/2008",
+    "RPIX Annual Change":6.4,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":5.9,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/12/2008",
+    "RPIX Annual Change":4.6,
+    "RPIX Quarterly Change":-0.5,
+    "RPI Annual Change":1.2,
+    "RPI Quarterly Change":-3.4
+  },
+  {
+    "Quarter":"31/03/2009",
+    "RPIX Annual Change":3.3,
+    "RPIX Quarterly Change":1,
+    "RPI Annual Change":-1.2,
+    "RPI Quarterly Change":-0.4
+  },
+  {
+    "Quarter":"30/06/2009",
+    "RPIX Annual Change":2.7,
+    "RPIX Quarterly Change":1.5,
+    "RPI Annual Change":-1.3,
+    "RPI Quarterly Change":1.6
+  },
+  {
+    "Quarter":"30/09/2009",
+    "RPIX Annual Change":2.4,
+    "RPIX Quarterly Change":0.4,
+    "RPI Annual Change":-1.2,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"31/12/2009",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":-0.1,
+    "RPI Annual Change":2.2,
+    "RPI Quarterly Change":0
+  },
+  {
+    "Quarter":"31/03/2010",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":1.2,
+    "RPI Annual Change":3.4,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"30/06/2010",
+    "RPIX Annual Change":2.4,
+    "RPIX Quarterly Change":0.8,
+    "RPI Annual Change":2.3,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"30/09/2010",
+    "RPIX Annual Change":2.3,
+    "RPIX Quarterly Change":0.3,
+    "RPI Annual Change":1.6,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/12/2010",
+    "RPIX Annual Change":2.7,
+    "RPIX Quarterly Change":0.3,
+    "RPI Annual Change":2.3,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/03/2011",
+    "RPIX Annual Change":2.9,
+    "RPIX Quarterly Change":1.4,
+    "RPI Annual Change":2.9,
+    "RPI Quarterly Change":1.4
+  },
+  {
+    "Quarter":"30/06/2011",
+    "RPIX Annual Change":2.6,
+    "RPIX Quarterly Change":0.5,
+    "RPI Annual Change":3,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"30/09/2011",
+    "RPIX Annual Change":3,
+    "RPIX Quarterly Change":0.8,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":0.9
+  },
+  {
+    "Quarter":"31/12/2011",
+    "RPIX Annual Change":2.8,
+    "RPIX Quarterly Change":0.2,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"31/03/2012",
+    "RPIX Annual Change":3.2,
+    "RPIX Quarterly Change":1.8,
+    "RPI Annual Change":3.5,
+    "RPI Quarterly Change":1.7
+  },
+  {
+    "Quarter":"30/06/2012",
+    "RPIX Annual Change":3.1,
+    "RPIX Quarterly Change":0.3,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.3
+  },
+  {
+    "Quarter":"30/09/2012",
+    "RPIX Annual Change":3,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":3,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/12/2012",
+    "RPIX Annual Change":3,
+    "RPIX Quarterly Change":0.2,
+    "RPI Annual Change":3.2,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"31/03/2013",
+    "RPIX Annual Change":2.3,
+    "RPIX Quarterly Change":1,
+    "RPI Annual Change":2.6,
+    "RPI Quarterly Change":1.1
+  },
+  {
+    "Quarter":"30/06/2013",
+    "RPIX Annual Change":2.1,
+    "RPIX Quarterly Change":0.1,
+    "RPI Annual Change":2.7,
+    "RPI Quarterly Change":0.4
+  },
+  {
+    "Quarter":"30/09/2013",
+    "RPIX Annual Change":2,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":2.7,
+    "RPI Quarterly Change":0.7
+  },
+  {
+    "Quarter":"31/12/2013",
+    "RPIX Annual Change":2.1,
+    "RPIX Quarterly Change":0.2,
+    "RPI Annual Change":2.7,
+    "RPI Quarterly Change":0.5
+  },
+  {
+    "Quarter":"31/03/2014",
+    "RPIX Annual Change":2.2,
+    "RPIX Quarterly Change":1.1,
+    "RPI Annual Change":2.8,
+    "RPI Quarterly Change":1.2
+  },
+  {
+    "Quarter":"30/06/2014",
+    "RPIX Annual Change":2.1,
+    "RPIX Quarterly Change":0.1,
+    "RPI Annual Change":2.6,
+    "RPI Quarterly Change":0.2
+  },
+  {
+    "Quarter":"30/09/2014",
+    "RPIX Annual Change":1.8,
+    "RPIX Quarterly Change":0.4,
+    "RPI Annual Change":2.5,
+    "RPI Quarterly Change":0.6
+  },
+  {
+    "Quarter":"31/12/2014",
+    "RPIX Annual Change":0.6,
+    "RPIX Quarterly Change":-0.9,
+    "RPI Annual Change":1.2,
+    "RPI Quarterly Change":-0.8
+  },
+  {
+    "Quarter":"31/03/2015",
+    "RPIX Annual Change":0.8,
+    "RPIX Quarterly Change":1.3,
+    "RPI Annual Change":1.3,
+    "RPI Quarterly Change":1.3
+  }
+]

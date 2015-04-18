@@ -1,0 +1,31 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to "Inflation", developers_inflation_path %></li>
+    <li class="active">Changes</a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>RPIX Annual Change</th>
+      <th>RPIX Quarterly Change</th>
+      <th>RPI Annual Change</th>
+      <th>RPI Quarterly Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @changes.each do |f| %>
+      <tr>
+        <td><%= f['Quarter'] %></td>
+        <td><%= f['RPIX Annual Change'] %></td>
+        <td><%= f['RPIX Quarterly Change'] %></td>
+        <td><%= f['RPI Annual Change'] %></td>
+        <td><%= f['RPI Quarterly Change'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
