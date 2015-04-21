@@ -40,6 +40,8 @@ DataGg::Application.routes.draw do
     get 'earnings' => 'earnings#index', as: :earnings
 
     get 'inflation' => 'inflation#changes', as: :inflation
+    get 'inflation/changes' => 'inflation#changes', as: :inflation_changes
+    get 'inflation/rpi_group_changes' => 'inflation#rpi_group_changes', as: :inflation_rpi_group_changes
   end
 
 
@@ -102,6 +104,8 @@ DataGg::Application.routes.draw do
       get 'earnings/earnings_sex' => 'earnings#earnings_sex'
 
       get 'inflation/changes' => 'inflation#changes'
+      get 'inflation/rpi_group_changes' => 'inflation#rpi_group_changes'
+      get 'inflation/rpix_group_changes' => 'inflation#rpix_group_changes'
     end
   end
 

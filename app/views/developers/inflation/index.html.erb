@@ -33,6 +33,26 @@
         <td><%= link_to 'RAW HTML', api_v10_inflation_changes_path(:format => "html", :layout => false) %></td>
         <td><%= link_to 'HTML', api_v10_inflation_changes_path(:format => "html") %></td>
       </tr>
+
+      <tr>
+        <td>RPI Group Changes</td>
+        <td>1.0</td>
+        <td>RPI group changes since Q4 2004</td>
+        <td><%= link_to 'XML', api_v10_inflation_rpi_group_changes_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_inflation_rpi_group_changes_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_inflation_rpi_group_changes_path(:format => "html", :layout => false) %></td>
+        <td><%= link_to 'HTML', api_v10_inflation_rpi_group_changes_path(:format => "html") %></td>
+      </tr>
+
+      <tr>
+        <td>RPIX Group Changes</td>
+        <td>1.0</td>
+        <td>RPIX group changes since Q4 2014</td>
+        <td><%= link_to 'XML', api_v10_inflation_rpix_group_changes_path(:format => "xml")  %></td>
+        <td><%= link_to 'JSON', api_v10_inflation_rpix_group_changes_path(:format => "json") %></td>
+        <td><%= link_to 'RAW HTML', api_v10_inflation_rpix_group_changes_path(:format => "html", :layout => false) %></td>
+        <td><%= link_to 'HTML', api_v10_inflation_rpix_group_changes_path(:format => "html") %></td>
+      </tr>
     </tbody>
   </table>
 </div>

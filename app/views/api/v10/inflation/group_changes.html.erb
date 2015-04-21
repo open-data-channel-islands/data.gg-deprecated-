@@ -1,0 +1,29 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to "Inflation", developers_inflation_path %></li>
+    <li class="active"><%= @title %></a>
+  </ol>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Type</th>
+      <th>Quarterly Change</th>
+      <th>Annual Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @group_changes.each do |f| %>
+      <tr>
+        <td><%= f['Quarter'] %></td>
+        <td><%= f['Type'] %></td>
+        <td><%= f['Quarterly Change'] %></td>
+        <td><%= f['Annual Change'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

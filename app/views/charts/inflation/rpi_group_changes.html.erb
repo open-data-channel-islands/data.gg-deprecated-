@@ -1,0 +1,64 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li class="active">RPI Group Changes</li>
+</ol>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>RPI Group Changes</h1>
+    </div>
+
+    <ul class="nav nav-tabs">
+      <li role="presentation"><%= link_to 'Inflation', charts_inflation_path %></li>
+      <li role="presentation" class="active"><%= link_to 'RPI Group Changes', charts_inflation_rpi_group_changes_path %></li>
+    </ul>
+  </div>
+</div>
+
+<h3>RPI Group Changes (Q4 2004 is 100)</h3>
+
+<div class="row">
+  <div class="col-md-12">
+    <% @type_colour_keys.each_with_index do |(year,colours), i| %>
+
+    <% if i != 0 && ((i % 4) == 0) %>
+  </div>
+  <% end %>
+  <% if ((i % 4) == 0) %>
+  <div class="row">
+    <% end %>
+    <div class="col-md-3">
+    <div style="font-size:0.9em;">
+          <div style="float:left;margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw colours[0] %>;border:2px solid <%= colours[1] %>"></div>
+          <%= year %>
+        </div>
+    </div>
+
+    <% if i == @type_colour_keys.count-1 %>
+  </div>
+  <% end %>
+
+  <% end %>
+
+
+  <canvas id="rpi_group_changes" width="800" height="400"></canvas>
+  <%= javascript_tag do %>
+  var ctx = document.getElementById("rpi_group_changes").getContext("2d");
+
+  var data = {
+  labels : <%= @periods.to_s.html_safe -%>,
+  datasets : <%= @results.to_json.html_safe -%>
+};
+
+var myNewChart = new Chart(ctx).Line(data, {
+datasetStrokeWidth : 3,
+animation: false,
+});
+<% end %>
+
+</div>
+</div>

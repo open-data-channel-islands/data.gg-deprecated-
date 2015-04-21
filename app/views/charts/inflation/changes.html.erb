@@ -6,9 +6,20 @@
   </ol>
 <% end %>
 
-<div class="page-header">
-<h1>Inflation Charts</h1>
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>Inflation</h1>
+    </div>
+
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><%= link_to 'Inflation', charts_inflation_path %></li>
+      <li role="presentation"><%= link_to 'RPI Group Changes', charts_inflation_rpi_group_changes_path %></li>
+    </ul>
+  </div>
 </div>
+
+
 <h3>RPI vs RPIX (31/12/1998 is 100)</h3>
 <span style="background-color: rgba(220,220,220,1);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RPI
 <span style="background-color: rgba(151,187,205,1);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RPIX
