@@ -1,0 +1,43 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Population', charts_population_path %></li>
+  <li class="active">Parish</li>
+</ol>
+<% end %>
+
+<div class="page-header">
+  <h1>Population</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation"><%= link_to 'Population', charts_population_path %></li>
+  <li role="presentation" class="active"><%= link_to 'Parish', charts_population_parish_path %></li>
+</ul>
+
+<h3>Parish</h3>
+
+<p>Coming soon.</p>
+<!-- <div id="map-canvas" style="height: 500px; margin: 0; padding: 0;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD96_Te02kFEMxJq2S_FZTnaBlfbgHZ79c"></script>
+<script>
+  function initialize() {
+    var mapOptions = {
+      center: { lat: 49.465691, lng: -2.585278},
+      zoom: 12
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+      var ctaLayer = new google.maps.KmlLayer('',
+        {
+          preserveViewport: false,
+          map: map
+        });
+
+      //ctaLayer.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script> -->

@@ -11,13 +11,13 @@
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
-      <h1>Housing</h1>
+      <h1>Local Prices And Transactions</h1>
     </div>
 
     <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
+      <li role="presentation"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
       <li role="presentation"><%= link_to 'No. Of Transactions', charts_housing_transactions_path %></li>
-      <!-- <li role="presentation"><%= link_to 'Local Prices And Transactions', charts_housing_local_price_transactions_path %></li> -->
+      <li role="presentation" class="active"><%= link_to 'Local Prices And Transactions', charts_housing_local_price_transactions_path %></li>
     </ul>
   </div>
 </div>
@@ -36,7 +36,11 @@
         animation: false,
         pointHitDetectionRadius: 2,
         showScaleLabels:false,
-        scaleFontSize:10
+        showScale: true,
+        scaleOverride: true,
+        scaleSteps: 10,
+        scaleStepWidth: 1000,
+        scaleStartValue: 0
       });
     <% end %>
 

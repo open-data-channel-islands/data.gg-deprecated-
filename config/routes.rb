@@ -25,10 +25,12 @@ DataGg::Application.routes.draw do
     get 'housing' => 'housing#mean_average', as: :housing
     get 'housing/mean_average' => 'housing#mean_average', as: :housing_mean_average
     get 'housing/transactions' => 'housing#transactions', as: :housing_transactions
+    get 'housing/local_price_transactions' => 'housing#local_price_transactions', as: :housing_local_price_transactions
 
     get 'crime' => 'crime#index', as: :crime
     get 'traffic' => 'traffic#index', as: :traffic
     get 'population' => 'population#index', as: :population
+    get 'population/parish' => 'population#parish', as: :population_parish
 
     # Education
     get 'education' => 'education#post16results', as: :education
