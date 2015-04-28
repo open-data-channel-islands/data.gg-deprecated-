@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'data.gg'
-set :repo_url, 'git@bitbucket.org:reformsoft/data.gg.git'
+set :repo_url, 'https://github.com/jasemagee/data.gg'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
