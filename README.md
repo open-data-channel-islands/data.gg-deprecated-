@@ -1,5 +1,7 @@
 # data.gg
 
+![](https://github.com/jasemagee/data.gg/image.png)
+
 ## What?
 
 data.gg is the brain-child of [Jason Magee](http://jasemagee.com/) and Kieran Senior with the aim of providing all Bailiwick of Guernsey-related data to the public through an easily accessible API in many formats which suit those using it. Currently we support XML, JSON, HTML and soon we shall be supporting Object data formats along with gzipped formats of all.
