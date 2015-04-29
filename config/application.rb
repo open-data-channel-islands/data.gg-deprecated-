@@ -23,5 +23,10 @@ module DataGg
     #config.time_zone = 'London'
     #config.active_record.default_timezone = 'London'
 
+    config.action_dispatch.default_headers.merge!({
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Request-Method' => 'GET'
+    })
+
   end
 end
