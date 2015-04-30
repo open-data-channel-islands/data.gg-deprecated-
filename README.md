@@ -1,6 +1,6 @@
 # data.gg
 
-![](https://github.com/jasemagee/data.gg/image.png)
+![](https://github.com/jasemagee/data.gg/blob/master/image.png)
 
 ## What?
 
