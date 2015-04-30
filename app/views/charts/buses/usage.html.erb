@@ -2,29 +2,27 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Charts", charts_path %></li>
-    <li><%= link_to 'Housing', charts_housing_path %></li>
-    <li class="active">Transactions</li>
+    <li><%= link_to 'Buses', charts_buses_path %></li>
+    <li class="active">Usage</li>
   </ol>
 <% end %>
-
-
 
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
-      <h1>Housing</h1>
+      <h1>Buses</h1>
     </div>
 
     <ul class="nav nav-tabs">
-      <li role="presentation"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
-      <li role="presentation" class="active"><%= link_to 'Transactions', charts_housing_transactions_path %></li>
-      <!-- <li role="presentation"><%= link_to 'Local Prices And Transactions', charts_housing_local_price_transactions_path %></li> -->
+      <li role="presentation" class="active"><%= link_to 'Usage', charts_buses_usage_path %></li>
     </ul>
   </div>
 </div>
 
+
 <div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
 <%= javascript_tag do %>
+
 $(function() {
   initPage();
 });
@@ -40,19 +38,24 @@ function initPage() {
             type: 'area'
         },
         title: {
-            text: 'Transactions'
+            text: 'Usage per month'
         },
         xAxis: {
             allowDecimals: false,
             categories: yLabels,
             title: {
-                text: 'Quarter'
+                text: 'Month'
             }
         },
         yAxis: {
             allowDecimals: false,
             title: {
-                text: 'Transactions'
+                text: 'Users'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000 + 'k';
+                }
             }
         },
         plotOptions: {
@@ -72,7 +75,7 @@ function initPage() {
         series: [{
             name: 'Local',
             showInLegend: false,
-            data: <%= @transactions.to_json.html_safe -%>
+            data: <%= @users.to_json.html_safe -%>
         }]
     });
 }

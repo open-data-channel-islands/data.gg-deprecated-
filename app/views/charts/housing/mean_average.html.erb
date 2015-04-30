@@ -2,11 +2,10 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Charts", charts_path %></li>
-    <li class="active">Housing</li>
+    <li><%= link_to 'Housing', charts_housing_path %></li>
+    <li class="active">Mean Average</li>
   </ol>
 <% end %>
-
-
 
 <div class="row">
   <div class="col-md-12">
@@ -16,28 +15,69 @@
 
     <ul class="nav nav-tabs">
       <li role="presentation" class="active"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
-      <li role="presentation"><%= link_to 'No. Of Transactions', charts_housing_transactions_path %></li>
+      <li role="presentation"><%= link_to 'Transactions', charts_housing_transactions_path %></li>
       <!-- <li role="presentation"><%= link_to 'Local Prices And Transactions', charts_housing_local_price_transactions_path %></li> -->
     </ul>
   </div>
 </div>
 
-<div class="row">
-    <canvas class="col-md-12" id="mean_average"></canvas>
-    <%= javascript_tag do %>
-      var ctx = document.getElementById("mean_average").getContext("2d");
+<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<%= javascript_tag do %>
 
-      var data = {
-        labels : <%= @labels.to_json.html_safe %>,
-        datasets : <%= @data.to_json.html_safe -%>
-      };
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
 
-      var myNewChart = new Chart(ctx).Line(data, {
-        animation: false,
-        pointHitDetectionRadius: 2,
-        showScaleLabels:false,
-        scaleFontSize:10
-      });
-    <% end %>
+function initPage() {
+    var yLabels = <%= @labels.to_json.html_safe %>;
 
-</div>
+    $('#container').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Mean Average'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: yLabels,
+            title: {
+                text: 'Quarter'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Mean Average'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000 + 'k';
+                }
+            }
+        },
+        plotOptions: {
+            area: {
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Local',
+            showInLegend: false,
+            data: <%= @mean_averages.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

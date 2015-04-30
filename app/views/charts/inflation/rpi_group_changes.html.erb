@@ -19,46 +19,39 @@
   </div>
 </div>
 
-<h3>RPI Group Changes (Q4 2004 is 100)</h3>
-
-<div class="row">
-  <div class="col-md-12">
-    <% @type_colour_keys.each_with_index do |(year,colours), i| %>
-
-    <% if i != 0 && ((i % 4) == 0) %>
-  </div>
-  <% end %>
-  <% if ((i % 4) == 0) %>
-  <div class="row">
-    <% end %>
-    <div class="col-md-3">
-    <div style="font-size:0.9em;">
-          <div style="float:left;margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= raw colours[0] %>;border:2px solid <%= colours[1] %>"></div>
-          <%= year %>
-        </div>
-    </div>
-
-    <% if i == @type_colour_keys.count-1 %>
-  </div>
-  <% end %>
-
-  <% end %>
-
-
-  <canvas id="rpi_group_changes" width="800" height="400"></canvas>
-  <%= javascript_tag do %>
-  var ctx = document.getElementById("rpi_group_changes").getContext("2d");
-
-  var data = {
-  labels : <%= @periods.to_s.html_safe -%>,
-  datasets : <%= @results.to_json.html_safe -%>
-};
-
-var myNewChart = new Chart(ctx).Line(data, {
-datasetStrokeWidth : 3,
-animation: false,
+<div id="container" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+<%= javascript_tag do %>
+$(function() {
+  initPage();
 });
-<% end %>
+$(window).bind('page:change', function() {
+  initPage();
+});
 
-</div>
-</div>
+function initPage() {
+    var xLabels = <%= @labels.to_json.html_safe %>;
+
+    $('#container').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'RPI Group Changes (Q4 2004 is 100)'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: xLabels,
+            title: {
+                text: 'Quarter'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Value'
+            }
+        },
+        series: <%= @results.to_json.html_safe %>
+    });
+}
+<% end %>

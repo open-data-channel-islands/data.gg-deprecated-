@@ -17,6 +17,9 @@
 
 //= require bootstrap-sprockets
 
+//= require highcharts
+//= require highcharts/highcharts-more
+
 /// ****************************************************|
 // These three methods output with thousand separators
 /// ****************************************************|

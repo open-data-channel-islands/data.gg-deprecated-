@@ -8,9 +8,13 @@ class Charts::InflationController < ApplicationController
     changes = JSON.parse(changes_json)
     changes.select! { |c| Date.strptime(c['Quarter'], "%d/%m/%Y") >= Date.new(1999,3,31) }
 
-    @changes = []
+
     rpi_counter = 100
     rpix_counter = 100
+
+    @labels = []
+    @rpis = []
+    @rpixs = []
 
     changes.each do |c|
       rpi_fract = (rpi_counter / 100) * c['RPI Quarterly Change']
@@ -19,13 +23,16 @@ class Charts::InflationController < ApplicationController
       rpix_fract  = (rpix_counter / 100) * c['RPIX Quarterly Change']
       rpix = rpix_counter + rpix_fract
 
-      @changes << { 'Quarter': c['Quarter'], 'RPI': rpi, 'RPIX': rpix }
+      @labels << c['Quarter']
+      @rpis << rpi
+      @rpixs << rpix
+
       rpi_counter = rpi
       rpix_counter = rpix
     end
 
     respond_to do |format|
-      format.html { render :changes }
+      format.html
     end
   end
 
@@ -33,24 +40,17 @@ class Charts::InflationController < ApplicationController
     changes_json = File.read("storage/inflation/rpi_group_changes.json")
     changes = JSON.parse(changes_json)
 
-    @types = changes.map {|c| c['Type']}.uniq!
-    @periods = changes.map {|c| c['Quarter']}.uniq!
-    @periods.delete('Q4 2004') # delete to match the states sheet
+    @labels = changes.map {|c| c['Quarter']}.uniq!
+    @labels.delete('Q4 2004') # delete to match the states sheet
     sort_order =['Q1','Q2','Q3','Q4']
-    @periods = @periods.sort_by{ |x| [x[3..7].to_i, sort_order.index(x[0..2])] }
-    @type_colour_keys = { }
+    @labels = @labels.sort_by{ |x| [x[3..7].to_i, sort_order.index(x[0..2])] }
     @results = []
-
-    colour_keys = { }
-    @types.each_with_index do |t, i|
-      colour_keys[t] = ChartColours::COLOURS[i]
-    end
 
     changes.group_by{ |p| p['Type'] }.each do |type,val|
       result = []
       rpi_counter = 100
 
-      @periods.each do |lbl|
+      @labels.each do |lbl|
        value_for_lbl = val.find { |v| v['Quarter'] == lbl }
        change = (value_for_lbl != nil ? value_for_lbl['Quarterly Change'] : 0)
 
@@ -61,29 +61,11 @@ class Charts::InflationController < ApplicationController
        rpi_counter = rpi
       end
 
-      fill = "rgba(#{colour_keys[type].join(',')})"
-      stroke ="rgba(#{ChartColours::darken_color(colour_keys[type]).join(',')})"
+      @results << { name: type, data: result }
 
-      @type_colour_keys[type] = [fill,stroke]
-
-      transparent = []
-      transparent << colour_keys[type][0]
-      transparent << colour_keys[type][1]
-      transparent << colour_keys[type][2]
-      transparent << "0"
-      transparent_fill = "rgba(#{transparent.join(',')})"
-
-      hash = {
-        :label => type,
-        :fillColor => transparent_fill,
-        :strokeColor => stroke,
-        :pointColor => fill,
-        :pointStrokeColor => stroke,
-        :data => result
-      }
-
-      @results << hash
     end
+
+    p @results
 
   end
 end

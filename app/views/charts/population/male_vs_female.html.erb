@@ -2,19 +2,20 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Charts", charts_path %></li>
-    <li class="active">Inflation</li>
+    <li><%= link_to 'Population', charts_population_path %></li>
+    <li class="active">Male vs Female</li>
   </ol>
 <% end %>
 
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
-      <h1>Inflation</h1>
+      <h1>Population</h1>
     </div>
 
     <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><%= link_to 'Inflation', charts_inflation_path %></li>
-      <li role="presentation"><%= link_to 'RPI Group Changes', charts_inflation_rpi_group_changes_path %></li>
+      <li role="presentation" class="active"><%= link_to 'Population', charts_population_path %></li>
+      <li role="presentation"><%= link_to 'Parish', charts_population_parish_path %></li>
     </ul>
   </div>
 </div>
@@ -29,37 +30,39 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+    var yLabels = <%= @labels.to_json.html_safe %>;
 
     $('#container').highcharts({
         chart: {
             type: 'line'
         },
         title: {
-            text: 'RPI vs RPIX (31/12/1998 is 100)'
+            text: 'Male vs Female Population by Year'
         },
         xAxis: {
             allowDecimals: false,
-            categories: xLabels,
             title: {
-                text: 'Quarter'
+                text: 'Year'
             }
         },
         yAxis: {
             allowDecimals: false,
-            minPadding: 0,
-            maxPadding: 0,
             title: {
-                text: 'Value'
+                text: 'Count'
+            }
+        },
+        plotOptions: {
+            line: {
+              pointStart: <%= @min_label.to_json.html_safe %>,
             }
         },
         series: [{
             name: 'Male',
-            data: <%= @rpis.to_json.html_safe -%>
+            data: <%= @male.to_json.html_safe -%>
         },
         {
             name: 'Female',
-            data: <%= @rpixs.to_json.html_safe -%>
+            data: <%= @female.to_json.html_safe -%>
         }]
     });
 }

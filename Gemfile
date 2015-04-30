@@ -33,6 +33,7 @@ gem 'nokogiri'
 
 # Use Unicorn as the app server
 gem 'unicorn'
+gem 'highcharts-rails'
 
 
 group :doc do

@@ -18,7 +18,8 @@ DataGg::Application.routes.draw do
   get 'charts' => 'charts#index', as: :charts
 
   namespace :charts do
-    get 'buses' => 'buses#index', as: :buses
+    get 'buses' => 'buses#usage', as: :buses
+    get 'buses/usage' => 'buses#usage', as: :buses_usage
     get 'buses/split' => 'buses#split', as: :buses_split
 
     # Housing
@@ -29,7 +30,8 @@ DataGg::Application.routes.draw do
 
     get 'crime' => 'crime#index', as: :crime
     get 'traffic' => 'traffic#index', as: :traffic
-    get 'population' => 'population#index', as: :population
+    get 'population' => 'population#male_vs_female', as: :population
+    get 'population/male_vs_female' => 'population#male_vs_female', as: :population_male_vs_female
     get 'population/parish' => 'population#parish', as: :population_parish
 
     # Education
