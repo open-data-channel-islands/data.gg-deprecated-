@@ -21,18 +21,22 @@ function initPage() {
         xAxis: {
             categories: <%= @labels.to_json.html_safe %>,
             crosshair: true,
-            title: { text: 'Grade' }
+            title: { text: 'Sector' }
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Count'
+                text: 'Earnings'
             }
         },
         tooltip: {
             shared: true,
         },
-        series: <%= @results.to_json.html_safe %>
+        series: [{
+            name: 'Median',
+            data: <%= @medians.to_json.html_safe %>
+
+        }]
     });
 }
 <% end %>

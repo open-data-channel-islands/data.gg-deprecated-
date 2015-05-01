@@ -18,26 +18,55 @@
 
 <h3>Parish</h3>
 
-<p>Coming soon.</p>
-<!-- <div id="map-canvas" style="height: 500px; margin: 0; padding: 0;"></div>
+<div id="container" style="min-width: 310px; max-width: 800px"></div>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD96_Te02kFEMxJq2S_FZTnaBlfbgHZ79c"></script>
-<script>
-  function initialize() {
-    var mapOptions = {
-      center: { lat: 49.465691, lng: -2.585278},
-      zoom: 12
-    };
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
 
-      var ctaLayer = new google.maps.KmlLayer('',
-        {
-          preserveViewport: false,
-          map: map
+function initPage() {
+    // Prepare random data
+    var data = [
+    ];
+
+    $.getJSON('http://localhost:3000/guernsey.json', function (geojson) {
+
+        // Initiate the chart
+        $('#container').highcharts('Map', {
+
+            title : {
+                text : 'Guernsey'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+            },
+
+            xAxis: {
+                minRange: 0.1
+            },
+
+            yAxis: {
+                minRange: 0.1
+            },
+
+
+            series : [{
+                data : data,
+                mapData: geojson,
+                name: 'Random data',
+            }]
         });
-
-      //ctaLayer.setMap(map);
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script> -->
+    });
+}
+<% end %>

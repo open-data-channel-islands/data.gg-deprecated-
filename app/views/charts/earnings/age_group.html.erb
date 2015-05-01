@@ -21,18 +21,30 @@ function initPage() {
         xAxis: {
             categories: <%= @labels.to_json.html_safe %>,
             crosshair: true,
-            title: { text: 'Grade' }
+            title: { text: 'Year' }
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Count'
+                text: 'Earnings'
             }
         },
         tooltip: {
             shared: true,
         },
-        series: <%= @results.to_json.html_safe %>
+        series: [{
+            name: 'Lower Quartile',
+            data: <%= @lowers.to_json.html_safe %>
+
+        }, {
+            name: 'Median',
+            data: <%= @medians.to_json.html_safe %>
+
+        }, {
+            name: 'Upper Quartile',
+            data: <%= @uppers.to_json.html_safe %>
+
+        }]
     });
 }
 <% end %>

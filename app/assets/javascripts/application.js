@@ -19,6 +19,7 @@
 
 //= require highcharts
 //= require highcharts/highcharts-more
+//= require highcharts/modules/map
 
 /// ****************************************************|
 // These three methods output with thousand separators

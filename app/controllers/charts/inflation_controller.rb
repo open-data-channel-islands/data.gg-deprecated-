@@ -64,8 +64,5 @@ class Charts::InflationController < ApplicationController
       @results << { name: type, data: result }
 
     end
-
-    p @results
-
   end
 end

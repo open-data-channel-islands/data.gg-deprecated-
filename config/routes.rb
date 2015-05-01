@@ -41,7 +41,10 @@ DataGg::Application.routes.draw do
     get 'education/gcses_overall', as: :education_gcses_overall
     get 'education/gcses_by_school', as: :education_gcses_by_school
 
-    get 'earnings' => 'earnings#index', as: :earnings
+    get 'earnings' => 'earnings#nominal_sex', as: :earnings
+    get 'earnings/nominal_sex' => 'earnings#nominal_sex', as: :earnings_nominal_sex
+    get 'earnings/age_group' => 'earnings#age_group', as: :earnings_age_group
+    get 'earnings/sector' => 'earnings#sector', as: :earnings_sector
 
     get 'inflation' => 'inflation#changes', as: :inflation
     get 'inflation/changes' => 'inflation#changes', as: :inflation_changes

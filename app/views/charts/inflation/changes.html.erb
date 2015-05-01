@@ -54,11 +54,11 @@ function initPage() {
             }
         },
         series: [{
-            name: 'Male',
+            name: 'RPI',
             data: <%= @rpis.to_json.html_safe -%>
         },
         {
-            name: 'Female',
+            name: 'RPIX',
             data: <%= @rpixs.to_json.html_safe -%>
         }]
     });

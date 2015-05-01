@@ -1,5 +1,6 @@
 <%= render 'head' %>
 
+
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <%= javascript_tag do %>
@@ -21,18 +22,26 @@ function initPage() {
         xAxis: {
             categories: <%= @labels.to_json.html_safe %>,
             crosshair: true,
-            title: { text: 'Grade' }
+            title: { text: 'Year' }
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Count'
+                text: 'Earnings'
             }
         },
         tooltip: {
             shared: true,
         },
-        series: <%= @results.to_json.html_safe %>
+        series: [{
+            name: 'Male',
+            data: <%= @males.to_json.html_safe %>
+
+        }, {
+            name: 'Female',
+            data: <%= @females.to_json.html_safe %>
+
+        }]
     });
 }
 <% end %>
