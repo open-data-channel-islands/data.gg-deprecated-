@@ -41,6 +41,10 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.i-1032-route-2x:before,
+.i-1032-route-selected-2x:before,
+.i-1090-ping-pong-paddle-2x:before,
+.i-1090-ping-pong-paddle-selected-2x:before,
 .i-1094-sail-boat-2-2x:before,
 .i-1094-sail-boat-2-selected-2x:before,
 .i-750-home-2x:before,
@@ -57,8 +61,12 @@
 .i-815-car-selected-2x:before,
 .i-826-money-1-2x:before,
 .i-826-money-1-selected-2x:before,
+.i-827-money-2-2x:before,
+.i-827-money-2-selected-2x:before,
 .i-828-shield-2x:before,
 .i-828-shield-selected-2x:before,
+.i-862-sun-cloud-2x:before,
+.i-862-sun-cloud-selected-2x:before,
 .i-892-bandaid-2x:before,
 .i-892-bandaid-selected-2x:before,
 .i-893-airplane-2x:before,
@@ -67,6 +75,10 @@
 .i-895-user-group-selected-2x:before,
 .i-897-graduation-cap-2x:before,
 .i-897-graduation-cap-selected-2x:before,
+.i-931-gas-pump-2x:before,
+.i-931-gas-pump-selected-2x:before,
+.i-937-wifi-signal-2x:before,
+.i-937-wifi-signal-selected-2x:before,
 .i-958-life-preserver-2x:before,
 .i-958-life-preserver-selected-2x:before {
   display: inline-block;
@@ -83,6 +95,10 @@
   font-smoothing: antialiased;
 }
 
+.i-1032-route-2x:before { content: "\f11c"; }
+.i-1032-route-selected-2x:before { content: "\f11d"; }
+.i-1090-ping-pong-paddle-2x:before { content: "\f11e"; }
+.i-1090-ping-pong-paddle-selected-2x:before { content: "\f11f"; }
 .i-1094-sail-boat-2-2x:before { content: "\f100"; }
 .i-1094-sail-boat-2-selected-2x:before { content: "\f101"; }
 .i-750-home-2x:before { content: "\f102"; }
@@ -99,8 +115,12 @@
 .i-815-car-selected-2x:before { content: "\f10b"; }
 .i-826-money-1-2x:before { content: "\f10c"; }
 .i-826-money-1-selected-2x:before { content: "\f10d"; }
+.i-827-money-2-2x:before { content: "\f120"; }
+.i-827-money-2-selected-2x:before { content: "\f121"; }
 .i-828-shield-2x:before { content: "\f10e"; }
 .i-828-shield-selected-2x:before { content: "\f10f"; }
+.i-862-sun-cloud-2x:before { content: "\f122"; }
+.i-862-sun-cloud-selected-2x:before { content: "\f123"; }
 .i-892-bandaid-2x:before { content: "\f11a"; }
 .i-892-bandaid-selected-2x:before { content: "\f11b"; }
 .i-893-airplane-2x:before { content: "\f110"; }
@@ -109,10 +129,37 @@
 .i-895-user-group-selected-2x:before { content: "\f113"; }
 .i-897-graduation-cap-2x:before { content: "\f114"; }
 .i-897-graduation-cap-selected-2x:before { content: "\f115"; }
+.i-931-gas-pump-2x:before { content: "\f124"; }
+.i-931-gas-pump-selected-2x:before { content: "\f125"; }
+.i-937-wifi-signal-2x:before { content: "\f126"; }
+.i-937-wifi-signal-selected-2x:before { content: "\f127"; }
 .i-958-life-preserver-2x:before { content: "\f116"; }
 .i-958-life-preserver-selected-2x:before { content: "\f117"; }
 
-.category:hover .i-1094-sail-boat-2-2x:before { content: "\f101" }
+.category:hover .i-1032-route-2x:before { content: "\f11d"; }
+.category:hover .i-1090-ping-pong-paddle-2x:before { content: "\f11f"; }
+.category:hover .i-1094-sail-boat-2-2x:before { content: "\f101"; }
+.category:hover .i-750-home-2x:before { content: "\f103"; }
+.category:hover .i-754-scale-2x:before { content: "\f105"; }
+.category:hover .i-776-recycle-2x:before { content: "\f119"; }
+.category:hover .i-789-map-location-2x:before { content: "\f107"; }
+.category:hover .i-814-bus-2x:before { content: "\f109"; }
+.category:hover .i-815-car-2x:before { content: "\f10b"; }
+.category:hover .i-826-money-1-2x:before { content: "\f10d"; }
+.category:hover .i-827-money-2-2x:before { content: "\f121"; }
+.category:hover .i-828-shield-2x:before { content: "\f10f"; }
+.category:hover .i-862-sun-cloud-2x:before { content: "\f123"; }
+.category:hover .i-892-bandaid-2x:before { content: "\f11b"; }
+.category:hover .i-893-airplane-2x:before { content: "\f111"; }
+.category:hover .i-895-user-group-2x:before { content: "\f113"; }
+.category:hover .i-897-graduation-cap-2x:before { content: "\f115"; }
+.category:hover .i-931-gas-pump-2x:before { content: "\f125"; }
+.category:hover .i-937-wifi-signal-2x:before { content: "\f127"; }
+.category:hover .i-958-life-preserver-2x:before { content: "\f117"; }
+
+
+
+/*.category:hover .i-1094-sail-boat-2-2x:before { content: "\f101" }
 .category:hover .i-750-home-2x:before { content: "\f103" }
 .category:hover .i-754-scale-2x:before { content: "\f105" }
 .category:hover .i-776-recycle-2x:before { content: "\f119" }
@@ -125,22 +172,8 @@
 .category:hover .i-893-airplane-2x:before { content: "\f111" }
 .category:hover .i-895-user-group-2x:before { content: "\f113" }
 .category:hover .i-897-graduation-cap-2x:before { content: "\f115" }
-.category:hover .i-958-life-preserver-2x:before { content: "\f117" }
+.category:hover .i-958-life-preserver-2x:before { content: "\f117" }*/
 
-
-
-/*.category:hover .i-1094-sail-boat-2-2x:before { content: "\f101"; }
-.category:hover .i-750-home-2x:before { content: "\f103"; }
-.category:hover .i-754-scale-2x:before { content: "\f105"; }
-.category:hover .i-789-map-location-2x:before { content: "\f107"; }
-.category:hover .i-814-bus-2x:before { content: "\f109"; }
-.category:hover .i-815-car-2x:before { content: "\f10b"; }
-.category:hover .i-826-money-1-2x:before { content: "\f10d"; }
-.category:hover .i-828-shield-2x:before { content: "\f10f"; }
-.category:hover .i-893-airplane-2x:before { content: "\f111"; }
-.category:hover .i-895-user-group-2x:before { content: "\f113"; }
-.category:hover .i-897-graduation-cap-2x:before { content: "\f115"; }
-.category:hover .i-958-life-preserver-2x:before { content: "\f117"; }*/
 
 a.category:hover {
   background-color:#428bca;

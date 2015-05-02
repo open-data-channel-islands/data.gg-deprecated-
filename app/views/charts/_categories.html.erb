@@ -1,94 +1,44 @@
 <div class="row">
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_housing_path %>" class="category">
-      <div class="category-image i-750-home-2x"></div>
-      <div class="category-detail">
-        <h3><strong>House Prices</strong></h3>
-        <p>Costs of housing since the 1970s for each quarter</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_population_path %>" class="category">
-      <div class="category-image i-895-user-group-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Population</strong></h3>
-        <p>Population statistics by age ranges for the last 8 years</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_earnings_path %>" class="category">
-      <div class="category-image i-826-money-1-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Earnings</strong></h3>
-        <p>Earnings by age group and sex for the last 9 years</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_education_path %>" class="category">
-      <div class="category-image i-897-graduation-cap-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Education</strong></h3>
-        <p>Post-16 and GCSE results by school since 2009/10</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_buses_path %>" class="category">
-      <div class="category-image i-814-bus-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Buses</strong></h3>
-        <p>Per-month bus usage statistics over the last 4 years</p>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_crime_path %>" class="category">
-      <div class="category-image i-828-shield-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Crime</strong></h3>
-        <p>Various categories of crime for the last few years</p>
-      </div>
-    </a>
-  </div>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'House Prices', target: charts_housing_path, image: 'i-750-home-2x', desc: 'Costs of housing since the 1970s for each quarter' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Population', target: charts_population_path, image: 'i-895-user-group-2x', desc: 'Population statistics by age ranges for the last 8 years' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Earnings', target: charts_earnings_path, image: 'i-826-money-1-2x', desc: 'Earnings by age group and sex for the last 9 years' } %>
 </div>
 
 <div class="row">
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_traffic_path %>" class="category">
-      <div class="category-image i-815-car-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Traffic</strong></h3>
-        <p>Traffic incident details from the Guernsey Police reports</p>
-      </div>
-    </a>
-  </div>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Education', target: charts_education_path, image: 'i-897-graduation-cap-2x', desc: 'Post-16 and GCSE results by school since 2009/10' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Buses', target: charts_buses_path, image: 'i-814-bus-2x', desc: 'Per-month bus usage statistics over the last 4 years' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Crime', target: charts_crime_path, image: 'i-828-shield-2x', desc: 'Various categories of crime for the last few years' } %>
+</div>
 
-  <div class="col-sm-4 col-md-4">
-    <a href="<%= charts_inflation_path %>" class="category">
-      <div class="category-image i-754-scale-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Inflation</strong></h3>
-        <p>RPI & RPIX inflation data from 1949</p>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-4 col-md-4">
-      <a href="#" class="category">
-      <div class="category-image i-892-bandaid-2x"></div>
-      <div class="category-detail">
-        <h3><strong>Health</strong></h3>
-        <p>Coming Soon</p>
-      </div>
-    </a>
-  </div>
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Traffic', target: charts_traffic_path, image: 'i-815-car-2x', desc: 'Traffic incident details from the Guernsey Police reports' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Inflation', target: charts_inflation_path, image: 'i-754-scale-2x', desc: 'RPI & RPIX inflation data from 1949' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Health', target: '#', image: 'i-892-bandaid-2x', desc: 'Coming Soon' } %>
+</div>
+
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Weather', target: '#', image: 'i-862-sun-cloud-2x', desc: 'Coming Soon' } %>
+</div>
+
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
 </div>

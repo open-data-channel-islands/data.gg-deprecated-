@@ -10,168 +10,47 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <a class="category-inline-link" href="<%= developers_buses_path %>">
-                <span class="category-small category-image i-814-bus-2x"></span>
-                Buses
-              </a>
-              <td><span class="label label-primary">XML</span>
-                <span class="label label-info">JSON</span>
-                <span class="label label-warning">Embeddable HTML</span>
-              </td>
-              <td>Monthly usage of buses since 2011</td>
-            </tr>
-            <tr>
-              <td valign="middle">
-                <a class="category-inline-link" href="<%= developers_earnings_path %>">
-                  <span class="category-small category-image i-826-money-1-2x"></span>
-                  Earnings
-                </a>
-              </td>
-              <td><span class="label label-primary">XML</span>
-                <span class="label label-info">JSON</span>
-                <span class="label label-warning">Embeddable HTML</span></td>
-                <td>Earnings by age group, sector, and sex</td>
-              </tr>
-              <tr>
-                <td>
-                  <a class="category-inline-link" href="<%= developers_education_path %>">
-                    <span class="category-small category-image i-897-graduation-cap-2x"></span>
-                    Education
-                  </a>
-                </td>
-                <td><span class="label label-primary">XML</span>
-                  <span class="label label-info">JSON</span>
-                  <span class="label label-warning">Embeddable HTML</span></td>
-                  <td>Post-16 results, overall GCSE grades and GCSE grades by school</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_flights_path %>">
-                      <span class="category-small category-image i-893-airplane-2x"></span>
-                      Flights
-                    </a>
-                  </td>
-                  <td>
-                    <span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                    <span class="label label-default">LIVE!</span>
-                  </td>
-                  <td>Flight details refreshed on the fly from the Guernsey Airport</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_housing_path %>">
-                      <span class="category-image category-small i-750-home-2x"></span>
-                      House Prices
-                    </a>
-                  </td>
-                  <td>
-                    <span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                  </td>
-                  <td>Detailed quarterly house prices since 1981 to today</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_crime_path %>">
-                      <span class="category-small category-image i-828-shield-2x"></span>
-                      Crime
-                    </a>
-                  </td>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Buses', target: developers_buses_path, image: 'category-image i-814-bus-2x', desc: 'Monthly usage of buses since 2011', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Earnings', target: developers_earnings_path, image: 'i-826-money-1-2x', desc: 'Earnings by age group, sector, and sex', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Education', target: developers_education_path, image: 'i-897-graduation-cap-2x', desc: 'Post-16 results, overall GCSE grades and GCSE grades by school', live: false } %>
 
-                  <td>
-                    <span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                  </td>
-                  <td>Detailed crime data from published reports</td>
-                </tr>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Flights', target: developers_flights_path, image: 'i-893-airplane-2x', desc: 'Flight details refreshed on the fly from the Guernsey Airport', live: true } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'House Prices', target: developers_housing_path, image: 'i-750-home-2x', desc: 'Detailed quarterly house prices since 1981 to today', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Crime', target: developers_crime_path, image: 'i-828-shield-2x', desc: 'Detailed crime data from published reports', live: false } %>
 
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_traffic_path %>">
-                      <span class="category-small category-image i-815-car-2x"></span>
-                      Traffic
-                    </a>
-                  </td>
-                  <td>
-                    <span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                  </td>
-                  <td>Traffic data from published reports</td>
-                </tr>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Traffic', target: developers_traffic_path, image: 'i-815-car-2x', desc: 'Traffic data from published reports', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Population', target: developers_population_path, image: 'i-895-user-group-2x', desc: 'Guernsey population data from published reports', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Sailings', target: developers_sailings_path, image: 'i-1094-sail-boat-2-2x', desc: 'Sailing details refreshed on the fly from the Guernsey Harbour', live: true } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Inflation', target: developers_inflation_path, image: 'i-754-scale-2x', desc: 'RPI & RPIX inflation data from 1949', live: false } %>
 
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_population_path %>">
-                      <span class="category-small category-image i-895-user-group-2x"></span>
-                      Population
-                    </a>
-                  </td>
-                  <td><span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                  </td>
-                  <td>Guernsey population data from published reports</td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_sailings_path %>">
-                      <span class="category-small category-image i-1094-sail-boat-2-2x"></span>
-                      Sailings
-                    </a>
-                  </td>
-                  <td><span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                    <span class="label label-default">LIVE!</span></td>
-                    <td>Sailing details refreshed on the fly from the Guernsey Harbour</td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="<%= developers_inflation_path %>">
-                      <span class="category-small category-image i-754-scale-2x"></span>
-                      Inflation
-                    </a>
-                  </td>
-                  <td><span class="label label-primary">XML</span>
-                    <span class="label label-info">JSON</span>
-                    <span class="label label-warning">Embeddable HTML</span>
-                  </td>
-                  <td>RPI & RPIX inflation data from 1949</td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="#">
-                      <span class="category-small category-image i-958-life-preserver-2x"></span>
-                      Tides
-                    </a>
-                  </td>
-                  <td></td>
-                  <td>Coming Soon</td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a class="category-inline-link" href="#">
-                      <span class="category-small category-image i-892-bandaid-2x"></span>
-                      Health
-                    </a>
-                  </td>
-                  <td></td>
-                  <td>Coming Soon</td>
-                </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Tides', target: '#', image: 'i-958-life-preserver-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Health', target: '#', image: 'i-892-bandaid-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Weather', target: '#', image: 'i-862-sun-cloud-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon', live: false } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
