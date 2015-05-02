@@ -3,6 +3,7 @@ class Charts::BusesController < ApplicationController
   before_action :set_bus_data
 
   def usage
+    @title = 'Usage'
     @labels = []
     @users = []
 

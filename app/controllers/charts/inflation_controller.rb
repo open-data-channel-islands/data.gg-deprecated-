@@ -4,6 +4,7 @@ require 'bigdecimal/util'
 
 class Charts::InflationController < ApplicationController
   def changes
+    @title = 'Changes'
     changes_json = File.read("storage/inflation/changes.json")
     changes = JSON.parse(changes_json)
     changes.select! { |c| Date.strptime(c['Quarter'], "%d/%m/%Y") >= Date.new(1999,3,31) }
@@ -37,6 +38,7 @@ class Charts::InflationController < ApplicationController
   end
 
   def rpi_group_changes
+    @title = 'RPI Group Changes'
     changes_json = File.read("storage/inflation/rpi_group_changes.json")
     changes = JSON.parse(changes_json)
 

@@ -1,0 +1,17 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Housing', charts_housing_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<% end %>
+
+<div class="page-header">
+  <h1>Housing</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="<%= 'active' if action?('charts/housing', 'mean_average') %>"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/housing', 'transactions') %>"><%= link_to 'Transactions', charts_housing_transactions_path %></li>
+</ul>

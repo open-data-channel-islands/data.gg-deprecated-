@@ -1,0 +1,18 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Population', charts_population_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<% end %>
+
+
+<div class="page-header">
+  <h1>Population</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="<%= 'active' if action?('charts/population', 'male_vs_female') %>"><%= link_to 'Male vs Female', charts_population_male_vs_female_path %></li>
+  <!-- <li role="presentation" class="<%= 'active' if action?('charts/population', 'parish') %>"><%= link_to 'Parish', charts_population_parish_path %></li> -->
+</ul>

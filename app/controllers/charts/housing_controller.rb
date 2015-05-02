@@ -2,7 +2,7 @@ require 'chart_colours'
 class Charts::HousingController < ApplicationController
 
   def mean_average
-
+    @title = 'Mean Average'
     houses_json = File.read("storage/houses/local_prices.json")
     house_prices = JSON.parse(houses_json)
 
@@ -17,6 +17,7 @@ class Charts::HousingController < ApplicationController
   end
 
   def transactions
+    @title = 'Transactions'
     houses_json = File.read("storage/houses/local_prices.json")
     house_prices = JSON.parse(houses_json)
 

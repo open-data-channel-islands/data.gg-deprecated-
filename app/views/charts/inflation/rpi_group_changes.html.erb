@@ -1,23 +1,4 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li class="active">RPI Group Changes</li>
-</ol>
-<% end %>
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="page-header">
-      <h1>RPI Group Changes</h1>
-    </div>
-
-    <ul class="nav nav-tabs">
-      <li role="presentation"><%= link_to 'Inflation', charts_inflation_path %></li>
-      <li role="presentation" class="active"><%= link_to 'RPI Group Changes', charts_inflation_rpi_group_changes_path %></li>
-    </ul>
-  </div>
-</div>
+<%= render 'head' %>
 
 <div id="container" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
 <%= javascript_tag do %>

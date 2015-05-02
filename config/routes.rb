@@ -28,8 +28,17 @@ DataGg::Application.routes.draw do
     get 'housing/transactions' => 'housing#transactions', as: :housing_transactions
     get 'housing/local_price_transactions' => 'housing#local_price_transactions', as: :housing_local_price_transactions
 
-    get 'crime' => 'crime#index', as: :crime
-    get 'traffic' => 'traffic#index', as: :traffic
+    # Crime
+    get 'crime' => 'crime#detected', as: :crime
+    get 'crime/detected' => 'crime#detected', as: :crime_detected
+    get 'crime/reported' => 'crime#reported', as: :crime_reported
+
+    # Traffic
+    get 'traffic' => 'traffic#classifications', as: :traffic
+    get 'traffic/classifications' => 'traffic#classifications', as: :traffic_classifications
+    get 'traffic/collisions' => 'traffic#collisions', as: :traffic_collisions
+
+    # Population
     get 'population' => 'population#male_vs_female', as: :population
     get 'population/male_vs_female' => 'population#male_vs_female', as: :population_male_vs_female
     get 'population/parish' => 'population#parish', as: :population_parish

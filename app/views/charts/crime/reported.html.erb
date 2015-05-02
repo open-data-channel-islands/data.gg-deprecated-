@@ -1,6 +1,7 @@
 <%= render 'head' %>
 
-<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<div id="container" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
 <%= javascript_tag do %>
 $(function() {
   initPage();
@@ -10,17 +11,18 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    var yLabels = <%= @labels.to_json.html_safe %>;
 
     $('#container').highcharts({
         chart: {
             type: 'line'
         },
         title: {
-            text: 'Male vs Female Population by Year'
+            text: '<%= @title %>'
         },
         xAxis: {
             allowDecimals: false,
+            crosshair: true,
+            categories: <%= @labels.to_json.html_safe %>,
             title: {
                 text: 'Year'
             }
@@ -31,19 +33,10 @@ function initPage() {
                 text: 'Count'
             }
         },
-        plotOptions: {
-            line: {
-              pointStart: <%= @min_label.to_json.html_safe %>,
-            }
+        tooltip: {
+            shared: true,
         },
-        series: [{
-            name: 'Male',
-            data: <%= @male.to_json.html_safe -%>
-        },
-        {
-            name: 'Female',
-            data: <%= @female.to_json.html_safe -%>
-        }]
+        series: <%= @results.to_json.html_safe %>
     });
 }
 <% end %>
