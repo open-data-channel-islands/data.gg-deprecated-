@@ -2,13 +2,8 @@ require 'json'
 
 class Api::V10::CrimeController < ApplicationController
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def crimes
+    @title = 'Crimes'
     crime_json = File.read("storage/crime.json")
     @crimes = JSON.parse(crime_json)
     @crimes.sort_by! { |c| c['Year'] }

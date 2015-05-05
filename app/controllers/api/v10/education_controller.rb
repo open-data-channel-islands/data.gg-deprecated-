@@ -1,13 +1,8 @@
 require 'json'
 class Api::V10::EducationController < ApplicationController
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def post16results
+    @title = 'Post 16 Results'
     post16results_json = File.read("storage/post16results.json")
 
     @post16results = JSON.parse(post16results_json)
@@ -21,6 +16,7 @@ class Api::V10::EducationController < ApplicationController
   end
 
   def gcse_overall
+    @title = 'GCSE Overall'
     gcse_overall_json = File.read("storage/gcse_overall.json")
 
     @gcse_overall = JSON.parse(gcse_overall_json)
@@ -34,6 +30,7 @@ class Api::V10::EducationController < ApplicationController
   end
 
   def gcse_school
+    @title = 'GCSE School'
     gcse_school_json = File.read("storage/gcse_school.json")
 
     @gcse_school = JSON.parse(gcse_school_json)

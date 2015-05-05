@@ -1,5 +1,6 @@
 class Api::V10::InflationController < ApplicationController
   def changes
+    @title = 'Changes'
     inflation_json = File.read("storage/inflation/changes.json")
     @changes = JSON.parse(inflation_json)
 

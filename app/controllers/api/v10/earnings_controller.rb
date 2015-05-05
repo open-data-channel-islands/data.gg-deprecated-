@@ -4,13 +4,8 @@ class Api::V10::EarningsController < ApplicationController
   before_action :set_earnings_by_sex, only: [:earnings_sex, :index]
   before_action :set_earnings_by_age_group, only: [:earnings_age_group, :index]
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def earnings_age_group
+    @title = 'Earnings by Age Group'
     respond_to do |format|
       format.json { render json: @earnings_age_group }
       format.xml { render xml: @earnings_age_group }
@@ -19,6 +14,7 @@ class Api::V10::EarningsController < ApplicationController
   end
 
   def earnings_sector
+    @title = 'Earnings by Sector'
     earnings_json = File.read("storage/earnings_sector.json")
     @earnings = JSON.parse(earnings_json)
     @earnings.sort_by! { |c| c['Year'] }
@@ -31,6 +27,7 @@ class Api::V10::EarningsController < ApplicationController
   end
 
   def earnings_sex
+    @title = 'Earnings by Sex'
     respond_to do |format|
       format.json { render json: @earnings_sex }
       format.xml { render xml: @earnings_sex }

@@ -1,9 +1,9 @@
 <% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Developers", developers_path %></li>
-    <li class="active">Crime</li>
-  </ol>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Developers", developers_path %></li>
+  <li class="active">Crime</li>
+</ol>
 <% end %>
 
 <div class="page-header">
@@ -25,18 +25,11 @@
     </thead>
     <tbody>
       <tr>
-        <td>Crimes</td>
-        <td>1.0</td>
-        <td>Crime by offence since 2005</td>
-        <td><%= link_to 'XML', api_v10_crime_crimes_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v10_crime_crimes_path(:format => "json") %></td>
-        <td><%= link_to 'RAW HTML', api_v10_crime_crimes_path(:format => "html", :layout => false) %></td>
-        <td><%= link_to 'HTML', api_v10_crime_crimes_path(:format => "html") %></td>
-      </tr>
-      <tr>
-    </tbody>
-  </table>
-</div>
+       <%= render partial: 'developers/developers_list_item',
+       locals: { name: 'Crimes', target: method(:api_v10_crime_crimes_path), desc: 'Crime by offence since 2005' } %>
+     </tbody>
+   </table>
+ </div>
 
-<p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
-<p><em>Updated 13/04/2015.</em></p>
+ <p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
+ <p><em>Updated 13/04/2015.</em></p>

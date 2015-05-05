@@ -2,13 +2,8 @@ require 'json'
 
 class Api::V10::BusesController < ApplicationController
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def usage
+    @title = 'Usage'
     bus_json = File.read("storage/bus_usage.json")
     @buses = JSON.parse(bus_json)
     @buses.sort_by! { |c| c['Year'] }

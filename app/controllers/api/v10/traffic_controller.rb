@@ -2,13 +2,8 @@ require 'json'
 
 class Api::V10::TrafficController < ApplicationController
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def traffic
+    @title = 'Traffic'
     traffic_json = File.read("storage/traffic.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -21,6 +16,7 @@ class Api::V10::TrafficController < ApplicationController
   end
 
   def collisions
+    @title = 'Collisions'
     traffic_json = File.read("storage/traffic_collisions.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -33,6 +29,7 @@ class Api::V10::TrafficController < ApplicationController
   end
 
   def injuries
+    @title = 'Injuries'
     traffic_json = File.read("storage/traffic_injuries.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
@@ -45,6 +42,7 @@ class Api::V10::TrafficController < ApplicationController
   end
 
   def classifications
+    @title = 'Classifications'
     traffic_json = File.read("storage/traffic_classifications.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }

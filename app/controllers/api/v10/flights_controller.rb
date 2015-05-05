@@ -2,13 +2,9 @@ require 'nokogiri'
 require 'open-uri'
 require 'time'
 class Api::V10::FlightsController < ApplicationController
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
 
   def departures
+    @title = 'Departures'
     column_names = {
       0 => 'FlightNumber',
       1 => 'Time',
@@ -27,6 +23,7 @@ class Api::V10::FlightsController < ApplicationController
   end
 
   def arrivals
+    @title = 'Arrivals'
     column_names = {
       0 => 'FlightNumber',
       1 => 'Time',

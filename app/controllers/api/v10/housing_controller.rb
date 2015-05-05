@@ -3,12 +3,6 @@ require 'json'
 module Api
   class Api::V10::HousingController < ApplicationController
 
-    def index
-      respond_to do |format|
-        format.html { render :index }
-      end
-    end
-
     def local_prices
       @title = 'Local Prices'
       houses_json = File.read("storage/houses/local_prices.json")

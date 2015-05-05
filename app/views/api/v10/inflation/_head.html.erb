@@ -1,0 +1,8 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to "Inflation", developers_inflation_path %></li>
+    <li class="active"><%= @title %></a>
+  </ol>
+<% end %>

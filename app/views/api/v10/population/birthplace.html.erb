@@ -1,11 +1,4 @@
-<% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Developers", developers_path %></li>
-    <li><%= link_to "Population", developers_population_path %></li>
-    <li class="active">Birthplace</a>
-  </ol>
-<% end %>
+<%= render 'head' %>
 
 <table class="table">
   <thead>

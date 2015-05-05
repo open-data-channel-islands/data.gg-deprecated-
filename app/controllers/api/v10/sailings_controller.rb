@@ -3,13 +3,8 @@ require 'open-uri'
 
 class Api::V10::SailingsController < ApplicationController
 
-  def index
-    respond_to do |format|
-      format.html { render :index }
-    end
-  end
-
   def harbour
+    @title = 'Harbour'
     @sailings = table_to_sailings_array()
     respond_to do |format|
       format.json { render json: @sailings }

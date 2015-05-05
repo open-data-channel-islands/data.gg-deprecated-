@@ -1,6 +1,7 @@
 class Api::V10::PopulationController < ApplicationController
 
   def population
+    @title = 'Population'
     population_json = File.read("storage/population/population.json")
     @population = JSON.parse(population_json)
     @population.sort_by! { |c| c['Year'] }
@@ -57,6 +58,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def birthplace
+    @title = 'Birthplace'
     json_data = File.read("storage/population/birthplace.json")
     @birthplace = JSON.parse(json_data)
 
@@ -68,6 +70,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def changes
+    @title = 'Changes'
     json_data = File.read("storage/population/changes.json")
     @changes = JSON.parse(json_data)
 
@@ -79,6 +82,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def district
+    @title = 'District'
     json_data = File.read("storage/population/district.json")
     @district = JSON.parse(json_data)
 
@@ -90,6 +94,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def parish
+    @title = 'Parish'
     json_data = File.read("storage/population/parish.json")
     @parish = JSON.parse(json_data)
 
