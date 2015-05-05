@@ -1,0 +1,10 @@
+<%# Pass the method as the target using method(:whatever_path) otherwise it evaluates before getting here %>
+<tr>
+  <td><%= name %></td>
+  <td>1.0</td>
+  <td><%= desc %></td>
+  <td><%= link_to 'XML', target.call(:format => "xml")  %></td>
+  <td><%= link_to 'JSON', target.call(:format => "json") %></td>
+  <td><%= link_to 'RAW HTML', target.call(:format => "html", layout: false) %></td>
+  <td><%= link_to 'HTML', target.call(:format => "html") %></td>
+</tr>

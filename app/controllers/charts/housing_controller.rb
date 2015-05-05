@@ -6,7 +6,6 @@ class Charts::HousingController < ApplicationController
     houses_json = File.read("storage/houses/local_prices.json")
     house_prices = JSON.parse(houses_json)
 
-
     @mean_averages = []
     @labels = []
 
@@ -32,47 +31,65 @@ class Charts::HousingController < ApplicationController
     end
   end
 
-  def local_price_transactions
+  def bedrooms
+    @title = 'Bedrooms'
 
-    houses_json = File.read("storage/houses/local_prices.json")
-    house_prices = JSON.parse(houses_json)
+    bedrooms_json = File.read("storage/houses/bedrooms.json")
+    bedrooms = JSON.parse(bedrooms_json)
 
-    @labels = []
-    transactions = [ ]
-    means = [ ]
-    house_prices.select {|p| p['Year'] >= 1999}.sort_by{|p| [p["Year"], p["Quarter"]]}.each do |val|
-      @labels << val["Quarter"].to_s + ' ' + val["Year"].to_s
-      transactions << val['Transactions']
-      means << val['Mean']
+    @local = []
+    @open = []
+    @labels = ['1','2','3','4','Over 4','Unknown']
+
+    bedrooms.select { |b| b['Year'] == 2014 }.each do |val|
+      if val['Market'] == 'Local'
+        @local = @labels.collect { |lbl| val[lbl] }
+      else
+        @open = @labels.collect { |lbl| val[lbl] }
+      end
     end
 
-    @data = [ ]
+    respond_to do |format|
+      format.html
+    end
+  end
 
-    transaction_fill ="rgba(#{ChartColours::COLOURS[0].join(',')})"
-    transaction_transparent = Array.new(ChartColours::COLOURS[0])
-    transaction_transparent[3] = 0
-    transaction_fill_transparent ="rgba(#{transaction_transparent.join(',')})"
-    transaction_stroke = "rgba(#{ChartColours::darken_color(ChartColours::COLOURS[0]).join(',')})"
-    @data << {
-      :label => 'Transactions',
-      :fillColor => transaction_fill_transparent,
-      :strokeColor => transaction_stroke,
-      :pointColor => transaction_fill,
-      :pointStrokeColor => transaction_stroke,
-      :data => transactions }
+  def types
+    @title = 'Types'
 
-    mean_fill ="rgba(#{ChartColours::COLOURS[1].join(',')})"
-    mean_transparent = Array.new(ChartColours::COLOURS[1])
-    mean_transparent[3] = 0
-    mean_fill_transparent ="rgba(#{mean_transparent.join(',')})"
-    mean_stroke = "rgba(#{ChartColours::darken_color(ChartColours::COLOURS[1]).join(',')})"
-    @data << {
-      :label => 'Mean',
-      :fillColor => mean_fill_transparent,
-      :strokeColor => mean_stroke,
-      :pointColor => mean_fill,
-      :pointStrokeColor => mean_stroke,
-      :data => means }
+    types_json = File.read("storage/houses/types.json")
+    types = JSON.parse(types_json)
+
+    @local = []
+    @open = []
+    types.select{ |u| u['Year'] == 2014 }.each do |val|
+      @local << [ val['Type'], val['Local Market'] ]
+      @open << [ val['Type'], val['Open Market'] ]
+    end
+
+    respond_to do |format|
+       format.html
+    end
+  end
+
+  def units
+    @title ='Units'
+
+    units_json = File.read("storage/houses/units.json")
+    units = JSON.parse(units_json)
+
+    @local = []
+    @open = []
+    @labels = units.collect { |val| val["Year"].to_i }.uniq
+
+    units.sort_by{|p| p['Year'].to_i }.each do |val|
+      @local << val['Local Market']
+      @open << val['Open Market']
+    end
+
+    respond_to do |format|
+      format.html
+    end
   end
 
 end

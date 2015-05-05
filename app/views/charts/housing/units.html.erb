@@ -1,0 +1,44 @@
+<%= render 'head' %>
+
+<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            categories: <%= @labels.to_json.html_safe %>,
+            crosshair: true,
+            title: { text: 'Year' }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Count'
+            }
+        },
+        tooltip: {
+            shared: true,
+        },
+        series: [{
+            name: 'Local',
+            data: <%= @local.to_json.html_safe -%>
+        },
+        {
+            name: 'Open',
+            data: <%= @open.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

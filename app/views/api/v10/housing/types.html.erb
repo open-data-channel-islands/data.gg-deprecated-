@@ -1,0 +1,22 @@
+<%= render 'head' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Type</th>
+      <th>Local Market</th>
+      <th>Open Market</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @types.each do |f| %>
+      <tr>
+        <td><%= f['Year'] %></td>
+        <td><%= f['Type'] %></td>
+        <td><%= f['Local Market'] %></td>
+        <td><%= f['Open Market'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

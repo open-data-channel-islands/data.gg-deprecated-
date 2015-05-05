@@ -14,4 +14,7 @@
 <ul class="nav nav-tabs">
   <li role="presentation" class="<%= 'active' if action?('charts/housing', 'mean_average') %>"><%= link_to 'Mean Average', charts_housing_mean_average_path %></li>
   <li role="presentation" class="<%= 'active' if action?('charts/housing', 'transactions') %>"><%= link_to 'Transactions', charts_housing_transactions_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/housing', 'bedrooms') %>"><%= link_to 'Bedrooms', charts_housing_bedrooms_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/housing', 'types') %>"><%= link_to 'Types', charts_housing_types_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/housing', 'units') %>"><%= link_to 'Units', charts_housing_units_path %></li>
 </ul>

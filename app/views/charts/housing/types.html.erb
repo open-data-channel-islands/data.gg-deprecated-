@@ -1,0 +1,85 @@
+<%= render 'head' %>
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="container_local" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+  </div>
+  <div class="col-md-6">
+    <div id="container_open" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+  </div>
+</div>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_local').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Local Market Types'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Local Market',
+            data: <%= @local.to_json.html_safe  %>
+        }]
+    });
+
+    $('#container_open').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Open Market Types'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Open Market',
+            data: <%= @open.to_json.html_safe  %>
+        }]
+    });
+}
+<% end %>

@@ -24,27 +24,23 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Local Prices</td>
-        <td>1.0</td>
-        <td>House prices by quarter since 1981 includes numerous stats</td>
-        <td><%= link_to 'XML', api_v10_housing_local_prices_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v10_housing_local_prices_path(:format => "json") %></td>
-        <td><%= link_to 'RAW HTML', api_v10_housing_local_prices_path(:format => "html", layout: false) %></td>
-        <td><%= link_to 'HTML', api_v10_housing_local_prices_path(:format => "html") %></td>
-      </tr>
-            <tr>
-        <td>Open Prices</td>
-        <td>1.0</td>
-        <td>House prices by quarter since 1981 includes numerous stats</td>
-        <td><%= link_to 'XML', api_v10_housing_open_prices_path(:format => "xml")  %></td>
-        <td><%= link_to 'JSON', api_v10_housing_open_prices_path(:format => "json") %></td>
-        <td><%= link_to 'RAW HTML', api_v10_housing_open_prices_path(:format => "html", layout: false) %></td>
-        <td><%= link_to 'HTML', api_v10_housing_open_prices_path(:format => "html") %></td>
-      </tr>
+     <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Local Prices', target: method(:api_v10_housing_local_prices_path), desc: 'House prices by quarter since 1981 includes numerous stats' } %>
+
+     <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Open Prices', target: method(:api_v10_housing_open_prices_path), desc: 'House prices by quarter since 1981 includes numerous stats' } %>
+
+     <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Bedrooms', target: method(:api_v10_housing_bedrooms_path), desc: 'Total bedrooms per unit with market since 2011' } %>
+
+     <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Types', target: method(:api_v10_housing_types_path), desc: 'Total units with market and type for 2014' } %>
+
+     <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Units', target: method(:api_v10_housing_units_path), desc: 'Total units by market since 2010' } %>
     </tbody>
   </table>
 </div>
 
-<p>Source: <a href="http://gov.gg/article/112353/Quarterly-Residential-Property-Prices-and-Annual-Housing-Stock-Bulletins-2014">gov.gg</a></p>
-<p><em>Updated 13/04/2015</em></p>
+<p>Source: <a href="http://gov.gg/article/112353/Quarterly-Residential-Property-Prices-and-Annual-Housing-Stock-Bulletins-2014">gov.gg</a> and <a href="http://gov.gg/property">gov.gg</a></p>
+<p><em>Updated 05/05/2015</em></p>

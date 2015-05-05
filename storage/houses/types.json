@@ -1,0 +1,26 @@
+[
+  {
+  "Year": 2014,
+  "Type": "Apartment",
+  "Local Market": 6232,
+  "Open Market": 158
+  },
+  {
+  "Year": 2014,
+  "Type": "Bungalow",
+  "Local Market": 9860,
+  "Open Market": 373
+  },
+  {
+  "Year": 2014,
+  "Type": "House",
+  "Local Market": 8759,
+  "Open Market": 1044
+  },
+  {
+    "Year": 2014,
+    "Type": "Other",
+    "Local Market": 257,
+    "Open Market": 9
+  }
+]
