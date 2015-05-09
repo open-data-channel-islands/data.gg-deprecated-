@@ -1,0 +1,2 @@
+module Developers::EmissionsHelper
+end

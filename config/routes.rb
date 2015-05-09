@@ -1,9 +1,4 @@
 DataGg::Application.routes.draw do
-
-  namespace :developers do
-  get 'inflation/changes'
-  end
-
   # You can have the root of your site routed with "root"
   root 'home#index'
 
@@ -61,6 +56,20 @@ DataGg::Application.routes.draw do
     get 'inflation' => 'inflation#changes', as: :inflation
     get 'inflation/changes' => 'inflation#changes', as: :inflation_changes
     get 'inflation/rpi_group_changes' => 'inflation#rpi_group_changes', as: :inflation_rpi_group_changes
+
+    # Water
+    get 'water' => 'water#domestic_consumption'
+    get 'water/domestic_consumption' => 'water#domestic_consumption'
+
+    # Emissions
+    get 'emissions' => 'emissions#types'
+    get 'emissions/types' => 'emissions#types'
+
+    # Employment
+    get 'employment' => 'employment#totals'
+    get 'employment/totals' => 'employment#totals'
+
+
   end
 
 
@@ -79,6 +88,9 @@ DataGg::Application.routes.draw do
     get 'flights' => 'flights#index', as: :flights
     get 'sailings' => 'sailings#index', as: :sailings
     get 'inflation' => 'inflation#index', as: :inflation
+    get 'water' => 'water#index'
+    get 'employment' => 'employment#index'
+    get 'emissions' => 'emissions#index'
   end
 
 
@@ -128,10 +140,14 @@ DataGg::Application.routes.draw do
       get 'inflation/changes' => 'inflation#changes'
       get 'inflation/rpi_group_changes' => 'inflation#rpi_group_changes'
       get 'inflation/rpix_group_changes' => 'inflation#rpix_group_changes'
+
+      get 'water/domestic_consumption' => 'water#domestic_consumption'
+
+      get 'emissions/types' => 'emissions#types'
+
+      get 'employment/totals' => 'employment#totals'
     end
   end
-
-
 
   # LEGACY CALLS
 

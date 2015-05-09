@@ -22,14 +22,14 @@
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Inflation', target: charts_inflation_path, image: 'i-754-scale-2x', desc: 'RPI & RPIX inflation data from 1949' } %>
   <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Health', target: '#', image: 'i-892-bandaid-2x', desc: 'Coming Soon' } %>
+  locals: { name: 'Water', target: charts_water_path, image: 'i-934-measuring-cup-2x', desc: 'Water data from published reports' } %>
 </div>
 
 <div class="row">
   <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
+  locals: { name: 'Employment', target: charts_employment_path, image: 'i-780-building-2x', desc: 'Employment data from published reports' } %>
   <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
+  locals: { name: 'Emissions', target: charts_emissions_path, image: 'i-1022-factory-2x', desc: 'Emissions from published reports' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Weather', target: '#', image: 'i-862-sun-cloud-2x', desc: 'Coming Soon' } %>
 </div>
@@ -41,4 +41,21 @@
   locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
+</div>
+
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Financial', target: '#', image: 'i-827-money-2-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Health', target: '#', image: 'i-892-bandaid-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
+</div>
+
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
+  <div class="col-sm-4 col-md-4"></div>
+  <div class="col-sm-4 col-md-4"></div>
+
 </div>

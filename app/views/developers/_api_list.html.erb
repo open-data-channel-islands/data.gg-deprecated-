@@ -16,14 +16,12 @@
           locals: { name: 'Earnings', target: developers_earnings_path, image: 'i-826-money-1-2x', desc: 'Earnings by age group, sector, and sex', live: false } %>
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Education', target: developers_education_path, image: 'i-897-graduation-cap-2x', desc: 'Post-16 results, overall GCSE grades and GCSE grades by school', live: false } %>
-
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Flights', target: developers_flights_path, image: 'i-893-airplane-2x', desc: 'Flight details refreshed on the fly from the Guernsey Airport', live: true } %>
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'House Prices', target: developers_housing_path, image: 'i-750-home-2x', desc: 'Detailed quarterly house prices since 1981 to today', live: false } %>
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Crime', target: developers_crime_path, image: 'i-828-shield-2x', desc: 'Detailed crime data from published reports', live: false } %>
-
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Traffic', target: developers_traffic_path, image: 'i-815-car-2x', desc: 'Traffic data from published reports', live: false } %>
           <%= render partial: 'developers/api_list_item',
@@ -32,6 +30,12 @@
           locals: { name: 'Sailings', target: developers_sailings_path, image: 'i-1094-sail-boat-2-2x', desc: 'Sailing details refreshed on the fly from the Guernsey Harbour', live: true } %>
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Inflation', target: developers_inflation_path, image: 'i-754-scale-2x', desc: 'RPI & RPIX inflation data from 1949', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Water', target: developers_water_path, image: 'i-934-measuring-cup-2x', desc: 'Water data from published reports', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Employment', target: developers_employment_path, image: 'i-780-building-2x', desc: 'Employment data from published reports', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Emissions', target: developers_emissions_path, image: 'i-1022-factory-2x', desc: 'Emissions from published reports', live: false } %>
 
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Tides', target: '#', image: 'i-958-life-preserver-2x', desc: 'Coming Soon', live: false } %>
@@ -49,6 +53,8 @@
           locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon', live: false } %>
           <%= render partial: 'developers/api_list_item',
           locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon', live: false } %>
+          <%= render partial: 'developers/api_list_item',
+          locals: { name: 'Financial', target: '#', image: 'i-827-money-2-2x', desc: 'Coming Soon', live: false } %>
         </tbody>
       </table>
     </div>

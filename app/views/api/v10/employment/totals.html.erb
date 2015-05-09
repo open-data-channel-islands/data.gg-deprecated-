@@ -1,0 +1,22 @@
+<%= render 'head' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Employed</th>
+      <th>Unemployed</th>
+      <th>Employers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @totals.each do |f| %>
+    <tr>
+    <td><%= f['Quarter'] %></td>
+    <td><%= f['Employed'] %></td>
+    <td><%= f['Unemployed'] %></td>
+    <td><%= f['Employers'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

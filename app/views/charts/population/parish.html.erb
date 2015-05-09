@@ -1,6 +1,6 @@
 <%= render 'head' %>
-
-<div id="container" style="min-width: 310px; max-width: 800px"></div>
+<h1>This map is work in progress!</h1>
+<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
 
 <%= javascript_tag do %>
 $(function() {
@@ -13,40 +13,85 @@ $(window).bind('page:change', function() {
 function initPage() {
     // Prepare random data
     var data = [
+        {
+            "parish": "VALE",
+            "value": 728
+        },
+        {
+            "parish": "ST. SAMPSON",
+            "value": 728
+        },
+        {
+            "parish": "CASTEL",
+            "value": 728
+        },
+        {
+            "parish": "ST. PETER PORT",
+            "value": 728
+        },
+        {
+            "parish": "ST. ANDREW",
+            "value": 728
+        },
+        {
+            "parish": "ST. PIERRE DU BOIS",
+            "value": 728
+        },
+                        {
+            "parish": "ST. SAVIOUR",
+            "value": 728
+        },
+        {
+            "parish": "HERM",
+            "value": 728
+        },
+        {
+            "parish": "ALDERNEY",
+            "value": 728
+        }
     ];
 
-    $.getJSON('http://localhost:3000/guernsey.json', function (geojson) {
+    $.getJSON('http://localhost:3000/digimap.json', function (geojson) {
 
         // Initiate the chart
         $('#container').highcharts('Map', {
+            chart: {
+              //plotBorderWidth: 2,
+            },
 
             title : {
                 text : 'Guernsey'
             },
 
             mapNavigation: {
-                enabled: true,
-                buttonOptions: {
-                    verticalAlign: 'bottom'
-                }
-            },
-
-            colorAxis: {
+                //enabled: true,
             },
 
             xAxis: {
-                minRange: 0.1
+                //minRange: 0.1,
+                min: -2.7081298828124996,
+                max: -2.4835968017578125
             },
 
             yAxis: {
-                minRange: 0.1
+                //minRange: 0.1,
             },
 
 
             series : [{
                 data : data,
                 mapData: geojson,
-                name: 'Random data',
+                name: 'Population',
+                joinBy: ['name', 'parish'],
+                states: {
+                    hover: {
+                        color: '#BADA55'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.properties.name}'
+                }
             }]
         });
     });

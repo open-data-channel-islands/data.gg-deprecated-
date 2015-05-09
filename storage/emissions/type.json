@@ -1,0 +1,170 @@
+[
+  {
+    "Year":1990,
+    "Carbon Dioxide":434.9,
+    "Methane":120.3,
+    "Nitrous Oxide":10.3,
+    "F-Gases":0.0
+  },
+  {
+    "Year":1991,
+    "Carbon Dioxide":492.9,
+    "Methane":121.0,
+    "Nitrous Oxide":10.4,
+    "F-Gases":0.0
+  },
+  {
+    "Year":1992,
+    "Carbon Dioxide":445.6,
+    "Methane":121.5,
+    "Nitrous Oxide":10.4,
+    "F-Gases":0.1
+  },
+  {
+    "Year":1993,
+    "Carbon Dioxide":461.9,
+    "Methane":122.0,
+    "Nitrous Oxide":10.5,
+    "F-Gases":0.6
+  },
+  {
+    "Year":1994,
+    "Carbon Dioxide":460.8,
+    "Methane":122.5,
+    "Nitrous Oxide":10.6,
+    "F-Gases":1.3
+  },
+  {
+    "Year":1995,
+    "Carbon Dioxide":477.0,
+    "Methane":122.9,
+    "Nitrous Oxide":10.7,
+    "F-Gases":2.2
+  },
+  {
+    "Year":1996,
+    "Carbon Dioxide":507.0,
+    "Methane":119.9,
+    "Nitrous Oxide":9.9,
+    "F-Gases":3.3
+  },
+  {
+    "Year":1997,
+    "Carbon Dioxide":524.2,
+    "Methane":120.4,
+    "Nitrous Oxide":10.1,
+    "F-Gases":4.8
+  },
+  {
+    "Year":1998,
+    "Carbon Dioxide":512.4,
+    "Methane":120.7,
+    "Nitrous Oxide":10.0,
+    "F-Gases":6.5
+  },
+  {
+    "Year":1999,
+    "Carbon Dioxide":500.1,
+    "Methane":121.0,
+    "Nitrous Oxide":10.0,
+    "F-Gases":7.5
+  },
+  {
+    "Year":2000,
+    "Carbon Dioxide":524.0,
+    "Methane":121.2,
+    "Nitrous Oxide":10.2,
+    "F-Gases":9.4
+  },
+  {
+    "Year":2001,
+    "Carbon Dioxide":332.9,
+    "Methane":119.9,
+    "Nitrous Oxide":9.4,
+    "F-Gases":10.9
+  },
+  {
+    "Year":2002,
+    "Carbon Dioxide":332.2,
+    "Methane":119.5,
+    "Nitrous Oxide":9.2,
+    "F-Gases":12.1
+  },
+  {
+    "Year":2003,
+    "Carbon Dioxide":342.3,
+    "Methane":119.9,
+    "Nitrous Oxide":9.2,
+    "F-Gases":13.8
+  },
+  {
+    "Year":2004,
+    "Carbon Dioxide":315.5,
+    "Methane":120.1,
+    "Nitrous Oxide":9.1,
+    "F-Gases":15.1
+  },
+  {
+    "Year":2005,
+    "Carbon Dioxide":329.6,
+    "Methane":120.9,
+    "Nitrous Oxide":9.3,
+    "F-Gases":15.9
+  },
+  {
+    "Year":2006,
+    "Carbon Dioxide":362.9,
+    "Methane":121.2,
+    "Nitrous Oxide":9.4,
+    "F-Gases":20.1
+  },
+  {
+    "Year":2007,
+    "Carbon Dioxide":357.1,
+    "Methane":120.3,
+    "Nitrous Oxide":9.3,
+    "F-Gases":21.2
+  },
+  {
+    "Year":2008,
+    "Carbon Dioxide":372.5,
+    "Methane":119.4,
+    "Nitrous Oxide":9.9,
+    "F-Gases":22.7
+  },
+  {
+    "Year":2009,
+    "Carbon Dioxide":357.1,
+    "Methane":116.9,
+    "Nitrous Oxide":9.8,
+    "F-Gases":23.0
+  },
+  {
+    "Year":2010,
+    "Carbon Dioxide":321.6,
+    "Methane":114.7,
+    "Nitrous Oxide":9.9,
+    "F-Gases":23.4
+  },
+  {
+    "Year":2011,
+    "Carbon Dioxide":310.7,
+    "Methane":112.4,
+    "Nitrous Oxide":10.0,
+    "F-Gases":24.0
+  },
+  {
+    "Year":2012,
+    "Carbon Dioxide":401.1,
+    "Methane":110.5,
+    "Nitrous Oxide":10.3,
+    "F-Gases":22.9
+  },
+  {
+    "Year":2013,
+    "Carbon Dioxide":387.3,
+    "Methane":108.5,
+    "Nitrous Oxide":10.3,
+    "F-Gases":22.1
+  }
+]

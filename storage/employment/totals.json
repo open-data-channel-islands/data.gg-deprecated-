@@ -1,0 +1,56 @@
+[
+  {
+    "Quarter":"Q4 2012",
+    "Employed":0,
+    "Unemployed":409,
+    "Employers":2295
+  },
+  {
+    "Quarter":"Q1 2013",
+    "Employed":31646,
+    "Unemployed":427,
+    "Employers":2271
+  },
+  {
+    "Quarter":"Q2 2013",
+    "Employed":32105,
+    "Unemployed":411,
+    "Employers":2321
+  },
+  {
+    "Quarter":"Q3 2013",
+    "Employed":32020,
+    "Unemployed":375,
+    "Employers":2319
+  },
+  {
+    "Quarter":"Q4 2013",
+    "Employed":31701,
+    "Unemployed":433,
+    "Employers":2308
+  },
+  {
+    "Quarter":"Q1 2014",
+    "Employed":31364,
+    "Unemployed":441,
+    "Employers":2277
+  },
+  {
+    "Quarter":"Q2 2014",
+    "Employed":31767,
+    "Unemployed":343,
+    "Employers":2320
+  },
+  {
+    "Quarter":"Q3 2014",
+    "Employed":31950,
+    "Unemployed":348,
+    "Employers":2327
+  },
+  {
+    "Quarter":"Q4 2014",
+    "Employed":31632,
+    "Unemployed":343,
+    "Employers":2303
+  }
+]

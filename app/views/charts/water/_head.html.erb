@@ -1,0 +1,16 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Water', charts_water_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<% end %>
+
+<div class="page-header">
+  <h1>Water</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="<%= 'active' if action?('charts/water', 'domestic_consumption') %>"><%= link_to 'Domestic Consumption', charts_water_domestic_consumption_path %></li>
+</ul>

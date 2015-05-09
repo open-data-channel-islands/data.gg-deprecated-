@@ -1,0 +1,24 @@
+<%= render 'head' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Carbon Dioxide</th>
+      <th>Methane</th>
+      <th>Nitrous Oxide</th>
+      <th>F-Gases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @types.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Carbon Dioxide'] %></td>
+    <td><%= f['Methane'] %></td>
+    <td><%= f['Nitrous Oxide'] %></td>
+    <td><%= f['F-Gases'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

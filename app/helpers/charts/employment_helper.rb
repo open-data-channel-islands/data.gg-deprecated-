@@ -1,0 +1,2 @@
+module Charts::EmploymentHelper
+end

@@ -1,0 +1,2 @@
+module Charts::WaterHelper
+end
