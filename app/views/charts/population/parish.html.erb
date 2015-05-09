@@ -1,8 +1,8 @@
 <%= render 'head' %>
 <h1>This map is work in progress!</h1>
-<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div id="container_parish" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
 
-<%= javascript_tag do %>
+<script type="text/javascript">
 $(function() {
   initPage();
 });
@@ -54,7 +54,7 @@ function initPage() {
     $.getJSON('http://localhost:3000/digimap.json', function (geojson) {
 
         // Initiate the chart
-        $('#container').highcharts('Map', {
+        $('#container_parish').highcharts('Map', {
             chart: {
               //plotBorderWidth: 2,
             },
@@ -96,4 +96,4 @@ function initPage() {
         });
     });
 }
-<% end %>
+</script>

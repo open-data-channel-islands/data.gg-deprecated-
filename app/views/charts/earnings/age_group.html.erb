@@ -1,6 +1,6 @@
 <%= render 'head' %>
 
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="container_age_group" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <%= javascript_tag do %>
 $(function() {
@@ -11,7 +11,7 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    $('#container').highcharts({
+    $('#container_age_group').highcharts({
         chart: {
             type: 'column'
         },

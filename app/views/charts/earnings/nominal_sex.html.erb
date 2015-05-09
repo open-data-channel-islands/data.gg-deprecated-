@@ -1,7 +1,7 @@
 <%= render 'head' %>
 
 
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="container_nominal_sex" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <%= javascript_tag do %>
 $(function() {
@@ -12,7 +12,7 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    $('#container').highcharts({
+    $('#container_nominal_sex').highcharts({
         chart: {
             type: 'column'
         },

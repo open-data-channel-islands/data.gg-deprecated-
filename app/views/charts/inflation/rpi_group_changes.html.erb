@@ -1,6 +1,6 @@
 <%= render 'head' %>
 
-<div id="container" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+<div id="container_rpi_group_changes" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
 <%= javascript_tag do %>
 $(function() {
   initPage();
@@ -12,7 +12,7 @@ $(window).bind('page:change', function() {
 function initPage() {
     var xLabels = <%= @labels.to_json.html_safe %>;
 
-    $('#container').highcharts({
+    $('#container_rpi_group_changes').highcharts({
         chart: {
             type: 'line'
         },

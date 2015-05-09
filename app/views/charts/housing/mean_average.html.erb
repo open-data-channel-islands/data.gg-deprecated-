@@ -1,6 +1,6 @@
 <%= render 'head' %>
 
-<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div id="container_mean_average" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
 <%= javascript_tag do %>
 
 $(function() {
@@ -13,7 +13,7 @@ $(window).bind('page:change', function() {
 function initPage() {
     var yLabels = <%= @labels.to_json.html_safe %>;
 
-    $('#container').highcharts({
+    $('#container_mean_average').highcharts({
         chart: {
             type: 'area'
         },

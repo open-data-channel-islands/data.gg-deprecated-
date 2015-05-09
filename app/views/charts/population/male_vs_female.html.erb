@@ -1,7 +1,8 @@
 <%= render 'head' %>
 
-<div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
-<%= javascript_tag do %>
+<div id="container_male_vs_female" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<script type="text/javascript">
 $(function() {
   initPage();
 });
@@ -12,7 +13,7 @@ $(window).bind('page:change', function() {
 function initPage() {
     var yLabels = <%= @labels.to_json.html_safe %>;
 
-    $('#container').highcharts({
+    $('#container_male_vs_female').highcharts({
         chart: {
             type: 'line'
         },
@@ -46,4 +47,4 @@ function initPage() {
         }]
     });
 }
-<% end %>
+</script>
