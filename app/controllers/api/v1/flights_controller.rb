@@ -16,8 +16,21 @@ class Api::V1::FlightsController < ApplicationController
       3 => 'Status'
     }
 
-    url = 'http://www.guernsey-airport.gov.gg/webdepartures.html'
-    @flights = table_to_flight_array(url, column_names)
+    @flights = []
+    fail=false
+    begin
+      url = 'http://www.guernsey-airport.gov.gg/webdepartures.html'
+      @flights = table_to_flight_array(url, column_names)
+    rescue
+      fail = true
+    end
+    fail = true if @flights.count == 0
+
+    if fail
+      url = 'https://www.airport.gg/arrivals-departures'
+      name = 'departures'
+      @flights = new_table_to_flight_array(url, column_names, name)
+    end
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -34,8 +47,22 @@ class Api::V1::FlightsController < ApplicationController
       3 => 'Status'
     }
 
-    url = 'http://www.guernsey-airport.gov.gg/webarrivals.html'
-    @flights = table_to_flight_array(url, column_names)
+    @flights = []
+
+    fail=false
+    begin
+      url = 'http://www.guernsey-airport.gov.gg/webarrivals.html'
+      @flights = table_to_flight_array(url, column_names)
+    rescue
+      fail = true
+    end
+    fail = true if @flights.count == 0
+
+    if fail
+      url = 'https://www.airport.gg/arrivals-departures'
+      name = 'arrivals'
+      @flights = new_table_to_flight_array(url, column_names, name)
+    end
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -46,6 +73,78 @@ class Api::V1::FlightsController < ApplicationController
   end
 
   private
+
+  def new_url_to_table(url,name)
+    doc = Nokogiri::HTML(open(url)) do |config|
+      config.default_html.noent.nsclean
+    end
+
+    table = []
+    current_row = []
+    row_counter = 0
+
+    html_div = doc.xpath("//div[@data-tab='#{name}']")
+    html_div.css('td').each_with_index do |cell|
+      current_row << cell.text.strip
+
+      row_increment = 1
+      if cell.attr('colspan') then
+        row_increment = cell.attr('colspan').to_i
+      end
+      row_counter += row_increment
+
+      if row_counter >= 5 then
+        table << current_row
+        current_row = []
+        row_counter = 0
+      end
+    end
+    return table
+  end
+
+  def new_table_to_flight_array(url, column_names,name)
+    table = new_url_to_table(url,name)
+
+    # New website has times any no indication of date so we need to
+    # perform some magic here.
+    times = []
+    table.each_with_index do |row, row_index|
+      active_date = DateTime.now
+      time_str = active_date.strftime('%Y-%m-%d') + ' ' + row[1]
+      zone = 'London'
+      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
+      times << time
+    end
+
+    if times[0].hour < 12
+      now = DateTime.now
+      if now.hour > 12
+        # All tomorrow
+        times.each_with_index do |time, index|
+          times[index] = time + 24.hours
+        end
+      end
+    else
+      # All today until next AM
+      times.each_with_index do |time, index|
+        if time.hour < 12
+          times[index] = time + 24.hours
+        end
+      end
+    end
+
+    flights = []
+    table.each_with_index do |row, row_index|
+      flight_info_hash = { }
+      flight_info_hash[column_names[0]] = row[3]
+      flight_info_hash[column_names[1]] = times[row_index]
+      flight_info_hash[column_names[2]] = row[2]
+      flight_info_hash[column_names[3]] = row[4]
+      flights << flight_info_hash
+    end
+
+    return flights
+  end
 
   def table_to_flight_array(url, column_names)
     table = url_to_table(url)
