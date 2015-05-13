@@ -2,7 +2,7 @@
     {
         "route": "Conventional",
         "year": 2012,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 76,
         "upto15minspc": 9,
         "upto30minspc": 7,
@@ -21,7 +21,7 @@
     {
         "route": "Conventional",
         "year": 2013,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 81,
         "upto15minspc": 6,
         "upto30minspc": 6,
@@ -40,7 +40,7 @@
     {
         "route": "Conventional",
         "year": 2014,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 70,
         "upto15minspc": 8,
         "upto30minspc": 5,
@@ -59,7 +59,7 @@
     {
         "route": "Northern Route",
         "year": 2012,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 64,
         "upto15minspc": 18,
         "upto30minspc": 11,
@@ -78,7 +78,7 @@
     {
         "route": "Northern Route",
         "year": 2013,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 74,
         "upto15minspc": 14,
         "upto30minspc": 6,
@@ -97,7 +97,7 @@
     {
         "route": "Northern Route",
         "year": 2014,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 75,
         "upto15minspc": 7,
         "upto30minspc": 9,
@@ -116,7 +116,7 @@
     {
         "route": "Southern Route",
         "year": 2012,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 47,
         "upto15minspc": 30,
         "upto30minspc": 14,
@@ -135,7 +135,7 @@
     {
         "route": "Southern Route",
         "year": 2013,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 78,
         "upto15minspc": 14,
         "upto30minspc": 6,
@@ -154,7 +154,7 @@
     {
         "route": "Southern Route",
         "year": 2014,
-        "quater": 1,
+        "quarter": 1,
         "ontimepc": 78,
         "upto15minspc": 10,
         "upto30minspc": 9,
@@ -173,7 +173,7 @@
     {
         "route": "Conventional",
         "year": 2012,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 77,
         "upto15minspc": 11,
         "upto30minspc": 4,
@@ -192,7 +192,7 @@
     {
         "route": "Conventional",
         "year": 2013,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 89,
         "upto15minspc": 6,
         "upto30minspc": 1,
@@ -211,7 +211,7 @@
     {
         "route": "Conventional",
         "year": 2014,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 87,
         "upto15minspc": 6,
         "upto30minspc": 4,
@@ -230,7 +230,7 @@
     {
         "route": "Northern Route",
         "year": 2012,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 72,
         "upto15minspc": 13,
         "upto30minspc": 8,
@@ -249,7 +249,7 @@
     {
         "route": "Northern Route",
         "year": 2013,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 79,
         "upto15minspc": 11,
         "upto30minspc": 8,
@@ -268,7 +268,7 @@
     {
         "route": "Northern Route",
         "year": 2014,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 74,
         "upto15minspc": 13,
         "upto30minspc": 8,
@@ -287,7 +287,7 @@
     {
         "route": "Southern Route",
         "year": 2012,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 75,
         "upto15minspc": 11,
         "upto30minspc": 8,
@@ -306,7 +306,7 @@
     {
         "route": "Southern Route",
         "year": 2013,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 78,
         "upto15minspc": 12,
         "upto30minspc": 5,
@@ -325,7 +325,7 @@
     {
         "route": "Southern Route",
         "year": 2014,
-        "quater": 2,
+        "quarter": 2,
         "ontimepc": 79,
         "upto15minspc": 13,
         "upto30minspc": 6,
@@ -344,7 +344,7 @@
     {
         "route": "Conventional",
         "year": 2012,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 85,
         "upto15minspc": 8,
         "upto30minspc": 3,
@@ -363,7 +363,7 @@
     {
         "route": "Conventional",
         "year": 2013,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 83,
         "upto15minspc": 5,
         "upto30minspc": 6,
@@ -382,7 +382,7 @@
     {
         "route": "Conventional",
         "year": 2014,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 74,
         "upto15minspc": 11,
         "upto30minspc": 6,
@@ -401,7 +401,7 @@
     {
         "route": "Northern Route",
         "year": 2012,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 46,
         "upto15minspc": 17,
         "upto30minspc": 16,
@@ -420,7 +420,7 @@
     {
         "route": "Northern Route",
         "year": 2013,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 68,
         "upto15minspc": 20,
         "upto30minspc": 10,
@@ -439,7 +439,7 @@
     {
         "route": "Northern Route",
         "year": 2014,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 63,
         "upto15minspc": 15,
         "upto30minspc": 15,
@@ -458,7 +458,7 @@
     {
         "route": "Southern Route",
         "year": 2012,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 69,
         "upto15minspc": 12,
         "upto30minspc": 10,
@@ -477,7 +477,7 @@
     {
         "route": "Southern Route",
         "year": 2013,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 76,
         "upto15minspc": 15,
         "upto30minspc": 7,
@@ -496,7 +496,7 @@
     {
         "route": "Southern Route",
         "year": 2014,
-        "quater": 3,
+        "quarter": 3,
         "ontimepc": 73,
         "upto15minspc": 13,
         "upto30minspc": 9,
@@ -515,7 +515,7 @@
     {
         "route": "Conventional",
         "year": 2012,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 82,
         "upto15minspc": 7,
         "upto30minspc": 6,
@@ -534,7 +534,7 @@
     {
         "route": "Conventional",
         "year": 2013,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 74,
         "upto15minspc": 7,
         "upto30minspc": 7,
@@ -553,7 +553,7 @@
     {
         "route": "Conventional",
         "year": 2014,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 60,
         "upto15minspc": 13,
         "upto30minspc": 13,
@@ -572,7 +572,7 @@
     {
         "route": "Northern Route",
         "year": 2012,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 58,
         "upto15minspc": 14,
         "upto30minspc": 12,
@@ -591,7 +591,7 @@
     {
         "route": "Northern Route",
         "year": 2013,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 73,
         "upto15minspc": 11,
         "upto30minspc": 12,
@@ -610,7 +610,7 @@
     {
         "route": "Northern Route",
         "year": 2014,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 66,
         "upto15minspc": 14,
         "upto30minspc": 14,
@@ -629,7 +629,7 @@
     {
         "route": "Southern Route",
         "year": 2012,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 85,
         "upto15minspc": 4,
         "upto30minspc": 6,
@@ -648,7 +648,7 @@
     {
         "route": "Southern Route",
         "year": 2013,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 80,
         "upto15minspc": 10,
         "upto30minspc": 4,
@@ -667,7 +667,7 @@
     {
         "route": "Southern Route",
         "year": 2014,
-        "quater": 4,
+        "quarter": 4,
         "ontimepc": 74,
         "upto15minspc": 17,
         "upto30minspc": 8,

@@ -1,0 +1,16 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Sailings', charts_sailings_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<% end %>
+
+<div class="page-header">
+  <h1>Sailings</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="<%= 'active' if action?('charts/sailings', 'condor_punctuality') %>"><%= link_to 'Condor Punctuality', charts_sailings_condor_punctuality_path %></li>
+</ul>

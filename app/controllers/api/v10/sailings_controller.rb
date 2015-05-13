@@ -13,6 +13,20 @@ class Api::V10::SailingsController < ApplicationController
     end
   end
 
+  def condor_punctuality
+    @title = 'Condor Punctuality'
+
+    punctuality_json = File.read("storage/sailings/condor_punctuality.json")
+    @punctuality = JSON.parse(punctuality_json)
+    @punctuality.sort_by! { |c| [ c['year'].to_i, c['quarter'].to_i ] }
+
+    respond_to do |format|
+      format.json { render json: @punctuality }
+      format.xml { render xml: @punctuality }
+      format.html { render :condor_punctuality, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+    end
+  end
+
   private
 
   def table_to_sailings_array()
