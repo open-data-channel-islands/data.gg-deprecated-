@@ -1,4 +1,4 @@
-Route,Year,Quater,OnTimePC,15MinutesPC,30MinsPC,60MinsPC,Over60MinsPC,Scheduled,OriginalSchedule,OriginalSchedulePC,Rescheduled,RescheduledPC,Sailings,SailingsPC,Cancelled,CancelledPC
+Route,Year,Quater,OnTimePC,UpTo15MinsPC,UpTo30MinsPC,UpTo60MinsPC,Over60MinsPC,Scheduled,OriginalSchedule,OriginalSchedulePC,Rescheduled,RescheduledPC,Sailings,SailingsPC,Cancelled,CancelledPC
 Conventional,2012,1,76,9,7,6,3,233,202,0.8669527897,30,0.1287553648,232,0.9957081545,1,0.004291845494
 Conventional,2013,1,81,6,6,5,2,302,284,0.940397351,16,0.05298013245,300,0.9933774834,2,0.006622516556
 Conventional,2014,1,70,8,5,9,7,296,272,0.9189189189,22,0.07432432432,294,0.9932432432,2,0.006756756757
