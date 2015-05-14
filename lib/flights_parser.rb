@@ -1,50 +1,35 @@
 require 'nokogiri'
 require 'open-uri'
 require 'time'
-class Api::V1::FlightsController < ApplicationController
+class FlightsParser
 
-  def departures
-    column_names = {
-      0 => 'FlightNumber',
-      1 => 'Time',
-      2 => 'Dest',
-      3 => 'Status'
-    }
-
-    url = 'https://www.airport.gg/arrivals-departures'
-    name = 'departures'
-    @flights = new_table_to_flight_array(url, column_names, name)
-
-    respond_to do |format|
-      format.json { render json: @flights }
-      format.xml { render xml: @flights }
-      format.html { render :departures }
-    end
-  end
-
-  def arrivals
+  def self.get_arrivals
     column_names = {
       0 => 'FlightNumber',
       1 => 'Time',
       2 => 'Source',
       3 => 'Status'
     }
-
     url = 'https://www.airport.gg/arrivals-departures'
     name = 'arrivals'
-    @flights = new_table_to_flight_array(url, column_names, name)
+    @flights = FlightsParser::new_table_to_flight_array(url, column_names, name)
+  end
 
-    respond_to do |format|
-      format.json { render json: @flights }
-      format.xml { render xml: @flights }
-      format.html { render :arrivals }
-    end
-
+  def self.get_departures
+    column_names = {
+      0 => 'FlightNumber',
+      1 => 'Time',
+      2 => 'Dest',
+      3 => 'Status'
+    }
+    url = 'https://www.airport.gg/arrivals-departures'
+    name = 'departures'
+    @flights = FlightsParser::new_table_to_flight_array(url, column_names, name)
   end
 
   private
 
-  def new_url_to_table(url,name)
+    def self.new_url_to_table(url,name)
     doc = Nokogiri::HTML(open(url)) do |config|
       config.default_html.noent.nsclean
     end
@@ -72,7 +57,7 @@ class Api::V1::FlightsController < ApplicationController
     return table
   end
 
-  def new_table_to_flight_array(url, column_names,name)
+  def self.new_table_to_flight_array(url, column_names,name)
     table = new_url_to_table(url,name)
 
     # New website has times any no indication of date so we need to
@@ -88,7 +73,7 @@ class Api::V1::FlightsController < ApplicationController
 
     if times[0].hour < 12
       now = DateTime.now
-      if now.hour > 12
+      if now.hour > 15
         # All tomorrow
         times.each_with_index do |time, index|
           times[index] = time + 24.hours
@@ -119,4 +104,5 @@ class Api::V1::FlightsController < ApplicationController
 
     return flights
   end
+
 end

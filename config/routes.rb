@@ -8,8 +8,10 @@ DataGg::Application.routes.draw do
   get 'contact' => 'home#contact', as: :contact
   get 'contribute' => 'home#contribute', as: :contribute
 
-  # Charts section
+  get 'bespoke/gp_flights_arrivals' => 'bespoke#gp_flights_arrivals'
+  get 'bespoke/gp_flights_departures' => 'bespoke#gp_flights_departures'
 
+  # Charts section
   get 'charts' => 'charts#index', as: :charts
 
   namespace :charts do
@@ -155,9 +157,8 @@ DataGg::Application.routes.draw do
 
   # LEGACY CALLS
 
-  get 'api/v1/flights/', to: 'api/v1/flights#index'
-  get 'api/v1/flights/arrivals', to: 'api/v1/flights#arrivals'
-  get 'api/v1/flights/departures', to: 'api/v1/flights#departures'
+  get 'api/v1/flights/arrivals', to: 'api/v10/flights#arrivals'
+  get 'api/v1/flights/departures', to: 'api/v10/flights#departures'
 
   get 'api/v1/education/', to: 'api/v1/education#index'
   get 'api/v1/education/post16results', to: 'api/v1/education#post16results'

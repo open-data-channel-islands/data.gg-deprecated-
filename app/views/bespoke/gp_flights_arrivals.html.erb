@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Flight Number</th>
+      <th>Day</th>
+      <th>Time</th>
+      <th>Source</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @flights.each do |f| %>
+    <tr>
+    <td><%= f['FlightNumber'] %></td>
+    <td><%= f['Time'].to_date == Date.today ? 'Today' : 'Tomorrow' %></td>
+    <td><%= f['Time'].strftime("%H:%M") %></td>
+    <td><%= f['Source'] %></td>
+    <td><%= f['Status'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
