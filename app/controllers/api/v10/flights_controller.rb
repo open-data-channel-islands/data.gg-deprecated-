@@ -12,21 +12,9 @@ class Api::V10::FlightsController < ApplicationController
       3 => 'Status'
     }
 
-    @flights = []
-    fail=false
-    begin
-      url = 'http://www.guernsey-airport.gov.gg/webdepartures.html'
-      @flights = table_to_flight_array(url, column_names)
-    rescue
-      fail = true
-    end
-    fail = true if @flights.count == 0
-
-    if fail
-      url = 'https://www.airport.gg/arrivals-departures'
-      name = 'departures'
-      @flights = new_table_to_flight_array(url, column_names, name)
-    end
+    url = 'https://www.airport.gg/arrivals-departures'
+    name = 'departures'
+    @flights = new_table_to_flight_array(url, column_names, name)
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -44,22 +32,9 @@ class Api::V10::FlightsController < ApplicationController
       3 => 'Status'
     }
 
-    @flights = []
-
-    fail=false
-    begin
-      url = 'http://www.guernsey-airport.gov.gg/webarrivals.html'
-      @flights = table_to_flight_array(url, column_names)
-    rescue
-      fail = true
-    end
-    fail = true if @flights.count == 0
-
-    if fail
-      url = 'https://www.airport.gg/arrivals-departures'
-      name = 'arrivals'
-      @flights = new_table_to_flight_array(url, column_names, name)
-    end
+    url = 'https://www.airport.gg/arrivals-departures'
+    name = 'arrivals'
+    @flights = new_table_to_flight_array(url, column_names, name)
 
     respond_to do |format|
       format.json { render json: @flights }
@@ -123,8 +98,12 @@ class Api::V10::FlightsController < ApplicationController
       end
     else
       # All today until next AM
+      found_redeye=false
       times.each_with_index do |time, index|
-        if time.hour < 12
+        if time.hour < 12 && !found_redeye
+          found_redeye=true
+        end
+        if found_redeye
           times[index] = time + 24.hours
         end
       end
@@ -141,65 +120,5 @@ class Api::V10::FlightsController < ApplicationController
     end
 
     return flights
-  end
-
-  def table_to_flight_array(url, column_names)
-    table = url_to_table(url)
-
-    flights = []
-    active_date = DateTime.new
-
-    table.each_with_index do |row, row_index|
-      next if row_index == 1
-
-      if row.count == 1 then
-        active_date = Date.parse(row[0].split(':').last.strip)
-      else
-        flight_info_hash = { }
-
-        flight_info_hash[column_names[0]] = row[0]
-
-        time_parse_str = '%Y-%m-%d %H:%M'
-        time_str = active_date.strftime('%Y-%m-%d') + ' ' + row[1]
-        zone = 'London'
-        time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
-
-        flight_info_hash[column_names[1]] = time
-
-
-        flight_info_hash[column_names[2]] = row[2]
-        flight_info_hash[column_names[3]] = row[3]
-
-        flights << flight_info_hash
-      end
-    end
-
-    return flights
-  end
-
-  def url_to_table(url)
-    doc = Nokogiri::HTML(open(url)) do |config|
-      config.default_html.noent.nsclean
-    end
-
-    table = []
-    current_row = []
-    row_counter = 0
-    doc.css('td').each_with_index do |cell|
-      current_row << cell.text.strip
-
-      row_increment = 1
-      if cell.attr('colspan') then
-        row_increment = cell.attr('colspan').to_i
-      end
-      row_counter += row_increment
-
-      if row_counter >= 4 then
-        table << current_row
-        current_row = []
-        row_counter = 0
-      end
-    end
-    return table
   end
 end

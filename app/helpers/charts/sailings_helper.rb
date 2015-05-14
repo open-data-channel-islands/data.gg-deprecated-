@@ -1,0 +1,2 @@
+module Charts::SailingsHelper
+end

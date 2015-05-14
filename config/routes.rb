@@ -69,6 +69,9 @@ DataGg::Application.routes.draw do
     get 'employment' => 'employment#totals'
     get 'employment/totals' => 'employment#totals'
 
+    get 'sailings' => 'sailings#condor_punctuality'
+    get 'sailings/condor_punctuality' => 'sailings#condor_punctuality'
+
 
   end
 
@@ -119,6 +122,7 @@ DataGg::Application.routes.draw do
       get 'flights/departures' => 'flights#departures'
 
       get 'sailings/harbour' => 'sailings#harbour'
+      get 'sailings/condor_punctuality' => 'sailings#condor_punctuality'
 
       get 'education/post16results' => 'education#post16results'
       get 'education/gcse_overall' => 'education#gcse_overall'

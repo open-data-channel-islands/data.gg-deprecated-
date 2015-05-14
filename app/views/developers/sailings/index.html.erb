@@ -27,8 +27,10 @@
 
       <%= render partial: 'developers/developers_list_item',
       locals: { name: 'Harbour', target: method(:api_v10_sailings_harbour_path), desc: 'Live sailings data from the Guernsey Harbour. Includes both arrivals and departures' } %>
+      <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Condor Punctuality', target: method(:api_v10_sailings_condor_punctuality_path), desc: 'Condor punctuality from published reports' } %>
     </tbody>
   </table>
 </div>
 
-<p>Source: <%= link_to 'guernseyharbours.gov.gg', 'http://www.guernseyharbours.gov.gg/article/100192/Arrivals--Departures' %></p>
+<p>Source: <%= link_to 'guernseyharbours.gov.gg', 'http://www.guernseyharbours.gov.gg/article/100192/Arrivals--Departures' %> and <%= link_to 'http://www.condorferries.co.uk', 'http://www.condorferries.co.uk/performance/punctuality-reports.aspx'%></p>

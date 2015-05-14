@@ -31,31 +31,31 @@
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Emissions', target: charts_emissions_path, image: 'i-1022-factory-2x', desc: 'Emissions from published reports' } %>
   <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Weather', target: '#', image: 'i-862-sun-cloud-2x', desc: 'Coming Soon' } %>
+  locals: { name: 'Sailings', target: charts_sailings_path, image: 'i-1094-sail-boat-2-2x', desc: 'Harbour data from published reports' } %>
 </div>
 
 <div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Weather', target: '#', image: 'i-862-sun-cloud-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon' } %>
-  <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
 </div>
 
 <div class="row">
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Financial', target: '#', image: 'i-827-money-2-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Health', target: '#', image: 'i-892-bandaid-2x', desc: 'Coming Soon' } %>
-  <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
 </div>
 
 <div class="row">
   <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
   <div class="col-sm-4 col-md-4"></div>
-  <div class="col-sm-4 col-md-4"></div>
-
 </div>
