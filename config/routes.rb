@@ -102,7 +102,7 @@ DataGg::Application.routes.draw do
   # API calls
 
   namespace :api do
-    namespace "v10", path: "1.0", module: "v1_0" do
+    namespace "v10", path: "1.0" do
 
       get 'buses/usage' => 'buses#usage'
 

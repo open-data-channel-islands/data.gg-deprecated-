@@ -12,4 +12,19 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def file_vs_response_json(action, file)
+    get action, format: :json
+    assert_response :success
+    response_json = JSON.parse(response.body)
+    file_json = JSON.parse(File.read(file))
+    assert response_json == file_json, 'Response JSON does not match file JSON'
+  end
+
+  def file_vs_response_xml(action, file)
+    get action, format: :xml
+    assert_response :success
+    response_xml = response.body
+    file_xml = JSON.parse(File.read(file)).to_xml
+    assert response_xml == file_xml, 'Response XML does not match file XML'
+  end
 end
