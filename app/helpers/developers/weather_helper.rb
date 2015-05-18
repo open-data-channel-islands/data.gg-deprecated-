@@ -1,0 +1,2 @@
+module Developers::WeatherHelper
+end

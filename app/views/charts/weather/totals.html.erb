@@ -1,0 +1,47 @@
+<%= render 'head' %>
+
+<div id="container_totals" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_totals').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: <%= @labels.to_json.html_safe %>,
+            title: {
+                text: 'Month'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Count (ML)'
+            }
+        },
+        series: [{
+            name: 'Temperature',
+            data: <%= @temp.to_json.html_safe -%>
+        },
+        {
+            name: 'Rainfall',
+            data: <%= @rain.to_json.html_safe -%>
+        },
+        {
+            name: 'Sunshine',
+            data: <%= @sun.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

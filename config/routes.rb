@@ -74,7 +74,9 @@ DataGg::Application.routes.draw do
     get 'sailings' => 'sailings#condor_punctuality'
     get 'sailings/condor_punctuality' => 'sailings#condor_punctuality'
 
-
+    # Weather
+    get 'weather' => 'weather#totals'
+    get 'weather/totals' => 'weather#totals'
   end
 
 
@@ -96,6 +98,7 @@ DataGg::Application.routes.draw do
     get 'water' => 'water#index'
     get 'employment' => 'employment#index'
     get 'emissions' => 'emissions#index'
+    get 'weather' => 'weather#index'
   end
 
 
@@ -152,6 +155,9 @@ DataGg::Application.routes.draw do
       get 'emissions/types' => 'emissions#types'
 
       get 'employment/totals' => 'employment#totals'
+
+      get 'weather/annual' => 'weather#annual'
+      get 'weather/monthly' => 'weather#monthly'
     end
   end
 

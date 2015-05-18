@@ -1,0 +1,32 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Temperature</th>
+      <th>Temperature Difference From Average</th>
+      <th>Rainfall</th>
+      <th>Rainfall Percent Of Average</th>
+      <th>Sunshine</th>
+      <th>Sunshine Percent Of Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @monthly.each do |f| %>
+    <tr>
+      <td><%= f['year'] %></td>
+      <td><%= f['month'] %></td>
+      <td><%= f['temperature'] %></td>
+      <td><%= f['temperaturedifferencefromaverage'] %></td>
+      <td><%= f['rainfall'] %></td>
+      <td><%= f['rainfallpercentofaverage'] %></td>
+      <td><%= f['sunshine'] %></td>
+      <td><%= f['sunshinepercentofaverage'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
