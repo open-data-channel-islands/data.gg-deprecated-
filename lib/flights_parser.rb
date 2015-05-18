@@ -48,7 +48,7 @@ class FlightsParser
       end
       row_counter += row_increment
 
-      if row_counter >= 5 then
+      if row_counter >= 6 then
         table << current_row
         current_row = []
         row_counter = 0
@@ -59,50 +59,18 @@ class FlightsParser
 
   def self.new_table_to_flight_array(url, column_names,name)
     table = new_url_to_table(url,name)
-
-    # New website has times any no indication of date so we need to
-    # perform some magic here.
-    times = []
-    table.each_with_index do |row, row_index|
-      active_date = DateTime.now
-      time_str = active_date.strftime('%Y-%m-%d') + ' ' + row[1]
-      zone = 'London'
-      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
-      times << time
-    end
-
-    if times[0].hour < 12
-      now = DateTime.now
-      if now.hour > 15
-        # All tomorrow
-        times.each_with_index do |time, index|
-          times[index] = time + 24.hours
-        end
-      end
-    else
-      # All today until next AM
-      found_redeye=false
-      times.each_with_index do |time, index|
-        if time.hour < 12 && !found_redeye
-          found_redeye=true
-        end
-        if found_redeye
-          times[index] = time + 24.hours
-        end
-      end
-    end
-
+    zone = 'London'
     flights = []
     table.each_with_index do |row, row_index|
       flight_info_hash = { }
-      flight_info_hash[column_names[0]] = row[3]
-      flight_info_hash[column_names[1]] = times[row_index]
-      flight_info_hash[column_names[2]] = row[2]
-      flight_info_hash[column_names[3]] = row[4]
+      flight_info_hash[column_names[0]] = row[4]
+      date_time_combined = "#{row[2]} #{row[1]}"
+      flight_info_hash[column_names[1]] = ActiveSupport::TimeZone[zone].parse(date_time_combined, DateTime.now)
+      flight_info_hash[column_names[2]] = row[3]
+      flight_info_hash[column_names[3]] = row[5]
       flights << flight_info_hash
     end
 
     return flights
   end
-
 end
