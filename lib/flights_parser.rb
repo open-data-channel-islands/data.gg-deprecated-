@@ -64,7 +64,7 @@ class FlightsParser
     table.each_with_index do |row, row_index|
       flight_info_hash = { }
       flight_info_hash[column_names[0]] = row[4]
-      date_time_combined = "#{row[2]} #{row[1]}"
+      date_time_combined = "#{row[2][0..9]} #{row[1]}"
       flight_info_hash[column_names[1]] = ActiveSupport::TimeZone[zone].parse(date_time_combined, DateTime.now)
       flight_info_hash[column_names[2]] = row[3]
       flight_info_hash[column_names[3]] = row[5]
