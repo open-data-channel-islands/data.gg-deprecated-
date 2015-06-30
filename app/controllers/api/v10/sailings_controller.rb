@@ -27,6 +27,19 @@ class Api::V10::SailingsController < ApplicationController
     end
   end
 
+  def cruises
+    @title = 'Cruises'
+
+    cruises_json = File.read("storage/sailings/cruises.json")
+    @cruises = JSON.parse(cruises_json)
+
+    respond_to do |format|
+      format.json { render json: @cruises }
+      format.xml { render xml: @cruises }
+      format.html { render :cruises, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+    end
+  end
+
   private
 
   def table_to_sailings_array()

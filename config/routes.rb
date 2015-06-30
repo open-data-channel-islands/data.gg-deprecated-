@@ -128,6 +128,7 @@ DataGg::Application.routes.draw do
 
       get 'sailings/harbour' => 'sailings#harbour'
       get 'sailings/condor_punctuality' => 'sailings#condor_punctuality'
+      get 'sailings/cruises' => 'sailings#cruises'
 
       get 'education/post16results' => 'education#post16results'
       get 'education/gcse_overall' => 'education#gcse_overall'
