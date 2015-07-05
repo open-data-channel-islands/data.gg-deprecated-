@@ -62,6 +62,7 @@ class FlightsParser
     zone = 'London'
     flights = []
     table.each_with_index do |row, row_index|
+      next if row.count == 1
       flight_info_hash = { }
       flight_info_hash[column_names[0]] = row[4]
       date_time_combined = "#{row[2][0..9]} #{row[1]}"
