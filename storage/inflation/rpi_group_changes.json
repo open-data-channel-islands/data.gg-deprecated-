@@ -3526,5 +3526,89 @@
     "Quarter":"Q1 2015",
     "Quarterly Change":0.0416823614,
     "Annual Change":1.9607677723
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0016078241,
+    "Annual Change":-0.16545
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0078903909,
+    "Annual Change": 0.21115
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0071090942,
+    "Annual Change": 0.99190
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0071986627,
+    "Annual Change": 0.44990
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0014960378,
+    "Annual Change": 1.12768
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0060925022,
+    "Annual Change":-0.85650
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0079023173,
+    "Annual Change":-0.02443
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0051008592,
+    "Annual Change": 0.17588
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0052766303,
+    "Annual Change": 2.65073
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0002544309,
+    "Annual Change": 0.24950
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0168576548,
+    "Annual Change":-0.25859
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0954817904,
+    "Annual Change": 4.31200
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":-0.0055351888,
+    "Annual Change": 0.01640
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q2 2015",
+    "Quarterly Change":0.0170241732,
+    "Annual Change": 1.43062
   }
 ]
