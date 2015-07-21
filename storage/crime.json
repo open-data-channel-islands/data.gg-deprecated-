@@ -3744,5 +3744,301 @@
     "Detected":3,
     "No Crime":0,
     "Outstanding":0
+  },
+  {
+  "Offence":"Abduction/Kidnap - all offences",
+  "Year":2014,
+  "Reported":1,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Assault - Common & Threats to kill",
+  "Year":2014,
+  "Reported":333,
+  "Detected":251,
+  "No Crime":28,
+  "Outstanding":54
+  },
+  {
+  "Offence":"Assault - GBH/Wounding",
+  "Year":2014,
+  "Reported":13,
+  "Detected":9,
+  "No Crime":1,
+  "Outstanding":3
+  },
+  {
+  "Offence":"Assault on Police",
+  "Year":2014,
+  "Reported":34,
+  "Detected":33,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Assault on Young Person",
+  "Year":2014,
+  "Reported":43,
+  "Detected":32,
+  "No Crime":7,
+  "Outstanding":4
+  },
+  {
+  "Offence":"Burglary dwelling",
+  "Year":2014,
+  "Reported":52,
+  "Detected":15,
+  "No Crime":9,
+  "Outstanding":28
+  },
+  {
+  "Offence":"Burglary non - dwelling",
+  "Year":2014,
+  "Reported":37,
+  "Detected":6,
+  "No Crime":2,
+  "Outstanding":29
+  },
+  {
+  "Offence":"Burglary - other offences",
+  "Year":2014,
+  "Reported":2,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Criminal damage/threats & arson",
+  "Year":2014,
+  "Reported":518,
+  "Detected":135,
+  "No Crime":20,
+  "Outstanding":363
+  },
+  {
+  "Offence":"Deception - all offences",
+  "Year":2014,
+  "Reported":2,
+  "Detected":0,
+  "No Crime":0,
+  "Outstanding":2
+  },
+  {
+  "Offence":"Drugs - all offences",
+  "Year":2014,
+  "Reported":81,
+  "Detected":77,
+  "No Crime":0,
+  "Outstanding":4
+  },
+  {
+  "Offence":"Escape lawful custody & assisting",
+  "Year":2014,
+  "Reported":2,
+  "Detected":2,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"False Imprisonment",
+  "Year":2014,
+  "Reported":0,
+  "Detected":0,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Firearms - all offences",
+  "Year":2014,
+  "Reported":2,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Fraud/false accounting",
+  "Year":2014,
+  "Reported":23,
+  "Detected":14,
+  "No Crime":4,
+  "Outstanding":5
+  },
+  {
+  "Offence":"Going equipped burglary/theft",
+  "Year":2014,
+  "Reported":2,
+  "Detected":2,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Gross indecency",
+  "Year":2014,
+  "Reported":2,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Handling stolen goods  all offences",
+  "Year":2014,
+  "Reported":3,
+  "Detected":3,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Harassment",
+  "Year":2014,
+  "Reported":10,
+  "Detected":8,
+  "No Crime":2,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Indecent assault - all offences",
+  "Year":2014,
+  "Reported":14,
+  "Detected":10,
+  "No Crime":1,
+  "Outstanding":3
+  },
+  {
+  "Offence":"Indecent exposure",
+  "Year":2014,
+  "Reported":3,
+  "Detected":2,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Indecent Images of Children",
+  "Year":2014,
+  "Reported":1,
+  "Detected":0,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Making Off without Payment",
+  "Year":2014,
+  "Reported":6,
+  "Detected":3,
+  "No Crime":1,
+  "Outstanding":2
+  },
+  {
+  "Offence":"Pervert justice",
+  "Year":2014,
+  "Reported":5,
+  "Detected":4,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Racial hatred",
+  "Year":2014,
+  "Reported":4,
+  "Detected":2,
+  "No Crime":0,
+  "Outstanding":2
+  },
+  {
+  "Offence":"Rape",
+  "Year":2014,
+  "Reported":10,
+  "Detected":5,
+  "No Crime":1,
+  "Outstanding":4
+  },
+  {
+  "Offence":"Robbery",
+  "Year":2014,
+  "Reported":1,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":0
+  },
+  {
+  "Offence":"Shoplifting",
+  "Year":2014,
+  "Reported":71,
+  "Detected":50,
+  "No Crime":6,
+  "Outstanding":15
+  },
+  {
+  "Offence":"Taking a Conveyance - All Offences",
+  "Year":2014,
+  "Reported":3,
+  "Detected":0,
+  "No Crime":1,
+  "Outstanding":2
+  },
+  {
+  "Offence":"Telecoms - all offences",
+  "Year":2014,
+  "Reported":2,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Theft - all other offences",
+  "Year":2014,
+  "Reported":273,
+  "Detected":56,
+  "No Crime":25,
+  "Outstanding":192
+  },
+  {
+  "Offence":"Theft & Taking of M/V",
+  "Year":2014,
+  "Reported":27,
+  "Detected":9,
+  "No Crime":2,
+  "Outstanding":16
+  },
+  {
+  "Offence":"Theft by Employee",
+  "Year":2014,
+  "Reported":12,
+  "Detected":10,
+  "No Crime":0,
+  "Outstanding":2
+  },
+  {
+  "Offence":"Theft from Vehicle",
+  "Year":2014,
+  "Reported":34,
+  "Detected":2,
+  "No Crime":3,
+  "Outstanding":29
+  },
+  {
+  "Offence":"Theft of cycle / without Consent",
+  "Year":2014,
+  "Reported":97,
+  "Detected":9,
+  "No Crime":5,
+  "Outstanding":83
+  },
+  {
+  "Offence":"Unlawful sexual intercourse",
+  "Year":2014,
+  "Reported":4,
+  "Detected":3,
+  "No Crime":0,
+  "Outstanding":1
+  },
+  {
+  "Offence":"Perjury",
+  "Year":2014,
+  "Reported":1,
+  "Detected":1,
+  "No Crime":0,
+  "Outstanding":0
   }
 ]

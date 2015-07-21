@@ -27,11 +27,11 @@ class Charts::CrimeController < ApplicationController
     reporting_types = {
     'Rape' => ['Rape'],
     'Robbery' => ['Robbery', 'Theft - Robbery'],
-    'Criminal Damage' => ['Criminal Damage', 'Criminal Damage & Threats','Criminal Damage/Threats & Arson', 'Criminal Damage/threats & arson'],
+    'Criminal Damage' => ['Criminal Damage', 'Criminal Damage & Threats','Criminal Damage/Threats & Arson', 'Criminal Damage/threats & arson', 'Criminal damage/threats & arson'],
     'Common Assault' => ['Common Assault', 'Assault - Common', 'Assault - Common & Threats to kill'],
-    'Fraud' => ['False Accounting & Destroy Docs', 'Fraud/False Accounting'],
-    'Burglary Dwelling' => ['Burglary Dwelling'],
-    'Shoplifting' => ['Shoplifting','Theft - shoplifting']
+    'Fraud' => ['False Accounting & Destroy Docs', 'Fraud/False Accounting', 'Fraud/false accounting'],
+    'Burglary Dwelling' => ['Burglary Dwelling', 'Burglary dwelling'],
+    'Shoplifting' => ['Shoplifting','Theft - shoplifting', 'Theft - Shoplifting']
     }  # Type name can changes between years, thanks Guernsey Police
     @results = []
 
