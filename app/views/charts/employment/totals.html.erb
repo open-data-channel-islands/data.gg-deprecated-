@@ -1,6 +1,9 @@
 <%= render 'head' %>
 
 <div id="container_totals" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+
 <%= javascript_tag do %>
 $(function() {
   initPage();

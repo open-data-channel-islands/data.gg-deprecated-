@@ -1,8 +1,9 @@
 <%= render 'head' %>
 
-<div id="container_domestic_consumption" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div id="container_offences" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
+<p><em>Updated 21/07/2015</em></p>
 
 <%= javascript_tag do %>
 $(function() {
@@ -13,7 +14,8 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    $('#container_domestic_consumption').highcharts({
+
+    $('#container_offences').highcharts({
         chart: {
             type: 'line'
         },
@@ -22,6 +24,7 @@ function initPage() {
         },
         xAxis: {
             allowDecimals: false,
+            crosshair: true,
             categories: <%= @labels.to_json.html_safe %>,
             title: {
                 text: 'Year'
@@ -30,13 +33,13 @@ function initPage() {
         yAxis: {
             allowDecimals: false,
             title: {
-                text: 'Count (ML)'
+                text: 'Count'
             }
         },
-        series: [{
-            name: '<%= @title %>',
-            data: <%= @domestic_consumption.to_json.html_safe -%>
-        }]
+        tooltip: {
+            shared: true,
+        },
+        series: <%= @results.to_json.html_safe %>
     });
 }
 <% end %>

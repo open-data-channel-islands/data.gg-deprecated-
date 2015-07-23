@@ -376,5 +376,48 @@
     "Type":"Passengers",
     "Fatal":0,
     "Serious":0
+  },
+// TODO: Guernsey Police only gave me 10/11 on Twitter. Check document (when updated) for 11th
+  {
+    "Year":2014,
+    "Type":"Adult Pedal Cycle",
+    "Fatal":0,
+    "Serious":1
+  },
+  {
+    "Year":2014,
+    "Type":"Adult Pedestrian",
+    "Fatal":0,
+    "Serious":2
+  },
+  {
+    "Year":2014,
+    "Type":"Drivers",
+    "Fatal":0,
+    "Serious":4
+  },
+  {
+    "Year":2014,
+    "Type":"Juvenile Pedal Cycle",
+    "Fatal":0,
+    "Serious":0
+  },
+  {
+    "Year":2014,
+    "Type":"Juvenile Pedestrian",
+    "Fatal":0,
+    "Serious":1
+  },
+  {
+    "Year":2014,
+    "Type":"Motorcycles",
+    "Fatal":0,
+    "Serious":2
+  },
+  {
+    "Year":2014,
+    "Type":"Passengers",
+    "Fatal":0,
+    "Serious":0
   }
 ]

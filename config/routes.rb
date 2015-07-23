@@ -37,6 +37,7 @@ DataGg::Application.routes.draw do
     get 'traffic' => 'traffic#classifications', as: :traffic
     get 'traffic/classifications' => 'traffic#classifications', as: :traffic_classifications
     get 'traffic/collisions' => 'traffic#collisions', as: :traffic_collisions
+    get 'traffic/offences' => 'traffic#offences', as: :traffic_offences
 
     # Population
     get 'population' => 'population#male_vs_female', as: :population
