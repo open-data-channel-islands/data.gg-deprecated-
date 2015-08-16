@@ -108,4 +108,9 @@
 {"Year":2013,"Quarter":"Q2","MeanAverageToppedAndTailed":429442,"MedianAverageAllResidential":411825,"MeanAverageHousesOnly":477375,"MedianAverageApartmentsOnly":255550,"MixAdjusted":455872,"NoOfTransactions":192},
 {"Year":2013,"Quarter":"Q3","MeanAverageToppedAndTailed":447127,"MedianAverageAllResidential":417050,"MeanAverageHousesOnly":483500,"MedianAverageApartmentsOnly":271438,"MixAdjusted":465008,"NoOfTransactions":196},
 {"Year":2013,"Quarter":"Q4","MeanAverageToppedAndTailed":440432,"MedianAverageAllResidential":405325,"MeanAverageHousesOnly":460750,"MedianAverageApartmentsOnly":271748,"MixAdjusted":447205,"NoOfTransactions":176},
-{"Year":2014,"Quarter":"Q1","MeanAverageToppedAndTailed":434787,"MedianAverageAllResidential":401375,"MeanAverageHousesOnly":448400,"MedianAverageApartmentsOnly":267188,"MixAdjusted":453398,"NoOfTransactions":131}]
+{"Year":2014,"Quarter":"Q1","MeanAverageToppedAndTailed":434787,"MedianAverageAllResidential":401375,"MeanAverageHousesOnly":448400,"MedianAverageApartmentsOnly":267188,"MixAdjusted":453398,"NoOfTransactions":131},
+{"Year":2014,"Quarter":"Q2","MeanAverageToppedAndTailed":459033,"MedianAverageAllResidential":418000,"MeanAverageHousesOnly":460750,"MedianAverageApartmentsOnly":289750,"MixAdjusted":468878,"NoOfTransactions":156},
+{"Year":2014,"Quarter":"Q3","MeanAverageToppedAndTailed":448102,"MedianAverageAllResidential":408000,"MeanAverageHousesOnly":484500,"MedianAverageApartmentsOnly":285000,"MixAdjusted":466228,"NoOfTransactions":161},
+{"Year":2014,"Quarter":"Q4","MeanAverageToppedAndTailed":455519,"MedianAverageAllResidential":418000,"MeanAverageHousesOnly":464312,"MedianAverageApartmentsOnly":313500,"MixAdjusted":462110,"NoOfTransactions":146},
+{"Year":2015,"Quarter":"Q1","MeanAverageToppedAndTailed":483843,"MedianAverageAllResidential":450625,"MeanAverageHousesOnly":494500,"MedianAverageApartmentsOnly":257063,"MixAdjusted":445923,"NoOfTransactions":116},
+{"Year":2015,"Quarter":"Q2","MeanAverageToppedAndTailed":440387,"MedianAverageAllResidential":422500,"MeanAverageHousesOnly":456000,"MedianAverageApartmentsOnly":250800,"MixAdjusted":436971,"NoOfTransactions":126}]
