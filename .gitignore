@@ -16,6 +16,7 @@
 /tmp
 
 /svgs
+/maps
 /config/database.yml
 /public/assets
 public/data

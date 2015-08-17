@@ -1,9 +1,14 @@
 <%= render 'head' %>
 <h1>This map is work in progress!</h1>
-<div id="container_parish" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<div id="container_parish" style="display:block; margin:auto;text-align:center;">
+  <%= render partial: 'shared/gsy' %>
+</div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
 <p><em>Updated 13/04/2015</em></p>
+
+
 
 <script type="text/javascript">
 $(function() {
@@ -14,89 +19,30 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    // Prepare random data
-    var data = [
-        {
-            "parish": "VALE",
-            "value": 728
-        },
-        {
-            "parish": "ST. SAMPSON",
-            "value": 728
-        },
-        {
-            "parish": "CASTEL",
-            "value": 728
-        },
-        {
-            "parish": "ST. PETER PORT",
-            "value": 728
-        },
-        {
-            "parish": "ST. ANDREW",
-            "value": 728
-        },
-        {
-            "parish": "ST. PIERRE DU BOIS",
-            "value": 728
-        },
-                        {
-            "parish": "ST. SAVIOUR",
-            "value": 728
-        },
-        {
-            "parish": "HERM",
-            "value": 728
-        },
-        {
-            "parish": "ALDERNEY",
-            "value": 728
-        }
-    ];
 
-    $.getJSON('http://localhost:3000/digimap.json', function (geojson) {
+  $('#container_parish > svg > g > path').hover(function() {
 
-        // Initiate the chart
-        $('#container_parish').highcharts('Map', {
-            chart: {
-              //plotBorderWidth: 2,
-            },
+      $("[class^=text_]").attr("visibility","hidden");
+      $("[class^=path_]").css("fill","#cccccc");
 
-            title : {
-                text : 'Guernsey'
-            },
+/*     debugger;*/
+      /*alert($(this).attr('id'));*/
+      var path_parish = $(this).attr('class');
+      var parish = path_parish.substring(5, path_parish.length);
+      var selector = '.text_' + parish;
 
-            mapNavigation: {
-                //enabled: true,
-            },
+/*       if ($(selector).length == 0) {
+        alert(path_parish);
+       } else {*/
+        $(selector).attr("visibility","shown");
+        $("." + path_parish).css("fill","green");
+      /*}*/
 
-            xAxis: {
-                //minRange: 0.1,
-                min: -2.7081298828124996,
-                max: -2.4835968017578125
-            },
-
-            yAxis: {
-                //minRange: 0.1,
-            },
-
-
-            series : [{
-                data : data,
-                mapData: geojson,
-                name: 'Population',
-                joinBy: ['name', 'parish'],
-                states: {
-                    hover: {
-                        color: '#BADA55'
-                    }
-                },
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.properties.name}'
-                }
-            }]
-        });
     });
+
+
+/*  $('#container_parish > svg > g > text:first').attr("visibility","shown");*/
+ /* $('[class^=text_]').attr("visibility","shown");*/
+
 }
 </script>
