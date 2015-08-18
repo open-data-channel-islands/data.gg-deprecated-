@@ -1,13 +1,16 @@
 <%= render 'head' %>
-<h1>This map is work in progress!</h1>
-
+<div id="container_key">
+  <div class="panel panel-default">
+    <div class="panel-heading" id="parish-name"></div>
+    <div class="panel-body" id="parish-detail"></div>
+  </div>
+</div>
 <div id="container_parish" style="display:block; margin:auto;text-align:center;">
   <%= render partial: 'shared/gsy' %>
 </div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
 <p><em>Updated 13/04/2015</em></p>
-
 
 
 <script type="text/javascript">
@@ -20,24 +23,40 @@ $(window).bind('page:change', function() {
 
 function initPage() {
 
-  $('#container_parish > svg > g > path').hover(function() {
+  var dict = {
+    "path_alderney" : ["Alderney", "Population (2014): -"],
+    "path_herm" : ["Herm", "Population (2014): 84"],
+    "path_sark" : ["Sark", "Population (2014): -"],
+    "path_torteval" : ["Torteval", "Population (2014): 1,028"],
+    "path_st_pierre_du_bois" : ["St Pierre Du Bois", "Population (2014): 2,108"],
+    "path_st_saviour" : ["St Saviour", "Population (2014): 2,753"],
+    "path_forest" : ["Forest", "Population (2014): 1,586"],
+    "path_st_andrew" : ["St Andrew", "Population (2014): 2,411"],
+    "path_st_martin" : ["St Martin", "Population (2014): 6,387"],
+    "path_st_peter_port" : ["St Peter Port", "Population (2014): 18,207"],
+    "path_castel" : ["Castel", "Population (2014): 8,785"],
+    "path_vale" : ["Vale", "Population (2014): 9,415"],
+    "path_st_sampson" : ["St Sampson", "Population (2014): 8,890"],
+  };
 
-      $("[class^=text_]").attr("visibility","hidden");
-      $("[class^=path_]").css("fill","#cccccc");
 
-/*     debugger;*/
+
+  $("[inkscape\\:label^=path_]").hover(function() {
+      //$("[class^=text_]").attr("visibility","hidden");
+      $("[inkscape\\:label^=path_]").css("fill","#cccccc");
+     /* $("#parish-name").html("");
+      $("#parish-detail").html("");*/
+
+
       /*alert($(this).attr('id'));*/
-      var path_parish = $(this).attr('class');
+      var path_parish = $(this).attr("inkscape\:label");
       var parish = path_parish.substring(5, path_parish.length);
-      var selector = '.text_' + parish;
+      //var selector = "[inkscape\\:label='text_" + parish + ']';
 
-/*       if ($(selector).length == 0) {
-        alert(path_parish);
-       } else {*/
-        $(selector).attr("visibility","shown");
-        $("." + path_parish).css("fill","green");
-      /*}*/
+      $("[inkscape\\:label=" + path_parish + "]").css("fill","orange");
 
+      $("#parish-name").html(dict[path_parish][0]);
+      $("#parish-detail").html(dict[path_parish][1]);
     });
 
 
