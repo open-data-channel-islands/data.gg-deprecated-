@@ -1,6 +1,6 @@
 # data.gg
 
-![](https://github.com/jasemagee/data.gg/blob/master/image.png)
+![](https://github.com/open-data-channel-islands/data.gg/blob/master/image.png)
 
 ## What?
 
@@ -12,12 +12,12 @@ Because we are far behind other places in the world, and to push forward with so
 
 ## Contributing
 
-Don't panic. This is a Ruby on Rails application. You will mostly be interested in the [/storage](https://github.com/jasemagee/data.gg/tree/master/storage) folder which contains all the data in JSON files. JSON is a good format for storing data and you can generate it from a CSV by using tools such as http://www.convertcsv.com/csv-to-json.htm.
+Don't panic. This is a Ruby on Rails application. You will mostly be interested in the [/storage](https://github.com/open-data-channel-islands/data.gg/tree/master/storage) folder which contains all the data in JSON files. JSON is a good format for storing data and you can generate it from a CSV by using tools such as http://www.convertcsv.com/csv-to-json.htm.
 
-The [/app](https://github.com/jasemagee/data.gg/tree/master/app) folder will be of interest to developers. In here you will find folder for [models](https://github.com/jasemagee/data.gg/tree/master/app/models), [views](https://github.com/jasemagee/data.gg/tree/master/app/views) and [controllers](https://github.com/jasemagee/data.gg/tree/master/app/controllers). [Models](https://github.com/jasemagee/data.gg/tree/master/app/models) and [controllers](https://github.com/jasemagee/data.gg/tree/master/app/controllers) are Ruby based and the [views](https://github.com/jasemagee/data.gg/tree/master/app/views) are ERB files which allow you to blend HTML and Ruby.
+The [/app](https://github.com/open-data-channel-islands/data.gg/tree/master/app) folder will be of interest to developers. In here you will find folder for [models](https://github.com/open-data-channel-islands/data.gg/tree/master/app/models), [views](https://github.com/open-data-channel-islands/data.gg/tree/master/app/views) and [controllers](https://github.com/open-data-channel-islands/data.gg/tree/master/app/controllers). [Models](https://github.com/open-data-channel-islands/data.gg/tree/master/app/models) and [controllers](https://github.com/open-data-channel-islands/data.gg/tree/master/app/controllers) are Ruby based and the [views](https://github.com/open-data-channel-islands/data.gg/tree/master/app/views) are ERB files which allow you to blend HTML and Ruby.
 
 ## Contributors
 
 [Adrian Ritchie](https://twitter.com/gringod)
-
 [Alex Cassells](https://twitter.com/alexcassells)
+[Alex Bush](https://twitter.com/alextbush)
