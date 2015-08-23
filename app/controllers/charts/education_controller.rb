@@ -76,7 +76,8 @@ class Charts::EducationController < ApplicationController
       '2010-2011',
       '2011-2012',
       '2012-2013',
-      '2013-2014'
+      '2013-2014',
+      '2014-2015'
     ]
     @results = []
     gcses_by_school.sort_by{|p| p["Year"][0..4]}.group_by{ |p| p["School"] }.each do |school, val|
