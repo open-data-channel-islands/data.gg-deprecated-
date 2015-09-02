@@ -2,7 +2,7 @@ class Charts::TrafficController < ApplicationController
 
   def classifications
     @title = 'Classifications'
-    classifications_json = File.read("storage/traffic_classifications.json")
+    classifications_json = File.read("storage/#{ENV['place_code']}/traffic/traffic_classifications.json")
     classifications = JSON.parse(classifications_json)
 
     @fatals = []
@@ -25,7 +25,7 @@ class Charts::TrafficController < ApplicationController
 
   def collisions
     @title = 'Collisions'
-    collisions_json = File.read("storage/traffic_collisions.json")
+    collisions_json = File.read("storage/#{ENV['place_code']}/traffic/traffic_collisions.json")
     collisions = JSON.parse(collisions_json)
 
     @collisions = []
@@ -44,7 +44,7 @@ class Charts::TrafficController < ApplicationController
   def offences
     @title = 'Offences'
 
-    traffic_json = File.read("storage/traffic.json")
+    traffic_json = File.read("storage/#{ENV['place_code']}/traffic/traffic.json")
     traffics = JSON.parse(traffic_json)
     traffics.sort_by! {|c| c['Year'].to_i }
 
@@ -62,7 +62,6 @@ class Charts::TrafficController < ApplicationController
     @results = []
 
     reporting_types.each do |reporting_name, data_type_names|
-      p reporting_name
       result = []
 
       @labels.each do |year|
@@ -71,9 +70,6 @@ class Charts::TrafficController < ApplicationController
         traffics.each do |traffic|
           next if traffic['Year'] != year
           next if !data_type_names.include?(traffic['Offence'])
-
-          p "#{traffic['Year']} - #{traffic['Offence']}"
-
 
           year_value = traffic['Count']
         end

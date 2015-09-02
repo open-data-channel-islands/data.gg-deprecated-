@@ -22,3 +22,6 @@
 public/data
 test
 development
+
+# Ignore application configuration
+/config/application.yml

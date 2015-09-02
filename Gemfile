@@ -35,6 +35,8 @@ gem 'nokogiri'
 gem 'unicorn'
 gem 'highcharts-rails'
 
+gem "figaro"
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

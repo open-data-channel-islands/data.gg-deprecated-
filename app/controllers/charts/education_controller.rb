@@ -3,7 +3,7 @@ class Charts::EducationController < ApplicationController
 
   def post16results
     @title = 'A-Level Results'
-    post16_json = File.read("storage/post16results.json")
+    post16_json = File.read("storage/#{ENV['place_code']}/education/post16results.json")
     post16_results = JSON.parse(post16_json)
 
     # Just get the A-level result for now....
@@ -26,7 +26,7 @@ class Charts::EducationController < ApplicationController
 
   def post16results_btec
     @title = 'BTEC Results'
-    post16_json = File.read("storage/post16results.json")
+    post16_json = File.read("storage/#{ENV['place_code']}/education/post16results.json")
     post16_results = JSON.parse(post16_json)
 
     btec_results = post16_results.find_all{|item| item["Type"] == "BTEC" && item['Year'] != '2010-2011' && item['Year'] != '2011-2012' }
@@ -48,7 +48,7 @@ class Charts::EducationController < ApplicationController
   def gcses_overall
     @title = 'GCSE Overall'
 
-    gcses_json = File.read("storage/gcse_overall.json")
+    gcses_json = File.read("storage/#{ENV['place_code']}/education/gcse_overall.json")
     gcses_overall = JSON.parse(gcses_json)
 
     @labels = [ '5+ A*– C (including English and Maths)' ]
@@ -69,7 +69,7 @@ class Charts::EducationController < ApplicationController
 
   def gcses_by_school
     @title = 'GCSE By School'
-    gcses_json = File.read("storage/gcse_school.json")
+    gcses_json = File.read("storage/#{ENV['place_code']}/education/gcse_school.json")
     gcses_by_school = JSON.parse(gcses_json)
 
     @labels = [

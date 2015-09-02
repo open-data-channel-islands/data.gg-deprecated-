@@ -19,7 +19,7 @@ class Charts::CrimeController < ApplicationController
   private
 
   def collect_results(field)
-    crime_json = File.read("storage/crime.json")
+    crime_json = File.read("storage/#{ENV['place_code']}/crime/crime.json")
     crimes = JSON.parse(crime_json)
     crimes.sort_by! {|c| c['Year'].to_i }
 

@@ -1,7 +1,7 @@
 class Api::V10::WaterController < ApplicationController
   def domestic_consumption
     @title = 'Domestic Consumption'
-    domestic_consumption_json = File.read("storage/water/domestic_consumption.json")
+    domestic_consumption_json = File.read("storage/#{ENV['place_code']}/water/domestic_consumption.json")
     @domestic_consumption = JSON.parse(domestic_consumption_json)
 
     respond_to do |format|

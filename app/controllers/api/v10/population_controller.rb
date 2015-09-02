@@ -2,7 +2,7 @@ class Api::V10::PopulationController < ApplicationController
 
   def population
     @title = 'Population'
-    population_json = File.read("storage/population/population.json")
+    population_json = File.read("storage/#{ENV['place_code']}/population/population.json")
     @population = JSON.parse(population_json)
     @population.sort_by! { |c| c['Year'] }
 
@@ -16,7 +16,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def age
-    json_data = File.read("storage/population/age.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/age.json")
     @age = JSON.parse(json_data)
     @title = 'Age'
 
@@ -30,7 +30,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def age_female
-    json_data = File.read("storage/population/age_female.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/age_female.json")
     @age = JSON.parse(json_data)
     @title = 'Age Female'
 
@@ -44,7 +44,7 @@ class Api::V10::PopulationController < ApplicationController
   end
 
   def age_male
-    json_data = File.read("storage/population/age_male.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/age_male.json")
     @age = JSON.parse(json_data)
     @title = 'Age Male'
 
@@ -59,7 +59,7 @@ class Api::V10::PopulationController < ApplicationController
 
   def birthplace
     @title = 'Birthplace'
-    json_data = File.read("storage/population/birthplace.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/birthplace.json")
     @birthplace = JSON.parse(json_data)
 
     respond_to do |format|
@@ -71,7 +71,7 @@ class Api::V10::PopulationController < ApplicationController
 
   def changes
     @title = 'Changes'
-    json_data = File.read("storage/population/changes.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/changes.json")
     @changes = JSON.parse(json_data)
 
     respond_to do |format|
@@ -83,7 +83,7 @@ class Api::V10::PopulationController < ApplicationController
 
   def district
     @title = 'District'
-    json_data = File.read("storage/population/district.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/district.json")
     @district = JSON.parse(json_data)
 
     respond_to do |format|
@@ -95,7 +95,7 @@ class Api::V10::PopulationController < ApplicationController
 
   def parish
     @title = 'Parish'
-    json_data = File.read("storage/population/parish.json")
+    json_data = File.read("storage/#{ENV['place_code']}/population/parish.json")
     @parish = JSON.parse(json_data)
 
     respond_to do |format|

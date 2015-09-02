@@ -4,7 +4,7 @@ class Api::V10::BusesController < ApplicationController
 
   def usage
     @title = 'Usage'
-    bus_json = File.read("storage/bus_usage.json")
+    bus_json = File.read("storage/#{ENV['place_code']}/buses/bus_usage.json")
     @buses = JSON.parse(bus_json)
     @buses.sort_by! { |c| c['Year'] }
 

@@ -1,7 +1,7 @@
 class Api::V10::EmissionsController < ApplicationController
   def types
     @title = 'Types'
-    type_json = File.read("storage/emissions/type.json")
+    type_json = File.read("storage/#{ENV['place_code']}/emissions/type.json")
     @types = JSON.parse(type_json)
 
     respond_to do |format|
