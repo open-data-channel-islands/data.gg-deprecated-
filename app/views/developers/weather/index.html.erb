@@ -17,17 +17,15 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Annual Weather', target: method(:api_v10_weather_annual_path), desc: 'Annual weather stats from 2010' } %>
+      locals: { name: 'Annual Weather', target: method(:api_v10_weather_annual_path), desc: 'Annual weather stats from 2010', updated: '-' } %>
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Monthly Weather', target: method(:api_v10_weather_monthly_path), desc: 'Monthly weather stats from Jan 2010' } %>
+      locals: { name: 'Monthly Weather', target: method(:api_v10_weather_monthly_path), desc: 'Monthly weather stats from Jan 2010', updated: '-' } %>
     </tbody>
   </table>
 </div>

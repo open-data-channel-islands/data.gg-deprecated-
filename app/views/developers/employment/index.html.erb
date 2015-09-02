@@ -17,16 +17,14 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Totals', target: method(:api_v10_employment_totals_path), desc: 'Employed, unemployed and employer totals since Q4 2012 (missing Q4 2012 employed)' } %>
+      locals: { name: 'Totals', target: method(:api_v10_employment_totals_path), desc: 'Employed, unemployed and employer totals since Q4 2012 (missing Q4 2012 employed)', updated: '-' } %>
     </tbody>
   </table>
 </div>

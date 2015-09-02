@@ -17,20 +17,24 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Harbour', target: method(:api_v10_sailings_harbour_path), desc: 'Live sailings data from the Guernsey Harbour. Includes both arrivals and departures' } %>
+      locals: { name: 'Harbour', target: method(:api_v10_sailings_harbour_path),
+        desc: 'Live sailings data from the Guernsey Harbour. Includes both arrivals and departures',
+        updated: '-' } %>
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Condor Punctuality', target: method(:api_v10_sailings_condor_punctuality_path), desc: 'Condor punctuality from published reports' } %>
+      locals: { name: 'Condor Punctuality', target: method(:api_v10_sailings_condor_punctuality_path),
+        desc: 'Condor punctuality from published reports',
+        updated: '-' } %>
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Cruises', target: method(:api_v10_sailings_cruises_path), desc: 'Visting cruise ships' } %>
+      locals: { name: 'Cruises', target: method(:api_v10_sailings_cruises_path),
+        desc: 'Visting cruise ships',
+        updated: '-' } %>
     </tbody>
   </table>
 </div>

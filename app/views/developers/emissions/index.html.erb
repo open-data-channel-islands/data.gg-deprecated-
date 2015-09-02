@@ -17,16 +17,14 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Types', target: method(:api_v10_emissions_types_path), desc: 'Emissions since 1990 by type in kt for Carbon Dioxide and kt of CO2 equivalent for others' } %>
+      locals: { name: 'Types', target: method(:api_v10_emissions_types_path), desc: 'Emissions since 1990 by type in kt for Carbon Dioxide and kt of CO2 equivalent for others', updated: '-' } %>
     </tbody>
   </table>
 </div>
