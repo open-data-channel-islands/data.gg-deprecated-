@@ -81,8 +81,9 @@ DataGg::Application.routes.draw do
     get 'weather' => 'weather#totals'
     get 'weather/totals' => 'weather#totals'
 
-    get 'finance' => 'finance#banking'
-    get 'finance/banking' => 'finance#banking'
+    get 'finance' => 'finance#deposits'
+    get 'finance/deposits' => 'finance#deposits'
+    get 'finance/licences' => 'finance#licences'
   end
 
 

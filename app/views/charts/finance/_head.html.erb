@@ -12,5 +12,6 @@
 </div>
 
 <ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/finance', 'banking') %>"><%= link_to 'Banking', charts_finance_banking_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/finance', 'deposits') %>"><%= link_to 'Deposits', charts_finance_deposits_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/finance', 'licences') %>"><%= link_to 'Licences', charts_finance_licences_path %></li>
 </ul>
