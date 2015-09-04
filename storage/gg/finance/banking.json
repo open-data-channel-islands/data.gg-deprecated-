@@ -1,0 +1,470 @@
+[
+  {
+    "Quarter": "1996 Q1",
+    "BnakingLicences": 75,
+    "TotalDeposits": 45897,
+    "PercentageChange": -2
+  },
+  {
+    "Quarter": "1996 Q2",
+    "BankingLicences": 76,
+    "TotalDeposits": 44917,
+    "PercentageChange": -2.1
+  },
+  {
+    "Quarter": "1996 Q3",
+    "BankingLicences": 75,
+    "TotalDeposits": 43832,
+    "PercentageChange": -2.4
+  },
+  {
+    "Quarter": "1996 Q4",
+    "BankingLicences": 72,
+    "TotalDeposits": 43324,
+    "PercentageChange": -1.2
+  },
+  {
+    "Quarter": "1997 Q1",
+    "BankingLicences": 73,
+    "TotalDeposits": 45652,
+    "PercentageChange": 5.4
+  },
+  {
+    "Quarter": "1997 Q2",
+    "BankingLicences": 75,
+    "TotalDeposits": 45973,
+    "PercentageChange": 0.7
+  },
+  {
+    "Quarter": "1997 Q3",
+    "BankingLicences": 79,
+    "TotalDeposits": 47786,
+    "PercentageChange": 3.9
+  },
+  {
+    "Quarter": "1997 Q4",
+    "BankingLicences": 78,
+    "TotalDeposits": 49357,
+    "PercentageChange": 3.3
+  },
+  {
+    "Quarter": "1998 Q1",
+    "BankingLicences": 76,
+    "TotalDeposits": 48658,
+    "PercentageChange": -1.4
+  },
+  {
+    "Quarter": "1998 Q2",
+    "BankingLicences": 76,
+    "TotalDeposits": 49792,
+    "PercentageChange": 2.3
+  },
+  {
+    "Quarter": "1998 Q3",
+    "BankingLicences": 78,
+    "TotalDeposits": 50434,
+    "PercentageChange": 1.3
+  },
+  {
+    "Quarter": "1998 Q4",
+    "BankingLicences": 78,
+    "TotalDeposits": 52922,
+    "PercentageChange": 4.9
+  },
+  {
+    "Quarter": "1999 Q1",
+    "BankingLicences": 78,
+    "TotalDeposits": 54040,
+    "PercentageChange": 2.1
+  },
+  {
+    "Quarter": "1999 Q2",
+    "BankingLicences": 79,
+    "TotalDeposits": 56581,
+    "PercentageChange": 4.7
+  },
+  {
+    "Quarter": "1999 Q3",
+    "BankingLicences": 79,
+    "TotalDeposits": 55703,
+    "PercentageChange": -1.6
+  },
+  {
+    "Quarter": "1999 Q4",
+    "BankingLicences": 79,
+    "TotalDeposits": 57059,
+    "PercentageChange": 2.4
+  },
+  {
+    "Quarter": "2000 Q1",
+    "BankingLicences": 78,
+    "TotalDeposits": 59729,
+    "PercentageChange": 4.7
+  },
+  {
+    "Quarter": "2000 Q2",
+    "BankingLicences": 78,
+    "TotalDeposits": 61086,
+    "PercentageChange": 2.3
+  },
+  {
+    "Quarter": "2000 Q3",
+    "BankingLicences": 79,
+    "TotalDeposits": 65678,
+    "PercentageChange": 7.5
+  },
+  {
+    "Quarter": "2000 Q4",
+    "BankingLicences": 77,
+    "TotalDeposits": 68474,
+    "PercentageChange": 4.3
+  },
+  {
+    "Quarter": "2001 Q1",
+    "BankingLicences": 76,
+    "TotalDeposits": 72323,
+    "PercentageChange": 5.6
+  },
+  {
+    "Quarter": "2001 Q2",
+    "BankingLicences": 75,
+    "TotalDeposits": 73911,
+    "PercentageChange": 2.2
+  },
+  {
+    "Quarter": "2001 Q3",
+    "BankingLicences": 76,
+    "TotalDeposits": 76162,
+    "PercentageChange": 3
+  },
+  {
+    "Quarter": "2001 Q4",
+    "BankingLicences": 72,
+    "TotalDeposits": 77211,
+    "PercentageChange": 1.4
+  },
+  {
+    "Quarter": "2002 Q1",
+    "BankingLicences": 71,
+    "TotalDeposits": 77273,
+    "PercentageChange": 0.1
+  },
+  {
+    "Quarter": "2002 Q2",
+    "BankingLicences": 71,
+    "TotalDeposits": 74235,
+    "PercentageChange": -3.9
+  },
+  {
+    "Quarter": "2002 Q3",
+    "BankingLicences": 69,
+    "TotalDeposits": 71821,
+    "PercentageChange": -3.3
+  },
+  {
+    "Quarter": "2002 Q4",
+    "BankingLicences": 67,
+    "TotalDeposits": 71943,
+    "PercentageChange": 0.2
+  },
+  {
+    "Quarter": "2003 Q1",
+    "BankingLicences": 66,
+    "TotalDeposits": 74165,
+    "PercentageChange": 3.1
+  },
+  {
+    "Quarter": "2003 Q2",
+    "BankingLicences": 66,
+    "TotalDeposits": 71935,
+    "PercentageChange": -3
+  },
+  {
+    "Quarter": "2003 Q3",
+    "BankingLicences": 66,
+    "TotalDeposits": 71295,
+    "PercentageChange": -0.9
+  },
+  {
+    "Quarter": "2003 Q4",
+    "BankingLicences": 61,
+    "TotalDeposits": 69703,
+    "PercentageChange": -2.2
+  },
+  {
+    "Quarter": "2004 Q1",
+    "BankingLicences": 59,
+    "TotalDeposits": 68413,
+    "PercentageChange": -1.9
+  },
+  {
+    "Quarter": "2004 Q2",
+    "BankingLicences": 59,
+    "TotalDeposits": 68511,
+    "PercentageChange": 0.1
+  },
+  {
+    "Quarter": "2004 Q3",
+    "BankingLicences": 59,
+    "TotalDeposits": 68648,
+    "PercentageChange": 0.2
+  },
+  {
+    "Quarter": "2004 Q4",
+    "BankingLicences": 54,
+    "TotalDeposits": 70426,
+    "PercentageChange": 2.6
+  },
+  {
+    "Quarter": "2005 Q1",
+    "BankingLicences": 54,
+    "TotalDeposits": 72278,
+    "PercentageChange": 2.6
+  },
+  {
+    "Quarter": "2005 Q2",
+    "BankingLicences": 51,
+    "TotalDeposits": 72727,
+    "PercentageChange": 0.6
+  },
+  {
+    "Quarter": "2005 Q3",
+    "BankingLicences": 51,
+    "TotalDeposits": 77458,
+    "PercentageChange": 6.5
+  },
+  {
+    "Quarter": "2005 Q4",
+    "BankingLicences": 50,
+    "TotalDeposits": 80728,
+    "PercentageChange": 4.2
+  },
+  {
+    "Quarter": "2006 Q1",
+    "BankingLicences": 51,
+    "TotalDeposits": 85598,
+    "PercentageChange": 6
+  },
+  {
+    "Quarter": "2006 Q2",
+    "BankingLicences": 51,
+    "TotalDeposits": 89260,
+    "PercentageChange": 4.3
+  },
+  {
+    "Quarter": "2006 Q3",
+    "BankingLicences": 51,
+    "TotalDeposits": 89374,
+    "PercentageChange": 0.1
+  },
+  {
+    "Quarter": "2006 Q4",
+    "BankingLicences": 50,
+    "TotalDeposits": 92349,
+    "PercentageChange": 3.3
+  },
+  {
+    "Quarter": "2007 Q1",
+    "BankingLicences": 49,
+    "TotalDeposits": 105347,
+    "PercentageChange": 14.1
+  },
+  {
+    "Quarter": "2007 Q2",
+    "BankingLicences": 50,
+    "TotalDeposits": 108139,
+    "PercentageChange": 2.7
+  },
+  {
+    "Quarter": "2007 Q3",
+    "BankingLicences": 50,
+    "TotalDeposits": 112664,
+    "PercentageChange": 4.2
+  },
+  {
+    "Quarter": "2007 Q4",
+    "BankingLicences": 47,
+    "TotalDeposits": 119170,
+    "PercentageChange": 5.8
+  },
+  {
+    "Quarter": "2008 Q1",
+    "BankingLicences": 47,
+    "TotalDeposits": 129551,
+    "PercentageChange": 8.7
+  },
+  {
+    "Quarter": "2008 Q2",
+    "BankingLicences": 47,
+    "TotalDeposits": 128091,
+    "PercentageChange": -1.1
+  },
+  {
+    "Quarter": "2008 Q3",
+    "BankingLicences": 49,
+    "TotalDeposits": 136293,
+    "PercentageChange": 6.4
+  },
+  {
+    "Quarter": "2008 Q4",
+    "BankingLicences": 48,
+    "TotalDeposits": 157009,
+    "PercentageChange": 15.2
+  },
+  {
+    "Quarter": "2009 Q1",
+    "BankingLicences": 46,
+    "TotalDeposits": 142955,
+    "PercentageChange": -9
+  },
+  {
+    "Quarter": "2009 Q2",
+    "BankingLicences": 46,
+    "TotalDeposits": 124591,
+    "PercentageChange": -12.8
+  },
+  {
+    "Quarter": "2009 Q3",
+    "BankingLicences": 45,
+    "TotalDeposits": 120181,
+    "PercentageChange": -3.5
+  },
+  {
+    "Quarter": "2009 Q4",
+    "BankingLicences": 44,
+    "TotalDeposits": 117415,
+    "PercentageChange": -2.3
+  },
+  {
+    "Quarter": "2010 Q1",
+    "BankingLicences": 43,
+    "TotalDeposits": 118671,
+    "PercentageChange": 1.1
+  },
+  {
+    "Quarter": "2010 Q2",
+    "BankingLicences": 42,
+    "TotalDeposits": 116811,
+    "PercentageChange": -1.6
+  },
+  {
+    "Quarter": "2010 Q3",
+    "BankingLicences": 40,
+    "TotalDeposits": 115981,
+    "PercentageChange": -0.7
+  },
+  {
+    "Quarter": "2010 Q4",
+    "BankingLicences": 38,
+    "TotalDeposits": 111030,
+    "PercentageChange": -4.3
+  },
+  {
+    "Quarter": "2011 Q1",
+    "BankingLicences": 38,
+    "TotalDeposits": 112868,
+    "PercentageChange": 1.7
+  },
+  {
+    "Quarter": "2011 Q2",
+    "BankingLicences": 39,
+    "TotalDeposits": 113876,
+    "PercentageChange": 0.9
+  },
+  {
+    "Quarter": "2011 Q3",
+    "BankingLicences": 37,
+    "TotalDeposits": 114158,
+    "PercentageChange": 0.2
+  },
+  {
+    "Quarter": "2011 Q4",
+    "BankingLicences": 35,
+    "TotalDeposits": 107545,
+    "PercentageChange": -5.8
+  },
+  {
+    "Quarter": "2012 Q1",
+    "BankingLicences": 35,
+    "TotalDeposits": 100992,
+    "PercentageChange": -6.1
+  },
+  {
+    "Quarter": "2012 Q2",
+    "BankingLicences": 35,
+    "TotalDeposits": 103137,
+    "PercentageChange": 2.1
+  },
+  {
+    "Quarter": "2012 Q3",
+    "BankingLicences": 34,
+    "TotalDeposits": 96942,
+    "PercentageChange": -6
+  },
+  {
+    "Quarter": "2012 Q4",
+    "BankingLicences": 32,
+    "TotalDeposits": 86683,
+    "PercentageChange": -10.6
+  },
+  {
+    "Quarter": "2013 Q1",
+    "BankingLicences": 32,
+    "TotalDeposits": 90521,
+    "PercentageChange": 4.4
+  },
+  {
+    "Quarter": "2013 Q2",
+    "BankingLicences": 32,
+    "TotalDeposits": 89691,
+    "PercentageChange": -0.9
+  },
+  {
+    "Quarter": "2013 Q3",
+    "BankingLicences": 32,
+    "TotalDeposits": 84079,
+    "PercentageChange": -6.3
+  },
+  {
+    "Quarter": "2013 Q4",
+    "BankingLicences": 31,
+    "TotalDeposits": 83705,
+    "PercentageChange": -0.4
+  },
+  {
+    "Quarter": "2014 Q1",
+    "BankingLicences": 31,
+    "TotalDeposits": 82026,
+    "PercentageChange": -2
+  },
+  {
+    "Quarter": "2014 Q2",
+    "BankingLicences": 30,
+    "TotalDeposits": 77484,
+    "PercentageChange": -5.5
+  },
+  {
+    "Quarter": "2014 Q3",
+    "BankingLicences": 30,
+    "TotalDeposits": 80953,
+    "PercentageChange": 4.5
+  },
+  {
+    "Quarter": "2014 Q4",
+    "BankingLicences": 31,
+    "TotalDeposits": 83661,
+    "PercentageChange": 3.3
+  },
+  {
+    "Quarter": "2015 Q1",
+    "BankingLicences": 31,
+    "TotalDeposits": 83407,
+    "PercentageChange": -0.3
+  },
+  {
+    "Quarter": "2015 Q2",
+    "BankingLicences": 30,
+    "TotalDeposits": 83565,
+    "PercentageChange": 0.2
+  }
+]
