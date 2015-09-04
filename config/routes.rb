@@ -1,4 +1,5 @@
 DataGg::Application.routes.draw do
+
   # You can have the root of your site routed with "root"
   root 'home#index'
 
@@ -79,6 +80,9 @@ DataGg::Application.routes.draw do
     # Weather
     get 'weather' => 'weather#totals'
     get 'weather/totals' => 'weather#totals'
+
+    get 'finance' => 'finance#banking'
+    get 'finance/banking' => 'finance#banking'
   end
 
 
@@ -101,6 +105,7 @@ DataGg::Application.routes.draw do
     get 'employment' => 'employment#index'
     get 'emissions' => 'emissions#index'
     get 'weather' => 'weather#index'
+    get 'finance' => 'finance#index'
   end
 
 
@@ -161,6 +166,8 @@ DataGg::Application.routes.draw do
 
       get 'weather/annual' => 'weather#annual'
       get 'weather/monthly' => 'weather#monthly'
+
+      get 'finance/banking' => 'finance#banking'
     end
   end
 
