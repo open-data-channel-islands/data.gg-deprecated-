@@ -1,7 +1,7 @@
 class Api::V10::InflationController < ApplicationController
   def changes
     @title = 'Changes'
-    inflation_json = File.read("storage/inflation/changes.json")
+    inflation_json = File.read("storage/#{ENV['place_code']}/inflation/changes.json")
     @changes = JSON.parse(inflation_json)
 
     respond_to do |format|
@@ -12,7 +12,7 @@ class Api::V10::InflationController < ApplicationController
   end
 
   def rpi_group_changes
-    inflation_json = File.read("storage/inflation/rpi_group_changes.json")
+    inflation_json = File.read("storage/#{ENV['place_code']}/inflation/rpi_group_changes.json")
     @group_changes = JSON.parse(inflation_json)
     @title = 'RPI Group Changes'
 
@@ -24,7 +24,7 @@ class Api::V10::InflationController < ApplicationController
   end
 
   def rpix_group_changes
-    inflation_json = File.read("storage/inflation/rpix_group_changes.json")
+    inflation_json = File.read("storage/#{ENV['place_code']}/inflation/rpix_group_changes.json")
     @group_changes = JSON.parse(inflation_json)
     @title = 'RPIX Group Changes'
 

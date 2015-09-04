@@ -17,29 +17,30 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
          <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Traffic', target: method(:api_v10_traffic_traffic_path), desc: 'Traffic incidents by offence and year' } %>
+      locals: { name: 'Traffic', target: method(:api_v10_traffic_traffic_path), desc: 'Traffic incidents by offence and year',
+      updated: '21/07/2015' } %>
 
            <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Collisions', target: method(:api_v10_traffic_collisions_path), desc: 'Traffic collisions by year' } %>
+      locals: { name: 'Collisions', target: method(:api_v10_traffic_collisions_path), desc: 'Traffic collisions by year',
+      updated: '21/07/2015' } %>
 
            <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Injuries', target: method(:api_v10_traffic_injuries_path), desc: 'Traffic injuries by type and extent of injury' } %>
+      locals: { name: 'Injuries', target: method(:api_v10_traffic_injuries_path), desc: 'Traffic injuries by type and extent of injury',
+      updated: '21/07/2015' } %>
 
            <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Classifications', target: method(:api_v10_traffic_classifications_path), desc: 'Traffic injury classifications (fatal, serious, slight)' } %>
+      locals: { name: 'Classifications', target: method(:api_v10_traffic_classifications_path), desc: 'Traffic injury classifications (fatal, serious, slight)',
+      updated: '21/07/2015' } %>
 
     </tbody>
   </table>
 </div>
 
 <p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
-<p><em>Updated 21/07/2015</em></p>

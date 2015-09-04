@@ -2,7 +2,7 @@ class Charts::SailingsController < ApplicationController
   def condor_punctuality
     @title = 'Condor Punctuality'
 
-    punctuality_json = File.read("storage/sailings/condor_punctuality.json")
+    punctuality_json = File.read("storage/#{ENV['place_code']}/sailings/condor_punctuality.json")
     punctuality = JSON.parse(punctuality_json)
     punctuality.sort_by! { |c| [ c['year'].to_i, c['quarter'].to_i ] }
 

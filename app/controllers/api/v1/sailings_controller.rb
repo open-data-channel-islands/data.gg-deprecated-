@@ -21,7 +21,7 @@ class Api::V1::SailingsController < ApplicationController
   end
 
   def herm_trident
-    herm_trident_json = File.read("storage/herm_trident.json")
+    herm_trident_json = File.read("storage/#{ENV['place_code']}/herm_trident.json")
     @herm_tridents = JSON.parse(herm_trident_json)
     @herm_tridents.sort_by! { |c| c['Year'] }
 

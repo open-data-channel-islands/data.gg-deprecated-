@@ -17,17 +17,17 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Arrivals', target: method(:api_v10_flights_arrivals_path), desc: 'Live arrival data from the Guernsey Airport' } %>
+     locals: { name: 'Arrivals', target: method(:api_v10_flights_arrivals_path), desc: 'Live arrival data from the Guernsey Airport',
+     updated: 'live' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Departures', target: method(:api_v10_flights_departures_path), desc: 'Live departure data from the Guernsey Airport' } %>
+     locals: { name: 'Departures', target: method(:api_v10_flights_departures_path), desc: 'Live departure data from the Guernsey Airport',
+     updated: 'live' } %>
    </tbody>
  </table>
 </div>

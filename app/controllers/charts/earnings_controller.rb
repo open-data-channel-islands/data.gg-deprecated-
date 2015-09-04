@@ -5,7 +5,7 @@ class Charts::EarningsController < ApplicationController
 
   def nominal_sex
     @title = 'Nominal Sex'
-    earnings_json = File.read("storage/earnings_sex.json")
+    earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_sex.json")
     earnings_sex = JSON.parse(earnings_json)
     earnings_sex.sort_by! { |c| c['Year'] }
 
@@ -20,7 +20,7 @@ class Charts::EarningsController < ApplicationController
 
   def age_group
     @title = 'Age Group 2014'
-    earnings_json = File.read("storage/earnings_age_group.json")
+    earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_age_group.json")
     earnings_age_group = JSON.parse(earnings_json)
     earnings_age_group.sort_by! { |c| c['Year'] }
 
@@ -36,7 +36,7 @@ class Charts::EarningsController < ApplicationController
 
     def sector
     @title = 'Sector 2014'
-    earnings_json = File.read("storage/earnings_sector.json")
+    earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_sector.json")
     earnings_sector = JSON.parse(earnings_json)
     earnings_sector.sort_by! { |c| [c['Year'], c['Median earnings']] }
 

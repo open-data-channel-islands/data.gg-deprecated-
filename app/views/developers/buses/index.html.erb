@@ -17,18 +17,15 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Usage', target: method(:api_v10_buses_usage_path), desc: 'Bus usage by year and month from 2011' } %>
+     locals: { name: 'Usage', target: method(:api_v10_buses_usage_path), desc: 'Bus usage by year and month from 2011', updated: '18/07/2015' } %>
    </tbody>
  </table>
 </div>
 
 <p>Source: <a href="http://www.gov.gg/PublicTransport">gov.gg</a></p>
-<p><em>Updated 18/07/2015</em></p>

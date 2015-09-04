@@ -2,7 +2,7 @@ class Charts::PopulationController < ApplicationController
 
   def male_vs_female
     @title = 'Male vs Female'
-    population_json = File.read("storage/population/population.json")
+    population_json = File.read("storage/#{ENV['place_code']}/population/population.json")
     population = JSON.parse(population_json)
 
     @male = []

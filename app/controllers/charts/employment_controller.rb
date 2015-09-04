@@ -1,7 +1,7 @@
 class Charts::EmploymentController < ApplicationController
   def totals
     @title = 'Totals'
-    totals_json = File.read("storage/employment/totals.json")
+    totals_json = File.read("storage/#{ENV['place_code']}/employment/totals.json")
     totals = JSON.parse(totals_json)
 
     @labels = totals.map {|c| c['Quarter']}.uniq

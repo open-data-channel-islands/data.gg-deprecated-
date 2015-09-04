@@ -7,6 +7,7 @@ DataGg::Application.routes.draw do
   get 'help' => 'home#help', as: :help
   get 'contact' => 'home#contact', as: :contact
   get 'contribute' => 'home#contribute', as: :contribute
+  get 'donate' => 'home#donate', as: :donate
 
   get 'bespoke/gp_flights_arrivals' => 'bespoke#gp_flights_arrivals'
   get 'bespoke/gp_flights_departures' => 'bespoke#gp_flights_departures'

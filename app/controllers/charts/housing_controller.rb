@@ -3,7 +3,7 @@ class Charts::HousingController < ApplicationController
 
   def mean_average
     @title = 'Mean Average'
-    houses_json = File.read("storage/houses/local_prices.json")
+    houses_json = File.read("storage/#{ENV['place_code']}/houses/local_prices.json")
     house_prices = JSON.parse(houses_json)
 
     @mean_averages = []
@@ -17,7 +17,7 @@ class Charts::HousingController < ApplicationController
 
   def transactions
     @title = 'Transactions'
-    houses_json = File.read("storage/houses/local_prices.json")
+    houses_json = File.read("storage/#{ENV['place_code']}/houses/local_prices.json")
     house_prices = JSON.parse(houses_json)
 
     @transactions = []
@@ -34,7 +34,7 @@ class Charts::HousingController < ApplicationController
   def bedrooms
     @title = 'Bedrooms'
 
-    bedrooms_json = File.read("storage/houses/bedrooms.json")
+    bedrooms_json = File.read("storage/#{ENV['place_code']}/houses/bedrooms.json")
     bedrooms = JSON.parse(bedrooms_json)
 
     @local = []
@@ -57,7 +57,7 @@ class Charts::HousingController < ApplicationController
   def types
     @title = 'Types'
 
-    types_json = File.read("storage/houses/types.json")
+    types_json = File.read("storage/#{ENV['place_code']}/houses/types.json")
     types = JSON.parse(types_json)
 
     @local = []
@@ -75,7 +75,7 @@ class Charts::HousingController < ApplicationController
   def units
     @title ='Units'
 
-    units_json = File.read("storage/houses/units.json")
+    units_json = File.read("storage/#{ENV['place_code']}/houses/units.json")
     units = JSON.parse(units_json)
 
     @local = []

@@ -17,22 +17,22 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
     <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Earnings by Age Group', target: method(:api_v10_earnings_earnings_age_group_path), desc: 'Earnings by age group since 2012, includes lower quartile, median and upper quartile.' } %>
+     locals: { name: 'Earnings by Age Group', target: method(:api_v10_earnings_earnings_age_group_path), desc: 'Earnings by age group since 2012, includes lower quartile, median and upper quartile.',
+     updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Earnings by Sector', target: method(:api_v10_earnings_earnings_sector_path), desc: 'Earnings by sector since 2012, includes lower quartile, median and upper quartile.' } %>
+     locals: { name: 'Earnings by Sector', target: method(:api_v10_earnings_earnings_sector_path), desc: 'Earnings by sector since 2012, includes lower quartile, median and upper quartile.',
+     updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Earnings by Sex', target: method(:api_v10_earnings_earnings_sex_path), desc: 'Earnings by sex since 2005, includes nominal and real.' } %>
+     locals: { name: 'Earnings by Sex', target: method(:api_v10_earnings_earnings_sex_path), desc: 'Earnings by sex since 2005, includes nominal and real.',
+     updated: '13/04/2015' } %>
    </tbody>
  </table>
 </div>
 
 <p>Source: <a href="http://www.gov.gg/earnings">gov.gg</a></p>
-<p><em>Updated 13/04/2015</em></p>

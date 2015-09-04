@@ -17,22 +17,22 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Post 16 Results', target: method(:api_v10_education_post16results_path), desc: 'Post 16 results since 2010 by type, grade and percentage' } %>
+     locals: { name: 'Post 16 Results', target: method(:api_v10_education_post16results_path), desc: 'Post 16 results since 2010 by type, grade and percentage',
+     updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'GCSEs Overall', target: method(:api_v10_education_gcse_overall_path), desc: 'GCSE overall since 2009 by result and percentage' } %>
+     locals: { name: 'GCSEs Overall', target: method(:api_v10_education_gcse_overall_path), desc: 'GCSE overall since 2009 by result and percentage',
+     updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'GCSEs By School', target: method(:api_v10_education_gcse_school_path), desc: 'GCSE results for schools since 2010 by result and percentage' } %>
+     locals: { name: 'GCSEs By School', target: method(:api_v10_education_gcse_school_path), desc: 'GCSE results for schools since 2010 by result and percentage',
+     updated: '13/04/2015' } %>
    </tbody>
  </table>
 </div>
 
 <p>Source: <%= link_to 'education.gg', 'http://www.education.gg' %></p>
-<p><em>Updated 13/04/2015</em></p>

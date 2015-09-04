@@ -17,25 +17,25 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Inflation', target: method(:api_v10_inflation_changes_path), desc: 'RPI & RPIX changes since 1949' } %>
+      locals: { name: 'Inflation', target: method(:api_v10_inflation_changes_path), desc: 'RPI & RPIX changes since 1949',
+      updated: '18/07/2015' } %>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'RPI Group Changes', target: method(:api_v10_inflation_rpi_group_changes_path), desc: 'RPI group changes since Q4 2004' } %>
+      locals: { name: 'RPI Group Changes', target: method(:api_v10_inflation_rpi_group_changes_path), desc: 'RPI group changes since Q4 2004',
+      updated: '18/07/2015' } %>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'RPIX Group Changes', target: method(:api_v10_inflation_rpix_group_changes_path), desc: 'RPIX group changes since Q4 2014' } %>
+      locals: { name: 'RPIX Group Changes', target: method(:api_v10_inflation_rpix_group_changes_path), desc: 'RPIX group changes since Q4 2014',
+      updated: '18/07/2015' } %>
     </tbody>
   </table>
 </div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/rpi' %></p>
-<p><em>Updated 18/07/2015</em></p>

@@ -50,7 +50,7 @@ class Charts::BusesController < ApplicationController
   end
 
   def set_bus_data
-    bus_usage_json = File.read("storage/bus_usage.json")
+    bus_usage_json = File.read("storage/#{ENV['place_code']}/buses/bus_usage.json")
     @bus_usage = JSON.parse(bus_usage_json)
     @years = @bus_usage.uniq { |p| p['Year'] }.sort_by { |p| p['Year'] }.collect { |p| p['Year'] }
     @months = ['January','February','March','April','May','June','July','August','September','October','November','December']

@@ -8,7 +8,7 @@ class Api::V1::EducationController < ApplicationController
   end
 
   def post16results
-    post16results_json = File.read("storage/post16results.json")
+    post16results_json = File.read("storage/#{ENV['place_code']}/education/post16results.json")
 
     @post16results = JSON.parse(post16results_json)
     @post16results.sort_by! { |c| c['Year'] }
@@ -21,7 +21,7 @@ class Api::V1::EducationController < ApplicationController
   end
 
   def gcse_overall
-    gcse_overall_json = File.read("storage/gcse_overall.json")
+    gcse_overall_json = File.read("storage/#{ENV['place_code']}/education/gcse_overall.json")
 
     @gcse_overall = JSON.parse(gcse_overall_json)
     @gcse_overall.sort_by! { |c| c['Year'] }
@@ -34,7 +34,7 @@ class Api::V1::EducationController < ApplicationController
   end
 
   def gcse_school
-    gcse_school_json = File.read("storage/gcse_school.json")
+    gcse_school_json = File.read("storage/#{ENV['place_code']}/education/gcse_school.json")
 
     @gcse_school = JSON.parse(gcse_school_json)
     @gcse_school.sort_by! { |c| c['Year'] }

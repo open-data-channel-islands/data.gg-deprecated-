@@ -4,7 +4,7 @@ class Api::V10::CrimeController < ApplicationController
 
   def crimes
     @title = 'Crimes'
-    crime_json = File.read("storage/crime.json")
+    crime_json = File.read("storage/#{ENV['place_code']}/crime/crime.json")
     @crimes = JSON.parse(crime_json)
     @crimes.sort_by! { |c| c['Year'] }
 

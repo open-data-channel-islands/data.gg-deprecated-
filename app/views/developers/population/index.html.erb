@@ -17,34 +17,31 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Population', target: method(:api_v10_population_population_path), desc: 'Population values by year, sex and age. Ages are in ranges.' } %>
+     locals: { name: 'Population', target: method(:api_v10_population_population_path), desc: 'Population values by year, sex and age. Ages are in ranges.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Age', target: method(:api_v10_population_age_path), desc: 'Population values by year and age. Individual year ages. Mixed sex.' } %>
+     locals: { name: 'Age', target: method(:api_v10_population_age_path), desc: 'Population values by year and age. Individual year ages. Mixed sex.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Age Male', target: method(:api_v10_population_age_male_path), desc: 'Population values by year and age. Individual year ages. Male only.' } %>
+     locals: { name: 'Age Male', target: method(:api_v10_population_age_male_path), desc: 'Population values by year and age. Individual year ages. Male only.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Age Female', target: method(:api_v10_population_age_female_path), desc: 'Population values by year and age. Individual year ages. Female only.' } %>
+     locals: { name: 'Age Female', target: method(:api_v10_population_age_female_path), desc: 'Population values by year and age. Individual year ages. Female only.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Birthplace', target: method(:api_v10_population_birthplace_path), desc: 'Population by birthplace.' } %>
+     locals: { name: 'Birthplace', target: method(:api_v10_population_birthplace_path), desc: 'Population by birthplace.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Changes', target: method(:api_v10_population_changes_path), desc: 'Population changes by quarter. Has births, deaths, immigration and emigration.' } %>
+     locals: { name: 'Changes', target: method(:api_v10_population_changes_path), desc: 'Population changes by quarter. Has births, deaths, immigration and emigration.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'District', target: method(:api_v10_population_district_path), desc: 'Population by voting district.' } %>
+     locals: { name: 'District', target: method(:api_v10_population_district_path), desc: 'Population by voting district.', updated: '13/04/2015' } %>
      <%= render partial: 'developers/developers_list_item',
-     locals: { name: 'Parish', target: method(:api_v10_population_parish_path), desc: 'Population by parish.' } %>
+     locals: { name: 'Parish', target: method(:api_v10_population_parish_path), desc: 'Population by parish.', updated: '13/04/2015' } %>
 
    </tbody>
  </table>
 </div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
-<p><em>Updated 13/04/2015</em></p>

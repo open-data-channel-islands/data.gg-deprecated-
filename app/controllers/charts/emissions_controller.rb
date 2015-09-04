@@ -1,7 +1,7 @@
 class Charts::EmissionsController < ApplicationController
   def types
     @title = 'Types'
-    types_json = File.read("storage/emissions/type.json")
+    types_json = File.read("storage/#{ENV['place_code']}/emissions/type.json")
     types = JSON.parse(types_json)
 
     @carbon_dioxide = []

@@ -8,7 +8,7 @@ class HomeController < ApplicationController
               ["rgba(255, 147, 172, 0.5)", "rgba(156, 52, 76, 0.5)"],
               ["rgba(147, 187, 255, 0.5)", "rgba(38, 87, 149, 0.5)"]]
 
-    bus_usage_json = File.read("storage/bus_usage.json")
+    bus_usage_json = File.read("storage/#{ENV['place_code']}/buses/bus_usage.json")
     @bus_usage = JSON.parse(bus_usage_json)
     @years = @bus_usage.uniq { |p| p['Year'] }.collect { |p| p['Year'] }
     @months = ['January','February','March','April','May','June','July','August','September','October','November','December']

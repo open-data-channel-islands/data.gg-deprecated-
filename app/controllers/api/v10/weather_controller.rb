@@ -1,7 +1,7 @@
 class Api::V10::WeatherController < ApplicationController
   def annual
     @title = 'Annual'
-    annual_json = File.read("storage/weather/metoffice_annual_report.json")
+    annual_json = File.read("storage/#{ENV['place_code']}/weather/metoffice_annual_report.json")
     @annual = JSON.parse(annual_json)
     @annual.sort_by! {|a| a['year']}
 
@@ -14,7 +14,7 @@ class Api::V10::WeatherController < ApplicationController
 
   def monthly
     @title = 'Monthly'
-    monthly_json = File.read("storage/weather/metoffice_monthly_report.json")
+    monthly_json = File.read("storage/#{ENV['place_code']}/weather/metoffice_monthly_report.json")
     @monthly = JSON.parse(monthly_json)
     month_sort_order = [ 'JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC' ]
     @monthly.sort_by! { |m| [ m['year'].to_i, month_sort_order.index(m['month']) ] }

@@ -5,7 +5,7 @@ module Api
 
     def local_prices
       @title = 'Local Prices'
-      houses_json = File.read("storage/houses/local_prices.json")
+      houses_json = File.read("storage/#{ENV['place_code']}/houses/local_prices.json")
       @house_prices = JSON.parse(houses_json)
 
       respond_to do |format|
@@ -17,7 +17,7 @@ module Api
 
     def open_prices
       @title = 'Open Prices'
-      houses_json = File.read("storage/houses/open_prices.json")
+      houses_json = File.read("storage/#{ENV['place_code']}/houses/open_prices.json")
       @house_prices = JSON.parse(houses_json)
 
       respond_to do |format|
@@ -29,7 +29,7 @@ module Api
 
     def bedrooms
       @title = 'Bedrooms'
-      houses_json = File.read("storage/houses/bedrooms.json")
+      houses_json = File.read("storage/#{ENV['place_code']}/houses/bedrooms.json")
       @bedrooms = JSON.parse(houses_json)
 
       respond_to do |format|
@@ -41,7 +41,7 @@ module Api
 
     def types
       @title = 'Types'
-      houses_json = File.read("storage/houses/types.json")
+      houses_json = File.read("storage/#{ENV['place_code']}/houses/types.json")
       @types = JSON.parse(houses_json)
 
       respond_to do |format|
@@ -53,7 +53,7 @@ module Api
 
     def units
       @title = 'Units'
-      houses_json = File.read("storage/houses/units.json")
+      houses_json = File.read("storage/#{ENV['place_code']}/houses/units.json")
       @units = JSON.parse(houses_json)
 
       respond_to do |format|

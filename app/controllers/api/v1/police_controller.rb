@@ -8,7 +8,7 @@ class Api::V1::PoliceController < ApplicationController
   end
 
   def crimes
-    crime_json = File.read("storage/crime.json")
+    crime_json = File.read("storage/#{ENV['place_code']}/crime/crime.json")
     @crimes = JSON.parse(crime_json)
     @crimes.sort_by! { |c| c['Year'] }
 
@@ -20,7 +20,7 @@ class Api::V1::PoliceController < ApplicationController
   end
 
   def traffic
-    traffic_json = File.read("storage/traffic.json")
+    traffic_json = File.read("storage/#{ENV['place_code']}/traffic/traffic.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
 
@@ -32,7 +32,7 @@ class Api::V1::PoliceController < ApplicationController
   end
 
   def traffic_collisions
-    traffic_json = File.read("storage/traffic_collisions.json")
+    traffic_json = File.read("storage/#{ENV['place_code']}/traffic/traffic_collisions.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
 
@@ -44,7 +44,7 @@ class Api::V1::PoliceController < ApplicationController
   end
 
   def traffic_injuries
-    traffic_json = File.read("storage/traffic_injuries.json")
+    traffic_json = File.read("storage/#{ENV['place_code']}/traffic/traffic_injuries.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
 
@@ -56,7 +56,7 @@ class Api::V1::PoliceController < ApplicationController
   end
 
   def traffic_classifications
-    traffic_json = File.read("storage/traffic_classifications.json")
+    traffic_json = File.read("storage/#{ENV['place_code']}/traffic/traffic_classifications.json")
     @traffic = JSON.parse(traffic_json)
     @traffic.sort_by! { |c| c['Year'] }
 

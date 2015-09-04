@@ -1,7 +1,7 @@
 class Api::V10::EmploymentController < ApplicationController
   def totals
     @title = 'Totals'
-    totals_json = File.read("storage/employment/totals.json")
+    totals_json = File.read("storage/#{ENV['place_code']}/employment/totals.json")
     @totals = JSON.parse(totals_json)
 
     respond_to do |format|

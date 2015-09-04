@@ -17,16 +17,15 @@
         <th>API</th>
         <th>Version</th>
         <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Updated</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Domestic Consumption', target: method(:api_v10_water_domestic_consumption_path), desc: 'Domestic water consumption since 2008 in ML' } %>
+      locals: { name: 'Domestic Consumption', target: method(:api_v10_water_domestic_consumption_path), desc: 'Domestic water consumption since 2008 in ML',
+        updated: '' } %>
     </tbody>
   </table>
 </div>
