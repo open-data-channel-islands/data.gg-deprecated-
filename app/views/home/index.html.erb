@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6">
         <h2><strong>One Source, All The Data.</strong></h2>
-        <h3>Get the latest Bailiwick of Guernsey data for your apps and websites, any place, any time.</h3>
+        <h3><%= storage_str('welcome_tag') %></h3>
       </div>
       <div class="col-md-6">
         <img class="img-responsive" style="vertical-align:bottom;" src="<%= image_url "apps2.png" %>">
@@ -14,7 +14,7 @@
 
 <div class="front-page-feature-triangles">
   <div class="container">
-    <h2 class="faint-heading">Guernsey Data, Visualised</h2>
+    <h2 class="faint-heading"><%= storage_str('visualised') %></h2>
     <h4 class="text-center col-md-12">Annual Bus Usage by Month</h4>
 
     <%= render partial: "charts/buses/split" %>
@@ -84,14 +84,14 @@
         <h3 class="text-center extra-bottom-space">Have some data you want to publish?</h3>
         <p class="large-text extra-bottom-space text-justify">If you've got interesting data related to the Bailiwick of Guernsey we'd love to get our hands on it. We're happy to
           do all the hard work for you so it can be made available via the data.gg API allowing people to generate reports or so developers can build apps.
-          Send Jason an e-mail at <a href="mailto:contact@jasemagee.com">contact@jasemagee.com</a> and we'll talk more.</p>
+          Send Jason an e-mail at <a href="mailto:<%= storage_str('contact_email') %>"><%= storage_str('contact_email') %></a> and we'll talk more.</p>
       </div>
 
       <div class="col-md-6">
         <h3 class="text-center extra-bottom-space">Want to help us build a better data.gg?</h3>
         <p class="large-text text-justify">There's a lot of work involved with data.gg, from coming up with ideas, gathering data, standardising and producing data sets,
             showing that data in a meaningful format and all the way to publishing the APIs for developers. Just fire Jason an e-mail at
-            <a href="mailto:contact@jasemagee.com">contact@jasemagee.com</a> so we can talk more.</p>
+            <a href="mailto:<%= storage_str('contact_email') %>"><%= storage_str('contact_email') %></a> so we can talk more.</p>
       </div>
     </div>
   </div>
