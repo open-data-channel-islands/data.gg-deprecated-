@@ -1,0 +1,2 @@
+module Charts::HealthHelper
+end

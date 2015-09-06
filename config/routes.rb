@@ -84,6 +84,12 @@ DataGg::Application.routes.draw do
     get 'finance' => 'finance#deposits'
     get 'finance/deposits' => 'finance#deposits'
     get 'finance/licences' => 'finance#licences'
+
+    get 'health' => 'health#concerns'
+    get 'health/concerns' => 'health#concerns'
+    get 'health/totals' => 'health#totals'
+    get 'health/new' => 'health#new'
+
   end
 
 
@@ -107,6 +113,7 @@ DataGg::Application.routes.draw do
     get 'emissions' => 'emissions#index'
     get 'weather' => 'weather#index'
     get 'finance' => 'finance#index'
+    get 'health' => 'health#index'
   end
 
 
@@ -169,6 +176,9 @@ DataGg::Application.routes.draw do
       get 'weather/monthly' => 'weather#monthly'
 
       get 'finance/banking' => 'finance#banking'
+
+      get 'health/concerns' => 'health#concerns'
+      get 'health/totals' => 'health#totals'
     end
   end
 

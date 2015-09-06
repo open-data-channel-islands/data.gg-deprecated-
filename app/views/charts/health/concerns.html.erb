@@ -1,0 +1,39 @@
+<%= render 'head' %>
+
+<div id="container_health_concerns" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    var xLabels = <%= @labels.to_json.html_safe %>;
+
+    $('#container_health_concerns').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: xLabels,
+            title: {
+                text: 'Year'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Percent of screenings'
+            }
+        },
+        series: <%= @data.to_json.html_safe %>
+    });
+}
+<% end %>
