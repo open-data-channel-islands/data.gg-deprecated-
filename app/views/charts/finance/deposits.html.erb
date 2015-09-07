@@ -31,11 +31,11 @@ function initPage() {
         yAxis: {
             allowDecimals: false,
             title: {
-                text: '<%= @title %>'
+                text: '<%= @title %> (£billions)'
             },
             labels: {
                 formatter: function () {
-                    return this.value / 1000 + 'k';
+                    return this.value / 1000;
                 }
             }
         },
