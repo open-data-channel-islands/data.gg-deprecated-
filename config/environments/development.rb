@@ -23,11 +23,13 @@ DataGg::Application.configure do
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
-  
+
   #config.assets.precompile += %w( *.scss bootstrap.css bootstrap.min.css bootstrap.js bootstrap.min.js Chart.js Chart.min.js )
   config.assets.precompile += %w( *.css *.js )
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.cache_store = :memory_store # This is usually disabled for dev but it's important for the flights so I've left it on here
 end
