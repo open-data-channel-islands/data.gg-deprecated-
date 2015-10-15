@@ -31,6 +31,10 @@
 .i-1090-ping-pong-paddle-selected-2x:before,
 .i-1094-sail-boat-2-2x:before,
 .i-1094-sail-boat-2-selected-2x:before,
+.i-485-facebook:before,
+.i-488-github:before,
+.i-490-google-plus:before,
+.i-498-twitter:before,
 .i-750-home-2x:before,
 .i-750-home-selected-2x:before,
 .i-754-scale-2x:before,
@@ -99,6 +103,10 @@
 .i-1090-ping-pong-paddle-selected-2x:before { content: "\f11f"; }
 .i-1094-sail-boat-2-2x:before { content: "\f100"; }
 .i-1094-sail-boat-2-selected-2x:before { content: "\f101"; }
+.i-485-facebook:before { content: "\f136"; }
+.i-488-github:before { content: "\f137"; }
+.i-490-google-plus:before { content: "\f138"; }
+.i-498-twitter:before { content: "\f139"; }
 .i-750-home-2x:before { content: "\f102"; }
 .i-750-home-selected-2x:before { content: "\f103"; }
 .i-754-scale-2x:before { content: "\f104"; }

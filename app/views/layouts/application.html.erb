@@ -73,7 +73,7 @@
   <div id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-1 col-sm-2 col-xs-4">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <ul>
             <li><strong><%= link_to 'Home', root_path %></strong></li>
             <li><%= link_to 'Charts', charts_path %></li>
@@ -85,17 +85,16 @@
           </ul>
         </div>
 
-        <div class="col-md-1 col-sm-2 col-xs-4">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="<%= storage_str('facebook') %>"><span class="social-category category-image i-485-facebook"></span></a>
+        <a href="<%= storage_str('github') %>"><span class="social-category category-image i-488-github"></span></a>
+        <a href="<%= storage_str('googleplus') %>"><span class="social-category category-image i-490-google-plus"></span></a>
+        <a href="<%= storage_str('twitter') %>"><span class="social-category category-image i-498-twitter"></span></a>
         </div>
 
-        <div class="col-md-1 col-sm-2 col-xs-4">
-        </div>
-
-        <div class="text-right col-md-9 col-sm-3 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 text-right">
           <p class="muted credit">Copyright &copy; 2015 - Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and Kieran Senior</p>
           <p class="muted credit">No data is owned by <%= storage_str('name') %></p>
-          <p class="muted credit">Data owners are usually found under the source links on charts and datasets</p>
-          <p class="muted credit">If unclear please contact us</p>
           <p>Visit our friends at <a href="http://<%= storage_str('friend') %>"><%= storage_str('friend') %></a></p>
           <p>Hosting sponsored by <%= link_to 'Jase Magee Limited', 'http://jasemagee.com' %></p>
         </div>
