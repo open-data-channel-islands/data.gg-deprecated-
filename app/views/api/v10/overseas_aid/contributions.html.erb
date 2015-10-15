@@ -1,0 +1,42 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+    <th>Year</th>
+    <th>Africa Aid</th>
+    <th>Africa Emergency Relief</th>
+    <th>Europe Aid</th>
+    <th>Europe Emergency Relief</th>
+    <th>Indian Sub-Continent Aid</th>
+    <th>Indian Sub-Continent Emergency Relief</th>
+    <th>Latin America and Caribbean Aid</th>
+    <th>Latin America and Caribbean Emergency Relief</th>
+    <th>Other Asia and Pacific Aid</th>
+    <th>Other Asia and Pacific Emergency Relief</th>
+    <th>Middle East Aid</th>
+    <th>Middle East Emergency Relief</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contributions.each do |f| %>
+    <tr>
+      <td><%= f['Year'] %></td>
+      <td><%= f['Africa Aid'] %></td>
+      <td><%= f['Africa Emergency Relief'] %></td>
+      <td><%= f['Europe Aid'] %></td>
+      <td><%= f['Europe Emergency Relief'] %></td>
+      <td><%= f['Indian Sub-Continent Aid'] %></td>
+      <td><%= f['Indian Sub-Continent Emergency Relief'] %></td>
+      <td><%= f['Latin America and Caribbean Aid'] %></td>
+      <td><%= f['Latin America and Caribbean Emergency Relief'] %></td>
+      <td><%= f['Other Asia and Pacific Aid'] %></td>
+      <td><%= f['Other Asia and Pacific Emergency Relief'] %></td>
+      <td><%= f['Middle East Aid'] %></td>
+      <td><%= f['Middle East Emergency Relief'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

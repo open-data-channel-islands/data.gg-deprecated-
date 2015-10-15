@@ -1,4 +1,37 @@
 DataGg::Application.routes.draw do
+  namespace :api do
+  namespace :v10 do
+    get 'overseas_aid/contributions'
+    end
+  end
+
+  namespace :api do
+  namespace :v10 do
+    get 'tourism/cruises'
+    end
+  end
+
+  namespace :api do
+  namespace :v10 do
+    get 'fire_and_rescue/attendances'
+    end
+  end
+
+  namespace :charts do
+  get 'tourism/cruises'
+  end
+
+  namespace :charts do
+  get 'overseas_aid/contributions'
+  end
+
+  namespace :charts do
+  get 'fire_and_rescue/attendances'
+  end
+
+  namespace :developers do
+  get 'tourism/index'
+  end
 
   # You can have the root of your site routed with "root"
   root 'home#index'
@@ -90,6 +123,15 @@ DataGg::Application.routes.draw do
     get 'health/totals' => 'health#totals'
     get 'health/new' => 'health#new'
 
+    get 'fire_and_rescue' => 'fire_and_rescue#attendances'
+    get 'fire_and_rescue/attendances' => 'fire_and_rescue#attendances'
+
+    get 'overseas_aid' => 'overseas_aid#contributions'
+    get 'overseas_aid/contributions' => 'overseas_aid#contributions'
+
+    get 'tourism' => 'tourism#cruises'
+    get 'tourism/cruises' => 'tourism#cruises'
+
   end
 
 
@@ -114,6 +156,9 @@ DataGg::Application.routes.draw do
     get 'weather' => 'weather#index'
     get 'finance' => 'finance#index'
     get 'health' => 'health#index'
+    get 'fire_and_rescue' => 'fire_and_rescue#index'
+    get 'overseas_aid' => 'overseas_aid#index'
+    get 'tourism' => 'tourism#index'
   end
 
 
@@ -179,6 +224,12 @@ DataGg::Application.routes.draw do
 
       get 'health/concerns' => 'health#concerns'
       get 'health/totals' => 'health#totals'
+
+      get 'fire_and_rescue/attendances' => 'fire_and_rescue#attendances'
+
+      get 'overseas_aid/contributions' => 'overseas_aid#contributions'
+
+      get 'tourism/cruises' => 'tourism#cruises'
     end
   end
 

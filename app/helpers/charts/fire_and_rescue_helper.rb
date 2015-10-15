@@ -1,0 +1,2 @@
+module Charts::FireAndRescueHelper
+end

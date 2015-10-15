@@ -1,0 +1,2 @@
+module Charts::TourismHelper
+end

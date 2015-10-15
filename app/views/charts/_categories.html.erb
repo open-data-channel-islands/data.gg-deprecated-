@@ -45,6 +45,15 @@
 
 <div class="row">
   <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Overseas Aid', target: charts_overseas_aid_path, image: 'i-950-ekg-2x', desc: 'Aid and emergency relief sent overseas' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Fire & Rescue', target: charts_fire_and_rescue_path, image: 'i-923-spray-can-2x', desc: 'Things the Fire & Rescue department deal with' } %>
+    <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Tourism', target: charts_tourism_path, image: 'i-881-globe-2x', desc: 'Incoming visitors' } %>
+</div>
+
+<div class="row">
+  <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon' } %>
@@ -57,5 +66,6 @@
   locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
-  <div class="col-sm-4 col-md-4"></div>
+    <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Electricity', target: '#', image: 'i-965-lightning-bolt-2x', desc: 'Coming Soon' } %>
 </div>

@@ -2,12 +2,12 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Developers", developers_path %></li>
-    <li class="active">Employment</li>
+    <li class="active">Fire & Rescue</li>
   </ol>
 <% end %>
 
 <div class="page-header">
-  <h1>Employment</h1>
+  <h1>Fire & Rescue</h1>
 </div>
 
 <div class="table-responsive">
@@ -24,7 +24,7 @@
     <tbody>
 
       <%= render partial: 'developers/developers_list_item',
-      locals: { name: 'Totals', target: method(:api_v10_employment_totals_path), desc: 'Employed, unemployed and employer totals since Q4 2012 (missing Q4 2012 employed)', updated: '15/10/2015' } %>
+      locals: { name: 'Attendances by Fire and Rescue Services', target: method(:api_v10_fire_and_rescue_attendances_path), desc: 'Attendances by Fire and Rescue services', updated: '15/10/2015' } %>
     </tbody>
   </table>
 </div>
