@@ -1,2 +1,46 @@
-<h1>Charts::Tourism#cruises</h1>
-<p>Find me in app/views/charts/tourism/cruises.html.erb</p>
+<%= render 'head' %>
+
+
+<div id="container_tourism_cruises" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p><em>Updated 15/10/2015</em></p>
+
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_tourism_cruises').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            categories: <%= @labels.to_json.html_safe %>,
+            crosshair: true,
+            title: { text: 'Year' }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Amount'
+            }
+        },
+        tooltip: {
+            shared: true,
+        },
+        series: [{
+                  name: 'No. of cruise passengers',
+                  data: <%= @count.to_json.html_safe -%>
+          }]
+    });
+}
+<% end %>
