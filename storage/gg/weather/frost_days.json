@@ -1,0 +1,58 @@
+[
+  {
+    "Period":"1946-1950",
+    "Total no. of frost days":33
+  },
+  {
+    "Period":"1951-1955",
+    "Total no. of frost days":35
+  },
+  {
+    "Period":"1956-1960",
+    "Total no. of frost days":7
+  },
+  {
+    "Period":"1961-1965",
+    "Total no. of frost days":62
+  },
+  {
+    "Period":"1966-1970",
+    "Total no. of frost days":31
+  },
+  {
+    "Period":"1971-1975",
+    "Total no. of frost days":6
+  },
+  {
+    "Period":"1976-1980",
+    "Total no. of frost days":34
+  },
+  {
+    "Period":"1981-1985",
+    "Total no. of frost days":51
+  },
+  {
+    "Period":"1986-1990",
+    "Total no. of frost days":25
+  },
+  {
+    "Period":"1991-1995",
+    "Total no. of frost days":14
+  },
+  {
+    "Period":"1996-2000",
+    "Total no. of frost days":9
+  },
+  {
+    "Period":"2001-2005",
+    "Total no. of frost days":12
+  },
+  {
+    "Period":"2006-2010",
+    "Total no. of frost days":21
+  },
+  {
+    "Period":"2011-2014",
+    "Total no. of frost days":8
+  }
+]

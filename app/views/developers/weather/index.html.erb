@@ -26,6 +26,8 @@
       locals: { name: 'Annual Weather', target: method(:api_v10_weather_annual_path), desc: 'Annual weather stats from 2010', updated: '-' } %>
       <%= render partial: 'developers/developers_list_item',
       locals: { name: 'Monthly Weather', target: method(:api_v10_weather_monthly_path), desc: 'Monthly weather stats from Jan 2010', updated: '-' } %>
+      <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Frost Days', target: method(:api_v10_weather_frost_days_path), desc: 'Frost days since 1946 (below 0°C)', updated: '15/10/2015' } %>
     </tbody>
   </table>
 </div>

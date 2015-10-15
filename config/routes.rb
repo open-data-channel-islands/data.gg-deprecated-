@@ -219,6 +219,7 @@ DataGg::Application.routes.draw do
 
       get 'weather/annual' => 'weather#annual'
       get 'weather/monthly' => 'weather#monthly'
+      get 'weather/frost_days' => 'weather#frost_days'
 
       get 'finance/banking' => 'finance#banking'
 

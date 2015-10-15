@@ -25,4 +25,16 @@ class Api::V10::WeatherController < ApplicationController
       format.html { render :monthly, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
+
+  def frost_days
+    @title = 'Frost Days'
+    frost_days_json = File.read("storage/#{ENV['place_code']}/weather/frost_days.json")
+    @frost_days = JSON.parse(frost_days_json)
+
+    respond_to do |format|
+      format.json { render json: @frost_days }
+      format.xml { render xml: @frost_days }
+      format.html { render :frost_days, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+    end
+  end
 end
