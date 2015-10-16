@@ -1,0 +1,38 @@
+[
+  {
+    "Year":2009,
+    "Other higher education":39,
+    "Undergraduate":784,
+    "Postgraduate":49
+  },
+  {
+    "Year":2010,
+    "Other higher education":23,
+    "Undergraduate":764,
+    "Postgraduate":38
+  },
+  {
+    "Year":2011,
+    "Other higher education":18,
+    "Undergraduate":722,
+    "Postgraduate":36
+  },
+  {
+    "Year":2012,
+    "Other higher education":18,
+    "Undergraduate":717,
+    "Postgraduate":31
+  },
+  {
+    "Year":2013,
+    "Other higher education":23,
+    "Undergraduate":727,
+    "Postgraduate":52
+  },
+  {
+    "Year":2014,
+    "Other higher education":19,
+    "Undergraduate":690,
+    "Postgraduate":39
+  }
+]
