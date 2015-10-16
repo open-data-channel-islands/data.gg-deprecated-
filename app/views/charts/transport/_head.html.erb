@@ -1,0 +1,16 @@
+<% content_for :breadcrumb do %>
+<ol class="breadcrumb">
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Charts", charts_path %></li>
+  <li><%= link_to 'Transport', charts_transport_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<% end %>
+
+<div class="page-header">
+  <h1>Transport</h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="<%= 'active' if action?('charts/transport', 'registered_vehicles') %>"><%= link_to 'Registered Vehicles', charts_transport_registered_vehicles_path %></li>
+</ul>

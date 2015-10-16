@@ -1,0 +1,2 @@
+module Charts::EnergyHelper
+end

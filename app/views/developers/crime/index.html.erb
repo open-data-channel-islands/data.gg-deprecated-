@@ -25,8 +25,13 @@
       <tr>
        <%= render partial: 'developers/developers_list_item',
        locals: { name: 'Crimes', target: method(:api_v10_crime_crimes_path), desc: 'Crime by offence since 2005', updated: '21/07/2015' } %>
+      <%= render partial: 'developers/developers_list_item',
+       locals: { name: 'Worried', target: method(:api_v10_crime_worried_path), desc: 'Percentage of people worried about crime from a survey', updated: '16/10/2015' } %>
+      <%= render partial: 'developers/developers_list_item',
+       locals: { name: 'Prison Population', target: method(:api_v10_crime_prison_population_path), desc: 'Number of people in the prison', updated: '16/10/2015' } %>
      </tbody>
    </table>
  </div>
 
  <p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
+ <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>

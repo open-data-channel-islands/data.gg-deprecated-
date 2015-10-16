@@ -1,0 +1,42 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+    <th>Year</th>
+    <th>January</th>
+    <th>February</th>
+    <th>March</th>
+    <th>April</th>
+    <th>May</th>
+    <th>June</th>
+    <th>July</th>
+    <th>August</th>
+    <th>September</th>
+    <th>October</th>
+    <th>November</th>
+    <th>December</th>
+   </tr>
+  </thead>
+  <tbody>
+    <% @sea_by_month.each do |c| %>
+    <tr>
+      <td><%= c['Year'] %></td>
+      <td><%= c['January'] %></td>
+      <td><%= c['February'] %></td>
+      <td><%= c['March'] %></td>
+      <td><%= c['April'] %></td>
+      <td><%= c['May'] %></td>
+      <td><%= c['June'] %></td>
+      <td><%= c['July'] %></td>
+      <td><%= c['August'] %></td>
+      <td><%= c['September'] %></td>
+      <td><%= c['October'] %></td>
+      <td><%= c['November'] %></td>
+      <td><%= c['December'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

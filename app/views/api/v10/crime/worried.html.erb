@@ -1,0 +1,26 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Very worried</th>
+      <th>Fairly worried</th>
+      <th>Not very worried</th>
+      <th>Not at all worried</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @worried.each do |f| %>
+    <tr>
+      <td><%= f['Year'] %></td>
+      <td><%= f['Very worried'] %></td>
+      <td><%= f['Fairly worried'] %></td>
+      <td><%= f['Not very worried'] %></td>
+      <td><%= f['Not at all worried'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

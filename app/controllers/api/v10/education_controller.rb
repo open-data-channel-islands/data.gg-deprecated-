@@ -43,4 +43,15 @@ class Api::V10::EducationController < ApplicationController
     end
   end
 
+  def students_in_uk
+    @title = 'GCSE School'
+    students_in_uk_json = File.read("storage/#{ENV['place_code']}/education/students_in_uk.json")
+    @students_in_uk = JSON.parse(students_in_uk_json)
+
+    respond_to do |format|
+      format.json { render json: @students_in_uk }
+      format.xml { render xml: @students_in_uk }
+      format.html { render :students_in_uk, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
+    end
+  end
 end

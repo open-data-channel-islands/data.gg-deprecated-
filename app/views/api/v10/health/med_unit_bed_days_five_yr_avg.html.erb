@@ -1,0 +1,60 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Sex</th>
+      <th>Mean Period</th>
+      <th>Diseases of the circulatory system</th>
+      <th>Diseases of the respiratory system</th>
+      <th>Symptoms signs and abnormal clinical and lab findings NEC</th>
+      <th>Neoplasms</th>
+      <th>Diseases of the digestive system</th>
+      <th>Injury poisoning and consequences of external causes</th>
+      <th>Certain infectious and parasitic diseases</th>
+      <th>Diseases of the genitourinary system</th>
+      <th>Diseases of the skin</th>
+      <th>Endocrine nutritional and metabolic diseases</th>
+      <th>Mental and behavioural disorders</th>
+      <th>Diseases of the nervous system</th>
+      <th>Diseases of the musculoskeletal system</th>
+      <th>Other</th>
+      <th>Diseases of the blood and blood-forming organs</th>
+      <th>Factors influencing health status and contact with health services</th>
+      <th>Diseases of the eye and adnexa</th>
+      <th>Diseases of the ear and mastoid process</th>
+      <th>Congenital malformations deformations and chromosomal abnormalities</th>
+      <th>Pregnancy birth and the puerperium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @med_unit_bed_days_five_yr_avg.each do |c| %>
+    <tr>
+      <td><%= c['Sex'] %></td>
+      <td><%= c['Mean Period'] %></td>
+      <td><%= c['Diseases of the circulatory system'] %></td>
+      <td><%= c['Diseases of the respiratory system'] %></td>
+      <td><%= c['Symptoms signs and abnormal clinical and lab findings NEC'] %></td>
+      <td><%= c['Neoplasms'] %></td>
+      <td><%= c['Diseases of the digestive system'] %></td>
+      <td><%= c['Injury poisoning and consequences of external causes'] %></td>
+      <td><%= c['Certain infectious and parasitic diseases'] %></td>
+      <td><%= c['Diseases of the genitourinary system'] %></td>
+      <td><%= c['Diseases of the skin'] %></td>
+      <td><%= c['Endocrine nutritional and metabolic diseases'] %></td>
+      <td><%= c['Mental and behavioural disorders'] %></td>
+      <td><%= c['Diseases of the nervous system'] %></td>
+      <td><%= c['Diseases of the musculoskeletal system'] %></td>
+      <td><%= c['Other'] %></td>
+      <td><%= c['Diseases of the blood and blood-forming organs'] %></td>
+      <td><%= c['Factors influencing health status and contact with health services'] %></td>
+      <td><%= c['Diseases of the eye and adnexa'] %></td>
+      <td><%= c['Diseases of the ear and mastoid process'] %></td>
+      <td><%= c['Congenital malformations deformations and chromosomal abnormalities'] %></td>
+      <td><%= c['Pregnancy birth and the puerperium'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

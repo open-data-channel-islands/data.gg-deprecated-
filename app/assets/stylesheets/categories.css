@@ -43,6 +43,8 @@
 [data-icon]:before,
 .i-1022-factory-2x:before,
 .i-1022-factory-selected-2x:before,
+.i-1029-fish-2x:before,
+.i-1029-fish-selected-2x:before,
 .i-1032-route-2x:before,
 .i-1032-route-selected-2x:before,
 .i-1090-ping-pong-paddle-2x:before,
@@ -85,6 +87,8 @@
 .i-895-user-group-selected-2x:before,
 .i-897-graduation-cap-2x:before,
 .i-897-graduation-cap-selected-2x:before,
+.i-917-speedometer-2x:before,
+.i-917-speedometer-selected-2x:before,
 .i-923-spray-can-2x:before,
 .i-923-spray-can-selected-2x:before,
 .i-931-gas-pump-2x:before,
@@ -115,6 +119,8 @@
 
 .i-1022-factory-2x:before { content: "\f128"; }
 .i-1022-factory-selected-2x:before { content: "\f129"; }
+.i-1029-fish-2x:before { content: "\f13a"; }
+.i-1029-fish-selected-2x:before { content: "\f13b"; }
 .i-1032-route-2x:before { content: "\f11c"; }
 .i-1032-route-selected-2x:before { content: "\f11d"; }
 .i-1090-ping-pong-paddle-2x:before { content: "\f11e"; }
@@ -157,6 +163,8 @@
 .i-895-user-group-selected-2x:before { content: "\f113"; }
 .i-897-graduation-cap-2x:before { content: "\f114"; }
 .i-897-graduation-cap-selected-2x:before { content: "\f115"; }
+.i-917-speedometer-2x:before { content: "\f13c"; }
+.i-917-speedometer-selected-2x:before { content: "\f13d"; }
 .i-923-spray-can-2x:before { content: "\f132"; }
 .i-923-spray-can-selected-2x:before { content: "\f133"; }
 .i-931-gas-pump-2x:before { content: "\f124"; }
@@ -173,6 +181,7 @@
 .i-965-lightning-bolt-selected-2x:before { content: "\f12f"; }
 
 .category:hover .i-1022-factory-2x:before { content: "\f129"; }
+.category:hover .i-1029-fish-2x:before { content: "\f13b"; }
 .category:hover .i-1032-route-2x:before { content: "\f11d"; }
 .category:hover .i-1090-ping-pong-paddle-2x:before { content: "\f11f"; }
 .category:hover .i-1094-sail-boat-2-2x:before { content: "\f101"; }
@@ -192,6 +201,7 @@
 .category:hover .i-893-airplane-2x:before { content: "\f111"; }
 .category:hover .i-895-user-group-2x:before { content: "\f113"; }
 .category:hover .i-897-graduation-cap-2x:before { content: "\f115"; }
+.category:hover .i-917-speedometer-2x:before { content: "\f13d"; }
 .category:hover .i-923-spray-can-2x:before { content: "\f133"; }
 .category:hover .i-931-gas-pump-2x:before { content: "\f125"; }
 .category:hover .i-934-measuring-cup-2x:before { content: "\f12d"; }

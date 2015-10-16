@@ -22,9 +22,12 @@
       </tr>
     </thead>
     <tbody>
-
       <%= render partial: 'developers/developers_list_item',
       locals: { name: 'Cruises', target: method(:api_v10_tourism_cruises_path), desc: 'Incoming cruise passengers', updated: '15/10/2015' } %>
+      <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Sea', target: method(:api_v10_tourism_sea_by_month_path), desc: 'Incoming sea passengers by month', updated: '16/10/2015' } %>
+      <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Air', target: method(:api_v10_tourism_air_by_month_path), desc: 'Incoming air passengers by month', updated: '16/10/2015' } %>
     </tbody>
   </table>
 </div>

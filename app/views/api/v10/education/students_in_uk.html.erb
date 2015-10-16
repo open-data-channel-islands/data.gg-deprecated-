@@ -1,0 +1,24 @@
+<%= render 'head' %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Other higher education</th>
+      <th>Undergraduate</th>
+      <th>Postgraduate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students_in_uk.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Other higher education'] %></td>
+    <td><%= f['Undergraduate'] %></td>
+    <td><%= f['Postgraduate'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

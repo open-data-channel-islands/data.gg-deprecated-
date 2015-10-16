@@ -40,7 +40,7 @@
    <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Finance', target: charts_finance_path, image: 'i-827-money-2-2x', desc: 'Finance industry stats' } %>
   <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Health', target: charts_health_path, image: 'i-892-bandaid-2x', desc: 'Health data from Chest & Heart screenings' } %>
+  locals: { name: 'Health', target: charts_health_path, image: 'i-892-bandaid-2x', desc: 'Health data from Chest & Heart screenings and government' } %>
 </div>
 
 <div class="row">
@@ -54,18 +54,25 @@
 
 <div class="row">
   <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Transport', target: charts_transport_path, image: 'i-917-speedometer-2x', desc: 'Vehicle usage' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Energy', target: charts_energy_path, image: 'i-965-lightning-bolt-2x', desc: 'Electricity, nuclear, oil, gas, etc.' } %>
+  <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Roadworks', target: '#', image: 'i-1032-route-2x', desc: 'Coming Soon' } %>
-  <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon' } %>
-  <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon' } %>
 </div>
 
 <div class="row">
   <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Broadband', target: '#', image: 'i-937-wifi-signal-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Recycling', target: '#', image: 'i-776-recycle-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Fuel', target: '#', image: 'i-931-gas-pump-2x', desc: 'Coming Soon' } %>
+</div>
+
+<div class="row">
   <%= render partial: 'charts/categories_list_item',
   locals: { name: 'Sports', target: '#', image: 'i-1090-ping-pong-paddle-2x', desc: 'Coming Soon' } %>
-    <%= render partial: 'charts/categories_list_item',
-  locals: { name: 'Electricity', target: '#', image: 'i-965-lightning-bolt-2x', desc: 'Coming Soon' } %>
+  <%= render partial: 'charts/categories_list_item',
+  locals: { name: 'Fishing', target: '#', image: 'i-1029-fish-2x', desc: 'Coming Soon' } %>
 </div>

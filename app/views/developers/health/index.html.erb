@@ -28,8 +28,12 @@
      <%= render partial: 'developers/developers_list_item',
      locals: { name: 'Totals', target: method(:api_v10_health_totals_path), desc: 'Total numbers of screenings by age',
      updated: '05/09/2015' } %>
+    <%= render partial: 'developers/developers_list_item',
+     locals: { name: 'Medical Unit Bed Days', target: method(:api_v10_health_med_unit_bed_days_five_yr_avg_path), desc: 'Medical Unit bed days five year average',
+     updated: '15/10/2015' } %>
    </tbody>
  </table>
 </div>
 
 <p>Source: <%= link_to 'chestandheart.org.gg', 'http://www.chestandheart.org.gg/' %></p>
+<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
