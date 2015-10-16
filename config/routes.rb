@@ -33,6 +33,8 @@ DataGg::Application.routes.draw do
     get 'crime' => 'crime#detected', as: :crime
     get 'crime/detected' => 'crime#detected', as: :crime_detected
     get 'crime/reported' => 'crime#reported', as: :crime_reported
+    get 'crime/prison_population' => 'crime#prison_population'
+    get 'crime/worried' => 'crime#worried'
 
     # Traffic
     get 'traffic' => 'traffic#classifications', as: :traffic
@@ -102,6 +104,7 @@ DataGg::Application.routes.draw do
     # Tourism
     get 'tourism' => 'tourism#cruises'
     get 'tourism/cruises' => 'tourism#cruises'
+    get 'tourism/air_vs_sea_ann' => 'tourism#air_vs_sea_ann'
 
     # Energy
     get 'energy' => 'energy#electricity_consumption'

@@ -1,0 +1,49 @@
+<%= render 'head' %>
+
+<div id="container_crime_worried" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <a href="http://www.gov.gg/pru">gov.gg</a></p>
+<p><em>Updated 16/10/2015</em></p>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_crime_worried').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '<%= @title %>',
+            data: <%= @percent.to_json.html_safe  %>
+        }]
+    });
+}
+<% end %>

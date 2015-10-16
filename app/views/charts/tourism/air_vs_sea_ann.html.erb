@@ -1,6 +1,6 @@
 <%= render 'head' %>
 
-<div id="container_energy_electricity_consumption" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div id="container_tourism_air_vs_sea_ann" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
 
 <p>Source: <a href="http://www.gov.gg/pru">gov.gg</a></p>
 <p><em>Updated 16/10/2015</em></p>
@@ -14,7 +14,7 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
-    $('#container_energy_electricity_consumption').highcharts({
+    $('#container_tourism_air_vs_sea_ann').highcharts({
         chart: {
             type: 'line'
         },
@@ -31,16 +31,16 @@ function initPage() {
         yAxis: {
             allowDecimals: false,
             title: {
-                text: 'Number of units (GWh)'
+                text: 'Passengers'
             }
         },
         series: [{
-            name: 'Domestic',
-            data: <%= @domestic.to_json.html_safe -%>
+            name: 'Air',
+            data: <%= @air.to_json.html_safe -%>
         },
         {
-            name: 'Commerical',
-            data: <%= @commerical.to_json.html_safe -%>
+            name: 'Sea',
+            data: <%= @sea.to_json.html_safe -%>
         }]
     });
 }

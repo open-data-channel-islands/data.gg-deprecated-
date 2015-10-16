@@ -16,6 +16,42 @@ class Charts::CrimeController < ApplicationController
     end
   end
 
+  def prison_population
+    @title = 'Prison Population'
+    prison_population_json = File.read("storage/#{ENV['place_code']}/crime/prison_population.json")
+    prison_population = JSON.parse(prison_population_json)
+
+    @labels = []
+    @count = []
+
+    prison_population.sort_by{ |p| p["Year"].to_i }.each do |val|
+      @labels << val['Year'].to_i
+      @count << val['Number of prisoners']
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def worried
+    @title = 'Worried (2013)'
+    worried_json = File.read("storage/#{ENV['place_code']}/crime/worried.json")
+    worried = JSON.parse(worried_json)
+
+    @percent = []
+    worried.select{ |u| u['Year'] == 2013 }.each do |val|
+      @percent << [ 'Very worried', val['Very worried'] ]
+      @percent << [ 'Fairly worried', val['Fairly worried'] ]
+      @percent << [ 'Not very worried', val['Not very worried'] ]
+      @percent << [ 'Not at all worried', val['Not at all worried'] ]
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
   private
 
   def collect_results(field)

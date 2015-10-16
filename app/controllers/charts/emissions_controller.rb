@@ -23,9 +23,5 @@ class Charts::EmissionsController < ApplicationController
     respond_to do |format|
       format.html
     end
-
-
-
-
   end
 end

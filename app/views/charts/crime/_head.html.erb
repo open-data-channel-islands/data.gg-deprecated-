@@ -14,4 +14,6 @@
 <ul class="nav nav-tabs">
   <li role="presentation" class="<%= 'active' if action?('charts/crime', 'detected') %>"><%= link_to 'Detected', charts_crime_detected_path %></li>
   <li role="presentation" class="<%= 'active' if action?('charts/crime', 'reported') %>"><%= link_to 'Reported', charts_crime_reported_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/crime', 'prison_population') %>"><%= link_to 'Prison Popluation', charts_crime_prison_population_path %></li>
+  <li role="presentation" class="<%= 'active' if action?('charts/crime', 'worried') %>"><%= link_to 'Worried', charts_crime_worried_path %></li>
 </ul>
