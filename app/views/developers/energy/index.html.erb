@@ -25,8 +25,11 @@
 
       <%= render partial: 'developers/developers_list_item',
       locals: { name: 'Totals', target: method(:api_v10_energy_electricity_consumption_path), desc: 'Domestic and commercial electricity consumption', updated: '16/10/2015' } %>
+      <%= render partial: 'developers/developers_list_item',
+      locals: { name: 'Totals', target: method(:api_v10_energy_electricity_import_vs_generated_path), desc: 'Imported vs generated electricity', updated: '21/10/2015' } %>
     </tbody>
   </table>
 </div>
 
 <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Source: <a href="http://electricity.gg">electricity.gg</a></p>

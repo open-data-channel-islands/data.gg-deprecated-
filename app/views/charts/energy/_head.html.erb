@@ -13,4 +13,5 @@
 
 <ul class="nav nav-tabs">
   <li role="presentation" class="<%= 'active' if action?('charts/energy', 'electricity_consumption') %>"><%= link_to 'Electricity Consumption', charts_energy_electricity_consumption_path %></li>
+   <li role="presentation" class="<%= 'active' if action?('charts/energy', 'electricity_import_vs_generated') %>"><%= link_to 'Electricity Imported VS Generated', charts_energy_electricity_import_vs_generated_path %></li>
 </ul>

@@ -53,6 +53,7 @@ DataGg::Application.routes.draw do
     get 'education/post16results_btec', as: :education_post16results_btec
     get 'education/gcses_overall', as: :education_gcses_overall
     get 'education/gcses_by_school', as: :education_gcses_by_school
+    get 'education/students_in_uk'
 
     get 'earnings' => 'earnings#nominal_sex', as: :earnings
     get 'earnings/nominal_sex' => 'earnings#nominal_sex', as: :earnings_nominal_sex
@@ -81,6 +82,7 @@ DataGg::Application.routes.draw do
     # Weather
     get 'weather' => 'weather#totals'
     get 'weather/totals' => 'weather#totals'
+    get 'weather/frost_days'
 
     # Finance
     get 'finance' => 'finance#deposits'
@@ -92,6 +94,7 @@ DataGg::Application.routes.draw do
     get 'health/concerns' => 'health#concerns'
     get 'health/totals' => 'health#totals'
     get 'health/new' => 'health#new'
+    get 'health/med_unit_bed_days_five_yr_avg'
 
     # Fire & Rescue
     get 'fire_and_rescue' => 'fire_and_rescue#attendances'
@@ -109,6 +112,7 @@ DataGg::Application.routes.draw do
     # Energy
     get 'energy' => 'energy#electricity_consumption'
     get 'energy/electricity_consumption' => 'energy#electricity_consumption'
+    get 'energy/electricity_import_vs_generated' => 'energy#electricity_import_vs_generated'
 
     # Transport
     get 'transport' => 'transport#registered_vehicles'
@@ -223,6 +227,7 @@ DataGg::Application.routes.draw do
       get 'tourism/sea_by_month' => 'tourism#sea_by_month'
 
       get 'energy/electricity_consumption' => 'energy#electricity_consumption'
+      get 'energy/electricity_import_vs_generated' => 'energy#electricity_import_vs_generated'
 
       get 'transport/registered_vehicles' => 'transport#registered_vehicles'
     end

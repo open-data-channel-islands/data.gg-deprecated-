@@ -22,4 +22,22 @@ class Charts::WeatherController < ApplicationController
       format.html
     end
   end
+
+  def frost_days
+    @title = 'Frost Days'
+    frost_days_json = File.read("storage/#{ENV['place_code']}/weather/frost_days.json")
+    frost_days = JSON.parse(frost_days_json)
+
+    @labels = []
+    @frost_days = []
+
+    frost_days.sort_by{ |p| p["Period"][0...4].to_i }.each do |val|
+      @labels << val['Period']
+      @frost_days << val['Total no. of frost days']
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end

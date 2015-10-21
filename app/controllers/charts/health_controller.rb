@@ -82,4 +82,31 @@ class Charts::HealthController < ApplicationController
     @data << { name: 'Abnormal ECG', data: abnormal_ecg }
     @data << { name: 'Visceral Fat greater than 13', data: visceral_fat_greater_than_13 }
   end
+
+  def med_unit_bed_days_five_yr_avg
+    @title = 'Medical Unit Bed Days Five Year Average'
+    med_unit_bed_days_five_yr_avg_json = File.read("storage/#{ENV['place_code']}/health/med_unit_bed_days_five_yr_avg.json")
+    med_unit_bed_days_five_yr_avg = JSON.parse(med_unit_bed_days_five_yr_avg_json)
+
+    @men = []
+    @women = []
+    med_unit_bed_days_five_yr_avg.select{ |u| u['Mean Period'] == '2010-2014' }.each do |val|
+
+     val.each do |k,v|
+      next if k == 'Sex' || k == 'Mean Period'
+        if val['Sex'] == 'Male (days)'
+           @men << [ k, v ]
+        else
+          @women << [ k, v ]
+        end
+      end
+    end
+
+    p @men
+
+    respond_to do |format|
+       format.html
+    end
+  end
+
 end

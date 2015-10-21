@@ -1,0 +1,47 @@
+<%= render 'head' %>
+
+<div id="container_energy_electricity_import_vs_generated" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <a href="http://electricity.gg">electricity.gg</a></p>
+<p><em>Updated 21/10/2015</em></p>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_energy_electricity_import_vs_generated').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: <%= @labels.to_json.html_safe %>,
+            title: {
+                text: 'Year'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'MWh'
+            }
+        },
+        series: [{
+            name: 'Imported',
+            data: <%= @imported.to_json.html_safe -%>
+        },
+        {
+            name: 'Generated',
+            data: <%= @generated.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

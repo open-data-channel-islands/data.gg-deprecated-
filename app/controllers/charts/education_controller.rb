@@ -89,4 +89,26 @@ class Charts::EducationController < ApplicationController
       @results << { name: school, data: result }
     end
   end
+
+  def students_in_uk
+    @title = 'Students in the UK'
+    students_in_uk_json = File.read("storage/#{ENV['place_code']}/education/students_in_uk.json")
+    students_in_uk = JSON.parse(students_in_uk_json)
+
+    @labels = []
+    @undergrad = []
+    @postgrad = []
+    @other = []
+
+    students_in_uk.sort_by{ |p| p["Year"].to_i }.each do |val|
+      @labels << val['Year'].to_i
+      @undergrad << val['Undergraduate']
+      @postgrad << val['Postgraduate']
+      @other << val['Other higher education']
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end

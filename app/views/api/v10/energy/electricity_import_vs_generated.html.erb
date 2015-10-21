@@ -1,0 +1,22 @@
+<%= render partial: 'api/v10/head', locals: { name: 'Energy', path: developers_energy_path } %>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Electricity Imported MWh</th>
+      <th>Electricity Generated MWh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @electricity_import_vs_generated.each do |f| %>
+    <tr>
+    <td><%= f['Year'] %></td>
+    <td><%= f['Electricity Imported MWh'] %></td>
+    <td><%= f['Electricity Generated MWh'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

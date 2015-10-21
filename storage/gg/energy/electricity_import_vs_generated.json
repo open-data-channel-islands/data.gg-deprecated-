@@ -1,0 +1,52 @@
+[
+  {
+    "Year":2004,
+    "Electricity Imported MWh":288463.116,
+    "Electricity Generated MWh":53097.795
+  },
+  {
+    "Year":2005,
+    "Electricity Imported MWh":276812.434,
+    "Electricity Generated MWh":79455.405
+  },
+  {
+    "Year":2006,
+    "Electricity Imported MWh":197020.197,
+    "Electricity Generated MWh":158175.057
+  },
+  {
+    "Year":2007,
+    "Electricity Imported MWh":257092.564,
+    "Electricity Generated MWh":110655.433
+  },
+  {
+    "Year":2008,
+    "Electricity Imported MWh":210439.962,
+    "Electricity Generated MWh":173522.811
+  },
+  {
+    "Year":2009,
+    "Electricity Imported MWh":239331.716,
+    "Electricity Generated MWh":152243.2
+  },
+  {
+    "Year":2010,
+    "Electricity Imported MWh":308600,
+    "Electricity Generated MWh":84633
+  },
+  {
+    "Year":2011,
+    "Electricity Imported MWh":312703,
+    "Electricity Generated MWh":68056
+  },
+  {
+    "Year":2012,
+    "Electricity Imported MWh":111244,
+    "Electricity Generated MWh":288760
+  },
+  {
+    "Year":2013,
+    "Electricity Imported MWh":155964,
+    "Electricity Generated MWh":227057
+  }
+]
