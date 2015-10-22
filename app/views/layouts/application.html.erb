@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><%= storage_str('name') %> (beta)</title>
+  <title><%= storage_str('name') %></title>
 
   <%= stylesheet_link_tag "application", media: 'all', "data-turbolinks-track" => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
 
   <%= csrf_meta_tags %>
 
@@ -36,12 +35,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to(raw("#{storage_str('name')} <sup style='font-size:0.5em;position:relative;top:-8px'>BETA</sup>"), "/", class: "navbar-brand") %>
+        <%= link_to(storage_str('name'), "/", class: "navbar-brand") %>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to 'Charts', charts_path %></li>
           <li><%= link_to 'Data', developers_path %></li>
+          <li><%= link_to 'R&D', research_development_path %></li>
           <li><%= link_to 'Apps', apps_path %></li>
           <li><%= link_to 'About', about_path %></li>
           <li><%= link_to 'Donate', donate_path %></li>

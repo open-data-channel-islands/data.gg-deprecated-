@@ -79,6 +79,7 @@
 .i-862-sun-cloud-selected-2x:before,
 .i-881-globe-2x:before,
 .i-881-globe-selected-2x:before,
+.i-883-beaker-2x:before,
 .i-892-bandaid-2x:before,
 .i-892-bandaid-selected-2x:before,
 .i-893-airplane-2x:before,
@@ -155,6 +156,7 @@
 .i-862-sun-cloud-selected-2x:before { content: "\f123"; }
 .i-881-globe-2x:before { content: "\f130"; }
 .i-881-globe-selected-2x:before { content: "\f131"; }
+.i-883-beaker-2x:before { content: "\f13e"; }
 .i-892-bandaid-2x:before { content: "\f11a"; }
 .i-892-bandaid-selected-2x:before { content: "\f11b"; }
 .i-893-airplane-2x:before { content: "\f110"; }
@@ -241,6 +243,11 @@ a.category:hover {
 
 .social-category {
   margin: 1rem;
+}
+
+.rd-category {
+  margin-right : 2rem;
+  font-size: 42px;
 }
 
 .category-detail {
