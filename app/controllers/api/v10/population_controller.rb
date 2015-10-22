@@ -4,7 +4,6 @@ class Api::V10::PopulationController < ApplicationController
     @title = 'Population'
     population_json = File.read("storage/#{ENV['place_code']}/population/population.json")
     @population = JSON.parse(population_json)
-    @population.sort_by! { |c| c['Year'] }
 
     respond_to do |format|
       format.json { render json: @population }

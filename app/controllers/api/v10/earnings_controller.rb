@@ -17,7 +17,6 @@ class Api::V10::EarningsController < ApplicationController
     @title = 'Earnings by Sector'
     earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_sector.json")
     @earnings = JSON.parse(earnings_json)
-    @earnings.sort_by! { |c| c['Year'] }
 
     respond_to do |format|
       format.json { render json: @earnings }
@@ -40,12 +39,10 @@ class Api::V10::EarningsController < ApplicationController
   def set_earnings_by_sex
     earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_sex.json")
     @earnings_sex = JSON.parse(earnings_json)
-    @earnings_sex.sort_by! { |c| c['Year'] }
   end
 
   def set_earnings_by_age_group
     earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_age_group.json")
     @earnings_age_group = JSON.parse(earnings_json)
-    @earnings_age_group.sort_by! { |c| c['Year'] }
   end
 end

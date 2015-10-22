@@ -15,10 +15,8 @@ class Api::V10::SailingsController < ApplicationController
 
   def condor_punctuality
     @title = 'Condor Punctuality'
-
     punctuality_json = File.read("storage/#{ENV['place_code']}/sailings/condor_punctuality.json")
     @punctuality = JSON.parse(punctuality_json)
-    @punctuality.sort_by! { |c| [ c['year'].to_i, c['quarter'].to_i ] }
 
     respond_to do |format|
       format.json { render json: @punctuality }
@@ -29,7 +27,6 @@ class Api::V10::SailingsController < ApplicationController
 
   def cruises
     @title = 'Cruises'
-
     cruises_json = File.read("storage/#{ENV['place_code']}/sailings/cruises.json")
     @cruises = JSON.parse(cruises_json)
 

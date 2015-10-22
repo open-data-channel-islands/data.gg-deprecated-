@@ -12,6 +12,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def get_api_path(category, action, api_version, format)
+    "/api/#{api_version}/#{category}/#{action}.#{format}"
+  end
+
   def file_vs_response_json(action, file)
     get action, format: :json
     assert_response :success
