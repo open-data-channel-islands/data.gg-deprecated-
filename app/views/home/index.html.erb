@@ -22,7 +22,7 @@
     <table style="margin-bottom:50px;font-size:0.9em">
       <tr>
         <% @labels.each do |label| %>
-        <td><div style="margin:0 3px 0 10px; width:15px;height:15px;background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></td>
+        <td><div class="front-page-bus-labels" style="background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></div></td>
         <td><%= label[0] %></td>
         <% end %>
       </tr>
