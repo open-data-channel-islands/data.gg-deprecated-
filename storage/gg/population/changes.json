@@ -277,5 +277,14 @@
     "Emigration":1051,
     "Net administrative changes":0,
     "Total": 62948
+  },
+  {
+    "Date Taken":"31/12/2014",
+    "Births":172,
+    "Deaths":139,
+    "Immigration":643,
+    "Emigration":1070,
+    "Net administrative changes":-77,
+    "Total": 62477
   }
 ]
