@@ -25,7 +25,6 @@ DataGg::Application.routes.draw do
     get 'housing' => 'housing#mean_average', as: :housing
     get 'housing/mean_average' => 'housing#mean_average', as: :housing_mean_average
     get 'housing/transactions' => 'housing#transactions', as: :housing_transactions
-    get 'housing/local_price_transactions' => 'housing#local_price_transactions', as: :housing_local_price_transactions
     get 'housing/bedrooms' => 'housing#bedrooms', as: :housing_bedrooms
     get 'housing/types' => 'housing#types', as: :housing_types
     get 'housing/units' => 'housing#units', as: :housing_units

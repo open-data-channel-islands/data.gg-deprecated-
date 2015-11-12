@@ -102,8 +102,6 @@ class Charts::HealthController < ApplicationController
       end
     end
 
-    p @men
-
     respond_to do |format|
        format.html
     end

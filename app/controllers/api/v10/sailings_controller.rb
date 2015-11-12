@@ -139,10 +139,6 @@ class Api::V10::SailingsController < ApplicationController
     arrivals =[]
     departures =[]
 
-    p ''
-    p tables[0]
-    p tables[1]
-
     if tables[0] != nil
       if tables[0][0][3] == "Departed"
         departures = tables[0]

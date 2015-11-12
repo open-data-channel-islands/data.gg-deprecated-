@@ -36,9 +36,6 @@ gem 'unicorn'
 gem 'highcharts-rails'
 
 gem "figaro" # Used for environment management. See config/application.yml
-gem "sitemap_generator"
-
-
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
