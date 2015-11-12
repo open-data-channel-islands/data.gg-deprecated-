@@ -810,5 +810,12 @@
     "Quarter":"Q2",
     "Median":1092500,
     "Transactions":9
+  },
+  {
+    "Year":2015,
+    "Valid": true,
+    "Quarter":"Q3",
+    "Median":872500,
+    "Transactions":15
   }
 ]
