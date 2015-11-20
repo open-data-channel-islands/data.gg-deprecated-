@@ -81,4 +81,16 @@ DataGg::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.default_url_options = { :host => 'data.gg' }
+  ActionMailer::Base.smtp_settings = {
+    :address              => "smtp.mandrillapp.com",
+    :port                 => 587,
+    :enable_starttls_auto => true,
+    :user_name            => Rails.application.secrets.email_user,
+    :password             => Rails.application.secrets.email_pass,
+    :authentication       => "login",
+    :domain               => "data.gg"
+  }
+
 end
