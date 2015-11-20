@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   layout "application", :only => [ :about, :help ]
+  before_action :set_data_categories, only: [:index, :developers]
 
   def index
     colors = [["rgba(187, 255, 147, 0.5)", "rgba(87, 149, 50, 0.5)"],
@@ -58,5 +59,14 @@ class HomeController < ApplicationController
 
   def help
 
+  end
+
+  def developers
+
+  end
+
+  private
+  def set_data_categories
+    @data_categories = DataCategory.all
   end
 end

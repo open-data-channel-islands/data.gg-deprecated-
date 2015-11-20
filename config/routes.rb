@@ -1,6 +1,7 @@
 DataGg::Application.routes.draw do
 
   devise_for :users
+  ActiveAdmin.routes(self)
   root 'home#index'
 
   get 'about' => 'home#about', as: :about
@@ -15,7 +16,7 @@ DataGg::Application.routes.draw do
   get 'bespoke/gp_flights_departures' => 'bespoke#gp_flights_departures'
 
   # Charts section
-  get 'charts' => 'charts#index', as: :charts
+  get 'charts' => 'home#charts', as: :charts
 
   namespace :charts do
     get 'buses' => 'buses#usage', as: :buses
@@ -122,9 +123,7 @@ DataGg::Application.routes.draw do
   end
 
 
-  # Developer guides section
-
-  get 'developers' => 'developers#index', as: :developers
+  get 'developers' => 'home#developers', as: :developers
 
   namespace :developers do
     get 'buses' => 'buses#index', as: :buses
