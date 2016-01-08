@@ -2,7 +2,7 @@
   <ol class="breadcrumb">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Developers", developers_path %></li>
-    <li><%= link_to "Buses", developers_buses_path %></li>
+    <li><%= link_to "Buses", developers_data_category_path(data_category: 'buses') %></li>
     <li class="active"><%= @title %></a>
   </ol>
 <% end %>

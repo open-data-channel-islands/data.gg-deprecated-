@@ -17,7 +17,7 @@ DataGg::Application.routes.draw do
 
   # New
   get 'developers/:data_category' => 'home#developers_data_category', as: :developers_data_category
-  get 'api/1.0/:data_category/:data_set' => 'home#api', as: :api
+  get 'api/1.1/:data_category/:data_set' => 'home#api', as: :api
   ###
 
   # Charts section
@@ -129,33 +129,6 @@ DataGg::Application.routes.draw do
 
 
   get 'developers' => 'home#developers', as: :developers
-
-=begin
-  namespace :developers do
-    get 'buses' => 'buses#index', as: :buses
-    get 'housing' => 'housing#index', as: :housing
-    get 'crime' => 'crime#index', as: :crime
-    get 'traffic' => 'traffic#index', as: :traffic
-    get 'population' => 'population#index', as: :population
-    get 'education' => 'education#index', as: :education
-    get 'earnings' => 'earnings#index', as: :earnings
-    get 'flights' => 'flights#index', as: :flights
-    get 'sailings' => 'sailings#index', as: :sailings
-    get 'inflation' => 'inflation#index', as: :inflation
-    get 'water' => 'water#index'
-    get 'employment' => 'employment#index'
-    get 'emissions' => 'emissions#index'
-    get 'weather' => 'weather#index'
-    get 'finance' => 'finance#index'
-    get 'health' => 'health#index'
-    get 'fire_and_rescue' => 'fire_and_rescue#index'
-    get 'overseas_aid' => 'overseas_aid#index'
-    get 'tourism' => 'tourism#index'
-    get 'transport' => 'transport#index'
-    get 'energy' => 'energy#index'
-  end
-=end
-
 
 
   # API calls

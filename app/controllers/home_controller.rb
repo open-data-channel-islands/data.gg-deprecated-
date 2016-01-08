@@ -72,14 +72,16 @@ class HomeController < ApplicationController
   def api
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
     @data_set = DataSet.where("stub = ?", params[:data_set]).first
-    @title = @data_category.name
-
-    json = File.read("storage/#{ENV['place_code']}/#{@data_set.filename}")
-    @data = JSON.parse(json)
+    if @data_set.live?
+      @data = []
+    else
+      json = File.read("storage/#{ENV['place_code']}/#{@data_set.filename}")
+      @data = JSON.parse(json)
+    end
 
     respond_to do |format|
       format.json { render json: @data }
-      format.xml { render xml: @data }
+      format.xml { @data }
       format.html { render :api, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
@@ -88,4 +90,6 @@ class HomeController < ApplicationController
   def set_data_categories
     @data_categories = DataCategory.all
   end
+
+
 end
