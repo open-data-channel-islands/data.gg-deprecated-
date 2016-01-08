@@ -27,7 +27,11 @@ class ActiveSupport::TestCase
     get action, format: :xml
     assert_response :success
     response_xml = response.body
-    file_xml = (JSON.parse(File.read(file))).to_xml
+    if action.include?('1.0') || action.include?('v1')
+      file_xml = (JSON.parse(File.read(file))).to_xml
+    else
+      file_xml = XmlParser::get_object_xml(JSON.parse(File.read(file)))
+    end
 
     assert response_xml == file_xml, 'Response XML does not match file XML'
   end
