@@ -1,0 +1,28 @@
+<% content_for :breadcrumb do %>
+  <ol class="breadcrumb">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
+    <li><%= link_to @data_category.name, developers_data_category_path(data_category: @data_category.stub) %></li>
+    <li class="active"><%= @data_set.name %></a>
+  </ol>
+<% end %>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <% @data[0].keys.each do |header| %>
+          <th><%= header %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <% @data.each do |row| %>
+        <tr>
+          <% row.values.each do |value| %>
+            <td><%= value %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

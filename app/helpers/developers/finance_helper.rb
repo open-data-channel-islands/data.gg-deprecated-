@@ -1,2 +1,0 @@
-module Developers::FinanceHelper
-end

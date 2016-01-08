@@ -15,6 +15,11 @@ DataGg::Application.routes.draw do
   get 'bespoke/gp_flights_arrivals' => 'bespoke#gp_flights_arrivals'
   get 'bespoke/gp_flights_departures' => 'bespoke#gp_flights_departures'
 
+  # New
+  get 'developers/:data_category' => 'home#developers_data_category', as: :developers_data_category
+  get 'api/1.0/:data_category/:data_set' => 'home#api', as: :api
+  ###
+
   # Charts section
   get 'charts' => 'home#charts', as: :charts
 
@@ -125,6 +130,7 @@ DataGg::Application.routes.draw do
 
   get 'developers' => 'home#developers', as: :developers
 
+=begin
   namespace :developers do
     get 'buses' => 'buses#index', as: :buses
     get 'housing' => 'housing#index', as: :housing
@@ -148,6 +154,8 @@ DataGg::Application.routes.draw do
     get 'transport' => 'transport#index'
     get 'energy' => 'energy#index'
   end
+=end
+
 
 
   # API calls
