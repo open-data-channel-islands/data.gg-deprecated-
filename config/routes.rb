@@ -1,34 +1,6 @@
 DataGg::Application.routes.draw do
 
-  namespace :charts do
-  get 'fishing/index'
-  end
-
-  namespace :charts do
-  get 'roadworks/index'
-  end
-
-  namespace :charts do
-  get 'recycling/index'
-  end
-
-  namespace :charts do
-  get 'broadband/index'
-  end
-
-  namespace :charts do
-  get 'sports/index'
-  end
-
-  namespace :charts do
-  get 'fuel/index'
-  end
-
-  namespace :charts do
-  get 'tides/index'
-  end
-
-  devise_for :users
+  devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'home#index'
 

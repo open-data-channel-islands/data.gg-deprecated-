@@ -1,5 +1,6 @@
 class DataSet < ActiveRecord::Base
   belongs_to :data_category
+  belongs_to :place
 
   def get_data_updated
     mtime = Date.today

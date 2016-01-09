@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160108193145) do
+ActiveRecord::Schema.define(version: 20160109100345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,12 +50,21 @@ ActiveRecord::Schema.define(version: 20160108193145) do
     t.integer  "data_category_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "place_id"
   end
 
   add_index "data_sets", ["data_category_id"], name: "index_data_sets_on_data_category_id", using: :btree
+  add_index "data_sets", ["place_id"], name: "index_data_sets_on_place_id", using: :btree
 
   create_table "parishes", force: :cascade do |t|
     t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string   "name"
+    t.string   "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -87,5 +96,6 @@ ActiveRecord::Schema.define(version: 20160108193145) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "data_sets", "data_categories"
+  add_foreign_key "data_sets", "places"
   add_foreign_key "users", "parishes"
 end
