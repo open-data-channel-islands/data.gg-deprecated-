@@ -1,0 +1,2 @@
+module Charts::TidesHelper
+end

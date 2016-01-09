@@ -1,0 +1,2 @@
+module Charts::BroadbandHelper
+end

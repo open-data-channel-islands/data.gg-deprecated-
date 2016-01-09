@@ -1,0 +1,2 @@
+module Charts::FuelHelper
+end

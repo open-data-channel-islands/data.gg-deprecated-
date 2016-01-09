@@ -1,5 +1,33 @@
 DataGg::Application.routes.draw do
 
+  namespace :charts do
+  get 'fishing/index'
+  end
+
+  namespace :charts do
+  get 'roadworks/index'
+  end
+
+  namespace :charts do
+  get 'recycling/index'
+  end
+
+  namespace :charts do
+  get 'broadband/index'
+  end
+
+  namespace :charts do
+  get 'sports/index'
+  end
+
+  namespace :charts do
+  get 'fuel/index'
+  end
+
+  namespace :charts do
+  get 'tides/index'
+  end
+
   devise_for :users
   ActiveAdmin.routes(self)
   root 'home#index'
@@ -18,6 +46,7 @@ DataGg::Application.routes.draw do
   # New
   get 'developers/:data_category' => 'home#developers_data_category', as: :developers_data_category
   get 'api/1.1/:data_category/:data_set' => 'home#api', as: :api
+  get 'sitemap' => 'home#sitemap'
   ###
 
   # Charts section
@@ -124,6 +153,21 @@ DataGg::Application.routes.draw do
     # Transport
     get 'transport' => 'transport#registered_vehicles'
     get 'transport/registered_vehicles' => 'transport#registered_vehicles'
+
+    # Tides
+    get 'tides' => 'tides#index'
+    # Fuel
+    get 'fuel' => 'fuel#index'
+    # Sports
+    get 'sports' => 'sports#index'
+    # Broadband
+    get 'broadband' => 'broadband#index'
+    # Recycling
+    get 'recycling' => 'recycling#index'
+    # Roadworks
+    get 'roadworks' => 'roadworks#index'
+    # Fishing
+    get 'fishing' => 'fishing#index'
 
   end
 

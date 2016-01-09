@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   layout "application", :only => [ :about, :help ]
-  before_action :set_data_categories, only: [:index, :developers]
+  before_action :set_data_categories, only: [:index, :developers, :charts]
 
   def index
     colors = [["rgba(187, 255, 147, 0.5)", "rgba(87, 149, 50, 0.5)"],
@@ -65,6 +65,9 @@ class HomeController < ApplicationController
 
   end
 
+  def charts
+  end
+
   def developers_data_category
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
   end
@@ -72,8 +75,11 @@ class HomeController < ApplicationController
   def api
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
     @data_set = DataSet.where("stub = ?", params[:data_set]).first
+
+    # Live data is got from LiveDataSets in lib. The filename is set to the method name
+    # .send(...) calls a method via name.
     if @data_set.live?
-      @data = []
+      @data = LiveDataSets.send(@data_set.filename)
     else
       json = File.read("storage/#{ENV['place_code']}/#{@data_set.filename}")
       @data = JSON.parse(json)
@@ -85,6 +91,15 @@ class HomeController < ApplicationController
       format.html { render :api, layout: ((params[:layout].nil? || params[:layout] == 'true') ? true : false) }
     end
   end
+
+    def sitemap
+    @data_categories = DataCategory.all
+    @data_sets = DataSet.all
+     respond_to do |format|
+      format.xml
+    end
+  end
+
 
   private
   def set_data_categories
