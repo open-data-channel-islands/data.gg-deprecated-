@@ -9,7 +9,7 @@ class Charts::FinanceController < ApplicationController
     @labels = []
 
     banking.sort_by{ |p| p["Quarter"] }.each do |val|
-      @labels << val["Quarter"].to_s# + ' ' + val["Year"].to_s
+      @labels << val["Quarter"].to_s
       @licences << val['BankingLicences']
     end
   end
@@ -23,7 +23,7 @@ class Charts::FinanceController < ApplicationController
     @labels = []
 
     banking.sort_by{ |p| p["Quarter"] }.each do |val|
-      @labels << val["Quarter"].to_s #+ ' ' + val["Year"].to_s
+      @labels << val["Quarter"].to_s
       @deposits << val['TotalDeposits']
     end
   end
