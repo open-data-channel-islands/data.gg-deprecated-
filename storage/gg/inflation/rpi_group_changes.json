@@ -2,259 +2,91 @@
   {
     "Type":"Food",
     "Quarter":"Q4 2004",
-    "Quarterly Change":0.624,
-    "Annual Change":null
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2005",
-    "Quarterly Change":-0.3849,
-    "Annual Change":null
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":1.08693,
-    "Annual Change":null
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-0.93475,
-    "Annual Change":null
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":0.8521,
-    "Annual Change":0.6065911408
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":0.09913,
-    "Annual Change":1.0954418965
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":1.62336,
-    "Annual Change":1.6319187029
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-0.28413,
-    "Annual Change":2.2994000728
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":1.27051,
-    "Annual Change":2.7238129554
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":0.97897,
-    "Annual Change":3.6267149278
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":2.03903,
-    "Annual Change":4.0505810553
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-0.86876,
-    "Annual Change":3.4405351678
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":3.57862,
-    "Annual Change":5.7981058628
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":1.87336,
-    "Annual Change":6.7351793394
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":2.29163,
-    "Annual Change":6.9994056321
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.87454,
-    "Annual Change":8.8810760595
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":0.41127,
-    "Annual Change":5.5515854852
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":0.6004,
-    "Annual Change":4.2326722625
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":1.11988,
-    "Annual Change":3.0386836931
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.06319,
-    "Annual Change":2.2099237275
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":0.77266,
-    "Annual Change":2.5777795485
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":1.5286,
-    "Annual Change":3.5242244586
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":0.72527,
-    "Annual Change":3.1202400342
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0.13215,
-    "Annual Change":3.1913027584
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":0.46609,
-    "Annual Change":2.8773766502
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":0.06328,
-    "Annual Change":1.3925906034
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":0.57228,
-    "Annual Change":1.238584711
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.1829494287,
-    "Annual Change":2.3009992723
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.9620281035,
-    "Annual Change":2.805998063
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":1.0117880537,
-    "Annual Change":3.7805004586
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":0.0448719993,
-    "Annual Change":3.2362670628
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.2364859708,
-    "Annual Change":2.2705969092
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":1.3727289429,
-    "Annual Change":2.686620842
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":1.2206683476,
-    "Annual Change":2.8989644897
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":0.6403821339,
-    "Annual Change":3.5114634111
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.233112349,
-    "Annual Change":3.5079795646
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":0.8221112264,
-    "Annual Change":2.9457639871
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":-0.2925985765,
-    "Annual Change":1.4067065777
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":0.3339186043,
-    "Annual Change":1.0979094869
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":-0.1635325961,
-    "Annual Change":0.6978423451
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.0034023198,
-    "Annual Change":-0.1198574571
-  },
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":-0.0037183558,
-    "Annual Change":0.1695232429
+    "Quarterly Change":0.62400,
+    "Annual Change":0
   },
   {
     "Type":"Catering",
     "Quarter":"Q4 2004",
     "Quarterly Change":0.26026,
+    "Annual Change":null
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":-0.91497,
+    "Annual Change":null
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":-0.13984,
+    "Annual Change":null
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":0.88584,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":4.27399,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":0.40098,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":0.07812,
+    "Annual Change":null
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":1.61154,
+    "Annual Change":null
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":0.08054,
+    "Annual Change":null
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":-0.88499,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":-1.38690,
+    "Annual Change":null
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":2.29616,
+    "Annual Change":null
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q4 2004",
+    "Quarterly Change":0.44493,
+    "Annual Change":null
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2005",
+    "Quarterly Change":-0.38490,
     "Annual Change":null
   },
   {
@@ -264,501 +96,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Catering",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":0.01678,
-    "Annual Change":null
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":2.47255,
-    "Annual Change":null
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":2.95537,
-    "Annual Change":6.7217337266
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":0.06618,
-    "Annual Change":5.5885291678
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":0.18458,
-    "Annual Change":5.7656817906
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.17556,
-    "Annual Change":3.3948740943
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":-0.43303,
-    "Annual Change":-0.0079971022
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":1.4253,
-    "Annual Change":1.3501161268
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":5.18365,
-    "Annual Change":6.4073352879
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-3.22579,
-    "Annual Change":2.7944006049
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":-0.27452,
-    "Annual Change":2.9580522172
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":6.36246,
-    "Annual Change":7.9698238244
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":2.91554,
-    "Annual Change":5.6416433012
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":1.10414,
-    "Annual Change":10.3683218837
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":0.28101,
-    "Annual Change":10.9831429238
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":2.97237,
-    "Annual Change":7.4457800751
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.61731,
-    "Annual Change":5.046379761
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":-0.53887,
-    "Annual Change":3.339306765
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":0.20952,
-    "Annual Change":3.265628309
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":0.78392,
-    "Annual Change":1.0709398051
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":0.80703,
-    "Annual Change":1.2615205992
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":1.33682,
-    "Annual Change":3.1711559988
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":0.05898,
-    "Annual Change":3.016166703
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":1.38974,
-    "Annual Change":3.6354031852
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":0.9617,
-    "Annual Change":3.7944077526
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.7356597633,
-    "Annual Change":4.2029248107
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.2135394791,
-    "Annual Change":4.363889709
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":0.2260253929,
-    "Annual Change":3.1660422795
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":1.3271824791,
-    "Annual Change":3.5395044683
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":-0.0615913413,
-    "Annual Change":1.7103868392
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.0799174301,
-    "Annual Change":1.574768934
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.6280847777,
-    "Annual Change":1.9822388397
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":1.0687959119,
-    "Annual Change":1.7221818642
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.1522023291,
-    "Annual Change":1.9397914791
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-0.1289893408,
-    "Annual Change":1.727002408
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":2.0192432236,
-    "Annual Change":3.1333531191
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":0.0707301455,
-    "Annual Change":2.1148996173
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.1912190173,
-    "Annual Change":2.1546809211
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0005553674,
-    "Annual Change":2.2860516912
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0125595776,
-    "Annual Change":0.2741200137
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":-0.91497,
-    "Annual Change":null
-  },
-  {
     "Type":"Alcoholic Drink",
     "Quarter":"Q1 2005",
     "Quarterly Change":5.43584,
-    "Annual Change":null
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":0.14837,
-    "Annual Change":null
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":0.04426,
-    "Annual Change":null
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-0.42584,
-    "Annual Change":5.1891533598
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":4.01217,
-    "Annual Change":3.768819037
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":-0.34528,
-    "Annual Change":3.2573233558
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.02892,
-    "Annual Change":3.2414870386
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":-0.07695,
-    "Annual Change":3.6032273184
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":6.70093,
-    "Annual Change":6.2814156005
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":-0.03438,
-    "Annual Change":6.6129935347
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":1.13082,
-    "Annual Change":7.7874189151
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":0.45036,
-    "Annual Change":8.3562337344
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":6.20485,
-    "Annual Change":7.8524529033
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":3.04403,
-    "Annual Change":11.1737282103
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.4449,
-    "Annual Change":10.4196945567
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":0.17868,
-    "Annual Change":10.1210543512
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":3.41035,
-    "Annual Change":7.2235102118
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":1.29454,
-    "Annual Change":5.4030679294
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":1.21308,
-    "Annual Change":6.209168189
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-1.10385,
-    "Annual Change":4.8494324325
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":1.70044,
-    "Annual Change":3.1157280436
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":1.33952,
-    "Annual Change":3.1615103085
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0.11612,
-    "Annual Change":2.04343423
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-2.08268,
-    "Annual Change":1.0334476859
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":2.88204,
-    "Annual Change":2.2072974098
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":1.91065,
-    "Annual Change":2.7833250248
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.1815711485,
-    "Annual Change":3.8771581454
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":-0.8214114634,
-    "Annual Change":5.2152002161
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":3.0842953715,
-    "Annual Change":5.4220452046
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":0.3134621345,
-    "Annual Change":3.7698211919
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.4882693192,
-    "Annual Change":3.0587845274
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":-0.6720945703,
-    "Annual Change":3.2139431936
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":2.1423728138,
-    "Annual Change":2.2708359918
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":0.516238382,
-    "Annual Change":2.4775689258
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":1.1723525024,
-    "Annual Change":3.17519445
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-0.5647315234,
-    "Annual Change":3.2867160128
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":2.5164107475,
-    "Annual Change":3.664944448
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-0.0115619989,
-    "Annual Change":3.1206105369
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.9682260925,
-    "Annual Change":2.912553301
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.015866446,
-    "Annual Change":3.4806123749
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0464339033,
-    "Annual Change":0.9874045605
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":-0.13984,
     "Annual Change":null
   },
   {
@@ -768,501 +108,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":0.9652,
-    "Annual Change":null
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-0.0352,
-    "Annual Change":null
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":0,
-    "Annual Change":6.819150219
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2006",
-    "Quarterly Change": 3.05371,
-    "Annual Change":4.011751552
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":0.65579,
-    "Annual Change":3.6930123622
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.02084,
-    "Annual Change":3.7511452913
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":0.13485,
-    "Annual Change":3.8910582522
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":3.87705,
-    "Annual Change":4.7210886902
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":1.55774,
-    "Annual Change":5.6594699175
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-2.58004,
-    "Annual Change":2.9119633725
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":3.80907,
-    "Annual Change":6.6880768601
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":3.27022,
-    "Annual Change":6.0648201196
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":-0.0789,
-    "Annual Change":4.3555452593
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.20237,
-    "Annual Change":7.3360506911
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":2.25601,
-    "Annual Change":5.7302249464
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":2.53763,
-    "Annual Change":4.980183024
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.86679,
-    "Annual Change":5.9737523003
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.60112,
-    "Annual Change":6.3954712901
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":8.04389,
-    "Annual Change":12.4176565098
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":-0.06832,
-    "Annual Change":9.560608565
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":0.5372,
-    "Annual Change":9.2026116512
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0,
-    "Annual Change":8.550090064
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":1.59681,
-    "Annual Change":2.0727987082
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":0.55913,
-    "Annual Change":2.7137015888
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":1.18144,
-    "Annual Change":3.3718837539
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":-1.0450498272,
-    "Annual Change":2.2915960613
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.6759289683,
-    "Annual Change":1.3644208381
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":6.2884984287,
-    "Annual Change":7.1396659902
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":0.0100978113,
-    "Annual Change":5.8993498461
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.2897631688,
-    "Annual Change":7.3278365282
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.7331978891,
-    "Annual Change":7.3888893481
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":3.5940953252,
-    "Annual Change":4.6665914417
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-1.5129254681,
-    "Annual Change":3.0726558409
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.4146850573,
-    "Annual Change":3.2010441271
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":4.0494766807,
-    "Annual Change":6.5985678937
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":0.0678015873,
-    "Annual Change":2.9700033385
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":0,
-    "Annual Change":4.5517940581
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.3925633656,
-    "Annual Change":4.5287609474
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.0413754841,
-    "Annual Change":0.5021971896
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0085343897,
-    "Annual Change":0.4426727123
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":0.88584,
-    "Annual Change":null
-  },
-  {
     "Type":"Housing",
     "Quarter":"Q1 2005",
     "Quarterly Change":2.84303,
-    "Annual Change":null
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":1.37794,
-    "Annual Change":null
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-0.44392,
-    "Annual Change":null
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":1.36142,
-    "Annual Change":5.2104223277
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":1.94239,
-    "Annual Change":4.2890513698
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":2.18772,
-    "Annual Change":5.1220890006
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":2.66439,
-    "Annual Change":8.4041799361
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":3.28046,
-    "Annual Change":10.4565610153
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":2.85292,
-    "Annual Change":11.4431379735
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":1.89846,
-    "Annual Change":11.1276790461
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":2.33889,
-    "Annual Change":10.7753526975
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":0.79323,
-    "Annual Change":8.1076250848
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":-0.04703,
-    "Annual Change":5.0595125524
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":-0.02407,
-    "Annual Change":3.0773432149
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":1.65304,
-    "Annual Change":2.3865437341
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-10.96584,
-    "Annual Change":-9.5584048482
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":-4.43263,
-    "Annual Change":-13.5266740026
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":1.66369,
-    "Annual Change":-12.0668640997
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":3.09286,
-    "Annual Change":-10.8213785249
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-0.19146,
-    "Annual Change":-0.0295220622
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":-0.76601,
-    "Annual Change":3.806035558
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":-0.33378,
-    "Annual Change":1.7664802832
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0.62799,
-    "Annual Change":-0.6666750888
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":1.54881,
-    "Annual Change":1.0653165219
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":1.54839,
-    "Annual Change":3.4224235302
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":1.87664,
-    "Annual Change":5.7161392776
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":0.9526243003,
-    "Annual Change":6.0571879732
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.9734052701,
-    "Annual Change":5.4562325186
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":1.7175708227,
-    "Annual Change":5.6319234303
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":0.1213704619,
-    "Annual Change":3.8119577937
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.875956321,
-    "Annual Change":3.7331183074
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.7980937712,
-    "Annual Change":3.5530153545
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":1.2284818138,
-    "Annual Change":3.0551009701
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":1.3298348717,
-    "Annual Change":4.2989754915
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.4420084226,
-    "Annual Change":3.8503024591
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":1.7925192717,
-    "Annual Change":4.8748395821
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":2.3582381645,
-    "Annual Change":6.0452909603
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":1.0059280754,
-    "Annual Change":5.7063109303
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":1.1124655297,
-    "Annual Change":6.411907608
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.0045391765,
-    "Annual Change":4.5427882065
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0090085118,
-    "Annual Change":2.1434208235
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":4.27399,
     "Annual Change":null
   },
   {
@@ -1272,501 +120,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":1.30369,
-    "Annual Change":null
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":4.29869,
-    "Annual Change":null
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-0.60996,
-    "Annual Change":9.0321621893
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":4.83606,
-    "Annual Change":10.0924878601
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":0.97816,
-    "Annual Change":9.7387155625
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-1.89619,
-    "Annual Change":3.2207206649
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":2.32371,
-    "Annual Change":6.267463336
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":-1.92497,
-    "Annual Change":-0.5858837675
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":4.94069,
-    "Annual Change":3.3152696413
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":1.07901,
-    "Annual Change":6.4485195442
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":3.24256,
-    "Annual Change":7.4044153567
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":6.95129,
-    "Annual Change":17.1250301741
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":6.32567,
-    "Annual Change":18.6708075598
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":-2.61639,
-    "Annual Change":14.3322636103
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-11.9298,
-    "Annual Change":-2.469822234
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":2.26181,
-    "Annual Change":-6.7462184358
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":9.3622,
-    "Annual Change":-4.0830038099
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.20748,
-    "Annual Change":-1.3016593201
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":2.51375,
-    "Annual Change":14.8849117474
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":5.14747,
-    "Annual Change":18.1267787092
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":4.95074,
-    "Annual Change":13.3617756793
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":-1.77766,
-    "Annual Change":11.1160425667
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":5.95232,
-    "Annual Change":14.8431489081
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":5.53352,
-    "Annual Change":15.2647998635
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-0.05006,
-    "Annual Change":9.7725440404
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.098725088,
-    "Annual Change":12.9871689909
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":1.9930221123,
-    "Annual Change":8.7649889093
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":2.3908747718,
-    "Annual Change":5.5261099481
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":-2.2821927929,
-    "Annual Change":3.1694476716
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":2.9403130929,
-    "Annual Change":5.048755419
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":4.1062202634,
-    "Annual Change":7.2252654501
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":1.9058467068,
-    "Annual Change":6.7173367588
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-1.6873670224,
-    "Annual Change":7.3669442753
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":1.8630823463,
-    "Annual Change":6.2433905375
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-1.3002749502,
-    "Annual Change":0.7259067506
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":-0.4781955146,
-    "Annual Change":-1.6305312972
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-0.0362324481,
-    "Annual Change":0.021557818
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":-0.7853447613,
-    "Annual Change":-2.5789898875
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.053963312,
-    "Annual Change":-1.3488249742
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":-0.0238540711,
-    "Annual Change":-0.8984581677
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":0.40098,
-    "Annual Change":null
-  },
-  {
     "Type":"Household Goods",
     "Quarter":"Q1 2005",
     "Quarterly Change":1.40826,
-    "Annual Change":null
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":-0.29486,
-    "Annual Change":null
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":0.92438,
-    "Annual Change":null
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-0.74306,
-    "Annual Change":1.2856310329
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":2.24395,
-    "Annual Change":2.1203201837
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":-1.04617,
-    "Annual Change":1.3508033643
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.13943,
-    "Annual Change":0.5625384602
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":-1.42442,
-    "Annual Change":-0.1277863261
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":2.76127,
-    "Annual Change":0.3775298286
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":-1.8226,
-    "Annual Change":-0.4100694524
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":2.39315,
-    "Annual Change":1.8312903809
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":-0.19606,
-    "Annual Change":3.1002174034
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":3.07912,
-    "Annual Change":3.4191184435
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":1.14991,
-    "Annual Change":6.5503322513
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.72161,
-    "Annual Change":4.8109253174
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-0.44866,
-    "Annual Change":4.5456566845
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":0.82085,
-    "Annual Change":2.2552543074
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.05048,
-    "Annual Change":1.1438155364
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.84184,
-    "Annual Change":1.264543983
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":0.10795,
-    "Annual Change":1.8307297295
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":1.63317,
-    "Annual Change":2.6511865597
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":-0.97228,
-    "Annual Change":1.6018349622
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0.34208,
-    "Annual Change":1.0983085622
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-0.30517,
-    "Annual Change":0.6811028604
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":1.4703,
-    "Annual Change":0.519759359
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":0.38823,
-    "Annual Change":1.9007728797
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.0759512887,
-    "Annual Change":2.646047841
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":-0.3853974037,
-    "Annual Change":2.5634451248
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":3.2865374453,
-    "Annual Change":4.3992475742
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":-2.8465410731,
-    "Annual Change":1.0352289454
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.5468979187,
-    "Annual Change":0.5063887249
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.7534982213,
-    "Annual Change":1.6554801574
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.8311426358,
-    "Annual Change":-0.7611400964
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-0.1027758409,
-    "Annual Change":2.0415201125
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":2.4277725162,
-    "Annual Change":3.9503537716
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-0.2179925051,
-    "Annual Change":2.948038155
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":1.1666545654,
-    "Annual Change":3.2905939769
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-0.4874873314,
-    "Annual Change":2.8928143719
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":-0.0042961621,
-    "Annual Change":0.4497036324
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0179841174,
-    "Annual Change":0.6510503859
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0057531508,
-    "Annual Change":-0.5039343991
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":0.07812,
     "Annual Change":null
   },
   {
@@ -1776,501 +132,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Household Services",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":0.54249,
-    "Annual Change":null
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":0.13918,
-    "Annual Change":null
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":0.24157,
-    "Annual Change":2.8158481621
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":0.23242,
-    "Annual Change":1.1602130833
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":2.68272,
-    "Annual Change":3.3135922795
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.4851,
-    "Annual Change":3.6704753869
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":0.00853,
-    "Annual Change":3.4294669543
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":1.00251,
-    "Annual Change":4.2241153907
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":1.9967,
-    "Annual Change":3.5277970009
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":0.44027,
-    "Annual Change":3.4816176436
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":0.55872,
-    "Annual Change":4.0509171591
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":1.11613,
-    "Annual Change":4.1679691265
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":1.96384,
-    "Annual Change":4.1344136949
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":1.31247,
-    "Annual Change":5.0386940303
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":5.74173,
-    "Annual Change":10.4526120559
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":0.13539,
-    "Annual Change":9.3813162855
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.35743,
-    "Annual Change":7.6580454637
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":1.64585,
-    "Annual Change":8.0123038962
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-4.66899,
-    "Annual Change":-2.6219658513
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":0.44576,
-    "Annual Change":-2.3201393235
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":0.07101,
-    "Annual Change":-2.5989180079
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":-0.63825,
-    "Annual Change":-4.7876397937
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-2.30137,
-    "Annual Change":-2.422970768
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":-0.9731,
-    "Annual Change":-3.8013160451
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-0.69278,
-    "Annual Change":-4.5355496885
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":0.5142519113,
-    "Annual Change":-3.4282480268
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.0427684335,
-    "Annual Change":-1.1111446265
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":0.5390611135,
-    "Annual Change":0.3989124396
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":1.3313381361,
-    "Annual Change":2.4452788677
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":-0.3642400659,
-    "Annual Change":1.5499097646
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.0108072388,
-    "Annual Change":1.5174670756
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.1996721205,
-    "Annual Change":1.1747752845
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-0.2621941062,
-    "Annual Change":-0.4162948572
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.459525083,
-    "Annual Change":0.4070399148
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-0.0079007079,
-    "Annual Change":0.3882578491
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":4.6508568139,
-    "Annual Change":4.8478201139
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":1.1409403254,
-    "Annual Change":6.3228434029
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.1647565886,
-    "Annual Change":6.0108707507
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.002374458,
-    "Annual Change":6.0217644043
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0036260101,
-    "Annual Change":1.3136557044
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":1.61154,
-    "Annual Change":null
-  },
-  {
     "Type":"Clothing and Footwear",
     "Quarter":"Q1 2005",
     "Quarterly Change":2.52775,
-    "Annual Change":null
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":-2.02202,
-    "Annual Change":null
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-1.02713,
-    "Annual Change":null
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-6.93836,
-    "Annual Change":-7.4754873506
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":1.82626,
-    "Annual Change":-8.1085354484
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":-0.26999,
-    "Annual Change":-6.4653420242
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":0.46007,
-    "Annual Change":-5.0598622195
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":-6.48826,
-    "Annual Change":-4.6006763428
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":3.81082,
-    "Annual Change":-2.7413795178
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":-1.68092,
-    "Annual Change":-4.1173482513
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":0.72483,
-    "Annual Change":-3.8646466857
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":0.7218,
-    "Annual Change":3.5476924453
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":-6.0798,
-    "Annual Change":-6.3178541426
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":1.48208,
-    "Annual Change":-3.3040254244
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":1.62541,
-    "Annual Change":-2.4394719158
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-1.74362,
-    "Annual Change":-4.8275107435
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":-0.61616,
-    "Annual Change":0.7089792387
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.65857,
-    "Annual Change":-0.1082616645
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":-0.79178,
-    "Annual Change":-2.4842094759
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-5.04866,
-    "Annual Change":-5.7643317717
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":1.26673,
-    "Annual Change":-3.9789765716
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":-1.23367,
-    "Annual Change":-5.7840379394
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":3.04014,
-    "Annual Change":-2.1449504799
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-1.8431,
-    "Annual Change":1.1586328842
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":2.75009,
-    "Annual Change":2.6404130822
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-0.22172,
-    "Annual Change":3.6920555464
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":2.6208121037,
-    "Annual Change":3.2700780181
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":-3.1678982697,
-    "Annual Change":1.8762712864
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":-0.48891423,
-    "Annual Change":-1.3351917545
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":-1.2983868271,
-    "Annual Change":-2.3998419085
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":1.7727640486,
-    "Annual Change":-3.2063997845
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":-1.2685566123,
-    "Annual Change":-1.3078133263
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.0330877007,
-    "Annual Change":-0.7901070667
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-1.2955103,
-    "Annual Change":-0.7872157265
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":2.6884502057,
-    "Annual Change":0.105437372
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-1.891953863,
-    "Annual Change":-0.526635373
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":-1.3602681404,
-    "Annual Change":-1.9121948596
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-4.1246687708,
-    "Annual Change":-4.7236773528
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":2.6601043386,
-    "Annual Change":-4.7499771945
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.0014846082,
-    "Annual Change":-2.9116972097
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":-0.0053443664,
-    "Annual Change":-1.5780839978
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":0.08054,
     "Annual Change":null
   },
   {
@@ -2280,501 +144,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":1.52827,
-    "Annual Change":null
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":0.12877,
-    "Annual Change":null
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":1.01603,
-    "Annual Change":3.2272944151
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":0.6569,
-    "Annual Change":3.3664780902
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":1.08084,
-    "Annual Change":2.9109429516
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-0.22652,
-    "Annual Change":2.5457885181
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":0.6781,
-    "Annual Change":2.2027464006
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":2.9792,
-    "Annual Change":4.5607084624
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":2.82,
-    "Annual Change":6.3597402525
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-0.72805,
-    "Annual Change":5.8251038158
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":1.0852,
-    "Annual Change":6.2530062057
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":1.70345,
-    "Annual Change":4.936697569
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":2.37596,
-    "Annual Change":4.4835246001
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.36346,
-    "Annual Change":5.6323315458
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":0.71329,
-    "Annual Change":5.2436928864
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":1.92448,
-    "Annual Change":5.4724215737
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":1.17595,
-    "Annual Change":4.2361083402
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.36511,
-    "Annual Change":4.237823647
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":0.256,
-    "Annual Change":3.7645359511
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":0.91312,
-    "Annual Change":2.7349099453
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":3.84117,
-    "Annual Change":5.441202466
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":0.12443,
-    "Annual Change":5.1883517784
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":0.39948,
-    "Annual Change":5.3388923258
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":0.97542,
-    "Annual Change":5.4039239747
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":1.50634,
-    "Annual Change":3.0339568906
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":0.2751050044,
-    "Annual Change":3.1890075072
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":0.9227871549,
-    "Annual Change":3.7268511317
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":2.070213067,
-    "Annual Change":4.8514794871
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":1.6103784022,
-    "Annual Change":4.9589436825
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.0686341807,
-    "Annual Change":4.7428286302
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":0.2716661991,
-    "Annual Change":4.0670620109
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.8102367639,
-    "Annual Change":2.782436182
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":0.5689819676,
-    "Annual Change":1.7290274233
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":1.6157703187,
-    "Annual Change":3.3018344862
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":0.5767033231,
-    "Annual Change":3.6160897059
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":0.7556616643,
-    "Annual Change":3.5599956166
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":1.5759362834,
-    "Annual Change":4.5968976762
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.232042254,
-    "Annual Change":3.172574834
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":0.0008409377,
-    "Annual Change":2.581849516
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0163243839,
-    "Annual Change":1.8291118099
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":-0.88499,
-    "Annual Change":null
-  },
-  {
     "Type":"Motoring Expenditure",
     "Quarter":"Q1 2005",
     "Quarterly Change":1.34275,
-    "Annual Change":null
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":1.58783,
-    "Annual Change":null
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":2.18519,
-    "Annual Change":null
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-2.12095,
-    "Annual Change":2.9703159212
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":1.55651,
-    "Annual Change":3.1875166883
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":1.78414,
-    "Annual Change":3.3869177825
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-1.6854,
-    "Annual Change":-0.5291885409
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":2.09959,
-    "Annual Change":3.7599911514
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":1.07489,
-    "Annual Change":3.2679212866
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":-1.1259,
-    "Annual Change":0.3154599043
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-0.32541,
-    "Annual Change":1.7031312523
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":1.80908,
-    "Annual Change":1.4137450758
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":3.30318,
-    "Annual Change":3.6495016769
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":3.92563,
-    "Annual Change":8.945007073
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":-0.50617,
-    "Annual Change":8.7474361617
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-4.8263,
-    "Annual Change":1.6598511422
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":1.42095,
-    "Annual Change":-0.1924409699
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":4.73323,
-    "Annual Change":0.5831571669
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":0.31816,
-    "Annual Change":1.4165051155
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":3.22184,
-    "Annual Change":9.9925546241
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":2.51772,
-    "Annual Change":11.1820232199
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":-0.11256,
-    "Annual Change":6.0378657831
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":-0.81066,
-    "Annual Change":4.8446876739
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":3.06973,
-    "Annual Change":4.690189941
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":2.62072,
-    "Annual Change":4.7953699401
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-0.28345,
-    "Annual Change":4.6160766683
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":0.320551171,
-    "Annual Change":5.8091795221
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":1.0290357405,
-    "Annual Change":3.7142438782
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":3.674160837,
-    "Annual Change":4.7789117274
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":-0.8644754044,
-    "Annual Change":4.1683908338
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":2.4727602426,
-    "Annual Change":6.403148848
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":-0.7438926338,
-    "Annual Change":4.5359117678
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":0.9477118199,
-    "Annual Change":1.7868002091
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":0.1152689948,
-    "Annual Change":2.7927468446
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":0.0907958724,
-    "Annual Change":0.4033444325
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":0.5539867974,
-    "Annual Change":1.7162252115
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":0.5950195565,
-    "Annual Change":1.3608479073
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":0.5546744576,
-    "Annual Change":1.8057202103
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":-0.2526756129,
-    "Annual Change":1.4563637922
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0288,
-    "Annual Change":0.8683439117
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0060176132,
-    "Annual Change":0.2777416051
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":-1.3869,
     "Annual Change":null
   },
   {
@@ -2784,501 +156,9 @@
     "Annual Change":null
   },
   {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":5.05555,
-    "Annual Change":null
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-0.42115,
-    "Annual Change":null
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":1.77693,
-    "Annual Change":15.1010038298
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":2.82634,
-    "Annual Change":9.4812694375
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":1.15004,
-    "Annual Change":5.4112355491
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-1.91716,
-    "Annual Change":3.827602035
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":-1.37415,
-    "Annual Change":0.6130352121
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":3.48633,
-    "Annual Change":1.2588172007
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":-1.44257,
-    "Annual Change":-1.3365852962
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-0.45459,
-    "Annual Change":0.1346389531
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":-3.397,
-    "Annual Change":-1.9191530975
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":7.29613,
-    "Annual Change":1.6916457534
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":8.33331,
-    "Annual Change":11.7784064394
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":0.03582,
-    "Annual Change":12.3290858588
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-6.54242,
-    "Annual Change":8.6716158901
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":1.5921,
-    "Annual Change":2.8944600518
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":-0.31452,
-    "Annual Change":-5.319210588
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":-0.31053,
-    "Annual Change":-5.6470178121
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-0.38792,
-    "Annual Change":0.5664493608
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":0.26345,
-    "Annual Change":-0.7487785348
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":3.98594,
-    "Annual Change":3.5329558266
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":-1.59514,
-    "Annual Change":2.1988169501
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-2.87379,
-    "Annual Change":-0.3516057502
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":7.57659,
-    "Annual Change":6.9166659349
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-2.81727,
-    "Annual Change":-0.0782854053
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":1.0770948621,
-    "Annual Change":2.6351388275
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":-2.3221074717,
-    "Annual Change":3.21811062
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":0.0443454777,
-    "Annual Change":-4.0089624628
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":5.307348468,
-    "Annual Change":4.0160259212
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":-0.6255041319,
-    "Annual Change":2.2639219324
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":1.8293905974,
-    "Annual Change":6.6103350608
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":1.514060433,
-    "Annual Change":8.176508572
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":0.4983140197,
-    "Annual Change":3.2364491766
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":-0.9533226162,
-    "Annual Change":2.895890807
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":0.8140470454,
-    "Annual Change":1.869913153
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":2.8171297784,
-    "Annual Change":3.1775503462
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-4.3588182354,
-    "Annual Change":-1.8090707
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":4.1920933952,
-    "Annual Change":3.2918897071
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0657638446,
-    "Annual Change":2.3904545195
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0854024685,
-    "Annual Change":-0.3299365427
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":2.29616,
-    "Annual Change":null
-  },
-  {
     "Type":"Leisure Goods",
     "Quarter":"Q1 2005",
     "Quarterly Change":-4.08878,
-    "Annual Change":null
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2005",
-    "Quarterly Change":-0.55078,
-    "Annual Change":null
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2005",
-    "Quarterly Change":-0.43257,
-    "Annual Change":null
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2005",
-    "Quarterly Change":-1.08234,
-    "Annual Change":-6.0575287001
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2006",
-    "Quarterly Change":0.84672,
-    "Annual Change":-1.2233425831
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2006",
-    "Quarterly Change":0.85687,
-    "Annual Change":0.1747791773
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2006",
-    "Quarterly Change":-0.34966,
-    "Annual Change":0.2582013673
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2006",
-    "Quarterly Change":0.18474,
-    "Annual Change":1.5424527101
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2007",
-    "Quarterly Change":1.36723,
-    "Annual Change":2.0665538352
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2007",
-    "Quarterly Change":0.56563,
-    "Annual Change":1.7718245793
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2007",
-    "Quarterly Change":-1.57521,
-    "Annual Change":0.5201810843
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2007",
-    "Quarterly Change":-0.14853,
-    "Annual Change":0.1857933437
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2008",
-    "Quarterly Change":0.25701,
-    "Annual Change":-0.9114910901
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2008",
-    "Quarterly Change":0.27004,
-    "Annual Change":-1.2027352169
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2008",
-    "Quarterly Change":-1.3573,
-    "Annual Change":-0.9839980582
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2008",
-    "Quarterly Change":-0.02083,
-    "Annual Change":-0.857370783
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2009",
-    "Quarterly Change":0.08673,
-    "Annual Change":-1.0257552849
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2009",
-    "Quarterly Change":0.5112,
-    "Annual Change":-0.7877163979
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2009",
-    "Quarterly Change":-1.74613,
-    "Annual Change":-1.1787930333
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2009",
-    "Quarterly Change":-0.28083,
-    "Annual Change":-1.4357830892
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2010",
-    "Quarterly Change":-0.60306,
-    "Annual Change":-2.1150787242
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2010",
-    "Quarterly Change":-0.25039,
-    "Annual Change":-2.8567674666
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2010",
-    "Quarterly Change":-0.00213,
-    "Annual Change":-1.1324836691
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2010",
-    "Quarterly Change":-1.00479,
-    "Annual Change":-1.8502608485
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2011",
-    "Quarterly Change":-0.04026,
-    "Annual Change":-1.2945231327
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2011",
-    "Quarterly Change":-0.97947,
-    "Annual Change":-2.0159685165
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2011",
-    "Quarterly Change":-0.4931711451,
-    "Annual Change":-2.4971214651
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2011",
-    "Quarterly Change":-1.2901287683,
-    "Annual Change":-2.7781556943
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2012",
-    "Quarterly Change":1.5179265952,
-    "Annual Change":-1.2626479028
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2012",
-    "Quarterly Change":-0.6629364843,
-    "Annual Change":-0.9470239764
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2012",
-    "Quarterly Change":0.5409932864,
-    "Annual Change":0.0824236084
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2012",
-    "Quarterly Change":-0.8267803758,
-    "Annual Change":0.5522148209
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2013",
-    "Quarterly Change":2.2544203824,
-    "Annual Change":1.2817025478
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2013",
-    "Quarterly Change":-0.7645519985,
-    "Annual Change":1.1780977912
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2013",
-    "Quarterly Change":-1.9263089546,
-    "Annual Change":-1.3048391608
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2013",
-    "Quarterly Change":-0.3728003841,
-    "Annual Change":-0.8530475535
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2014",
-    "Quarterly Change":-2.2712316609,
-    "Annual Change":-5.2411669742
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q2 2014",
-    "Quarterly Change":-2.6125418744,
-    "Annual Change":-7.0057920916
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q3 2014",
-    "Quarterly Change":0.0187358012,
-    "Annual Change":-5.1614860959
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0002301056,
-    "Annual Change":-4.8068237982
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2015",
-    "Quarterly Change":0.0034276715,
-    "Annual Change":-2.59118095
-  },
-  {
-    "Type":"Leisure Services",
-    "Quarter":"Q4 2004",
-    "Quarterly Change":0.44493,
     "Annual Change":null
   },
   {
@@ -3288,9 +168,165 @@
     "Annual Change":null
   },
   {
+    "Type":"Food",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":1.08693,
+    "Annual Change":null
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":0.01678,
+    "Annual Change":null
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":0.14837,
+    "Annual Change":null
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":0.96520,
+    "Annual Change":null
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":1.37794,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":1.30369,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":-0.29486,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":0.54249,
+    "Annual Change":null
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":-2.02202,
+    "Annual Change":null
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":1.52827,
+    "Annual Change":null
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":1.58783,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":5.05555,
+    "Annual Change":null
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2005",
+    "Quarterly Change":-0.55078,
+    "Annual Change":null
+  },
+  {
     "Type":"Leisure Services",
     "Quarter":"Q2 2005",
     "Quarterly Change":0.24297,
+    "Annual Change":null
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-0.93475,
+    "Annual Change":null
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":2.47255,
+    "Annual Change":null
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":0.04426,
+    "Annual Change":null
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-0.03520,
+    "Annual Change":null
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-0.44392,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":4.29869,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":0.92438,
+    "Annual Change":null
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":0.13918,
+    "Annual Change":null
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-1.02713,
+    "Annual Change":null
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":0.12877,
+    "Annual Change":null
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":2.18519,
+    "Annual Change":null
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-0.42115,
+    "Annual Change":null
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2005",
+    "Quarterly Change":-0.43257,
     "Annual Change":null
   },
   {
@@ -3300,399 +336,3447 @@
     "Annual Change":null
   },
   {
+    "Type":"Food",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":0.85210,
+    "Annual Change":0.60659
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":2.95537,
+    "Annual Change":6.72173
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-0.42584,
+    "Annual Change":5.18915
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":null,
+    "Annual Change":6.81915
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":1.36142,
+    "Annual Change":5.21042
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-0.60996,
+    "Annual Change":9.03216
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-0.74306,
+    "Annual Change":1.28563
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":0.24157,
+    "Annual Change":2.81585
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-6.93836,
+    "Annual Change":-7.47549
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":1.01603,
+    "Annual Change":3.22729
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-2.12095,
+    "Annual Change":2.97032
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":1.77693,
+    "Annual Change":15.101
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2005",
+    "Quarterly Change":-1.08234,
+    "Annual Change":-6.05753
+  },
+  {
     "Type":"Leisure Services",
     "Quarter":"Q4 2005",
     "Quarterly Change":-0.16208,
-    "Annual Change":1.7471068175
+    "Annual Change":1.74711
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":0.09913,
+    "Annual Change":1.09544
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":0.06618,
+    "Annual Change":5.58853
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":4.01217,
+    "Annual Change":3.76882
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":3.05371,
+    "Annual Change":4.01175
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":1.94239,
+    "Annual Change":4.28905
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":4.83606,
+    "Annual Change":10.09249
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":2.24395,
+    "Annual Change":2.12032
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":0.23242,
+    "Annual Change":1.16021
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":1.82626,
+    "Annual Change":-8.10854
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":0.65690,
+    "Annual Change":3.36648
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":1.55651,
+    "Annual Change":3.18752
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":2.82634,
+    "Annual Change":9.48127
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2006",
+    "Quarterly Change":0.84672,
+    "Annual Change":-1.22334
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2006",
     "Quarterly Change":1.34855,
-    "Annual Change":2.2370936301
+    "Annual Change":2.23709
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":1.62336,
+    "Annual Change":1.63192
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":0.18458,
+    "Annual Change":5.76568
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":-0.34528,
+    "Annual Change":3.25732
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":0.65579,
+    "Annual Change":3.69301
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":2.18772,
+    "Annual Change":5.12209
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":0.97816,
+    "Annual Change":9.73872
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":-1.04617,
+    "Annual Change":1.3508
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":2.68272,
+    "Annual Change":3.31359
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":-0.26999,
+    "Annual Change":-6.46534
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":1.08084,
+    "Annual Change":2.91094
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":1.78414,
+    "Annual Change":3.38692
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":1.15004,
+    "Annual Change":5.41124
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2006",
+    "Quarterly Change":0.85687,
+    "Annual Change":0.17478
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2006",
     "Quarterly Change":0.71191,
-    "Annual Change":2.7153719336
+    "Annual Change":2.71537
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-0.28413,
+    "Annual Change":2.2994
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.17556,
+    "Annual Change":3.39487
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.02892,
+    "Annual Change":3.24149
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.02084,
+    "Annual Change":3.75115
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":2.66439,
+    "Annual Change":8.40418
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-1.89619,
+    "Annual Change":3.22072
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.13943,
+    "Annual Change":0.56254
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.48510,
+    "Annual Change":3.67048
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":0.46007,
+    "Annual Change":-5.05986
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-0.22652,
+    "Annual Change":2.54579
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-1.68540,
+    "Annual Change":-0.52919
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-1.91716,
+    "Annual Change":3.8276
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2006",
+    "Quarterly Change":-0.34966,
+    "Annual Change":0.2582
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2006",
     "Quarterly Change":0.59708,
-    "Annual Change":2.5130821518
+    "Annual Change":2.51308
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":1.27051,
+    "Annual Change":2.72381
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":-0.43303,
+    "Annual Change":-0.008
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":-0.07695,
+    "Annual Change":3.60323
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":0.13485,
+    "Annual Change":3.89106
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":3.28046,
+    "Annual Change":10.45656
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":2.32371,
+    "Annual Change":6.26746
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":-1.42442,
+    "Annual Change":-0.12779
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":0.00853,
+    "Annual Change":3.42947
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":-6.48826,
+    "Annual Change":-4.60068
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":0.67810,
+    "Annual Change":2.20275
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":2.09959,
+    "Annual Change":3.75999
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":-1.37415,
+    "Annual Change":0.61304
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2006",
+    "Quarterly Change":0.18474,
+    "Annual Change":1.54245
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2006",
     "Quarterly Change":0.85695,
-    "Annual Change":3.5594155165
+    "Annual Change":3.55942
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":0.97897,
+    "Annual Change":3.62671
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":1.42530,
+    "Annual Change":1.35012
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":6.70093,
+    "Annual Change":6.28142
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":3.87705,
+    "Annual Change":4.72109
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":2.85292,
+    "Annual Change":11.44314
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":-1.92497,
+    "Annual Change":-0.58588
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":2.76127,
+    "Annual Change":0.37753
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":1.00251,
+    "Annual Change":4.22412
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":3.81082,
+    "Annual Change":-2.74138
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":2.97920,
+    "Annual Change":4.56071
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":1.07489,
+    "Annual Change":3.26792
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":3.48633,
+    "Annual Change":1.25882
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2007",
+    "Quarterly Change":1.36723,
+    "Annual Change":2.06655
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2007",
     "Quarterly Change":0.36381,
-    "Annual Change":2.5531974518
+    "Annual Change":2.5532
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":2.03903,
+    "Annual Change":4.05058
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":5.18365,
+    "Annual Change":6.40734
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":-0.03438,
+    "Annual Change":6.61299
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":1.55774,
+    "Annual Change":5.65947
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":1.89846,
+    "Annual Change":11.12768
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":4.94069,
+    "Annual Change":3.31527
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":-1.82260,
+    "Annual Change":-0.41007
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":1.99670,
+    "Annual Change":3.5278
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":-1.68092,
+    "Annual Change":-4.11735
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":2.82000,
+    "Annual Change":6.35974
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":-1.12590,
+    "Annual Change":0.31546
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":-1.44257,
+    "Annual Change":-1.33659
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2007",
+    "Quarterly Change":0.56563,
+    "Annual Change":1.77182
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2007",
     "Quarterly Change":0.17097,
-    "Annual Change":2.0023597897
+    "Annual Change":2.00236
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-0.86876,
+    "Annual Change":3.44054
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-3.22579,
+    "Annual Change":2.7944
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":1.13082,
+    "Annual Change":7.78742
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-2.58004,
+    "Annual Change":2.91196
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":2.33889,
+    "Annual Change":10.77535
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":1.07901,
+    "Annual Change":6.44852
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":2.39315,
+    "Annual Change":1.83129
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":0.44027,
+    "Annual Change":3.48162
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":0.72483,
+    "Annual Change":-3.86465
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-0.72805,
+    "Annual Change":5.8251
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-0.32541,
+    "Annual Change":1.70313
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-0.45459,
+    "Annual Change":0.13464
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2007",
+    "Quarterly Change":-1.57521,
+    "Annual Change":0.52018
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2007",
     "Quarterly Change":0.45386,
-    "Annual Change":1.8571444956
+    "Annual Change":1.85714
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":3.57862,
+    "Annual Change":5.79811
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":-0.27452,
+    "Annual Change":2.95805
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":0.45036,
+    "Annual Change":8.35623
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":3.80907,
+    "Annual Change":6.68808
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":0.79323,
+    "Annual Change":8.10763
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":3.24256,
+    "Annual Change":7.40442
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":-0.19606,
+    "Annual Change":3.10022
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":0.55872,
+    "Annual Change":4.05092
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":0.72180,
+    "Annual Change":3.54769
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":1.08520,
+    "Annual Change":6.25301
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":1.80908,
+    "Annual Change":1.41375
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":-3.39700,
+    "Annual Change":-1.91915
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2007",
+    "Quarterly Change":-0.14853,
+    "Annual Change":0.18579
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2007",
     "Quarterly Change":0.24328,
-    "Annual Change":1.2373883741
+    "Annual Change":1.23739
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":1.87336,
+    "Annual Change":6.73518
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":6.36246,
+    "Annual Change":7.96982
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":6.20485,
+    "Annual Change":7.85245
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":3.27022,
+    "Annual Change":6.06482
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":-0.04703,
+    "Annual Change":5.05951
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":6.95129,
+    "Annual Change":17.12503
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":3.07912,
+    "Annual Change":3.41912
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":1.11613,
+    "Annual Change":4.16797
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":-6.07980,
+    "Annual Change":-6.31785
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":1.70345,
+    "Annual Change":4.9367
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":3.30318,
+    "Annual Change":3.6495
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":7.29613,
+    "Annual Change":1.69165
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2008",
+    "Quarterly Change":0.25701,
+    "Annual Change":-0.91149
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2008",
     "Quarterly Change":1.43362,
-    "Annual Change":2.3165072226
+    "Annual Change":2.31651
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":2.29163,
+    "Annual Change":6.99941
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":2.91554,
+    "Annual Change":5.64164
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":3.04403,
+    "Annual Change":11.17373
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":-0.07890,
+    "Annual Change":4.35555
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":-0.02407,
+    "Annual Change":3.07734
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":6.32567,
+    "Annual Change":18.67081
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":1.14991,
+    "Annual Change":6.55033
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":1.96384,
+    "Annual Change":4.13441
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":1.48208,
+    "Annual Change":-3.30403
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":2.37596,
+    "Annual Change":4.48352
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":3.92563,
+    "Annual Change":8.94501
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":8.33331,
+    "Annual Change":11.77841
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2008",
+    "Quarterly Change":0.27004,
+    "Annual Change":-1.20274
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2008",
-    "Quarterly Change":1.5557,
-    "Annual Change":3.730898842
+    "Quarterly Change":1.55570,
+    "Annual Change":3.7309
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.87454,
+    "Annual Change":8.88108
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":1.10414,
+    "Annual Change":10.36832
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.44490,
+    "Annual Change":10.41969
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.20237,
+    "Annual Change":7.33605
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":1.65304,
+    "Annual Change":2.38654
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":-2.61639,
+    "Annual Change":14.33226
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.72161,
+    "Annual Change":4.81093
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":1.31247,
+    "Annual Change":5.03869
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":1.62541,
+    "Annual Change":-2.43947
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.36346,
+    "Annual Change":5.63233
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":-0.50617,
+    "Annual Change":8.74744
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":0.03582,
+    "Annual Change":12.32909
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2008",
+    "Quarterly Change":-1.35730,
+    "Annual Change":-0.984
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2008",
     "Quarterly Change":3.99473,
-    "Annual Change":7.3872798426
+    "Annual Change":7.38728
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":0.41127,
+    "Annual Change":5.55159
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":0.28101,
+    "Annual Change":10.98314
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":0.17868,
+    "Annual Change":10.12105
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":2.25601,
+    "Annual Change":5.73022
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-10.96584,
+    "Annual Change":-9.5584
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-11.92980,
+    "Annual Change":-2.46982
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-0.44866,
+    "Annual Change":4.54566
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":5.74173,
+    "Annual Change":10.45261
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-1.74362,
+    "Annual Change":-4.82751
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":0.71329,
+    "Annual Change":5.24369
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-4.82630,
+    "Annual Change":1.65985
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-6.54242,
+    "Annual Change":8.67162
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2008",
+    "Quarterly Change":-0.02083,
+    "Annual Change":-0.85737
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2008",
     "Quarterly Change":-0.10649,
-    "Annual Change":7.0125816888
+    "Annual Change":7.01258
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":0.60040,
+    "Annual Change":4.23267
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":2.97237,
+    "Annual Change":7.44578
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":3.41035,
+    "Annual Change":7.22351
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":2.53763,
+    "Annual Change":4.98018
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":-4.43263,
+    "Annual Change":-13.52667
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":2.26181,
+    "Annual Change":-6.74622
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":0.82085,
+    "Annual Change":2.25525
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":0.13539,
+    "Annual Change":9.38132
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":-0.61616,
+    "Annual Change":0.70898
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":1.92448,
+    "Annual Change":5.47242
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":1.42095,
+    "Annual Change":-0.19244
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":1.59210,
+    "Annual Change":2.89446
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2009",
+    "Quarterly Change":0.08673,
+    "Annual Change":-1.02576
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2009",
     "Quarterly Change":-0.53354,
-    "Annual Change":4.9372290302
+    "Annual Change":4.93723
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":1.11988,
+    "Annual Change":3.03868
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.61731,
+    "Annual Change":5.04638
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":1.29454,
+    "Annual Change":5.40307
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.86679,
+    "Annual Change":5.97375
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":1.66369,
+    "Annual Change":-12.06686
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":9.36220,
+    "Annual Change":-4.083
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.05048,
+    "Annual Change":1.14382
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.35743,
+    "Annual Change":7.65805
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.65857,
+    "Annual Change":-0.10826
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":1.17595,
+    "Annual Change":4.23611
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":4.73323,
+    "Annual Change":0.58316
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":-0.31452,
+    "Annual Change":-5.31921
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2009",
+    "Quarterly Change":0.51120,
+    "Annual Change":-0.78772
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2009",
     "Quarterly Change":0.94265,
-    "Annual Change":4.3037701694
+    "Annual Change":4.30377
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.06319,
+    "Annual Change":2.20992
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":-0.53887,
+    "Annual Change":3.33931
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":1.21308,
+    "Annual Change":6.20917
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.60112,
+    "Annual Change":6.39547
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":3.09286,
+    "Annual Change":-10.82138
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.20748,
+    "Annual Change":-1.30166
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.84184,
+    "Annual Change":1.26454
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":1.64585,
+    "Annual Change":8.0123
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":-0.79178,
+    "Annual Change":-2.48421
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.36511,
+    "Annual Change":4.23782
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":0.31816,
+    "Annual Change":1.41651
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":-0.31053,
+    "Annual Change":-5.64702
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2009",
+    "Quarterly Change":-1.74613,
+    "Annual Change":-1.17879
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2009",
-    "Quarterly Change":2.1591,
-    "Annual Change":2.4626833536
+    "Quarterly Change":2.15910,
+    "Annual Change":2.46268
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":0.77266,
+    "Annual Change":2.57778
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":0.20952,
+    "Annual Change":3.26563
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-1.10385,
+    "Annual Change":4.84943
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":8.04389,
+    "Annual Change":12.41766
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-0.19146,
+    "Annual Change":-0.02952
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":2.51375,
+    "Annual Change":14.88491
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":0.10795,
+    "Annual Change":1.83073
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-4.66899,
+    "Annual Change":-2.62197
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-5.04866,
+    "Annual Change":-5.76433
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":0.25600,
+    "Annual Change":3.76454
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":3.22184,
+    "Annual Change":9.99255
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-0.38792,
+    "Annual Change":0.56645
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2009",
+    "Quarterly Change":-0.28083,
+    "Annual Change":-1.43578
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2009",
     "Quarterly Change":0.47059,
-    "Annual Change":3.0546074248
+    "Annual Change":3.05461
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":1.52860,
+    "Annual Change":3.52422
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":0.78392,
+    "Annual Change":1.07094
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":1.70044,
+    "Annual Change":3.11573
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":-0.06832,
+    "Annual Change":9.56061
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":-0.76601,
+    "Annual Change":3.80604
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":5.14747,
+    "Annual Change":18.12678
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":1.63317,
+    "Annual Change":2.65119
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":0.44576,
+    "Annual Change":-2.32014
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":1.26673,
+    "Annual Change":-3.97898
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":0.91312,
+    "Annual Change":2.73491
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":2.51772,
+    "Annual Change":11.18202
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":0.26345,
+    "Annual Change":-0.74878
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2010",
+    "Quarterly Change":-0.60306,
+    "Annual Change":-2.11508
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2010",
     "Quarterly Change":0.31008,
-    "Annual Change":3.9286617778
+    "Annual Change":3.92866
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":0.72527,
+    "Annual Change":3.12024
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":0.80703,
+    "Annual Change":1.26152
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":1.33952,
+    "Annual Change":3.16151
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":0.53720,
+    "Annual Change":9.20261
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":-0.33378,
+    "Annual Change":1.76648
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":4.95074,
+    "Annual Change":13.36178
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":-0.97228,
+    "Annual Change":1.60183
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":0.07101,
+    "Annual Change":-2.59892
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":-1.23367,
+    "Annual Change":-5.78404
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":3.84117,
+    "Annual Change":5.4412
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":-0.11256,
+    "Annual Change":6.03787
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":3.98594,
+    "Annual Change":3.53296
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2010",
+    "Quarterly Change":-0.25039,
+    "Annual Change":-2.85677
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2010",
-    "Quarterly Change":0.3262,
-    "Annual Change":3.293969285
+    "Quarterly Change":0.32620,
+    "Annual Change":3.29397
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":0.13215,
+    "Annual Change":3.1913
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":1.33682,
+    "Annual Change":3.17116
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":0.11612,
+    "Annual Change":2.04343
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":null,
+    "Annual Change":8.55009
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":0.62799,
+    "Annual Change":-0.66668
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":-1.77766,
+    "Annual Change":11.11604
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":0.34208,
+    "Annual Change":1.09831
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":-0.63825,
+    "Annual Change":-4.78764
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":3.04014,
+    "Annual Change":-2.14495
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":0.12443,
+    "Annual Change":5.18835
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":-0.81066,
+    "Annual Change":4.84469
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":-1.59514,
+    "Annual Change":2.19882
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2010",
+    "Quarterly Change":-0.00213,
+    "Annual Change":-1.13248
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2010",
     "Quarterly Change":2.68341,
-    "Annual Change":3.8241062256
+    "Annual Change":3.82411
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":0.46609,
+    "Annual Change":2.87738
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":0.05898,
+    "Annual Change":3.01617
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-2.08268,
+    "Annual Change":1.03345
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":1.59681,
+    "Annual Change":2.0728
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":1.54881,
+    "Annual Change":1.06532
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":5.95232,
+    "Annual Change":14.84315
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-0.30517,
+    "Annual Change":0.6811
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-2.30137,
+    "Annual Change":-2.42297
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-1.84310,
+    "Annual Change":1.15863
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":0.39948,
+    "Annual Change":5.33889
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":3.06973,
+    "Annual Change":4.69019
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-2.87379,
+    "Annual Change":-0.35161
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2010",
+    "Quarterly Change":-1.00479,
+    "Annual Change":-1.85026
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2010",
     "Quarterly Change":0.87827,
-    "Annual Change":4.2453941722
+    "Annual Change":4.24539
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":0.06328,
+    "Annual Change":1.39259
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":1.38974,
+    "Annual Change":3.6354
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":2.88204,
+    "Annual Change":2.2073
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":0.55913,
+    "Annual Change":2.7137
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":1.54839,
+    "Annual Change":3.42242
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":5.53352,
+    "Annual Change":15.2648
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":1.47030,
+    "Annual Change":0.51976
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":-0.97310,
+    "Annual Change":-3.80132
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":2.75009,
+    "Annual Change":2.64041
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":0.97542,
+    "Annual Change":5.40392
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":2.62072,
+    "Annual Change":4.79537
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":7.57659,
+    "Annual Change":6.91667
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2011",
+    "Quarterly Change":-0.04026,
+    "Annual Change":-1.29452
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2011",
-    "Quarterly Change":-0.1573,
-    "Annual Change":3.7596774944
+    "Quarterly Change":-0.15730,
+    "Annual Change":3.75968
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":0.57228,
+    "Annual Change":1.23858
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":0.96170,
+    "Annual Change":3.79441
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":1.91065,
+    "Annual Change":2.78333
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":1.18144,
+    "Annual Change":3.37188
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":1.87664,
+    "Annual Change":5.71614
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-0.05006,
+    "Annual Change":9.77254
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":0.38823,
+    "Annual Change":1.90077
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-0.69278,
+    "Annual Change":-4.53555
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-0.22172,
+    "Annual Change":3.69206
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":1.50634,
+    "Annual Change":3.03396
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-0.28345,
+    "Annual Change":4.61608
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-2.81727,
+    "Annual Change":-0.07829
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2011",
+    "Quarterly Change":-0.97947,
+    "Annual Change":-2.01597
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2011",
-    "Quarterly Change":0.5755,
-    "Annual Change":4.0175162866
+    "Quarterly Change":0.57550,
+    "Annual Change":4.01752
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.1829494287,
+    "Annual Change":2.301
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.7356597633,
+    "Annual Change":4.20292
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.1815711485,
+    "Annual Change":3.87716
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":-1.0450498272,
+    "Annual Change":2.2916
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":0.9526243003,
+    "Annual Change":6.05719
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.098725088,
+    "Annual Change":12.98717
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.0759512887,
+    "Annual Change":2.64605
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":0.5142519113,
+    "Annual Change":-3.42825
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":2.6208121037,
+    "Annual Change":3.27008
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":0.2751050044,
+    "Annual Change":3.18901
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":0.320551171,
+    "Annual Change":5.80918
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":1.0770948621,
+    "Annual Change":2.63514
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2011",
+    "Quarterly Change":-0.4931711451,
+    "Annual Change":-2.49712
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2011",
     "Quarterly Change":1.496737893,
-    "Annual Change":2.8154225176
+    "Annual Change":2.81542
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.9620281035,
+    "Annual Change":2.806
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.2135394791,
+    "Annual Change":4.36389
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":-0.8214114634,
+    "Annual Change":5.2152
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.6759289683,
+    "Annual Change":1.36442
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.9734052701,
+    "Annual Change":5.45623
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":1.9930221123,
+    "Annual Change":8.76499
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":-0.3853974037,
+    "Annual Change":2.56345
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.0427684335,
+    "Annual Change":-1.11114
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":-3.1678982697,
+    "Annual Change":1.87627
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":0.9227871549,
+    "Annual Change":3.72685
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":1.0290357405,
+    "Annual Change":3.71424
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":-2.3221074717,
+    "Annual Change":3.21811
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2011",
+    "Quarterly Change":-1.2901287683,
+    "Annual Change":-2.77816
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2011",
     "Quarterly Change":-0.349484728,
-    "Annual Change":1.5640900209
+    "Annual Change":1.56409
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":1.0117880537,
+    "Annual Change":3.7805
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":0.2260253929,
+    "Annual Change":3.16604
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":3.0842953715,
+    "Annual Change":5.42205
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":6.2884984287,
+    "Annual Change":7.13967
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":1.7175708227,
+    "Annual Change":5.63192
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":2.3908747718,
+    "Annual Change":5.52611
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":3.2865374453,
+    "Annual Change":4.39925
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":0.5390611135,
+    "Annual Change":0.39891
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":-0.48891423,
+    "Annual Change":-1.33519
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":2.070213067,
+    "Annual Change":4.85148
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":3.674160837,
+    "Annual Change":4.77891
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":0.0443454777,
+    "Annual Change":-4.00896
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2012",
+    "Quarterly Change":1.5179265952,
+    "Annual Change":-1.26265
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2012",
     "Quarterly Change":0.6718848742,
-    "Annual Change":2.4075664634
+    "Annual Change":2.40757
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":0.0448719993,
+    "Annual Change":3.23627
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":1.3271824791,
+    "Annual Change":3.5395
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":0.3134621345,
+    "Annual Change":3.76982
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":0.0100978113,
+    "Annual Change":5.89935
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":0.1213704619,
+    "Annual Change":3.81196
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":-2.2821927929,
+    "Annual Change":3.16945
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":-2.8465410731,
+    "Annual Change":1.03523
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":1.3313381361,
+    "Annual Change":2.44528
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":-1.2983868271,
+    "Annual Change":-2.39984
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":1.6103784022,
+    "Annual Change":4.95894
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":-0.8644754044,
+    "Annual Change":4.16839
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":5.307348468,
+    "Annual Change":4.01603
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2012",
+    "Quarterly Change":-0.6629364843,
+    "Annual Change":-0.94702
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2012",
     "Quarterly Change":3.193838791,
-    "Annual Change":5.0735973714
+    "Annual Change":5.0736
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.2364859708,
+    "Annual Change":2.2706
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":-0.0615913413,
+    "Annual Change":1.71039
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.4882693192,
+    "Annual Change":3.05878
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.2897631688,
+    "Annual Change":7.32784
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.875956321,
+    "Annual Change":3.73312
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":2.9403130929,
+    "Annual Change":5.04876
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.5468979187,
+    "Annual Change":0.50639
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":-0.3642400659,
+    "Annual Change":1.54991
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":1.7727640486,
+    "Annual Change":-3.2064
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.0686341807,
+    "Annual Change":4.74283
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":2.4727602426,
+    "Annual Change":6.40315
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":-0.6255041319,
+    "Annual Change":2.26392
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2012",
+    "Quarterly Change":0.5409932864,
+    "Annual Change":0.08242
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2012",
     "Quarterly Change":0.3854149237,
-    "Annual Change":3.9231101277
+    "Annual Change":3.92311
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":1.3727289429,
+    "Annual Change":2.68662
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.0799174301,
+    "Annual Change":1.57477
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":-0.6720945703,
+    "Annual Change":3.21394
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.7331978891,
+    "Annual Change":7.38889
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.7980937712,
+    "Annual Change":3.55302
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":4.1062202634,
+    "Annual Change":7.22527
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.7534982213,
+    "Annual Change":1.65548
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.0108072388,
+    "Annual Change":1.51747
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":-1.2685566123,
+    "Annual Change":-1.30781
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":0.2716661991,
+    "Annual Change":4.06706
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":-0.7438926338,
+    "Annual Change":4.53591
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":1.8293905974,
+    "Annual Change":6.61034
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2012",
+    "Quarterly Change":-0.8267803758,
+    "Annual Change":0.55221
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2012",
     "Quarterly Change":-0.0728490324,
-    "Annual Change":4.211606798
+    "Annual Change":4.21161
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":1.2206683476,
+    "Annual Change":2.89896
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.6280847777,
+    "Annual Change":1.98224
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":2.1423728138,
+    "Annual Change":2.27084
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":3.5940953252,
+    "Annual Change":4.66659
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":1.2284818138,
+    "Annual Change":3.0551
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":1.9058467068,
+    "Annual Change":6.71734
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.8311426358,
+    "Annual Change":-0.76114
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.1996721205,
+    "Annual Change":1.17478
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.0330877007,
+    "Annual Change":-0.79011
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.8102367639,
+    "Annual Change":2.78244
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":0.9477118199,
+    "Annual Change":1.7868
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":1.514060433,
+    "Annual Change":8.17651
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2013",
+    "Quarterly Change":2.2544203824,
+    "Annual Change":1.2817
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2013",
     "Quarterly Change":0.5975986765,
-    "Annual Change":4.1347086249
+    "Annual Change":4.13471
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":0.6403821339,
+    "Annual Change":3.51146
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":1.0687959119,
+    "Annual Change":1.72218
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":0.516238382,
+    "Annual Change":2.47757
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-1.5129254681,
+    "Annual Change":3.07266
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":1.3298348717,
+    "Annual Change":4.29898
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-1.6873670224,
+    "Annual Change":7.36694
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-0.1027758409,
+    "Annual Change":2.04152
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-0.2621941062,
+    "Annual Change":-0.41629
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-1.2955103,
+    "Annual Change":-0.78722
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":0.5689819676,
+    "Annual Change":1.72903
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":0.1152689948,
+    "Annual Change":2.79275
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":0.4983140197,
+    "Annual Change":3.23645
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2013",
+    "Quarterly Change":-0.7645519985,
+    "Annual Change":1.1781
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2013",
     "Quarterly Change":0.5881624256,
-    "Annual Change":1.505275005
+    "Annual Change":1.50528
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.233112349,
+    "Annual Change":3.50798
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.1522023291,
+    "Annual Change":1.93979
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":1.1723525024,
+    "Annual Change":3.17519
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.4146850573,
+    "Annual Change":3.20104
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.4420084226,
+    "Annual Change":3.8503
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":1.8630823463,
+    "Annual Change":6.24339
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":2.4277725162,
+    "Annual Change":3.95035
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.459525083,
+    "Annual Change":0.40704
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":2.6884502057,
+    "Annual Change":0.10544
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":1.6157703187,
+    "Annual Change":3.30183
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":0.0907958724,
+    "Annual Change":0.40334
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":-0.9533226162,
+    "Annual Change":2.89589
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2013",
+    "Quarterly Change":-1.9263089546,
+    "Annual Change":-1.30484
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2013",
     "Quarterly Change":1.9131706261,
-    "Annual Change":3.0500737473
+    "Annual Change":3.05007
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":0.8221112264,
+    "Annual Change":2.94576
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-0.1289893408,
+    "Annual Change":1.727
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-0.5647315234,
+    "Annual Change":3.28672
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":4.0494766807,
+    "Annual Change":6.59857
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":1.7925192717,
+    "Annual Change":4.87484
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-1.3002749502,
+    "Annual Change":0.72591
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-0.2179925051,
+    "Annual Change":2.94804
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-0.0079007079,
+    "Annual Change":0.38826
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-1.891953863,
+    "Annual Change":-0.52664
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":0.5767033231,
+    "Annual Change":3.61609
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":0.5539867974,
+    "Annual Change":1.71623
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":0.8140470454,
+    "Annual Change":1.86991
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2013",
+    "Quarterly Change":-0.3728003841,
+    "Annual Change":-0.85305
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2013",
     "Quarterly Change":-0.0577944548,
-    "Annual Change":3.0655988105
+    "Annual Change":3.0656
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":-0.2925985765,
+    "Annual Change":1.40671
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":2.0192432236,
+    "Annual Change":3.13335
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":2.5164107475,
+    "Annual Change":3.66494
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":0.0678015873,
+    "Annual Change":2.97
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":2.3582381645,
+    "Annual Change":6.04529
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":-0.4781955146,
+    "Annual Change":-1.63053
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":1.1666545654,
+    "Annual Change":3.29059
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":4.6508568139,
+    "Annual Change":4.84782
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":-1.3602681404,
+    "Annual Change":-1.91219
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":0.7556616643,
+    "Annual Change":3.56
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":0.5950195565,
+    "Annual Change":1.36085
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":2.8171297784,
+    "Annual Change":3.17755
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2014",
+    "Quarterly Change":-2.2712316609,
+    "Annual Change":-5.24117
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2014",
     "Quarterly Change":0.6756674285,
-    "Annual Change":3.1455828537
+    "Annual Change":3.14558
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":0.3339186043,
+    "Annual Change":1.09791
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":0.0707301455,
+    "Annual Change":2.1149
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-0.0115619989,
+    "Annual Change":3.12061
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":0,
+    "Annual Change":4.55179
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":1.0059280754,
+    "Annual Change":5.70631
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-0.0362324481,
+    "Annual Change":0.02156
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-0.4874873314,
+    "Annual Change":2.89281
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":1.1409403254,
+    "Annual Change":6.32284
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-4.1246687708,
+    "Annual Change":-4.72368
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":1.5759362834,
+    "Annual Change":4.5969
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":0.5546744576,
+    "Annual Change":1.80572
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-4.3588182354,
+    "Annual Change":-1.80907
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2014",
+    "Quarterly Change":-2.6125418744,
+    "Annual Change":-7.00579
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2014",
     "Quarterly Change":0.5397873564,
-    "Annual Change":3.0959778645
+    "Annual Change":3.09598
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":-0.1635325961,
+    "Annual Change":0.69784
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.1912190173,
+    "Annual Change":2.15468
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.9682260925,
+    "Annual Change":2.91255
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.3925633656,
+    "Annual Change":4.52876
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":1.1124655297,
+    "Annual Change":6.41191
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":-0.7853447613,
+    "Annual Change":-2.57899
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":-0.0042961621,
+    "Annual Change":0.4497
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.1647565886,
+    "Annual Change":6.01087
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":2.6601043386,
+    "Annual Change":-4.74998
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.232042254,
+    "Annual Change":3.17257
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":-0.2526756129,
+    "Annual Change":1.45636
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":4.1920933952,
+    "Annual Change":3.29189
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2014",
+    "Quarterly Change":0.0187358012,
+    "Annual Change":-5.16149
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2014",
     "Quarterly Change":1.3726009437,
-    "Annual Change":2.5491343146
+    "Annual Change":2.54913
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":0.3402319756,
+    "Annual Change":0.21656
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-0.0555367373,
+    "Annual Change":2.22981
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-1.5866446028,
+    "Annual Change":1.8549
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":4.1375484133,
+    "Annual Change":4.61724
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":0.4539176503,
+    "Annual Change":5.01256
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-5.3963311997,
+    "Annual Change":-6.62198
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-1.7984117418,
+    "Annual Change":-1.14129
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":0.2374458022,
+    "Annual Change":6.27099
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":0.1484608224,
+    "Annual Change":-2.769
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":0.0840937659,
+    "Annual Change":2.66725
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-2.88031,
+    "Annual Change":-2.00875
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-6.5763844623,
+    "Annual Change":-4.28019
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2014",
+    "Quarterly Change":-0.0230105618,
+    "Annual Change":-4.82851
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q4 2014",
-    "Quarterly Change":-0.0014831293,
-    "Annual Change":2.6069144851
+    "Quarterly Change":-0.1483129322,
+    "Annual Change":2.45625
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":-0.3718355849,
+    "Annual Change":0.13692
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":1.2559577567,
+    "Annual Change":1.46495
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":4.6433903342,
+    "Annual Change":3.96816
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.8534389715,
+    "Annual Change":5.43859
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.9008511789,
+    "Annual Change":3.51738
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":-2.385407109,
+    "Annual Change":-8.41145
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.575315078,
+    "Annual Change":-1.71914
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.3626010125,
+    "Annual Change":1.91634
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":-0.5344366431,
+    "Annual Change":-1.95497
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":1.6324383913,
+    "Annual Change":3.56066
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.6017613238,
+    "Annual Change":-2.00218
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":8.5402468506,
+    "Annual Change":1.04787
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2015",
+    "Quarterly Change":0.3427671453,
+    "Annual Change":-2.28291
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q1 2015",
-    "Quarterly Change":0.0416823614,
-    "Annual Change":1.9607677723
+    "Quarterly Change":4.1682361449,
+    "Annual Change":6.01059
   },
   {
     "Type":"Food",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0016078241,
-    "Annual Change":-0.16545
+    "Quarterly Change":-0.1607824106,
+    "Annual Change":-0.35681
   },
   {
     "Type":"Catering",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0078903909,
-    "Annual Change": 0.21115
+    "Quarterly Change":0.7890390902,
+    "Annual Change":2.19327
   },
   {
     "Type":"Alcoholic Drink",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0071090942,
-    "Annual Change": 0.99190
+    "Quarterly Change":-0.7109094205,
+    "Annual Change":3.24098
   },
   {
     "Type":"Tobacco",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0071986627,
-    "Annual Change": 0.44990
+    "Quarterly Change":0.7198662683,
+    "Annual Change":6.19761
   },
   {
     "Type":"Housing",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0014960378,
-    "Annual Change": 1.12768
+    "Quarterly Change":0.1496037798,
+    "Annual Change":2.63976
   },
   {
     "Type":"Fuel and Light",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0060925022,
-    "Annual Change":-0.85650
+    "Quarterly Change":0.6092502222,
+    "Annual Change":-7.82005
   },
   {
     "Type":"Household Goods",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0079023173,
-    "Annual Change":-0.02443
+    "Quarterly Change":-0.7902317285,
+    "Annual Change":-2.01814
   },
   {
     "Type":"Household Services",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0051008592,
-    "Annual Change": 0.17588
+    "Quarterly Change":0.5100859171,
+    "Annual Change":1.28065
   },
   {
     "Type":"Clothing and Footwear",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0052766303,
-    "Annual Change": 2.65073
+    "Quarterly Change":-0.5276630299,
+    "Annual Change":1.72344
   },
   {
     "Type":"Personal Goods and Services",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0002544309,
-    "Annual Change": 0.24950
+    "Quarterly Change":0.0254430928,
+    "Annual Change":1.97987
   },
   {
     "Type":"Motoring Expenditure",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0168576548,
-    "Annual Change":-0.25859
+    "Quarterly Change":1.6857654822,
+    "Annual Change":-0.89985
   },
   {
     "Type":"Fares and Other Travel Costs",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0954817904,
-    "Annual Change": 4.31200
+    "Quarterly Change":9.5481790429,
+    "Annual Change":15.74105
   },
   {
     "Type":"Leisure Goods",
     "Quarter":"Q2 2015",
-    "Quarterly Change":-0.0055351888,
-    "Annual Change": 0.01640
+    "Quarterly Change":-0.5535188762,
+    "Annual Change":-0.21692
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q2 2015",
-    "Quarterly Change":0.0170241732,
-    "Annual Change": 1.43062
+    "Quarterly Change":1.702417324,
+    "Annual Change":7.23649
   },
-    {
+  {
     "Type":"Food",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0097609452,
-    "Annual Change":-0.20334
+    "Quarterly Change":-0.9760945244,
+    "Annual Change":-1.1678
   },
   {
     "Type":"Catering",
     "Quarter":"Q3 2015",
-    "Quarterly Change":0.0022738585,
-    "Annual Change": 2.00055
+    "Quarterly Change":0.2273858529,
+    "Annual Change":2.23016
   },
   {
     "Type":"Alcoholic Drink",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0126458589,
-    "Annual Change": 2.23802
+    "Quarterly Change":-1.2645858864,
+    "Annual Change":0.9579
   },
   {
     "Type":"Tobacco",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0159557621,
-    "Annual Change": 5.76547
+    "Quarterly Change":-1.5955762073,
+    "Annual Change":4.09451
   },
   {
     "Type":"Housing",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0001404324,
-    "Annual Change": 1.51035
+    "Quarterly Change":-0.0140432361,
+    "Annual Change":1.49624
   },
   {
     "Type":"Fuel and Light",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0391904491,
-    "Annual Change":-7.12680
+    "Quarterly Change":-3.9190449142,
+    "Annual Change":-10.73156
   },
   {
     "Type":"Household Goods",
     "Quarter":"Q3 2015",
-    "Quarterly Change":0.0139675022,
-    "Annual Change":-2.00024
+    "Quarterly Change":1.3967502181,
+    "Annual Change":-0.64531
   },
   {
     "Type":"Household Services",
     "Quarter":"Q3 2015",
-    "Quarterly Change":0.0104440267,
-    "Annual Change": 1.12462
+    "Quarterly Change":1.0444026706,
+    "Annual Change":2.1701
   },
   {
     "Type":"Clothing and Footwear",
     "Quarter":"Q3 2015",
-    "Quarterly Change":0.0366485557,
-    "Annual Change":-0.87608
+    "Quarterly Change":3.6648555662,
+    "Annual Change":2.71903
   },
   {
     "Type":"Personal Goods and Services",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0039935401,
-    "Annual Change": 1.73972
+    "Quarterly Change":-0.3993540138,
+    "Annual Change":1.33747
   },
   {
     "Type":"Motoring Expenditure",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0191670304,
-    "Annual Change":-0.66786
+    "Quarterly Change":-1.9167030428,
+    "Annual Change":-2.55309
   },
   {
     "Type":"Fares and Other Travel Costs",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.0506209714,
-    "Annual Change": 11.02806
+    "Quarterly Change":-5.0620971415,
+    "Annual Change":5.46109
   },
   {
     "Type":"Leisure Goods",
     "Quarter":"Q3 2015",
-    "Quarterly Change":0.0173840113,
-    "Annual Change":-0.21827
+    "Quarterly Change":1.7384011334,
+    "Annual Change":1.49869
   },
   {
     "Type":"Leisure Services",
     "Quarter":"Q3 2015",
-    "Quarterly Change":-0.020360864,
-    "Annual Change": 5.76295
+    "Quarterly Change":-2.0360864042,
+    "Annual Change":3.63063
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":0.2171833012,
+    "Annual Change":-1.289
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":0.867792729,
+    "Annual Change":3.1746
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-2.3210906934,
+    "Annual Change":0.20447
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":5.4078450544,
+    "Annual Change":5.36428
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":0.152496793,
+    "Annual Change":1.19169
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-2.59178317,
+    "Annual Change":-8.08518
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-1.2608633904,
+    "Annual Change":-0.10145
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-0.4224790741,
+    "Annual Change":1.49745
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-0.8312938262,
+    "Annual Change":1.71412
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-0.0686528736,
+    "Annual Change":1.18281
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":1.0557555195,
+    "Annual Change":1.39624
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-3.0649312743,
+    "Annual Change":9.42499
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":-3.0628261185,
+    "Annual Change":-1.58739
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q4 2015",
+    "Quarterly Change":0.2358934401,
+    "Annual Change":4.02937
   }
 ]
