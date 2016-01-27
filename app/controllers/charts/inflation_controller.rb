@@ -61,7 +61,6 @@ class Charts::InflationController < ApplicationController
         change = value_for_lbl['Quarterly Change']
       end
 
-       p change
        fract = (rpi_counter / 100) * change
        rpi = fract + rpi_counter
 
