@@ -1867,5 +1867,12 @@
     "RPIX Quarterly Change":-0.3,
     "RPI Annual Change":1.1,
     "RPI Quarterly Change":-0.4
+  },
+  {
+    "Quarter":"31/03/2016",
+    "RPIX Annual Change":0.5,
+    "RPIX Quarterly Change":0.7,
+    "RPI Annual Change":0.5,
+    "RPI Quarterly Change":0.8
   }
 ]
