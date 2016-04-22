@@ -98,5 +98,6 @@ DataSet.create!(place: gg, data_category: energy, name: 'Electricity Consumption
 DataSet.create!(place: gg, data_category: energy, name: 'Electricity Import vs Generated', stub: 'electricity_import_vs_generated', desc: 'Imported vs generated electricity', filename: 'energy/electricity_import_vs_generated.json', live: false, source_url: 'http://electricity.gg/')
 DataSet.create!(place: gg, data_category: transport, name: 'Registered Vehicles', stub: 'registered_vehicles', desc: 'Registered vehicles', filename: 'transport/registered_vehicles.json', live: false, source_url: 'http://www.gov.gg/pru')
 
-test_user = User.create!(email: 'test@data.gg', password: 'password',
-  password_confirmation: 'password', forename: 'Test', surname: 'User', is_admin: true)
+# Uncomment for a test admin user
+#test_user = User.create!(email: 'test@data.gg', password: 'password',
+#  password_confirmation: 'password', forename: 'Test', surname: 'User', is_admin: true)
