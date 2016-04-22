@@ -3,7 +3,8 @@ class HomeController < ApplicationController
   before_action :set_data_categories, only: [:index, :developers, :charts]
 
   def index
-    colors = [["rgba(187, 255, 147, 0.5)", "rgba(87, 149, 50, 0.5)"],
+    colors = [["rgba(255, 240, 110, 0.5)", "rgba(193, 186, 123, 0.5)"],
+              ["rgba(187, 255, 147, 0.5)", "rgba(87, 149, 50, 0.5)"],
               ["rgba(147, 255, 220, 0.5)", "rgba(38, 113, 88, 0.5)"],
               ["rgba(255, 183, 147, 0.5)", "rgba(170, 95, 57, 0.5)"],
               ["rgba(255, 147, 172, 0.5)", "rgba(156, 52, 76, 0.5)"],

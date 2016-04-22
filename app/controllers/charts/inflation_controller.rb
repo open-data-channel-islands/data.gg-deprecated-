@@ -54,7 +54,12 @@ class Charts::InflationController < ApplicationController
 
       @labels.each do |lbl|
        value_for_lbl = val.find { |v| v['Quarter'] == lbl }
-       change = (value_for_lbl != nil ? value_for_lbl['Quarterly Change'] : 0)
+
+       change = 0 # 0 is no change/nil.
+
+       if value_for_lbl && value_for_lbl['Quarterly Change']
+        change = value_for_lbl['Quarterly Change']
+      end
 
        fract = (rpi_counter / 100) * change
        rpi = fract + rpi_counter
