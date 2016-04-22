@@ -15,19 +15,7 @@
 <div class="front-page-feature-triangles">
   <div class="container">
     <h2 class="faint-heading"><%= storage_str('visualised') %></h2>
-    <h4 class="text-center col-md-12">Annual Bus Usage by Month</h4>
-
     <%= render partial: "charts/buses/split" %>
-
-    <table style="margin-bottom:50px;font-size:0.9em">
-      <tr>
-        <% @labels.each do |label| %>
-        <td><div class="front-page-bus-labels" style="background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></div></td>
-        <td><%= label[0] %></td>
-        <% end %>
-      </tr>
-    </table>
-
     <%= render partial: "charts_list" %>
   </div>
 </div>
