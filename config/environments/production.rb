@@ -88,7 +88,7 @@ DataGg::Application.configure do
     port: 587,
     enable_starttls_auto: true,
     user_name: "SMTP_Injection",
-    password: 'b1a1df54e9bbbdb1cef13257e7dc2abd6fe42247',
+    password: Rails.application.secrets.email_pass,
     domain: 'data.gg'
   }
 
