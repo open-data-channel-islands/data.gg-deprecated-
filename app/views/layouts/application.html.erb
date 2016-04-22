@@ -35,13 +35,13 @@
               <li><%= link_to 'Donate', donate_path %></li>
               <li><%= link_to 'Contribute', contribute_path %></li>
               <li><%= link_to 'Help', help_path %></li>
-              <% if user_signed_in? %>
-                <li><%= link_to 'Account', edit_user_registration_path %></li>
-                <% if current_user.is_admin? %>
-                <li><%= link_to 'Admin', admin_root_path %></li>
+              <!-- TEMP TO HIDE LOGIN AREA -->
+              <% if true %>
+                <% if user_signed_in? %>
+                  <li><%= link_to 'Account', edit_user_registration_path %></li>
+                <% else %>
+                  <li><%= link_to 'Login', new_user_session_path %></li>
                 <% end %>
-              <% else %>
-                <li><%= link_to 'Login', new_user_session_path %></li>
               <% end %>
             </ul>
           </div>

@@ -30,4 +30,19 @@ DataGg::Application.configure do
   config.assets.debug = true
 
   config.cache_store = :memory_store # This is usually disabled for dev but it's important for the flights so I've left it on here
+
+
+  config.action_mailer.default_url_options = { :host => 'data.gg' }
+  ActionMailer::Base.smtp_settings = {
+    address: "smtp.sparkpostmail.com",
+    port: 587,
+    enable_starttls_auto: true,
+    user_name: "SMTP_Injection",
+    password: 'b1a1df54e9bbbdb1cef13257e7dc2abd6fe42247',
+    domain: 'data.gg'
+  }
+
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.default charset: "utf-8"
+
 end

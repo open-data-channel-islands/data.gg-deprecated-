@@ -84,13 +84,15 @@ DataGg::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'data.gg' }
   ActionMailer::Base.smtp_settings = {
-    :address              => "smtp.mandrillapp.com",
-    :port                 => 587,
-    :enable_starttls_auto => true,
-    :user_name            => Rails.application.secrets.email_user,
-    :password             => Rails.application.secrets.email_pass,
-    :authentication       => "login",
-    :domain               => "data.gg"
+    address: "smtp.sparkpostmail.com",
+    port: 587,
+    enable_starttls_auto: true,
+    user_name: "SMTP_Injection",
+    password: 'b1a1df54e9bbbdb1cef13257e7dc2abd6fe42247',
+    domain: 'data.gg'
   }
+
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.default charset: "utf-8"
 
 end
