@@ -31,7 +31,6 @@ DataGg::Application.configure do
 
   config.cache_store = :memory_store # This is usually disabled for dev but it's important for the flights so I've left it on here
 
-
   config.action_mailer.default_url_options = { :host => 'data.gg' }
 
   ActionMailer::Base.delivery_method = :smtp
