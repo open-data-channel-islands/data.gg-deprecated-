@@ -45,6 +45,8 @@ class HomeController < ApplicationController
       @bus_data << { name: year, data: values, color: color[0], borderColor: color[1] }
     end
 
+    @active_alerts = Alert.where(active: true).order(created_at: :desc)
+
     respond_to do |format|
       format.json
       format.xml
