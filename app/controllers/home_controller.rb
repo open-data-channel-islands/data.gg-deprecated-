@@ -100,18 +100,31 @@ class HomeController < ApplicationController
   end
 
   def sitemap
-    @data_categories = DataCategory.all
+    set_data_categories
     @data_sets = DataSet.all
     respond_to do |format|
       format.xml
     end
   end
 
-
   private
+
   def set_data_categories
     @data_categories = DataCategory.all
+    @chart_categories = []
+    @data_categories.each do |data_category|
+      if path_exists? '/charts/' + data_category.stub
+        @chart_categories << data_category
+      end
+    end
   end
 
-
+  def path_exists?(path)
+    begin
+      Rails.application.routes.recognize_path(path)
+    rescue
+      return false
+    end
+    true
+  end
 end
