@@ -81,7 +81,8 @@ class HomeController < ApplicationController
 
   def api
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
-    @data_set = DataSet.joins(:place).where("stub = ? AND places.code = ?", params[:data_set], ENV['place_code'].upcase).first
+    @data_set = DataSet.joins(:place).where("stub = ? AND places.code = ? AND data_category_id = ?",
+      params[:data_set], ENV['place_code'].upcase, @data_category.id).first
 
     # Live data is got from LiveDataSets in lib. The filename is set to the method name
     # .send(...) calls a method via name.
