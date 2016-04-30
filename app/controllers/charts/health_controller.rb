@@ -1,6 +1,6 @@
 class Charts::HealthController < ApplicationController
   def totals
-    @title = 'Totals'
+    @title = 'Chest and Heart Totals'
     totals_json = File.read("storage/#{ENV['place_code']}/health/chest_and_heart_totals.json")
     totals = JSON.parse(totals_json)
 
@@ -33,7 +33,7 @@ class Charts::HealthController < ApplicationController
   end
 
   def new
-    @title = 'New Clients'
+    @title = 'Chest and Heart New Clients'
     totals_json = File.read("storage/#{ENV['place_code']}/health/chest_and_heart_totals.json")
     totals = JSON.parse(totals_json)
 
@@ -47,7 +47,7 @@ class Charts::HealthController < ApplicationController
   end
 
   def concerns
-    @title = 'Concerns'
+    @title = 'Chest and Heart Concerns'
     concerns_json = File.read("storage/#{ENV['place_code']}/health/chest_and_heart_concerns.json")
     concerns = JSON.parse(concerns_json)
 

@@ -2,8 +2,9 @@
   {
     "Year":2005,
     "All screenings":1864,
+    "New clients included in screenings total":453,
     "Body Mass Index greater or equal to 30":299,
-    "Diabetes found in screening":8,
+    "Diabetes found in screening":null,
     "Raised Blood Pressure":145,
     "Raised Cholesterol":137,
     "Abnormal ECG":null,
@@ -12,8 +13,9 @@
   {
     "Year":2006,
     "All screenings":1944,
+    "New clients included in screenings total":343,
     "Body Mass Index greater or equal to 30":328,
-    "Diabetes found in screening":9,
+    "Diabetes found in screening":null,
     "Raised Blood Pressure":154,
     "Raised Cholesterol":183,
     "Abnormal ECG":null,
@@ -22,18 +24,20 @@
   {
     "Year":2007,
     "All screenings":1983,
+    "New clients included in screenings total":472,
     "Body Mass Index greater or equal to 30":378,
-    "Diabetes found in screening":7,
+    "Diabetes found in screening":2,
     "Raised Blood Pressure":201,
     "Raised Cholesterol":301,
-    "Abnormal ECG":15,
+    "Abnormal ECG":25,
     "Visceral Fat greater than 13":null
   },
   {
     "Year":2008,
     "All screenings":1999,
+    "New clients included in screenings total":491,
     "Body Mass Index greater or equal to 30":335,
-    "Diabetes found in screening":6,
+    "Diabetes found in screening":3,
     "Raised Blood Pressure":181,
     "Raised Cholesterol":299,
     "Abnormal ECG":30,
@@ -42,6 +46,7 @@
   {
     "Year":2009,
     "All screenings":2133,
+    "New clients included in screenings total":510,
     "Body Mass Index greater or equal to 30":346,
     "Diabetes found in screening":5,
     "Raised Blood Pressure":228,
@@ -52,8 +57,9 @@
   {
     "Year":2010,
     "All screenings":2095,
+    "New clients included in screenings total":388,
     "Body Mass Index greater or equal to 30":365,
-    "Diabetes found in screening":3,
+    "Diabetes found in screening":2,
     "Raised Blood Pressure":224,
     "Raised Cholesterol":323,
     "Abnormal ECG":16,
@@ -62,6 +68,7 @@
   {
     "Year":2011,
     "All screenings":2008,
+    "New clients included in screenings total":411,
     "Body Mass Index greater or equal to 30":332,
     "Diabetes found in screening":6,
     "Raised Blood Pressure":254,
@@ -72,6 +79,7 @@
   {
     "Year":2012,
     "All screenings":1928,
+    "New clients included in screenings total":455,
     "Body Mass Index greater or equal to 30":393,
     "Diabetes found in screening":2,
     "Raised Blood Pressure":284,
@@ -82,6 +90,7 @@
   {
     "Year":2013,
     "All screenings":1862,
+    "New clients included in screenings total":549,
     "Body Mass Index greater or equal to 30":353,
     "Diabetes found in screening":9,
     "Raised Blood Pressure":266,
@@ -92,11 +101,23 @@
   {
     "Year":2014,
     "All screenings":2011,
+    "New clients included in screenings total":593,
     "Body Mass Index greater or equal to 30":354,
-    "Diabetes found in screening":10,
+    "Diabetes found in screening":8,
     "Raised Blood Pressure":289,
     "Raised Cholesterol":335,
     "Abnormal ECG":44,
     "Visceral Fat greater than 13":436
+  },
+  {
+    "Year":2015,
+    "All screenings":2106,
+    "New clients included in screenings total":662,
+    "Body Mass Index greater or equal to 30":384,
+    "Diabetes found in screening":3,
+    "Raised Blood Pressure":222,
+    "Raised Cholesterol":437,
+    "Abnormal ECG":51,
+    "Visceral Fat greater than 13":472
   }
 ]

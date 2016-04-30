@@ -45,6 +45,8 @@ class HomeController < ApplicationController
       @bus_data << { name: year, data: values, color: color[0], borderColor: color[1] }
     end
 
+    @active_alerts = Alert.where(active: true).order(created_at: :desc)
+
     respond_to do |format|
       format.json
       format.xml
@@ -79,7 +81,8 @@ class HomeController < ApplicationController
 
   def api
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
-    @data_set = DataSet.joins(:place).where("stub = ? AND places.code = ?", params[:data_set], ENV['place_code'].upcase).first
+    @data_set = DataSet.joins(:place).where("stub = ? AND places.code = ? AND data_category_id = ?",
+      params[:data_set], ENV['place_code'].upcase, @data_category.id).first
 
     # Live data is got from LiveDataSets in lib. The filename is set to the method name
     # .send(...) calls a method via name.
@@ -98,18 +101,31 @@ class HomeController < ApplicationController
   end
 
   def sitemap
-    @data_categories = DataCategory.all
+    set_data_categories
     @data_sets = DataSet.all
     respond_to do |format|
       format.xml
     end
   end
 
-
   private
+
   def set_data_categories
     @data_categories = DataCategory.all
+    @chart_categories = []
+    @data_categories.each do |data_category|
+      if path_exists? '/charts/' + data_category.stub
+        @chart_categories << data_category
+      end
+    end
   end
 
-
+  def path_exists?(path)
+    begin
+      Rails.application.routes.recognize_path(path)
+    rescue
+      return false
+    end
+    true
+  end
 end
