@@ -53,10 +53,16 @@
     "Serious":9,
     "Slight":111
   },
-    {
+  {
     "Year":2014,
     "Fatal":0,
     "Serious":11,
     "Slight":145
+  },
+  {
+    "Year":2015,
+    "Fatal":1,
+    "Serious":10,
+    "Slight":88
   }
 ]

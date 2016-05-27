@@ -419,5 +419,47 @@
     "Type":"Passengers",
     "Fatal":0,
     "Serious":0
+  },
+  {
+    "Year":2015,
+    "Type":"Adult Pedal Cycle",
+    "Fatal":0,
+    "Serious":0
+  },
+  {
+    "Year":2015,
+    "Type":"Adult Pedestrian",
+    "Fatal":0,
+    "Serious":3
+  },
+  {
+    "Year":2015,
+    "Type":"Drivers",
+    "Fatal":1,
+    "Serious":3
+  },
+  {
+    "Year":2015,
+    "Type":"Juvenile Pedal Cycle",
+    "Fatal":0,
+    "Serious":0
+  },
+  {
+    "Year":2015,
+    "Type":"Juvenile Pedestrian",
+    "Fatal":0,
+    "Serious":0
+  },
+  {
+    "Year":2015,
+    "Type":"Motorcycles",
+    "Fatal":0,
+    "Serious":4
+  },
+  {
+    "Year":2015,
+    "Type":"Passengers",
+    "Fatal":0,
+    "Serious":0
   }
 ]

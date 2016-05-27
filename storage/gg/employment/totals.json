@@ -70,5 +70,11 @@
     "Employed":31869,
     "Unemployed":386,
     "Employers":2311
+  },
+  {
+    "Quarter":"Q4 2015",
+    "Employed":31487,
+    "Unemployed":402,
+    "Employers":2303
   }
 ]
