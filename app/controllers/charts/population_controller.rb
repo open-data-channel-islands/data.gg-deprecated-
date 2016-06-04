@@ -25,7 +25,6 @@ class Charts::PopulationController < ApplicationController
   def parish
     @title = 'Parish'
     @svg = File.read("storage/#{ENV['place_code']}/parish.svg")
-    #@svg = File.read("storage/je/parish.svg")
   end
 
   private
