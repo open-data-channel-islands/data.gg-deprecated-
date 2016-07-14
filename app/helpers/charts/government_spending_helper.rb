@@ -1,0 +1,2 @@
+module Charts::GovernmentSpendingHelper
+end

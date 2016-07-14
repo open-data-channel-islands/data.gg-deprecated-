@@ -65,6 +65,8 @@
 .i-780-building-selected-2x:before,
 .i-789-map-location-2x:before,
 .i-789-map-location-selected-2x:before,
+.i-798-filter-2x:before,
+.i-798-filter-selected-2x:before,
 .i-814-bus-2x:before,
 .i-814-bus-selected-2x:before,
 .i-815-car-2x:before,
@@ -142,6 +144,8 @@
 .i-780-building-selected-2x:before { content: "\f12b"; }
 .i-789-map-location-2x:before { content: "\f106"; }
 .i-789-map-location-selected-2x:before { content: "\f107"; }
+.i-798-filter-2x:before { content: "\f13f"; }
+.i-798-filter-selected-2x:before { content: "\f140"; }
 .i-814-bus-2x:before { content: "\f108"; }
 .i-814-bus-selected-2x:before { content: "\f109"; }
 .i-815-car-2x:before { content: "\f10a"; }
@@ -192,6 +196,7 @@
 .category:hover .i-776-recycle-2x:before { content: "\f119"; }
 .category:hover .i-780-building-2x:before { content: "\f12b"; }
 .category:hover .i-789-map-location-2x:before { content: "\f107"; }
+.category:hover .i-798-filter-2x:before { content: "\f140"; }
 .category:hover .i-814-bus-2x:before { content: "\f109"; }
 .category:hover .i-815-car-2x:before { content: "\f10b"; }
 .category:hover .i-826-money-1-2x:before { content: "\f10d"; }
