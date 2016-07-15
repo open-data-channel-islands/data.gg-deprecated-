@@ -125,6 +125,9 @@ DataGg::Application.routes.draw do
     get 'transport' => 'transport#registered_vehicles'
     get 'transport/registered_vehicles' => 'transport#registered_vehicles'
 
+    get 'government-spending' => 'government_spending#percent_treemap'
+    get 'government-spending/percent-treemap' => 'government_spending#percent_treemap'
+
     # Tides
     get 'tides' => 'tides#index'
     # Fuel
@@ -197,6 +200,10 @@ DataGg::Application.routes.draw do
       get 'inflation/changes' => 'inflation#changes'
       get 'inflation/rpi_group_changes' => 'inflation#rpi_group_changes'
       get 'inflation/rpix_group_changes' => 'inflation#rpix_group_changes'
+
+      get 'government-spending/monetary-amount' => 'government_spending#monetary_amount'
+      get 'government-spending/percentage' => 'government_spending#percentage'
+      get 'government-spending/per-capita' => 'government_spending#per_capita'
 
       get 'water/domestic_consumption' => 'water#domestic_consumption'
 

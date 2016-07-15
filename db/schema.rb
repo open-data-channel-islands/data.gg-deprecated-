@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160423103500) do
+ActiveRecord::Schema.define(version: 20160715081026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,8 +28,9 @@ ActiveRecord::Schema.define(version: 20160423103500) do
     t.string   "image"
     t.string   "desc"
     t.string   "stub"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.boolean  "coming_soon", default: false, null: false
   end
 
   create_table "data_sets", force: :cascade do |t|
@@ -44,10 +44,9 @@ ActiveRecord::Schema.define(version: 20160423103500) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "place_id"
+    t.index ["data_category_id"], name: "index_data_sets_on_data_category_id", using: :btree
+    t.index ["place_id"], name: "index_data_sets_on_place_id", using: :btree
   end
-
-  add_index "data_sets", ["data_category_id"], name: "index_data_sets_on_data_category_id", using: :btree
-  add_index "data_sets", ["place_id"], name: "index_data_sets_on_place_id", using: :btree
 
   create_table "parishes", force: :cascade do |t|
     t.string   "name"
@@ -82,11 +81,10 @@ ActiveRecord::Schema.define(version: 20160423103500) do
     t.integer  "parish_id"
     t.string   "postcode"
     t.boolean  "is_admin"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["parish_id"], name: "index_users_on_parish_id", using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["parish_id"], name: "index_users_on_parish_id", using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "data_sets", "data_categories"
   add_foreign_key "data_sets", "places"

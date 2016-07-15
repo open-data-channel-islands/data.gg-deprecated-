@@ -1,5 +1,6 @@
 
 
+=begin
 Parish.create!(name: 'Castel')
 Parish.create!(name: 'Forest')
 Parish.create!(name: 'St Andrew')
@@ -97,7 +98,7 @@ DataSet.create!(place: gg, data_category: tourism, name: 'Sea by Month', stub: '
 DataSet.create!(place: gg, data_category: energy, name: 'Electricity Consumption', stub: 'electricity_consumption', desc: 'Domestic and commercial electricity consumption', filename: 'energy/electricity_consumption.json', live: false, source_url: 'http://www.gov.gg/pru')
 DataSet.create!(place: gg, data_category: energy, name: 'Electricity Import vs Generated', stub: 'electricity_import_vs_generated', desc: 'Imported vs generated electricity', filename: 'energy/electricity_import_vs_generated.json', live: false, source_url: 'http://electricity.gg/')
 DataSet.create!(place: gg, data_category: transport, name: 'Registered Vehicles', stub: 'registered_vehicles', desc: 'Registered vehicles', filename: 'transport/registered_vehicles.json', live: false, source_url: 'http://www.gov.gg/pru')
-
+=end
 # Uncomment for a test admin user
 #test_user = User.create!(email: 'test@data.gg', password: 'password',
 #  password_confirmation: 'password', forename: 'Test', surname: 'User', is_admin: true)

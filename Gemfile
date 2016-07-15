@@ -33,7 +33,7 @@ gem 'nokogiri'
 
 # Use Unicorn as the app server
 gem 'unicorn'
-gem 'highcharts-rails'
+
 
 gem "figaro" # Used for environment management. See config/application.yml
 

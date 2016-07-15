@@ -1,0 +1,27 @@
+<%= render 'head' %>
+
+<div id="government_spending_treemap" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    var xLabels = <%= @labels.to_json.html_safe %>;
+
+    $('#government_spending_treemap').highcharts({
+        title: {
+            text: '<%= @title %>'
+        },
+        series: [{
+            type: 'treemap',
+            layoutAlgorithm: 'squarified',
+            data: <%= @data.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

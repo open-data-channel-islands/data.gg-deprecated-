@@ -111,7 +111,7 @@ class HomeController < ApplicationController
   private
 
   def set_data_categories
-    @data_categories = DataCategory.all
+    @data_categories = DataCategory.order(:coming_soon)
     @chart_categories = []
     @data_categories.each do |data_category|
       if path_exists? '/charts/' + data_category.stub
