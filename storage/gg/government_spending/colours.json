@@ -1,0 +1,12 @@
+{
+  "Health and community services": "rgb(75, 172, 198)" ,
+  "Pensions": "rgb(102, 204, 255)" ,
+  "Education": "rgb(228, 223, 236)" ,
+  "Social welfare benefits": "rgb(146, 208, 80)" ,
+  "Order and Safety": "rgb(218, 238, 243)" ,
+  "Government and administration": "rgb(255, 102, 0)" ,
+  "Transfer to capital reserve": "rgb(255,255,0)" ,
+  "Land management infrastructure and transport": "rgb(255,0,0)" ,
+  "Economic development and tourism": "rgb(204, 51, 153)" ,
+  "Arts sport and culture": "rgb(204, 153, 255)"
+}

@@ -18,5 +18,6 @@
 //= require highcharts
 //= require highcharts-more
 //= require modules/treemap
+//= require knockout-3.4.0
 
 //= require_tree .

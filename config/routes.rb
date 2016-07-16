@@ -127,6 +127,7 @@ DataGg::Application.routes.draw do
 
     get 'government-spending' => 'government_spending#percent_treemap'
     get 'government-spending/percent-treemap' => 'government_spending#percent_treemap'
+    get 'government-spending/slider' => 'government_spending#slider'
 
     # Tides
     get 'tides' => 'tides#index'

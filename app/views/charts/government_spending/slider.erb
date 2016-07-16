@@ -1,0 +1,32 @@
+<%= render 'head' %>
+
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Salary</h4>
+      <p><strong>£ </strong><span data-bind="text: salary"></span></p>
+    </div>
+
+    <div class="col-md-6">  <div class="form-group">
+      <label for="exampleInputEmail1">Salary (to be replaced with slider)</label>
+      <input type="number" class="form-control" id="salaryInput" data-bind="value: salary" placeholder="Salary..." step="1000" min="0" max="500000">
+    </div></div>
+
+    <div class="col-md-3 text-right">
+      <h4>Tax</h4>
+      <p><strong>£ </strong><span data-bind="text: tax"></span></p>
+    </div>
+    </div>
+
+
+   <h4>Health and community services</h4><strong>£ </strong><span data-bind="text: healthCommunityServices"></span>
+   <h4>Pensions</h4><strong>£ </strong><span data-bind="text: pensions"></span>
+   <h4>Education</h4><strong>£ </strong><span data-bind="text: education"></span>
+   <h4>Social welfare benefits</h4><strong>£ </strong><span data-bind="text: socialWelfareBenefits"></span>
+   <h4>Order and Safety</h4><strong>£ </strong><span data-bind="text: orderSafety"></span>
+   <h4>Government and administration</h4><strong>£ </strong><span data-bind="text: governmentAdministration"></span>
+   <h4>Transfer to capital reserve</h4><strong>£ </strong><span data-bind="text: transferCapitalReserve"></span>
+   <h4>Land management infrastructure and transport</h4><strong>£ </strong><span data-bind="text: landManagementInfrastructureTransport"></span>
+   <h4>Economic development and tourism</h4><strong>£ </strong><span data-bind="text: economicDevelopmentTourism"></span>
+   <h4>Arts sport and culture</h4><strong>£ </strong><span data-bind="text: artsSportCulture"></span>
+
+  <script type="text/javascript" src="javascripts/slider.js"></script>
