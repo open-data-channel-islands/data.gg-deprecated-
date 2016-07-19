@@ -1,3 +1,5 @@
+require './lib/live_data_sets'
+
 class HomeController < ApplicationController
   layout "application", :only => [ :about, :help ]
   before_action :set_data_categories, only: [:index, :developers, :charts]
