@@ -1,4 +1,5 @@
 require './lib/live_data_sets'
+require './lib/sailings_parser'
 require 'xml_parser'
 
 class HomeController < ApplicationController
