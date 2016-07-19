@@ -1,4 +1,5 @@
 require './lib/live_data_sets'
+require 'xml_parser'
 
 class HomeController < ApplicationController
   layout "application", :only => [ :about, :help ]
