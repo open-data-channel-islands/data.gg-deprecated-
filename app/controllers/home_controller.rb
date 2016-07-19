@@ -1,3 +1,7 @@
+require './lib/live_data_sets'
+require './lib/sailings_parser'
+require 'xml_parser'
+
 class HomeController < ApplicationController
   layout "application", :only => [ :about, :help ]
   before_action :set_data_categories, only: [:index, :developers, :charts]
