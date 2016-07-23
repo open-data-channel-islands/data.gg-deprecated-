@@ -1,0 +1,252 @@
+[
+  {
+    "Year":1990,
+    "Energy Power Generation":29.7,
+    "Energy Industrial Combustion":5.6,
+    "Energy Transport":27.1,
+    "Energy Commercial and Domestic Combustion":8.8,
+    "Agriculture Land Use Land Use Change and Forestry":4.4,
+    "Waste":24.3,
+    "F-Gases": 0.0
+  },
+  {
+    "Year":1991,
+    "Energy Power Generation":32.8,
+    "Energy Industrial Combustion":6.1,
+    "Energy Transport":24.9,
+    "Energy Commercial and Domestic Combustion":9.5,
+    "Agriculture Land Use Land Use Change and Forestry":4.1,
+    "Waste":22.5,
+    "F-Gases": 0.0
+  },
+  {
+    "Year":1992,
+    "Energy Power Generation":29.8,
+    "Energy Industrial Combustion":5.6,
+    "Energy Transport":27.1,
+    "Energy Commercial and Domestic Combustion":9.1,
+    "Agriculture Land Use Land Use Change and Forestry":4.4,
+    "Waste":24.0,
+    "F-Gases": 0.0
+  },
+  {
+    "Year":1993,
+    "Energy Power Generation":30.3,
+    "Energy Industrial Combustion":5.7,
+    "Energy Transport":27.1,
+    "Energy Commercial and Domestic Combustion":9.1,
+    "Agriculture Land Use Land Use Change and Forestry":4.3,
+    "Waste":23.5,
+    "F-Gases": 0.1
+  },
+  {
+    "Year":1994,
+    "Energy Power Generation":30.5,
+    "Energy Industrial Combustion":5.7,
+    "Energy Transport":26.6,
+    "Energy Commercial and Domestic Combustion":9.1,
+    "Agriculture Land Use Land Use Change and Forestry":4.3,
+    "Waste":23.7,
+    "F-Gases": 0.2
+  },
+  {
+    "Year":1995,
+    "Energy Power Generation":30.9,
+    "Energy Industrial Combustion":5.8,
+    "Energy Transport":26.4,
+    "Energy Commercial and Domestic Combustion":9.3,
+    "Agriculture Land Use Land Use Change and Forestry":4.1,
+    "Waste":23.1,
+    "F-Gases": 0.3
+  },
+  {
+    "Year":1996,
+    "Energy Power Generation":30.8,
+    "Energy Industrial Combustion":6.2,
+    "Energy Transport":26.8,
+    "Energy Commercial and Domestic Combustion":10.1,
+    "Agriculture Land Use Land Use Change and Forestry":3.2,
+    "Waste":22.5,
+    "F-Gases": 0.4
+  },
+  {
+    "Year":1997,
+    "Energy Power Generation":30.3,
+    "Energy Industrial Combustion":6.2,
+    "Energy Transport":28.1,
+    "Energy Commercial and Domestic Combustion":9.6,
+    "Agriculture Land Use Land Use Change and Forestry":3.1,
+    "Waste":21.9,
+    "F-Gases": 0.7
+  },
+  {
+    "Year":1998,
+    "Energy Power Generation":31.9,
+    "Energy Industrial Combustion":5.8,
+    "Energy Transport":26.8,
+    "Energy Commercial and Domestic Combustion":9.3,
+    "Agriculture Land Use Land Use Change and Forestry":3.1,
+    "Waste":22.1,
+    "F-Gases": 0.9
+  },
+  {
+    "Year":1999,
+    "Energy Power Generation":32.8,
+    "Energy Industrial Combustion":5.3,
+    "Energy Transport":26.7,
+    "Energy Commercial and Domestic Combustion":8.7,
+    "Agriculture Land Use Land Use Change and Forestry":3.2,
+    "Waste":22.3,
+    "F-Gases": 1.1
+  },
+  {
+    "Year":2000,
+    "Energy Power Generation":30.1,
+    "Energy Industrial Combustion":6.1,
+    "Energy Transport":28.1,
+    "Energy Commercial and Domestic Combustion":9.2,
+    "Agriculture Land Use Land Use Change and Forestry":3.1,
+    "Waste":22.0,
+    "F-Gases": 1.3
+  },
+  {
+    "Year":2001,
+    "Energy Power Generation":10.2,
+    "Energy Industrial Combustion":6.0,
+    "Energy Transport":35.8,
+    "Energy Commercial and Domestic Combustion":10.9,
+    "Agriculture Land Use Land Use Change and Forestry":4.0,
+    "Waste":30.9,
+    "F-Gases": 2.3
+  },
+  {
+    "Year":2002,
+    "Energy Power Generation":9.1,
+    "Energy Industrial Combustion":6.7,
+    "Energy Transport":34.9,
+    "Energy Commercial and Domestic Combustion":11.2,
+    "Agriculture Land Use Land Use Change and Forestry":3.9,
+    "Waste":31.6,
+    "F-Gases": 2.7
+  },
+  {
+    "Year":2003,
+    "Energy Power Generation":10.4,
+    "Energy Industrial Combustion":6.7,
+    "Energy Transport":33.8,
+    "Energy Commercial and Domestic Combustion":11.3,
+    "Agriculture Land Use Land Use Change and Forestry":3.9,
+    "Waste":30.9,
+    "F-Gases": 3.0
+  },
+  {
+    "Year":2004,
+    "Energy Power Generation":8.0,
+    "Energy Industrial Combustion":11.9,
+    "Energy Transport":30.7,
+    "Energy Commercial and Domestic Combustion":14.4,
+    "Agriculture Land Use Land Use Change and Forestry":3.6,
+    "Waste":28.3,
+    "F-Gases": 3.2
+  },
+  {
+    "Year":2005,
+    "Energy Power Generation":11.0,
+    "Energy Industrial Combustion":12.3,
+    "Energy Transport":29.0,
+    "Energy Commercial and Domestic Combustion":14.2,
+    "Agriculture Land Use Land Use Change and Forestry":3.5,
+    "Waste":26.8,
+    "F-Gases": 3.2
+  },
+  {
+    "Year":2006,
+    "Energy Power Generation":21.4,
+    "Energy Industrial Combustion":8.3,
+    "Energy Transport":26.4,
+    "Energy Commercial and Domestic Combustion":11.0,
+    "Agriculture Land Use Land Use Change and Forestry":3.4,
+    "Waste":25.8,
+    "F-Gases": 3.6
+  },
+  {
+    "Year":2007,
+    "Energy Power Generation":16.3,
+    "Energy Industrial Combustion":8.6,
+    "Energy Transport":29.1,
+    "Energy Commercial and Domestic Combustion":11.0,
+    "Agriculture Land Use Land Use Change and Forestry":3.7,
+    "Waste":27.2,
+    "F-Gases": 4.2
+  },
+  {
+    "Year":2008,
+    "Energy Power Generation":23.1,
+    "Energy Industrial Combustion":10.6,
+    "Energy Transport":22.4,
+    "Energy Commercial and Domestic Combustion":11.9,
+    "Agriculture Land Use Land Use Change and Forestry":3.3,
+    "Waste":24.6,
+    "F-Gases": 4.1
+  },
+  {
+    "Year":2009,
+    "Energy Power Generation":21.0,
+    "Energy Industrial Combustion":10.9,
+    "Energy Transport":23.1,
+    "Energy Commercial and Domestic Combustion":12.2,
+    "Agriculture Land Use Land Use Change and Forestry":3.5,
+    "Waste":25.0,
+    "F-Gases": 4.4
+  },
+  {
+    "Year":2010,
+    "Energy Power Generation":12.7,
+    "Energy Industrial Combustion":12.8,
+    "Energy Transport":24.6,
+    "Energy Commercial and Domestic Combustion":14.2,
+    "Agriculture Land Use Land Use Change and Forestry":3.8,
+    "Waste":26.8,
+    "F-Gases": 5.0
+  },
+  {
+    "Year":2011,
+    "Energy Power Generation":15.6,
+    "Energy Industrial Combustion":11.1,
+    "Energy Transport":25.0,
+    "Energy Commercial and Domestic Combustion":12.3,
+    "Agriculture Land Use Land Use Change and Forestry":3.9,
+    "Waste":27.2,
+    "F-Gases": 4.8
+  },
+  {
+    "Year":2012,
+    "Energy Power Generation":30.5,
+    "Energy Industrial Combustion":9.4,
+    "Energy Transport":20.4,
+    "Energy Commercial and Domestic Combustion":10.0,
+    "Agriculture Land Use Land Use Change and Forestry":3.3,
+    "Waste":22.4,
+    "F-Gases": 4.0
+  },
+  {
+    "Year":2013,
+    "Energy Power Generation":28.1,
+    "Energy Industrial Combustion":10.2,
+    "Energy Transport":20.7,
+    "Energy Commercial and Domestic Combustion":10.9,
+    "Agriculture Land Use Land Use Change and Forestry":3.5,
+    "Waste":22.5,
+    "F-Gases": 4.1
+  },
+  {
+    "Year":2014,
+    "Energy Power Generation":25.2,
+    "Energy Industrial Combustion":10.2,
+    "Energy Transport":21.9,
+    "Energy Commercial and Domestic Combustion":10.6,
+    "Agriculture Land Use Land Use Change and Forestry":3.8,
+    "Waste":23.8,
+    "F-Gases": 4.5
+  }
+]
