@@ -20,4 +20,6 @@
 //= require modules/treemap
 //= require knockout-3.4.0
 
+//= require raphael-min
+//= require bubbletree
 //= require_tree .

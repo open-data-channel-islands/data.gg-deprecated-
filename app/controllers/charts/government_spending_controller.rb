@@ -25,6 +25,9 @@ class Charts::GovernmentSpendingController < ApplicationController
     end
   end
 
+  def bubble_tree
+  end
+
   def slider
     @title = 'Slider'
   end

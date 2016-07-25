@@ -13,5 +13,6 @@
 
 <ul class="nav nav-tabs data-gg-tab-padding">
   <li role="presentation" class="<%= 'active' if action?('charts/government_spending', 'percent_treemap') %>"><%= link_to 'Treemap', charts_government_spending_percent_treemap_path %></li>
+    <li role="presentation" class="<%= 'active' if action?('charts/government_spending', 'bubble_tree') %>"><%= link_to 'Bubbletree', charts_government_spending_bubble_tree_path %></li>
   <li role="presentation" class="<%= 'active' if action?('charts/government_spending', 'slider') %>"><%= link_to 'Slider', charts_government_spending_slider_path %></li>
 </ul>
