@@ -78,6 +78,7 @@ DataGg::Application.routes.draw do
     # Emissions
     get 'emissions' => 'emissions#types'
     get 'emissions/types' => 'emissions#types'
+    get 'emissions/source' => 'emissions#source'
 
     # Employment
     get 'employment' => 'employment#totals'

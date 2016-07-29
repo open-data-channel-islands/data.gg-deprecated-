@@ -1,0 +1,41 @@
+<%= render 'head' %>
+
+<div id="container_source" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/ghg' %></p>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_source').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: <%= @labels.to_json.html_safe %>,
+            title: {
+                text: 'Quarter'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            minPadding: 0,
+            maxPadding: 0,
+            title: {
+                text: 'Value'
+            }
+        },
+        series: <%= @data.to_json.html_safe -%>
+    });
+}
+<% end %>

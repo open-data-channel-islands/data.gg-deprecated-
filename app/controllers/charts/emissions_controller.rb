@@ -24,4 +24,29 @@ class Charts::EmissionsController < ApplicationController
       format.html
     end
   end
+
+  def source
+    @title = 'Source'
+    source_json = File.read("storage/#{ENV['place_code']}/emissions/source.json")
+    source = JSON.parse(source_json)
+
+    @labels = source.sort_by{|p| p["Year"]}.collect{|s| s['Year']}
+    data = {}
+    source.sort_by{|p| p["Year"]}.each do |year|
+      year.each do |key, value|
+        next if key == 'Year'
+        data[key] = [] if data[key].nil?
+        data[key] << value
+      end
+    end
+
+    @data = []
+    data.each do |k,v|
+      @data << { name: k, data: v }
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end
