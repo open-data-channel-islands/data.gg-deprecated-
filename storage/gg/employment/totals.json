@@ -76,5 +76,11 @@
     "Employed":31487,
     "Unemployed":402,
     "Employers":2303
+  },
+  {
+    "Quarter":"Q1 2016",
+    "Employed":32291,
+    "Unemployed":434,
+    "Employers":2453
   }
 ]
