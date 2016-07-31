@@ -24,7 +24,7 @@ function initPage() {
             allowDecimals: false,
             categories: <%= @labels.to_json.html_safe %>,
             title: {
-                text: 'Quarter'
+                text: 'Year'
             }
         },
         yAxis: {
@@ -32,7 +32,7 @@ function initPage() {
             minPadding: 0,
             maxPadding: 0,
             title: {
-                text: 'Value'
+                text: 'Percent'
             }
         },
         series: <%= @data.to_json.html_safe -%>
