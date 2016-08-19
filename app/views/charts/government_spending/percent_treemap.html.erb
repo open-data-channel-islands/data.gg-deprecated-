@@ -1,6 +1,6 @@
 <%= render 'head' %>
 
-<div id="government_spending_treemap" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div id="government_spending_treemap" style="min-width: 310px; height: 800px; margin: 0 auto"></div>
 
 <%= javascript_tag do %>
 $(function() {
@@ -20,6 +20,26 @@ function initPage() {
         series: [{
             type: 'treemap',
             layoutAlgorithm: 'squarified',
+            levelIsConstant: false,
+            allowDrillToNode: true,
+            levels: [{
+                level: 1,
+                layoutAlgorithm: 'squarified',
+                dataLabels: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'middle',
+                    style: {
+                        fontSize: '12px'
+                    }
+                }
+            },
+            {
+              level: 2,
+              dataLabels: {
+                enabled: false
+              }
+            }],
             data: <%= @data.to_json.html_safe -%>
         }]
     });

@@ -8,15 +8,24 @@ $(window).bind('page:change', function() {
 var dataSet;
 
 Number.prototype.formatMoney = function(c, d, t){
-var n = this,
-    c = isNaN(c = Math.abs(c)) ? 2 : c,
-    d = d == undefined ? "." : d,
-    t = t == undefined ? "," : t,
-    s = n < 0 ? "-" : "",
-    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
-    j = (j = i.length) > 3 ? j % 3 : 0;
-   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
- };
+  var n = this,
+  c = isNaN(c = Math.abs(c)) ? 2 : c,
+  d = d == undefined ? "." : d,
+  t = t == undefined ? "," : t,
+  s = n < 0 ? "-" : "",
+  i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+  j = (j = i.length) > 3 ? j % 3 : 0;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
+
+function getDataSetRowValue(expenditureName) {
+  for (var i = dataSet.length - 1; i >= 0; i--) {
+    if (dataSet[i]["Expenditure"] == expenditureName) {
+      return dataSet[i]["Percent"];
+    }
+  }
+  return 0;
+}
 
 function ApplyViewModel() {
   this.salary = ko.observable(20000);
@@ -26,54 +35,58 @@ function ApplyViewModel() {
   }, this);
 
   this.healthCommunityServices = ko.computed(function() {
-    return (((dataSet["Health and community services"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Health and community services") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.pensions = ko.computed(function() {
-    return (((dataSet["Pensions"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Old age pensions") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.education = ko.computed(function() {
-    return (((dataSet["Education"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Education") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.socialWelfareBenefits = ko.computed(function() {
-    return (((dataSet["Social welfare benefits"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Social welfare benefits") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.orderSafety = ko.computed(function() {
-    return (((dataSet["Order and Safety"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Order and safety") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.governmentAdministration = ko.computed(function() {
-    return (((dataSet["Government and administration"] * this.tax()) / 100) / 365).formatMoney(2);
-  }, this);
-
-  this.transferCapitalReserve = ko.computed(function() {
-    return (((dataSet["Transfer to capital reserve"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Government and administration") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.landManagementInfrastructureTransport = ko.computed(function() {
-    return (((dataSet["Land management infrastructure and transport"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Land management infrastructure and transport") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.economicDevelopmentTourism = ko.computed(function() {
-    return (((dataSet["Economic development and tourism"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Economic development and tourism") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 
   this.artsSportCulture = ko.computed(function() {
-    return (((dataSet["Arts sport and culture"] * this.tax()) / 100) / 365).formatMoney(2);
+    return (((getDataSetRowValue("Arts sport and culture") * this.tax()) / 100) / 365).formatMoney(2);
+  }, this);
+
+  this.appropriationToCapitalReserve = ko.computed(function() {
+    return (((getDataSetRowValue("Capital investment") * this.tax()) / 100) / 365).formatMoney(2);
+  }, this);
+
+  this.alderney = ko.computed(function() {
+    return (((getDataSetRowValue("Alderney") * this.tax()) / 100) / 365).formatMoney(2);
+  }, this);
+
+  this.overseasAid = ko.computed(function() {
+    return (((getDataSetRowValue("Overseas aid") * this.tax()) / 100) / 365).formatMoney(2);
   }, this);
 }
 
 function initPage() {
-    //$('#government_spending_slider')
-
-    var data_url = "http://localhost:3000/api/1.1/government-spending/percentage.json";
-    $.getJSON( "http://localhost:3000/api/1.1/government-spending/percentage.json", function( data ) {
-      dataSet = data[1];
+    var data_url = "http://localhost:3000/api/1.1/government-spending/breakdown.json";
+    $.getJSON( data_url, function( data ) {
+      dataSet = data;
       ko.applyBindings(new ApplyViewModel());
     });
-}
-
-//$('#salaryInput')
+  }

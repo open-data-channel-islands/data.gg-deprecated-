@@ -1,5 +1,11 @@
+<% content_for :head do %>
+<%= javascript_include_tag 'slider', async: false %>
+<% end %>
+
 <%= render 'head' %>
 
+<h3 class="text-center">Slider (2015)</h3>
+<p class="lead">Input your salary to see your daily contribution towards the different categories based on a flat 20%. We're going to add options to improve accuracy later.</p>
 <div class="row">
   <div class="col-md-3">
     <h4>Salary</h4>
@@ -19,24 +25,25 @@
 
 
 <div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-2"><strong>Health and community services</strong><div data-bind="text: healthCommunityServices"></div></div>
-  <div class="col-md-2"><strong>Pensions</strong><div data-bind="text: pensions"></div></div>
-  <div class="col-md-2"><strong>Education</strong><div data-bind="text: education"></div></div>
-  <div class="col-md-2"><strong>Social welfare benefits</strong><div data-bind="text: socialWelfareBenefits"></div></div>
-  <div class="col-md-2"><strong>Order and Safety</strong><div data-bind="text: orderSafety"></div></div>
-  <div class="col-md-1"></div>
+  <div class="col-md-4"><strong>Health and community services</strong><div data-bind="text: healthCommunityServices"></div></div>
+  <div class="col-md-4"><strong>Pensions</strong><div data-bind="text: pensions"></div></div>
+  <div class="col-md-4"><strong>Education</strong><div data-bind="text: education"></div></div>
 </div>
+
 <div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-2"><strong>Government and administration</strong><div data-bind="text: governmentAdministration"></div></div>
-  <div class="col-md-2"><strong>Transfer to capital reserve</strong><div data-bind="text: transferCapitalReserve"></div></div>
-  <div class="col-md-2"><strong>Land management infrastructure and transport</strong><div data-bind="text: landManagementInfrastructureTransport"></div></div>
-  <div class="col-md-2"><strong>Economic development and tourism</strong><div data-bind="text: economicDevelopmentTourism"></div></div>
-  <div class="col-md-2"><strong>Arts sport and culture</strong><div data-bind="text: artsSportCulture"></div></div>
-  <div class="col-md-1"></div>
+  <div class="col-md-4"><strong>Social welfare benefits</strong><div data-bind="text: socialWelfareBenefits"></div></div>
+  <div class="col-md-4"><strong>Order and Safety</strong><div data-bind="text: orderSafety"></div></div>
+  <div class="col-md-4"><strong>Government and administration</strong><div data-bind="text: governmentAdministration"></div></div>
 </div>
 
+<div class="row">
+  <div class="col-md-4"><strong>Land management infrastructure and transport</strong><div data-bind="text: landManagementInfrastructureTransport"></div></div>
+  <div class="col-md-4"><strong>Economic development and tourism</strong><div data-bind="text: economicDevelopmentTourism"></div></div>
+  <div class="col-md-4"><strong>Arts sport and culture</strong><div data-bind="text: artsSportCulture"></div></div>
+</div>
 
-
-<script type="text/javascript" src="javascripts/slider.js"></script>
+<div class="row">
+  <div class="col-md-4"><strong>Appropriation to Capital Reserve</strong><div data-bind="text: appropriationToCapitalReserve"></div></div>
+  <div class="col-md-4"><strong>Alderney</strong><div data-bind="text: alderney"></div></div>
+  <div class="col-md-4"><strong>Overseas Aid</strong><div data-bind="text: overseasAid"></div></div>
+</div>

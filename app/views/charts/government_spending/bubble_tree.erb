@@ -1,0 +1,16 @@
+<% content_for :head do %>
+<%= stylesheet_link_tag    'bubbletree', media: 'all' %>
+
+<%= javascript_include_tag 'Tween', async: false %>
+<%= javascript_include_tag 'raphael-min', async: false %>
+<%= javascript_include_tag 'bubbletree', async: false %>
+<%= javascript_include_tag 'govspendingbubbletree', async: false %>
+<% end %>
+
+<%= render 'head' %>
+<h3 class="text-center">Bubbletree (2015)</h3>
+<div class="bubbletree-wrapper">
+  <div class="bubbletree"></div>
+</div>
+
+<p class="text-right"><small>Built with <a href="http://okfn.org/">Open Knowledge Foundation's</a> <a href="https://github.com/okfn/bubbletree">Bubbletree library</a></small></p>

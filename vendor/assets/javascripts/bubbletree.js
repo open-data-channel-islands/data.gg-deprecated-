@@ -834,7 +834,12 @@ var BubbleTree = function(config, onHover, onUnHover) {
 
 		me.globalNodeCounter++;
 
-		node.urlToken = urlTokenSource.toLowerCase().replace(/\W/g, "-");
+		if (typeof(urlTokenSource) == "number") {
+			node.urlToken = urlTokenSource.toString();
+		} else {
+			node.urlToken = urlTokenSource.toLowerCase().replace(/\W/g, "-");
+		}
+
 		while (me.nodesByUrlToken.hasOwnProperty(node.urlToken)) {
 			node.urlToken += '-';
 		}
@@ -1456,7 +1461,7 @@ BubbleTree.Styles = {};
 
 /*
  * stores visual attributes of all elements in the visualization
- * 
+ *
  */
 BubbleTree.Layout = function() {
 
@@ -1465,12 +1470,12 @@ BubbleTree.Layout = function() {
 	me.props = [];
 	me.toHide = [];
 	me.toShow = [];
-	
+
 	/*
 	 * flare-style transitioner syntax
 	 *
 	 * if you have an object bubble, you can easily change its properties with
-	 * 
+	 *
 	 * var l = new OpenSpendings.BubbleTree.Layout();
 	 * l.$(bubble).radius = 30;
 	 * l.$(bubble).angle = 3.14;
@@ -1486,7 +1491,7 @@ BubbleTree.Layout = function() {
 		me.props.push(p);
 		return p;
 	};
-	
+
 	/*
 	 * use me function to mark objects that should be shown before
 	 * the transition
@@ -1495,8 +1500,8 @@ BubbleTree.Layout = function() {
 		var me = this;
 		me.toShow.push(obj);
 	};
-	
-	
+
+
 	/*
 	 * use me function to mark objects that should be hidden after
 	 * the transition
@@ -1505,7 +1510,7 @@ BubbleTree.Layout = function() {
 		var me = this;
 		me.toHide.push(obj);
 	};
-	
+
 };
 /*jshint undef: true, browser:true, jquery: true, devel: true */
 /*global Raphael, TWEEN, BubbleTree */
@@ -1519,14 +1524,14 @@ BubbleTree.Line = function(bc, attr, origin, angle, fromRad, toRad) {
 	this.fromRad = fromRad;
 	this.attr = attr;
 	this.toRad = toRad;
-	
+
 	this.getXY = function() {
-		this.x1 = this.o.x + Math.cos(this.angle) * this.fromRad; 
+		this.x1 = this.o.x + Math.cos(this.angle) * this.fromRad;
 		this.y1 = this.o.y -Math.sin(this.angle) * this.fromRad;
-		this.x2 = this.o.x + Math.cos(this.angle) * this.toRad; 
+		this.x2 = this.o.x + Math.cos(this.angle) * this.toRad;
 		this.y2 = this.o.y  -Math.sin(this.angle) * this.toRad;
 	};
-	
+
 	this.init = function() {
 		this.getXY();
 		console.log("foo", "M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2, attr);
@@ -1534,7 +1539,7 @@ BubbleTree.Line = function(bc, attr, origin, angle, fromRad, toRad) {
 			"M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2
 		).attr(this.attr);
 	};
-	
+
 	this.draw = function() {
 		//console.log('line.draw()', this.angle, this.fromRad, this.toRad);
 		//console.log(this.x1, this);
@@ -1542,10 +1547,10 @@ BubbleTree.Line = function(bc, attr, origin, angle, fromRad, toRad) {
 		//console.log(this.x1);
 		this.path.attr({ path: "M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2 });
 	};
-	
-	
+
+
 	this.init();
-	
+
 };
 /*jshint undef: true, browser:true, jquery: true, devel: true, smarttabs: true */
 /*global vis4, BubbleTree */
@@ -1613,11 +1618,11 @@ BubbleTree.Loader = function(config) {
  * belong together
  */
 BubbleTree.MouseEventGroup = function(target, members) {
-	
+
 	var me = this;
 	me.target = target; // e.g. instance of a bubble
 	me.members = members; // e.g. raphael nodes or html elements
-	
+
 	/*
 	 * public interface for setting click handlers
 	 */
@@ -1629,12 +1634,12 @@ BubbleTree.MouseEventGroup = function(target, members) {
 			$(mem).click(me.handleClick.bind(me));
 		}
 	};
-	
+
 	me.handleClick = function(evt) {
 		var me = this;
 		me.clickCallback({ target: me.target, origEvent: evt, mouseEventGroup: me });
 	};
-	
+
 	/*
 	 *
 	 */
@@ -1646,7 +1651,7 @@ BubbleTree.MouseEventGroup = function(target, members) {
 			$(mem).hover(me.handleMemberHover.bind(me), me.handleMemberUnHover.bind(me));
 		}
 	};
-	
+
 	/*
 	 * public interface for setting unhover callback
 	 */
@@ -1654,7 +1659,7 @@ BubbleTree.MouseEventGroup = function(target, members) {
 		var me = this;
 		me.unhoverCallback = callback;
 	};
-	
+
 	/*
 	 * stores wether the mouse currently hover over any
 	 * object in our members list. this is used to check
@@ -1663,14 +1668,14 @@ BubbleTree.MouseEventGroup = function(target, members) {
 	 */
 	me.wasHovering = false;
 	me.mouseIsOver = false;
-	
+
 	me.handleMemberHover = function(evt) {
 		var me = this;
 		// since we don't know which event will receive first, the unhover of the member
 		// the mouse is leaving or the hover of the member the mouse is entering, we will
 		// delay the final check a bit
-		new vis4.DelayedTask(25, me, me.handleMemberHoverDelayed, evt);	
-		
+		new vis4.DelayedTask(25, me, me.handleMemberHoverDelayed, evt);
+
 	};
 
 	/*
@@ -1681,17 +1686,17 @@ BubbleTree.MouseEventGroup = function(target, members) {
 		// this will eventually override the false set by handleMemberUnHover a few
 		// milliseconds ok. Exactly what we want!
 		me.mouseIsOver = true;
-				
+
 		if (!me.wasHovering) {
 			// the target is newly hovered
-			
+
 			me.wasHovering = true;
 			if ($.isFunction(me.hoverCallback)) {
 				me.hoverCallback({ target: me.target, origEvent: evt, mouseEventGroup: me });
 			}
 		} // else can be ignored, no news
 	};
-	
+
 
 	me.handleMemberUnHover = function(evt) {
 		var me = this;
@@ -1699,22 +1704,22 @@ BubbleTree.MouseEventGroup = function(target, members) {
 		// we need to wait a bit to find out if this is a real unhover event
 		// or just the change to another element in the member list
 		// so we need to delay the final check a bit (let's say 30ms)
-		new vis4.DelayedTask(40, me, me.handleMemberUnHoverDelayed, evt);	
+		new vis4.DelayedTask(40, me, me.handleMemberUnHoverDelayed, evt);
 	};
-	
+
 	me.handleMemberUnHoverDelayed = function(evt) {
 		var me = this;
 		if (!me.mouseIsOver) {
 			// well, finally no nasty hover event has disturbed our good unhover
 			// process, so we can assume that this is a real unhover event
-			
+
 			me.wasHovering = false;
 			if ($.isFunction(me.unhoverCallback)) {
 				me.unhoverCallback({ target: me.target, origEvent: evt, mouseEventGroup: me });
 			}
 		}
 	};
-		
+
 	/*
 	 * this function is used for later addition of member objects like dynamic tooltips
 	 */
@@ -1724,7 +1729,7 @@ BubbleTree.MouseEventGroup = function(target, members) {
 		if (me.hoverCallback) $(mem).hover(me.handleMemberHover.bind(me), me.handleMemberUnHover.bind(me));
 		me.members.push(mem);
 	};
-	
+
 	/*
 	 * this function is used for later removal of member objects like dynamic tooltips
 	 */
@@ -1736,7 +1741,7 @@ BubbleTree.MouseEventGroup = function(target, members) {
 			if (members[i] != mem) tmp.push(members[i]);
 		}
 		me.members = tmp;
-		
+
 	};
 };
 
@@ -1747,7 +1752,7 @@ BubbleTree.MouseEventGroup = function(target, members) {
  * represents a ring
  */
 BubbleTree.Ring = function(node, bc, o, rad, attr) {
-	
+
 	var me = this;
 	me.className = "ring";
 	me.rad = rad;
@@ -1757,17 +1762,17 @@ BubbleTree.Ring = function(node, bc, o, rad, attr) {
 	me.alpha = 1;
 	me.visible = false;
 	me.node = node;
-	
+
 	me.init = function() {
 		//var o = me.origin;
 	};
-	
+
 	me.draw = function() {
 		var me = this, o = me.origin;
 		if (!me.visible) return;
 		me.circle.attr({ cx: o.x, cy: o.y, r: me.rad, 'stroke-opacity': me.alpha });
 	};
-	
+
 	/*
 	 * removes all raphael nodes from stage
 	 */
@@ -1776,15 +1781,15 @@ BubbleTree.Ring = function(node, bc, o, rad, attr) {
 		me.circle.remove();
 		me.visible = false;
 	};
-	
+
 	me.show = function() {
 		var me = this;
 		me.circle = me.bc.paper.circle(o.x, o.y, me.rad).attr(me.attr);
 		me.visible = true;
 		me.circle.toBack();
 	};
-	
-	
+
+
 	me.init();
 };
 /*jshint undef: true, browser:true, jquery: true, devel: true */
@@ -1797,34 +1802,34 @@ BubbleTree.Ring = function(node, bc, o, rad, attr) {
  * - a node appears at the beginning of the transition
  * - a node disappears at the end of the transtion
  */
- 
+
 BubbleTree.Transitioner = function(duration) {
-	
+
 	var me = this;
-	
+
 	me.duration = duration;
 	me.running = false;
 	me.completeCallbacks = [];
-	
+
 	me.changeLayout = function(layout) {
 		var i, o, props, p, me = this;
 		me.running = true;
 		me.layout = layout;
-		
+
 		// at first show all objects that are marked for showing
 		for (i in layout.toShow) {
 			o = layout.toShow[i];
 			if ($.isFunction(o.show)) o.show();
 		}
-		
+
 		for (i in layout.objects) {
 			o = layout.objects[i];
 			if (o === undefined || o === null) continue;
 			props = layout.props[i];
-			
+
 			if (me.duration > 0) {
 				var tween = new TWEEN.Tween(o), toProps = {};
-				
+
 				for (p in props) {
 					//o[p] = props[p];
 					toProps[p] = props[p];
@@ -1850,7 +1855,7 @@ BubbleTree.Transitioner = function(duration) {
 			me._completed();
 		}
 	};
-	
+
 	me.onComplete = function(callback) {
 		var me = this;
 		try {
@@ -1859,26 +1864,26 @@ BubbleTree.Transitioner = function(duration) {
 			//vis4.log(e);
 		}
 	};
-	
+
 	me._completed = function() {
 		var me = this, callbacks = me.completeCallbacks, i, obj;
 		me.running = false;
-		
+
 		for (i in me.layout.objects) {
 			obj = me.layout.objects[i];
-			if (obj && $.isFunction(obj.draw)) obj.draw(); // the final draw	
+			if (obj && $.isFunction(obj.draw)) obj.draw(); // the final draw
 		}
 		// now hide all objects marked for hiding
 		for (i in me.layout.toHide) {
 			obj = me.layout.toHide[i];
 			if (obj && $.isFunction(obj.hide)) obj.hide();
 		}
-		
+
 		for (i in callbacks) {
 			callbacks[i]();
 		}
 	};
-	
+
 };
 /*jshint undef: true, browser:true, jquery: true, devel: true */
 /*global Raphael, TWEEN, BubbleTree */
@@ -1888,7 +1893,7 @@ BubbleTree.Utils = {};
 BubbleTree.Utils.log = function() {
 	try {
 		if (window.hasOwnProperty('console')) console.log.apply(this, arguments);
-	} catch (e) {}	
+	} catch (e) {}
 };
 
 BubbleTree.Utils.amount2rad = function(a) {
@@ -1906,7 +1911,7 @@ BubbleTree.Utils.formatNumber = function(n) {
 	if (n >= 1000000) return prefix+Math.round(n / 100000)/10 + 'm';
 	if (n >= 1000) return prefix+Math.round(n / 100)/10 + 'k';
 	else return prefix+n;
-	
+
 };
 
 /*jshint undef: true, browser:true, jquery: true, devel: true, smarttabs: true */
@@ -1915,9 +1920,9 @@ BubbleTree.Utils.formatNumber = function(n) {
 
 BubbleTree.Vector = function(x,y) {
 	var me = this;
-	me.x = x; 
+	me.x = x;
 	me.y = y;
-	
+
 	/*
 	 * calculates the length of the vector
 	 */
@@ -1925,7 +1930,7 @@ BubbleTree.Vector = function(x,y) {
 		var me = this;
 		return Math.sqrt(me.x*me.x + me.y * me.y);
 	};
-	
+
 	/*
 	 * changes the length of the vector
 	 */
@@ -1935,7 +1940,7 @@ BubbleTree.Vector = function(x,y) {
 		me.x *= len/l;
 		me.y *= len/l;
 	};
-	
+
 	/*
 	 * creates an exact copy of this vector
 	 */
@@ -2293,7 +2298,8 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 		}
 
 		//me.label.attr({ x: me.pos.x, y: me.pos.y, 'font-size': Math.max(4, me.bubbleRad * me.bc.bubbleScale * 0.25) });
-		if (!showLabel) {
+
+    if (!showLabel) {
 			me.label.hide();
 			me.label2.show();
 		} else {
@@ -2307,6 +2313,12 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 				me.label2.hide();
 			}
 		}
+
+    // JASE CHANGE
+    me.label.hide();
+
+    //me.label.find('.bubbletree-desc').hide();
+    me.label2.show();
 
 		me.label.css({ width: 2*r*0.9+'px', opacity: me.alpha });
 		me.label.css({ left: (me.pos.x-r*0.9)+'px', top: (me.pos.y-me.label.height()*0.53)+'px' });
@@ -2350,7 +2362,7 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 		}
 
 		me.dashedBorder = me.paper.circle(me.pos.x, me.pos.y,  r*0.85)
-			.attr({ stroke: '#fff', 'stroke-opacity': me.alpha * 0.4,  'stroke-dasharray': ". ", fill: false });
+			.attr({ stroke: '#0a0a0a', 'stroke-opacity': me.alpha * 0.4,  'stroke-dasharray': ". ", fill: false });
 
 		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="bubbletree-amount">'+utils.formatNumber(me.node.amount)+'</div><div class="bubbletree-desc">'+me.node.shortLabel+'</div></div>');
 		me.bc.$container.append(me.label);
@@ -2360,8 +2372,10 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 			$(me.label).css({ cursor: 'pointer'});
 		}
 
+    // JASE CHANGE
 		// additional label
 		me.label2 = $('<div class="bubbletree-label2 '+me.node.id+'"><span>'+me.node.shortLabel+'</span></div>');
+    me.label2 = $('<div class="bubbletree-label2 '+me.node.id+'"><div class="bubbletree-amount">'+utils.formatNumber(me.node.amount)+'</div><div class="bubbletree-desc">'+me.node.shortLabel+'</div></div>');
 		me.bc.$container.append(me.label2);
 
 		var list = [me.circle.node, me.label];

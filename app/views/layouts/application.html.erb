@@ -11,6 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="/favicon.png">
+    <%= yield :head %>
   </head>
   <body>
     <% cache('layout_header') do %>
@@ -91,11 +92,11 @@
               <a href="<%= storage_str('twitter') %>"><span class="social-category category-image i-498-twitter"></span></a>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 text-right">
-              <p class="muted credit">Copyright &copy; 2015</p>
-              <p class="muted credit">Created by <%= link_to 'Jason Magee', 'http://jasemagee.com' %> and Kieran Senior</p>
+              <p class="muted credit">Copyright &copy; 2016</p>
+              <p class="muted credit">Founded by <%= link_to 'Jason Magee', 'https://jasemagee.com' %> and Kieran Senior</p>
               <p class="muted credit">No data is owned by <%= storage_str('name') %></p>
-              <p>Visit our friends at <a href="http://<%= storage_str('friend') %>"><%= storage_str('friend') %></a></p>
-              <p>Hosting sponsored by <%= link_to 'Jase Magee Limited', 'http://jasemagee.com' %></p>
+              <p>Visit our friends at <a href="https://<%= storage_str('friend') %>"><%= storage_str('friend') %></a></p>
+              <p>Hosting sponsored by <%= link_to 'Jase Magee Limited', 'https://jasemagee.com' %></p>
             </div>
           </div>
         </div>
