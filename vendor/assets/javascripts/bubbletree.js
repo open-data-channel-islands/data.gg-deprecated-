@@ -2375,7 +2375,7 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
     // JASE CHANGE
 		// additional label
 		me.label2 = $('<div class="bubbletree-label2 '+me.node.id+'"><span>'+me.node.shortLabel+'</span></div>');
-    me.label2 = $('<div class="bubbletree-label2 '+me.node.id+'"><div class="bubbletree-amount">'+utils.formatNumber(me.node.amount)+'</div><div class="bubbletree-desc">'+me.node.shortLabel+'</div></div>');
+    me.label2 = $('<div class="bubbletree-label2 '+me.node.id+'"><div class="bubbletree-amount">£'+utils.formatNumber(me.node.amount)+'</div><div class="bubbletree-desc">'+me.node.shortLabel+'</div></div>');
 		me.bc.$container.append(me.label2);
 
 		var list = [me.circle.node, me.label];
