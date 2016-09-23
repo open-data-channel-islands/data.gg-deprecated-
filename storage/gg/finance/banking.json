@@ -464,7 +464,31 @@
   {
     "Quarter": "2015 Q2",
     "BankingLicences": 30,
-    "TotalDeposits": 83565,
-    "PercentageChange": 0.2
+    "TotalDeposits": 83044,
+    "PercentageChange": -0.4
+  },
+  {
+    "Quarter": "2015 Q3",
+    "BankingLicences": 29,
+    "TotalDeposits": 81642,
+    "PercentageChange": -1.7
+  },
+  {
+    "Quarter": "2015 Q4",
+    "BankingLicences": 29,
+    "TotalDeposits": 79245,
+    "PercentageChange": -2.9
+  },
+  {
+    "Quarter": "2016 Q1",
+    "BankingLicences": 29,
+    "TotalDeposits": 81337,
+    "PercentageChange": 2.6
+  },
+  {
+    "Quarter": "2016 Q2",
+    "BankingLicences": 29,
+    "TotalDeposits": 87214,
+    "PercentageChange": 7.5
   }
 ]
