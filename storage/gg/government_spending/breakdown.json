@@ -89,5 +89,97 @@
  { "Expenditure": "Old age pensions", "Year": 2015, "Amount": 110708000, "Percent": 19.2, "Per Capita": 1768.16 },
  { "Expenditure": "Capital investment", "Year": 2015, "Amount": 36250000, "Percent": 6.3, "Per Capita": 578.96 },
  { "Expenditure": "Alderney", "Year": 2015, "Amount": 2641000, "Percent": 0.5, "Per Capita": 42.18 },
- { "Expenditure": "Overseas aid", "Year": 2015, "Amount": 2855000, "Percent": 0.5, "Per Capita": 45.6 }
+ { "Expenditure": "Overseas aid", "Year": 2015, "Amount": 2855000, "Percent": 0.5, "Per Capita": 45.6 },
+
+   { "Expenditure": "Government and administration", "Year": 2014, "Amount": 25979000, "Percent": 4.7, "Per Capita": 415.16, "Breakdown": [
+   { "Expenditure": "Strategy and policy", "Amount": 841000, "Percent": 0.2, "Per Capita": 13.44 },
+   { "Expenditure": "Income tax", "Amount": 4320000, "Percent": 0.8, "Per Capita": 69.04 },
+   { "Expenditure": "Treasury", "Amount": 2616000, "Percent": 0.5, "Per Capita": 41.81 },
+   { "Expenditure": "External and constitutional relations", "Amount": 1070000, "Percent": 0.2, "Per Capita": 17.10 },
+   { "Expenditure": "Payment to states members", "Amount": 1866000, "Percent": 0.3, "Per Capita": 29.82 },
+   { "Expenditure": "States property services", "Amount": 1452000, "Percent": 0.3, "Per Capita": 23.20 },
+   { "Expenditure": "Other government", "Amount": 1292000, "Percent": 0.2, "Per Capita": 20.65 },
+   { "Expenditure": "Scrutiny management", "Amount": 625000, "Percent": 0.1, "Per Capita": 9.99 },
+   { "Expenditure": "Government administration and central services", "Amount": 10686000, "Percent": 1.9, "Per Capita": 170.77 },
+   { "Expenditure": "Government and administration routine capital expenditure", "Amount": 1211000, "Percent": 0.2, "Per Capita": 19.35 }
+ ] },
+
+ { "Expenditure": "Economic development and tourism", "Year": 2014, "Amount": 8569000, "Percent": 1.5, "Per Capita": 136.94, "Breakdown": [
+   { "Expenditure": "Marketing and tourism", "Amount": 4449000, "Percent": 0.8, "Per Capita": 71.10 },
+   { "Expenditure": "Grants and support schemes", "Amount": 1999000, "Percent": 0.4, "Per Capita": 31.95 },
+   { "Expenditure": "Economic development", "Amount": 375000, "Percent": 0.1, "Per Capita": 5.99 },
+   { "Expenditure": "Other", "Amount": 529000, "Percent": 0.1, "Per Capita": 8.45 },
+   { "Expenditure": "Finance sector development", "Amount": 304000, "Percent": 0.1, "Per Capita": 4.86 },
+   { "Expenditure": "Economic development administration and central services", "Amount": 871000, "Percent": 0.2, "Per Capita": 13.92 },
+   { "Expenditure": "Economic development routine capital expenditure", "Amount": 42000, "Percent": 0.0, "Per Capita": 0.67 }
+ ] },
+
+ { "Expenditure": "Arts sport and culture", "Year": 2014, "Amount": 2016000, "Percent": 0.4, "Per Capita": 32.22, "Breakdown": [
+   { "Expenditure": "Cultural activities", "Amount": 442000, "Percent": 0.1, "Per Capita": 7.06 },
+   { "Expenditure": "Beau sejour", "Amount": 0, "Percent": 0.0, "Per Capita": 0.00},
+   { "Expenditure": "Sports", "Amount": 461000, "Percent": 0.1, "Per Capita": 7.37 },
+   { "Expenditure": "Arts, sport and culture administration and central services", "Amount": 592000, "Percent": 0.1, "Per Capita": 9.46 },
+   { "Expenditure": "Arts, sport and culture routine capital expenditure", "Amount": 521000, "Percent": 0.1, "Per Capita": 8.33 }
+ ] },
+
+ { "Expenditure": "Education", "Year": 2014, "Amount": 80804000, "Percent": 14.6, "Per Capita": 1291.29, "Breakdown": [
+   { "Expenditure": "School and pupil support services", "Amount": 7999000, "Percent": 1.4, "Per Capita": 127.83 },
+   { "Expenditure": "Further education", "Amount": 10836000, "Percent": 2.0, "Per Capita": 173.17 },
+   { "Expenditure": "Schools", "Amount": 47311000, "Percent": 8.5, "Per Capita": 756.06 },
+   { "Expenditure": "Higher education", "Amount": 5189000, "Percent": 0.9, "Per Capita": 82.92 },
+   { "Expenditure": "Museums and libraries", "Amount": 3205000, "Percent": 0.6, "Per Capita": 51.22 },
+   { "Expenditure": "Education administration and central services", "Amount": 4225000, "Percent": 0.8, "Per Capita": 67.52 },
+   { "Expenditure": "Education routine capital expenditure", "Amount": 2039000, "Percent": 0.4, "Per Capita": 32.58 }
+ ] },
+
+ { "Expenditure": "Order and safety", "Year": 2014, "Amount": 43043000, "Percent": 7.8, "Per Capita": 687.85, "Breakdown": [
+   { "Expenditure": "Law enforcement", "Amount": 17653000, "Percent": 3.2, "Per Capita": 282.10 },
+   { "Expenditure": "Prison and probation", "Amount": 6826000, "Percent": 1.2, "Per Capita": 109.08 },
+   { "Expenditure": "Fire and rescue service", "Amount": 4017000, "Percent": 0.7, "Per Capita": 64.19 },
+   { "Expenditure": "Other home affairs", "Amount": 1719000, "Percent": 0.3, "Per Capita": 27.47 },
+   { "Expenditure": "Joint emergency services control centre", "Amount": 0, "Percent": 0.0, "Per Capita": 0.00 },
+   { "Expenditure": "Royal court and law officers", "Amount": 7193000, "Percent": 1.3, "Per Capita": 114.95 },
+   { "Expenditure": "St johns ambulance service", "Amount": 2256000, "Percent": 0.4, "Per Capita": 36.05 },
+   { "Expenditure": "Order and safety administration and central services", "Amount": 2406000, "Percent": 0.4, "Per Capita": 38.45 },
+   { "Expenditure": "Order and safety routine capital expenditure", "Amount": 973000, "Percent": 0.2, "Per Capita": 15.55 }
+ ] },
+
+ { "Expenditure": "Land management infrastructure and transport", "Year": 2014, "Amount": 12932000, "Percent": 2.3, "Per Capita": 206.66, "Breakdown": [
+   { "Expenditure": "Building control and planning services", "Amount": 1294000, "Percent": 0.2, "Per Capita": 20.68 },
+   { "Expenditure": "Environmental services", "Amount": 3197000, "Percent": 0.6, "Per Capita": 51.09 },
+   { "Expenditure": "Traffic and transport", "Amount": 3840000, "Percent": 0.7, "Per Capita": 61.37 },
+   { "Expenditure": "Roads", "Amount": 4119000, "Percent": 0.7, "Per Capita": 65.82 },
+   { "Expenditure": "Solid waste", "Amount": -1435000, "Percent": -0.3, "Per Capita": -22.93 },
+   { "Expenditure": "Land management administration and central services", "Amount": 694000, "Percent": 0.1, "Per Capita": 11.09 },
+   { "Expenditure": "Land management routine capital expenditure", "Amount": 1223000, "Percent": 0.2, "Per Capita": 19.54 }
+ ] },
+
+
+ { "Expenditure": "Health and community services", "Year": 2014, "Amount": 165066000, "Percent": 29.8, "Per Capita": 2637.85, "Breakdown": [
+  { "Expenditure": "Health on island", "Amount": 65009000, "Percent": 11.7, "Per Capita": 1038.88 },
+  { "Expenditure": "Health off island", "Amount": 7466000, "Percent": 1.3, "Per Capita": 119.31 },
+  { "Expenditure": "Community services", "Amount": 46708000, "Percent": 8.4, "Per Capita": 746.42 },
+  { "Expenditure": "Public health and strategy", "Amount": 2533000, "Percent": 0.5, "Per Capita": 40.48 },
+  { "Expenditure": "Office of the children's convenor", "Amount": 602000, "Percent": 0.1, "Per Capita": 9.62 },
+  { "Expenditure": "Residential and nursing care", "Amount": 19624000, "Percent": 3.5, "Per Capita": 313.60 },
+  { "Expenditure": "Health administration and central services", "Amount": 20978000, "Percent": 3.8, "Per Capita": 335.24 },
+  { "Expenditure": "Health routine capital expenditure", "Amount": 2146000, "Percent": 0.4, "Per Capita": 34.29 }
+] },
+
+
+ { "Expenditure": "Social welfare benefits", "Year": 2014, "Amount": 67060000, "Percent": 12.1, "Per Capita": 1071.66, "Breakdown": [
+   { "Expenditure": "Family and children", "Amount": 9714000, "Percent": 1.8, "Per Capita": 155.24 },
+   { "Expenditure": "Sickness and disability", "Amount": 11522000, "Percent": 2.1, "Per Capita": 184.13 },
+   { "Expenditure": "The unemployed", "Amount": 1437000, "Percent": 0.3, "Per Capita": 22.96 },
+   { "Expenditure": "Supplementary benefit", "Amount": 20265000, "Percent": 3.7, "Per Capita": 323.85 },
+   { "Expenditure": "Other benefits", "Amount": 13869000, "Percent": 2.5, "Per Capita": 221.63 },
+   { "Expenditure": "Legal aid", "Amount": 2615000, "Percent": 0.5, "Per Capita": 41.79 },
+   { "Expenditure": "Housing", "Amount": 7637000, "Percent": 1.4, "Per Capita": 122.04 },
+   { "Expenditure": "Social welfare routine capital expenditure", "Amount": 1000, "Percent": 0.0, "Per Capita": 0.02}
+ ] },
+
+ { "Expenditure": "Old age pensions", "Year": 2014, "Amount": 106149000, "Percent": 19.1, "Per Capita": 1696.32 },
+ { "Expenditure": "Capital investment", "Year": 2014, "Amount": 36308000, "Percent": 6.5, "Per Capita": 580.22 },
+ { "Expenditure": "Alderney", "Year": 2014, "Amount": 3302000, "Percent": 0.6, "Per Capita": 52.77 },
+ { "Expenditure": "Overseas aid", "Year": 2014, "Amount": 3122000, "Percent": 0.6, "Per Capita": 49.89 }
 ]

@@ -84,7 +84,7 @@ function ApplyViewModel() {
 }
 
 function initPage() {
-    var data_url = "http://localhost:3000/api/1.1/government-spending/breakdown.json";
+    var data_url = "/api/1.1/government-spending/breakdown.json";
     $.getJSON( data_url, function( data ) {
       dataSet = data;
       ko.applyBindings(new ApplyViewModel());
