@@ -28,7 +28,7 @@ $(function() {
       };
 
 
-      var data_url = "http://localhost:3000/charts/government-spending/bubble-tree.json";
+      var data_url = "/charts/government-spending/bubble-tree.json";
       $.getJSON( data_url, function( data ) {
         new BubbleTree({
           data: data,
