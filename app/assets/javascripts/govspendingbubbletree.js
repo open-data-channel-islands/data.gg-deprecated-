@@ -27,22 +27,14 @@ $(function() {
         $(domnode).tooltip({ delay: 200, bodyHandler: getTooltip });
       };
 
-
-      var data_url = "http://localhost:3000/charts/government-spending/bubble-tree.json";
+      var data_url = "/charts/government-spending/bubble-tree.json";
       $.getJSON( data_url, function( data ) {
         new BubbleTree({
           data: data,
           container: '.bubbletree',
           bubbleType: 'donut',
-          //initTooltip: initTooltip,
           maxNodesPerLevel: 12,
           autoColors: true,
-          // show full labels inside bubbles with min radius of 40px
-          minRadiusLabels: 900,
-          // just show the amounts inside bubbles with min radius of 20px
-          minRadiusAmounts: 900,
-          // hide labels at all for bubbles with min radius of 0 (deactivated by def)
-          minRadiusHideLabels: 0
         });
       });
 

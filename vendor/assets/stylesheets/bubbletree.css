@@ -9,7 +9,7 @@
 }
 
 .bubbletree {
-	background: #fff;
+	background: transparent;
 	position: relative;
 	height: 100%;
 	overflow: hidden;
@@ -44,7 +44,7 @@
 }
 
 .bubbletree .bubbletree-label2 span {
-	background: #fff;
+	background: transparent;
 }
 
 .loading {

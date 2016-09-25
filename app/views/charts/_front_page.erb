@@ -1,0 +1,81 @@
+<% content_for :head do %>
+<%= stylesheet_link_tag    'bubbletree', media: 'all' %>
+
+<%= javascript_include_tag 'Tween', async: false %>
+<%= javascript_include_tag 'raphael-min', async: false %>
+<%= javascript_include_tag 'bubbletree', async: false %>
+<%= javascript_include_tag 'govspendingbubbletree', async: false %>
+<% end %>
+
+
+<h3 class="text-center">Government Spending 2015</h3>
+
+<div class="bubbletree-wrapper">
+  <div class="bubbletree"></div>
+</div>
+
+<% if false %>
+<table style="margin-bottom:50px;font-size:0.9em">
+  <tr>
+    <% @labels.each do |label| %>
+    <td><div class="front-page-bus-labels" style="background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></div></td>
+    <td><%= label[0] %></td>
+    <% end %>
+  </tr>
+</table>
+<% end %>
+
+<div id="bus_usage_chart" style="min-width: 310px; height: 320px; margin: 0 auto"></div>
+
+<%= javascript_tag do %>
+
+$(function() {
+initPage();
+});
+$(window).bind('page:change', function() {
+initPage();
+});
+
+function initPage() {
+$('#bus_usage_chart').highcharts({
+chart: {
+type: 'column',
+backgroundColor:'rgba(255, 255, 255, 0.1)'
+},
+credits: {
+enabled: false
+},
+title: {
+text: 'Annual Bus Usage by Month'
+},
+xAxis: {
+allowDecimals: false,
+categories: ['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec'],
+title: {
+text: ''
+}
+},
+yAxis: {
+allowDecimals: false,
+title: {
+text: ''
+},
+labels: {
+formatter: function () {
+return this.value / 1000 + 'k';
+}
+}
+},
+plotOptions: {
+column: {
+pointPadding: 0.2,
+borderWidth: 3,
+groupPadding: 0.05,
+shadow: false,
+pointWidth: 10
+}
+},
+series: <%= @bus_data.to_json.html_safe %>
+});
+}
+<% end %>
