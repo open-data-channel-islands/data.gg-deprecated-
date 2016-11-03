@@ -3946,5 +3946,89 @@
     "Quarter":"Q2 2016",
     "Quarterly Change":3.6239751533,
     "Annual Change":3.75722
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":-0.818985566,
+    "Annual Change":-0.141168243
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":0.7099451242,
+    "Annual Change":2.600899894
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":1.1007759354,
+    "Annual Change":3.2255453655
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":0,
+    "Annual Change":5.7378946734
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":0.0747965469,
+    "Annual Change":0.8403797007
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":0.5145397715,
+    "Annual Change":-1.6076196845
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":-0.7218896357,
+    "Annual Change":-1.9443204962
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":1.7534445233,
+    "Annual Change":2.878097835
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":2.726841704,
+    "Annual Change":-2.7748819459
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":-0.3196470894,
+    "Annual Change":2.662488918
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":0.1607403808,
+    "Annual Change":-0.7193252583
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":-3.2911023184,
+    "Annual Change":0.760011763
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":1.8549008282,
+    "Annual Change":-1.6355489653
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q3 2016",
+    "Quarterly Change":-2.9034550245,
+    "Annual Change":2.8385544849
   }
 ]
