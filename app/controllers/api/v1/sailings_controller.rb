@@ -11,7 +11,7 @@ class Api::V1::SailingsController < ApplicationController
 
   def harbour
 
-    @sailings = table_to_sailings_array()
+    @sailings = SailingsParser::get_sailings
 
     respond_to do |format|
       format.json { render json: @sailings }
