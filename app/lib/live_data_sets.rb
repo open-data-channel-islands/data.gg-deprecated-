@@ -23,6 +23,7 @@ class LiveDataSets
   end
 
   def self.get_harbour_sailings
-    SailingsParser::get_sailings
+    sailings = SailingsParser::get_sailings
+    sailings
   end
 end

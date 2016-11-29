@@ -1,5 +1,5 @@
-require './lib/live_data_sets'
-require './lib/sailings_parser'
+#require './lib/live_data_sets'
+#require './lib/sailings_parser'
 require 'xml_parser'
 
 class HomeController < ApplicationController
@@ -84,6 +84,7 @@ class HomeController < ApplicationController
   end
 
   def api
+
     @data_category = DataCategory.where("stub = ?", params[:data_category]).first
     @data_set = DataSet.joins(:place).where("stub = ? AND places.code = ? AND data_category_id = ?",
       params[:data_set], ENV['place_code'].upcase, @data_category.id).first

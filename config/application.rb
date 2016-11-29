@@ -23,7 +23,9 @@ module DataGg
     #config.time_zone = 'London'
     #config.active_record.default_timezone = 'London'
 
-    config.autoload_paths << Rails.root.join('lib') # Force the lib folder to be refreshed for shared code
+    #config.enable_dependency_loading = true
+    #config.autoload_paths << Rails.root.join('lib') # Force the lib folder to be refreshed for shared code
+    #config.eager_load_paths << Rails.root.join('lib') # Force the lib folder to be refreshed for shared code
 
     config.action_dispatch.default_headers.merge!({
       'Access-Control-Allow-Origin' => '*',
