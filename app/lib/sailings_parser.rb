@@ -146,6 +146,6 @@ class SailingsParser
       end
     end
 
-    return sailings
+    return sailings.delete_if {|k,v| k.length == 0 }
   end
 end
