@@ -55,6 +55,7 @@ class SailingsParser
 
     column_names = nil
     type = nil
+    found_set_back = false
 
     doc.css('div#content').each do |root|
 
@@ -86,6 +87,7 @@ class SailingsParser
 
       # Found next day marker, set previous
       if content.attr('class') == 'tomorrowSep'# || type == 'Departure'
+        found_set_back = true
 
       #p "i is #{i}"
       #p "start is #{set_back_start}"
@@ -141,8 +143,22 @@ class SailingsParser
         end
 
         sailings << sailings_info_hash
+      end
+    end
 
+    is_before_midday = DateTime.now < DateTime.now.middle_of_day
 
+    #p found_set_back
+    #p is_before_midday
+
+    # So the list can be without any indication of which day it is
+    # If we're before midday on the current day (and found no date indicators)
+    # then set back all the dates to today (default is tomorrow)
+
+    if !found_set_back && is_before_midday
+      sailings.each do |set_back|
+        next if set_back.length == 0
+        set_back[column_names[1]] = set_back[column_names[1]] - 1.days
       end
     end
 
