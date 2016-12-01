@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'time'
+
 class SailingsParser
 
   def self.get_sailings
@@ -10,7 +11,7 @@ class SailingsParser
   private
 
   def self.table_to_sailings_array
-    arrivals_departures = get_arrivals_departures_tables()
+    arrivals_departures = get_arrivals_departures_json()
 
     if arrivals_departures == nil
       return []
@@ -19,6 +20,61 @@ class SailingsParser
     return arrivals_departures
   end
 
+
+  def self.get_arrivals_departures_json
+    arrival_url = 'http://www.harbours.gg/152445'
+    arrival_json = JSON.load(open(arrival_url))
+
+    departure_url = 'http://www.harbours.gg/152446'
+    departure_json = JSON.load(open(departure_url))
+
+    sailings = []
+
+    arrival_column_names = {
+      0 => 'Vessel',
+      1 => 'Time',
+      2 => 'Type',
+      3 => 'Source',
+      4 => 'Arrived'
+    }
+
+    arrival_json.each do |arrival|
+      sailings_info_hash = { }
+      sailings_info_hash[arrival_column_names[0]] = arrival['vessel']
+      time_str = arrival['time'] + ' ' + arrival['date']
+      zone = 'London'
+      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
+      sailings_info_hash[arrival_column_names[1]] = time
+      sailings_info_hash[arrival_column_names[2]] = 'Arrival'
+      sailings_info_hash[arrival_column_names[3]] = arrival['port']
+      sailings_info_hash[arrival_column_names[4]] = arrival['arrived']
+      sailings << sailings_info_hash
+    end
+
+    departure_column_names = {
+      0 => 'Vessel',
+      1 => 'Time',
+      2 => 'Type',
+      3 => 'Destination',
+      4 => 'Departed'
+    }
+
+    departure_json.each do |departure|
+      sailings_info_hash = { }
+      sailings_info_hash[departure_column_names[0]] = departure['vessel']
+      time_str = departure['time'] + ' ' + departure['date']
+      zone = 'London'
+      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
+      sailings_info_hash[departure_column_names[1]] = time
+      sailings_info_hash[departure_column_names[2]] = 'Departure'
+      sailings_info_hash[departure_column_names[3]] = departure['port']
+      sailings_info_hash[departure_column_names[4]] = departure['departed']
+      sailings << sailings_info_hash
+    end
+
+
+    return sailings
+  end
 
   def self.get_arrivals_departures_tables
     url = 'http://www.harbours.gg/article/151766/Arrivals--Departures-scheduled-for-today--tomorrow'
