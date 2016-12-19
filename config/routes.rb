@@ -20,6 +20,10 @@ DataGg::Application.routes.draw do
   get 'sitemap' => 'home#sitemap'
   ###
 
+get 'maps' => 'maps#guernsey', as: :maps
+get 'maps/guernsey' => 'maps#guernsey', as: :maps_guernsey
+
+
   # Charts section
   get 'charts' => 'home#charts', as: :charts
 
