@@ -14,6 +14,9 @@ $(window).bind('page:change', function() {
 });
 
 function initPage() {
+    var times = <%= @time_periods.to_json.html_safe %>;
+    var labels = <%= @labels.to_json.html_safe %>;
+
     $('#container_tides_tides').highcharts({
         chart: {
             type: 'line'
@@ -22,16 +25,23 @@ function initPage() {
             text: '<%= @title %>'
         },
         xAxis: {
-            allowDecimals: false,
-            categories: <%= @labels.to_json.html_safe %>,
+            categories: labels,
             title: {
                 text: 'Date'
             }
         },
         yAxis: {
-            allowDecimals: false,
             title: {
                 text: 'Height (m)'
+            }
+        },
+        tooltip: {
+          formatter: function() {
+              return 'Series: ' + this.series.name +
+              '<br> Time: '  + times[this.series.index][this.series.data.indexOf(this.point)] +
+              '<br> Height: ' + this.point.y +
+              '<br> Date: ' + labels[this.point.x];
+              //'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
             }
         },
         series: [{
