@@ -1,0 +1,55 @@
+<%= render 'head' %>
+
+<div id="container_tides_tides" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <a href="http://www.gov.gg/tides">gov.gg</a></p>
+<p><em>Updated 2/2/2017</em></p>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_tides_tides').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: <%= @labels.to_json.html_safe %>,
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Height (m)'
+            }
+        },
+        series: [{
+            name: 'Time 1',
+            data: <%= @heights[0].to_json.html_safe -%>
+        },
+        {
+            name: 'Time 2',
+            data: <%= @heights[1].to_json.html_safe -%>
+        },
+        {
+            name: 'Time 3',
+            data: <%= @heights[2].to_json.html_safe -%>
+        },
+        {
+            name: 'Time 4',
+            data: <%= @heights[3].to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>

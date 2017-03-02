@@ -1,5 +1,11 @@
 DataGg::Application.routes.draw do
 
+  namespace :api do
+    namespace :v10 do
+      get 'tides/tides'
+    end
+  end
+
   devise_for :users
   root 'home#index'
 
@@ -136,7 +142,8 @@ get 'maps/guernsey' => 'maps#guernsey', as: :maps_guernsey
     get 'government-spending/bubble-tree' => 'government_spending#bubble_tree'
 
     # Tides
-    get 'tides' => 'tides#index'
+    get 'tides' => 'tides#tides'
+    get 'tides/tides' => 'tides#tides'
     # Fuel
     get 'fuel' => 'fuel#index'
     # Sports
