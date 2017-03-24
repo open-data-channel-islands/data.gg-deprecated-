@@ -373,5 +373,21 @@
   {"Year":"2014-2015", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":32.9},
   {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– G GCSEs", "Percent":92.9},
   {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":57.1},
-  {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":42.9}
+  {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":42.9},
+
+  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– G GCSEs", "Percent":100},
+  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":99.1},
+  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":95.3},
+  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– G GCSEs", "Percent":91.6},
+  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":62},
+  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":50},
+  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– G GCSEs", "Percent":97.3},
+  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":52.7},
+  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":45.5},
+  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– G GCSEs", "Percent":87.8},
+  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":43.9},
+  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":39.6},
+  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– G GCSEs", "Percent":93.8},
+  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":37.5},
+  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":25}
 ]

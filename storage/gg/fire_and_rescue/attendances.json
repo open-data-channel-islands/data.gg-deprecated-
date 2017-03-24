@@ -97,5 +97,16 @@
     "Special service non-emergency":null,
     "Special service Road Traffic Collisions":68,
     "Special service General":278
+  },
+  {
+    "Year":2015,
+    "All other types of fires":143,
+    "Chimney fires":25,
+    "False alarms general":445,
+    "False alarms malicious":7,
+    "Special service emergency":null,
+    "Special service non-emergency":null,
+    "Special service Road Traffic Collisions":105,
+    "Special service General":166
   }
 ]

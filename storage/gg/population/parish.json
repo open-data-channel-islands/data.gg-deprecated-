@@ -16,17 +16,32 @@
   },
   {
     "Year": 2015,
-    "Castel": 8704,
-    "Forest": 1589,
+    "Castel": 8746,
+    "Forest": 1585,
     "St. Andrew": 2438,
-    "St. Martin": 6457,
-    "St. Peter Port": 18599,
-    "St. Pierre Du Bois": 2090,
-    "St. Sampson": 8980,
-    "St. Saviour": 2745,
+    "St. Martin": 6443,
+    "St. Peter Port": 18585,
+    "St. Pierre Du Bois": 2095,
+    "St. Sampson": 8954,
+    "St. Saviour": 2749,
+    "Torteval": 1016,
+    "Vale": 9556,
+    "Herm and Jethou": 76,
+    "Address unknown": 328
+  },
+  {
+    "Year": 2016,
+    "Castel": 8739,
+    "Forest": 1578,
+    "St. Andrew": 2348,
+    "St. Martin": 6581,
+    "St. Peter Port": 18798,
+    "St. Pierre Du Bois": 2099,
+    "St. Sampson": 8948,
+    "St. Saviour": 2749,
     "Torteval": 1013,
-    "Vale": 9592,
-    "Herm and Jethou": 79,
-    "Address unknown": 326
+    "Vale": 9524,
+    "Herm and Jethou": 96,
+    "Address unknown": 250
   }
 ]
