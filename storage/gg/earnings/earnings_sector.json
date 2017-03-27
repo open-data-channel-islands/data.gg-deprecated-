@@ -398,138 +398,138 @@
     "Median earnings":21190,
     "Upper quartile earnings":27300
   },
-  {
+ {
     "Sector":"Agriculture, horticulture, fishing and quarrying",
     "Year":2015,
-    "Lower quartile earnings":18089,
-    "Median earnings":24946,
-    "Upper quartile earnings":36086
+    "Lower quartile earnings":19370,
+    "Median earnings":25870,
+    "Upper quartile earnings":36920
   },
   {
     "Sector":"Manufacturing",
     "Year":2015,
-    "Lower quartile earnings":18872,
-    "Median earnings":26812,
-    "Upper quartile earnings":35487
+    "Lower quartile earnings":19370,
+    "Median earnings":27300,
+    "Upper quartile earnings":35750
   },
   {
     "Sector":"Electricity, gas, steam and air conditioning supply",
     "Year":2015,
-    "Lower quartile earnings":28841,
-    "Median earnings":35729,
-    "Upper quartile earnings":46439
+    "Lower quartile earnings":28990,
+    "Median earnings":35620,
+    "Upper quartile earnings":46150
   },
   {
     "Sector":"Water supply, sewerage, waste management and remediation activities",
     "Year":2015,
-    "Lower quartile earnings":24227,
-    "Median earnings":30948,
-    "Upper quartile earnings":37253
+    "Lower quartile earnings":24830,
+    "Median earnings":31070,
+    "Upper quartile earnings":36920
   },
   {
     "Sector":"Construction",
     "Year":2015,
-    "Lower quartile earnings":23544,
-    "Median earnings":30953,
-    "Upper quartile earnings":38202
+    "Lower quartile earnings":24050,
+    "Median earnings":31460,
+    "Upper quartile earnings":38740
   },
   {
     "Sector":"Wholesale, retail and repairs",
     "Year":2015,
-    "Lower quartile earnings":15607,
-    "Median earnings":21812,
-    "Upper quartile earnings":30473
+    "Lower quartile earnings":16510,
+    "Median earnings":22620,
+    "Upper quartile earnings":31200
   },
   {
     "Sector":"Hostelry",
     "Year":2015,
-    "Lower quartile earnings":14838,
-    "Median earnings":17974,
-    "Upper quartile earnings":22878
+    "Lower quartile earnings":15340,
+    "Median earnings":18200,
+    "Upper quartile earnings":23660
   },
   {
     "Sector":"Transport and storage",
     "Year":2015,
-    "Lower quartile earnings":20385,
-    "Median earnings":26267,
-    "Upper quartile earnings":35323
+    "Lower quartile earnings":21320,
+    "Median earnings":27040,
+    "Upper quartile earnings":36140
   },
   {
     "Sector":"Information and communication",
     "Year":2015,
-    "Lower quartile earnings":27062,
-    "Median earnings":35767,
-    "Upper quartile earnings":51162
+    "Lower quartile earnings":27170,
+    "Median earnings":35490,
+    "Upper quartile earnings":49400
   },
   {
     "Sector":"Finance",
     "Year":2015,
-    "Lower quartile earnings":29833,
-    "Median earnings":43355,
-    "Upper quartile earnings":65799
+    "Lower quartile earnings":30030,
+    "Median earnings":43550,
+    "Upper quartile earnings":65780
   },
   {
     "Sector":"Real estate activities",
     "Year":2015,
-    "Lower quartile earnings":22570,
-    "Median earnings":33488,
-    "Upper quartile earnings":51545
+    "Lower quartile earnings":23400,
+    "Median earnings":33670,
+    "Upper quartile earnings":52650
   },
   {
     "Sector":"Professional, business, scientific and technical activities",
     "Year":2015,
-    "Lower quartile earnings":27148,
-    "Median earnings":39282,
-    "Upper quartile earnings":59602
+    "Lower quartile earnings":27300,
+    "Median earnings":39260,
+    "Upper quartile earnings":59670
   },
   {
     "Sector":"Administrative and support service activities",
     "Year":2015,
-    "Lower quartile earnings":17573,
-    "Median earnings":24940,
-    "Upper quartile earnings":35307
+    "Lower quartile earnings":20020,
+    "Median earnings":26390,
+    "Upper quartile earnings":36530
   },
   {
     "Sector":"Public administration",
     "Year":2015,
-    "Lower quartile earnings":23299,
-    "Median earnings":33737,
-    "Upper quartile earnings":46588
+    "Lower quartile earnings":23400,
+    "Median earnings":33800,
+    "Upper quartile earnings":46540
   },
   {
     "Sector":"Education",
     "Year":2015,
-    "Lower quartile earnings":17589,
-    "Median earnings":25541,
-    "Upper quartile earnings":45481
+    "Lower quartile earnings":18720,
+    "Median earnings":27300,
+    "Upper quartile earnings":46020
   },
   {
     "Sector":"Human health, social and charitable work activities",
     "Year":2015,
-    "Lower quartile earnings":15622,
-    "Median earnings":22419,
-    "Upper quartile earnings":31334
+    "Lower quartile earnings":16770,
+    "Median earnings":23140,
+    "Upper quartile earnings":32110
   },
   {
     "Sector":"Arts, entertainment and recreation",
     "Year":2015,
-    "Lower quartile earnings":13991,
-    "Median earnings":21759,
-    "Upper quartile earnings":31554
+    "Lower quartile earnings":18070,
+    "Median earnings":24960,
+    "Upper quartile earnings":33150
   },
   {
     "Sector":"Other service activities",
     "Year":2015,
-    "Lower quartile earnings":14017,
-    "Median earnings":18676,
-    "Upper quartile earnings":24154
+    "Lower quartile earnings":14690,
+    "Median earnings":19240,
+    "Upper quartile earnings":25350
   },
   {
     "Sector":"Activities of households as employers",
     "Year":2015,
-    "Lower quartile earnings":11210,
-    "Median earnings":17930,
-    "Upper quartile earnings":26248
+    "Lower quartile earnings":13650,
+    "Median earnings":21450,
+    "Upper quartile earnings":27170
   },
   {
     "Sector":"Agriculture, horticulture, fishing and quarrying",
