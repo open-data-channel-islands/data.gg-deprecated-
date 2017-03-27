@@ -157,6 +157,9 @@ get 'maps/guernsey' => 'maps#guernsey', as: :maps_guernsey
     # Fishing
     get 'fishing' => 'fishing#index'
 
+    get 'waste' => 'waste#commercial_and_industrial_vs_household'
+    get 'waste/commercial_and_industrial_vs_household' => 'waste#commercial_and_industrial_vs_household'
+
   end
 
 
