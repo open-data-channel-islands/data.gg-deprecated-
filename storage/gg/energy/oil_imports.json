@@ -1,10 +1,10 @@
 [
-  {"Year":2008, "Transport":46, "Heating/Electricity":65},
-  {"Year":2009, "Transport":44, "Heating/Electricity":82},
-  {"Year":2010, "Transport":40, "Heating/Electricity":69},
-  {"Year":2011, "Transport":40, "Heating/Electricity":62},
-  {"Year":2012, "Transport":38, "Heating/Electricity":93},
-  {"Year":2013, "Transport":38, "Heating/Electricity":89},
-  {"Year":2014, "Transport":37, "Heating/Electricity":76},
-  {"Year":2015, "Transport":36, "Heating/Electricity":54}
+  {"Year":2008, "Transport":46, "Heating-Electricity":65},
+  {"Year":2009, "Transport":44, "Heating-Electricity":82},
+  {"Year":2010, "Transport":40, "Heating-Electricity":69},
+  {"Year":2011, "Transport":40, "Heating-Electricity":62},
+  {"Year":2012, "Transport":38, "Heating-Electricity":93},
+  {"Year":2013, "Transport":38, "Heating-Electricity":89},
+  {"Year":2014, "Transport":37, "Heating-Electricity":76},
+  {"Year":2015, "Transport":36, "Heating-Electricity":54}
 ]
