@@ -352,6 +352,71 @@
     "Type":"BTEC",
     "Grade":"Ungraded",
     "Percent":2
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"A*",
+    "Percent":9
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"A",
+    "Percent":19.1
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"B",
+    "Percent":31.6
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"C",
+    "Percent":24
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"D",
+    "Percent":11.3
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"E",
+    "Percent":3.7
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"A Level",
+    "Grade":"U",
+    "Percent":1.2
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"BTEC",
+    "Grade":"Distinction",
+    "Percent":48
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"BTEC",
+    "Grade":"Merit",
+    "Percent":21
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"BTEC",
+    "Grade":"Pass",
+    "Percent":31
+  },
+  {
+    "Year":"2015-2016",
+    "Type":"BTEC",
+    "Grade":"Ungraded",
+    "Percent":0
   }
-
 ]

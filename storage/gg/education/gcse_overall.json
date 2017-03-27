@@ -80,6 +80,9 @@
     "Percent":92.7
   },
   { "Year":2015, "Result":"5+ A*– C", "Percent":65.2 },
-  { "Year":2015, "Result":"5+ A*– C (including English and Maths)", "Percent":57.5 },
-  { "Year":2015, "Result":"5+ A*– G", "Percent":90.9 }
+  { "Year":2015, "Result":"5+ A*– C (including English and Maths)", "Percent":57.4 },
+  { "Year":2015, "Result":"5+ A*– G", "Percent":90.9 },
+  { "Year":2016, "Result":"5+ A*– C", "Percent":67.2 },
+  { "Year":2016, "Result":"5+ A*– C (including English and Maths)", "Percent":62.5 },
+  { "Year":2016, "Result":"5+ A*– G", "Percent":92 }
 ]
