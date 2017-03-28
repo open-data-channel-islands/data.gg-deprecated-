@@ -1,4 +1,23 @@
 class Charts::EnergyController < ApplicationController
+
+  def renewable
+    @title = 'Renewable'
+    renewable_json = File.read("storage/#{ENV['place_code']}/energy/renewable_energy.json")
+    renewable = JSON.parse(renewable_json)
+
+    @labels = []
+    @renewable = []
+
+    renewable.sort_by{ |p| p["Year"].to_i }.each do |val|
+      @labels << val['Year'].to_i
+      @renewable << val['Renewable Energy']
+    end
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
   def electricity_consumption
     @title = 'Electricity Consumption'
     electricity_consumption_json = File.read("storage/#{ENV['place_code']}/energy/electricity_consumption.json")

@@ -131,6 +131,7 @@ get 'maps/guernsey' => 'maps#guernsey', as: :maps_guernsey
     get 'energy' => 'energy#electricity_consumption'
     get 'energy/electricity_consumption' => 'energy#electricity_consumption'
     get 'energy/electricity_import_vs_generated' => 'energy#electricity_import_vs_generated'
+    get 'energy/renewable' => 'energy#renewable'
 
     # Transport
     get 'transport' => 'transport#registered_vehicles'

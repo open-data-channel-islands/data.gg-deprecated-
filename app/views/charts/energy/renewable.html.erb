@@ -1,0 +1,43 @@
+<%= render 'head' %>
+
+<div id="container_renewable" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<p>Source: <a href="http://www.gov.gg/pru">gov.gg</a></p>
+<p><em>Updated 28/03/2017</em></p>
+
+<%= javascript_tag do %>
+$(function() {
+  initPage();
+});
+$(window).bind('page:change', function() {
+  initPage();
+});
+
+function initPage() {
+    $('#container_renewable').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '<%= @title %>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            categories: <%= @labels.to_json.html_safe %>,
+            title: {
+                text: 'Year'
+            }
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Number of units (MWh)'
+            }
+        },
+        series: [{
+            name: 'Renewable',
+            data: <%= @renewable.to_json.html_safe -%>
+        }]
+    });
+}
+<% end %>
