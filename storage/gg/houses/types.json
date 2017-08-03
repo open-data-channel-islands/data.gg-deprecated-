@@ -46,6 +46,30 @@
     "Type":"Other",
     "Local Market":246,
     "Open Market":16
+  },
+  {
+    "Year":2016,
+    "Type":"Apartment",
+    "Local Market":6335,
+    "Open Market":166
+  },
+  {
+    "Year":2016,
+    "Type":"Bungalow",
+    "Local Market":9837,
+    "Open Market":366
+  },
+  {
+    "Year":2016,
+    "Type":"House",
+    "Local Market":8893,
+    "Open Market":1046
+  },
+  {
+    "Year":2016,
+    "Type":"Other",
+    "Local Market":245,
+    "Open Market":16
   }
 ]
 

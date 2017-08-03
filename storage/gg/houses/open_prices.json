@@ -845,5 +845,19 @@
     "Quarter":"Q3",
     "Median":950000,
     "Transactions":15
+  },
+  {
+    "Year":2016,
+    "Valid": true,
+    "Quarter":"Q4",
+    "Median":1087750,
+    "Transactions":13
+  },
+  {
+    "Year":2017,
+    "Valid": true,
+    "Quarter":"Q1",
+    "Median":857500,
+    "Transactions":6
   }
 ]

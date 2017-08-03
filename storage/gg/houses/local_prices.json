@@ -1329,5 +1329,27 @@
     "Apartments median":235125,
     "Mix adjusted":412792,
     "Transactions":159
+  },
+  {
+    "Year":2016,
+    "Valid":true,
+    "Quarter":"Q4",
+    "Mean":420899.935251799,
+    "Median":403750,
+    "Houses median":436287.5,
+    "Apartments median":237500,
+    "Mix adjusted":414085.553057393,
+    "Transactions":147
+  },
+  {
+    "Year":2017,
+    "Valid":true,
+    "Quarter":"Q1",
+    "Mean":428370,
+    "Median":380000,
+    "Houses median":444363,
+    "Apartments median":263625,
+    "Mix adjusted":432341,
+    "Transactions":163
   }
 ]
