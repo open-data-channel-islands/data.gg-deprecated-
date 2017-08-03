@@ -4198,5 +4198,89 @@
     "Quarter":"Q1 2017",
     "Quarterly Change":4.0432363173,
     "Annual Change":3.6233867562
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":1.2467930072,
+    "Annual Change":-0.7169313117
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0.8469820242,
+    "Annual Change":2.4313775439
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0.9840589206,
+    "Annual Change":4.40620601
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0,
+    "Annual Change":3.3419917448
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0.1432413095,
+    "Annual Change":-0.0297096326
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":-1.683870393,
+    "Annual Change":4.5333876201
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":-0.4465659513,
+    "Annual Change":1.8738584279
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":1.1338081841,
+    "Annual Change":3.3643418572
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":-3.826740498,
+    "Annual Change":-1.4476970215
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0.6228306673,
+    "Annual Change":3.1716507414
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":-0.2643966574,
+    "Annual Change":4.342336716
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":0.5173950054,
+    "Annual Change":2.8819172478
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":1.5690261998,
+    "Annual Change":8.6931060526
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q2 2017",
+    "Quarterly Change":3.771652875,
+    "Annual Change":3.7710636393
   }
 ]

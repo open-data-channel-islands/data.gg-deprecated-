@@ -29,3 +29,5 @@ development
 # Ignore sitemap as each version of the site will need its own.
 /public/sitemap.xml
 /public/sitemap.xml.gz
+
+/.idea
