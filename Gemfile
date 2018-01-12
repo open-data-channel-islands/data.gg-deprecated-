@@ -31,7 +31,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-gem 'nokogiri'
+gem 'nokogiri', '~> 1.8.1'
 
 # Use Unicorn as the app server
 gem 'unicorn'
