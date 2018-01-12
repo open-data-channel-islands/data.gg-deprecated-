@@ -36,7 +36,7 @@ set :linked_files, %w{config/database.yml config/secrets.yml config/application.
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
+set :rvm_ruby_version, '2.3.1'
 
 namespace :deploy do
 
