@@ -4282,5 +4282,89 @@
     "Quarter":"Q2 2017",
     "Quarterly Change":3.771652875,
     "Annual Change":3.7710636393
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-0.2109698748,
+    "Annual Change":-0.1082899909
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0.2002101075,
+    "Annual Change":1.9129296401
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0.5785659133,
+    "Annual Change":3.8669226401
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0,
+    "Annual Change":3.3419917448
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":1.2002863218,
+    "Annual Change":1.094604815
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-0.2209989085,
+    "Annual Change":3.76844008
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-1.2685689861,
+    "Annual Change":1.3128854748
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0.8511090729,
+    "Annual Change":2.4477211924
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-0.4838231924,
+    "Annual Change":-4.5278892515
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0.1135469459,
+    "Annual Change":3.6200173694
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":0.1557997166,
+    "Annual Change":4.3371897847
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-4.9247292119,
+    "Annual Change":1.1440144189
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-1.3844847445,
+    "Annual Change":5.2362387175
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q3 2017",
+    "Quarterly Change":-3.7560183204,
+    "Annual Change":2.8598942454
   }
 ]
