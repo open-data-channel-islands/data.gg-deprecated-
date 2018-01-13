@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.10.0'
+lock '3.10.1'
 
 set :application, 'data.gg'
 set :repo_url, 'git@github.com:open-data-channel-islands/data.gg.git'
