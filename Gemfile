@@ -33,8 +33,7 @@ gem 'jbuilder', '~> 2.7.0'
 
 gem 'nokogiri', '~> 1.8.1'
 
-# Use Unicorn as the app server
-gem 'unicorn'
+gem 'puma'
 
 gem "figaro" # Used for environment management. See config/application.yml
 
@@ -48,7 +47,8 @@ end
 group :development do
   gem 'better_errors'
   gem "binding_of_caller"
-  gem 'capistrano-rails'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-rvm'
 end
 
