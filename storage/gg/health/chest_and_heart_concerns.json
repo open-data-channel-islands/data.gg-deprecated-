@@ -119,5 +119,27 @@
     "Raised Cholesterol":437,
     "Abnormal ECG":51,
     "Visceral Fat greater than 13":472
-  }
+  },
+  {
+    "Year":2016,
+    "All screenings":1995,
+    "New clients included in screenings total":495,
+    "Body Mass Index greater or equal to 30":394,
+    "Diabetes found in screening":4,
+    "Raised Blood Pressure":208,
+    "Raised Cholesterol":428,
+    "Abnormal ECG":29,
+    "Visceral Fat greater than 13":520
+  },
+  {
+    "Year":2017,
+    "All screenings":2116,
+    "New clients included in screenings total":560,
+    "Body Mass Index greater or equal to 30":440,
+    "Diabetes found in screening":6,
+    "Raised Blood Pressure":267,
+    "Raised Cholesterol":520,
+    "Abnormal ECG":44,
+    "Visceral Fat greater than 13":548
+  } 
 ]
