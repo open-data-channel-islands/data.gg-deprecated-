@@ -100,6 +100,21 @@
   "July":192477,
   "August":203997,
   "September":178204,
+  "October":145859,
+  "November":126713,
+  "December":123519
+  },
+  {
+  "Year": 2018,
+  "January":111572,
+  "February":107027,
+  "March":119782,
+  "April":136911,
+  "May":179514,
+  "June":188129,
+  "July":null,
+  "August":null,
+  "September":null,
   "October":null,
   "November":null,
   "December":null

@@ -64,5 +64,17 @@
     "Fatal":1,
     "Serious":10,
     "Slight":88
+  },
+  {
+    "Year":2016,
+    "Fatal":0,
+    "Serious":9,
+    "Slight":133
+  },
+  {
+    "Year":2017,
+    "Fatal":2,
+    "Serious":18,
+    "Slight":101
   }
 ]
