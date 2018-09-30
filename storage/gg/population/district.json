@@ -1,5 +1,4 @@
-[
-  {
+[{
     "Year": 2014,
     "Castel": 8785,
     "South East": 8798,
@@ -20,5 +19,27 @@
     "Vale": 9592,
     "West": 7437,
     "Address unknown": 326
+  },
+  {
+    "Year": 2016,
+    "Castel": 8710,
+    "South East": 8929,
+    "St. Peter Port North": 10423,
+    "St. Peter Port South": 8457,
+    "St. Sampson": 8963,
+    "Vale": 9552,
+    "West": 7439,
+    "Address unknown": 250
+  },
+  {
+    "Year": 2017,
+    "Castel": 8703,
+    "South East": 8796,
+    "St. Peter Port North": 10295,
+    "St. Peter Port South": 8461,
+    "St. Sampson": 8937,
+    "Vale": 9493,
+    "West": 7374,
+    "Address unknown": 134
   }
 ]

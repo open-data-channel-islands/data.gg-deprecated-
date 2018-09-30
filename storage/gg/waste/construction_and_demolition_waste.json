@@ -7,5 +7,6 @@
   {"Year":2013, "Land Reclamation":136.6, "Reused":43.5, "Landfill":2.3, "Total":182.3},
   {"Year":2014, "Land Reclamation":126.5, "Reused":70.6, "Landfill":1.2, "Total":198.3},
   {"Year":2015, "Land Reclamation":105.4, "Reused":57.9, "Landfill":0.4, "Total":163.8},
-  {"Year":2016, "Land Reclamation":81.3, "Reused":59.2, "Landfill":0.4, "Total":140.9}
+  {"Year":2016, "Land Reclamation":81.3, "Reused":59.2, "Landfill":0.4, "Total":140.9},
+  {"Year":2017, "Land Reclamation":53.8, "Reused":69.6, "Landfill":0.4, "Total":123.7}
 ]

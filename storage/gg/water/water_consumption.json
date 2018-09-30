@@ -16,5 +16,9 @@
   {"Year":2012, "Metered":1384, "Unmetered":1101, "Comm ":448, "Other":1749, "Total":4682},
   {"Year":2013, "Metered":1441, "Unmetered":1106, "Comm ":465, "Other":1629, "Total":4641},
   {"Year":2014, "Metered":1454, "Unmetered":1067, "Comm ":421, "Other":1500, "Total":4442},
-  {"Year":2015, "Metered":1482, "Unmetered":1026, "Comm ":420, "Other":1599, "Total":4527}
+  {"Year":2015, "Metered":1482, "Unmetered":1026, "Comm ":420, "Other":1599, "Total":4527},
+  {"Year":2016, "Metered":1491, "Unmetered":1023, "Comm ":409, "Other":1651, "Total":4574},
+  {"Year":2017, "Metered":1512, "Unmetered":970, "Comm ":397, "Other":1663, "Total":4542}
 ]
+
+

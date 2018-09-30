@@ -1,184 +1,218 @@
 [
   {
-    "Year":1990,
-    "Carbon Dioxide":420.1,
-    "Methane":114.7,
-    "Nitrous Oxide":8.1,
-    "F-Gases":0.0
+    "Year": 1990,
+    "Total emissions": 552.4,
+    "CO₂ (Carbon dioxide) total": 427.7,
+    "CH₄ total (Methane)": 116,
+    "N₂O total (Nitrous oxide)": 8.7,
+    "Fluorinated gases total": 0
   },
   {
-    "Year":1991,
-    "Carbon Dioxide":474.4,
-    "Methane":115.4,
-    "Nitrous Oxide":8.2,
-    "F-Gases":0.0
+    "Year": 1991,
+    "Total emissions": 606,
+    "CO₂ (Carbon dioxide) total": 480.5,
+    "CH₄ total (Methane)": 116.6,
+    "N₂O total (Nitrous oxide)": 8.8,
+    "Fluorinated gases total": 0
   },
   {
-    "Year":1992,
-    "Carbon Dioxide":431.4,
-    "Methane":116.0,
-    "Nitrous Oxide":8.1,
-    "F-Gases":0.0
+    "Year": 1992,
+    "Total emissions": 562.3,
+    "CO₂ (Carbon dioxide) total": 436.3,
+    "CH₄ total (Methane)": 117.2,
+    "N₂O total (Nitrous oxide)": 8.7,
+    "Fluorinated gases total": 0
   },
   {
-    "Year":1993,
-    "Carbon Dioxide":446.9,
-    "Methane":116.5,
-    "Nitrous Oxide":8.2,
-    "F-Gases":0.3
+    "Year": 1993,
+    "Total emissions": 578.4,
+    "CO₂ (Carbon dioxide) total": 451.6,
+    "CH₄ total (Methane)": 117.7,
+    "N₂O total (Nitrous oxide)": 8.8,
+    "Fluorinated gases total": 0.3
   },
   {
-    "Year":1994,
-    "Carbon Dioxide":445.5,
-    "Methane":116.9,
-    "Nitrous Oxide":8.3,
-    "F-Gases":0.8
+    "Year": 1994,
+    "Total emissions": 579,
+    "CO₂ (Carbon dioxide) total": 451.1,
+    "CH₄ total (Methane)": 118.2,
+    "N₂O total (Nitrous oxide)": 8.9,
+    "Fluorinated gases total": 0.8
   },
   {
-    "Year":1995,
-    "Carbon Dioxide":461.1,
-    "Methane":117.3,
-    "Nitrous Oxide":8.5,
-    "F-Gases":1.4
+    "Year": 1995,
+    "Total emissions": 596.7,
+    "CO₂ (Carbon dioxide) total": 467.6,
+    "CH₄ total (Methane)": 118.6,
+    "N₂O total (Nitrous oxide)": 9.1,
+    "Fluorinated gases total": 1.4
   },
   {
-    "Year":1996,
-    "Carbon Dioxide":489.3,
-    "Methane":115.7,
-    "Nitrous Oxide":8.1,
-    "F-Gases":2.3
+    "Year": 1996,
+    "Total emissions": 623.6,
+    "CO₂ (Carbon dioxide) total": 495.5,
+    "CH₄ total (Methane)": 117,
+    "N₂O total (Nitrous oxide)": 8.8,
+    "Fluorinated gases total": 2.3
   },
   {
-    "Year":1997,
-    "Carbon Dioxide":505.5,
-    "Methane":116.3,
-    "Nitrous Oxide":8.3,
-    "F-Gases":3.6
+    "Year": 1997,
+    "Total emissions": 641.3,
+    "CO₂ (Carbon dioxide) total": 511.2,
+    "CH₄ total (Methane)": 117.6,
+    "N₂O total (Nitrous oxide)": 8.9,
+    "Fluorinated gases total": 3.6
   },
   {
-    "Year":1998,
-    "Carbon Dioxide":495.2,
-    "Methane":116.6,
-    "Nitrous Oxide":8.2,
-    "F-Gases":5.1
+    "Year": 1998,
+    "Total emissions": 632.4,
+    "CO₂ (Carbon dioxide) total": 500.4,
+    "CH₄ total (Methane)": 117.9,
+    "N₂O total (Nitrous oxide)": 8.9,
+    "Fluorinated gases total": 5.1
   },
   {
-    "Year":1999,
-    "Carbon Dioxide":484.6,
-    "Methane":117.1,
-    "Nitrous Oxide":8.3,
-    "F-Gases":5.9
+    "Year": 1999,
+    "Total emissions": 622.4,
+    "CO₂ (Carbon dioxide) total": 489.2,
+    "CH₄ total (Methane)": 118.3,
+    "N₂O total (Nitrous oxide)": 9,
+    "Fluorinated gases total": 5.9
   },
   {
-    "Year":2000,
-    "Carbon Dioxide":506.5,
-    "Methane":117.3,
-    "Nitrous Oxide":8.4,
-    "F-Gases":7.3
+    "Year": 2000,
+    "Total emissions": 644.1,
+    "CO₂ (Carbon dioxide) total": 509.1,
+    "CH₄ total (Methane)": 118.6,
+    "N₂O total (Nitrous oxide)": 9,
+    "Fluorinated gases total": 7.3
   },
   {
-    "Year":2001,
-    "Carbon Dioxide":321.4,
-    "Methane":116.7,
-    "Nitrous Oxide":7.8,
-    "F-Gases":8.8
+    "Year": 2001,
+    "Total emissions": 459.2,
+    "CO₂ (Carbon dioxide) total": 324,
+    "CH₄ total (Methane)": 118,
+    "N₂O total (Nitrous oxide)": 8.4,
+    "Fluorinated gases total": 8.8
   },
   {
-    "Year":2002,
-    "Carbon Dioxide":319.4,
-    "Methane":116.6,
-    "Nitrous Oxide":7.6,
-    "F-Gases":10.1
+    "Year": 2002,
+    "Total emissions": 458.3,
+    "CO₂ (Carbon dioxide) total": 322,
+    "CH₄ total (Methane)": 117.9,
+    "N₂O total (Nitrous oxide)": 8.3,
+    "Fluorinated gases total": 10.1
   },
   {
-    "Year":2003,
-    "Carbon Dioxide":329.1,
-    "Methane":117.0,
-    "Nitrous Oxide":7.6,
-    "F-Gases":12.0
+    "Year": 2003,
+    "Total emissions": 472.2,
+    "CO₂ (Carbon dioxide) total": 333.7,
+    "CH₄ total (Methane)": 118.3,
+    "N₂O total (Nitrous oxide)": 8.3,
+    "Fluorinated gases total": 12
   },
   {
-    "Year":2004,
-    "Carbon Dioxide":280.6,
-    "Methane":117.2,
-    "Nitrous Oxide":7.5,
-    "F-Gases":13.5
+    "Year": 2004,
+    "Total emissions": 426.7,
+    "CO₂ (Carbon dioxide) total": 286.6,
+    "CH₄ total (Methane)": 118.4,
+    "N₂O total (Nitrous oxide)": 8.1,
+    "Fluorinated gases total": 13.5
   },
   {
-    "Year":2005,
-    "Carbon Dioxide":303.5,
-    "Methane":118.0,
-    "Nitrous Oxide":7.6,
-    "F-Gases":14.5
+    "Year": 2005,
+    "Total emissions": 451.9,
+    "CO₂ (Carbon dioxide) total": 309.8,
+    "CH₄ total (Methane)": 119.2,
+    "N₂O total (Nitrous oxide)": 8.3,
+    "Fluorinated gases total": 14.5
   },
   {
-    "Year":2006,
-    "Carbon Dioxide":325.2,
-    "Methane":118.3,
-    "Nitrous Oxide":7.7,
-    "F-Gases":17.3
+    "Year": 2006,
+    "Total emissions": 476.4,
+    "CO₂ (Carbon dioxide) total": 331,
+    "CH₄ total (Methane)": 119.5,
+    "N₂O total (Nitrous oxide)": 8.3,
+    "Fluorinated gases total": 17.5
   },
   {
-    "Year":2007,
-    "Carbon Dioxide":296.9,
-    "Methane":117.3,
-    "Nitrous Oxide":7.6,
-    "F-Gases":18.6
+    "Year": 2007,
+    "Total emissions": 448.9,
+    "CO₂ (Carbon dioxide) total": 303.2,
+    "CH₄ total (Methane)": 118.6,
+    "N₂O total (Nitrous oxide)": 8.3,
+    "Fluorinated gases total": 18.8
   },
   {
-    "Year":2008,
-    "Carbon Dioxide":338.8,
-    "Methane":116.4,
-    "Nitrous Oxide":8.0,
-    "F-Gases":20.1
+    "Year": 2008,
+    "Total emissions": 489.5,
+    "CO₂ (Carbon dioxide) total": 342.8,
+    "CH₄ total (Methane)": 117.6,
+    "N₂O total (Nitrous oxide)": 8.7,
+    "Fluorinated gases total": 20.3
   },
   {
-    "Year":2009,
-    "Carbon Dioxide":323.1,
-    "Methane":113.8,
-    "Nitrous Oxide":8.0,
-    "F-Gases":20.8
+    "Year": 2009,
+    "Total emissions": 471.6,
+    "CO₂ (Carbon dioxide) total": 326.9,
+    "CH₄ total (Methane)": 115.1,
+    "N₂O total (Nitrous oxide)": 8.6,
+    "Fluorinated gases total": 21
   },
   {
-    "Year":2010,
-    "Carbon Dioxide":282.5,
-    "Methane":111.7,
-    "Nitrous Oxide":8.0,
-    "F-Gases":21.9
+    "Year": 2010,
+    "Total emissions": 429.2,
+    "CO₂ (Carbon dioxide) total": 285.5,
+    "CH₄ total (Methane)": 112.9,
+    "N₂O total (Nitrous oxide)": 8.7,
+    "Fluorinated gases total": 22.1
   },
   {
-    "Year":2011,
-    "Carbon Dioxide":276.1,
-    "Methane":109.6,
-    "Nitrous Oxide":8.1,
-    "F-Gases":20.3
+    "Year": 2011,
+    "Total emissions": 417.9,
+    "CO₂ (Carbon dioxide) total": 278.1,
+    "CH₄ total (Methane)": 110.8,
+    "N₂O total (Nitrous oxide)": 8.8,
+    "Fluorinated gases total": 20.2
   },
   {
-    "Year":2012,
-    "Carbon Dioxide":361.5,
-    "Methane":107.5,
-    "Nitrous Oxide":8.4,
-    "F-Gases":20.1
+    "Year": 2012,
+    "Total emissions": 501.5,
+    "CO₂ (Carbon dioxide) total": 362.6,
+    "CH₄ total (Methane)": 108.8,
+    "N₂O total (Nitrous oxide)": 9,
+    "Fluorinated gases total": 21
   },
   {
-    "Year":2013,
-    "Carbon Dioxide":350.6,
-    "Methane":105.7,
-    "Nitrous Oxide":8.4,
-    "F-Gases":20.1
+    "Year": 2013,
+    "Total emissions": 488.2,
+    "CO₂ (Carbon dioxide) total": 351.3,
+    "CH₄ total (Methane)": 106.9,
+    "N₂O total (Nitrous oxide)": 9,
+    "Fluorinated gases total": 21
   },
   {
-    "Year":2014,
-    "Carbon Dioxide":318.2,
-    "Methane":104.1,
-    "Nitrous Oxide":8.5,
-    "F-Gases":20.3
+    "Year": 2014,
+    "Total emissions": 455,
+    "CO₂ (Carbon dioxide) total": 320.1,
+    "CH₄ total (Methane)": 105.3,
+    "N₂O total (Nitrous oxide)": 9.1,
+    "Fluorinated gases total": 20.5
   },
   {
-    "Year":2015,
-    "Carbon Dioxide":252.7,
-    "Methane":102.5,
-    "Nitrous Oxide":8.3,
-    "F-Gases":19.7
+    "Year": 2015,
+    "Total emissions": 387.3,
+    "CO₂ (Carbon dioxide) total": 254.7,
+    "CH₄ total (Methane)": 103.8,
+    "N₂O total (Nitrous oxide)": 8.9,
+    "Fluorinated gases total": 19.9
+  },
+  {
+    "Year": 2016,
+    "Total emissions": 398.5,
+    "CO₂ (Carbon dioxide) total": 267.7,
+    "CH₄ total (Methane)": 101.8,
+    "N₂O total (Nitrous oxide)": 9,
+    "Fluorinated gases total": 19.9
   }
 ]

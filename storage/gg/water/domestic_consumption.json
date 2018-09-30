@@ -25,6 +25,18 @@
   },
   {
     "Year": 2014,
-    "Consumption":110.1
+    "Consumption":110.8
+  },
+  {
+    "Year": 2015,
+    "Consumption":110.4
+  },
+  {
+    "Year": 2016,
+    "Consumption":110.7
+  },
+  {
+    "Year": 2017,
+    "Consumption":109.5
   }
 ]

@@ -283,5 +283,20 @@
     "Other Asia and Pacific Emergency Relief":49500,
     "Middle East Aid":null,
     "Middle East Emergency Relief":50000
+  },
+  {
+    "Year":2017,
+    "Africa Aid":2216325,
+    "Africa Emergency Relief":96393,
+    "Europe Aid":null,
+    "Europe Emergency Relief":null,
+    "Indian Sub-Continent Aid":105956,
+    "Indian Sub-Continent Emergency Relief":30000,
+    "Latin America and Caribbean Aid":78814,
+    "Latin America and Caribbean Emergency Relief":null,
+    "Other Asia and Pacific Aid":179290,
+    "Other Asia and Pacific Emergency Relief":60000,
+    "Middle East Aid":null,
+    "Middle East Emergency Relief":25000
   }
 ]

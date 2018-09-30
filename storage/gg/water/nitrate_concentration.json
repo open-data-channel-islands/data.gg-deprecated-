@@ -6,5 +6,7 @@
   {"Year":2012, "Nitrate Max":27.2, "Nitrate Mean":23.4},
   {"Year":2013, "Nitrate Max":39.2, "Nitrate Mean":31.2},
   {"Year":2014, "Nitrate Max":41.1, "Nitrate Mean":28.2},
-  {"Year":2015, "Nitrate Max":36.4, "Nitrate Mean":26.2}
+  {"Year":2015, "Nitrate Max":36.4, "Nitrate Mean":26.2},
+  {"Year":2016, "Nitrate Max":30.2, "Nitrate Mean":21.7},
+  {"Year":2017, "Nitrate Max":29.9, "Nitrate Mean":22.5}
 ]

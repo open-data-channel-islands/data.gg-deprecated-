@@ -7,5 +7,6 @@
   {"Year":2013, "Landfill":16.9, "Recycled":11.3, "Composted":7, "Misc. disposal":9.3, "Total":44.5},
   {"Year":2014, "Landfill":18, "Recycled":12.7, "Composted":7.3, "Misc. disposal":9.9, "Total":47.9},
   {"Year":2015, "Landfill":15.3, "Recycled":11.2, "Composted":6.7, "Misc. disposal":11.2, "Total":44.4},
-  {"Year":2016, "Landfill":14.1, "Recycled":11.5, "Composted":7.1, "Misc. disposal":11.4, "Total":44.1}
+  {"Year":2016, "Landfill":14.1, "Recycled":11.5, "Composted":7.1, "Misc. disposal":11.4, "Total":44.1},
+  {"Year":2017, "Landfill":13.2, "Recycled":12.7, "Composted":7.6, "Misc. disposal":7.2, "Total":40.8}
 ]
