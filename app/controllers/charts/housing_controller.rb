@@ -32,7 +32,7 @@ class Charts::HousingController < ApplicationController
   end
 
   def bedrooms
-    @title = 'Bedrooms'
+    @title = 'Bedrooms (2017)'
 
     bedrooms_json = File.read("storage/#{ENV['place_code']}/houses/bedrooms.json")
     bedrooms = JSON.parse(bedrooms_json)
@@ -41,7 +41,7 @@ class Charts::HousingController < ApplicationController
     @open = []
     @labels = ['1','2','3','4','Over 4','Unknown']
 
-    bedrooms.select { |b| b['Year'] == 2015 }.each do |val|
+    bedrooms.select { |b| b['Year'] == 2017 }.each do |val|
       if val['Market'] == 'Local'
         @local = @labels.collect { |lbl| val[lbl] }
       else
@@ -62,7 +62,7 @@ class Charts::HousingController < ApplicationController
 
     @local = []
     @open = []
-    types.select{ |u| u['Year'] == 2015 }.each do |val|
+    types.select{ |u| u['Year'] == 2017 }.each do |val|
       @local << [ val['Type'], val['Local Market'] ]
       @open << [ val['Type'], val['Open Market'] ]
     end
