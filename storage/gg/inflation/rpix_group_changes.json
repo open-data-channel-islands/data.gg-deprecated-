@@ -1174,5 +1174,173 @@
     "Quarter":"Q4 2017",
     "Quarterly Change":-0.460047563,
     "Annual Change":3.4340660964
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":0.5911323746,
+    "Annual Change":2.48 
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":-0.11888718,
+    "Annual Change":1.61 
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":3.8119551444,
+    "Annual Change":1.27 
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":0,
+    "Annual Change":5.11 
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":-0.0327466678,
+    "Annual Change":1.41 
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":3.309517742,
+    "Annual Change":2.05 
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":1.0816728209,
+    "Annual Change":0.34 
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":0.4355795831,
+    "Annual Change":2.64 
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":4.2465858853,
+    "Annual Change":-0.49 
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":1.5058527153,
+    "Annual Change":3.26 
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":0.37252253,
+    "Annual Change":1.57 
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":0.9873379385,
+    "Annual Change":-2.07 
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":2.6520673198,
+    "Annual Change":-0.26 
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q1 2018",
+    "Quarterly Change":5.2644844992,
+    "Annual Change":4.65 
+  },
+  {
+    "Type":"Food",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":-0.1427507561,
+    "Annual Change":1.07 
+  },
+  {
+    "Type":"Catering",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":0.4316386361,
+    "Annual Change":1.19 
+  },
+  {
+    "Type":"Alcoholic Drink",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":2.2874761344,
+    "Annual Change":2.57 
+  },
+  {
+    "Type":"Tobacco",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":0.9777228652,
+    "Annual Change":6.14 
+  },
+  {
+    "Type":"Housing",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":0.7734378071,
+    "Annual Change":1.78 
+  },
+  {
+    "Type":"Fuel and Light",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":4.6094380863,
+    "Annual Change":8.58 
+  },
+  {
+    "Type":"Household Goods",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":0.6028663308,
+    "Annual Change":1.40 
+  },
+  {
+    "Type":"Household Services",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":0.3848981622,
+    "Annual Change":1.88 
+  },
+  {
+    "Type":"Clothing and Footwear",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":-3.0205797553,
+    "Annual Change":0.34 
+  },
+  {
+    "Type":"Personal Goods and Services",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":1.6648775923,
+    "Annual Change":4.33 
+  },
+  {
+    "Type":"Motoring Expenditure",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":1.6408397988,
+    "Annual Change":3.51 
+  },
+  {
+    "Type":"Fares and Other Travel Costs",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":5.1751089747,
+    "Annual Change":2.47 
+  },
+  {
+    "Type":"Leisure Goods",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":-0.0642875594,
+    "Annual Change":-1.86 
+  },
+  {
+    "Type":"Leisure Services",
+    "Quarter":"Q2 2018",
+    "Quarterly Change":2.6830118311,
+    "Annual Change":3.55 
   }
 ]
