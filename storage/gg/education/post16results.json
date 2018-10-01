@@ -1,422 +1,72 @@
 [
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":8.7
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":23.2
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":27.6
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":22.3
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":12.8
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":4.9
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":0.6
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"A",
-    "Percent":31.9
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"B",
-    "Percent":4.2
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"C",
-    "Percent":36.1
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"D",
-    "Percent":1.4
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"E",
-    "Percent":23.9
-  },
-  {
-    "Year":"2010-2011",
-    "Type":"BTEC",
-    "Grade":"U",
-    "Percent":2.5
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":12.3
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":22.3
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":28.5
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":21.1
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":12.4
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":3
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":0.4
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"A",
-    "Percent":41.1
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"B",
-    "Percent":7.3
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"C",
-    "Percent":33.1
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"D",
-    "Percent":4.5
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"E",
-    "Percent":11.5
-  },
-  {
-    "Year":"2011-2012",
-    "Type":"BTEC",
-    "Grade":"U",
-    "Percent":2.4
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":7.4
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":20.9
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":29.7
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":23.8
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":14
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":4
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":0.6
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"BTEC",
-    "Grade":"Distinction",
-    "Percent":40
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"BTEC",
-    "Grade":"Merit",
-    "Percent":44
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"BTEC",
-    "Grade":"Pass",
-    "Percent":15
-  },
-  {
-    "Year":"2012-2013",
-    "Type":"BTEC",
-    "Grade":"Ungraded",
-    "Percent":1
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":9.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":18.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":29.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":24.6
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":13.9
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":4.8
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":0.8
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"BTEC",
-    "Grade":"Distinction",
-    "Percent":55.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"BTEC",
-    "Grade":"Merit",
-    "Percent":26.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"BTEC",
-    "Grade":"Pass",
-    "Percent":12.0
-  },
-  {
-    "Year":"2013-2014",
-    "Type":"BTEC",
-    "Grade":"Ungraded",
-    "Percent":6.0
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":10.7
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":17.9
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":28.4
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":25.7
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":11.7
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":4.4
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":1.1
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"BTEC",
-    "Grade":"Distinction",
-    "Percent":49
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"BTEC",
-    "Grade":"Merit",
-    "Percent":27
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"BTEC",
-    "Grade":"Pass",
-    "Percent":22
-  },
-  {
-    "Year":"2014-2015",
-    "Type":"BTEC",
-    "Grade":"Ungraded",
-    "Percent":2
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"A*",
-    "Percent":9
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"A",
-    "Percent":19.1
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"B",
-    "Percent":31.6
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"C",
-    "Percent":24
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"D",
-    "Percent":11.3
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"E",
-    "Percent":3.7
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"A Level",
-    "Grade":"U",
-    "Percent":1.2
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"BTEC",
-    "Grade":"Distinction",
-    "Percent":48
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"BTEC",
-    "Grade":"Merit",
-    "Percent":21
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"BTEC",
-    "Grade":"Pass",
-    "Percent":31
-  },
-  {
-    "Year":"2015-2016",
-    "Type":"BTEC",
-    "Grade":"Ungraded",
-    "Percent":0
-  }
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"A*", "Percent":8.7  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"A", "Percent":23.2  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"B", "Percent":27.6  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"C", "Percent":22.3  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"D", "Percent":12.8  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"E", "Percent":4.9  },
+  { "Year":"2010-2011", "Type":"A Level", "Grade":"U", "Percent":0.6  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"A", "Percent":31.9  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"B", "Percent":4.2  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"C", "Percent":36.1  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"D", "Percent":1.4  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"E", "Percent":23.9  },
+  { "Year":"2010-2011", "Type":"BTEC", "Grade":"U", "Percent":2.5  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"A*", "Percent":12.3  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"A", "Percent":22.3  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"B", "Percent":28.5  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"C", "Percent":21.1  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"D", "Percent":12.4  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"E", "Percent":3  },
+  { "Year":"2011-2012", "Type":"A Level", "Grade":"U", "Percent":0.4  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"A", "Percent":41.1  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"B", "Percent":7.3  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"C", "Percent":33.1  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"D", "Percent":4.5  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"E", "Percent":11.5  },
+  { "Year":"2011-2012", "Type":"BTEC", "Grade":"U", "Percent":2.4  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"A*", "Percent":7.4  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"A", "Percent":20.9  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"B", "Percent":29.7  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"C", "Percent":23.8  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"D", "Percent":14  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"E", "Percent":4  },
+  { "Year":"2012-2013", "Type":"A Level", "Grade":"U", "Percent":0.6  },
+  { "Year":"2012-2013", "Type":"BTEC", "Grade":"Distinction", "Percent":40  },
+  { "Year":"2012-2013", "Type":"BTEC", "Grade":"Merit", "Percent":44  },
+  { "Year":"2012-2013", "Type":"BTEC", "Grade":"Pass", "Percent":15  },
+  { "Year":"2012-2013", "Type":"BTEC", "Grade":"Ungraded", "Percent":1  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"A*", "Percent":9.0  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"A", "Percent":18.0  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"B", "Percent":29.0  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"C", "Percent":24.6  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"D", "Percent":13.9  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"E", "Percent":4.8  },
+  { "Year":"2013-2014", "Type":"A Level", "Grade":"U", "Percent":0.8  },
+  { "Year":"2013-2014", "Type":"BTEC", "Grade":"Distinction", "Percent":55.0  },
+  { "Year":"2013-2014", "Type":"BTEC", "Grade":"Merit", "Percent":26.0  },
+  { "Year":"2013-2014", "Type":"BTEC", "Grade":"Pass", "Percent":12.0  },
+  { "Year":"2013-2014", "Type":"BTEC", "Grade":"Ungraded", "Percent":6.0  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"A*", "Percent":10.7  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"A", "Percent":17.9  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"B", "Percent":28.4  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"C", "Percent":25.7  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"D", "Percent":11.7  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"E", "Percent":4.4  },
+  { "Year":"2014-2015", "Type":"A Level", "Grade":"U", "Percent":1.1  },
+  { "Year":"2014-2015", "Type":"BTEC", "Grade":"Distinction", "Percent":49  },
+  { "Year":"2014-2015", "Type":"BTEC", "Grade":"Merit", "Percent":27  },
+  { "Year":"2014-2015", "Type":"BTEC", "Grade":"Pass", "Percent":22  },
+  { "Year":"2014-2015", "Type":"BTEC", "Grade":"Ungraded", "Percent":2  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"A*", "Percent":9  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"A", "Percent":19.1  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"B", "Percent":31.6  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"C", "Percent":24  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"D", "Percent":11.3  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"E", "Percent":3.7  },
+  { "Year":"2015-2016", "Type":"A Level", "Grade":"U", "Percent":1.2  },
+  { "Year":"2015-2016", "Type":"BTEC", "Grade":"Distinction", "Percent":48  },
+  { "Year":"2015-2016", "Type":"BTEC", "Grade":"Merit", "Percent":21  },
+  { "Year":"2015-2016", "Type":"BTEC", "Grade":"Pass", "Percent":31  },
+  { "Year":"2015-2016", "Type":"BTEC", "Grade":"Ungraded", "Percent":0  }
 ]

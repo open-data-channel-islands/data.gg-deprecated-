@@ -24,5 +24,7 @@
   {"Year":2012, "Mains Gas":69138, "Bottled Gas":19949, "Total":89087},
   {"Year":2013, "Mains Gas":71923, "Bottled Gas":23605, "Total":95528},
   {"Year":2014, "Mains Gas":61100, "Bottled Gas":22015, "Total":83115},
-  {"Year":2015, "Mains Gas":63341, "Bottled Gas":18777, "Total":82118}
+  {"Year":2015, "Mains Gas":63341, "Bottled Gas":18777, "Total":82118},
+  {"Year":2016, "Mains Gas":60682, "Bottled Gas":18186, "Total":78868},
+  {"Year":2017, "Mains Gas":55262, "Bottled Gas":19277, "Total":74539}
 ]

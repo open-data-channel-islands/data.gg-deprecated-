@@ -43,5 +43,32 @@
         "rainfallpercentofaverage": 116.9,
         "sunshine": 2114.5,
         "sunshinepercentofaverage": 113.4
+    },
+    {
+        "year": 2015,
+        "temperature": 11.9,
+        "temperaturedifferencefromaverage": 0.5,
+        "rainfall": 729.4,
+        "rainfallpercentofaverage": 87,
+        "sunshine": 1889.9,
+        "sunshinepercentofaverage": 101.4
+    },
+    {
+        "year": 2016,
+        "temperature": 11.7,
+        "temperaturedifferencefromaverage": 0.3,
+        "rainfall": 768,
+        "rainfallpercentofaverage": 91.5,
+        "sunshine": 1864.8,
+        "sunshinepercentofaverage": 99.8
+    },
+    {
+        "year": 2017,
+        "temperature": 12,
+        "temperaturedifferencefromaverage": 0.6,
+        "rainfall": 878.5,
+        "rainfallpercentofaverage": 104.7,
+        "sunshine": 1901.6,
+        "sunshinepercentofaverage": 101.8
     }
 ]

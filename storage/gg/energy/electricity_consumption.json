@@ -76,5 +76,17 @@
     "Domestic":167.6,
     "Commercial":181.7,
     "Total":349.4
+  },
+  {
+    "Year":2017,
+    "Domestic":173.6,
+    "Commercial":180.6,
+    "Total":354.2
+  },
+  {
+    "Year":2018,
+    "Domestic":173,
+    "Commercial":174.6,
+    "Total":347.6
   }
 ]

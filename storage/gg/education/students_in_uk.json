@@ -46,5 +46,17 @@
     "Other higher education":10,
     "Undergraduate":614,
     "Postgraduate":41
+  },
+  {
+    "Year":2017,
+    "Other higher education":10,
+    "Undergraduate":630,
+    "Postgraduate":41
+  },
+  {
+    "Year":2018,
+    "Other higher education":26,
+    "Undergraduate":607,
+    "Postgraduate":31
   }
 ]

@@ -6,5 +6,7 @@
   {"Year":2012, "Renewable Energy":112035, "Percentage of total":9},
   {"Year":2013, "Renewable Energy":134036, "Percentage of total":10.7},
   {"Year":2014, "Renewable Energy":176860, "Percentage of total":15.2},
-  {"Year":2015, "Renewable Energy":250435, "Percentage of total":22}
+  {"Year":2015, "Renewable Energy":250435, "Percentage of total":22},
+  {"Year":2016, "Renewable Energy":247198, "Percentage of total":21},
+  {"Year":2017, "Renewable Energy":293897, "Percentage of total":25.6}
 ]

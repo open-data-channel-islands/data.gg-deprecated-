@@ -6,5 +6,7 @@
   {"Year":2012, "Transport":38, "Heating-Electricity":93},
   {"Year":2013, "Transport":38, "Heating-Electricity":89},
   {"Year":2014, "Transport":37, "Heating-Electricity":76},
-  {"Year":2015, "Transport":36, "Heating-Electricity":54}
+  {"Year":2015, "Transport":36, "Heating-Electricity":54},
+  {"Year":2016, "Transport":36, "Heating-Electricity":62},
+  {"Year":2017, "Transport":35, "Heating-Electricity":50}
 ]
