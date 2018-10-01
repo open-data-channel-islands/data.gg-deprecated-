@@ -13,10 +13,10 @@ class Charts::EmissionsController < ApplicationController
     types.sort_by{|p| p["Year"].to_i}.each do |val|
       @labels << val['Year'].to_i
 
-      @carbon_dioxide << val['Carbon Dioxide']
-      @methane << val['Methane']
-      @nitrous_oxide << val['Nitrous Oxide']
-      @f_gases << val['F-Gases']
+      @carbon_dioxide << val['CO2 Carbon dioxide total']
+      @methane << val['CH4 total Methane']
+      @nitrous_oxide << val['N2O total Nitrous oxide']
+      @f_gases << val['Fluorinated gases total']
 
     end
 

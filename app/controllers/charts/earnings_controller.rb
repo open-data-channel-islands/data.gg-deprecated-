@@ -35,13 +35,13 @@ class Charts::EarningsController < ApplicationController
   end
 
     def sector
-    @title = 'Sector 2014'
+    @title = 'Sector 2017'
     earnings_json = File.read("storage/#{ENV['place_code']}/earnings/earnings_sector.json")
     earnings_sector = JSON.parse(earnings_json)
     earnings_sector.sort_by! { |c| [c['Year'], c['Median earnings']] }
 
-    @labels = earnings_sector.select { |p| p['Year'] == 2014 }.collect { |p| p['Sector'] }
-    @medians = earnings_sector.select { |p| p['Year'] == 2014 }.collect{ |p| p['Median earnings'] }
+    @labels = earnings_sector.select { |p| p['Year'] == 2017 }.collect { |p| p['Sector'] }
+    @medians = earnings_sector.select { |p| p['Year'] == 2017 }.collect{ |p| p['Median earnings'] }
 
     respond_to do |format|
       format.html

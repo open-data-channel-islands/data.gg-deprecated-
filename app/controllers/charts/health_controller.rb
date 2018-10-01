@@ -84,13 +84,13 @@ class Charts::HealthController < ApplicationController
   end
 
   def med_unit_bed_days_five_yr_avg
-    @title = 'Medical Unit Bed Days Five Year Average'
+    @title = 'Medical Unit Bed Days Five Year Average (2012-2016)'
     med_unit_bed_days_five_yr_avg_json = File.read("storage/#{ENV['place_code']}/health/med_unit_bed_days_five_yr_avg.json")
     med_unit_bed_days_five_yr_avg = JSON.parse(med_unit_bed_days_five_yr_avg_json)
 
     @men = []
     @women = []
-    med_unit_bed_days_five_yr_avg.select{ |u| u['Mean Period'] == '2010-2014' }.each do |val|
+    med_unit_bed_days_five_yr_avg.select{ |u| u['Mean Period'] == '2012-2016' }.each do |val|
 
      val.each do |k,v|
       next if k == 'Sex' || k == 'Mean Period'
