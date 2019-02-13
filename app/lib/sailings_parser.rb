@@ -1,6 +1,9 @@
 require 'nokogiri'
 require 'open-uri'
 require 'time'
+require 'json'
+require 'net/http'
+require 'net/https'
 
 class SailingsParser
 
@@ -20,13 +23,38 @@ class SailingsParser
     return arrivals_departures
   end
 
+  def self.get_json(url)
+    uri = URI.parse(url)
+    https = Net::HTTP.new(uri.host,uri.port)
+    https.use_ssl = true
+    req = Net::HTTP::Post.new(uri.path)
+    req['Content-Type'] = 'application/json'
+    res = https.request(req)
+    return JSON.load(res.body)
+  end
+
+  def self.parse_date(datestring)
+    if datestring != nil
+      seconds_since_epoch = datestring.scan(/[0-9]+/)[0].to_i / 1000.0
+      return Time.at(seconds_since_epoch)
+    else
+      return ''
+    end
+  end
+  
 
   def self.get_arrivals_departures_json
-    arrival_url = 'http://www.harbours.gg/152445'
-    arrival_json = JSON.load(open(arrival_url))
+    arrival_url = 'https://boards.gov.gg/webservices/harbours.asmx/GetTodaysArrivals?'
+    arrival_json = get_json(arrival_url)['d']
 
-    departure_url = 'http://www.harbours.gg/152446'
-    departure_json = JSON.load(open(departure_url))
+    arrival_tom_url = 'https://boards.gov.gg/webservices/harbours.asmx/GetTomorrowsArrivals?'
+    arrival_tom_json = get_json(arrival_tom_url)['d']
+
+    departure_url = 'https://boards.gov.gg/webservices/harbours.asmx/GetTodaysDepartures?'
+    departure_json = get_json(departure_url)['d']
+
+    departure_tom_url = 'https://boards.gov.gg/webservices/harbours.asmx/GetTomorrowsDepartures?'
+    departure_tom_json = get_json(departure_tom_url)['d']
 
     sailings = []
 
@@ -38,18 +66,28 @@ class SailingsParser
       4 => 'Arrived'
     }
 
+    zone = 'London'
+
     arrival_json.each do |arrival|
       sailings_info_hash = { }
-      sailings_info_hash[arrival_column_names[0]] = arrival['vessel']
-      time_str = arrival['time'] + ' ' + arrival['date']
-      zone = 'London'
-      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
-      sailings_info_hash[arrival_column_names[1]] = time
+      sailings_info_hash[arrival_column_names[0]] = arrival['VesselName']
+      sailings_info_hash[arrival_column_names[1]] = parse_date(arrival['ETA_Original'])
       sailings_info_hash[arrival_column_names[2]] = 'Arrival'
-      sailings_info_hash[arrival_column_names[3]] = arrival['port']
-      sailings_info_hash[arrival_column_names[4]] = arrival['arrived']
+      sailings_info_hash[arrival_column_names[3]] = arrival['from']
+      sailings_info_hash[arrival_column_names[4]] = parse_date(arrival['ATA'])
       sailings << sailings_info_hash
     end
+
+    arrival_tom_json.each do |arrival|
+      sailings_info_hash = { }
+      sailings_info_hash[arrival_column_names[0]] = arrival['VesselName']
+      sailings_info_hash[arrival_column_names[1]] = parse_date(arrival['ETA_Original'])
+      sailings_info_hash[arrival_column_names[2]] = 'Arrival'
+      sailings_info_hash[arrival_column_names[3]] = arrival['from']
+      sailings_info_hash[arrival_column_names[4]] = parse_date(arrival['ATA'])
+      sailings << sailings_info_hash
+    end
+
 
     departure_column_names = {
       0 => 'Vessel',
@@ -61,14 +99,21 @@ class SailingsParser
 
     departure_json.each do |departure|
       sailings_info_hash = { }
-      sailings_info_hash[departure_column_names[0]] = departure['vessel']
-      time_str = departure['time'] + ' ' + departure['date']
-      zone = 'London'
-      time = ActiveSupport::TimeZone[zone].parse(time_str, DateTime.now)
-      sailings_info_hash[departure_column_names[1]] = time
+      sailings_info_hash[departure_column_names[0]] = departure['VesselName']
+      sailings_info_hash[departure_column_names[1]] = parse_date(departure['ETD_Original'])
       sailings_info_hash[departure_column_names[2]] = 'Departure'
-      sailings_info_hash[departure_column_names[3]] = departure['port']
-      sailings_info_hash[departure_column_names[4]] = departure['departed']
+      sailings_info_hash[departure_column_names[3]] = departure['to']
+      sailings_info_hash[departure_column_names[4]] = parse_date(departure['ATD'])
+      sailings << sailings_info_hash
+    end
+
+    departure_tom_json.each do |departure|
+      sailings_info_hash = { }
+      sailings_info_hash[departure_column_names[0]] = departure['VesselName']
+      sailings_info_hash[departure_column_names[1]] = parse_date(departure['ETD_Original'])
+      sailings_info_hash[departure_column_names[2]] = 'Departure'
+      sailings_info_hash[departure_column_names[3]] = departure['to']
+      sailings_info_hash[departure_column_names[4]] = parse_date(departure['ATD'])
       sailings << sailings_info_hash
     end
 
