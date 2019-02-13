@@ -33,10 +33,19 @@ class SailingsParser
     return JSON.load(res.body)
   end
 
-  def self.parse_date(datestring)
+  def self.parse_actual_date(datestring)
     if datestring != nil
       seconds_since_epoch = datestring.scan(/[0-9]+/)[0].to_i / 1000.0
       return Time.at(seconds_since_epoch)
+    else
+      return ''
+    end
+  end
+
+  def self.parse_arrived_date(datestring)
+    if datestring != nil
+      seconds_since_epoch = datestring.scan(/[0-9]+/)[0].to_i / 1000.0
+      return Time.at(seconds_since_epoch).strftime("%H:%MA")
     else
       return ''
     end
@@ -71,20 +80,20 @@ class SailingsParser
     arrival_json.each do |arrival|
       sailings_info_hash = { }
       sailings_info_hash[arrival_column_names[0]] = arrival['VesselName']
-      sailings_info_hash[arrival_column_names[1]] = parse_date(arrival['ETA_Original'])
+      sailings_info_hash[arrival_column_names[1]] = parse_actual_date(arrival['ETA_Original'])
       sailings_info_hash[arrival_column_names[2]] = 'Arrival'
       sailings_info_hash[arrival_column_names[3]] = arrival['from']
-      sailings_info_hash[arrival_column_names[4]] = parse_date(arrival['ATA'])
+      sailings_info_hash[arrival_column_names[4]] = parse_arrived_date(arrival['ATA'])
       sailings << sailings_info_hash
     end
 
     arrival_tom_json.each do |arrival|
       sailings_info_hash = { }
       sailings_info_hash[arrival_column_names[0]] = arrival['VesselName']
-      sailings_info_hash[arrival_column_names[1]] = parse_date(arrival['ETA_Original'])
+      sailings_info_hash[arrival_column_names[1]] = parse_actual_date(arrival['ETA_Original'])
       sailings_info_hash[arrival_column_names[2]] = 'Arrival'
       sailings_info_hash[arrival_column_names[3]] = arrival['from']
-      sailings_info_hash[arrival_column_names[4]] = parse_date(arrival['ATA'])
+      sailings_info_hash[arrival_column_names[4]] = parse_arrived_date(arrival['ATA'])
       sailings << sailings_info_hash
     end
 
@@ -100,20 +109,20 @@ class SailingsParser
     departure_json.each do |departure|
       sailings_info_hash = { }
       sailings_info_hash[departure_column_names[0]] = departure['VesselName']
-      sailings_info_hash[departure_column_names[1]] = parse_date(departure['ETD_Original'])
+      sailings_info_hash[departure_column_names[1]] = parse_actual_date(departure['ETD_Original'])
       sailings_info_hash[departure_column_names[2]] = 'Departure'
       sailings_info_hash[departure_column_names[3]] = departure['to']
-      sailings_info_hash[departure_column_names[4]] = parse_date(departure['ATD'])
+      sailings_info_hash[departure_column_names[4]] = parse_arrived_date(departure['ATD'])
       sailings << sailings_info_hash
     end
 
     departure_tom_json.each do |departure|
       sailings_info_hash = { }
       sailings_info_hash[departure_column_names[0]] = departure['VesselName']
-      sailings_info_hash[departure_column_names[1]] = parse_date(departure['ETD_Original'])
+      sailings_info_hash[departure_column_names[1]] = parse_actual_date(departure['ETD_Original'])
       sailings_info_hash[departure_column_names[2]] = 'Departure'
       sailings_info_hash[departure_column_names[3]] = departure['to']
-      sailings_info_hash[departure_column_names[4]] = parse_date(departure['ATD'])
+      sailings_info_hash[departure_column_names[4]] = parse_arrived_date(departure['ATD'])
       sailings << sailings_info_hash
     end
 
