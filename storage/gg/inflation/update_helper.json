@@ -1,117 +1,117 @@
 [
   {
     "Type":"Food",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":-0.1427507561,
-    "Annual Change":1.07 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":0.919180566821451,
+    "Annual Change":-0.198711223255873
   },
   {
     "Type":"Catering",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":0.4316386361,
-    "Annual Change":1.19 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":1.52443577766629,
+    "Annual Change":3.55173615772239
   },
   {
     "Type":"Alcoholic Drink",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":2.2874761344,
-    "Annual Change":2.57 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":3.07377838621379,
+    "Annual Change":4.37645924386915
   },
   {
     "Type":"Tobacco",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":0.9777228652,
-    "Annual Change":6.14 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":0.0549598852341208,
+    "Annual Change":6.62174514759254
   },
   {
     "Type":"Housing",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":0.7734378071,
-    "Annual Change":1.78 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":0.48241165776993,
+    "Annual Change":1.38513734434245
   },
   {
     "Type":"Fuel and Light",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":4.6094380863,
-    "Annual Change":8.58 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":0.530136716556994,
+    "Annual Change":3.90091370579051
   },
   {
     "Type":"Household Goods",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":0.6028663308,
-    "Annual Change":1.40 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":1.30378371914372,
+    "Annual Change":1.39073551953515
   },
   {
     "Type":"Household Services",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":0.3848981622,
-    "Annual Change":1.88 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":0.354224966794462,
+    "Annual Change":1.72984918524923
   },
   {
     "Type":"Clothing and Footwear",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":-3.0205797553,
-    "Annual Change":0.34 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":-0.316450468695443,
+    "Annual Change":-3.63349895845718
   },
   {
     "Type":"Personal Goods and Services",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":1.6648775923,
-    "Annual Change":4.33 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":-0.260261278781792,
+    "Annual Change":1.69554967068724
   },
   {
     "Type":"Motoring Expenditure",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":1.6408397988,
-    "Annual Change":3.51 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":-0.113073466928868,
+    "Annual Change":1.92003856239143
   },
   {
     "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":5.1751089747,
-    "Annual Change":2.47 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":5.44189785229405,
+    "Annual Change":5.34210006762586
   },
   {
     "Type":"Leisure Goods",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":-0.0642875594,
-    "Annual Change":-1.86 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":-0.716325954354336,
+    "Annual Change":-2.45690845488212
   },
   {
     "Type":"Leisure Services",
-    "Quarter":"Q2 2018",
-    "Quarterly Change":2.6830118311,
-    "Annual Change":3.55 
+    "Quarter":"Q1 2019",
+    "Quarterly Change":4.88531442257165,
+    "Annual Change":5.39758064693155
   }
 ]
 
+0.919180566821451
+1.52443577766629
+3.07377838621379
+0.0549598852341208
+0.48241165776993
+0.530136716556994
+1.30378371914372
+0.354224966794462
+-0.316450468695443
+-0.260261278781792
+-0.113073466928868
+5.44189785229405
+-0.716325954354336
+4.88531442257165
 
--0.1427507561
-0.4316386361
-2.2874761344
-0.9777228652
-0.7734378071
-4.6094380863
-0.6028663308
-0.3848981622
--3.0205797553
-1.6648775923
-1.6408397988
-5.1751089747
--0.0642875594
-2.6830118311
+-0.198711223255873
+3.55173615772239
+4.37645924386915
+6.62174514759254
+1.38513734434245
+3.90091370579051
+1.39073551953515
+1.72984918524923
+-3.63349895845718
+1.69554967068724
+1.92003856239143
+5.34210006762586
+-2.45690845488212
+5.39758064693155
 
-1.07 
-1.19 
-2.57 
-6.14 
-1.78 
-8.58 
-1.40 
-1.88 
-0.34 
-4.33 
-3.51 
-2.47 
--1.86 
-3.55 
