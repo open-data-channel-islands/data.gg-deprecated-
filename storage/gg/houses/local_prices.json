@@ -1406,5 +1406,38 @@
     "Apartments median":235625,
     "Mix adjusted":410830,
     "Transactions":183
+  },
+  {
+    "Year":2018,
+    "Valid":true,
+    "Quarter":"Q3",
+    "Mean":461083,
+    "Median":409500,
+    "Houses median":480000,
+    "Apartments median":249500,
+    "Mix adjusted":419763,
+    "Transactions":251
+  },
+  {
+    "Year":2018,
+    "Valid":true,
+    "Quarter":"Q4",
+    "Mean":460459,
+    "Median":425588,
+    "Houses median":482625,
+    "Apartments median":263500,
+    "Mix adjusted":437909,
+    "Transactions":236
+  },
+  {
+    "Year":2019,
+    "Valid":true,
+    "Quarter":"Q1",
+    "Mean":439066,
+    "Median":433875,
+    "Houses median":482625,
+    "Apartments median":258375,
+    "Mix adjusted":425394,
+    "Transactions":177
   }
 ]

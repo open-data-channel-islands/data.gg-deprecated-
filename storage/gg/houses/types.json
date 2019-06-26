@@ -94,6 +94,30 @@
     "Type":"Other",
     "Local Market":242,
     "Open Market":16
+  },
+  {
+    "Year":2018,
+    "Type":"Apartment",
+    "Local Market":6492,
+    "Open Market":173
+  },
+  {
+    "Year":2018,
+    "Type":"Bungalow",
+    "Local Market":9867,
+    "Open Market":356
+  },
+  {
+    "Year":2018,
+    "Type":"House",
+    "Local Market":9026,
+    "Open Market":1054  
+  },
+  {
+    "Year":2018,
+    "Type":"Other",
+    "Local Market":247,
+    "Open Market":17
   }
 ]
 
