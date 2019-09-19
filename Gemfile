@@ -3,7 +3,13 @@ ruby "2.5.1"
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.1'
+gem 'rails', '5.2.2'
+
+
+
+#gem "railties", ">= 5.2.2.1"
+
+
 
 # Use postgres as the database for Active Record
 gem 'pg', '1.1.3'
