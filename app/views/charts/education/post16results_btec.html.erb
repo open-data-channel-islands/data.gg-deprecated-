@@ -1,40 +1,40 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_btec" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div  id="container_btec"  style="min-width:  310px;  height:  400px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'education.gg', 'http://www.education.gg' %></p>
+<p>Source:  <%=  link_to  'education.gg',  'http://www.education.gg'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_btec').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            categories: <%= @labels.to_json.html_safe %>,
-            crosshair: true,
-            title: { text: 'Grade' }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Count'
-            }
-        },
-        tooltip: {
-            shared: true,
-        },
-        series: <%= @results.to_json.html_safe %>
-    });
+function  initPage()  {
+        $('#container_btec').highcharts({
+                chart:  {
+                        type:  'column'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        crosshair:  true,
+                        title:  {  text:  'Grade'  }
+                },
+                yAxis:  {
+                        min:  0,
+                        title:  {
+                                text:  'Count'
+                        }
+                },
+                tooltip:  {
+                        shared:  true,
+                },
+                series:  <%=  @results.to_json.html_safe  %>
+        });
 }
-<% end %>
+<%  end  %>

@@ -1,4 +1,4 @@
-class Charts::FuelController < ApplicationController
-  def index
-  end
+class  Charts::FuelController  <  ApplicationController
+    def  index
+    end
 end

@@ -1,2 +1,2 @@
-class Place < ActiveRecord::Base
+class  Place  <  ActiveRecord::Base
 end

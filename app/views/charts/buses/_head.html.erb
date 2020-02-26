@@ -1,20 +1,20 @@
-<% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Charts", charts_path %></li>
-    <li><%= link_to 'Buses', charts_buses_path %></li>
-    <li class="active"><%= @title %></li>
-  </ol>
-<% end %>
+<%  content_for  :breadcrumb  do  %>
+    <ol  class="breadcrumb">
+        <li><%=  link_to  "Home",  root_path  %></li>
+        <li><%=  link_to  "Charts",  charts_path  %></li>
+        <li><%=  link_to  'Buses',  charts_buses_path  %></li>
+        <li  class="active"><%=  @title  %></li>
+    </ol>
+<%  end  %>
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="page-header">
-      <h1>Buses</h1>
+<div  class="row">
+    <div  class="col-md-12">
+        <div  class="page-header">
+            <h1>Buses</h1>
+        </div>
+
+        <ul  class="nav  nav-tabs">
+            <li  role="presentation"  class="<%=  'active'  if  action?('charts/buses',  'usage')  %>"><%=  link_to  'Usage',  charts_buses_usage_path  %></li>
+        </ul>
     </div>
-
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="<%= 'active' if action?('charts/buses', 'usage') %>"><%= link_to 'Usage', charts_buses_usage_path %></li>
-    </ul>
-  </div>
 </div>

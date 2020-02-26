@@ -1,2 +1,2 @@
-module Charts::SailingsHelper
+module  Charts::SailingsHelper
 end

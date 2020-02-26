@@ -1,8 +1,8 @@
-<% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Developers", developers_path %></li>
-    <li><%= link_to "Sailings", developers_data_category_path(data_category: 'sailings') %></li>
-    <li class="active"><%= @title %></a>
-  </ol>
-<% end %>
+<%  content_for  :breadcrumb  do  %>
+    <ol  class="breadcrumb">
+        <li><%=  link_to  "Home",  root_path  %></li>
+        <li><%=  link_to  "Developers",  developers_path  %></li>
+        <li><%=  link_to  "Sailings",  developers_data_category_path(data_category:  'sailings')  %></li>
+        <li  class="active"><%=  @title  %></a>
+    </ol>
+<%  end  %>

@@ -1,46 +1,46 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_tourism_air_vs_sea_ann" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_tourism_air_vs_sea_ann"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <a href="http://www.gov.gg/pru">gov.gg</a></p>
+<p>Source:  <a  href="http://www.gov.gg/pru">gov.gg</a></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_tourism_air_vs_sea_ann').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Passengers'
-            }
-        },
-        series: [{
-            name: 'Air',
-            data: <%= @air.to_json.html_safe -%>
-        },
-        {
-            name: 'Sea',
-            data: <%= @sea.to_json.html_safe -%>
-        }]
-    });
+function  initPage()  {
+        $('#container_tourism_air_vs_sea_ann').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Passengers'
+                        }
+                },
+                series:  [{
+                        name:  'Air',
+                        data:  <%=  @air.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Sea',
+                        data:  <%=  @sea.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

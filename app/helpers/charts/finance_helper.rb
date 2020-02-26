@@ -1,2 +1,2 @@
-module Charts::FinanceHelper
+module  Charts::FinanceHelper
 end

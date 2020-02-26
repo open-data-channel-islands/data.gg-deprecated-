@@ -1,50 +1,50 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Route</th>
-        <th>Year</th>
-        <th>Quarter</th>
-        <th>Ontimepc</th>
-        <th>Upto15minspc</th>
-        <th>Upto30minspc</th>
-        <th>Upto60minspc</th>
-        <th>Over60minspc</th>
-        <th>Scheduled</th>
-        <th>Originalschedule</th>
-        <th>Originalschedulepc</th>
-        <th>Rescheduled</th>
-        <th>Rescheduledpc</th>
-        <th>Sailings</th>
-        <th>Sailingspc</th>
-        <th>Cancelled</th>
-        <th>Cancelledpc</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @punctuality.each do |p| %>
-      <tr>
-        <td><%= p['route'] %></td>
-        <td><%= p['year'] %></td>
-        <td><%= p['quarter'] %></td>
-        <td><%= p['ontimepc'] %></td>
-        <td><%= p['upto15minspc'] %></td>
-        <td><%= p['upto30minspc'] %></td>
-        <td><%= p['upto60minspc'] %></td>
-        <td><%= p['over60minspc'] %></td>
-        <td><%= p['scheduled'] %></td>
-        <td><%= p['originalschedule'] %></td>
-        <td><%= p['originalschedulepc'] %></td>
-        <td><%= p['rescheduled'] %></td>
-        <td><%= p['rescheduledpc'] %></td>
-        <td><%= p['sailings'] %></td>
-        <td><%= p['sailingspc'] %></td>
-        <td><%= p['cancelled'] %></td>
-        <td><%= p['cancelledpc'] %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div  class="table-responsive">
+    <table  class="table">
+        <thead>
+            <tr>
+                <th>Route</th>
+                <th>Year</th>
+                <th>Quarter</th>
+                <th>Ontimepc</th>
+                <th>Upto15minspc</th>
+                <th>Upto30minspc</th>
+                <th>Upto60minspc</th>
+                <th>Over60minspc</th>
+                <th>Scheduled</th>
+                <th>Originalschedule</th>
+                <th>Originalschedulepc</th>
+                <th>Rescheduled</th>
+                <th>Rescheduledpc</th>
+                <th>Sailings</th>
+                <th>Sailingspc</th>
+                <th>Cancelled</th>
+                <th>Cancelledpc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%  @punctuality.each  do  |p|  %>
+            <tr>
+                <td><%=  p['route']  %></td>
+                <td><%=  p['year']  %></td>
+                <td><%=  p['quarter']  %></td>
+                <td><%=  p['ontimepc']  %></td>
+                <td><%=  p['upto15minspc']  %></td>
+                <td><%=  p['upto30minspc']  %></td>
+                <td><%=  p['upto60minspc']  %></td>
+                <td><%=  p['over60minspc']  %></td>
+                <td><%=  p['scheduled']  %></td>
+                <td><%=  p['originalschedule']  %></td>
+                <td><%=  p['originalschedulepc']  %></td>
+                <td><%=  p['rescheduled']  %></td>
+                <td><%=  p['rescheduledpc']  %></td>
+                <td><%=  p['sailings']  %></td>
+                <td><%=  p['sailingspc']  %></td>
+                <td><%=  p['cancelled']  %></td>
+                <td><%=  p['cancelledpc']  %></td>
+            </tr>
+            <%  end  %>
+        </tbody>
+    </table>
 </div>

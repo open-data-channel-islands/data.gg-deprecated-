@@ -1,20 +1,20 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Period</th>
-      <th>Total no. of frost days</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @frost_days.each do |f| %>
-    <tr>
-      <td><%= f['Period'] %></td>
-      <td><%= f['Total no. of frost days'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Period</th>
+            <th>Total  no.  of  frost  days</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @frost_days.each  do  |f|  %>
+        <tr>
+            <td><%=  f['Period']  %></td>
+            <td><%=  f['Total  no.  of  frost  days']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

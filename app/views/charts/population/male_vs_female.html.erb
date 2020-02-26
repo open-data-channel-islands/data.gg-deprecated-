@@ -1,52 +1,52 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_male_vs_female" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_male_vs_female"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/population'  %></p>
 
-<script type="text/javascript">
-$(function() {
-  initPage();
+<script  type="text/javascript">
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var yLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  yLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_male_vs_female').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: 'Male vs Female Population by Year'
-        },
-        xAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Count'
-            }
-        },
-        plotOptions: {
-            line: {
-              pointStart: <%= @min_label.to_json.html_safe %>,
-            }
-        },
-        series: [{
-            name: 'Male',
-            data: <%= @male.to_json.html_safe -%>
-        },
-        {
-            name: 'Female',
-            data: <%= @female.to_json.html_safe -%>
-        }]
-    });
+        $('#container_male_vs_female').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  'Male  vs  Female  Population  by  Year'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Count'
+                        }
+                },
+                plotOptions:  {
+                        line:  {
+                            pointStart:  <%=  @min_label.to_json.html_safe  %>,
+                        }
+                },
+                series:  [{
+                        name:  'Male',
+                        data:  <%=  @male.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Female',
+                        data:  <%=  @female.to_json.html_safe  -%>
+                }]
+        });
 }
 </script>

@@ -1,2 +1,2 @@
-module Api::V10::FinanceHelper
+module  Api::V10::FinanceHelper
 end

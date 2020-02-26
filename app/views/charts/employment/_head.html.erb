@@ -1,16 +1,16 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Employment', charts_employment_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Employment',  charts_employment_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Employment</h1>
+<div  class="page-header">
+    <h1>Employment</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/employment', 'totals') %>"><%= link_to 'Totals', charts_employment_totals_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/employment',  'totals')  %>"><%=  link_to  'Totals',  charts_employment_totals_path  %></li>
 </ul>

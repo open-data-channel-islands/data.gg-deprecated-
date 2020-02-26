@@ -1,2 +1,2 @@
-module Charts::HealthHelper
+module  Charts::HealthHelper
 end

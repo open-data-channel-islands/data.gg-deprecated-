@@ -1,2 +1,2 @@
-module Api::V10::TidesHelper
+module  Api::V10::TidesHelper
 end

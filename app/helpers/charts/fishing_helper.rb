@@ -1,2 +1,2 @@
-module Charts::FishingHelper
+module  Charts::FishingHelper
 end

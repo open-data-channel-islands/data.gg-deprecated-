@@ -1,2 +1,2 @@
-module Charts::RecyclingHelper
+module  Charts::RecyclingHelper
 end

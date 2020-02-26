@@ -1,2 +1,2 @@
-module Charts::SportsHelper
+module  Charts::SportsHelper
 end

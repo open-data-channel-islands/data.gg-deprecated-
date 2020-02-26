@@ -1,12 +1,12 @@
 [
-  {"Year":2008, "Land Reclamation":122.9, "Reused":41.6, "Landfill":0.2, "Total":164.7},
-  {"Year":2009, "Land Reclamation":89.7, "Reused":40.8, "Landfill":0.3, "Total":130.8},
-  {"Year":2010, "Land Reclamation":125.4, "Reused":41.3, "Landfill":0.2, "Total":167},
-  {"Year":2011, "Land Reclamation":101.5, "Reused":53.8, "Landfill":0.1, "Total":155.3},
-  {"Year":2012, "Land Reclamation":174.6, "Reused":56.3, "Landfill":0.6, "Total":231.5},
-  {"Year":2013, "Land Reclamation":136.6, "Reused":43.5, "Landfill":2.3, "Total":182.3},
-  {"Year":2014, "Land Reclamation":126.5, "Reused":70.6, "Landfill":1.2, "Total":198.3},
-  {"Year":2015, "Land Reclamation":105.4, "Reused":57.9, "Landfill":0.4, "Total":163.8},
-  {"Year":2016, "Land Reclamation":81.3, "Reused":59.2, "Landfill":0.4, "Total":140.9},
-  {"Year":2017, "Land Reclamation":53.8, "Reused":69.6, "Landfill":0.4, "Total":123.7}
+    {"Year":2008,  "Land  Reclamation":122.9,  "Reused":41.6,  "Landfill":0.2,  "Total":164.7},
+    {"Year":2009,  "Land  Reclamation":89.7,  "Reused":40.8,  "Landfill":0.3,  "Total":130.8},
+    {"Year":2010,  "Land  Reclamation":125.4,  "Reused":41.3,  "Landfill":0.2,  "Total":167},
+    {"Year":2011,  "Land  Reclamation":101.5,  "Reused":53.8,  "Landfill":0.1,  "Total":155.3},
+    {"Year":2012,  "Land  Reclamation":174.6,  "Reused":56.3,  "Landfill":0.6,  "Total":231.5},
+    {"Year":2013,  "Land  Reclamation":136.6,  "Reused":43.5,  "Landfill":2.3,  "Total":182.3},
+    {"Year":2014,  "Land  Reclamation":126.5,  "Reused":70.6,  "Landfill":1.2,  "Total":198.3},
+    {"Year":2015,  "Land  Reclamation":105.4,  "Reused":57.9,  "Landfill":0.4,  "Total":163.8},
+    {"Year":2016,  "Land  Reclamation":81.3,  "Reused":59.2,  "Landfill":0.4,  "Total":140.9},
+    {"Year":2017,  "Land  Reclamation":53.8,  "Reused":69.6,  "Landfill":0.4,  "Total":123.7}
 ]

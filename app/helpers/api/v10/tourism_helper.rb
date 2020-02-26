@@ -1,2 +1,2 @@
-module Api::V10::TourismHelper
+module  Api::V10::TourismHelper
 end

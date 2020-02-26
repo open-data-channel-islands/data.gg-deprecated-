@@ -1,26 +1,26 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Valid</th>
-      <th>Quarter</th>
-      <th>Median</th>
-      <th>Transactions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @house_prices.each do |f| %>
-      <tr>
-        <td><%= f['Year'] %></td>
-        <td><%= f['Valid'] %></td>
-        <td><%= f['Quarter'] %></td>
-        <td><%= f['Median'] %></td>
-        <td><%= f['Transactions'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Valid</th>
+            <th>Quarter</th>
+            <th>Median</th>
+            <th>Transactions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @house_prices.each  do  |f|  %>
+            <tr>
+                <td><%=  f['Year']  %></td>
+                <td><%=  f['Valid']  %></td>
+                <td><%=  f['Quarter']  %></td>
+                <td><%=  f['Median']  %></td>
+                <td><%=  f['Transactions']  %></td>
+            </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

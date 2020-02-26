@@ -1,20 +1,20 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Number of prisoners</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @prison_pop.each do |f| %>
-    <tr>
-    <td><%= f['Year'] %></td>
-    <td><%= f['Number of prisoners'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Number  of  prisoners</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @prison_pop.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Year']  %></td>
+        <td><%=  f['Number  of  prisoners']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

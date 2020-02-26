@@ -1,42 +1,42 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_domestic_consumption" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_domestic_consumption"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/pru'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_domestic_consumption').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Count (ML)'
-            }
-        },
-        series: [{
-            name: '<%= @title %>',
-            data: <%= @domestic_consumption.to_json.html_safe -%>
-        }]
-    });
+function  initPage()  {
+        $('#container_domestic_consumption').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Count  (ML)'
+                        }
+                },
+                series:  [{
+                        name:  '<%=  @title  %>',
+                        data:  <%=  @domestic_consumption.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

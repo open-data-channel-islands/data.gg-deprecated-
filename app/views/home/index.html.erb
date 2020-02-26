@@ -1,108 +1,108 @@
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2><strong>One Source, All The Data.</strong></h2>
-        <h3><%= storage_str('welcome_tag') %></h3>
-      </div>
-      <div class="col-md-6">
-        <%= image_tag('apps2.png', class: 'img-responsive', style: "vertical-align:bottom;") %>
-      </div>
+<div  class="jumbotron">
+    <div  class="container">
+        <div  class="row">
+            <div  class="col-md-6">
+                <h2><strong>One  Source,  All  The  Data.</strong></h2>
+                <h3><%=  storage_str('welcome_tag')  %></h3>
+            </div>
+            <div  class="col-md-6">
+                <%=  image_tag('apps2.png',  class:  'img-responsive',  style:  "vertical-align:bottom;")  %>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
-<div class="front-page-feature-triangles">
-  <div class="container">
-    <% if @active_alerts.count > 0 %>
-    <div class="front-page-alert">
-      <% @active_alerts.each do |alert| %>
-      <div class="alert alert-<%= type_to_bootstrap_alert_str(alert.level) %>" role="alert"><%= alert.created_at.strftime('%a %b %Y') %>: <%= alert.message %></div>
-      <% end %>
-    </div>
-    <% end %>
+<div  class="front-page-feature-triangles">
+    <div  class="container">
+        <%  if  @active_alerts.count  >  0  %>
+        <div  class="front-page-alert">
+            <%  @active_alerts.each  do  |alert|  %>
+            <div  class="alert  alert-<%=  type_to_bootstrap_alert_str(alert.level)  %>"  role="alert"><%=  alert.created_at.strftime('%a  %b  %Y')  %>:  <%=  alert.message  %></div>
+            <%  end  %>
+        </div>
+        <%  end  %>
 
-    <h2 class="faint-heading"><%= storage_str('visualised') %></h2>
-    <%= render partial: "charts/front_page" %>
-    <h2 class="faint-heading">CHARTS</h2>
-    <%= render partial: "charts_list" %>
-    <h2 class="faint-heading">MAPS</h2>
-    <%= render partial: "maps_list" %>
-  </div>
+        <h2  class="faint-heading"><%=  storage_str('visualised')  %></h2>
+        <%=  render  partial:  "charts/front_page"  %>
+        <h2  class="faint-heading">CHARTS</h2>
+        <%=  render  partial:  "charts_list"  %>
+        <h2  class="faint-heading">MAPS</h2>
+        <%=  render  partial:  "maps_list"  %>
+    </div>
 </div>
 
-<div style="background-color:#FF9900;">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    </ol>
+<div  style="background-color:#FF9900;">
+    <div  id="carousel-example-generic"  class="carousel  slide"  data-ride="carousel">
+        <!--  Indicators  -->
+        <ol  class="carousel-indicators">
+            <li  data-target="#carousel-example-generic"  data-slide-to="0"  class="active"></li>
+            <li  data-target="#carousel-example-generic"  data-slide-to="1"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <%= image_tag('apps2.png', class: 'img-responsive', style: "vertical-align:bottom; height:225px") %>
-        <div style="background-color:rgba(255,255,255,0.8);" class="carousel-caption carousel-caption-data">
-          <h3>Guernsey Flights</h3>
-          <p>Monitor Guernsey Airports arrivals and departures. Available on <a href="https://play.google.com/store/apps/details?id=com.reformsoft.guernseyflights.app">Google Play</a> and the <a href="http://www.amazon.co.uk/dp/B00KRM9FIE">Amazon App Store</a> for Android and <a href="https://itunes.apple.com/us/app/gsy-flights/id899069140?ls=1&mt=8">iTunes</a> for iOS.</p>
+        <!--  Wrapper  for  slides  -->
+        <div  class="carousel-inner"  role="listbox">
+            <div  class="item  active">
+                <%=  image_tag('apps2.png',  class:  'img-responsive',  style:  "vertical-align:bottom;  height:225px")  %>
+                <div  style="background-color:rgba(255,255,255,0.8);"  class="carousel-caption  carousel-caption-data">
+                    <h3>Guernsey  Flights</h3>
+                    <p>Monitor  Guernsey  Airports  arrivals  and  departures.  Available  on  <a  href="https://play.google.com/store/apps/details?id=com.reformsoft.guernseyflights.app">Google  Play</a>  and  the  <a  href="http://www.amazon.co.uk/dp/B00KRM9FIE">Amazon  App  Store</a>  for  Android  and  <a  href="https://itunes.apple.com/us/app/gsy-flights/id899069140?ls=1&mt=8">iTunes</a>  for  iOS.</p>
+                </div>
+            </div>
+            <div  class="item">
+                <%=  image_tag('gsysailings_android_framed.png',  class:  'img-responsive',  style:  "vertical-align:bottom;  height:225px")  %>
+                <div  style="background-color:rgba(255,255,255,0.8);"  class="carousel-caption  carousel-caption-data">
+                    <h3>Guernsey  Sailings</h3>
+                    <p>Monitor  Guernsey  Harbours  arrivals  and  departures.  Available  on  <a  href="https://play.google.com/store/apps/details?id=reformosft.guernseysailings&hl=en_GB">Google  Play</a>  and  the  <a  href="http://www.amazon.co.uk/dp/B00L9EQEG0">Amazon  App  Store</a>  for  Android.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <%= image_tag('gsysailings_android_framed.png', class: 'img-responsive', style: "vertical-align:bottom; height:225px") %>
-        <div style="background-color:rgba(255,255,255,0.8);" class="carousel-caption carousel-caption-data">
-          <h3>Guernsey Sailings</h3>
-          <p>Monitor Guernsey Harbours arrivals and departures. Available on <a href="https://play.google.com/store/apps/details?id=reformosft.guernseysailings&hl=en_GB">Google Play</a> and the <a href="http://www.amazon.co.uk/dp/B00L9EQEG0">Amazon App Store</a> for Android.</p>
-        </div>
-      </div>
+
+        <!--  Controls  -->
+        <a  class="left  carousel-control"  href="#carousel-example-generic"  role="button"  data-slide="prev">
+            <span  class="glyphicon  glyphicon-chevron-left"  aria-hidden="true"></span>
+            <span  class="sr-only">Previous</span>
+        </a>
+        <a  class="right  carousel-control"  href="#carousel-example-generic"  role="button"  data-slide="next">
+            <span  class="glyphicon  glyphicon-chevron-right"  aria-hidden="true"></span>
+            <span  class="sr-only">Next</span>
+        </a>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 </div>
 
 
-<div class="front-page-feature-triangles">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="faint-heading">Supply <em>&amp;</em> Contribute</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h3 class="text-center extra-bottom-space">Have some data you want to publish?</h3>
-        <p class="large-text extra-bottom-space text-justify">If you've got interesting data related to the Bailiwick of Guernsey we'd love to get our hands on it. We're happy to
-          do all the hard work for you so it can be made available via the data.gg API allowing people to generate reports or so developers can build apps.
-          Send Jason an e-mail at <a href="mailto:<%= storage_str('contact_email') %>"><%= storage_str('contact_email') %></a> and we'll talk more.</p>
+<div  class="front-page-feature-triangles">
+    <div  class="container">
+        <div  class="row">
+            <div  class="col-md-12">
+                <h2  class="faint-heading">Supply  <em>&amp;</em>  Contribute</h2>
+            </div>
         </div>
 
-        <div class="col-md-6">
-          <h3 class="text-center extra-bottom-space">Want to help us build a better data.gg?</h3>
-          <p class="large-text text-justify">There's a lot of work involved with data.gg, from coming up with ideas, gathering data, standardising and producing data sets,
-            showing that data in a meaningful format and all the way to publishing the APIs for developers. Just fire Jason an e-mail at
-            <a href="mailto:<%= storage_str('contact_email') %>"><%= storage_str('contact_email') %></a> so we can talk more.</p>
-          </div>
+        <div  class="row">
+            <div  class="col-md-6">
+                <h3  class="text-center  extra-bottom-space">Have  some  data  you  want  to  publish?</h3>
+                <p  class="large-text  extra-bottom-space  text-justify">If  you've  got  interesting  data  related  to  the  Bailiwick  of  Guernsey  we'd  love  to  get  our  hands  on  it.  We're  happy  to
+                    do  all  the  hard  work  for  you  so  it  can  be  made  available  via  the  data.gg  API  allowing  people  to  generate  reports  or  so  developers  can  build  apps.
+                    Send  Jason  an  e-mail  at  <a  href="mailto:<%=  storage_str('contact_email')  %>"><%=  storage_str('contact_email')  %></a>  and  we'll  talk  more.</p>
+                </div>
+
+                <div  class="col-md-6">
+                    <h3  class="text-center  extra-bottom-space">Want  to  help  us  build  a  better  data.gg?</h3>
+                    <p  class="large-text  text-justify">There's  a  lot  of  work  involved  with  data.gg,  from  coming  up  with  ideas,  gathering  data,  standardising  and  producing  data  sets,
+                        showing  that  data  in  a  meaningful  format  and  all  the  way  to  publishing  the  APIs  for  developers.  Just  fire  Jason  an  e-mail  at
+                        <a  href="mailto:<%=  storage_str('contact_email')  %>"><%=  storage_str('contact_email')  %></a>  so  we  can  talk  more.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="faint-heading">Developers</h2>
+        <div  class="container">
+            <div  class="row">
+                <div  class="col-md-12">
+                    <h2  class="faint-heading">Developers</h2>
+                </div>
+            </div>
+
+
+            <%=  render  partial:  "developers_list"  %>
         </div>
-      </div>
-
-
-      <%= render partial: "developers_list" %>
-    </div>

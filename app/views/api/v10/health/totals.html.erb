@@ -1,35 +1,35 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>All screenings</th>
-      <th>New clients</th>
-      <th>Age 25-34</th>
-      <th>Age 35-44</th>
-      <th>Age 45-54</th>
-      <th>Age 55-64</th>
-      <th>Age 65-69</th>
-      <th>Age 70-75</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @totals.each do |t| %>
-    <tr>
-      <td><%= t['Year'] %></td>
-      <td><%= t['All screenings'] %></td>
-      <td><%= t['New clients'] %></td>
-      <td><%= t['Age 25-34'] %></td>
-      <td><%= t['Age 35-44'] %></td>
-      <td><%= t['Age 45-54'] %></td>
-      <td><%= t['Age 55-64'] %></td>
-      <td><%= t['Age 65-69'] %></td>
-      <td><%= t['Age 70-75'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>All  screenings</th>
+            <th>New  clients</th>
+            <th>Age  25-34</th>
+            <th>Age  35-44</th>
+            <th>Age  45-54</th>
+            <th>Age  55-64</th>
+            <th>Age  65-69</th>
+            <th>Age  70-75</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @totals.each  do  |t|  %>
+        <tr>
+            <td><%=  t['Year']  %></td>
+            <td><%=  t['All  screenings']  %></td>
+            <td><%=  t['New  clients']  %></td>
+            <td><%=  t['Age  25-34']  %></td>
+            <td><%=  t['Age  35-44']  %></td>
+            <td><%=  t['Age  45-54']  %></td>
+            <td><%=  t['Age  55-64']  %></td>
+            <td><%=  t['Age  65-69']  %></td>
+            <td><%=  t['Age  70-75']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>
 

@@ -1,4 +1,4 @@
-class Charts::RecyclingController < ApplicationController
-  def index
-  end
+class  Charts::RecyclingController  <  ApplicationController
+    def  index
+    end
 end

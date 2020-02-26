@@ -1,19 +1,19 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Health', charts_health_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Health',  charts_health_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Health</h1>
+<div  class="page-header">
+    <h1>Health</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/health', 'concerns') %>"><%= link_to 'Chest and Heart Concerns', charts_health_concerns_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/health', 'totals') %>"><%= link_to 'Chest and Heart Totals', charts_health_totals_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/health', 'new') %>"><%= link_to 'Chest and Heart New Clients', charts_health_new_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/health', 'med_unit_bed_days_five_yr_avg') %>"><%= link_to 'Medical Unit Bed Days Five Year Average', charts_health_med_unit_bed_days_five_yr_avg_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/health',  'concerns')  %>"><%=  link_to  'Chest  and  Heart  Concerns',  charts_health_concerns_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/health',  'totals')  %>"><%=  link_to  'Chest  and  Heart  Totals',  charts_health_totals_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/health',  'new')  %>"><%=  link_to  'Chest  and  Heart  New  Clients',  charts_health_new_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/health',  'med_unit_bed_days_five_yr_avg')  %>"><%=  link_to  'Medical  Unit  Bed  Days  Five  Year  Average',  charts_health_med_unit_bed_days_five_yr_avg_path  %></li>
 </ul>

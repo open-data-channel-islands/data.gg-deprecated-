@@ -1,2 +1,2 @@
-module Charts::EmploymentHelper
+module  Charts::EmploymentHelper
 end

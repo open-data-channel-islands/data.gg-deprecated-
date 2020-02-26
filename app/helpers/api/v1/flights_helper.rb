@@ -1,2 +1,2 @@
-module Api::V1::FlightsHelper
+module  Api::V1::FlightsHelper
 end

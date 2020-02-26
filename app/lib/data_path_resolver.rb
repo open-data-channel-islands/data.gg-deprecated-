@@ -1,46 +1,46 @@
-class DataPathResolver
-  
-  
-  def self.public_buses_path(root)
-    File.join(root, 'data', 'transport', 'buses').to_s
-  end
-  
-  
-  def self.root(writable_path)
-    if writable_path
-      root = Rails.public_path.join('data')
+class  DataPathResolver
     
-      if !File.directory?(root)
-        FileUtils::mkdir_p root
-      end
-      
-      return root
-    else
-      return Rails.public_path.join('data')
-    end
-  end
-  
-  def self.transport_path(writable_path)
-    transport = File.join(self.root(writable_path), "transport")
     
-    if !public
-      if !File.directory?(writable_path)
-        FileUtils::mkdir_p transport
-      end
+    def  self.public_buses_path(root)
+        File.join(root,  'data',  'transport',  'buses').to_s
     end
     
-    return transport
-  end
-  
-  def self.buses_path(writable_path)
-    buses = File.join(self.transport_path(writable_path), "buses")
     
-    if writable_path
-      if !File.directory?(buses)
-        FileUtils::mkdir_p buses
-      end
+    def  self.root(writable_path)
+        if  writable_path
+            root  =  Rails.public_path.join('data')
+        
+            if  !File.directory?(root)
+                FileUtils::mkdir_p  root
+            end
+            
+            return  root
+        else
+            return  Rails.public_path.join('data')
+        end
     end
     
-    return buses
-  end
+    def  self.transport_path(writable_path)
+        transport  =  File.join(self.root(writable_path),  "transport")
+        
+        if  !public
+            if  !File.directory?(writable_path)
+                FileUtils::mkdir_p  transport
+            end
+        end
+        
+        return  transport
+    end
+    
+    def  self.buses_path(writable_path)
+        buses  =  File.join(self.transport_path(writable_path),  "buses")
+        
+        if  writable_path
+            if  !File.directory?(buses)
+                FileUtils::mkdir_p  buses
+            end
+        end
+        
+        return  buses
+    end
 end

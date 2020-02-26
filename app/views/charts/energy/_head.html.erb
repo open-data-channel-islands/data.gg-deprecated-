@@ -1,18 +1,18 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Energy', charts_energy_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Energy',  charts_energy_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Energy</h1>
+<div  class="page-header">
+    <h1>Energy</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/energy', 'electricity_consumption') %>"><%= link_to 'Electricity Consumption', charts_energy_electricity_consumption_path %></li>
-   <li role="presentation" class="<%= 'active' if action?('charts/energy', 'electricity_import_vs_generated') %>"><%= link_to 'Electricity Imported VS Generated', charts_energy_electricity_import_vs_generated_path %></li>
-   <li role="presentation" class="<%= 'active' if action?('charts/energy', 'renewable') %>"><%= link_to 'Renewable', charts_energy_renewable_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/energy',  'electricity_consumption')  %>"><%=  link_to  'Electricity  Consumption',  charts_energy_electricity_consumption_path  %></li>
+      <li  role="presentation"  class="<%=  'active'  if  action?('charts/energy',  'electricity_import_vs_generated')  %>"><%=  link_to  'Electricity  Imported  VS  Generated',  charts_energy_electricity_import_vs_generated_path  %></li>
+      <li  role="presentation"  class="<%=  'active'  if  action?('charts/energy',  'renewable')  %>"><%=  link_to  'Renewable',  charts_energy_renewable_path  %></li>
 </ul>

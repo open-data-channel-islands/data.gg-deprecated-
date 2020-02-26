@@ -1,40 +1,40 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_health_totals" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_health_totals"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  xLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_health_totals').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: xLabels,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Total count'
-            }
-        },
-        series: <%= @data.to_json.html_safe %>
-    });
+        $('#container_health_totals').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  xLabels,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Total  count'
+                        }
+                },
+                series:  <%=  @data.to_json.html_safe  %>
+        });
 }
-<% end %>
+<%  end  %>
 

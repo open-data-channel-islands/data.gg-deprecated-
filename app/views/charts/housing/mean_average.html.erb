@@ -1,65 +1,65 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_mean_average" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_mean_average"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <a href="http://gov.gg/property">gov.gg</a></p>
+<p>Source:  <a  href="http://gov.gg/property">gov.gg</a></p>
 
-<%= javascript_tag do %>
+<%=  javascript_tag  do  %>
 
-$(function() {
-  initPage();
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var yLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  yLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_mean_average').highcharts({
-        chart: {
-            type: 'area'
-        },
-        title: {
-            text: 'Mean Average'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: yLabels,
-            title: {
-                text: 'Quarter'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Mean Average'
-            },
-            labels: {
-                formatter: function () {
-                    return this.value / 1000 + 'k';
-                }
-            }
-        },
-        plotOptions: {
-            area: {
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 2,
-                    states: {
-                        hover: {
-                            enabled: true
+        $('#container_mean_average').highcharts({
+                chart:  {
+                        type:  'area'
+                },
+                title:  {
+                        text:  'Mean  Average'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  yLabels,
+                        title:  {
+                                text:  'Quarter'
                         }
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Local',
-            showInLegend: false,
-            data: <%= @mean_averages.to_json.html_safe -%>
-        }]
-    });
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Mean  Average'
+                        },
+                        labels:  {
+                                formatter:  function  ()  {
+                                        return  this.value  /  1000  +  'k';
+                                }
+                        }
+                },
+                plotOptions:  {
+                        area:  {
+                                marker:  {
+                                        enabled:  false,
+                                        symbol:  'circle',
+                                        radius:  2,
+                                        states:  {
+                                                hover:  {
+                                                        enabled:  true
+                                                }
+                                        }
+                                }
+                        }
+                },
+                series:  [{
+                        name:  'Local',
+                        showInLegend:  false,
+                        data:  <%=  @mean_averages.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

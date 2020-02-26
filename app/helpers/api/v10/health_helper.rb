@@ -1,2 +1,2 @@
-module Api::V10::HealthHelper
+module  Api::V10::HealthHelper
 end

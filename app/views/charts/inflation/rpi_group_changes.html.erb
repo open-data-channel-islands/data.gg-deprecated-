@@ -1,41 +1,41 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_rpi_group_changes" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+<div  id="container_rpi_group_changes"  style="min-width:  310px;  height:  600px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/rpi' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/rpi'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  xLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_rpi_group_changes').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: 'RPI Group Changes (Q4 2004 is 100)'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: xLabels,
-            title: {
-                text: 'Quarter'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Value'
-            }
-        },
-        series: <%= @results.to_json.html_safe %>
-    });
+        $('#container_rpi_group_changes').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  'RPI  Group  Changes  (Q4  2004  is  100)'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  xLabels,
+                        title:  {
+                                text:  'Quarter'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Value'
+                        }
+                },
+                series:  <%=  @results.to_json.html_safe  %>
+        });
 }
-<% end %>
+<%  end  %>

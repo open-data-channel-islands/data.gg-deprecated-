@@ -1,26 +1,26 @@
-<% content_for :head do %>
-<%= stylesheet_link_tag    'bubbletree', media: 'all' %>
+<%  content_for  :head  do  %>
+<%=  stylesheet_link_tag        'bubbletree',  media:  'all'  %>
 
-<%= javascript_include_tag 'Tween', async: false %>
-<%= javascript_include_tag 'raphael-min', async: false %>
-<%= javascript_include_tag 'bubbletree', async: false %>
-<%= javascript_include_tag 'govspendingbubbletree', async: false %>
-<% end %>
+<%=  javascript_include_tag  'Tween',  async:  false  %>
+<%=  javascript_include_tag  'raphael-min',  async:  false  %>
+<%=  javascript_include_tag  'bubbletree',  async:  false  %>
+<%=  javascript_include_tag  'govspendingbubbletree',  async:  false  %>
+<%  end  %>
 
 
-<h3 class="text-center">Government Spending 2015</h3>
+<h3  class="text-center">Government  Spending  2015</h3>
 
-<div class="bubbletree-wrapper">
-  <div class="bubbletree"></div>
+<div  class="bubbletree-wrapper">
+    <div  class="bubbletree"></div>
 </div>
 
-<% if false %>
-<table style="margin-bottom:50px;font-size:0.9em">
-  <tr>
-    <% @labels.each do |label| %>
-    <td><div class="front-page-bus-labels" style="background-color:<%= label[1] %>;border:2px solid <%= label[2] %>"></div></td>
-    <td><%= label[0] %></td>
-    <% end %>
-  </tr>
+<%  if  false  %>
+<table  style="margin-bottom:50px;font-size:0.9em">
+    <tr>
+        <%  @labels.each  do  |label|  %>
+        <td><div  class="front-page-bus-labels"  style="background-color:<%=  label[1]  %>;border:2px  solid  <%=  label[2]  %>"></div></td>
+        <td><%=  label[0]  %></td>
+        <%  end  %>
+    </tr>
 </table>
-<% end %>
+<%  end  %>

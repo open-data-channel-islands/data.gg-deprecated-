@@ -1,44 +1,44 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_sector" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div  id="container_sector"  style="min-width:  310px;  height:  400px;  margin:  0  auto"></div>
 
-<p>Source: <a href="http://www.gov.gg/earnings">gov.gg</a></p>
+<p>Source:  <a  href="http://www.gov.gg/earnings">gov.gg</a></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_sector').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            categories: <%= @labels.to_json.html_safe %>,
-            crosshair: true,
-            title: { text: 'Sector' }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Earnings'
-            }
-        },
-        tooltip: {
-            shared: true,
-        },
-        series: [{
-            name: 'Median',
-            data: <%= @medians.to_json.html_safe %>
+function  initPage()  {
+        $('#container_sector').highcharts({
+                chart:  {
+                        type:  'column'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        crosshair:  true,
+                        title:  {  text:  'Sector'  }
+                },
+                yAxis:  {
+                        min:  0,
+                        title:  {
+                                text:  'Earnings'
+                        }
+                },
+                tooltip:  {
+                        shared:  true,
+                },
+                series:  [{
+                        name:  'Median',
+                        data:  <%=  @medians.to_json.html_safe  %>
 
-        }]
-    });
+                }]
+        });
 }
-<% end %>
+<%  end  %>

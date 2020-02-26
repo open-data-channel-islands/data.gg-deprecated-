@@ -1,22 +1,22 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Result</th>
-      <th>Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @gcse_overall.each do |f| %>
-    <tr>
-    <td><%= f['Year'] %></td>
-    <td><%= f['Result'] %></td>
-    <td><%= f['Percent'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Result</th>
+            <th>Percent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @gcse_overall.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Year']  %></td>
+        <td><%=  f['Result']  %></td>
+        <td><%=  f['Percent']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

@@ -1,32 +1,32 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>All screenings</th>
-      <th>Body Mass Index greater or equal to 30</th>
-      <th>Diabetes found in screening</th>
-      <th>Raised Blood Pressure</th>
-      <th>Raised Cholesterol</th>
-      <th>Abnormal ECG</th>
-      <th>Visceral Fat (greater than 13)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @concerns.each do |c| %>
-    <tr>
-      <td><%= c['Year'] %></td>
-      <td><%= c['All screenings'] %></td>
-      <td><%= c['Body Mass Index greater or equal to 30'] %></td>
-      <td><%= c['Diabetes found in screening'] %></td>
-      <td><%= c['Raised Blood Pressure'] %></td>
-      <td><%= c['Raised Cholesterol'] %></td>
-      <td><%= c['Abnormal ECG'] %></td>
-      <td><%= c['Visceral Fat greater than 13'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>All  screenings</th>
+            <th>Body  Mass  Index  greater  or  equal  to  30</th>
+            <th>Diabetes  found  in  screening</th>
+            <th>Raised  Blood  Pressure</th>
+            <th>Raised  Cholesterol</th>
+            <th>Abnormal  ECG</th>
+            <th>Visceral  Fat  (greater  than  13)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @concerns.each  do  |c|  %>
+        <tr>
+            <td><%=  c['Year']  %></td>
+            <td><%=  c['All  screenings']  %></td>
+            <td><%=  c['Body  Mass  Index  greater  or  equal  to  30']  %></td>
+            <td><%=  c['Diabetes  found  in  screening']  %></td>
+            <td><%=  c['Raised  Blood  Pressure']  %></td>
+            <td><%=  c['Raised  Cholesterol']  %></td>
+            <td><%=  c['Abnormal  ECG']  %></td>
+            <td><%=  c['Visceral  Fat  greater  than  13']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

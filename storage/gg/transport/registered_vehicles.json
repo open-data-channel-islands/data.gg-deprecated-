@@ -1,68 +1,68 @@
 [
-  {
-    "Year":2007,
-    "Motor Vehicles Private":59088,
-    "Motor Vehicles Commercial":11608,
-    "Motor Cycles":9933
-  },
-  {
-    "Year":2008,
-    "Motor Vehicles Private":61744,
-    "Motor Vehicles Commercial":12208,
-    "Motor Cycles":10508
-  },
-  {
-    "Year":2009,
-    "Motor Vehicles Private":62349,
-    "Motor Vehicles Commercial":12507,
-    "Motor Cycles":10780
-  },
-  {
-    "Year":2010,
-    "Motor Vehicles Private":63710,
-    "Motor Vehicles Commercial":12796,
-    "Motor Cycles":11047
-  },
-  {
-    "Year":2011,
-    "Motor Vehicles Private":62918,
-    "Motor Vehicles Commercial":12827,
-    "Motor Cycles":11141
-  },
-  {
-    "Year":2012,
-    "Motor Vehicles Private":62898,
-    "Motor Vehicles Commercial":12899,
-    "Motor Cycles":11292
-  },
-  {
-    "Year":2013,
-    "Motor Vehicles Private":61421,
-    "Motor Vehicles Commercial":12817,
-    "Motor Cycles":11489
-  },
-  {
-    "Year":2014,
-    "Motor Vehicles Private":59596,
-    "Motor Vehicles Commercial":12362,
-    "Motor Cycles":11630
-  },
-  {
-    "Year":2015,
-    "Motor Vehicles Private":58991,
-    "Motor Vehicles Commercial":12129,
-    "Motor Cycles":11657
-  },
-  {
-    "Year":2016,
-    "Motor Vehicles Private":59459,
-    "Motor Vehicles Commercial":12028,
-    "Motor Cycles":11470
-  },
-  {
-    "Year":2017,
-    "Motor Vehicles Private":60007,
-    "Motor Vehicles Commercial":12033,
-    "Motor Cycles":11641
-  }
+    {
+        "Year":2007,
+        "Motor  Vehicles  Private":59088,
+        "Motor  Vehicles  Commercial":11608,
+        "Motor  Cycles":9933
+    },
+    {
+        "Year":2008,
+        "Motor  Vehicles  Private":61744,
+        "Motor  Vehicles  Commercial":12208,
+        "Motor  Cycles":10508
+    },
+    {
+        "Year":2009,
+        "Motor  Vehicles  Private":62349,
+        "Motor  Vehicles  Commercial":12507,
+        "Motor  Cycles":10780
+    },
+    {
+        "Year":2010,
+        "Motor  Vehicles  Private":63710,
+        "Motor  Vehicles  Commercial":12796,
+        "Motor  Cycles":11047
+    },
+    {
+        "Year":2011,
+        "Motor  Vehicles  Private":62918,
+        "Motor  Vehicles  Commercial":12827,
+        "Motor  Cycles":11141
+    },
+    {
+        "Year":2012,
+        "Motor  Vehicles  Private":62898,
+        "Motor  Vehicles  Commercial":12899,
+        "Motor  Cycles":11292
+    },
+    {
+        "Year":2013,
+        "Motor  Vehicles  Private":61421,
+        "Motor  Vehicles  Commercial":12817,
+        "Motor  Cycles":11489
+    },
+    {
+        "Year":2014,
+        "Motor  Vehicles  Private":59596,
+        "Motor  Vehicles  Commercial":12362,
+        "Motor  Cycles":11630
+    },
+    {
+        "Year":2015,
+        "Motor  Vehicles  Private":58991,
+        "Motor  Vehicles  Commercial":12129,
+        "Motor  Cycles":11657
+    },
+    {
+        "Year":2016,
+        "Motor  Vehicles  Private":59459,
+        "Motor  Vehicles  Commercial":12028,
+        "Motor  Cycles":11470
+    },
+    {
+        "Year":2017,
+        "Motor  Vehicles  Private":60007,
+        "Motor  Vehicles  Commercial":12033,
+        "Motor  Cycles":11641
+    }
 ]

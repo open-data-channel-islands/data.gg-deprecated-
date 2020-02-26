@@ -1,2 +1,2 @@
-module Api::V10::WaterHelper
+module  Api::V10::WaterHelper
 end

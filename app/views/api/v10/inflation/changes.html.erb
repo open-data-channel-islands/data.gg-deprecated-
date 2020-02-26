@@ -1,26 +1,26 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Quarter</th>
-      <th>RPIX Annual Change</th>
-      <th>RPIX Quarterly Change</th>
-      <th>RPI Annual Change</th>
-      <th>RPI Quarterly Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @changes.each do |f| %>
-      <tr>
-        <td><%= f['Quarter'] %></td>
-        <td><%= f['RPIX Annual Change'] %></td>
-        <td><%= f['RPIX Quarterly Change'] %></td>
-        <td><%= f['RPI Annual Change'] %></td>
-        <td><%= f['RPI Quarterly Change'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Quarter</th>
+            <th>RPIX  Annual  Change</th>
+            <th>RPIX  Quarterly  Change</th>
+            <th>RPI  Annual  Change</th>
+            <th>RPI  Quarterly  Change</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @changes.each  do  |f|  %>
+            <tr>
+                <td><%=  f['Quarter']  %></td>
+                <td><%=  f['RPIX  Annual  Change']  %></td>
+                <td><%=  f['RPIX  Quarterly  Change']  %></td>
+                <td><%=  f['RPI  Annual  Change']  %></td>
+                <td><%=  f['RPI  Quarterly  Change']  %></td>
+            </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

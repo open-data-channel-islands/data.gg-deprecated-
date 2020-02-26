@@ -1,17 +1,17 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Emissions', charts_emissions_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Emissions',  charts_emissions_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Emissions</h1>
+<div  class="page-header">
+    <h1>Emissions</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/emissions', 'types') %>"><%= link_to 'Types', charts_emissions_types_path %></li>
-   <li role="presentation" class="<%= 'active' if action?('charts/emissions', 'source') %>"><%= link_to 'Source', charts_emissions_source_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/emissions',  'types')  %>"><%=  link_to  'Types',  charts_emissions_types_path  %></li>
+      <li  role="presentation"  class="<%=  'active'  if  action?('charts/emissions',  'source')  %>"><%=  link_to  'Source',  charts_emissions_source_path  %></li>
 </ul>

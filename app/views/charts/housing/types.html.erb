@@ -1,87 +1,87 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="row">
-  <div class="col-md-6">
-    <div id="container_local" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
-  </div>
-  <div class="col-md-6">
-    <div id="container_open" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
-  </div>
+<div  class="row">
+    <div  class="col-md-6">
+        <div  id="container_local"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
+    </div>
+    <div  class="col-md-6">
+        <div  id="container_open"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
+    </div>
 </div>
 
-<p>Source: <a href="http://gov.gg/article/112353/Quarterly-Residential-Property-Prices-and-Annual-Housing-Stock-Bulletins-2014">gov.gg</a> and <a href="http://gov.gg/property">gov.gg</a></p>
+<p>Source:  <a  href="http://gov.gg/article/112353/Quarterly-Residential-Property-Prices-and-Annual-Housing-Stock-Bulletins-2014">gov.gg</a>  and  <a  href="http://gov.gg/property">gov.gg</a></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_local').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Local Market Types (2018)'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Local Market',
-            data: <%= @local.to_json.html_safe  %>
-        }]
-    });
+function  initPage()  {
+        $('#container_local').highcharts({
+                chart:  {
+                        plotBackgroundColor:  null,
+                        plotBorderWidth:  null,
+                        plotShadow:  false
+                },
+                title:  {
+                        text:  'Local  Market  Types  (2018)'
+                },
+                tooltip:  {
+                        pointFormat:  '{series.name}:  <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions:  {
+                        pie:  {
+                                allowPointSelect:  true,
+                                cursor:  'pointer',
+                                dataLabels:  {
+                                        enabled:  true,
+                                        format:  '<b>{point.name}</b>:  {point.percentage:.1f}  %',
+                                        style:  {
+                                                color:  (Highcharts.theme  &&  Highcharts.theme.contrastTextColor)  ||  'black'
+                                        }
+                                }
+                        }
+                },
+                series:  [{
+                        type:  'pie',
+                        name:  'Local  Market',
+                        data:  <%=  @local.to_json.html_safe    %>
+                }]
+        });
 
-    $('#container_open').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Open Market Types (2018)'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Open Market',
-            data: <%= @open.to_json.html_safe  %>
-        }]
-    });
+        $('#container_open').highcharts({
+                chart:  {
+                        plotBackgroundColor:  null,
+                        plotBorderWidth:  null,
+                        plotShadow:  false
+                },
+                title:  {
+                        text:  'Open  Market  Types  (2018)'
+                },
+                tooltip:  {
+                        pointFormat:  '{series.name}:  <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions:  {
+                        pie:  {
+                                allowPointSelect:  true,
+                                cursor:  'pointer',
+                                dataLabels:  {
+                                        enabled:  true,
+                                        format:  '<b>{point.name}</b>:  {point.percentage:.1f}  %',
+                                        style:  {
+                                                color:  (Highcharts.theme  &&  Highcharts.theme.contrastTextColor)  ||  'black'
+                                        }
+                                }
+                        }
+                },
+                series:  [{
+                        type:  'pie',
+                        name:  'Open  Market',
+                        data:  <%=  @open.to_json.html_safe    %>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

@@ -1,2 +1,2 @@
-module Charts::FuelHelper
+module  Charts::FuelHelper
 end

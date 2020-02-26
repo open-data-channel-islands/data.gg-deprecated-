@@ -1,43 +1,43 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Castel</th>
-      <th>Forest</th>
-      <th>St. Andrew</th>
-      <th>St. Martin</th>
-      <th>St. Peter Port</th>
-      <th>St. Pierre Du Bois</th>
-      <th>St. Sampson</th>
-      <th>St. Saviour</th>
-      <th>Torteval</th>
-      <th>Vale</th>
-      <th>Herm and Jethou</th>
-      <th>Address unknown</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @parish.each do |p| %>
-      <tr>
-        <td><%= p['Year'] %></td>
-        <td><%= p['Castel'] %></td>
-        <td><%= p['Forest'] %></td>
-        <td><%= p['St. Andrew'] %></td>
-        <td><%= p['St. Martin'] %></td>
-        <td><%= p['St. Peter Port'] %></td>
-        <td><%= p['St. Pierre Du Bois'] %></td>
-        <td><%= p['St. Sampson'] %></td>
-        <td><%= p['St. Saviour'] %></td>
-        <td><%= p['Torteval'] %></td>
-        <td><%= p['Vale'] %></td>
-        <td><%= p['Herm and Jethou'] %></td>
-        <td><%= p['Address unknown'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Castel</th>
+            <th>Forest</th>
+            <th>St.  Andrew</th>
+            <th>St.  Martin</th>
+            <th>St.  Peter  Port</th>
+            <th>St.  Pierre  Du  Bois</th>
+            <th>St.  Sampson</th>
+            <th>St.  Saviour</th>
+            <th>Torteval</th>
+            <th>Vale</th>
+            <th>Herm  and  Jethou</th>
+            <th>Address  unknown</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @parish.each  do  |p|  %>
+            <tr>
+                <td><%=  p['Year']  %></td>
+                <td><%=  p['Castel']  %></td>
+                <td><%=  p['Forest']  %></td>
+                <td><%=  p['St.  Andrew']  %></td>
+                <td><%=  p['St.  Martin']  %></td>
+                <td><%=  p['St.  Peter  Port']  %></td>
+                <td><%=  p['St.  Pierre  Du  Bois']  %></td>
+                <td><%=  p['St.  Sampson']  %></td>
+                <td><%=  p['St.  Saviour']  %></td>
+                <td><%=  p['Torteval']  %></td>
+                <td><%=  p['Vale']  %></td>
+                <td><%=  p['Herm  and  Jethou']  %></td>
+                <td><%=  p['Address  unknown']  %></td>
+            </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>
 

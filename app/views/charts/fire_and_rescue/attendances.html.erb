@@ -1,74 +1,74 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_fire_and_rescue_attendances" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_fire_and_rescue_attendances"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/pru'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  xLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_fire_and_rescue_attendances').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: xLabels,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            minPadding: 0,
-            maxPadding: 0,
-            title: {
-                text: 'Frequency'
-            }
-        },
-      series: [{
-        name: 'All other types of fires',
-        data: <%= @fires.to_json.html_safe -%>
-      },
-      {
-        name: 'Chimney fires',
-        data: <%= @fre_chimney.to_json.html_safe -%>
-      },
-      {
-        name: 'False alarms general',
-        data: <%= @false_alarms.to_json.html_safe -%>
-      },
-      {
-        name: 'False alarms malicious',
-        data: <%= @false_alarms_malicious.to_json.html_safe -%>
-      },
-      {
-        name: 'Special service emergency',
-        data: <%= @special_emergency.to_json.html_safe -%>
-      },
-      {
-        name: 'Special service non-emergency',
-        data: <%= @special_non_emergency.to_json.html_safe -%>
-      },
-      {
-        name: 'Special service Road Traffic Collisions',
-        data: <%= @special_road.to_json.html_safe -%>
-      },
-      {
-        name: 'Special service General',
-        data: <%= @special_general.to_json.html_safe -%>
-      }]
-    });
+        $('#container_fire_and_rescue_attendances').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  xLabels,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        minPadding:  0,
+                        maxPadding:  0,
+                        title:  {
+                                text:  'Frequency'
+                        }
+                },
+            series:  [{
+                name:  'All  other  types  of  fires',
+                data:  <%=  @fires.to_json.html_safe  -%>
+            },
+            {
+                name:  'Chimney  fires',
+                data:  <%=  @fre_chimney.to_json.html_safe  -%>
+            },
+            {
+                name:  'False  alarms  general',
+                data:  <%=  @false_alarms.to_json.html_safe  -%>
+            },
+            {
+                name:  'False  alarms  malicious',
+                data:  <%=  @false_alarms_malicious.to_json.html_safe  -%>
+            },
+            {
+                name:  'Special  service  emergency',
+                data:  <%=  @special_emergency.to_json.html_safe  -%>
+            },
+            {
+                name:  'Special  service  non-emergency',
+                data:  <%=  @special_non_emergency.to_json.html_safe  -%>
+            },
+            {
+                name:  'Special  service  Road  Traffic  Collisions',
+                data:  <%=  @special_road.to_json.html_safe  -%>
+            },
+            {
+                name:  'Special  service  General',
+                data:  <%=  @special_general.to_json.html_safe  -%>
+            }]
+        });
 }
-<% end %>
+<%  end  %>

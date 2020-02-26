@@ -1,45 +1,45 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_commercial_and_industrial_vs_household" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+<div  id="container_commercial_and_industrial_vs_household"  style="min-width:  310px;  height:  600px;  margin:  0  auto"></div>
 
-<p>Note that 'Commercial and Industrial' also has the category 'Misc. disposal' which is not shown in the chart above.</p>
- <p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Note  that  'Commercial  and  Industrial'  also  has  the  category  'Misc.  disposal'  which  is  not  shown  in  the  chart  above.</p>
+  <p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/pru'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
+function  initPage()  {
 
-    $('#container_commercial_and_industrial_vs_household').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            crosshair: true,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Count'
-            }
-        },
-        tooltip: {
-            shared: true,
-        },
-        series: <%= @results.to_json.html_safe %>
-    });
+        $('#container_commercial_and_industrial_vs_household').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        crosshair:  true,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Count'
+                        }
+                },
+                tooltip:  {
+                        shared:  true,
+                },
+                series:  <%=  @results.to_json.html_safe  %>
+        });
 }
-<% end %>
+<%  end  %>

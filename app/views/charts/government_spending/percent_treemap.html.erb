@@ -1,47 +1,47 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="government_spending_treemap" style="min-width: 310px; height: 800px; margin: 0 auto"></div>
+<div  id="government_spending_treemap"  style="min-width:  310px;  height:  800px;  margin:  0  auto"></div>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  xLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#government_spending_treemap').highcharts({
-        title: {
-            text: '<%= @title %>'
-        },
-        series: [{
-            type: 'treemap',
-            layoutAlgorithm: 'squarified',
-            levelIsConstant: false,
-            allowDrillToNode: true,
-            levels: [{
-                level: 1,
-                layoutAlgorithm: 'squarified',
-                dataLabels: {
-                    enabled: true,
-                    align: 'center',
-                    verticalAlign: 'middle',
-                    style: {
-                        fontSize: '12px'
-                    }
-                }
-            },
-            {
-              level: 2,
-              dataLabels: {
-                enabled: false
-              }
-            }],
-            data: <%= @data.to_json.html_safe -%>
-        }]
-    });
+        $('#government_spending_treemap').highcharts({
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                series:  [{
+                        type:  'treemap',
+                        layoutAlgorithm:  'squarified',
+                        levelIsConstant:  false,
+                        allowDrillToNode:  true,
+                        levels:  [{
+                                level:  1,
+                                layoutAlgorithm:  'squarified',
+                                dataLabels:  {
+                                        enabled:  true,
+                                        align:  'center',
+                                        verticalAlign:  'middle',
+                                        style:  {
+                                                fontSize:  '12px'
+                                        }
+                                }
+                        },
+                        {
+                            level:  2,
+                            dataLabels:  {
+                                enabled:  false
+                            }
+                        }],
+                        data:  <%=  @data.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

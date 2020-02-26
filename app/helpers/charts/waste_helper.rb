@@ -1,2 +1,2 @@
-module Charts::WasteHelper
+module  Charts::WasteHelper
 end

@@ -1,2 +1,2 @@
-module Charts::WeatherHelper
+module  Charts::WeatherHelper
 end

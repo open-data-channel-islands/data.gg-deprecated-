@@ -1,32 +1,32 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Market</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>Over 4</th>
-      <th>Unknown</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @bedrooms.each do |f| %>
-      <tr>
-        <td><%= f['Year'] %></td>
-        <td><%= f['Market'] %></td>
-        <td><%= f['1'] %></td>
-        <td><%= f['2'] %></td>
-        <td><%= f['3'] %></td>
-        <td><%= f['4'] %></td>
-        <td><%= f['Over 4'] %></td>
-        <td><%= f['Unknown'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Market</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>Over  4</th>
+            <th>Unknown</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @bedrooms.each  do  |f|  %>
+            <tr>
+                <td><%=  f['Year']  %></td>
+                <td><%=  f['Market']  %></td>
+                <td><%=  f['1']  %></td>
+                <td><%=  f['2']  %></td>
+                <td><%=  f['3']  %></td>
+                <td><%=  f['4']  %></td>
+                <td><%=  f['Over  4']  %></td>
+                <td><%=  f['Unknown']  %></td>
+            </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

@@ -1,34 +1,34 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>All other types of fires</th>
-      <th>Chimney fires</th>
-      <th>False alarms general</th>
-      <th>False alarms malicious</th>
-      <th>Special service emergency</th>
-      <th>Special service non-emergency</th>
-      <th>Special service Road Traffic Collisions</th>
-      <th>Special service General</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @attendances.each do |a| %>
-    <tr>
-      <td><%= a['Year'] %></td>
-      <td><%= a['All other types of fires'] %></td>
-      <td><%= a['Chimney fires'] %></td>
-      <td><%= a['False alarms general'] %></td>
-      <td><%= a['False alarms malicious'] %></td>
-      <td><%= a['Special service emergency'] %></td>
-      <td><%= a['Special service non-emergency'] %></td>
-      <td><%= a['Special service Road Traffic Collisions'] %></td>
-      <td><%= a['Special service General'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>All  other  types  of  fires</th>
+            <th>Chimney  fires</th>
+            <th>False  alarms  general</th>
+            <th>False  alarms  malicious</th>
+            <th>Special  service  emergency</th>
+            <th>Special  service  non-emergency</th>
+            <th>Special  service  Road  Traffic  Collisions</th>
+            <th>Special  service  General</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @attendances.each  do  |a|  %>
+        <tr>
+            <td><%=  a['Year']  %></td>
+            <td><%=  a['All  other  types  of  fires']  %></td>
+            <td><%=  a['Chimney  fires']  %></td>
+            <td><%=  a['False  alarms  general']  %></td>
+            <td><%=  a['False  alarms  malicious']  %></td>
+            <td><%=  a['Special  service  emergency']  %></td>
+            <td><%=  a['Special  service  non-emergency']  %></td>
+            <td><%=  a['Special  service  Road  Traffic  Collisions']  %></td>
+            <td><%=  a['Special  service  General']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

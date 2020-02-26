@@ -1,28 +1,28 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Arrival Date</th>
-        <th>Ship</th>
-        <th>Port of Registry</th>
-        <th>Pax</th>
-        <th>Arrival From</th>
-        <th>Departure To</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @cruises.each do |p| %>
-      <tr>
-        <td><%= p['Arrival Date'] %></td>
-        <td><%= p['Ship'] %></td>
-        <td><%= p['Port of Registry'] %></td>
-        <td><%= p['Pax'] %></td>
-        <td><%= p['Arrival From'] %></td>
-        <td><%= p['Departure To'] %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div  class="table-responsive">
+    <table  class="table">
+        <thead>
+            <tr>
+                <th>Arrival  Date</th>
+                <th>Ship</th>
+                <th>Port  of  Registry</th>
+                <th>Pax</th>
+                <th>Arrival  From</th>
+                <th>Departure  To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%  @cruises.each  do  |p|  %>
+            <tr>
+                <td><%=  p['Arrival  Date']  %></td>
+                <td><%=  p['Ship']  %></td>
+                <td><%=  p['Port  of  Registry']  %></td>
+                <td><%=  p['Pax']  %></td>
+                <td><%=  p['Arrival  From']  %></td>
+                <td><%=  p['Departure  To']  %></td>
+            </tr>
+            <%  end  %>
+        </tbody>
+    </table>
 </div>

@@ -1,2 +1,2 @@
-module Api::V1::SailingsHelper
+module  Api::V1::SailingsHelper
 end

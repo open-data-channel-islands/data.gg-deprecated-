@@ -1,17 +1,17 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Tourism', charts_tourism_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Tourism',  charts_tourism_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Tourism</h1>
+<div  class="page-header">
+    <h1>Tourism</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/tourism', 'cruises') %>"><%= link_to 'Cruises', charts_tourism_cruises_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/tourism', 'air_vs_sea_ann') %>"><%= link_to 'Air vs Sea', charts_tourism_air_vs_sea_ann_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/tourism',  'cruises')  %>"><%=  link_to  'Cruises',  charts_tourism_cruises_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/tourism',  'air_vs_sea_ann')  %>"><%=  link_to  'Air  vs  Sea',  charts_tourism_air_vs_sea_ann_path  %></li>
 </ul>

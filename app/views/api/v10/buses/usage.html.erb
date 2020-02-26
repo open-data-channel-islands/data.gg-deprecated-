@@ -1,42 +1,42 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>January</th>
-      <th>February</th>
-      <th>March</th>
-      <th>April</th>
-      <th>May</th>
-      <th>June</th>
-      <th>July</th>
-      <th>August</th>
-      <th>September</th>
-      <th>October</th>
-      <th>November</th>
-      <th>December</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @buses.each do |usage| %>
-    <tr>
-    <td><%= usage['Year'] %></td>
-    <td><%= usage['January'] %></td>
-    <td><%= usage['February'] %></td>
-    <td><%= usage['March'] %></td>
-    <td><%= usage['April'] %></td>
-    <td><%= usage['May'] %></td>
-    <td><%= usage['June'] %></td>
-    <td><%= usage['July'] %></td>
-    <td><%= usage['August'] %></td>
-    <td><%= usage['September'] %></td>
-    <td><%= usage['October'] %></td>
-    <td><%= usage['November'] %></td>
-    <td><%= usage['December'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>January</th>
+            <th>February</th>
+            <th>March</th>
+            <th>April</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>August</th>
+            <th>September</th>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @buses.each  do  |usage|  %>
+        <tr>
+        <td><%=  usage['Year']  %></td>
+        <td><%=  usage['January']  %></td>
+        <td><%=  usage['February']  %></td>
+        <td><%=  usage['March']  %></td>
+        <td><%=  usage['April']  %></td>
+        <td><%=  usage['May']  %></td>
+        <td><%=  usage['June']  %></td>
+        <td><%=  usage['July']  %></td>
+        <td><%=  usage['August']  %></td>
+        <td><%=  usage['September']  %></td>
+        <td><%=  usage['October']  %></td>
+        <td><%=  usage['November']  %></td>
+        <td><%=  usage['December']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

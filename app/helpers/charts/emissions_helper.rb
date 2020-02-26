@@ -1,2 +1,2 @@
-module Charts::EmissionsHelper
+module  Charts::EmissionsHelper
 end

@@ -1,123 +1,123 @@
 [
-  {
-    "Year": 2014,
-    "Type": "Apartment",
-    "Local Market": 6232,
-    "Open Market": 158
-  },
-  {
-    "Year": 2014,
-    "Type": "Bungalow",
-    "Local Market": 9860,
-    "Open Market": 373
-  },
-  {
-    "Year": 2014,
-    "Type": "House",
-    "Local Market": 8759,
-    "Open Market": 1044
-  },
-  {
-    "Year": 2014,
-    "Type": "Other",
-    "Local Market": 257,
-    "Open Market": 9
-  },
-  {
-    "Year":2015,
-    "Type":"Apartment",
-    "Local Market":6298,
-    "Open Market":165
-  },
-  {
-    "Year":2015,
-    "Type":"Bungalow",
-    "Local Market":9851,
-    "Open Market":370
-  },
-  {
-    "Year":2015,
-    "Type":"House",
-    "Local Market":8863,
-    "Open Market":1052
-  },
-  {
-    "Year":2015,
-    "Type":"Other",
-    "Local Market":246,
-    "Open Market":16
-  },
-  {
-    "Year":2016,
-    "Type":"Apartment",
-    "Local Market":6335,
-    "Open Market":166
-  },
-  {
-    "Year":2016,
-    "Type":"Bungalow",
-    "Local Market":9837,
-    "Open Market":366
-  },
-  {
-    "Year":2016,
-    "Type":"House",
-    "Local Market":8893,
-    "Open Market":1046
-  },
-  {
-    "Year":2016,
-    "Type":"Other",
-    "Local Market":245,
-    "Open Market":16
-  },
-  {
-    "Year":2017,
-    "Type":"Apartment",
-    "Local Market": 6401,
-    "Open Market":162
-  },
-  {
-    "Year":2017,
-    "Type":"Bungalow",
-    "Local Market": 9842,
-    "Open Market":359
-  },
-  {
-    "Year":2017,
-    "Type":"House",
-    "Local Market": 8919,
-    "Open Market": 1052 
-  },
-  {
-    "Year":2017,
-    "Type":"Other",
-    "Local Market":242,
-    "Open Market":16
-  },
-  {
-    "Year":2018,
-    "Type":"Apartment",
-    "Local Market":6492,
-    "Open Market":173
-  },
-  {
-    "Year":2018,
-    "Type":"Bungalow",
-    "Local Market":9867,
-    "Open Market":356
-  },
-  {
-    "Year":2018,
-    "Type":"House",
-    "Local Market":9026,
-    "Open Market":1054  
-  },
-  {
-    "Year":2018,
-    "Type":"Other",
-    "Local Market":247,
-    "Open Market":17
-  }
+    {
+        "Year":  2014,
+        "Type":  "Apartment",
+        "Local  Market":  6232,
+        "Open  Market":  158
+    },
+    {
+        "Year":  2014,
+        "Type":  "Bungalow",
+        "Local  Market":  9860,
+        "Open  Market":  373
+    },
+    {
+        "Year":  2014,
+        "Type":  "House",
+        "Local  Market":  8759,
+        "Open  Market":  1044
+    },
+    {
+        "Year":  2014,
+        "Type":  "Other",
+        "Local  Market":  257,
+        "Open  Market":  9
+    },
+    {
+        "Year":2015,
+        "Type":"Apartment",
+        "Local  Market":6298,
+        "Open  Market":165
+    },
+    {
+        "Year":2015,
+        "Type":"Bungalow",
+        "Local  Market":9851,
+        "Open  Market":370
+    },
+    {
+        "Year":2015,
+        "Type":"House",
+        "Local  Market":8863,
+        "Open  Market":1052
+    },
+    {
+        "Year":2015,
+        "Type":"Other",
+        "Local  Market":246,
+        "Open  Market":16
+    },
+    {
+        "Year":2016,
+        "Type":"Apartment",
+        "Local  Market":6335,
+        "Open  Market":166
+    },
+    {
+        "Year":2016,
+        "Type":"Bungalow",
+        "Local  Market":9837,
+        "Open  Market":366
+    },
+    {
+        "Year":2016,
+        "Type":"House",
+        "Local  Market":8893,
+        "Open  Market":1046
+    },
+    {
+        "Year":2016,
+        "Type":"Other",
+        "Local  Market":245,
+        "Open  Market":16
+    },
+    {
+        "Year":2017,
+        "Type":"Apartment",
+        "Local  Market":  6401,
+        "Open  Market":162
+    },
+    {
+        "Year":2017,
+        "Type":"Bungalow",
+        "Local  Market":  9842,
+        "Open  Market":359
+    },
+    {
+        "Year":2017,
+        "Type":"House",
+        "Local  Market":  8919,
+        "Open  Market":  1052  
+    },
+    {
+        "Year":2017,
+        "Type":"Other",
+        "Local  Market":242,
+        "Open  Market":16
+    },
+    {
+        "Year":2018,
+        "Type":"Apartment",
+        "Local  Market":6492,
+        "Open  Market":173
+    },
+    {
+        "Year":2018,
+        "Type":"Bungalow",
+        "Local  Market":9867,
+        "Open  Market":356
+    },
+    {
+        "Year":2018,
+        "Type":"House",
+        "Local  Market":9026,
+        "Open  Market":1054    
+    },
+    {
+        "Year":2018,
+        "Type":"Other",
+        "Local  Market":247,
+        "Open  Market":17
+    }
 ]
 

@@ -1,67 +1,67 @@
-<%= render 'head' %>
-<div id="container_key">
-  <div class="panel panel-default">
-    <div class="panel-heading" id="parish-name"></div>
-    <div class="panel-body" id="parish-detail"></div>
-  </div>
+<%=  render  'head'  %>
+<div  id="container_key">
+    <div  class="panel  panel-default">
+        <div  class="panel-heading"  id="parish-name"></div>
+        <div  class="panel-body"  id="parish-detail"></div>
+    </div>
 </div>
-<div id="container_parish" style="display:block; margin:auto;text-align:center;">
-  <%= raw(@svg) %>
+<div  id="container_parish"  style="display:block;  margin:auto;text-align:center;">
+    <%=  raw(@svg)  %>
 </div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/population' %></p>
-<p>&#169; States of Guernsey 2015</p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/population'  %></p>
+<p>&#169;  States  of  Guernsey  2015</p>
 
 
-<script type="text/javascript">
-$(function() {
-  initPage();
+<script  type="text/javascript">
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
+function  initPage()  {
 
-  var dict = {
-    "path_alderney" : ["Alderney", "Population (2017): -"],
-    "path_sark" : ["Sark", "Population (2017): -"],
-    "path_herm" : ["Herm", "Population (2017): 76"],
-    "path_torteval" : ["Torteval", "Population (2017): 1,009"],
-    "path_st_pierre_du_bois" : ["St Pierre Du Bois", "Population (2017): 2,059"],
-    "path_st_saviour" : ["St Saviour", "Population (2017): 2,770"],
-    "path_forest" : ["Forest", "Population (2017): 1,536"],
-    "path_st_andrew" : ["St Andrew", "Population (2017): 2,295"],
-    "path_st_martin" : ["St Martin", "Population (2017): 6,500"],
-    "path_st_peter_port" : ["St Peter Port", "Population (2017): 18,694"],
-    "path_castel" : ["Castel", "Population (2017): 8,734"],
-    "path_vale" : ["Vale", "Population (2017): 9,464"],
-    "path_st_sampson" : ["St Sampson", "Population (2017): 8,922"],
-  };
-
-
-
-  $("[inkscape\\:label^=path_]").hover(function() {
-      //$("[class^=text_]").attr("visibility","hidden");
-      $("[inkscape\\:label^=path_]").css("fill","#cccccc");
-     /* $("#parish-name").html("");
-      $("#parish-detail").html("");*/
+    var  dict  =  {
+        "path_alderney"  :  ["Alderney",  "Population  (2017):  -"],
+        "path_sark"  :  ["Sark",  "Population  (2017):  -"],
+        "path_herm"  :  ["Herm",  "Population  (2017):  76"],
+        "path_torteval"  :  ["Torteval",  "Population  (2017):  1,009"],
+        "path_st_pierre_du_bois"  :  ["St  Pierre  Du  Bois",  "Population  (2017):  2,059"],
+        "path_st_saviour"  :  ["St  Saviour",  "Population  (2017):  2,770"],
+        "path_forest"  :  ["Forest",  "Population  (2017):  1,536"],
+        "path_st_andrew"  :  ["St  Andrew",  "Population  (2017):  2,295"],
+        "path_st_martin"  :  ["St  Martin",  "Population  (2017):  6,500"],
+        "path_st_peter_port"  :  ["St  Peter  Port",  "Population  (2017):  18,694"],
+        "path_castel"  :  ["Castel",  "Population  (2017):  8,734"],
+        "path_vale"  :  ["Vale",  "Population  (2017):  9,464"],
+        "path_st_sampson"  :  ["St  Sampson",  "Population  (2017):  8,922"],
+    };
 
 
-      /*alert($(this).attr('id'));*/
-      var path_parish = $(this).attr("inkscape\:label");
-      var parish = path_parish.substring(5, path_parish.length);
-      //var selector = "[inkscape\\:label='text_" + parish + ']';
 
-      $("[inkscape\\:label=" + path_parish + "]").css("fill","orange");
-
-      $("#parish-name").html(dict[path_parish][0]);
-      $("#parish-detail").html(dict[path_parish][1]);
-    });
+    $("[inkscape\\:label^=path_]").hover(function()  {
+            //$("[class^=text_]").attr("visibility","hidden");
+            $("[inkscape\\:label^=path_]").css("fill","#cccccc");
+          /*  $("#parish-name").html("");
+            $("#parish-detail").html("");*/
 
 
-/*  $('#container_parish > svg > g > text:first').attr("visibility","shown");*/
- /* $('[class^=text_]').attr("visibility","shown");*/
+            /*alert($(this).attr('id'));*/
+            var  path_parish  =  $(this).attr("inkscape\:label");
+            var  parish  =  path_parish.substring(5,  path_parish.length);
+            //var  selector  =  "[inkscape\\:label='text_"  +  parish  +  ']';
+
+            $("[inkscape\\:label="  +  path_parish  +  "]").css("fill","orange");
+
+            $("#parish-name").html(dict[path_parish][0]);
+            $("#parish-detail").html(dict[path_parish][1]);
+        });
+
+
+/*    $('#container_parish  >  svg  >  g  >  text:first').attr("visibility","shown");*/
+  /*  $('[class^=text_]').attr("visibility","shown");*/
 
 }
 </script>

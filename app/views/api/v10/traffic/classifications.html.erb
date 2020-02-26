@@ -1,24 +1,24 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Fatal</th>
-      <th>Serious</th>
-      <th>Slight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @traffic.each do |f| %>
-    <tr>
-    <td><%= f['Year'] %></td>
-    <td><%= f['Fatal'] %></td>
-    <td><%= f['Serious'] %></td>
-    <td><%= f['Slight'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Fatal</th>
+            <th>Serious</th>
+            <th>Slight</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @traffic.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Year']  %></td>
+        <td><%=  f['Fatal']  %></td>
+        <td><%=  f['Serious']  %></td>
+        <td><%=  f['Slight']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

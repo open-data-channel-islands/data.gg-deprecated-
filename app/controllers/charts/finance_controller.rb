@@ -1,30 +1,30 @@
-class Charts::FinanceController < ApplicationController
+class  Charts::FinanceController  <  ApplicationController
 
-  def licences
-    @title = 'Licences'
-    banking_json = File.read("storage/#{ENV['place_code']}/finance/banking.json")
-    banking = JSON.parse(banking_json)
+    def  licences
+        @title  =  'Licences'
+        banking_json  =  File.read("storage/#{ENV['place_code']}/finance/banking.json")
+        banking  =  JSON.parse(banking_json)
 
-    @licences = []
-    @labels = []
+        @licences  =  []
+        @labels  =  []
 
-    banking.sort_by{ |p| p["Quarter"] }.each do |val|
-      @labels << val["Quarter"].to_s
-      @licences << val['BankingLicences']
+        banking.sort_by{  |p|  p["Quarter"]  }.each  do  |val|
+            @labels  <<  val["Quarter"].to_s
+            @licences  <<  val['BankingLicences']
+        end
     end
-  end
 
-  def deposits
-    @title = 'Deposits'
-    banking_json = File.read("storage/#{ENV['place_code']}/finance/banking.json")
-    banking = JSON.parse(banking_json)
+    def  deposits
+        @title  =  'Deposits'
+        banking_json  =  File.read("storage/#{ENV['place_code']}/finance/banking.json")
+        banking  =  JSON.parse(banking_json)
 
-    @deposits = []
-    @labels = []
+        @deposits  =  []
+        @labels  =  []
 
-    banking.sort_by{ |p| p["Quarter"] }.each do |val|
-      @labels << val["Quarter"].to_s
-      @deposits << val['TotalDeposits']
+        banking.sort_by{  |p|  p["Quarter"]  }.each  do  |val|
+            @labels  <<  val["Quarter"].to_s
+            @deposits  <<  val['TotalDeposits']
+        end
     end
-  end
 end

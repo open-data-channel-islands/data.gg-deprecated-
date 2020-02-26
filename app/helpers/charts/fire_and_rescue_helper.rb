@@ -1,2 +1,2 @@
-module Charts::FireAndRescueHelper
+module  Charts::FireAndRescueHelper
 end

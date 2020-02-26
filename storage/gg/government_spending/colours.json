@@ -1,14 +1,14 @@
 {
-  "Health and community services": "#4472c4" ,
-  "Old age pensions": "#62aa88" ,
-  "Education": "#fff2cc" ,
-  "Social welfare benefits": "#66ccff" ,
-  "Order and safety": "#e2f0d9" ,
-  "Government and administration": "#ff6600" ,
-  "Capital investment": "#ffff00" ,
-  "Land management infrastructure and transport": "#ff0000" ,
-  "Economic development and tourism": "#cc3399" ,
-  "Arts sport and culture": "#cc99ff",
-  "Alderney": "#0070c0",
-  "Overseas aid": "#ffe699"
+    "Health  and  community  services":  "#4472c4"  ,
+    "Old  age  pensions":  "#62aa88"  ,
+    "Education":  "#fff2cc"  ,
+    "Social  welfare  benefits":  "#66ccff"  ,
+    "Order  and  safety":  "#e2f0d9"  ,
+    "Government  and  administration":  "#ff6600"  ,
+    "Capital  investment":  "#ffff00"  ,
+    "Land  management  infrastructure  and  transport":  "#ff0000"  ,
+    "Economic  development  and  tourism":  "#cc3399"  ,
+    "Arts  sport  and  culture":  "#cc99ff",
+    "Alderney":  "#0070c0",
+    "Overseas  aid":  "#ffe699"
 }

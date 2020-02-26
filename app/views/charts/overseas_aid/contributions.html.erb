@@ -1,87 +1,87 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_overseas_aid_contributions" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div  id="container_overseas_aid_contributions"  style="min-width:  310px;  height:  400px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/pru' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/pru'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_overseas_aid_contributions').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            categories: <%= @labels.to_json.html_safe %>,
-            crosshair: true,
-            title: { text: 'Year' }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Amount'
-            }
-        },
-        tooltip: {
-            shared: true,
-        },
-        series: [{
-                  name: 'Africa Aid',
-                  data: <%= @africa_aid.to_json.html_safe -%>
+function  initPage()  {
+        $('#container_overseas_aid_contributions').highcharts({
+                chart:  {
+                        type:  'column'
                 },
-                {
-                  name: 'Africa Emergency Relief',
-                  data: <%= @africa_emergency.to_json.html_safe -%>
+                title:  {
+                        text:  '<%=  @title  %>'
                 },
-                {
-                  name: 'Europe Aid',
-                  data: <%= @eu_aid.to_json.html_safe -%>
+                xAxis:  {
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        crosshair:  true,
+                        title:  {  text:  'Year'  }
                 },
-                {
-                  name: 'Europe Emergency Relief',
-                  data: <%= @eu_emergency.to_json.html_safe -%>
+                yAxis:  {
+                        min:  0,
+                        title:  {
+                                text:  'Amount'
+                        }
                 },
-                {
-                  name: 'Indian Sub-Continent Aid',
-                  data: <%= @india_aid.to_json.html_safe -%>
+                tooltip:  {
+                        shared:  true,
                 },
-                {
-                  name: 'Indian Sub-Continent Emergency Relief',
-                  data: <%= @india_emergency.to_json.html_safe -%>
-                },
-                {
-                  name: 'Latin America and Caribbean Aid',
-                  data: <%= @latin_aid.to_json.html_safe -%>
-                },
-                {
-                  name: 'Latin America and Caribbean Emergency Relief',
-                  data: <%= @latin_emergency.to_json.html_safe -%>
-                },
-                {
-                  name: 'Other Asia and Pacific Aid',
-                  data: <%= @asia_aid.to_json.html_safe -%>
-                },
-                {
-                  name: 'Other Asia and Pacific Emergency Relief',
-                  data: <%= @asia_emergency.to_json.html_safe -%>
-                },
-                {
-                  name: 'Middle East Aid',
-                  data: <%= @mid_east_aid.to_json.html_safe -%>
-                },
-                {
-                  name: 'Middle East Emergency Relief',
-                  data: <%= @mid_east_emergency.to_json.html_safe -%>
-          }]
-    });
+                series:  [{
+                                    name:  'Africa  Aid',
+                                    data:  <%=  @africa_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Africa  Emergency  Relief',
+                                    data:  <%=  @africa_emergency.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Europe  Aid',
+                                    data:  <%=  @eu_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Europe  Emergency  Relief',
+                                    data:  <%=  @eu_emergency.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Indian  Sub-Continent  Aid',
+                                    data:  <%=  @india_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Indian  Sub-Continent  Emergency  Relief',
+                                    data:  <%=  @india_emergency.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Latin  America  and  Caribbean  Aid',
+                                    data:  <%=  @latin_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Latin  America  and  Caribbean  Emergency  Relief',
+                                    data:  <%=  @latin_emergency.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Other  Asia  and  Pacific  Aid',
+                                    data:  <%=  @asia_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Other  Asia  and  Pacific  Emergency  Relief',
+                                    data:  <%=  @asia_emergency.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Middle  East  Aid',
+                                    data:  <%=  @mid_east_aid.to_json.html_safe  -%>
+                                },
+                                {
+                                    name:  'Middle  East  Emergency  Relief',
+                                    data:  <%=  @mid_east_emergency.to_json.html_safe  -%>
+                    }]
+        });
 }
-<% end %>
+<%  end  %>

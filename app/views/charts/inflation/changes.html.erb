@@ -1,50 +1,50 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_changes" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_changes"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/rpi' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/rpi'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var xLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  xLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_changes').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: 'RPI vs RPIX (31/12/1998 is 100)'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: xLabels,
-            title: {
-                text: 'Quarter'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            minPadding: 0,
-            maxPadding: 0,
-            title: {
-                text: 'Value'
-            }
-        },
-        series: [{
-            name: 'RPI',
-            data: <%= @rpis.to_json.html_safe -%>
-        },
-        {
-            name: 'RPIX',
-            data: <%= @rpixs.to_json.html_safe -%>
-        }]
-    });
+        $('#container_changes').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  'RPI  vs  RPIX  (31/12/1998  is  100)'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  xLabels,
+                        title:  {
+                                text:  'Quarter'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        minPadding:  0,
+                        maxPadding:  0,
+                        title:  {
+                                text:  'Value'
+                        }
+                },
+                series:  [{
+                        name:  'RPI',
+                        data:  <%=  @rpis.to_json.html_safe  -%>
+                },
+                {
+                        name:  'RPIX',
+                        data:  <%=  @rpixs.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

@@ -1,2 +1,2 @@
-module Charts::TransportHelper
+module  Charts::TransportHelper
 end

@@ -1,2 +1,2 @@
-module Api::V10::EnergyHelper
+module  Api::V10::EnergyHelper
 end

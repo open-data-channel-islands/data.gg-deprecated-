@@ -1,49 +1,49 @@
-<% content_for :head do %>
-<%= javascript_include_tag 'slider', async: false %>
-<% end %>
+<%  content_for  :head  do  %>
+<%=  javascript_include_tag  'slider',  async:  false  %>
+<%  end  %>
 
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<h3 class="text-center">Slider (2015)</h3>
-<p class="lead">Input your salary to see your daily contribution towards the different categories based on a flat 20%. We're going to add options to improve accuracy later. The numbers shown are contributions to each category daily (given 365 days in a year).</p>
-<div class="row">
-  <div class="col-md-3">
-    <h4>Salary</h4>
-    <p><strong>£ </strong><span data-bind="text: salary"></span></p>
-  </div>
+<h3  class="text-center">Slider  (2015)</h3>
+<p  class="lead">Input  your  salary  to  see  your  daily  contribution  towards  the  different  categories  based  on  a  flat  20%.  We're  going  to  add  options  to  improve  accuracy  later.  The  numbers  shown  are  contributions  to  each  category  daily  (given  365  days  in  a  year).</p>
+<div  class="row">
+    <div  class="col-md-3">
+        <h4>Salary</h4>
+        <p><strong>£  </strong><span  data-bind="text:  salary"></span></p>
+    </div>
 
-  <div class="col-md-6">  <div class="form-group">
-    <label for="exampleInputEmail1">Salary (to be replaced with slider)</label>
-    <input type="number" class="form-control" id="salaryInput" data-bind="value: salary" placeholder="Salary..." step="1000" min="0" max="500000">
-  </div></div>
+    <div  class="col-md-6">    <div  class="form-group">
+        <label  for="exampleInputEmail1">Salary  (to  be  replaced  with  slider)</label>
+        <input  type="number"  class="form-control"  id="salaryInput"  data-bind="value:  salary"  placeholder="Salary..."  step="1000"  min="0"  max="500000">
+    </div></div>
 
-  <div class="col-md-3 text-right">
-    <h4>Tax</h4>
-    <p><strong>£ </strong><span data-bind="text: tax"></span></p>
-  </div>
+    <div  class="col-md-3  text-right">
+        <h4>Tax</h4>
+        <p><strong>£  </strong><span  data-bind="text:  tax"></span></p>
+    </div>
 </div>
 
 
-<div class="row">
-  <div class="col-md-4"><strong>Health and community services</strong><div data-bind="text: healthCommunityServices"></div></div>
-  <div class="col-md-4"><strong>Pensions</strong><div data-bind="text: pensions"></div></div>
-  <div class="col-md-4"><strong>Education</strong><div data-bind="text: education"></div></div>
+<div  class="row">
+    <div  class="col-md-4"><strong>Health  and  community  services</strong><div  data-bind="text:  healthCommunityServices"></div></div>
+    <div  class="col-md-4"><strong>Pensions</strong><div  data-bind="text:  pensions"></div></div>
+    <div  class="col-md-4"><strong>Education</strong><div  data-bind="text:  education"></div></div>
 </div>
 
-<div class="row">
-  <div class="col-md-4"><strong>Social welfare benefits</strong><div data-bind="text: socialWelfareBenefits"></div></div>
-  <div class="col-md-4"><strong>Order and Safety</strong><div data-bind="text: orderSafety"></div></div>
-  <div class="col-md-4"><strong>Government and administration</strong><div data-bind="text: governmentAdministration"></div></div>
+<div  class="row">
+    <div  class="col-md-4"><strong>Social  welfare  benefits</strong><div  data-bind="text:  socialWelfareBenefits"></div></div>
+    <div  class="col-md-4"><strong>Order  and  Safety</strong><div  data-bind="text:  orderSafety"></div></div>
+    <div  class="col-md-4"><strong>Government  and  administration</strong><div  data-bind="text:  governmentAdministration"></div></div>
 </div>
 
-<div class="row">
-  <div class="col-md-4"><strong>Land management infrastructure and transport</strong><div data-bind="text: landManagementInfrastructureTransport"></div></div>
-  <div class="col-md-4"><strong>Economic development and tourism</strong><div data-bind="text: economicDevelopmentTourism"></div></div>
-  <div class="col-md-4"><strong>Arts sport and culture</strong><div data-bind="text: artsSportCulture"></div></div>
+<div  class="row">
+    <div  class="col-md-4"><strong>Land  management  infrastructure  and  transport</strong><div  data-bind="text:  landManagementInfrastructureTransport"></div></div>
+    <div  class="col-md-4"><strong>Economic  development  and  tourism</strong><div  data-bind="text:  economicDevelopmentTourism"></div></div>
+    <div  class="col-md-4"><strong>Arts  sport  and  culture</strong><div  data-bind="text:  artsSportCulture"></div></div>
 </div>
 
-<div class="row">
-  <div class="col-md-4"><strong>Appropriation to Capital Reserve</strong><div data-bind="text: appropriationToCapitalReserve"></div></div>
-  <div class="col-md-4"><strong>Alderney</strong><div data-bind="text: alderney"></div></div>
-  <div class="col-md-4"><strong>Overseas Aid</strong><div data-bind="text: overseasAid"></div></div>
+<div  class="row">
+    <div  class="col-md-4"><strong>Appropriation  to  Capital  Reserve</strong><div  data-bind="text:  appropriationToCapitalReserve"></div></div>
+    <div  class="col-md-4"><strong>Alderney</strong><div  data-bind="text:  alderney"></div></div>
+    <div  class="col-md-4"><strong>Overseas  Aid</strong><div  data-bind="text:  overseasAid"></div></div>
 </div>

@@ -1,2 +1,2 @@
-class Parish < ActiveRecord::Base
+class  Parish  <  ActiveRecord::Base
 end

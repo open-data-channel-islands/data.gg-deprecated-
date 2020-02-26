@@ -1,2 +1,2 @@
-module Api::V10::EmissionsHelper
+module  Api::V10::EmissionsHelper
 end

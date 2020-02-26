@@ -1,4 +1,4 @@
-class Charts::FishingController < ApplicationController
-  def index
-  end
+class  Charts::FishingController  <  ApplicationController
+    def  index
+    end
 end

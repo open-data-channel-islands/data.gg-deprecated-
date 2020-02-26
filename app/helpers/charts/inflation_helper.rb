@@ -1,2 +1,2 @@
-module Charts::InflationHelper
+module  Charts::InflationHelper
 end

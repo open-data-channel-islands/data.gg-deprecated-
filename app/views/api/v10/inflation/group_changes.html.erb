@@ -1,24 +1,24 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Quarter</th>
-      <th>Type</th>
-      <th>Quarterly Change</th>
-      <th>Annual Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @group_changes.each do |f| %>
-      <tr>
-        <td><%= f['Quarter'] %></td>
-        <td><%= f['Type'] %></td>
-        <td><%= f['Quarterly Change'] %></td>
-        <td><%= f['Annual Change'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Quarter</th>
+            <th>Type</th>
+            <th>Quarterly  Change</th>
+            <th>Annual  Change</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @group_changes.each  do  |f|  %>
+            <tr>
+                <td><%=  f['Quarter']  %></td>
+                <td><%=  f['Type']  %></td>
+                <td><%=  f['Quarterly  Change']  %></td>
+                <td><%=  f['Annual  Change']  %></td>
+            </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

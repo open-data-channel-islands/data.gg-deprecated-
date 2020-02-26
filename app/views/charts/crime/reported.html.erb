@@ -1,44 +1,44 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_reported" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+<div  id="container_reported"  style="min-width:  310px;  height:  600px;  margin:  0  auto"></div>
 
- <p>Source: <%= link_to 'guernsey.police.uk', 'http://www.guernsey.police.uk/article/6078/Publications' %></p>
+  <p>Source:  <%=  link_to  'guernsey.police.uk',  'http://www.guernsey.police.uk/article/6078/Publications'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
+function  initPage()  {
 
-    $('#container_reported').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            crosshair: true,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Count'
-            }
-        },
-        tooltip: {
-            shared: true,
-        },
-        series: <%= @results.to_json.html_safe %>
-    });
+        $('#container_reported').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        crosshair:  true,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Count'
+                        }
+                },
+                tooltip:  {
+                        shared:  true,
+                },
+                series:  <%=  @results.to_json.html_safe  %>
+        });
 }
-<% end %>
+<%  end  %>

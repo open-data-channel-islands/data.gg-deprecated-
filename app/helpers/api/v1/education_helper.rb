@@ -1,2 +1,2 @@
-module Api::V1::EducationHelper
+module  Api::V1::EducationHelper
 end

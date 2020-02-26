@@ -1,4 +1,4 @@
-class MapsController < ApplicationController
-  def guernsey
-  end
+class  MapsController  <  ApplicationController
+    def  guernsey
+    end
 end

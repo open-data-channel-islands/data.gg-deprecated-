@@ -1,58 +1,58 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_health_new" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_health_new"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<%= javascript_tag do %>
+<%=  javascript_tag  do  %>
 
-$(function() {
-  initPage();
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    var yLabels = <%= @labels.to_json.html_safe %>;
+function  initPage()  {
+        var  yLabels  =  <%=  @labels.to_json.html_safe  %>;
 
-    $('#container_health_new').highcharts({
-        chart: {
-            type: 'area'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: yLabels,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: '<%= @title %>'
-            },
-        },
-        plotOptions: {
-            area: {
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 2,
-                    states: {
-                        hover: {
-                            enabled: true
+        $('#container_health_new').highcharts({
+                chart:  {
+                        type:  'area'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  yLabels,
+                        title:  {
+                                text:  'Year'
                         }
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Local',
-            showInLegend: false,
-            data: <%= @data.to_json.html_safe -%>
-        }]
-    });
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  '<%=  @title  %>'
+                        },
+                },
+                plotOptions:  {
+                        area:  {
+                                marker:  {
+                                        enabled:  false,
+                                        symbol:  'circle',
+                                        radius:  2,
+                                        states:  {
+                                                hover:  {
+                                                        enabled:  true
+                                                }
+                                        }
+                                }
+                        }
+                },
+                series:  [{
+                        name:  'Local',
+                        showInLegend:  false,
+                        data:  <%=  @data.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

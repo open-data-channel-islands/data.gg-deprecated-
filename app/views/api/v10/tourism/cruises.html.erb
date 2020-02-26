@@ -1,20 +1,20 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>No. of cruise passengers</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @cruises.each do |c| %>
-    <tr>
-      <td><%= c['Date'] %></td>
-      <td><%= c['No. of cruise passengers'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>No.  of  cruise  passengers</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @cruises.each  do  |c|  %>
+        <tr>
+            <td><%=  c['Date']  %></td>
+            <td><%=  c['No.  of  cruise  passengers']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

@@ -1,17 +1,17 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Finance', charts_finance_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Finance',  charts_finance_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Finance</h1>
+<div  class="page-header">
+    <h1>Finance</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/finance', 'deposits') %>"><%= link_to 'Deposits', charts_finance_deposits_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/finance', 'licences') %>"><%= link_to 'Licences', charts_finance_licences_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/finance',  'deposits')  %>"><%=  link_to  'Deposits',  charts_finance_deposits_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/finance',  'licences')  %>"><%=  link_to  'Licences',  charts_finance_licences_path  %></li>
 </ul>

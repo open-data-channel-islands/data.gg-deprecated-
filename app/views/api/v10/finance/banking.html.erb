@@ -1,24 +1,24 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Quarter</th>
-      <th>Banking Licences</th>
-      <th>Total Deposits</th>
-      <th>Percentage Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @banking.each do |f| %>
-    <tr>
-    <td><%= f['Quarter'] %></td>
-    <td><%= f['BankingLicences'] %></td>
-    <td><%= f['TotalDeposits'] %></td>
-    <td><%= f['PercentageChange'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Quarter</th>
+            <th>Banking  Licences</th>
+            <th>Total  Deposits</th>
+            <th>Percentage  Change</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @banking.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Quarter']  %></td>
+        <td><%=  f['BankingLicences']  %></td>
+        <td><%=  f['TotalDeposits']  %></td>
+        <td><%=  f['PercentageChange']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

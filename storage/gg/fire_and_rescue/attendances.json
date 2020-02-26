@@ -1,134 +1,134 @@
 [
-  {
-    "Year":2006,
-    "All other types of fires":205,
-    "Chimney fires":37,
-    "False alarms general":495,
-    "False alarms malicious":12,
-    "Special service emergency":125,
-    "Special service non-emergency":113,
-    "Special service Road Traffic Collisions":null,
-    "Special service General":null
-  },
-  {
-    "Year":2007,
-    "All other types of fires":173,
-    "Chimney fires":40,
-    "False alarms general":438,
-    "False alarms malicious":18,
-    "Special service emergency":131,
-    "Special service non-emergency":155,
-    "Special service Road Traffic Collisions":null,
-    "Special service General":null
-  },
-  {
-    "Year":2008,
-    "All other types of fires":165,
-    "Chimney fires":49,
-    "False alarms general":455,
-    "False alarms malicious":10,
-    "Special service emergency":129,
-    "Special service non-emergency":134,
-    "Special service Road Traffic Collisions":null,
-    "Special service General":null
-  },
-  {
-    "Year":2009,
-    "All other types of fires":154,
-    "Chimney fires":58,
-    "False alarms general":377,
-    "False alarms malicious":8,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":52,
-    "Special service General":172
-  },
-  {
-    "Year":2010,
-    "All other types of fires":157,
-    "Chimney fires":50,
-    "False alarms general":388,
-    "False alarms malicious":3,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":80,
-    "Special service General":174
-  },
-  {
-    "Year":2011,
-    "All other types of fires":128,
-    "Chimney fires":36,
-    "False alarms general":418,
-    "False alarms malicious":5,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":58,
-    "Special service General":164
-  },
-  {
-    "Year":2012,
-    "All other types of fires":113,
-    "Chimney fires":31,
-    "False alarms general":388,
-    "False alarms malicious":2,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":59,
-    "Special service General":203
-  },
-  {
-    "Year":2013,
-    "All other types of fires":112,
-    "Chimney fires":46,
-    "False alarms general":370,
-    "False alarms malicious":3,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":65,
-    "Special service General":182
-  },
-  {
-    "Year":2014,
-    "All other types of fires":106,
-    "Chimney fires":20,
-    "False alarms general":398,
-    "False alarms malicious":9,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":68,
-    "Special service General":278
-  },
-  {
-    "Year":2015,
-    "All other types of fires":143,
-    "Chimney fires":25,
-    "False alarms general":445,
-    "False alarms malicious":7,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":105,
-    "Special service General":166
-  },
-  {
-    "Year":2016,
-    "All other types of fires":104,
-    "Chimney fires":21,
-    "False alarms general":442,
-    "False alarms malicious":9,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":79,
-    "Special service General":306
-  },
-  {
-    "Year":2017,
-    "All other types of fires":103,
-    "Chimney fires":17,
-    "False alarms general":446,
-    "False alarms malicious":7,
-    "Special service emergency":null,
-    "Special service non-emergency":null,
-    "Special service Road Traffic Collisions":52,
-    "Special service General":290
-  }
+    {
+        "Year":2006,
+        "All  other  types  of  fires":205,
+        "Chimney  fires":37,
+        "False  alarms  general":495,
+        "False  alarms  malicious":12,
+        "Special  service  emergency":125,
+        "Special  service  non-emergency":113,
+        "Special  service  Road  Traffic  Collisions":null,
+        "Special  service  General":null
+    },
+    {
+        "Year":2007,
+        "All  other  types  of  fires":173,
+        "Chimney  fires":40,
+        "False  alarms  general":438,
+        "False  alarms  malicious":18,
+        "Special  service  emergency":131,
+        "Special  service  non-emergency":155,
+        "Special  service  Road  Traffic  Collisions":null,
+        "Special  service  General":null
+    },
+    {
+        "Year":2008,
+        "All  other  types  of  fires":165,
+        "Chimney  fires":49,
+        "False  alarms  general":455,
+        "False  alarms  malicious":10,
+        "Special  service  emergency":129,
+        "Special  service  non-emergency":134,
+        "Special  service  Road  Traffic  Collisions":null,
+        "Special  service  General":null
+    },
+    {
+        "Year":2009,
+        "All  other  types  of  fires":154,
+        "Chimney  fires":58,
+        "False  alarms  general":377,
+        "False  alarms  malicious":8,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":52,
+        "Special  service  General":172
+    },
+    {
+        "Year":2010,
+        "All  other  types  of  fires":157,
+        "Chimney  fires":50,
+        "False  alarms  general":388,
+        "False  alarms  malicious":3,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":80,
+        "Special  service  General":174
+    },
+    {
+        "Year":2011,
+        "All  other  types  of  fires":128,
+        "Chimney  fires":36,
+        "False  alarms  general":418,
+        "False  alarms  malicious":5,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":58,
+        "Special  service  General":164
+    },
+    {
+        "Year":2012,
+        "All  other  types  of  fires":113,
+        "Chimney  fires":31,
+        "False  alarms  general":388,
+        "False  alarms  malicious":2,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":59,
+        "Special  service  General":203
+    },
+    {
+        "Year":2013,
+        "All  other  types  of  fires":112,
+        "Chimney  fires":46,
+        "False  alarms  general":370,
+        "False  alarms  malicious":3,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":65,
+        "Special  service  General":182
+    },
+    {
+        "Year":2014,
+        "All  other  types  of  fires":106,
+        "Chimney  fires":20,
+        "False  alarms  general":398,
+        "False  alarms  malicious":9,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":68,
+        "Special  service  General":278
+    },
+    {
+        "Year":2015,
+        "All  other  types  of  fires":143,
+        "Chimney  fires":25,
+        "False  alarms  general":445,
+        "False  alarms  malicious":7,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":105,
+        "Special  service  General":166
+    },
+    {
+        "Year":2016,
+        "All  other  types  of  fires":104,
+        "Chimney  fires":21,
+        "False  alarms  general":442,
+        "False  alarms  malicious":9,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":79,
+        "Special  service  General":306
+    },
+    {
+        "Year":2017,
+        "All  other  types  of  fires":103,
+        "Chimney  fires":17,
+        "False  alarms  general":446,
+        "False  alarms  malicious":7,
+        "Special  service  emergency":null,
+        "Special  service  non-emergency":null,
+        "Special  service  Road  Traffic  Collisions":52,
+        "Special  service  General":290
+    }
 ]

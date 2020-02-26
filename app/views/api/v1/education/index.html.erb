@@ -1,61 +1,61 @@
-<% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li class="active">Education</li>
-  </ol>
-<% end %>
+<%  content_for  :breadcrumb  do  %>
+    <ol  class="breadcrumb">
+        <li><%=  link_to  "Home",  root_path  %></li>
+        <li  class="active">Education</li>
+    </ol>
+<%  end  %>
 
 <h2>Education</h2>
-<h3>Post 16 Results</h3>
-<div class="row">
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_post16results_path(:format => "xml") %>
-    XML
-  </div>
+<h3>Post  16  Results</h3>
+<div  class="row">
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_post16results_path(:format  =>  "xml")  %>
+        XML
+    </div>
 
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_post16results_path(:format => "json") %>
-    JSON
-  </div>
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_post16results_path(:format => "html") %>
-    HTML
-  </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_post16results_path(:format  =>  "json")  %>
+        JSON
+    </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_post16results_path(:format  =>  "html")  %>
+        HTML
+    </div>
 </div>
 
-<h3>GCSEs Overall</h3>
-<div class="row">
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_overall_path(:format => "xml") %>
-    XML
-  </div>
+<h3>GCSEs  Overall</h3>
+<div  class="row">
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_overall_path(:format  =>  "xml")  %>
+        XML
+    </div>
 
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_overall_path(:format => "json") %>
-    JSON
-  </div>
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_overall_path(:format => "html") %>
-    HTML
-  </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_overall_path(:format  =>  "json")  %>
+        JSON
+    </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_overall_path(:format  =>  "html")  %>
+        HTML
+    </div>
 </div>
 
-<h3>GCSEs by School</h3>
-<div class="row">
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_school_path(:format => "xml") %>
-    XML
-  </div>
+<h3>GCSEs  by  School</h3>
+<div  class="row">
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_school_path(:format  =>  "xml")  %>
+        XML
+    </div>
 
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_school_path(:format => "json") %>
-    JSON
-  </div>
-  <div class="col-md-4 padded-cell">
-  <%= link_to image_tag("note-64x64.png"), api_v1_education_gcse_school_path(:format => "html") %>
-    HTML
-  </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_school_path(:format  =>  "json")  %>
+        JSON
+    </div>
+    <div  class="col-md-4  padded-cell">
+    <%=  link_to  image_tag("note-64x64.png"),  api_v1_education_gcse_school_path(:format  =>  "html")  %>
+        HTML
+    </div>
 </div>
 
 <h3>Source</h3>
-<%= link_to 'education.gg website', 'http://www.education.gg' %>
+<%=  link_to  'education.gg  website',  'http://www.education.gg'  %>

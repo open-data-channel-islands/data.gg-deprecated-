@@ -1,17 +1,17 @@
 <tr>
-  <td><%= name %></td>
-  <td>1.0</td>
-  <td><%= desc %></td>
-  <td><% if updated == 'live' %>
-  <span class="label label-default">LIVE!</span>
-  <% else %>
-  <%= updated %>
-  <% end %></td>
-  <td>
-    <%= link_to 'XML', target.call(:format => "xml"), class: 'label label-primary label-format'  %>
-    <%= link_to 'JSON', target.call(:format => "json"), class: 'label label-info label-format' %>
-    <%= link_to 'Embeddable HTML', target.call(:format => "html", layout: false), class: 'label label-warning label-format' %>
-    <%= link_to 'HTML', target.call(:format => "html"), class: 'label label-warning label-format' %>
-  </td>
+    <td><%=  name  %></td>
+    <td>1.0</td>
+    <td><%=  desc  %></td>
+    <td><%  if  updated  ==  'live'  %>
+    <span  class="label  label-default">LIVE!</span>
+    <%  else  %>
+    <%=  updated  %>
+    <%  end  %></td>
+    <td>
+        <%=  link_to  'XML',  target.call(:format  =>  "xml"),  class:  'label  label-primary  label-format'    %>
+        <%=  link_to  'JSON',  target.call(:format  =>  "json"),  class:  'label  label-info  label-format'  %>
+        <%=  link_to  'Embeddable  HTML',  target.call(:format  =>  "html",  layout:  false),  class:  'label  label-warning  label-format'  %>
+        <%=  link_to  'HTML',  target.call(:format  =>  "html"),  class:  'label  label-warning  label-format'  %>
+    </td>
 </tr>
 

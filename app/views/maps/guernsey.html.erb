@@ -1,41 +1,41 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to 'Home', root_path %></li>
-  <li><%= link_to 'Maps', maps_path %></li>
-  <li><%= link_to 'Guernsey', maps_guernsey_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  'Home',  root_path  %></li>
+    <li><%=  link_to  'Maps',  maps_path  %></li>
+    <li><%=  link_to  'Guernsey',  maps_guernsey_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Guernsey Interactive</h1>
+<div  class="page-header">
+    <h1>Guernsey  Interactive</h1>
 </div>
 
-<p class="lead">WASD or arrow keys to move. Q and E to rotate. Mouse Wheel to zoom up/down. Control improvements coming.</p>
-<canvas class="emscripten" style="min-width: 310px; height: 600px; margin: 0 auto" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-<p>&copy; States of Guernsey 2017 and thanks to <a href="http://www.digimap.gg/">Digimap</a>.</p>
-<script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "/unity/guernsey/Release/DataGgMaps.data",
-    codeUrl: "/unity/guernsey/Release/DataGgMaps.js",
-    memUrl: "/unity/guernsey/Release/DataGgMaps.mem",
+<p  class="lead">WASD  or  arrow  keys  to  move.  Q  and  E  to  rotate.  Mouse  Wheel  to  zoom  up/down.  Control  improvements  coming.</p>
+<canvas  class="emscripten"  style="min-width:  310px;  height:  600px;  margin:  0  auto"  id="canvas"  oncontextmenu="event.preventDefault()"></canvas>
+<p>&copy;  States  of  Guernsey  2017  and  thanks  to  <a  href="http://www.digimap.gg/">Digimap</a>.</p>
+<script  type='text/javascript'>
+    var  Module  =  {
+        TOTAL_MEMORY:  268435456,
+        errorhandler:  null,          //  arguments:  err,  url,  line.  This  function  must  return  'true'  if  the  error  is  handled,  otherwise  'false'
+        compatibilitycheck:  null,
+        dataUrl:  "/unity/guernsey/Release/DataGgMaps.data",
+        codeUrl:  "/unity/guernsey/Release/DataGgMaps.js",
+        memUrl:  "/unity/guernsey/Release/DataGgMaps.mem",
 
-  };
+    };
 </script>
-<script src="/unity/guernsey/Release/UnityLoader.js"></script>
+<script  src="/unity/guernsey/Release/UnityLoader.js"></script>
 
-<div class="page-header">
-  <h1>Guernsey Mesh</h1>
-  <div>
-    <p class="lead">The mesh has 12,664 vertices and 9,928 faces.</p>
-    <img src="/meshes/guernsey/guernsey-only-mesh-render.png" />
-  </div>
+<div  class="page-header">
+    <h1>Guernsey  Mesh</h1>
+    <div>
+        <p  class="lead">The  mesh  has  12,664  vertices  and  9,928  faces.</p>
+        <img  src="/meshes/guernsey/guernsey-only-mesh-render.png"  />
+    </div>
 
-  <br>
-   <a href="/meshes/guernsey/guernsey-only.fbx" class="btn btn-info" role="button">Download</a>
-   <p>&copy; States of Guernsey 2017 and thanks to <a href="http://www.digimap.gg/">Digimap</a>. NOT FOR COMMERCIAL USE.</p>
+    <br>
+      <a  href="/meshes/guernsey/guernsey-only.fbx"  class="btn  btn-info"  role="button">Download</a>
+      <p>&copy;  States  of  Guernsey  2017  and  thanks  to  <a  href="http://www.digimap.gg/">Digimap</a>.  NOT  FOR  COMMERCIAL  USE.</p>
 </div>
 

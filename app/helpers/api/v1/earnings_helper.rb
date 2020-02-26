@@ -1,2 +1,2 @@
-module Api::V1::EarningsHelper
+module  Api::V1::EarningsHelper
 end

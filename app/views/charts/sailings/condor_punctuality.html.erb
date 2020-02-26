@@ -1,51 +1,51 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_condor_punctuality" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_condor_punctuality"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'http://www.condorferries.co.uk', 'http://www.condorferries.co.uk/performance/punctuality-reports.aspx' %></p>
+<p>Source:  <%=  link_to  'http://www.condorferries.co.uk',  'http://www.condorferries.co.uk/performance/punctuality-reports.aspx'  %></p>
 
-<script type="text/javascript">
-$(function() {
-  initPage();
+<script  type="text/javascript">
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_condor_punctuality').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Quarter'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Percent On Time'
-            }
-        },
-        series: [{
-            name: 'Condor Clipper',
-            data: <%= @clipper.to_json.html_safe -%>
-        },
-        {
-            name: 'Northern Route (Fast Ferries)',
-            data: <%= @north.to_json.html_safe -%>
-        },
-        {
-            name: 'Southern Route (Fast Ferries)',
-            data: <%= @south.to_json.html_safe -%>
-        }]
-    });
+function  initPage()  {
+        $('#container_condor_punctuality').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Quarter'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Percent  On  Time'
+                        }
+                },
+                series:  [{
+                        name:  'Condor  Clipper',
+                        data:  <%=  @clipper.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Northern  Route  (Fast  Ferries)',
+                        data:  <%=  @north.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Southern  Route  (Fast  Ferries)',
+                        data:  <%=  @south.to_json.html_safe  -%>
+                }]
+        });
 }
 </script>
 

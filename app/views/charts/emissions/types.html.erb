@@ -1,54 +1,54 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div id="container_types" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+<div  id="container_types"  style="min-width:  310px;  height:  500px;  margin:  0  auto"></div>
 
-<p>Source: <%= link_to 'gov.gg', 'http://www.gov.gg/ghg' %></p>
+<p>Source:  <%=  link_to  'gov.gg',  'http://www.gov.gg/ghg'  %></p>
 
-<%= javascript_tag do %>
-$(function() {
-  initPage();
+<%=  javascript_tag  do  %>
+$(function()  {
+    initPage();
 });
-$(window).bind('page:change', function() {
-  initPage();
+$(window).bind('page:change',  function()  {
+    initPage();
 });
 
-function initPage() {
-    $('#container_types').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: '<%= @title %>'
-        },
-        xAxis: {
-            allowDecimals: false,
-            categories: <%= @labels.to_json.html_safe %>,
-            title: {
-                text: 'Year'
-            }
-        },
-        yAxis: {
-            allowDecimals: false,
-            title: {
-                text: 'Amount (kt or kt equivalent)'
-            }
-        },
-        series: [{
-            name: 'Carbon Dioxide',
-            data: <%= @carbon_dioxide.to_json.html_safe -%>
-        },
-        {
-            name: 'Methane',
-            data: <%= @methane.to_json.html_safe -%>
-        },
-        {
-            name: 'Nitrous Oxide',
-            data: <%= @nitrous_oxide.to_json.html_safe -%>
-        },
-        {
-            name: 'F-Gases',
-            data: <%= @f_gases.to_json.html_safe -%>
-        }]
-    });
+function  initPage()  {
+        $('#container_types').highcharts({
+                chart:  {
+                        type:  'line'
+                },
+                title:  {
+                        text:  '<%=  @title  %>'
+                },
+                xAxis:  {
+                        allowDecimals:  false,
+                        categories:  <%=  @labels.to_json.html_safe  %>,
+                        title:  {
+                                text:  'Year'
+                        }
+                },
+                yAxis:  {
+                        allowDecimals:  false,
+                        title:  {
+                                text:  'Amount  (kt  or  kt  equivalent)'
+                        }
+                },
+                series:  [{
+                        name:  'Carbon  Dioxide',
+                        data:  <%=  @carbon_dioxide.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Methane',
+                        data:  <%=  @methane.to_json.html_safe  -%>
+                },
+                {
+                        name:  'Nitrous  Oxide',
+                        data:  <%=  @nitrous_oxide.to_json.html_safe  -%>
+                },
+                {
+                        name:  'F-Gases',
+                        data:  <%=  @f_gases.to_json.html_safe  -%>
+                }]
+        });
 }
-<% end %>
+<%  end  %>

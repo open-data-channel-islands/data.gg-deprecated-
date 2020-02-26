@@ -1,393 +1,393 @@
 [
-  {
-    "Year":"2010-2011",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":99
-  },
-  {
-    "Year":"2010-2011",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":97.9
-  },
-  {
-    "Year":"2010-2011",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":97.9
-  },
-  {
-    "Year":"2010-2011",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":93.8
-  },
-  {
-    "Year":"2010-2011",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":52
-  },
-  {
-    "Year":"2010-2011",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":36.3
-  },
-  {
-    "Year":"2010-2011",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":82.3
-  },
-  {
-    "Year":"2010-2011",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":24.5
-  },
-  {
-    "Year":"2010-2011",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":11.5
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":81
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":38
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":20.5
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":100
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":68.8
-  },
-  {
-    "Year":"2010-2011",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":56.3
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":100
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":98
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":97.1
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":91.8
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":73.2
-  },
-  {
-    "Year":"2011-2012",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":51.5
-  },
-  {
-    "Year":"2011-2012",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":94.6
-  },
-  {
-    "Year":"2011-2012",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":58
-  },
-  {
-    "Year":"2011-2012",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":42
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":88
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":53.8
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":43
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":89.5
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":57.9
-  },
-  {
-    "Year":"2011-2012",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":31.6
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":100
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":97
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":96
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":89.9
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":63.3
-  },
-  {
-    "Year":"2012-2013",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":40.8
-  },
-  {
-    "Year":"2012-2013",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":90.7
-  },
-  {
-    "Year":"2012-2013",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":35.5
-  },
-  {
-    "Year":"2012-2013",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":23.4
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":84.1
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":47.6
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":33.1
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":78.6
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":50
-  },
-  {
-    "Year":"2012-2013",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":35.7
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":100
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":98.1
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Guernsey Grammar School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":98.1
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":92.5
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":73.1
-  },
-  {
-    "Year":"2013-2014",
-    "School":"Les Beaucamps High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":53.8
-  },
-  {
-    "Year":"2013-2014",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":95.8
-  },
-  {
-    "Year":"2013-2014",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":56.3
-  },
-  {
-    "Year":"2013-2014",
-    "School":"La Mare de Carteret High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":40.6
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":91.7
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":65
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Sampson’s High School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":52.2
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– G GCSEs",
-    "Percent":84.6
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs or equivalent",
-    "Percent":53.8
-  },
-  {
-    "Year":"2013-2014",
-    "School":"St Anne’s School",
-    "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent",
-    "Percent":46.2
-  },
-  {"Year":"2014-2015", "School":"Guernsey Grammar School", "Result":"% 5+ A*– G GCSEs", "Percent":99},
-  {"Year":"2014-2015", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":97.1},
-  {"Year":"2014-2015", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":96.2},
-  {"Year":"2014-2015", "School":"Les Beaucamps High School", "Result":"% 5+ A*– G GCSEs", "Percent":94.4},
-  {"Year":"2014-2015", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":60.7},
-  {"Year":"2014-2015", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":42.3},
-  {"Year":"2014-2015", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– G GCSEs", "Percent":92.2},
-  {"Year":"2014-2015", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":45.6},
-  {"Year":"2014-2015", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":32},
-  {"Year":"2014-2015", "School":"St Sampson’s High School", "Result":"% 5+ A*– G GCSEs", "Percent":90.1},
-  {"Year":"2014-2015", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":41.4},
-  {"Year":"2014-2015", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":32.9},
-  {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– G GCSEs", "Percent":92.9},
-  {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":57.1},
-  {"Year":"2014-2015", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":42.9},
+    {
+        "Year":"2010-2011",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":99
+    },
+    {
+        "Year":"2010-2011",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":97.9
+    },
+    {
+        "Year":"2010-2011",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":97.9
+    },
+    {
+        "Year":"2010-2011",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":93.8
+    },
+    {
+        "Year":"2010-2011",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":52
+    },
+    {
+        "Year":"2010-2011",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":36.3
+    },
+    {
+        "Year":"2010-2011",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":82.3
+    },
+    {
+        "Year":"2010-2011",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":24.5
+    },
+    {
+        "Year":"2010-2011",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":11.5
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":81
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":38
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":20.5
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":100
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":68.8
+    },
+    {
+        "Year":"2010-2011",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":56.3
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":100
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":98
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":97.1
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":91.8
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":73.2
+    },
+    {
+        "Year":"2011-2012",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":51.5
+    },
+    {
+        "Year":"2011-2012",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":94.6
+    },
+    {
+        "Year":"2011-2012",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":58
+    },
+    {
+        "Year":"2011-2012",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":42
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":88
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":53.8
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":43
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":89.5
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":57.9
+    },
+    {
+        "Year":"2011-2012",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":31.6
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":100
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":97
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":96
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":89.9
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":63.3
+    },
+    {
+        "Year":"2012-2013",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":40.8
+    },
+    {
+        "Year":"2012-2013",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":90.7
+    },
+    {
+        "Year":"2012-2013",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":35.5
+    },
+    {
+        "Year":"2012-2013",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":23.4
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":84.1
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":47.6
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":33.1
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":78.6
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":50
+    },
+    {
+        "Year":"2012-2013",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":35.7
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":100
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":98.1
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Guernsey  Grammar  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":98.1
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":92.5
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":73.1
+    },
+    {
+        "Year":"2013-2014",
+        "School":"Les  Beaucamps  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":53.8
+    },
+    {
+        "Year":"2013-2014",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":95.8
+    },
+    {
+        "Year":"2013-2014",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":56.3
+    },
+    {
+        "Year":"2013-2014",
+        "School":"La  Mare  de  Carteret  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":40.6
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":91.7
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":65
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Sampson’s  High  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":52.2
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  G  GCSEs",
+        "Percent":84.6
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  or  equivalent",
+        "Percent":53.8
+    },
+    {
+        "Year":"2013-2014",
+        "School":"St  Anne’s  School",
+        "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",
+        "Percent":46.2
+    },
+    {"Year":"2014-2015",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":99},
+    {"Year":"2014-2015",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":97.1},
+    {"Year":"2014-2015",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":96.2},
+    {"Year":"2014-2015",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":94.4},
+    {"Year":"2014-2015",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":60.7},
+    {"Year":"2014-2015",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":42.3},
+    {"Year":"2014-2015",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":92.2},
+    {"Year":"2014-2015",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":45.6},
+    {"Year":"2014-2015",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":32},
+    {"Year":"2014-2015",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":90.1},
+    {"Year":"2014-2015",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":41.4},
+    {"Year":"2014-2015",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":32.9},
+    {"Year":"2014-2015",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":92.9},
+    {"Year":"2014-2015",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":57.1},
+    {"Year":"2014-2015",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":42.9},
 
-  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– G GCSEs", "Percent":100},
-  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":99.1},
-  {"Year":"2015-2016", "School":"Guernsey Grammar School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":95.3},
-  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– G GCSEs", "Percent":91.6},
-  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":62},
-  {"Year":"2015-2016", "School":"Les Beaucamps High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":50},
-  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– G GCSEs", "Percent":97.3},
-  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":52.7},
-  {"Year":"2015-2016", "School":"La Mare de Carteret High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":45.5},
-  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– G GCSEs", "Percent":87.8},
-  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":43.9},
-  {"Year":"2015-2016", "School":"St Sampson’s High School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":39.6},
-  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– G GCSEs", "Percent":93.8},
-  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs or equivalent", "Percent":37.5},
-  {"Year":"2015-2016", "School":"St Anne’s School", "Result":"% 5+ A*– C GCSEs including English and Maths or equivalent", "Percent":25}
+    {"Year":"2015-2016",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":100},
+    {"Year":"2015-2016",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":99.1},
+    {"Year":"2015-2016",  "School":"Guernsey  Grammar  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":95.3},
+    {"Year":"2015-2016",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":91.6},
+    {"Year":"2015-2016",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":62},
+    {"Year":"2015-2016",  "School":"Les  Beaucamps  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":50},
+    {"Year":"2015-2016",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":97.3},
+    {"Year":"2015-2016",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":52.7},
+    {"Year":"2015-2016",  "School":"La  Mare  de  Carteret  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":45.5},
+    {"Year":"2015-2016",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":87.8},
+    {"Year":"2015-2016",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":43.9},
+    {"Year":"2015-2016",  "School":"St  Sampson’s  High  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":39.6},
+    {"Year":"2015-2016",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  G  GCSEs",  "Percent":93.8},
+    {"Year":"2015-2016",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  C  GCSEs  or  equivalent",  "Percent":37.5},
+    {"Year":"2015-2016",  "School":"St  Anne’s  School",  "Result":"%  5+  A*–  C  GCSEs  including  English  and  Maths  or  equivalent",  "Percent":25}
 ]

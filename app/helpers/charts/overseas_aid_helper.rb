@@ -1,2 +1,2 @@
-module Charts::OverseasAidHelper
+module  Charts::OverseasAidHelper
 end

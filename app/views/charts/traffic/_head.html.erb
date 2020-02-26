@@ -1,18 +1,18 @@
-<% content_for :breadcrumb do %>
-<ol class="breadcrumb">
-  <li><%= link_to "Home", root_path %></li>
-  <li><%= link_to "Charts", charts_path %></li>
-  <li><%= link_to 'Traffic', charts_traffic_path %></li>
-  <li class="active"><%= @title %></li>
+<%  content_for  :breadcrumb  do  %>
+<ol  class="breadcrumb">
+    <li><%=  link_to  "Home",  root_path  %></li>
+    <li><%=  link_to  "Charts",  charts_path  %></li>
+    <li><%=  link_to  'Traffic',  charts_traffic_path  %></li>
+    <li  class="active"><%=  @title  %></li>
 </ol>
-<% end %>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Traffic</h1>
+<div  class="page-header">
+    <h1>Traffic</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="<%= 'active' if action?('charts/traffic', 'classifications') %>"><%= link_to 'Classifications', charts_traffic_classifications_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/traffic', 'collisions') %>"><%= link_to 'Collisions', charts_traffic_collisions_path %></li>
-  <li role="presentation" class="<%= 'active' if action?('charts/traffic', 'offences') %>"><%= link_to 'Offences', charts_traffic_offences_path %></li>
+<ul  class="nav  nav-tabs">
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/traffic',  'classifications')  %>"><%=  link_to  'Classifications',  charts_traffic_classifications_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/traffic',  'collisions')  %>"><%=  link_to  'Collisions',  charts_traffic_collisions_path  %></li>
+    <li  role="presentation"  class="<%=  'active'  if  action?('charts/traffic',  'offences')  %>"><%=  link_to  'Offences',  charts_traffic_offences_path  %></li>
 </ul>

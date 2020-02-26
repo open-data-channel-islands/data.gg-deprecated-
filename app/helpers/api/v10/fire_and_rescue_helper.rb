@@ -1,2 +1,2 @@
-module Api::V10::FireAndRescueHelper
+module  Api::V10::FireAndRescueHelper
 end

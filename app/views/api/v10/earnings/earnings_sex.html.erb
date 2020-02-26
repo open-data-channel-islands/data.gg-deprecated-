@@ -1,24 +1,24 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Sex</th>
-      <th>Nominal Earnings</th>
-      <th>Real Earnings</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @earnings_sex.each do |f| %>
-    <tr>
-    <td><%= f['Year'] %></td>
-    <td><%= f['Sex'] %></td>
-    <td><%= f['Nominal median earnings'] %></td>
-    <td><%= f['Real median earnings'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Sex</th>
+            <th>Nominal  Earnings</th>
+            <th>Real  Earnings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @earnings_sex.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Year']  %></td>
+        <td><%=  f['Sex']  %></td>
+        <td><%=  f['Nominal  median  earnings']  %></td>
+        <td><%=  f['Real  median  earnings']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

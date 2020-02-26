@@ -1,2 +1,2 @@
-module Charts::GovernmentSpendingHelper
+module  Charts::GovernmentSpendingHelper
 end

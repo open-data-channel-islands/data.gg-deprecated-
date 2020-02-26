@@ -1,20 +1,20 @@
-<%= render 'head' %>
+<%=  render  'head'  %>
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Consumption</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @domestic_consumption.each do |f| %>
-    <tr>
-    <td><%= f['Year'] %></td>
-    <td><%= f['Consumption'] %></td>
-    </tr>
-    <% end %>
-  </tbody>
+<div  class="table-responsive">
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Consumption</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  @domestic_consumption.each  do  |f|  %>
+        <tr>
+        <td><%=  f['Year']  %></td>
+        <td><%=  f['Consumption']  %></td>
+        </tr>
+        <%  end  %>
+    </tbody>
 </table>
 </div>

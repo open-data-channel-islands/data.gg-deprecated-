@@ -1,2 +1,2 @@
-module Api::V10::GovernmentSpendingHelper
+module  Api::V10::GovernmentSpendingHelper
 end

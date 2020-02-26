@@ -1,88 +1,88 @@
 [
-  {
-    "Type":"Food",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":0.919180566821451,
-    "Annual Change":-0.198711223255873
-  },
-  {
-    "Type":"Catering",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":1.52443577766629,
-    "Annual Change":3.55173615772239
-  },
-  {
-    "Type":"Alcoholic Drink",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":3.07377838621379,
-    "Annual Change":4.37645924386915
-  },
-  {
-    "Type":"Tobacco",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":0.0549598852341208,
-    "Annual Change":6.62174514759254
-  },
-  {
-    "Type":"Housing",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":0.48241165776993,
-    "Annual Change":1.38513734434245
-  },
-  {
-    "Type":"Fuel and Light",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":0.530136716556994,
-    "Annual Change":3.90091370579051
-  },
-  {
-    "Type":"Household Goods",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":1.30378371914372,
-    "Annual Change":1.39073551953515
-  },
-  {
-    "Type":"Household Services",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":0.354224966794462,
-    "Annual Change":1.72984918524923
-  },
-  {
-    "Type":"Clothing and Footwear",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":-0.316450468695443,
-    "Annual Change":-3.63349895845718
-  },
-  {
-    "Type":"Personal Goods and Services",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":-0.260261278781792,
-    "Annual Change":1.69554967068724
-  },
-  {
-    "Type":"Motoring Expenditure",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":-0.113073466928868,
-    "Annual Change":1.92003856239143
-  },
-  {
-    "Type":"Fares and Other Travel Costs",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":5.44189785229405,
-    "Annual Change":5.34210006762586
-  },
-  {
-    "Type":"Leisure Goods",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":-0.716325954354336,
-    "Annual Change":-2.45690845488212
-  },
-  {
-    "Type":"Leisure Services",
-    "Quarter":"Q1 2019",
-    "Quarterly Change":4.88531442257165,
-    "Annual Change":5.39758064693155
-  }
+    {
+        "Type":"Food",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":0.919180566821451,
+        "Annual  Change":-0.198711223255873
+    },
+    {
+        "Type":"Catering",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":1.52443577766629,
+        "Annual  Change":3.55173615772239
+    },
+    {
+        "Type":"Alcoholic  Drink",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":3.07377838621379,
+        "Annual  Change":4.37645924386915
+    },
+    {
+        "Type":"Tobacco",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":0.0549598852341208,
+        "Annual  Change":6.62174514759254
+    },
+    {
+        "Type":"Housing",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":0.48241165776993,
+        "Annual  Change":1.38513734434245
+    },
+    {
+        "Type":"Fuel  and  Light",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":0.530136716556994,
+        "Annual  Change":3.90091370579051
+    },
+    {
+        "Type":"Household  Goods",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":1.30378371914372,
+        "Annual  Change":1.39073551953515
+    },
+    {
+        "Type":"Household  Services",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":0.354224966794462,
+        "Annual  Change":1.72984918524923
+    },
+    {
+        "Type":"Clothing  and  Footwear",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":-0.316450468695443,
+        "Annual  Change":-3.63349895845718
+    },
+    {
+        "Type":"Personal  Goods  and  Services",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":-0.260261278781792,
+        "Annual  Change":1.69554967068724
+    },
+    {
+        "Type":"Motoring  Expenditure",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":-0.113073466928868,
+        "Annual  Change":1.92003856239143
+    },
+    {
+        "Type":"Fares  and  Other  Travel  Costs",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":5.44189785229405,
+        "Annual  Change":5.34210006762586
+    },
+    {
+        "Type":"Leisure  Goods",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":-0.716325954354336,
+        "Annual  Change":-2.45690845488212
+    },
+    {
+        "Type":"Leisure  Services",
+        "Quarter":"Q1  2019",
+        "Quarterly  Change":4.88531442257165,
+        "Annual  Change":5.39758064693155
+    }
 ]
 
 0.919180566821451

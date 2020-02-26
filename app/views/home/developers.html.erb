@@ -1,12 +1,12 @@
-<% content_for :breadcrumb do %>
-  <ol class="breadcrumb">
-    <li><%= link_to "Home", root_path %></li>
-    <li class="active">Developers</li>
-  </ol>
-<% end %>
+<%  content_for  :breadcrumb  do  %>
+    <ol  class="breadcrumb">
+        <li><%=  link_to  "Home",  root_path  %></li>
+        <li  class="active">Developers</li>
+    </ol>
+<%  end  %>
 
-<div class="page-header">
-  <h1>Developers</h1>
+<div  class="page-header">
+    <h1>Developers</h1>
 </div>
 
-<%= render partial: "developers_list" %>
+<%=  render  partial:  "developers_list"  %>

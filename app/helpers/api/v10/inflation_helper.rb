@@ -1,2 +1,2 @@
-module Api::V10::InflationHelper
+module  Api::V10::InflationHelper
 end

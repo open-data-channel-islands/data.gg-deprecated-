@@ -1,12 +1,12 @@
 [
-  {"Year":2008, "Landfill":20.2, "Recycled":15.3, "Composted":5.1, "Misc. disposal":8.6, "Total":49.2},
-  {"Year":2009, "Landfill":19.4, "Recycled":12.8, "Composted":5.3, "Misc. disposal":8.7, "Total":46.2},
-  {"Year":2010, "Landfill":19.6, "Recycled":14.3, "Composted":5.5, "Misc. disposal":8.2, "Total":47.7},
-  {"Year":2011, "Landfill":18.3, "Recycled":14.2, "Composted":6.1, "Misc. disposal":9, "Total":47.6},
-  {"Year":2012, "Landfill":18, "Recycled":13.7, "Composted":7, "Misc. disposal":9.6, "Total":48.3},
-  {"Year":2013, "Landfill":16.9, "Recycled":11.3, "Composted":7, "Misc. disposal":9.3, "Total":44.5},
-  {"Year":2014, "Landfill":18, "Recycled":12.7, "Composted":7.3, "Misc. disposal":9.9, "Total":47.9},
-  {"Year":2015, "Landfill":15.3, "Recycled":11.2, "Composted":6.7, "Misc. disposal":11.2, "Total":44.4},
-  {"Year":2016, "Landfill":14.1, "Recycled":11.5, "Composted":7.1, "Misc. disposal":11.4, "Total":44.1},
-  {"Year":2017, "Landfill":13.2, "Recycled":12.7, "Composted":7.6, "Misc. disposal":7.2, "Total":40.8}
+    {"Year":2008,  "Landfill":20.2,  "Recycled":15.3,  "Composted":5.1,  "Misc.  disposal":8.6,  "Total":49.2},
+    {"Year":2009,  "Landfill":19.4,  "Recycled":12.8,  "Composted":5.3,  "Misc.  disposal":8.7,  "Total":46.2},
+    {"Year":2010,  "Landfill":19.6,  "Recycled":14.3,  "Composted":5.5,  "Misc.  disposal":8.2,  "Total":47.7},
+    {"Year":2011,  "Landfill":18.3,  "Recycled":14.2,  "Composted":6.1,  "Misc.  disposal":9,  "Total":47.6},
+    {"Year":2012,  "Landfill":18,  "Recycled":13.7,  "Composted":7,  "Misc.  disposal":9.6,  "Total":48.3},
+    {"Year":2013,  "Landfill":16.9,  "Recycled":11.3,  "Composted":7,  "Misc.  disposal":9.3,  "Total":44.5},
+    {"Year":2014,  "Landfill":18,  "Recycled":12.7,  "Composted":7.3,  "Misc.  disposal":9.9,  "Total":47.9},
+    {"Year":2015,  "Landfill":15.3,  "Recycled":11.2,  "Composted":6.7,  "Misc.  disposal":11.2,  "Total":44.4},
+    {"Year":2016,  "Landfill":14.1,  "Recycled":11.5,  "Composted":7.1,  "Misc.  disposal":11.4,  "Total":44.1},
+    {"Year":2017,  "Landfill":13.2,  "Recycled":12.7,  "Composted":7.6,  "Misc.  disposal":7.2,  "Total":40.8}
 ]
